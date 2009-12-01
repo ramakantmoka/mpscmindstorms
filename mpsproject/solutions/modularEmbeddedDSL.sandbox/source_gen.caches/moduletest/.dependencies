@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="moduletest.ArrayStuff" />
+  <dependency className="moduletest.PointerStuff" />
+  <dependency className="moduletest.StructUndArrayStuff" />
+  <dependency className="moduletest.aSecondResource" />
+  <dependency className="moduletest.build_example" />
+  <dependency className="moduletest.include/ArrayStuff" />
+  <dependency className="moduletest.include/PointerStuff" />
+  <dependency className="moduletest.include/StructUndArrayStuff" />
+  <dependency className="moduletest.include/aSecondResource" />
+  <dependency className="moduletest.include/quantityTest" />
+  <dependency className="moduletest.include/testMethodCall" />
+  <dependency className="moduletest.quantityTest" />
+  <dependency className="moduletest.system_main_example" />
+  <dependency className="moduletest.testMethodCall" />
+</dependenciesRoot>
+
