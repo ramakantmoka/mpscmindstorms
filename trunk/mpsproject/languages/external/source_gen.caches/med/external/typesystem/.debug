@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<debugInfo>
-  <nodeInfo nodeId="7647825645222488009" fileName="onlyOneThingInAnExternalModuleResource_NonTypesystemRule.java" startLine="21" startPosition="94" endLine="32" endPosition="5" />
-  <nodeInfo nodeId="7647825645222488011" fileName="onlyOneThingInAnExternalModuleResource_NonTypesystemRule.java" startLine="22" startPosition="75" endLine="31" endPosition="7" />
-  <nodeInfo nodeId="7647825645222488027" fileName="onlyOneThingInAnExternalModuleResource_NonTypesystemRule.java" startLine="23" startPosition="81" endLine="30" endPosition="9" />
-  <nodeInfo nodeId="7647825645222488050" fileName="onlyOneThingInAnExternalModuleResource_NonTypesystemRule.java" startLine="24" startPosition="103" endLine="29" endPosition="11" />
-</debugInfo>
-
