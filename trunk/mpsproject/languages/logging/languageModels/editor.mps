@@ -41,17 +41,5 @@
       </node>
     </node>
   </node>
-  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="3104433618259287281">
-    <link role="conceptDeclaration" targetNodeId="1.3104433618259287279" resolveInfo="LogStatement2" />
-    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="3104433618259287283">
-      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="3104433618259287286">
-        <property name="text" value="log" />
-      </node>
-      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="3104433618259287285" />
-      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="3104433618259287288">
-        <link role="relationDeclaration" targetNodeId="1.3104433618259287280" />
-      </node>
-    </node>
-  </node>
 </model>
 
