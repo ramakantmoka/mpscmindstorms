@@ -29,39 +29,5 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590571(jetbrains.mps.gtext.constraints)" version="8" />
   <languageAspect modelUID="r:9f9959ae-ed4b-4339-a71e-62a180fa22ec(med.base.structure)" version="2" />
   <maxImportIndex value="1" />
-  <visible index="2" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
-  <visible index="3" modelUID="r:486732ea-fa25-442c-bcc8-e948ecd38d94(med.logging.structure)" />
-  <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="3104433618259294697">
-    <property name="name" value="typeof_LogStatement2" />
-    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3104433618259294698">
-      <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" id="3104433618259307044">
-        <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="3104433618259307048">
-          <node role="normalType" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression" id="3104433618259307049">
-            <node role="creator" type="jetbrains.mps.lang.smodel.structure.SNodeCreator" id="3104433618259307051">
-              <node role="createdType" type="jetbrains.mps.lang.smodel.structure.SNodeType" id="3104433618259307052">
-                <link role="concept" targetNodeId="2v.4641466063285997897" resolveInfo="GenericStringType" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="leftExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="3104433618259307047">
-          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="3104433618259294701">
-            <node role="term" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="3104433618259307039">
-              <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="3104433618259294703">
-                <link role="applicableNode" targetNodeId="3104433618259294699" resolveInfo="statement2" />
-              </node>
-              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="3104433618259307043">
-                <link role="link" targetNodeId="3v.3104433618259287280" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="3104433618259294699">
-      <property name="name" value="statement2" />
-      <link role="concept" targetNodeId="3v.3104433618259287279" resolveInfo="LogStatement2" />
-    </node>
-  </node>
 </model>
 
