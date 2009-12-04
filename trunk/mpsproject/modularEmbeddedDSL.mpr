@@ -8,6 +8,7 @@
     <projectSolutions>
       <solutionPath path="${project}/solutions/modularEmbeddedDSL.sandbox/modularEmbeddedDSL.sandbox.msd" />
       <solutionPath path="${project}/solutions/MindstormHelloWorld/MindstormHelloWorld.msd" folder="" />
+      <solutionPath path="${project}/solutions/modularEmbeddedDSL.build/modularEmbeddedDSL.build.msd" />
     </projectSolutions>
     <projectLanguages>
       <languagePath path="${project}/languages/featureDependencies/featureDependencies.mpl" />
