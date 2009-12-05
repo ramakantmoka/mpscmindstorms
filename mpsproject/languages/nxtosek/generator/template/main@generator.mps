@@ -25,7 +25,7 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902e2(jetbrains.mps.lang.generator.constraints)" version="16" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
-  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="1" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590575(jetbrains.mps.gtext.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590571(jetbrains.mps.gtext.constraints)" version="8" />
@@ -627,9 +627,11 @@
   <node type="jetbrains.mps.lang.generator.structure.MappingConfiguration" id="1467202028512942321">
     <property name="name" value="normalPriorityStuff" />
     <node role="rootMappingRule" type="jetbrains.mps.lang.generator.structure.Root_MappingRule" id="1467202028512942322">
-      <property name="keepSourceRoot" value="true" />
       <link role="applicableConcept" targetNodeId="3v.3553474829273041289" resolveInfo="System" />
       <link role="template" targetNodeId="1467202028512538946" resolveInfo="makefile" />
+    </node>
+    <node role="dropRootRule" type="jetbrains.mps.lang.generator.structure.DropRootRule" id="4609119184843774190">
+      <link role="applicableConcept" targetNodeId="3v.3553474829273041289" resolveInfo="System" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.generator.structure.MappingScript" id="3104433618260429514">
