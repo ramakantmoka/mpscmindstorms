@@ -188,10 +188,21 @@
           <node role="type" type="med.platform.nxtosek.structure.CounterType" id="5196379128664731998" />
         </node>
       </node>
+      <node role="procedures" type="med.core.structure.ExternalProcedure" id="5196379128665272313">
+        <property name="name" value="ShutdownOS" />
+        <property name="export" value="true" />
+        <node role="type" type="med.core.structure.VoidType" id="5196379128665272317" />
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="5196379128665272315">
+          <property name="name" value="status" />
+          <node role="type" type="med.core.structure.TypeDefType" id="5196379128665272316">
+            <link role="typedef" targetNodeId="5196379128663212746" resolveInfo="StatusType" />
+          </node>
+        </node>
+      </node>
       <node role="typedefs" type="med.core.structure.TypeDef" id="5196379128663212746">
         <property name="name" value="StatusType" />
         <property name="export" value="true" />
-        <node role="baseType" type="med.core.structure.UInt8" id="5196379128663212747" />
+        <node role="baseType" type="med.core.structure.GenericIntegerType" id="5196379128665514638" />
       </node>
     </node>
   </node>

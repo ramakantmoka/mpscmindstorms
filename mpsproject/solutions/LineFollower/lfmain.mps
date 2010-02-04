@@ -90,6 +90,26 @@
               </node>
             </node>
           </node>
+          <node role="statements" type="med.core.structure.IfStatement" id="5196379128665272304">
+            <node role="thenPart" type="med.core.structure.StatementList" id="5196379128665272305">
+              <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128665272318">
+                <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128665272319">
+                  <link role="procedure" targetNodeId="2v.5196379128665272313" resolveInfo="ShutdownOS" />
+                  <node role="actuals" type="med.core.structure.LocalVariableReference" id="5196379128665272320">
+                    <link role="variable" targetNodeId="5196379128663614635" resolveInfo="ercd" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="condition" type="med.core.structure.NotEqualsExpression" id="5196379128665272308">
+              <node role="left" type="med.core.structure.LocalVariableReference" id="5196379128665272307">
+                <link role="variable" targetNodeId="5196379128663614635" resolveInfo="ercd" />
+              </node>
+              <node role="right" type="med.core.structure.IntConstantExpression" id="5196379128665514640">
+                <property name="value" value="0" />
+              </node>
+            </node>
+          </node>
         </node>
         <node role="type" type="med.core.structure.VoidType" id="5196379128662886871" />
       </node>
@@ -412,6 +432,12 @@
           <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128662886859">
             <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128662886860">
               <link role="procedure" targetNodeId="2v.5196379128662886855" resolveInfo="display_update" />
+              <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="5196379128665272300">
+                <property name="isNew" value="true" />
+                <node role="expression" type="featureDependencies.structure.AtomicFE" id="5196379128665272302">
+                  <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
+                </node>
+              </node>
             </node>
           </node>
           <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128662886865">

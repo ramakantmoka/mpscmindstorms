@@ -2429,7 +2429,7 @@
         </node>
         <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="5196379128663147485" />
         <node role="emptyCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128663212745">
-          <property name="nullText" value="&lt;&lt; typedefs &gt;&gt;" />
+          <property name="nullText" value="&lt;&lt;typedefs&gt;&gt;" />
         </node>
       </node>
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128663147490">
@@ -2450,7 +2450,7 @@
           <property name="flag" value="true" />
         </node>
         <node role="emptyCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128663212744">
-          <property name="nullText" value="&lt;&lt; enums &gt;&gt;" />
+          <property name="nullText" value="&lt;&lt;enums&gt;&gt;" />
         </node>
       </node>
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128660852783">

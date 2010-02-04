@@ -328,7 +328,7 @@ public class ExternalModule_Editor extends DefaultNodeEditor {
     private EditorCell createConstant_4709_2(EditorContext editorContext, SNode node) {
       EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
       editorCell.setCellId("Constant_4709_2");
-      editorCell.setDefaultText("<< enums >>");
+      editorCell.setDefaultText("<<enums>>");
       return editorCell;
     }
   }
@@ -381,7 +381,7 @@ public class ExternalModule_Editor extends DefaultNodeEditor {
     private EditorCell createConstant_4709_3(EditorContext editorContext, SNode node) {
       EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
       editorCell.setCellId("Constant_4709_3");
-      editorCell.setDefaultText("<< typedefs >>");
+      editorCell.setDefaultText("<<typedefs>>");
       return editorCell;
     }
   }
