@@ -21,10 +21,7 @@ CPU ATMEL_AT91SAM7S256
   /* Definition of Run */
   TASK Run
   {
-    AUTOSTART = TRUE
-    {
-      APPMODE = appmode1;
-    };
+    AUTOSTART = FALSE;
     PRIORITY = 1; /* lowest priority */
     ACTIVATION = 1;
     SCHEDULE = FULL;
@@ -37,6 +34,23 @@ CPU ATMEL_AT91SAM7S256
     	MAXALLOWEDVALUE = 10000;
     	TICKSPERBASE = 1;
   	};
+
+  /* Definition of Task Run execution timing */
+  ALARM cyclic_alarm1
+  {
+    COUNTER = SysTimerCnt;
+    ACTION = ACTIVATETASK
+    {
+      TASK = Run;
+    };
+    AUTOSTART = TRUE
+    {
+      ALARMTIME = 1;
+      CYCLETIME = 10; /* Task Run is executed every 10msec */
+      APPMODE = appmode1;
+    };
+  };
+
 
 };
 
