@@ -30,7 +30,62 @@
   <languageAspect modelUID="r:8234fb67-1049-46f0-bf39-a9058c4964f6(med.external.structure)" version="1" />
   <languageAspect modelUID="r:202795d3-bacc-48e0-8afc-c254098b7868(med.external.typesystem)" version="0" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
-  <maxImportIndex value="1" />
+  <maxImportIndex value="2" />
   <import index="1" modelUID="r:5e9df045-8930-4ba7-8720-4642d630b9ff(med.platform.nxtosek.structure)" version="-1" />
+  <import index="2" modelUID="r:b02d8e6e-6ce1-44d6-8357-4812e6e9817d(med.platform.nxtosek.rt)" version="-1" />
+  <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="5196379128664620739">
+    <property name="name" value="typeof_CounterDeclaration" />
+    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5196379128664620740">
+      <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" id="5196379128664629293">
+        <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="5196379128664629297">
+          <node role="normalType" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression" id="5196379128664629298">
+            <node role="creator" type="jetbrains.mps.lang.smodel.structure.SNodeCreator" id="5196379128664629300">
+              <node role="createdType" type="jetbrains.mps.lang.smodel.structure.SNodeType" id="5196379128664629301">
+                <link role="concept" targetNodeId="1.5196379128664620761" resolveInfo="CounterType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="leftExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="5196379128664629296">
+          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="5196379128664629290">
+            <node role="term" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="5196379128664629292">
+              <link role="applicableNode" targetNodeId="5196379128664620742" resolveInfo="counterDeclaration" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="5196379128664620742">
+      <property name="name" value="counterDeclaration" />
+      <link role="concept" targetNodeId="1.5196379128663887123" resolveInfo="CounterDeclaration" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="5196379128664620776">
+    <property name="name" value="typeof_CounterReference" />
+    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5196379128664620777">
+      <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" id="5196379128664629302">
+        <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="5196379128664629303">
+          <node role="normalType" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression" id="5196379128664629304">
+            <node role="creator" type="jetbrains.mps.lang.smodel.structure.SNodeCreator" id="5196379128664629305">
+              <node role="createdType" type="jetbrains.mps.lang.smodel.structure.SNodeType" id="5196379128664629306">
+                <link role="concept" targetNodeId="1.5196379128664620761" resolveInfo="CounterType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="leftExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="5196379128664629307">
+          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="5196379128664629308">
+            <node role="term" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="5196379128664629310">
+              <link role="applicableNode" targetNodeId="5196379128664620779" resolveInfo="counterReference" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="5196379128664620779">
+      <property name="name" value="counterReference" />
+      <link role="concept" targetNodeId="1.5196379128664620730" resolveInfo="CounterReference" />
+    </node>
+  </node>
 </model>
 

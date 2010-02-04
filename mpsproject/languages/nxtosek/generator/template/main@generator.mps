@@ -299,6 +299,14 @@
       <link role="template" targetNodeId="3454436015655311639" resolveInfo="oilfile" />
       <link role="applicableConcept" targetNodeId="3v.3553474829273041289" resolveInfo="System" />
     </node>
+    <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="5196379128665136059">
+      <link role="applicableConcept" targetNodeId="1.5196379128664620730" resolveInfo="CounterReference" />
+      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" id="5196379128665138239" />
+    </node>
+    <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="5196379128664618536">
+      <link role="applicableConcept" targetNodeId="1.5196379128663887123" resolveInfo="CounterDeclaration" />
+      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" id="5196379128664620721" />
+    </node>
     <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="3454436015655954073">
       <link role="applicableConcept" targetNodeId="2v.3454436015655736227" resolveInfo="SleepStatement" />
       <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" id="3454436015655964880">

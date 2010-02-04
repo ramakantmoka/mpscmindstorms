@@ -7,6 +7,7 @@
   <sourcePath />
   <usedLanguages>
     <usedLanguage>150e33c6-372a-4396-b4cc-1c334fb3f438(med.platform.nxtosek)</usedLanguage>
+    <usedLanguage>50b44c57-34f1-428d-a7c3-d100606f8e2a(featureDependencies)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>a891e14a-a3d6-466e-8364-4e1b14cbaa06(ModularEmbeddedDSL)</usedDevKit>

@@ -31,5 +31,60 @@
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="1" />
   <import index="1" modelUID="r:5e9df045-8930-4ba7-8720-4642d630b9ff(med.platform.nxtosek.structure)" version="-1" />
+  <visible index="2" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="5196379128663887128">
+    <link role="conceptDeclaration" targetNodeId="1.5196379128663887123" resolveInfo="CounterDeclaration" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="5196379128663887130">
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="5196379128663887132" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128663887133">
+        <property name="text" value="counter" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="5196379128663887135">
+        <link role="relationDeclaration" targetNodeId="2v.1169194664001" resolveInfo="name" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128664737896">
+        <property name="text" value="  minimal cycle =" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="5196379128664737898">
+        <link role="relationDeclaration" targetNodeId="1.5196379128664737892" resolveInfo="minCycle" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128664737900">
+        <property name="text" value="  maximum value =" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="5196379128664737902">
+        <link role="relationDeclaration" targetNodeId="1.5196379128664737893" resolveInfo="maxValue" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128664737904">
+        <property name="text" value="  ticks per base =" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="5196379128664737906">
+        <link role="relationDeclaration" targetNodeId="1.5196379128664737894" resolveInfo="ticksPerBase" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128663887137">
+        <property name="text" value=";" />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" id="5196379128663887138">
+          <property name="flag" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="5196379128664620733">
+    <link role="conceptDeclaration" targetNodeId="1.5196379128664620730" resolveInfo="CounterReference" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="5196379128664620735">
+      <link role="relationDeclaration" targetNodeId="1.5196379128664620731" />
+      <node role="editorComponent" type="jetbrains.mps.lang.editor.structure.InlineEditorComponent" id="5196379128664620736">
+        <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="5196379128664620738">
+          <property name="readOnly" value="true" />
+          <link role="relationDeclaration" targetNodeId="2v.1169194664001" resolveInfo="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="5196379128664628406">
+    <link role="conceptDeclaration" targetNodeId="1.5196379128664620761" resolveInfo="CounterType" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128664628411">
+      <property name="text" value="counter" />
+    </node>
+  </node>
 </model>
 

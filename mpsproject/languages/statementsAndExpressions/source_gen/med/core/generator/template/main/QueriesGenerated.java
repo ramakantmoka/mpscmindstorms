@@ -157,6 +157,14 @@ public class QueriesGenerated {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), "literal", false), "name");
   }
 
+  public static Object propertyMacro_GetPropertyValue_5196379128664413675(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), "name");
+  }
+
+  public static Object propertyMacro_GetPropertyValue_5196379128664413688(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), "typedef", false), "name");
+  }
+
   public static Object propertyMacro_GetPropertyValue_5320189530627158379(final IOperationContext operationContext, final PropertyMacroContext _context) {
     return "#include \"" + Resource_Behavior.call_hFileName_306587673255505648(_context.getNode()) + ".h\"";
   }
@@ -319,6 +327,10 @@ public class QueriesGenerated {
 
   public static SNode sourceNodeQuery_5174648333273878305(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), "expression", true);
+  }
+
+  public static SNode sourceNodeQuery_5196379128664413663(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "baseType", true);
   }
 
   public static SNode sourceNodeQuery_5580581899346705763(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
