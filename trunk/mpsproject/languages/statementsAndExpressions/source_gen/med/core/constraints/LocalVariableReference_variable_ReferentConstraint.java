@@ -7,7 +7,9 @@ import jetbrains.mps.smodel.constraints.IModelConstraints;
 import jetbrains.mps.smodel.constraints.ModelConstraintsManager;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.constraints.ReferentConstraintContext;
+import med.core.behavior.IBlockScopeProvider_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 
 public class LocalVariableReference_variable_ReferentConstraint extends BaseNodeReferenceSearchScopeProvider implements IModelConstraints {
   public LocalVariableReference_variable_ReferentConstraint() {
@@ -22,6 +24,6 @@ public class LocalVariableReference_variable_ReferentConstraint extends BaseNode
   }
 
   public Object createSearchScopeOrListOfNodes(final IOperationContext operationContext, final ReferentConstraintContext _context) {
-    return SNodeOperations.getDescendants(SNodeOperations.getAncestor(_context.getEnclosingNode(), "med.core.structure.StatementList", true, false), "med.core.structure.LocalVariableDeclaration", false, new String[]{});
+    return IBlockScopeProvider_Behavior.call_elementsOfType_5196379128662741737(SNodeOperations.getAncestor(_context.getEnclosingNode(), "med.core.structure.IBlockScopeProvider", false, false), SConceptOperations.findConceptDeclaration("med.core.structure.LocalVariableDeclaration"));
   }
 }

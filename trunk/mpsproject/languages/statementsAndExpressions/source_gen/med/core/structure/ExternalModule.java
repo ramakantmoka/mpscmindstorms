@@ -13,6 +13,7 @@ public class ExternalModule extends Module {
   public static final String concept = "med.core.structure.ExternalModule";
   public static final String EXISTING_HEADER_FILE = "existingHeaderFile";
   public static final String ENUMS = "enums";
+  public static final String TYPEDEFS = "typedefs";
   public static final String STRUCTS = "structs";
   public static final String PROCEDURES = "procedures";
   public static final String LINKED_RESOURCE = "linkedResource";
@@ -47,6 +48,26 @@ public class ExternalModule extends Module {
 
   public void insertEnums(EnumDeclaration prev, EnumDeclaration node) {
     this.insertChild(prev, ExternalModule.ENUMS, node);
+  }
+
+  public int getTypedefsesCount() {
+    return this.getChildCount(ExternalModule.TYPEDEFS);
+  }
+
+  public Iterator<TypeDef> typedefses() {
+    return this.children(TypeDef.class, ExternalModule.TYPEDEFS);
+  }
+
+  public List<TypeDef> getTypedefses() {
+    return this.getChildren(TypeDef.class, ExternalModule.TYPEDEFS);
+  }
+
+  public void addTypedefs(TypeDef node) {
+    this.addChild(ExternalModule.TYPEDEFS, node);
+  }
+
+  public void insertTypedefs(TypeDef prev, TypeDef node) {
+    this.insertChild(prev, ExternalModule.TYPEDEFS, node);
   }
 
   public int getStructsesCount() {

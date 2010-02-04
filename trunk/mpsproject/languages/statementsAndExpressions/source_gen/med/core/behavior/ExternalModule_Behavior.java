@@ -31,6 +31,11 @@ public class ExternalModule_Behavior {
         return SPropertyOperations.getBoolean(it, "export");
       }
     }));
+    ListSequence.fromList(result).addSequence(ListSequence.fromList(SLinkOperations.getTargets(thisNode, "typedefs", true)).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SPropertyOperations.getBoolean(it, "export");
+      }
+    }));
     return result;
   }
 

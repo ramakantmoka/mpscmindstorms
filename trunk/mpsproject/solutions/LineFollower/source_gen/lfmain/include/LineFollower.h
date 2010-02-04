@@ -13,4 +13,10 @@
 void ecrobot_device_initialize(void);
 
 void ecrobot_device_terminate(void);
+
+void user_1ms_isr_type2(void);
+
+void LineFollower_main_updateMotorSettings(int leftSpeed, int rightSpeed);
+
+void LineFollower_main_displaySpeeds(int leftSpeed, int rightSpeed);
 #endif
