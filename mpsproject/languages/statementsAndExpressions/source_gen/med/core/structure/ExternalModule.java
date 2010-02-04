@@ -12,6 +12,7 @@ import jetbrains.mps.project.GlobalScope;
 public class ExternalModule extends Module {
   public static final String concept = "med.core.structure.ExternalModule";
   public static final String EXISTING_HEADER_FILE = "existingHeaderFile";
+  public static final String ENUMS = "enums";
   public static final String STRUCTS = "structs";
   public static final String PROCEDURES = "procedures";
   public static final String LINKED_RESOURCE = "linkedResource";
@@ -26,6 +27,26 @@ public class ExternalModule extends Module {
 
   public void setExistingHeaderFile(String value) {
     this.setProperty(ExternalModule.EXISTING_HEADER_FILE, value);
+  }
+
+  public int getEnumsesCount() {
+    return this.getChildCount(ExternalModule.ENUMS);
+  }
+
+  public Iterator<EnumDeclaration> enumses() {
+    return this.children(EnumDeclaration.class, ExternalModule.ENUMS);
+  }
+
+  public List<EnumDeclaration> getEnumses() {
+    return this.getChildren(EnumDeclaration.class, ExternalModule.ENUMS);
+  }
+
+  public void addEnums(EnumDeclaration node) {
+    this.addChild(ExternalModule.ENUMS, node);
+  }
+
+  public void insertEnums(EnumDeclaration prev, EnumDeclaration node) {
+    this.insertChild(prev, ExternalModule.ENUMS, node);
   }
 
   public int getStructsesCount() {

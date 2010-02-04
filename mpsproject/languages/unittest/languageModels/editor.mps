@@ -32,12 +32,30 @@
   <maxImportIndex value="2" />
   <import index="1" modelUID="r:bcdfdee6-1ad3-40b7-ba99-27ec6f82380f(med.unittest.structure)" version="-1" />
   <import index="2" modelUID="r:14a060e8-2002-4063-9ac2-3317a0d2c940(med.core.behavior)" version="-1" />
-  <visible index="2" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-  <visible index="3" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
+  <visible index="2" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
+  <visible index="3" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="5174648333271280746">
     <link role="conceptDeclaration" targetNodeId="1.5174648333271280743" resolveInfo="Test" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="5174648333271280748">
       <property name="usesFolding" value="false" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="7974571013345854922">
+        <property name="text" value="exported" />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" id="7974571013345854923">
+          <property name="color" value="DARK_GREEN" />
+        </node>
+        <node role="renderingCondition" type="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" id="7974571013345854924">
+          <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="7974571013345854925">
+            <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="7974571013345854926">
+              <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="7974571013345854928">
+                <node role="operand" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="7974571013345854927" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="7974571013345854932">
+                  <link role="property" targetNodeId="2v.306587673255505537" resolveInfo="export" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5174648333271280751">
         <property name="text" value="test" />
         <node role="styleItem" type="jetbrains.mps.lang.editor.structure.TextBackgroundColorStyleClassItem" id="5174648333271281090">
@@ -49,7 +67,7 @@
       </node>
       <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="5174648333271280750" />
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="5174648333272652847">
-        <link role="relationDeclaration" targetNodeId="2v.1169194664001" resolveInfo="name" />
+        <link role="relationDeclaration" targetNodeId="3v.1169194664001" resolveInfo="name" />
         <node role="styleItem" type="jetbrains.mps.lang.editor.structure.TextBackgroundColorStyleClassItem" id="1197503944451686500">
           <property name="color" value="yellow" />
           <node role="query" type="jetbrains.mps.lang.editor.structure.RGBColor" id="2170653993872839502">
@@ -86,7 +104,7 @@
                   <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="3106315015966031646">
                     <link role="baseMethodDeclaration" targetNodeId="2.343373828473056899" resolveInfo="hasProjectionLevel" />
                     <node role="actualArgument" type="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" id="3106315015966031647">
-                      <link role="conceptDeclaration" targetNodeId="3v.343373828473056880" resolveInfo="ProjectionLevelAll" />
+                      <link role="conceptDeclaration" targetNodeId="2v.343373828473056880" resolveInfo="ProjectionLevelAll" />
                     </node>
                   </node>
                 </node>
@@ -106,7 +124,7 @@
                     <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="3106315015966031656">
                       <link role="baseMethodDeclaration" targetNodeId="2.343373828473056899" resolveInfo="hasProjectionLevel" />
                       <node role="actualArgument" type="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" id="3106315015966031657">
-                        <link role="conceptDeclaration" targetNodeId="3v.343373828473056880" resolveInfo="ProjectionLevelAll" />
+                        <link role="conceptDeclaration" targetNodeId="2v.343373828473056880" resolveInfo="ProjectionLevelAll" />
                       </node>
                     </node>
                   </node>
@@ -187,7 +205,7 @@
         <node role="editorComponent" type="jetbrains.mps.lang.editor.structure.InlineEditorComponent" id="5174648333272424963">
           <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="5174648333272652851">
             <property name="readOnly" value="true" />
-            <link role="relationDeclaration" targetNodeId="2v.1169194664001" resolveInfo="name" />
+            <link role="relationDeclaration" targetNodeId="3v.1169194664001" resolveInfo="name" />
           </node>
         </node>
       </node>

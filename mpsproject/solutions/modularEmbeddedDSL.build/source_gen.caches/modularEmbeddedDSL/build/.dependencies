@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="modularEmbeddedDSL.build.Info" />
+  <dependency className="modularEmbeddedDSL.build.help-build" />
+  <dependency className="modularEmbeddedDSL.build.installer" />
+  <dependency className="modularEmbeddedDSL.build.modularEmbeddedDSL" />
+  <dependency className="modularEmbeddedDSL.build.modularEmbeddedDSL-compile" />
+  <dependency className="modularEmbeddedDSL.build.modularEmbeddedDSL-default" />
+  <dependency className="modularEmbeddedDSL.build.modularEmbeddedDSL-default-dist" />
+  <dependency className="modularEmbeddedDSL.build.modularEmbeddedDSL-languages" />
+  <dependency className="modularEmbeddedDSL.build.mps" />
+</dependenciesRoot>
+

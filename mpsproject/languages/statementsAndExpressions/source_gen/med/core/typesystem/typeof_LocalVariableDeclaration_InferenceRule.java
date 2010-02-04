@@ -14,17 +14,17 @@ public class typeof_LocalVariableDeclaration_InferenceRule extends AbstractInfer
   public typeof_LocalVariableDeclaration_InferenceRule() {
   }
 
-  public void applyRule(final SNode localVariableDeclaration, final TypeCheckingContext typeCheckingContext) {
+  public void applyRule(final SNode lvd, final TypeCheckingContext typeCheckingContext) {
     {
-      SNode _nodeToCheck_1029348928467 = localVariableDeclaration;
+      SNode _nodeToCheck_1029348928467 = lvd;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "1881584577101954942", true), (SNode)typeCheckingContext.typeOf(SLinkOperations.getTarget(localVariableDeclaration, "type", true), "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "1881584577102046952", true), _nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "1881584577102046947", intentionProvider);
+      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "1881584577101954942", true), (SNode)typeCheckingContext.typeOf(SLinkOperations.getTarget(lvd, "type", true), "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "1881584577102046952", true), _nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "1881584577102046947", intentionProvider);
     }
-    if (SLinkOperations.getTarget(localVariableDeclaration, "init", true) != null) {
+    if (SLinkOperations.getTarget(lvd, "init", true) != null) {
       {
-        SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(localVariableDeclaration, "init", true);
+        SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(lvd, "init", true);
         BaseIntentionProvider intentionProvider = null;
-        typeCheckingContext.createLessThanInequation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "3454436015654254089", true), (SNode)typeCheckingContext.typeOf(SLinkOperations.getTarget(localVariableDeclaration, "type", true), "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "3454436015654254094", true), _nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "3454436015654254087", false, 0, intentionProvider);
+        typeCheckingContext.createLessThanInequation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "3454436015654254089", true), (SNode)typeCheckingContext.typeOf(SLinkOperations.getTarget(lvd, "type", true), "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "3454436015654254094", true), _nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "3454436015654254087", false, 0, intentionProvider);
       }
     }
   }

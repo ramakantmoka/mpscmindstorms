@@ -390,7 +390,7 @@
   </node>
   <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="1881584577102787812">
     <property name="name" value="IMedTyped" />
-    <property name="package" value="modules" />
+    <property name="package" value="types" />
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="4271434180064590876">
       <property name="metaClass" value="aggregation" />
       <property name="role" value="type" />
@@ -988,7 +988,6 @@
   </node>
   <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="343373828472902636">
     <property name="name" value="IHasIdentifierName" />
-    <property name="package" value="modules" />
     <node role="extends" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="343373828472902637">
       <link role="intfc" targetNodeId="2v.1169194658468" resolveInfo="INamedConcept" />
     </node>
@@ -1522,6 +1521,12 @@
       <property name="value" value="external module" />
       <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
     </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="5196379128660852760">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="enums" />
+      <property name="sourceCardinality" value="0..n" />
+      <link role="target" targetNodeId="5196379128660651525" resolveInfo="EnumDeclaration" />
+    </node>
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="7647825645222690257">
       <property name="metaClass" value="aggregation" />
       <property name="role" value="structs" />
@@ -1560,6 +1565,78 @@
     <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="7647825645222801541">
       <property name="name" value="filename" />
       <link role="dataType" targetNodeId="2v.1082983041843" resolveInfo="string" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="7974571013346136504">
+    <property name="package" value="expressions" />
+    <property name="name" value="ParenExpression" />
+    <link role="extends" targetNodeId="6441851857096548278" resolveInfo="Expression" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="7974571013346136505">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="expr" />
+      <link role="target" targetNodeId="6441851857096548278" resolveInfo="Expression" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="7974571013346136518">
+      <property name="value" value="(" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5196379128660651525">
+    <property name="package" value="types" />
+    <property name="name" value="EnumDeclaration" />
+    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="5196379128662492765">
+      <property name="name" value="optionalLowLevelName" />
+      <link role="dataType" targetNodeId="2v.1082983041843" resolveInfo="string" />
+    </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="5196379128660651526">
+      <link role="intfc" targetNodeId="343373828472902636" resolveInfo="IHasIdentifierName" />
+    </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="5196379128660651527">
+      <link role="intfc" targetNodeId="306587673255505535" resolveInfo="IExportableModuleContent" />
+    </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="5196379128660651528">
+      <link role="intfc" targetNodeId="8772584333841904457" resolveInfo="IContributesToHeader" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="5196379128660651531">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="literals" />
+      <property name="sourceCardinality" value="1..n" />
+      <link role="target" targetNodeId="5196379128660651529" resolveInfo="EnumLiteral" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="5196379128660651547">
+      <property name="value" value="enum" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5196379128660651529">
+    <property name="package" value="types" />
+    <property name="name" value="EnumLiteral" />
+    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="5196379128660651530">
+      <link role="intfc" targetNodeId="343373828472902636" resolveInfo="IHasIdentifierName" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5196379128660652068">
+    <property name="package" value="types" />
+    <property name="name" value="EnumType" />
+    <link role="extends" targetNodeId="4641466063286591366" resolveInfo="Type" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="5196379128660652069">
+      <property name="metaClass" value="reference" />
+      <property name="role" value="enum" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="5196379128660651525" resolveInfo="EnumDeclaration" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5196379128661423732">
+    <property name="package" value="expressions" />
+    <property name="name" value="EnumLiteralRef" />
+    <link role="extends" targetNodeId="6441851857096548278" resolveInfo="Expression" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="5196379128661423733">
+      <property name="metaClass" value="reference" />
+      <property name="role" value="literal" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="5196379128660651529" resolveInfo="EnumLiteral" />
     </node>
   </node>
 </model>

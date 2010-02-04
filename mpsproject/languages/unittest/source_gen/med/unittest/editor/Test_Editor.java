@@ -20,6 +20,7 @@ import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.smodel.IScope;
 import med.core.behavior.IProjectionLevelAware_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class Test_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -47,6 +48,9 @@ public class Test_Editor extends DefaultNodeEditor {
   private EditorCell createCollection_6970_1(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_6970_1");
+    if (renderingCondition6970_2(node, editorContext, editorContext.getOperationContext().getScope())) {
+      editorCell.addEditorCell(this.createConstant_6970_5(editorContext, node));
+    }
     editorCell.addEditorCell(this.createConstant_6970_1(editorContext, node));
     editorCell.addEditorCell(this.createProperty_6970_1(editorContext, node));
     editorCell.addEditorCell(this.createConstant_6970_4(editorContext, node));
@@ -100,6 +104,17 @@ public class Test_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_6970_4(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "/");
     editorCell.setCellId("Constant_6970_4");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createConstant_6970_5(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "exported");
+    editorCell.setCellId("Constant_6970_5");
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.TEXT_COLOR, MPSColors.DARK_GREEN);
+    }
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -167,5 +182,9 @@ public class Test_Editor extends DefaultNodeEditor {
 
   private static boolean renderingCondition6970_1(SNode node, EditorContext editorContext, IScope scope) {
     return !(IProjectionLevelAware_Behavior.call_hasProjectionLevel_343373828473056899(node, SConceptOperations.findConceptDeclaration("med.core.structure.ProjectionLevelAll")));
+  }
+
+  private static boolean renderingCondition6970_2(SNode node, EditorContext editorContext, IScope scope) {
+    return SPropertyOperations.getBoolean(node, "export");
   }
 }

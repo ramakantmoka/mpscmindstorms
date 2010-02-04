@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <nodeInfo nodeId="8261019787196946461" fileName="removeFeatureDependencyAnnotation_Intention.java" startLine="36" startPosition="76" endLine="37" endPosition="154" />
+  <nodeInfo nodeId="8261019787199026060" fileName="addFeatureDependencyAnnotation_Intention.java" startLine="48" startPosition="179" endLine="49" endPosition="86" />
+  <nodeInfo nodeId="8261019787199028630" fileName="addFeatureDependencyAnnotation_Intention.java" startLine="47" startPosition="76" endLine="48" endPosition="179" />
+</debugInfo>
+

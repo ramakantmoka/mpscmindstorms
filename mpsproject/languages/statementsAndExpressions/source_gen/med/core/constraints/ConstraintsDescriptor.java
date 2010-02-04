@@ -19,6 +19,7 @@ public class ConstraintsDescriptor implements IModelConstraints {
     ListSequence.fromList(this.myConstraints).addElement(new ModuleImport_importedModule_ReferentConstraint());
     ListSequence.fromList(this.myConstraints).addElement(new LocalVariableReference_variable_ReferentConstraint());
     ListSequence.fromList(this.myConstraints).addElement(new StructAttributeReference_attribute_ReferentConstraint());
+    ListSequence.fromList(this.myConstraints).addElement(new EnumLiteralRef_literal_ReferentConstraint());
   }
 
   public void unRegisterSelf(ModelConstraintsManager p0) {

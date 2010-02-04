@@ -2,11 +2,12 @@
 <model modelUID="r:da15a241-ebe1-4ced-8686-f7f682741511(main)">
   <persistence version="3" />
   <refactoringHistory />
+  <language namespace="50b44c57-34f1-428d-a7c3-d100606f8e2a(featureDependencies)" />
   <languageAspect modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" version="9" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590575(jetbrains.mps.gtext.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590571(jetbrains.mps.gtext.constraints)" version="8" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902c1(jetbrains.mps.baseLanguage.constraints)" version="83" />
-  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="1" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902db(jetbrains.mps.baseLanguage.blTypes.constraints)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.lang.core.constraints)" version="2" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
@@ -41,11 +42,11 @@
           <node role="statements" type="med.core.structure.WhileStatement" id="3454436015655736220">
             <node role="condition" type="med.core.structure.TrueLiteral" id="3454436015655736226" />
             <node role="body" type="med.core.structure.StatementList" id="3454436015655736222">
-              <node role="statements" type="med.logging.structure.LogStatement" id="3454436015655272879">
-                <property name="message" value="Hello Osek" />
-              </node>
               <node role="statements" type="med.tasks.structure.SleepStatement" id="3454436015655854865">
                 <property name="numerOfMilliseconds" value="500" />
+              </node>
+              <node role="statements" type="med.logging.structure.LogStatement" id="3454436015655272879">
+                <property name="message" value="Hello Osek" />
               </node>
             </node>
           </node>
@@ -56,6 +57,28 @@
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelAll" id="3454436015655272870" />
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelOutline" id="3454436015655272871" />
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelArchitecture" id="3454436015655272872" />
+  </node>
+  <node type="featureDependencies.structure.FeatureDependencyConfiguration" id="7974571013346434153">
+    <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="7974571013346434155">
+      <property name="showFeatureClause" value="true" />
+      <property name="highlightFeatureDependentNodes" value="true" />
+    </node>
+    <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="7974571013346434156">
+      <property name="name" value="x" />
+      <property name="selected" value="false" />
+    </node>
+    <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="7974571013346434158">
+      <property name="name" value="y" />
+      <property name="selected" value="true" />
+    </node>
+    <node role="features" type="featureDependencies.structure.MacroFeatureDeclaration" id="7974571013346434160">
+      <property name="name" value="z" />
+      <node role="expression" type="featureDependencies.structure.NotFE" id="7974571013346434162">
+        <node role="expr" type="featureDependencies.structure.AtomicFE" id="7974571013346434164">
+          <link role="feature" targetNodeId="7974571013346434156" resolveInfo="x" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
