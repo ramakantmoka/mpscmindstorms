@@ -1,5 +1,5 @@
 # Target specific macros
-TARGET = linefollower_OSEK
+TARGET = linefollower1_OSEK
 TARGET_SOURCES = \
 	linefollower.c
 TOPPERS_OSEK_OIL_SOURCE = ./linefollower.oil
