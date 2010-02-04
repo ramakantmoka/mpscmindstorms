@@ -37,6 +37,44 @@
         </node>
         <node role="type" type="med.core.structure.VoidType" id="7301321101284341503" />
       </node>
+      <node role="procedures" type="med.core.structure.ExternalProcedure" id="5196379128662167372">
+        <property name="name" value="ecrobot_set_light_sensor_active" />
+        <property name="export" value="true" />
+        <node role="type" type="med.core.structure.VoidType" id="5196379128662167373" />
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="5196379128662167374">
+          <property name="name" value="port_id" />
+          <node role="type" type="med.core.structure.EnumType" id="5196379128662167376">
+            <link role="enum" targetNodeId="5196379128661020614" resolveInfo="SENSOR_PORT_T" />
+          </node>
+        </node>
+      </node>
+      <node role="procedures" type="med.core.structure.ExternalProcedure" id="5196379128660651519">
+        <property name="name" value="ecrobot_set_light_sensor_inactive" />
+        <property name="export" value="true" />
+        <node role="type" type="med.core.structure.VoidType" id="5196379128660651523" />
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="5196379128660651521">
+          <property name="name" value="port_id" />
+          <node role="type" type="med.core.structure.EnumType" id="5196379128662167377">
+            <link role="enum" targetNodeId="5196379128661020614" resolveInfo="SENSOR_PORT_T" />
+          </node>
+        </node>
+      </node>
+      <node role="enums" type="med.core.structure.EnumDeclaration" id="5196379128661020614">
+        <property name="name" value="SENSOR_PORT_T" />
+        <property name="export" value="true" />
+        <node role="literals" type="med.core.structure.EnumLiteral" id="5196379128661020615">
+          <property name="name" value="NXT_PORT_S1" />
+        </node>
+        <node role="literals" type="med.core.structure.EnumLiteral" id="5196379128661020616">
+          <property name="name" value="NXT_PORT_S2" />
+        </node>
+        <node role="literals" type="med.core.structure.EnumLiteral" id="5196379128661020617">
+          <property name="name" value="NXT_PORT_S3" />
+        </node>
+        <node role="literals" type="med.core.structure.EnumLiteral" id="5196379128661020618">
+          <property name="name" value="NXT_PORT_S4" />
+        </node>
+      </node>
     </node>
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelAll" id="3454436015656156966" />
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelOutline" id="3454436015656156967" />

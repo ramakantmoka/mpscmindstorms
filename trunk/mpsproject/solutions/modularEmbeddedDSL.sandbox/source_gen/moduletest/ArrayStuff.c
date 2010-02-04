@@ -13,6 +13,7 @@
 // custom includes
 #include "stdint.h"
 #include "conio.h"
+#include "stdint.h"
 #include "malloc.h"
 
 
@@ -20,6 +21,7 @@ void ArrayStuff_array_testproc_createArrays(void) {
   cprintf( "running test: createArrays\n");
   int16_t test = 5;
   test = 10;
+  // no statement
   int16_t fourints[4] = { 1, 3, 5, 4 };
   if (1 != fourints[0]) {
     cprintf( "  FAILED: accessing array elements\n");

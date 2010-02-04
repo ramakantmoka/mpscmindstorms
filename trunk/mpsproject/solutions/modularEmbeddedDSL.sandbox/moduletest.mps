@@ -83,17 +83,6 @@
               </node>
             </node>
           </node>
-          <node role="statements" type="med.core.structure.AssignmentStatement" id="3104433618259944616">
-            <node role="lvalue" type="med.core.structure.StructByValueAttributeReference" id="3104433618259944614">
-              <link role="attribute" targetNodeId="306587673260153295" resolveInfo="a" />
-              <node role="variable" type="med.core.structure.LocalVariableReference" id="3104433618259944613">
-                <link role="variable" targetNodeId="8937796720369876470" resolveInfo="ih" />
-              </node>
-            </node>
-            <node role="rvalue" type="med.core.structure.IntConstantExpression" id="3104433618259944620">
-              <property name="value" value="20" />
-            </node>
-          </node>
           <node role="statements" type="med.unittest.structure.AssertEquals" id="306587673256693167">
             <property name="errorMessage" value="adding two ints" />
             <node role="actual" type="med.core.structure.ProcedureCall" id="306587673256693173">
@@ -230,13 +219,13 @@
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelArchitecture" id="306587673256693132" />
   </node>
   <node type="featureDependencies.structure.FeatureDependencyConfiguration" id="2411909105413587972">
-    <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="3454436015654910622">
+    <node role="mode" type="featureDependencies.structure.VariantDisplayMode" id="7974571013346434150">
+      <property name="removeNonSelectedStuffInEditor" value="true" />
       <property name="showFeatureClause" value="true" />
-      <property name="highlightFeatureDependentNodes" value="true" />
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="2411909105413587975">
       <property name="name" value="useHelper" />
-      <property name="selected" value="false" />
+      <property name="selected" value="true" />
     </node>
   </node>
   <node type="med.core.structure.Resource" id="5320189530627066200">
@@ -298,15 +287,16 @@
       <node role="contents" type="med.unittest.structure.Test" id="8937796720370088474">
         <property name="name" value="addTwoPhysicalSpeeds" />
         <property name="description" value="add two speed values specified as phyiscal values" />
+        <property name="export" value="true" />
         <node role="body" type="med.core.structure.StatementList" id="8937796720370088475">
           <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="8937796720370088476">
             <property name="name" value="s1" />
             <node role="type" type="med.quantities.structure.QuantityType" id="8937796720370088477">
               <link role="quantity" targetNodeId="8937796720370088430" resolveInfo="speed" />
             </node>
-            <node role="init" type="med.quantities.structure.MarkAsPhysicalOperator" id="8937796720370088479">
+            <node role="init" type="med.quantities.structure.MarkAsPhysicalOperator" id="5984954946222184156">
               <property name="value" value="100" />
-              <node role="type" type="med.quantities.structure.QuantityType" id="8937796720370088481">
+              <node role="type" type="med.quantities.structure.QuantityType" id="5984954946222184158">
                 <link role="quantity" targetNodeId="8937796720370088430" resolveInfo="speed" />
               </node>
             </node>
@@ -740,7 +730,14 @@
             <node role="lvalue" type="med.core.structure.LocalVariableReference" id="3454436015654360639">
               <link role="variable" targetNodeId="3454436015653797004" resolveInfo="test" />
             </node>
-            <node role="rvalue" type="med.core.structure.IntConstantExpression" id="3454436015654360644">
+            <node role="rvalue" type="med.core.structure.IntConstantExpression" id="7974571013346412465">
+              <property name="value" value="10" />
+            </node>
+          </node>
+          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="7974571013346412451">
+            <property name="name" value="i" />
+            <node role="type" type="med.core.structure.Int16" id="7974571013346412452" />
+            <node role="init" type="med.core.structure.IntConstantExpression" id="7974571013346412468">
               <property name="value" value="10" />
             </node>
           </node>
@@ -838,6 +835,27 @@
       <node role="contents" type="med.core.structure.Procedure" id="8470053389336744125">
         <property name="name" value="notSoVeryNice" />
         <node role="body" type="med.core.structure.StatementList" id="8470053389336744126">
+          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="5197108297148620324">
+            <property name="name" value="i" />
+            <node role="type" type="med.core.structure.Int16" id="5197108297148620325" />
+            <node role="init" type="med.core.structure.MultiplicationExpression" id="5197108297148620340">
+              <node role="left" type="med.core.structure.IntConstantExpression" id="5197108297148620339">
+                <property name="value" value="1" />
+              </node>
+              <node role="right" type="med.core.structure.PlusExpression" id="5197108297148620345">
+                <node role="left" type="med.core.structure.IntConstantExpression" id="5197108297148620344">
+                  <property name="value" value="2" />
+                </node>
+                <node role="right" type="med.core.structure.IntConstantExpression" id="5197108297148620349">
+                  <property name="value" value="3" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="statements" type="med.core.structure.IfStatement" id="5197108297148719562">
+            <node role="thenPart" type="med.core.structure.StatementList" id="5197108297148719563" />
+            <node role="condition" type="med.core.structure.Expression" id="5197108297148719564" />
+          </node>
           <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="8470053389337071917">
             <property name="name" value="fourints" />
             <node role="type" type="med.core.structure.SizedArrayType" id="8470053389337071918">
@@ -959,6 +977,7 @@
       <node role="contents" type="med.unittest.structure.Test" id="165111250875398262">
         <property name="name" value="staticstuff" />
         <property name="description" value="try out static arrays" />
+        <property name="export" value="true" />
         <node role="body" type="med.core.structure.StatementList" id="165111250875398263">
           <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="165111250877762859">
             <property name="name" value="begin" />
@@ -973,7 +992,7 @@
                 <link role="variable" targetNodeId="165111250877762859" resolveInfo="begin" />
               </node>
             </node>
-            <node role="rvalue" type="med.core.structure.IntConstantExpression" id="165111250877762870">
+            <node role="rvalue" type="med.core.structure.IntConstantExpression" id="7974571013346413075">
               <property name="value" value="1" />
             </node>
           </node>

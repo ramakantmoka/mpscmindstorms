@@ -13,10 +13,12 @@
 // custom includes
 #include "stdint.h"
 #include "conio.h"
+#include "stdint.h"
 #include "malloc.h"
 
 
 void PointerStuff_testingPointerSyntaxAndTypes_testpointer(void) {
+  int16_t j = (1 * ((2 + 3)));
   int16_t* intptr;
   intptr = (int16_t*)malloc(sizeof(int16_t));
   int16_t* anotherIntPrt = (int16_t*)malloc(sizeof(int16_t));

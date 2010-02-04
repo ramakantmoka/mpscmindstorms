@@ -14,6 +14,7 @@
 // custom includes
 #include "stdint.h"
 #include "conio.h"
+#include "stdint.h"
 
 
 void testMethodCall_test_testproc_testAdding(void) {

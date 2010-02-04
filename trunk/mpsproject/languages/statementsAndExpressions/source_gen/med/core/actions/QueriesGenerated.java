@@ -433,7 +433,7 @@ public class QueriesGenerated {
           SNode ass = SConceptOperations.createNewNode("med.core.structure.AssignmentStatement", null);
           SNode exprStmt = SNodeOperations.getAncestor(_context.getSourceNode(), "med.core.structure.ExpressionStatement", true, false);
           SNodeOperations.replaceWithAnother(exprStmt, ass);
-          SLinkOperations.setTarget(ass, "lvalue", _context.getSourceNode(), true);
+          SLinkOperations.setTarget(ass, "lvalue", SNodeOperations.cast(_context.getSourceNode(), "med.core.structure.ILValue"), true);
           SLinkOperations.setNewChild(ass, "rvalue", "med.core.structure.Expression");
           return SLinkOperations.getTarget(ass, "rvalue", true);
         }
