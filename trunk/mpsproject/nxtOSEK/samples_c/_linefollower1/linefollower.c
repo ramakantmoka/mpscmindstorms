@@ -7,8 +7,8 @@
 #define WHITE 400 // 388
 #define BLACK 600 // 607
 
-#define SLOW 10
-#define FAST 20
+#define SLOW 20
+#define FAST 40
 
 /*Osek declarations*/
 DeclareCounter(SysTimerCnt);
