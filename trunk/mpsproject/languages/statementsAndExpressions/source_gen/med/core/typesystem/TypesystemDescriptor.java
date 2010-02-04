@@ -254,5 +254,9 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       InequationReplacementRule_Runtime eliminationRule = new handleCovariantArraySubtypes_InequationReplacementRule();
       this.myInequationReplacementRules.add(eliminationRule);
     }
+    {
+      InequationReplacementRule_Runtime eliminationRule = new handleTypedefsAndBaseTypes_InequationReplacementRule();
+      this.myInequationReplacementRules.add(eliminationRule);
+    }
   }
 }

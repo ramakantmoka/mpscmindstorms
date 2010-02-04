@@ -53,46 +53,14 @@
   </component>
   <component name="ChangeListManager" verified="true">
     <list default="true" id="c29e4fa7-f461-48a1-bbcf-b67852d9acf8" name="Stuff I don't care about" comment="started implementing counters. Most of the line follower code is now in MPS. Code Generation is not yet finished.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/nxtosek/source_gen.caches/med/platform/nxtosek/rt/.dependencies" afterPath="$PROJECT_DIR$/languages/nxtosek/source_gen.caches/med/platform/nxtosek/rt/.dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen/med/core/generator/template/main/QueriesGenerated.java" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen/med/core/generator/template/main/QueriesGenerated.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen/med/core/structure/StatementList.java" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen/med/core/structure/StatementList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/languageModels/behavior.mps" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/languageModels/behavior.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/nxtosek/languageModels/editor.mps" afterPath="$PROJECT_DIR$/languages/nxtosek/languageModels/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/languageModels/structure.mps" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/languageModels/structure.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen/med/core/structure/ExternalModule.java" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen/med/core/structure/ExternalModule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/typesystem/.dependencies" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/typesystem/.dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen/med/core/actions/QueriesGenerated.java" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen/med/core/actions/QueriesGenerated.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/constraints/.dependencies" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/constraints/.dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/structure/.dependencies" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/structure/.dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/generator/template/main@generator.mps" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/generator/template/main@generator.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/LineFollower/lfmain.mps" afterPath="$PROJECT_DIR$/solutions/LineFollower/lfmain.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/languageModels/editor.mps" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/languageModels/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/LineFollower/source_gen/lfmain/LineFollower.c" afterPath="$PROJECT_DIR$/solutions/LineFollower/source_gen/lfmain/LineFollower.c" />
-      <change type="DELETED" beforePath="L:\mpsWorkspace-1.1\modularEmbeddedDSL\languages\nxtosek\source_gen.caches\med\platform\nxtosek\generator\template\main\.hash.-b8lyrv2673k23u878apy2m3whvf535p" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/nxtosek/languageModels/typesystem.mps" afterPath="$PROJECT_DIR$/languages/nxtosek/languageModels/typesystem.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/LineFollower/source_gen/lfmain/include/LineFollower.h" afterPath="$PROJECT_DIR$/solutions/LineFollower/source_gen/lfmain/include/LineFollower.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/generator/template/main/.debug" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/generator/template/main/.debug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/behavior/.debug" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/behavior/.debug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen/med/core/behavior/ExternalModule_Behavior.java" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen/med/core/behavior/ExternalModule_Behavior.java" />
-      <change type="DELETED" beforePath="L:\mpsWorkspace-1.1\modularEmbeddedDSL\solutions\LineFollower\source_gen.caches\lfmain\.hash.-14u82bxtjlntveyelk4ey2bkcffiez" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen/med/core/editor/ExternalModule_Editor.java" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen/med/core/editor/ExternalModule_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/languageModels/actions.mps" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/languageModels/actions.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/nxtosek/languageModels/structure.mps" afterPath="$PROJECT_DIR$/languages/nxtosek/languageModels/structure.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/typesystem/.debug" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/typesystem/.debug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen/med/core/constraints/LocalVariableReference_variable_ReferentConstraint.java" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen/med/core/constraints/LocalVariableReference_variable_ReferentConstraint.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen/med/core/editor/StructDeclaration_Editor.java" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen/med/core/editor/StructDeclaration_Editor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modularEmbeddedDSL.iws" afterPath="$PROJECT_DIR$/modularEmbeddedDSL.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen/med/core/typesystem/TypesystemDescriptor.java" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen/med/core/typesystem/TypesystemDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/LineFollower/LineFollower.msd" afterPath="$PROJECT_DIR$/solutions/LineFollower/LineFollower.msd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/nxtosek/source_gen/med/platform/nxtosek/rt/ecrobot_interface.h" afterPath="$PROJECT_DIR$/languages/nxtosek/source_gen/med/platform/nxtosek/rt/ecrobot_interface.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/LineFollower/source_gen.caches/lfmain/.hash.9st3yvpu84bj6rv8opeyavmign4yyqb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/actions/.debug" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/actions/.debug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/nxtosek/generator/template/main@generator.mps" afterPath="$PROJECT_DIR$/languages/nxtosek/generator/template/main@generator.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/editor/.dependencies" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/editor/.dependencies" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/LineFollower/lfmain.mps" afterPath="$PROJECT_DIR$/solutions/LineFollower/lfmain.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen/med/core/editor/ExternalModule_Editor.java" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen/med/core/editor/ExternalModule_Editor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/languageModels/editor.mps" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/languageModels/editor.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/typesystem/.dependencies" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/typesystem/.dependencies" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/nxtosek/languageAccessories/rt.mps" afterPath="$PROJECT_DIR$/languages/nxtosek/languageAccessories/rt.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/behavior/.dependencies" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/behavior/.dependencies" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/nxtosek/languageModels/behavior.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/languageModels/constraints.mps" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/languageModels/constraints.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/typesystem/.debug" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/source_gen.caches/med/core/typesystem/.debug" />
     </list>
     <list readonly="true" id="18bd06fe-b60f-4818-96c5-5fed37b25918" name="Default" comment="various smaller fixes. Need to start real OSek work soon">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/languageModels/typesystem.mps" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/languageModels/typesystem.mps" />
@@ -151,38 +119,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LineFollower" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="LineFollower" pinned="false" current="true" current-in-tab="true">
         <entry file="mps://lfmain/LineFollower">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FeatureDependencyConfiguration" pinned="false" current="true" current-in-tab="true">
-        <entry file="mps://lfmain/FeatureDependencyConfiguration">
+      <file leaf-file-name="Type" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://med.core.structure/Type">
           <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="normalPriorityStuff" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://med.platform.nxtosek.generator.template.main@generator/normalPriorityStuff">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="highPriorityStuff" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://med.platform.nxtosek.generator.template.main@generator/highPriorityStuff">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CounterDeclaration" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://med.platform.nxtosek.structure/CounterDeclaration">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="1">
+            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="4">
               <inner_tabs>
                 <tab index="0" />
                 <tab index="0" />
@@ -197,6 +144,132 @@
                 <tab index="0" />
               </inner_tabs>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TypeDefType" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://med.core.structure/TypeDefType">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="4">
+              <inner_tabs>
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="1" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+              </inner_tabs>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NxtOsekKernel" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://med.platform.nxtosek.rt/NxtOsekKernel">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExternalModule" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://med.core.structure/ExternalModule">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="4">
+              <inner_tabs>
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+              </inner_tabs>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Resource" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://med.core.structure/Resource">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="4">
+              <inner_tabs>
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+              </inner_tabs>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayType" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://med.core.structure/ArrayType">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="4">
+              <inner_tabs>
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="1" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+              </inner_tabs>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StructDeclaration" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://med.core.structure/StructDeclaration">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="4">
+              <inner_tabs>
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+              </inner_tabs>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="handleTypedefsAndBaseTypes" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://med.core.typesystem/handleTypedefsAndBaseTypes">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FeatureDependencyConfiguration" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://lfmain/FeatureDependencyConfiguration">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
           </provider>
         </entry>
       </file>
@@ -433,90 +506,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="med.platform.nxtosek" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="med.platform.nxtosek" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generator/main" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="med.platform.nxtosek.generator.template" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main@generator" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="med.platform.nxtosek" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="typesystem" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="med.platform.nxtosek" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="editor" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="med.platform.nxtosek" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="structure" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="med.core" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="LineFollower" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -537,6 +526,10 @@
               </PATH_ELEMENT>
               <PATH_ELEMENT>
                 <option name="myItemId" value="lfmain" />
+                <option name="myItemType" value="" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="LineFollower" />
                 <option name="myItemType" value="" />
               </PATH_ELEMENT>
             </PATH>
@@ -643,7 +636,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1170" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Concept Structure" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="34" side_tool="false" />
       <window_info id="cell explorer view" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
@@ -664,7 +657,7 @@
       <window_info id="Build Custom MPS" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="21" side_tool="false" />
       <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35" sideWeight="0.62189317" order="22" side_tool="true" />
       <window_info id="MPS Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35" sideWeight="0.3744051" order="23" side_tool="false" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21258593" sideWeight="0.6431373" order="0" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21258593" sideWeight="0.6431373" order="0" side_tool="false" />
       <window_info id="Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31862745" sideWeight="0.24590164" order="24" side_tool="false" />
       <window_info id="Replacement" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="25" side_tool="false" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810968" sideWeight="0.47065046" order="32" side_tool="false" />
@@ -1085,107 +1078,6 @@
     </GetOptions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://med.core.structure/PrimitiveType">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
-          <inner_tabs>
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-          </inner_tabs>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://med.core.structure/GenericIntegerType">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
-          <inner_tabs>
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-          </inner_tabs>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://med.platform.nxtosek.rt/NxtOsekKernel">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/languages/nxtosek/source_gen/med/platform/nxtosek/typesystem/typeof_CounterDeclaration_InferenceRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="4" selection-start="1351" selection-end="1351" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/languages/nxtosek/source_gen/med/platform/nxtosek/typesystem/typeof_CounterReference_InferenceRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="4" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="mps://med.platform.nxtosek.structure/CounterReference">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
-          <inner_tabs>
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-          </inner_tabs>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://med.platform.nxtosek.typesystem/typeof_CounterReference">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
-      </provider>
-    </entry>
-    <entry file="mps://med.platform.nxtosek.typesystem/typeof_CounterDeclaration">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
-      </provider>
-    </entry>
-    <entry file="mps://med.platform.nxtosek.structure/CounterType">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
-          <inner_tabs>
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-          </inner_tabs>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://med.platform.nxtosek.structure/CounterDeclaration">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="1">
@@ -1253,12 +1145,155 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://lfmain/LineFollower">
+    <entry file="mps://lfmain/FeatureDependencyConfiguration">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
       </provider>
     </entry>
-    <entry file="mps://lfmain/FeatureDependencyConfiguration">
+    <entry file="mps://med.core.structure/ExternalModule">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="4">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://med.core.structure/Resource">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="4">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://med.core.structure/ArrayType">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="4">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="1" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://med.core.typesystem/handleTypedefsAndBaseTypes">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
+      </provider>
+    </entry>
+    <entry file="mps://med.core.structure/SizedArrayType">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="4">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="2" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://med.core.structure/StructDeclaration">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="4">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://med.platform.nxtosek.rt/NxtOsekKernel">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
+      </provider>
+    </entry>
+    <entry file="mps://med.core.structure/TypeDefType">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="4">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="1" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://med.core.structure/Type">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="4">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://lfmain/LineFollower">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
       </provider>
