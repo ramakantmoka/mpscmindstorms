@@ -66,5 +66,12 @@
       </node>
     </node>
   </node>
+  <node type="jetbrains.mps.lang.behavior.structure.ConceptBehavior" id="5196379128667768643">
+    <property name="package" value="policy" />
+    <link role="concept" targetNodeId="1.6520964804315849120" resolveInfo="SchedulingPolicy" />
+    <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="5196379128667768644">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5196379128667768645" />
+    </node>
+  </node>
 </model>
 

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="lfmain.LineFollower" />
+  <dependency className="lfmain.Test" />
   <dependency className="lfmain.include/LineFollower" />
+  <dependency className="lfmain.include/Test" />
 </dependenciesRoot>
 
