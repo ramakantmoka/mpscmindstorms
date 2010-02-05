@@ -51,7 +51,9 @@
             </node>
           </node>
         </node>
-        <node role="scheduling" type="med.tasks.structure.SchedulingPolicyKeepAliveInBackground" id="3454436015655736218" />
+        <node role="scheduling" type="med.tasks.structure.SchedulingPolicyKeepAliveInBackground" id="3454436015655736218">
+          <property name="priority" value="1" />
+        </node>
       </node>
     </node>
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelAll" id="3454436015655272870" />
