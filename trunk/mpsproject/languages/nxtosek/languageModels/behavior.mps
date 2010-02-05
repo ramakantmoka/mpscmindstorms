@@ -10,54 +10,22 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.lang.core.constraints)" version="2" />
   <languageAspect modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" version="9" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902ae(jetbrains.mps.lang.typesystem.constraints)" version="17" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590328(jetbrains.mps.baseLanguage.collections.constraints)" version="6" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590345(jetbrains.mps.lang.pattern.structure)" version="0" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590334(jetbrains.mps.baseLanguage.closures.constraints)" version="2" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590340(jetbrains.mps.lang.pattern.constraints)" version="2" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959034b(jetbrains.mps.lang.quotation.structure)" version="0" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959028c(jetbrains.mps.lang.structure.constraints)" version="11" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902fb(jetbrains.mps.lang.smodel.constraints)" version="21" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959033d(jetbrains.mps.lang.annotations.structure)" version="0" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="1" />
   <import index="1" modelUID="r:5e9df045-8930-4ba7-8720-4642d630b9ff(med.platform.nxtosek.structure)" version="-1" />
-  <node type="jetbrains.mps.lang.behavior.structure.ConceptBehavior" id="5196379128664836248">
-    <link role="concept" targetNodeId="1.5196379128663887123" resolveInfo="CounterDeclaration" />
-    <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="5196379128664836249">
-      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5196379128664836250">
-        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="5196379128664836251">
-          <node role="expression" type="jetbrains.mps.baseLanguage.structure.AssignmentExpression" id="5196379128664935469">
-            <node role="rValue" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="5196379128664935472">
-              <property name="value" value="1" />
-            </node>
-            <node role="lValue" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5196379128664860156">
-              <node role="operand" type="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" id="5196379128664836252" />
-              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="5196379128664860160">
-                <link role="property" targetNodeId="1.5196379128664737892" resolveInfo="minCycle" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="5196379128664935474">
-          <node role="expression" type="jetbrains.mps.baseLanguage.structure.AssignmentExpression" id="5196379128664935475">
-            <node role="rValue" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="5196379128664935476">
-              <property name="value" value="1" />
-            </node>
-            <node role="lValue" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5196379128664935477">
-              <node role="operand" type="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" id="5196379128664935478" />
-              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="5196379128664935480">
-                <link role="property" targetNodeId="1.5196379128664737893" resolveInfo="maxValue" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="5196379128664935481">
-          <node role="expression" type="jetbrains.mps.baseLanguage.structure.AssignmentExpression" id="5196379128664935482">
-            <node role="rValue" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="5196379128664935483">
-              <property name="value" value="1" />
-            </node>
-            <node role="lValue" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5196379128664935484">
-              <node role="operand" type="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" id="5196379128664935485" />
-              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="5196379128664935493">
-                <link role="property" targetNodeId="1.5196379128664737894" resolveInfo="ticksPerBase" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
 </model>
 

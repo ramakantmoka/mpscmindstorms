@@ -14,13 +14,29 @@ CPU ATMEL_AT91SAM7S256
     USERESSCHEDULER = FALSE;
   };
   APPMODE appmode1{}; 
-TASK run{
-  AUTOSTART = TRUE {
-    APPMODE = appmode1;
+  COUNTER SysTimerCnt
+  {
+     MINCYCLE = 1;
+     MAXALLOWEDVALUE = 10000;
+     TICKSPERBASE = 1;
   };
+TASK run {
+  AUTOSTART = FALSE;
   PRIORITY = 1;
   ACTIVATION = 1;
   SCHEDULE = FULL;
   STACKSIZE = 512;
+};
+ALARM run_alarm {
+  COUNTER = SysTimerCnt;
+  ACTION = ACTIVATETASK {
+    TASK = run;
+  };
+  AUTOSTART = TRUE
+ { 
+    ALARMTIME = 1;
+    CYCLETIME = 2;
+    APPMODE = appmode1;
+  };
 };
 };

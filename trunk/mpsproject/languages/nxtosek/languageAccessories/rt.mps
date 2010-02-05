@@ -177,17 +177,6 @@
         <property name="export" value="true" />
         <node role="type" type="med.core.structure.VoidType" id="5196379128663212749" />
       </node>
-      <node role="procedures" type="med.core.structure.ExternalProcedure" id="5196379128663628664">
-        <property name="name" value="SignalCounter" />
-        <property name="export" value="true" />
-        <node role="type" type="med.core.structure.TypeDefType" id="5196379128663628668">
-          <link role="typedef" targetNodeId="5196379128663212746" resolveInfo="StatusType" />
-        </node>
-        <node role="parameters" type="med.core.structure.ProcedureParameter" id="5196379128663628666">
-          <property name="name" value="cnt" />
-          <node role="type" type="med.platform.nxtosek.structure.CounterType" id="5196379128664731998" />
-        </node>
-      </node>
       <node role="procedures" type="med.core.structure.ExternalProcedure" id="5196379128665272313">
         <property name="name" value="ShutdownOS" />
         <property name="export" value="true" />

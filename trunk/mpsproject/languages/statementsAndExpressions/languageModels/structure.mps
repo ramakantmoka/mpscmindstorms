@@ -1745,5 +1745,20 @@
       <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
     </node>
   </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="8437501635617843053">
+    <property name="package" value="procedures" />
+    <property name="name" value="TextBlock" />
+    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="8437501635617843054">
+      <link role="intfc" targetNodeId="306587673255505543" resolveInfo="IModuleContent" />
+    </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="4298159183043231190">
+      <link role="intfc" targetNodeId="8772584333841904456" resolveInfo="IReduceToImplementation" />
+    </node>
+    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="8437501635617843055">
+      <property name="name" value="text" />
+      <link role="dataType" targetNodeId="2v.1082983041843" resolveInfo="string" />
+    </node>
+  </node>
 </model>
 

@@ -25,11 +25,11 @@
       <property name="name" value="main" />
       <node role="contents" type="med.core.structure.SimpleIntConstant" id="5196379128666214925">
         <property name="name" value="WHITE" />
-        <property name="value" value="400" />
+        <property name="value" value="500" />
       </node>
       <node role="contents" type="med.core.structure.SimpleIntConstant" id="5196379128666214927">
         <property name="name" value="BLACK" />
-        <property name="value" value="600" />
+        <property name="value" value="700" />
       </node>
       <node role="contents" type="med.core.structure.SimpleIntConstant" id="5196379128666214941">
         <property name="name" value="SLOW" />
@@ -45,7 +45,7 @@
         <node role="body" type="med.core.structure.StatementList" id="5196379128660651515">
           <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128661692826">
             <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128662061574">
-              <link role="procedure" targetNodeId="2v.5196379128660651519" resolveInfo="ecrobot_set_light_sensor_active" />
+              <link role="procedure" targetNodeId="2v.5196379128662167372" resolveInfo="ecrobot_set_light_sensor_active" />
               <node role="actuals" type="med.core.structure.EnumLiteralRef" id="5196379128665751209">
                 <link role="literal" targetNodeId="2v.5196379128661020615" resolveInfo="NXT_PORT_S1" />
               </node>
@@ -399,7 +399,7 @@
     </node>
   </node>
   <node type="featureDependencies.structure.FeatureDependencyConfiguration" id="5196379128662641904">
-    <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="5196379128667374972">
+    <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="8437501635617537234">
       <property name="showFeatureClause" value="true" />
       <property name="highlightFeatureDependentNodes" value="true" />
     </node>
