@@ -1725,5 +1725,25 @@
       <link role="target" targetNodeId="5196379128665751219" resolveInfo="SimpleConstant" />
     </node>
   </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5196379128666429386">
+    <property name="package" value="types" />
+    <property name="name" value="TypeDefCastOperator" />
+    <link role="extends" targetNodeId="6441851857096548278" resolveInfo="Expression" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="5196379128666429387">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="value" />
+      <link role="target" targetNodeId="6441851857096548278" resolveInfo="Expression" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="5196379128666429402">
+      <property name="metaClass" value="reference" />
+      <property name="role" value="typeDef" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="5196379128662886872" resolveInfo="TypeDef" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="5196379128666512625">
+      <property name="value" value="as" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+  </node>
 </model>
 

@@ -105,8 +105,11 @@
               <node role="left" type="med.core.structure.LocalVariableReference" id="5196379128665272307">
                 <link role="variable" targetNodeId="5196379128663614635" resolveInfo="ercd" />
               </node>
-              <node role="right" type="med.core.structure.IntConstantExpression" id="5196379128665514640">
-                <property name="value" value="0" />
+              <node role="right" type="med.core.structure.TypeDefCastOperator" id="5196379128667255228">
+                <link role="typeDef" targetNodeId="2v.5196379128663212746" resolveInfo="StatusType" />
+                <node role="value" type="med.core.structure.IntConstantExpression" id="5196379128667255227">
+                  <property name="value" value="0" />
+                </node>
               </node>
             </node>
           </node>
@@ -215,7 +218,7 @@
                   </node>
                 </node>
                 <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="5196379128665271412">
-                  <property name="isNew" value="true" />
+                  <property name="isNew" value="false" />
                   <node role="expression" type="featureDependencies.structure.AtomicFE" id="5196379128665271413">
                     <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
                   </node>
@@ -279,7 +282,7 @@
                   </node>
                 </node>
                 <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="5196379128666214967">
-                  <property name="isNew" value="true" />
+                  <property name="isNew" value="false" />
                   <node role="expression" type="featureDependencies.structure.AtomicFE" id="5196379128666214968">
                     <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
                   </node>
@@ -291,7 +294,7 @@
             <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128662886860">
               <link role="procedure" targetNodeId="2v.5196379128662886855" resolveInfo="display_update" />
               <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="5196379128665272300">
-                <property name="isNew" value="true" />
+                <property name="isNew" value="false" />
                 <node role="expression" type="featureDependencies.structure.AtomicFE" id="5196379128665272302">
                   <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
                 </node>
@@ -304,7 +307,10 @@
             </node>
           </node>
         </node>
-        <node role="scheduling" type="med.tasks.structure.SchedulingPolicyOnceUponStartup" id="5196379128662641912" />
+        <node role="scheduling" type="med.tasks.structure.SchedulingPolicyCyclic" id="5196379128667602096">
+          <property name="priority" value="1" />
+          <property name="every" value="1" />
+        </node>
       </node>
       <node role="contents" type="med.core.structure.Procedure" id="5196379128662886748">
         <property name="name" value="updateMotorSettings" />
@@ -440,9 +446,9 @@
     </node>
   </node>
   <node type="featureDependencies.structure.FeatureDependencyConfiguration" id="5196379128662641904">
-    <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="5196379128662886854">
+    <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="5196379128667374972">
       <property name="showFeatureClause" value="true" />
-      <property name="highlightFeatureDependentNodes" value="false" />
+      <property name="highlightFeatureDependentNodes" value="true" />
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="5196379128662641907">
       <property name="name" value="debugOutput" />

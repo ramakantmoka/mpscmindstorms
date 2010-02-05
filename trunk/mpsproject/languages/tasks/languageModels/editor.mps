@@ -36,12 +36,15 @@
     <property name="package" value="policy" />
     <link role="conceptDeclaration" targetNodeId="1.6520964804315849122" resolveInfo="SchedulingPolicyOnceUponStartup" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="6520964804315849125">
-      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="6520964804315849128">
-        <property name="text" value="scheduled" />
-      </node>
       <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="6520964804315849127" />
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="6520964804315849130">
         <property name="text" value="onceUponStartup" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128667476343">
+        <property name="text" value="prio =" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="5196379128667476345">
+        <link role="relationDeclaration" targetNodeId="1.5196379128667476330" resolveInfo="priority" />
       </node>
     </node>
   </node>
@@ -128,12 +131,15 @@
     <property name="package" value="policy" />
     <link role="conceptDeclaration" targetNodeId="1.3454436015655704207" resolveInfo="SchedulingPolicyKeepAliveInBackground" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="3454436015655704210">
-      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="3454436015655704211">
-        <property name="text" value="scheduled" />
-      </node>
       <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="3454436015655704212" />
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="3454436015655704213">
         <property name="text" value="alwaysRunningInBackground" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128667476339">
+        <property name="text" value="prio =" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="5196379128667476341">
+        <link role="relationDeclaration" targetNodeId="1.5196379128667476330" resolveInfo="priority" />
       </node>
     </node>
   </node>
@@ -149,6 +155,28 @@
       </node>
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="3454436015655736239">
         <property name="text" value="ms" />
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="5196379128667374975">
+    <property name="package" value="policy" />
+    <link role="conceptDeclaration" targetNodeId="1.5196379128667374973" resolveInfo="SchedulingPolicyCyclic" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="5196379128667374977">
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128667374980">
+        <property name="text" value="cyclic" />
+      </node>
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="5196379128667374979" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128667476332">
+        <property name="text" value="prio =" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="5196379128667476335">
+        <link role="relationDeclaration" targetNodeId="1.5196379128667476330" resolveInfo="priority" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128667476337">
+        <property name="text" value="every =" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="5196379128667374982">
+        <link role="relationDeclaration" targetNodeId="1.5196379128667374974" resolveInfo="every" />
       </node>
     </node>
   </node>

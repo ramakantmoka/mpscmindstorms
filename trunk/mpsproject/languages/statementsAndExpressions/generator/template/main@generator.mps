@@ -4166,5 +4166,30 @@
       <node role="templateFragment$attribute" type="jetbrains.mps.lang.generator.structure.TemplateFragment" id="5196379128662384663" />
     </node>
   </node>
+  <node type="jetbrains.mps.lang.generator.structure.MappingConfiguration" id="5196379128667344285">
+    <property name="name" value="highPriorityStuff" />
+    <property name="topPriorityGroup" value="true" />
+    <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="5196379128667344286">
+      <link role="applicableConcept" targetNodeId="1.5196379128666429386" resolveInfo="TypeDefCastOperator" />
+      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" id="5196379128667344288">
+        <node role="templateNode" type="jetbrains.mps.lang.core.structure.BaseConcept" id="5196379128667344289">
+          <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" id="5196379128667344291">
+            <node role="sourceNodeQuery" type="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" id="5196379128667344294">
+              <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5196379128667344295">
+                <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="5196379128667344296">
+                  <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5196379128667344297">
+                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="5196379128667344298">
+                      <link role="link" targetNodeId="1.5196379128666429387" />
+                    </node>
+                    <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="5196379128667344299" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

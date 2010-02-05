@@ -8,6 +8,10 @@ import jetbrains.mps.nodeEditor.EditorContext;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
+import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.smodel.IOperationContext;
+import jetbrains.mps.nodeEditor.EditorManager;
 
 public class SchedulingPolicyOnceUponStartup_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -17,13 +21,14 @@ public class SchedulingPolicyOnceUponStartup_Editor extends DefaultNodeEditor {
   private EditorCell createCollection_1760_0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_1760_0");
-    editorCell.addEditorCell(this.createConstant_1760_0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_1760_1(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_1760_0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_1760_0(editorContext, node));
     return editorCell;
   }
 
   private EditorCell createConstant_1760_0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "scheduled");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "prio =");
     editorCell.setCellId("Constant_1760_0");
     editorCell.setDefaultText("");
     return editorCell;
@@ -33,6 +38,24 @@ public class SchedulingPolicyOnceUponStartup_Editor extends DefaultNodeEditor {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "onceUponStartup");
     editorCell.setCellId("Constant_1760_1");
     editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createProperty_1760_0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+    provider.setRole("priority");
+    provider.setNoTargetText("<no priority>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("property_priority");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      IOperationContext opContext = editorContext.getOperationContext();
+      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
+      return manager.createRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
     return editorCell;
   }
 }
