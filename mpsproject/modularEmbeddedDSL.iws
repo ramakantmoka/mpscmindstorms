@@ -52,42 +52,58 @@
     <option name="historyRevisionsNumber" value="4" />
   </component>
   <component name="ChangeListManager" verified="true">
-    <list default="true" id="c29e4fa7-f461-48a1-bbcf-b67852d9acf8" name="Stuff I don't care about" comment="worked a little bit with the tasks">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modularEmbeddedDSL.iws" afterPath="$PROJECT_DIR$/modularEmbeddedDSL.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/LineFollower/lfmain.mps" afterPath="$PROJECT_DIR$/solutions/LineFollower/lfmain.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/languageModels/editor.mps" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/languageModels/editor.mps" />
-    </list>
-    <list readonly="true" id="18bd06fe-b60f-4818-96c5-5fed37b25918" name="Default" comment="various smaller fixes. Need to start real OSek work soon">
+    <list default="true" readonly="true" id="18bd06fe-b60f-4818-96c5-5fed37b25918" name="Default" comment="various smaller fixes. Need to start real OSek work soon">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/NewSolution/source_gen" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/NewSolution/source_gen.caches/m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/NewSolution/source_gen/m/include" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/LineFollower/source_gen/lfmain/include/Test.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/NewSolution/source_gen/m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/NewSolution/source_gen.caches" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/NewSolution/source_gen/m/include/r.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/LineFollower/source_gen.caches/lfmain/.hash.brkfi7mwh8csaj3ezy8ktpvkt82puzh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/LineFollower/source_gen/lfmain/Test.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/NewSolution/source_gen/m/r.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/tasks/languageModels/behavior.mps" afterPath="$PROJECT_DIR$/languages/tasks/languageModels/behavior.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/tasks/source_gen.caches/med/tasks/behavior/.dependencies" afterPath="$PROJECT_DIR$/languages/tasks/source_gen.caches/med/tasks/behavior/.dependencies" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/statementsAndExpressions/languageModels/typesystem.mps" afterPath="$PROJECT_DIR$/languages/statementsAndExpressions/languageModels/typesystem.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modularEmbeddedDSL.iws" afterPath="$PROJECT_DIR$/modularEmbeddedDSL.iws" />
+      <change type="DELETED" beforePath="L:\mpsWorkspace-1.1\modularEmbeddedDSL\languages\tasks\source_gen.caches\med\tasks\behavior\.hash.-4t9lt419i6f4fj33qec8wui9eibimu" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/LineFollower/lfmain.mps" afterPath="$PROJECT_DIR$/solutions/LineFollower/lfmain.mps" />
+      <change type="DELETED" beforePath="L:\mpsWorkspace-1.1\modularEmbeddedDSL\solutions\LineFollower\source_gen.caches\lfmain\.hash.-evfgno1j4p9pdx45g17fnitj6zepouz" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/NewSolution/source_gen.caches/m/.hash.-6e39yuw6xvohqc2bvkelqqu8rsw1e16" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/NewSolution/source_gen.caches/m/.dependencies" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/LineFollower/source_gen/lfmain/LineFollower.c" afterPath="$PROJECT_DIR$/solutions/LineFollower/source_gen/lfmain/LineFollower.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/LineFollower/source_gen.caches/lfmain/.dependencies" afterPath="$PROJECT_DIR$/solutions/LineFollower/source_gen.caches/lfmain/.dependencies" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/LineFollower/source_gen/lfmain/include/LineFollower.h" afterPath="$PROJECT_DIR$/solutions/LineFollower/source_gen/lfmain/include/LineFollower.h" />
     </list>
-    <ignored path="languages/unittest/classes_gen/" />
-    <ignored path="languages/win32/classes_gen/" />
-    <ignored path="languages/nxtosek/source_gen.caches/" />
-    <ignored mask="*.java" />
-    <ignored path="languages/tasks/source_gen.caches/" />
-    <ignored path="languages/nxtosek/source_gen/" />
-    <ignored mask=".debug" />
-    <ignored path="languages/featureDependencies/source_gen/" />
     <ignored path="languages/logging/source_gen/" />
-    <ignored path="languages/unittest/source_gen.caches/" />
-    <ignored path="languages/statementsAndExpressions/source_gen.caches/" />
-    <ignored path="languages/nxtosek/classes_gen/" />
-    <ignored path="languages/win32/source_gen/" />
-    <ignored path="languages/statementsAndExpressions/classes_gen/" />
-    <ignored path="languages/quantities/source_gen.caches/" />
-    <ignored path="languages/tasks/classes_gen/" />
     <ignored path="languages/featureDependencies/source_gen.caches/" />
-    <ignored path="languages/statementsAndExpressions/source_gen/" />
-    <ignored path="languages/logging/source_gen.caches/" />
-    <ignored path="languages/quantities/source_gen/" />
-    <ignored path=".idea/workspace.xml" />
+    <ignored path="languages/statementsAndExpressions/classes_gen/" />
     <ignored path="languages/featureDependencies/classes_gen/" />
-    <ignored path="languages/tasks/source_gen/" />
-    <ignored path="languages/quantities/classes_gen/" />
-    <ignored path="languages/win32/source_gen.caches/" />
-    <ignored path="languages/unittest/source_gen/" />
     <ignored path="languages/logging/classes_gen/" />
+    <ignored path="languages/win32/source_gen.caches/" />
+    <ignored path="languages/nxtosek/source_gen/" />
     <ignored path="modularEmbeddedDSL.mpr.iws" />
+    <ignored path="languages/win32/classes_gen/" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored mask="*.java" />
+    <ignored mask=".debug" />
+    <ignored path="languages/statementsAndExpressions/source_gen/" />
+    <ignored path="languages/quantities/source_gen.caches/" />
+    <ignored path="languages/statementsAndExpressions/source_gen.caches/" />
+    <ignored path="languages/featureDependencies/source_gen/" />
+    <ignored path="languages/tasks/source_gen/" />
+    <ignored path="languages/unittest/source_gen.caches/" />
+    <ignored path="languages/quantities/classes_gen/" />
+    <ignored path="languages/tasks/source_gen.caches/" />
+    <ignored path="languages/unittest/classes_gen/" />
+    <ignored path="languages/logging/source_gen.caches/" />
+    <ignored path="languages/unittest/source_gen/" />
+    <ignored path="languages/tasks/classes_gen/" />
+    <ignored path="languages/win32/source_gen/" />
+    <ignored path="languages/quantities/source_gen/" />
+    <ignored path="languages/nxtosek/source_gen.caches/" />
+    <ignored path="languages/nxtosek/classes_gen/" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="true" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,89 +121,33 @@
         <finder class_name="jetbrains.mps.lang.structure.findUsages.ConceptInstances_Finder" />
       </finders>
     </option>
-    <option class_name="jetbrains.mps.ide.findusages.view.optionseditor.options.ScopeOptions">
-      <scope_type scope_type="global_scope" module="&lt;default&gt;" model="&lt;default&gt;" />
-    </option>
     <option class_name="jetbrains.mps.ide.findusages.view.optionseditor.options.ViewOptions">
       <flags show_one_result="true" new_tab="false" />
+    </option>
+    <option class_name="jetbrains.mps.ide.findusages.view.optionseditor.options.ScopeOptions">
+      <scope_type scope_type="global_scope" module="&lt;default&gt;" model="&lt;default&gt;" />
     </option>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LineFollower" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LineFollower" pinned="false" current="false" current-in-tab="false">
         <entry file="mps://lfmain/LineFollower">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleIntConstant" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://med.core.structure/SimpleIntConstant">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="1">
-              <inner_tabs>
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-              </inner_tabs>
-            </state>
+      <file leaf-file-name="behavior.mps" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/languages/tasks/languageModels/behavior.mps">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SchedulingPolicyOnceUponStartup" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://med.tasks.structure/SchedulingPolicyOnceUponStartup">
+      <file leaf-file-name="Task" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://med.tasks.structure/Task">
           <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="1">
-              <inner_tabs>
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-              </inner_tabs>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SchedulingPolicyCyclic" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://med.tasks.structure/SchedulingPolicyCyclic">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="1">
-              <inner_tabs>
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-                <tab index="0" />
-              </inner_tabs>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SchedulingPolicyKeepAliveInBackground" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://med.tasks.structure/SchedulingPolicyKeepAliveInBackground">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="1">
+            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
               <inner_tabs>
                 <tab index="0" />
                 <tab index="0" />
@@ -208,7 +168,7 @@
       <file leaf-file-name="SchedulingPolicy" pinned="false" current="false" current-in-tab="false">
         <entry file="mps://med.tasks.structure/SchedulingPolicy">
           <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="3">
               <inner_tabs>
                 <tab index="0" />
                 <tab index="0" />
@@ -223,13 +183,6 @@
                 <tab index="0" />
               </inner_tabs>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FeatureDependencyConfiguration" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://lfmain/FeatureDependencyConfiguration">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
           </provider>
         </entry>
       </file>
@@ -441,17 +394,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="FileSystem">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modularEmbeddedDSL.mpr" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <selection />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -460,10 +402,32 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LineFollower" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lfmain" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
           <selection>
             <PATH>
               <PATH_ELEMENT>
                 <option name="myItemId" value="Project" />
+                <option name="myItemType" value="" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="LineFollower" />
+                <option name="myItemType" value="" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="lfmain" />
                 <option name="myItemType" value="" />
               </PATH_ELEMENT>
               <PATH_ELEMENT>
@@ -485,12 +449,23 @@
           <selection />
         </subPane>
       </pane>
+      <pane id="FileSystem">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modularEmbeddedDSL.mpr" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <selection />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2" value="48" />
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2" value="48" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2" value="51" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3" value="25" />
@@ -499,8 +474,8 @@
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0" value="35" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0" value="51" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4" value="490" />
-    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1" value="1" />
     <property name="options.lastSelected" value="com.intellij.openapi.vcs.changes.ui.IgnoredSettingsPanel" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4" value="4" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1" value="54" />
@@ -593,16 +568,15 @@
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="19" side_tool="false" />
       <window_info id="Class Hierarchy" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="20" side_tool="false" />
       <window_info id="Build Custom MPS" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="21" side_tool="false" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35" sideWeight="0.62189317" order="22" side_tool="true" />
-      <window_info id="MPS Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35" sideWeight="0.3744051" order="23" side_tool="false" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21258593" sideWeight="0.6431373" order="0" side_tool="false" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25588235" sideWeight="0.45214173" order="22" side_tool="true" />
+      <window_info id="MPS Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35" sideWeight="0.37281862" order="23" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21258593" sideWeight="0.7372549" order="0" side_tool="false" />
       <window_info id="Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31862745" sideWeight="0.24590164" order="24" side_tool="false" />
       <window_info id="Replacement" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="25" side_tool="false" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810968" sideWeight="0.47065046" order="32" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="26" side_tool="false" />
       <window_info id="Module Repository Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.49709725" order="28" side_tool="false" />
       <window_info id="Module Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.49129173" order="31" side_tool="false" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25588235" sideWeight="0.5464191" order="35" side_tool="false" x="175" y="206" width="1004" height="710" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25588235" sideWeight="0.54415655" order="35" side_tool="false" x="175" y="206" width="1004" height="710" />
       <window_info id="Model Repository Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="33" side_tool="false" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19249074" sideWeight="0.73751223" order="2" side_tool="false" />
@@ -612,6 +586,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810968" sideWeight="0.47065046" order="32" side_tool="false" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" />
       <window_info id="JUnitTest" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="27" side_tool="false" />
       <window_info id="RunClass" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="29" side_tool="false" />
@@ -1016,113 +991,7 @@
     </GetOptions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://med.core.structure/Type">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="4">
-          <inner_tabs>
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-          </inner_tabs>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://med.core.structure/SimpleConstant">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="3">
-          <inner_tabs>
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-          </inner_tabs>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://med.core.structure/SimpleConstantRef">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="1">
-          <inner_tabs>
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-          </inner_tabs>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://med.core.typesystem/typeof_TypeDefCastOperator">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
-      </provider>
-    </entry>
-    <entry file="mps://med.core.structure/TypeDefCastOperator">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="1">
-          <inner_tabs>
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-          </inner_tabs>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://med.core.actions/makeArray">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
-      </provider>
-    </entry>
-    <entry file="mps://med.core.actions/makeTypeDefCast">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
-      </provider>
-    </entry>
-    <entry file="mps://med.core.generator.template.main@generator/expressions">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
-      </provider>
-    </entry>
-    <entry file="mps://med.core.generator.template.main@generator/highPriorityStuff">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
-      </provider>
-    </entry>
-    <entry file="mps://lfmain/FeatureDependencyConfiguration">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
-      </provider>
-    </entry>
-    <entry file="mps://med.tasks.structure/SchedulingPolicy">
+    <entry file="mps://med.tasks.structure/SchedulingPolicyOnceUponStartup">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
           <inner_tabs>
@@ -1179,9 +1048,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://med.tasks.structure/SchedulingPolicyOnceUponStartup">
+    <entry file="mps://med.core.structure/HeaderAndBody">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="1">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
           <inner_tabs>
             <tab index="0" />
             <tab index="0" />
@@ -1198,9 +1067,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://med.core.structure/SimpleIntConstant">
+    <entry file="mps://med.core.generator.template.main@generator/procedures">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="1">
+        <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
+      </provider>
+    </entry>
+    <entry file="mps://med.core.generator.template.main@generator/highPriorityStuff">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
+      </provider>
+    </entry>
+    <entry file="mps://med.platform.nxtosek.generator.template.main@generator/reduce_Task">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
+      </provider>
+    </entry>
+    <entry file="mps://med.platform.nxtosek.generator.template.main@generator/oilfile">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
+      </provider>
+    </entry>
+    <entry file="mps://med.platform.nxtosek.generator.template.main@generator/normalPriorityStuff">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
+      </provider>
+    </entry>
+    <entry file="mps://med.platform.nxtosek.generator.template.main@generator/addOsekIncludes">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
+      </provider>
+    </entry>
+    <entry file="mps://med.platform.nxtosek.generator.template.main@generator/highPriorityStuff">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
+      </provider>
+    </entry>
+    <entry file="mps://lfmain/FeatureDependencyConfiguration">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
+      </provider>
+    </entry>
+    <entry file="mps://med.tasks.structure/Task">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://med.tasks.structure/SchedulingPolicy">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="3">
           <inner_tabs>
             <tab index="0" />
             <tab index="0" />
@@ -1220,6 +1148,11 @@
     <entry file="mps://lfmain/LineFollower">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/tasks/languageModels/behavior.mps">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
   </component>

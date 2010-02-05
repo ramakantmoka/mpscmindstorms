@@ -13,8 +13,6 @@
 #include "ecrobot_interface.h"
 
 // custom includes
-#include "kernel.h"
-#include "kernel_id.h"
 
 
 void ecrobot_device_initialize(void) {
@@ -23,38 +21,6 @@ void ecrobot_device_initialize(void) {
 
 void ecrobot_device_terminate(void) {
   ecrobot_set_light_sensor_inactive (NXT_PORT_S1 );
-}
-
-void user_1ms_isr_type2(void) {
-  StatusType ercd = SignalCounter ( );
-  if (ercd != 0) {
-    ShutdownOS (ercd );
-}
-}
-TASK(run) {
-int line = ecrobot_get_light_sensor (NXT_PORT_S1 );
-{
-display_goto_xy (0, 0 );
-display_string ("Light" );
-display_goto_xy (1, 1 );
-display_int (line, 0 );
-
-}
-if ((line < (((400 + 600)) / (2)))) {
-  int speedLeft = 20;
-  int speedRight = 40;
-  LineFollower_main_updateMotorSettings (speedLeft, speedRight );
-  LineFollower_main_displaySpeeds (speedLeft, speedRight );
-} else {
-    int speedLeft = 40;
-    int speedRight = 20;
-    LineFollower_main_updateMotorSettings (speedLeft, speedRight );
-    LineFollower_main_displaySpeeds (speedLeft, speedRight );
-
-}
-display_update ( );
-TerminateTask ( );
-
 }
 
 void LineFollower_main_updateMotorSettings(int leftSpeed, int rightSpeed) {
