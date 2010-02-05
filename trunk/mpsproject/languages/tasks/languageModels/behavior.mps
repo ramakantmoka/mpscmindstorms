@@ -70,7 +70,21 @@
     <property name="package" value="policy" />
     <link role="concept" targetNodeId="1.6520964804315849120" resolveInfo="SchedulingPolicy" />
     <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="5196379128667768644">
-      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5196379128667768645" />
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5196379128667768645">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="4423275912138814387">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.AssignmentExpression" id="4423275912138913605">
+            <node role="rValue" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="4423275912138913608">
+              <property name="value" value="1" />
+            </node>
+            <node role="lValue" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="4423275912138838292">
+              <node role="operand" type="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" id="4423275912138814388" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="4423275912138838296">
+                <link role="property" targetNodeId="1.5196379128667476330" resolveInfo="priority" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

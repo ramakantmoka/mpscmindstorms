@@ -21,8 +21,8 @@ void user_1ms_isr_type2(void) {
 }
 TASK(backgroundtask) {
 while (1) {
-  ecrobot_status_monitor ("Hello Osek" );
   systick_wait_ms (500 );
+  ecrobot_status_monitor ("Hello Osek" );
 
 }
 
