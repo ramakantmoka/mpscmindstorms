@@ -387,6 +387,30 @@ public class QueriesGenerated {
     return result;
   }
 
+  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_Expression_5196379128667158338(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
+    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    {
+      SNode concept = SConceptOperations.findConceptDeclaration("med.core.structure.TypeDefCastOperator");
+      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
+        public SNode doSubstitute(String pattern) {
+          SNode ass = SConceptOperations.createNewNode("med.core.structure.TypeDefCastOperator", null);
+          SNodeOperations.replaceWithAnother(_context.getSourceNode(), ass);
+          SLinkOperations.setTarget(ass, "value", _context.getSourceNode(), true);
+          return SLinkOperations.getTarget(ass, "typeDef", false);
+        }
+
+        public String getMatchingText(String pattern) {
+          return "as";
+        }
+
+        public String getVisibleMatchingText(String pattern) {
+          return this.getMatchingText(pattern);
+        }
+      });
+    }
+    return result;
+  }
+
   public static List<INodeSubstituteAction> sideTransform_ActionsFactory_IVariableReference_6275945668714243463(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
     List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
     {

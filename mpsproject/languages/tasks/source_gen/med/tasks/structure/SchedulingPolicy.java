@@ -10,9 +10,18 @@ import jetbrains.mps.project.GlobalScope;
 
 public class SchedulingPolicy extends MedBase {
   public static final String concept = "med.tasks.structure.SchedulingPolicy";
+  public static final String PRIORITY = "priority";
 
   public SchedulingPolicy(SNode node) {
     super(node);
+  }
+
+  public int getPriority() {
+    return this.getIntegerProperty(SchedulingPolicy.PRIORITY);
+  }
+
+  public void setPriority(int value) {
+    this.setIntegerProperty(SchedulingPolicy.PRIORITY, value);
   }
 
   public static SchedulingPolicy newInstance(SModel sm, boolean init) {

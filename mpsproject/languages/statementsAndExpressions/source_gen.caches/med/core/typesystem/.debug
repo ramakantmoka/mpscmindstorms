@@ -112,6 +112,8 @@
   <nodeInfo nodeId="5196379128665643396" fileName="handleTypedefsAndBaseTypes_InequationReplacementRule.java" startLine="27" startPosition="35" endLine="28" endPosition="189" />
   <nodeInfo nodeId="5196379128665934992" fileName="typeof_SimpleIntConstant_InferenceRule.java" startLine="17" startPosition="103" endLine="22" endPosition="5" />
   <nodeInfo nodeId="5196379128666124094" fileName="typeof_SimpleConstantRef_InferenceRule.java" startLine="17" startPosition="103" endLine="22" endPosition="5" />
+  <nodeInfo nodeId="5196379128666643769" fileName="typeof_TypeDefCastOperator_InferenceRule.java" startLine="17" startPosition="90" endLine="22" endPosition="5" />
+  <nodeInfo nodeId="5196379128666643792" fileName="typeof_TypeDefCastOperator_InferenceRule.java" startLine="22" startPosition="5" endLine="27" endPosition="5" />
   <nodeInfo nodeId="6275945668714243360" fileName="typeof_StructPointerAttributeReference_InferenceRule.java" startLine="19" startPosition="95" endLine="24" endPosition="5" />
   <nodeInfo nodeId="6275945668714243370" fileName="typeof_StructPointerAttributeReference_InferenceRule.java" startLine="31" startPosition="5" endLine="36" endPosition="5" />
   <nodeInfo nodeId="6275945668714243381" fileName="typeof_StructPointerAttributeReference_InferenceRule.java" startLine="24" startPosition="5" endLine="31" endPosition="5" />

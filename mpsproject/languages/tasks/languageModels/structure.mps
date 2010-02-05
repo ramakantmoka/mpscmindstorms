@@ -59,6 +59,10 @@
     <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.BooleanConceptProperty" id="6520964804315849121">
       <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473854053" resolveInfo="abstract" />
     </node>
+    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="5196379128667476330">
+      <property name="name" value="priority" />
+      <link role="dataType" targetNodeId="3v.1082983657062" resolveInfo="integer" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6520964804315849122">
     <property name="name" value="SchedulingPolicyOnceUponStartup" />
@@ -75,6 +79,15 @@
     <link role="extends" targetNodeId="2v.6520964804316559123" resolveInfo="Statement" />
     <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="3454436015655736228">
       <property name="name" value="numerOfMilliseconds" />
+      <link role="dataType" targetNodeId="3v.1082983657062" resolveInfo="integer" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5196379128667374973">
+    <property name="package" value="policy" />
+    <property name="name" value="SchedulingPolicyCyclic" />
+    <link role="extends" targetNodeId="6520964804315849120" resolveInfo="SchedulingPolicy" />
+    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="5196379128667374974">
+      <property name="name" value="every" />
       <link role="dataType" targetNodeId="3v.1082983657062" resolveInfo="integer" />
     </node>
   </node>
