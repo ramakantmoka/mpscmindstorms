@@ -2779,9 +2779,12 @@
     <link role="conceptDeclaration" targetNodeId="1.5196379128665751226" resolveInfo="SimpleIntConstant" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="5196379128665751230">
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128665751233">
-        <property name="text" value="int constant" />
+        <property name="text" value="constant" />
       </node>
       <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="5196379128665751232" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128667608547">
+        <property name="text" value="int" />
+      </node>
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="5196379128665751235">
         <link role="relationDeclaration" targetNodeId="2v.1169194664001" resolveInfo="name" />
       </node>

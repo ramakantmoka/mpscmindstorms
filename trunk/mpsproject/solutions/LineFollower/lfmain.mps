@@ -38,12 +38,6 @@
         <property name="name" value="FAST" />
         <property name="value" value="40" />
       </node>
-      <node role="contents" type="med.platform.nxtosek.structure.CounterDeclaration" id="5196379128664935525">
-        <property name="minCycle" value="1" />
-        <property name="maxValue" value="1" />
-        <property name="ticksPerBase" value="1" />
-        <property name="name" value="SysTimerCount" />
-      </node>
       <node role="contents" type="med.core.structure.Procedure" id="5196379128660651514">
         <property name="name" value="ecrobot_device_initialize" />
         <property name="dontMangleName" value="true" />
@@ -73,48 +67,6 @@
           </node>
         </node>
         <node role="type" type="med.core.structure.VoidType" id="5196379128662167371" />
-      </node>
-      <node role="contents" type="med.core.structure.Procedure" id="5196379128662886868">
-        <property name="name" value="user_1ms_isr_type2" />
-        <property name="dontMangleName" value="true" />
-        <node role="body" type="med.core.structure.StatementList" id="5196379128662886869">
-          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="5196379128663614635">
-            <property name="name" value="ercd" />
-            <node role="type" type="med.core.structure.TypeDefType" id="5196379128663628659">
-              <link role="typedef" targetNodeId="2v.5196379128663212746" resolveInfo="StatusType" />
-            </node>
-            <node role="init" type="med.core.structure.ProcedureCall" id="5196379128664620729">
-              <link role="procedure" targetNodeId="2v.5196379128663628664" resolveInfo="SignalCounter" />
-              <node role="actuals" type="med.platform.nxtosek.structure.CounterReference" id="5196379128664935526">
-                <link role="counter" targetNodeId="5196379128664935525" resolveInfo="SysTimerCount" />
-              </node>
-            </node>
-          </node>
-          <node role="statements" type="med.core.structure.IfStatement" id="5196379128665272304">
-            <node role="thenPart" type="med.core.structure.StatementList" id="5196379128665272305">
-              <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128665272318">
-                <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128665272319">
-                  <link role="procedure" targetNodeId="2v.5196379128665272313" resolveInfo="ShutdownOS" />
-                  <node role="actuals" type="med.core.structure.LocalVariableReference" id="5196379128665272320">
-                    <link role="variable" targetNodeId="5196379128663614635" resolveInfo="ercd" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node role="condition" type="med.core.structure.NotEqualsExpression" id="5196379128665272308">
-              <node role="left" type="med.core.structure.LocalVariableReference" id="5196379128665272307">
-                <link role="variable" targetNodeId="5196379128663614635" resolveInfo="ercd" />
-              </node>
-              <node role="right" type="med.core.structure.TypeDefCastOperator" id="5196379128667255228">
-                <link role="typeDef" targetNodeId="2v.5196379128663212746" resolveInfo="StatusType" />
-                <node role="value" type="med.core.structure.IntConstantExpression" id="5196379128667255227">
-                  <property name="value" value="0" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="type" type="med.core.structure.VoidType" id="5196379128662886871" />
       </node>
       <node role="contents" type="med.tasks.structure.Task" id="5196379128662641909">
         <property name="name" value="run" />
