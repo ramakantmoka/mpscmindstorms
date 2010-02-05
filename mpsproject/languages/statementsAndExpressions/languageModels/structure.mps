@@ -1691,5 +1691,39 @@
       <link role="target" targetNodeId="5196379128662886872" resolveInfo="TypeDef" />
     </node>
   </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5196379128665751219">
+    <property name="name" value="SimpleConstant" />
+    <property name="package" value="constants" />
+    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="5196379128665751220">
+      <link role="intfc" targetNodeId="343373828472902636" resolveInfo="IHasIdentifierName" />
+    </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="5196379128665751222">
+      <link role="intfc" targetNodeId="306587673255505535" resolveInfo="IExportableModuleContent" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.BooleanConceptProperty" id="5196379128665751225">
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473854053" resolveInfo="abstract" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5196379128665751226">
+    <property name="package" value="constants" />
+    <property name="name" value="SimpleIntConstant" />
+    <link role="extends" targetNodeId="5196379128665751219" resolveInfo="SimpleConstant" />
+    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="5196379128665751227">
+      <property name="name" value="value" />
+      <link role="dataType" targetNodeId="2v.1082983657062" resolveInfo="integer" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5196379128666124078">
+    <property name="package" value="constants" />
+    <property name="name" value="SimpleConstantRef" />
+    <link role="extends" targetNodeId="6441851857096548278" resolveInfo="Expression" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="5196379128666124079">
+      <property name="metaClass" value="reference" />
+      <property name="role" value="constant" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="5196379128665751219" resolveInfo="SimpleConstant" />
+    </node>
+  </node>
 </model>
 

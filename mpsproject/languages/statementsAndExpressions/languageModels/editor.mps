@@ -2774,5 +2774,43 @@
       </node>
     </node>
   </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="5196379128665751228">
+    <property name="package" value="constants" />
+    <link role="conceptDeclaration" targetNodeId="1.5196379128665751226" resolveInfo="SimpleIntConstant" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="5196379128665751230">
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128665751233">
+        <property name="text" value="int constant" />
+      </node>
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="5196379128665751232" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="5196379128665751235">
+        <link role="relationDeclaration" targetNodeId="2v.1169194664001" resolveInfo="name" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128665751237">
+        <property name="text" value="=" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="5196379128665751239">
+        <link role="relationDeclaration" targetNodeId="1.5196379128665751227" resolveInfo="value" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128665751241">
+        <property name="text" value=";" />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" id="5196379128665751242">
+          <property name="flag" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="5196379128666124080">
+    <property name="package" value="constants" />
+    <link role="conceptDeclaration" targetNodeId="1.5196379128666124078" resolveInfo="SimpleConstantRef" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="5196379128666124082">
+      <link role="relationDeclaration" targetNodeId="1.5196379128666124079" />
+      <node role="editorComponent" type="jetbrains.mps.lang.editor.structure.InlineEditorComponent" id="5196379128666124083">
+        <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="5196379128666124085">
+          <property name="readOnly" value="true" />
+          <link role="relationDeclaration" targetNodeId="2v.1169194664001" resolveInfo="name" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

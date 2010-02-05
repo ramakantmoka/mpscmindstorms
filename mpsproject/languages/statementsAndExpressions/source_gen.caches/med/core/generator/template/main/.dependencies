@@ -25,6 +25,7 @@
     <classNode dependClassName="med.core.behavior.IContributesToHeader_Behavior" />
     <classNode dependClassName="med.core.behavior.IHasIdentifierName_Behavior" />
     <classNode dependClassName="med.core.behavior.Resource_Behavior" />
+    <classNode dependClassName="med.core.behavior.SimpleConstant_Behavior" />
   </dependency>
 </dependenciesRoot>
 

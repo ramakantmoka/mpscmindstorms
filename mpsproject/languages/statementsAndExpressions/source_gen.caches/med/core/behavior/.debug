@@ -42,6 +42,9 @@
   <nodeInfo nodeId="5196379128663393356" fileName="TypeDef_Behavior.java" startLine="16" startPosition="84" endLine="17" endPosition="52" />
   <nodeInfo nodeId="5196379128663393362" fileName="TypeDef_Behavior.java" startLine="17" startPosition="52" endLine="18" endPosition="144" />
   <nodeInfo nodeId="5196379128663393370" fileName="TypeDef_Behavior.java" startLine="18" startPosition="144" endLine="19" endPosition="25" />
+  <nodeInfo nodeId="5196379128666053713" fileName="SimpleIntConstant_Behavior.java" startLine="16" startPosition="84" endLine="17" endPosition="52" />
+  <nodeInfo nodeId="5196379128666053727" fileName="SimpleIntConstant_Behavior.java" startLine="17" startPosition="52" endLine="18" endPosition="25" />
+  <nodeInfo nodeId="5196379128666316786" fileName="SimpleIntConstant_Behavior.java" startLine="21" startPosition="78" endLine="22" endPosition="66" />
   <nodeInfo nodeId="5320189530627158250" fileName="Resource_Behavior.java" startLine="37" startPosition="84" endLine="38" endPosition="63" />
   <nodeInfo nodeId="5320189530627158260" fileName="Resource_Behavior.java" startLine="44" startPosition="53" endLine="45" endPosition="53" />
   <nodeInfo nodeId="5320189530627158271" fileName="Resource_Behavior.java" startLine="38" startPosition="63" endLine="43" endPosition="5" />

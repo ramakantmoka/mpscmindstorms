@@ -13,6 +13,7 @@ import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import med.core.behavior.Resource_Behavior;
 import med.core.behavior.IHasIdentifierName_Behavior;
+import med.core.behavior.SimpleConstant_Behavior;
 import jetbrains.mps.generator.template.IfMacroContext;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
@@ -163,6 +164,10 @@ public class QueriesGenerated {
 
   public static Object propertyMacro_GetPropertyValue_5196379128664413688(final IOperationContext operationContext, final PropertyMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), "typedef", false), "name");
+  }
+
+  public static Object propertyMacro_GetPropertyValue_5196379128666316771(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return SimpleConstant_Behavior.call_textValue_5196379128666316773(SLinkOperations.getTarget(_context.getNode(), "constant", false));
   }
 
   public static Object propertyMacro_GetPropertyValue_5320189530627158379(final IOperationContext operationContext, final PropertyMacroContext _context) {
