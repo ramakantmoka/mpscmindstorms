@@ -18,7 +18,7 @@
 
 
 void ecrobot_device_initialize(void) {
-  ecrobot_set_light_sensor_inactive (NXT_PORT_S1 );
+  ecrobot_set_light_sensor_active (NXT_PORT_S1 );
 }
 
 void ecrobot_device_terminate(void) {
@@ -33,7 +33,7 @@ display_goto_xy (1, 1 );
 display_int (line, 0 );
 
 }
-if ((line < (((400 + 600)) / (2)))) {
+if ((line < (((500 + 700)) / (2)))) {
   int speedLeft = 20;
   int speedRight = 40;
   LineFollower_main_updateMotorSettings (speedLeft, speedRight );
@@ -63,4 +63,6 @@ void LineFollower_main_displaySpeeds(int leftSpeed, int rightSpeed) {
   display_goto_xy (8, 4 );
   display_int (rightSpeed, 0 );
 }
+DeclareCounter(SysTimerCnt);
+void user_1ms_isr_type2(void) { SignalCounter(SysTimerCnt); } 
 

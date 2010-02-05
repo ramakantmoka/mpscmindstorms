@@ -226,6 +226,10 @@ public class QueriesGenerated {
     return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), "attribute", false), "name");
   }
 
+  public static Object propertyMacro_GetPropertyValue_8437501635618444930(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), "text");
+  }
+
   public static Object propertyMacro_GetPropertyValue_8937796720371133753(final IOperationContext operationContext, final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), "comment");
   }

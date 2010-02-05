@@ -2461,6 +2461,30 @@
     <property name="name" value="procedures" />
     <property name="package" value="procedures" />
     <property name="topPriorityGroup" value="false" />
+    <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="8437501635618444925">
+      <link role="applicableConcept" targetNodeId="1.8437501635617843053" resolveInfo="TextBlock" />
+      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" id="8437501635618444926">
+        <node role="templateNode" type="jetbrains.mps.gtext.structure.GLine" id="8437501635618444927">
+          <node role="item" type="jetbrains.mps.gtext.structure.GText" id="8437501635618444928">
+            <property name="text" value="textblock" />
+            <node role="propertyMacro$property_attribute$text" type="jetbrains.mps.lang.generator.structure.PropertyMacro" id="8437501635618444929">
+              <node role="propertyValueFunction" type="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" id="8437501635618444930">
+                <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8437501635618444931">
+                  <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8437501635618444932">
+                    <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8437501635618444933">
+                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="8437501635618444934">
+                        <link role="property" targetNodeId="1.8437501635617843055" resolveInfo="text" />
+                      </node>
+                      <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="8437501635618444935" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="2005811434196937216">
       <link role="applicableConcept" targetNodeId="1.2005811434196936441" resolveInfo="Procedure" />
       <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" id="2005811434196937217">

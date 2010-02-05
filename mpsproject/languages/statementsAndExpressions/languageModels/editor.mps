@@ -2849,5 +2849,12 @@
       </node>
     </node>
   </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="8437501635617843056">
+    <property name="package" value="procedures" />
+    <link role="conceptDeclaration" targetNodeId="1.8437501635617843053" resolveInfo="TextBlock" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="8437501635617843058">
+      <link role="relationDeclaration" targetNodeId="1.8437501635617843055" resolveInfo="text" />
+    </node>
+  </node>
 </model>
 
