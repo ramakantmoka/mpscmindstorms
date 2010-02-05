@@ -10,6 +10,7 @@
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <language namespace="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" />
   <language namespace="3a8b8671-1532-4e8f-b780-594a27fa10c8(med.core)" />
+  <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590334(jetbrains.mps.baseLanguage.closures.constraints)" version="2" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959028c(jetbrains.mps.lang.structure.constraints)" version="11" />
@@ -762,6 +763,37 @@
   <node type="jetbrains.mps.lang.generator.structure.MappingConfiguration" id="5670427403976777254">
     <property name="name" value="expressions" />
     <property name="package" value="expressions" />
+    <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="5196379128666314583">
+      <link role="applicableConcept" targetNodeId="1.5196379128665751219" resolveInfo="SimpleConstant" />
+      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" id="5196379128666316763" />
+    </node>
+    <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="5196379128666316764">
+      <link role="applicableConcept" targetNodeId="1.5196379128666124078" resolveInfo="SimpleConstantRef" />
+      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" id="5196379128666316766">
+        <node role="templateNode" type="jetbrains.mps.gtext.structure.GText" id="5196379128666316769">
+          <property name="text" value="value" />
+          <node role="propertyMacro$property_attribute$text" type="jetbrains.mps.lang.generator.structure.PropertyMacro" id="5196379128666316770">
+            <node role="propertyValueFunction" type="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" id="5196379128666316771">
+              <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5196379128666316772">
+                <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="5196379128666316797">
+                  <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5196379128666316809">
+                    <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5196379128666316804">
+                      <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="5196379128666316798" />
+                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="5196379128666316808">
+                        <link role="link" targetNodeId="1.5196379128666124079" />
+                      </node>
+                    </node>
+                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="5196379128666316813">
+                      <link role="baseMethodDeclaration" targetNodeId="5.5196379128666316773" resolveInfo="textValue" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="5670427403977021323">
       <link role="applicableConcept" targetNodeId="1.6441851857096548282" resolveInfo="IntConstantExpression" />
       <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" id="5670427403977023422">

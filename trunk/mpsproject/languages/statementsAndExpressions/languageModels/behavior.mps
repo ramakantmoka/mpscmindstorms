@@ -2012,5 +2012,53 @@
       </node>
     </node>
   </node>
+  <node type="jetbrains.mps.lang.behavior.structure.ConceptBehavior" id="5196379128666028521">
+    <property name="package" value="constants" />
+    <link role="concept" targetNodeId="1.5196379128665751219" resolveInfo="SimpleConstant" />
+    <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="5196379128666028522">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5196379128666028523" />
+    </node>
+    <node role="method" type="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" id="5196379128666316773">
+      <property name="name" value="textValue" />
+      <property name="isVirtual" value="true" />
+      <property name="isAbstract" value="true" />
+      <node role="visibility" type="jetbrains.mps.baseLanguage.structure.PublicVisibility" id="5196379128666316774" />
+      <node role="returnType" type="jetbrains.mps.baseLanguage.structure.ClassifierType" id="5196379128666316777">
+        <link role="classifier" targetNodeId="2.~String" resolveInfo="String" />
+      </node>
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5196379128666316776" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.behavior.structure.ConceptBehavior" id="5196379128666053708">
+    <property name="package" value="constants" />
+    <link role="concept" targetNodeId="1.5196379128665751226" resolveInfo="SimpleIntConstant" />
+    <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="5196379128666053709">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5196379128666053710" />
+    </node>
+    <node role="method" type="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" id="5196379128666316779">
+      <property name="name" value="textValue" />
+      <property name="isVirtual" value="true" />
+      <link role="overriddenMethod" targetNodeId="5196379128666316773" resolveInfo="textValue" />
+      <node role="visibility" type="jetbrains.mps.baseLanguage.structure.PublicVisibility" id="5196379128666316780" />
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5196379128666316781">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="5196379128666316786">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="5196379128666316788">
+            <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5196379128666316792">
+              <node role="operand" type="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" id="5196379128666316791" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="5196379128666316796">
+                <link role="property" targetNodeId="1.5196379128665751227" resolveInfo="value" />
+              </node>
+            </node>
+            <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="5196379128666316787">
+              <property name="value" value="" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="returnType" type="jetbrains.mps.baseLanguage.structure.ClassifierType" id="5196379128666316782">
+        <link role="classifier" targetNodeId="2.~String" resolveInfo="String" />
+      </node>
+    </node>
+  </node>
 </model>
 

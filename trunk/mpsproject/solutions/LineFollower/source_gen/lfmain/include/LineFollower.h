@@ -9,7 +9,7 @@
 
 // custom includes for header
 
-
+<!TextGen not found for 'med.core.structure.SimpleIntConstant'!><!TextGen not found for 'med.core.structure.SimpleIntConstant'!><!TextGen not found for 'med.core.structure.SimpleIntConstant'!><!TextGen not found for 'med.core.structure.SimpleIntConstant'!>
 void ecrobot_device_initialize(void);
 
 void ecrobot_device_terminate(void);

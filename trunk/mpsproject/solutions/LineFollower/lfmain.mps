@@ -22,6 +22,22 @@
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelArchitecture" id="5196379128660651512" />
     <node role="modules" type="med.core.structure.ImplementationModule" id="5196379128660651513">
       <property name="name" value="main" />
+      <node role="contents" type="med.core.structure.SimpleIntConstant" id="5196379128666214925">
+        <property name="name" value="WHITE" />
+        <property name="value" value="400" />
+      </node>
+      <node role="contents" type="med.core.structure.SimpleIntConstant" id="5196379128666214927">
+        <property name="name" value="BLACK" />
+        <property name="value" value="600" />
+      </node>
+      <node role="contents" type="med.core.structure.SimpleIntConstant" id="5196379128666214941">
+        <property name="name" value="SLOW" />
+        <property name="value" value="20" />
+      </node>
+      <node role="contents" type="med.core.structure.SimpleIntConstant" id="5196379128666214943">
+        <property name="name" value="FAST" />
+        <property name="value" value="40" />
+      </node>
       <node role="contents" type="med.platform.nxtosek.structure.CounterDeclaration" id="5196379128664935525">
         <property name="minCycle" value="1" />
         <property name="maxValue" value="1" />
@@ -35,16 +51,8 @@
           <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128661692826">
             <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128662061574">
               <link role="procedure" targetNodeId="2v.5196379128660651519" resolveInfo="ecrobot_set_light_sensor_active" />
-              <node role="actuals" type="med.core.structure.EnumLiteralRef" id="5196379128662167365">
-                <link role="literal" targetNodeId="2v.5196379128661020616" resolveInfo="NXT_PORT_S2" />
-              </node>
-            </node>
-          </node>
-          <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128662167358">
-            <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128662167359">
-              <link role="procedure" targetNodeId="2v.5196379128660651519" resolveInfo="ecrobot_set_light_sensor_active" />
-              <node role="actuals" type="med.core.structure.EnumLiteralRef" id="5196379128662167366">
-                <link role="literal" targetNodeId="2v.5196379128661020617" resolveInfo="NXT_PORT_S3" />
+              <node role="actuals" type="med.core.structure.EnumLiteralRef" id="5196379128665751209">
+                <link role="literal" targetNodeId="2v.5196379128661020615" resolveInfo="NXT_PORT_S1" />
               </node>
             </node>
           </node>
@@ -58,16 +66,8 @@
           <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128662167378">
             <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128662167380">
               <link role="procedure" targetNodeId="2v.5196379128660651519" resolveInfo="ecrobot_set_light_sensor_inactive" />
-              <node role="actuals" type="med.core.structure.EnumLiteralRef" id="5196379128662288838">
-                <link role="literal" targetNodeId="2v.5196379128661020616" resolveInfo="NXT_PORT_S2" />
-              </node>
-            </node>
-          </node>
-          <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128662167382">
-            <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128662167383">
-              <link role="procedure" targetNodeId="2v.5196379128660651519" resolveInfo="ecrobot_set_light_sensor_inactive" />
-              <node role="actuals" type="med.core.structure.EnumLiteralRef" id="5196379128662288839">
-                <link role="literal" targetNodeId="2v.5196379128661020617" resolveInfo="NXT_PORT_S3" />
+              <node role="actuals" type="med.core.structure.EnumLiteralRef" id="5196379128665751212">
+                <link role="literal" targetNodeId="2v.5196379128661020615" resolveInfo="NXT_PORT_S1" />
               </node>
             </node>
           </node>
@@ -117,22 +117,12 @@
         <property name="name" value="run" />
         <node role="body" type="med.core.structure.StatementList" id="5196379128662641910">
           <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="5196379128662641970">
-            <property name="name" value="left" />
+            <property name="name" value="line" />
             <node role="type" type="med.core.structure.GenericIntegerType" id="5196379128662641971" />
             <node role="init" type="med.core.structure.ProcedureCall" id="5196379128662641973">
               <link role="procedure" targetNodeId="2v.5196379128662641964" resolveInfo="ecrobot_get_light_sensor" />
-              <node role="actuals" type="med.core.structure.EnumLiteralRef" id="5196379128662641980">
-                <link role="literal" targetNodeId="2v.5196379128661020617" resolveInfo="NXT_PORT_S3" />
-              </node>
-            </node>
-          </node>
-          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="5196379128662641975">
-            <property name="name" value="right" />
-            <node role="type" type="med.core.structure.GenericIntegerType" id="5196379128662641976" />
-            <node role="init" type="med.core.structure.ProcedureCall" id="5196379128662641977">
-              <link role="procedure" targetNodeId="2v.5196379128662641964" resolveInfo="ecrobot_get_light_sensor" />
-              <node role="actuals" type="med.core.structure.EnumLiteralRef" id="5196379128662641981">
-                <link role="literal" targetNodeId="2v.5196379128661020616" resolveInfo="NXT_PORT_S2" />
+              <node role="actuals" type="med.core.structure.EnumLiteralRef" id="5196379128665751213">
+                <link role="literal" targetNodeId="2v.5196379128661020615" resolveInfo="NXT_PORT_S1" />
               </node>
             </node>
           </node>
@@ -153,7 +143,7 @@
                 <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128662641943">
                   <link role="procedure" targetNodeId="2v.5196379128662641950" resolveInfo="display_string" />
                   <node role="actuals" type="med.core.structure.StringConstantExpression" id="5196379128662641944">
-                    <property name="value" value="Left | Right" />
+                    <property name="value" value="Light" />
                   </node>
                 </node>
               </node>
@@ -179,28 +169,6 @@
                   </node>
                 </node>
               </node>
-              <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128662886557">
-                <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128662886558">
-                  <link role="procedure" targetNodeId="2v.5196379128662641915" resolveInfo="display_goto_xy" />
-                  <node role="actuals" type="med.core.structure.IntConstantExpression" id="5196379128662886559">
-                    <property name="value" value="8" />
-                  </node>
-                  <node role="actuals" type="med.core.structure.IntConstantExpression" id="5196379128662886563">
-                    <property name="value" value="1" />
-                  </node>
-                </node>
-              </node>
-              <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128662886565">
-                <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128662886566">
-                  <link role="procedure" targetNodeId="2v.5196379128662641936" resolveInfo="display_int" />
-                  <node role="actuals" type="med.core.structure.LocalVariableReference" id="5196379128662886567">
-                    <link role="variable" targetNodeId="5196379128662641975" resolveInfo="right" />
-                  </node>
-                  <node role="actuals" type="med.core.structure.IntConstantExpression" id="5196379128662886569">
-                    <property name="value" value="0" />
-                  </node>
-                </node>
-              </node>
             </node>
             <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="5196379128662641930">
               <property name="isNew" value="false" />
@@ -211,47 +179,18 @@
           </node>
           <node role="statements" type="med.core.structure.IfStatement" id="5196379128662886571">
             <node role="thenPart" type="med.core.structure.StatementList" id="5196379128662886572">
-              <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="5196379128662886580">
-                <property name="name" value="diff" />
-                <node role="type" type="med.core.structure.GenericIntegerType" id="5196379128662886581" />
-                <node role="init" type="med.core.structure.MinusExpression" id="5196379128662886584">
-                  <node role="left" type="med.core.structure.LocalVariableReference" id="5196379128662886583">
-                    <link role="variable" targetNodeId="5196379128662641970" resolveInfo="left" />
-                  </node>
-                  <node role="right" type="med.core.structure.LocalVariableReference" id="5196379128662886588">
-                    <link role="variable" targetNodeId="5196379128662641975" resolveInfo="right" />
-                  </node>
-                </node>
-              </node>
               <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="5196379128662886590">
                 <property name="name" value="speedLeft" />
                 <node role="type" type="med.core.structure.GenericIntegerType" id="5196379128662886591" />
-                <node role="init" type="med.core.structure.MinusExpression" id="5196379128662886594">
-                  <node role="left" type="med.core.structure.IntConstantExpression" id="5196379128662886593">
-                    <property name="value" value="40" />
-                  </node>
-                  <node role="right" type="med.core.structure.ParenExpression" id="5196379128662886598">
-                    <node role="expr" type="med.core.structure.MultiplicationExpression" id="5196379128662886601">
-                      <node role="left" type="med.core.structure.LocalVariableReference" id="5196379128662886600">
-                        <link role="variable" targetNodeId="5196379128662886580" resolveInfo="diff" />
-                      </node>
-                      <node role="right" type="med.core.structure.DivisionExpression" id="5196379128662886606">
-                        <node role="left" type="med.core.structure.IntConstantExpression" id="5196379128662886605">
-                          <property name="value" value="40" />
-                        </node>
-                        <node role="right" type="med.core.structure.IntConstantExpression" id="5196379128662886610">
-                          <property name="value" value="120" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
+                <node role="init" type="med.core.structure.SimpleConstantRef" id="5196379128666214945">
+                  <link role="constant" targetNodeId="5196379128666214941" resolveInfo="SLOW" />
                 </node>
               </node>
               <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="5196379128662886612">
                 <property name="name" value="speedRight" />
                 <node role="type" type="med.core.structure.GenericIntegerType" id="5196379128662886613" />
-                <node role="init" type="med.core.structure.IntConstantExpression" id="5196379128662886615">
-                  <property name="value" value="40" />
+                <node role="init" type="med.core.structure.SimpleConstantRef" id="5196379128666214947">
+                  <link role="constant" targetNodeId="5196379128666214943" resolveInfo="FAST" />
                 </node>
               </node>
               <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128662886770">
@@ -283,149 +222,68 @@
                 </node>
               </node>
             </node>
-            <node role="condition" type="med.core.structure.GreaterExpression" id="5196379128662886575">
-              <node role="left" type="med.core.structure.LocalVariableReference" id="5196379128662886574">
-                <link role="variable" targetNodeId="5196379128662641970" resolveInfo="left" />
-              </node>
-              <node role="right" type="med.core.structure.LocalVariableReference" id="5196379128662886579">
-                <link role="variable" targetNodeId="5196379128662641975" resolveInfo="right" />
-              </node>
-            </node>
-          </node>
-          <node role="statements" type="med.core.structure.IfStatement" id="5196379128662886691">
-            <node role="thenPart" type="med.core.structure.StatementList" id="5196379128662886692">
-              <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="5196379128662886793">
-                <property name="name" value="diff" />
-                <node role="type" type="med.core.structure.GenericIntegerType" id="5196379128662886794" />
-                <node role="init" type="med.core.structure.MinusExpression" id="5196379128662886795">
-                  <node role="left" type="med.core.structure.LocalVariableReference" id="5196379128662886821">
-                    <link role="variable" targetNodeId="5196379128662641975" resolveInfo="right" />
-                  </node>
-                  <node role="right" type="med.core.structure.LocalVariableReference" id="5196379128662886822">
-                    <link role="variable" targetNodeId="5196379128662641970" resolveInfo="left" />
-                  </node>
-                </node>
-              </node>
-              <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="5196379128662886798">
-                <property name="name" value="speedRight" />
-                <node role="type" type="med.core.structure.GenericIntegerType" id="5196379128662886799" />
-                <node role="init" type="med.core.structure.MinusExpression" id="5196379128662886800">
-                  <node role="left" type="med.core.structure.IntConstantExpression" id="5196379128662886801">
-                    <property name="value" value="40" />
-                  </node>
-                  <node role="right" type="med.core.structure.ParenExpression" id="5196379128662886802">
-                    <node role="expr" type="med.core.structure.MultiplicationExpression" id="5196379128662886803">
-                      <node role="left" type="med.core.structure.LocalVariableReference" id="5196379128662886804">
-                        <link role="variable" targetNodeId="5196379128662886793" resolveInfo="diff" />
-                      </node>
-                      <node role="right" type="med.core.structure.DivisionExpression" id="5196379128662886805">
-                        <node role="left" type="med.core.structure.IntConstantExpression" id="5196379128662886806">
-                          <property name="value" value="40" />
-                        </node>
-                        <node role="right" type="med.core.structure.IntConstantExpression" id="5196379128662886807">
-                          <property name="value" value="80" />
-                        </node>
-                      </node>
+            <node role="condition" type="med.core.structure.SmallerExpression" id="5196379128665751214">
+              <node role="right" type="med.core.structure.DivisionExpression" id="5196379128666214935">
+                <node role="left" type="med.core.structure.ParenExpression" id="5196379128666214928">
+                  <node role="expr" type="med.core.structure.PlusExpression" id="5196379128666214930">
+                    <node role="left" type="med.core.structure.SimpleConstantRef" id="5196379128666214929">
+                      <link role="constant" targetNodeId="5196379128666214925" resolveInfo="WHITE" />
+                    </node>
+                    <node role="right" type="med.core.structure.SimpleConstantRef" id="5196379128666214934">
+                      <link role="constant" targetNodeId="5196379128666214927" resolveInfo="BLACK" />
                     </node>
                   </node>
                 </node>
-              </node>
-              <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="5196379128662886808">
-                <property name="name" value="speedLeft" />
-                <node role="type" type="med.core.structure.GenericIntegerType" id="5196379128662886809" />
-                <node role="init" type="med.core.structure.IntConstantExpression" id="5196379128662886810">
-                  <property name="value" value="40" />
+                <node role="right" type="med.core.structure.IntConstantExpression" id="5196379128666214939">
+                  <property name="value" value="2" />
                 </node>
               </node>
-              <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128665271414">
-                <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128665271415">
-                  <link role="procedure" targetNodeId="5196379128662886748" resolveInfo="updateMotorSettings" />
-                  <node role="actuals" type="med.core.structure.LocalVariableReference" id="5196379128665271416">
-                    <link role="variable" targetNodeId="5196379128662886808" resolveInfo="speedLeft" />
-                  </node>
-                  <node role="actuals" type="med.core.structure.LocalVariableReference" id="5196379128665271417">
-                    <link role="variable" targetNodeId="5196379128662886798" resolveInfo="speedRight" />
-                  </node>
-                </node>
-              </node>
-              <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128662886815">
-                <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128662886816">
-                  <link role="procedure" targetNodeId="5196379128662886701" resolveInfo="displaySpeeds" />
-                  <node role="actuals" type="med.core.structure.LocalVariableReference" id="5196379128665271403">
-                    <link role="variable" targetNodeId="5196379128662886808" resolveInfo="speedLeft" />
-                  </node>
-                  <node role="actuals" type="med.core.structure.LocalVariableReference" id="5196379128665271404">
-                    <link role="variable" targetNodeId="5196379128662886798" resolveInfo="speedRight" />
-                  </node>
-                </node>
-                <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="5196379128665139497">
-                  <property name="isNew" value="true" />
-                  <node role="expression" type="featureDependencies.structure.AtomicFE" id="5196379128665139499">
-                    <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
-                  </node>
-                </node>
+              <node role="left" type="med.core.structure.LocalVariableReference" id="5196379128665751218">
+                <link role="variable" targetNodeId="5196379128662641970" resolveInfo="line" />
               </node>
             </node>
-            <node role="condition" type="med.core.structure.GreaterExpression" id="5196379128662886785">
-              <node role="left" type="med.core.structure.LocalVariableReference" id="5196379128662886784">
-                <link role="variable" targetNodeId="5196379128662641975" resolveInfo="right" />
-              </node>
-              <node role="right" type="med.core.structure.LocalVariableReference" id="5196379128662886789">
-                <link role="variable" targetNodeId="5196379128662641970" resolveInfo="left" />
-              </node>
-            </node>
-          </node>
-          <node role="statements" type="med.core.structure.IfStatement" id="5196379128662886824">
-            <node role="thenPart" type="med.core.structure.StatementList" id="5196379128662886825">
-              <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="5196379128662886833">
+            <node role="elsePart" type="med.core.structure.StatementList" id="5196379128666214948">
+              <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="5196379128666214949">
                 <property name="name" value="speedLeft" />
-                <node role="type" type="med.core.structure.GenericIntegerType" id="5196379128662886834" />
-                <node role="init" type="med.core.structure.IntConstantExpression" id="5196379128662886836">
-                  <property name="value" value="40" />
+                <node role="type" type="med.core.structure.GenericIntegerType" id="5196379128666214950" />
+                <node role="init" type="med.core.structure.SimpleConstantRef" id="5196379128666214952">
+                  <link role="constant" targetNodeId="5196379128666214943" resolveInfo="FAST" />
                 </node>
               </node>
-              <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="5196379128662886838">
+              <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="5196379128666214954">
                 <property name="name" value="speedRight" />
-                <node role="type" type="med.core.structure.GenericIntegerType" id="5196379128662886839" />
-                <node role="init" type="med.core.structure.IntConstantExpression" id="5196379128662886841">
-                  <property name="value" value="40" />
+                <node role="type" type="med.core.structure.GenericIntegerType" id="5196379128666214955" />
+                <node role="init" type="med.core.structure.SimpleConstantRef" id="5196379128666214957">
+                  <link role="constant" targetNodeId="5196379128666214941" resolveInfo="SLOW" />
                 </node>
               </node>
-              <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128665271422">
-                <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128665271423">
+              <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128666214959">
+                <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128666214960">
                   <link role="procedure" targetNodeId="5196379128662886748" resolveInfo="updateMotorSettings" />
-                  <node role="actuals" type="med.core.structure.LocalVariableReference" id="5196379128665271424">
-                    <link role="variable" targetNodeId="5196379128662886833" resolveInfo="speedLeft" />
+                  <node role="actuals" type="med.core.structure.LocalVariableReference" id="5196379128666214961">
+                    <link role="variable" targetNodeId="5196379128666214949" resolveInfo="speedLeft" />
                   </node>
-                  <node role="actuals" type="med.core.structure.LocalVariableReference" id="5196379128665271425">
-                    <link role="variable" targetNodeId="5196379128662886838" resolveInfo="speedRight" />
+                  <node role="actuals" type="med.core.structure.LocalVariableReference" id="5196379128666214962">
+                    <link role="variable" targetNodeId="5196379128666214954" resolveInfo="speedRight" />
                   </node>
                 </node>
               </node>
-              <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128665139501">
-                <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128665139502">
+              <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128666214963">
+                <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128666214964">
                   <link role="procedure" targetNodeId="5196379128662886701" resolveInfo="displaySpeeds" />
-                  <node role="actuals" type="med.core.structure.LocalVariableReference" id="5196379128665271405">
-                    <link role="variable" targetNodeId="5196379128662886833" resolveInfo="speedLeft" />
+                  <node role="actuals" type="med.core.structure.LocalVariableReference" id="5196379128666214965">
+                    <link role="variable" targetNodeId="5196379128666214949" resolveInfo="speedLeft" />
                   </node>
-                  <node role="actuals" type="med.core.structure.LocalVariableReference" id="5196379128665271406">
-                    <link role="variable" targetNodeId="5196379128662886838" resolveInfo="speedRight" />
+                  <node role="actuals" type="med.core.structure.LocalVariableReference" id="5196379128666214966">
+                    <link role="variable" targetNodeId="5196379128666214954" resolveInfo="speedRight" />
                   </node>
                 </node>
-                <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="5196379128665139505">
+                <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="5196379128666214967">
                   <property name="isNew" value="true" />
-                  <node role="expression" type="featureDependencies.structure.AtomicFE" id="5196379128665139506">
+                  <node role="expression" type="featureDependencies.structure.AtomicFE" id="5196379128666214968">
                     <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
                   </node>
                 </node>
-              </node>
-            </node>
-            <node role="condition" type="med.core.structure.EqualsExpression" id="5196379128662886828">
-              <node role="left" type="med.core.structure.LocalVariableReference" id="5196379128662886827">
-                <link role="variable" targetNodeId="5196379128662641970" resolveInfo="left" />
-              </node>
-              <node role="right" type="med.core.structure.LocalVariableReference" id="5196379128662886832">
-                <link role="variable" targetNodeId="5196379128662641975" resolveInfo="right" />
               </node>
             </node>
           </node>
