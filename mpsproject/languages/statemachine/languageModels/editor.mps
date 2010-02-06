@@ -186,7 +186,7 @@
     <link role="conceptDeclaration" targetNodeId="1.6254144863183184201" resolveInfo="FireEventStatement" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="6254144863183184206">
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="6254144863183184209">
-        <property name="text" value="trigger" />
+        <property name="text" value="event" />
       </node>
       <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="6254144863183184208" />
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="6254144863183184211">

@@ -9,6 +9,15 @@
 
 // custom includes for header
 
+enum linefollower_events_enum {
+EVENT_INITIALIZED
+};
+enum linefollower_states_enum {
+STATE_INTIALIZING
+, STATE_RUNNING
+};
+
+void LineFollower_main_linefollower_execute(int event);
 
 void LineFollower_main_updateMotorSettings(int leftSpeed, int rightSpeed);
 

@@ -13,6 +13,7 @@ public class LocalVariableDeclaration extends Statement implements IVariableDecl
   public static final String SHORT_DESCRIPTION = "shortDescription";
   public static final String ALIAS = "alias";
   public static final String VIRTUAL_PACKAGE = "virtualPackage";
+  public static final String STATIC = "static";
   public static final String INIT = "init";
   public static final String TYPE = "type";
 
@@ -50,6 +51,14 @@ public class LocalVariableDeclaration extends Statement implements IVariableDecl
 
   public void setVirtualPackage(String value) {
     this.setProperty(LocalVariableDeclaration.VIRTUAL_PACKAGE, value);
+  }
+
+  public boolean getStatic() {
+    return this.getBooleanProperty(LocalVariableDeclaration.STATIC);
+  }
+
+  public void setStatic(boolean value) {
+    this.setBooleanProperty(LocalVariableDeclaration.STATIC, value);
   }
 
   public Expression getInit() {

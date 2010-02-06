@@ -5,6 +5,7 @@
   <nodeInfo nodeId="306587673259384587" fileName="makeExported_Intention.java" startLine="34" startPosition="76" endLine="35" endPosition="55" />
   <nodeInfo nodeId="3104433618260629800" fileName="lockName_Intention.java" startLine="34" startPosition="76" endLine="35" endPosition="116" />
   <nodeInfo nodeId="3577454086726756888" fileName="addModuleDependencyAnnotation_Intention.java" startLine="35" startPosition="76" endLine="36" endPosition="155" />
+  <nodeInfo nodeId="6254144863185758147" fileName="toggleStatic_Intention.java" startLine="34" startPosition="76" endLine="35" endPosition="100" />
   <nodeInfo nodeId="6300047501519549256" fileName="addIncludeFile_Intention.java" startLine="34" startPosition="76" endLine="35" endPosition="53" />
   <nodeInfo nodeId="8470053389337963457" fileName="makeUnsized_Intention.java" startLine="36" startPosition="76" endLine="37" endPosition="77" />
   <nodeInfo nodeId="8470053389337963468" fileName="makeUnsized_Intention.java" startLine="37" startPosition="77" endLine="38" endPosition="87" />

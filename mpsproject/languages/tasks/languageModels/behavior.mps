@@ -28,6 +28,8 @@
   <maxImportIndex value="1" />
   <import index="1" modelUID="r:42b86333-3dc2-47b4-b56a-1f8218d3370b(med.tasks.structure)" version="-1" />
   <visible index="2" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+  <visible index="3" modelUID="r:14a060e8-2002-4063-9ac2-3317a0d2c940(med.core.behavior)" />
+  <visible index="4" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
   <node type="jetbrains.mps.lang.behavior.structure.ConceptBehavior" id="6520964804316765914">
     <link role="concept" targetNodeId="1.6520964804315849113" resolveInfo="Task" />
     <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="6520964804316765915">
@@ -64,6 +66,44 @@
           </node>
         </node>
       </node>
+    </node>
+    <node role="method" type="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" id="6254144863184057927">
+      <property name="name" value="qualifiedLowLevelName" />
+      <link role="overriddenMethod" targetNodeId="3v.1842244113830232336" resolveInfo="qualifiedLowLevelName" />
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6254144863184057930">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="6254144863184057937">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="6254144863184057938">
+            <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6254144863184057939">
+              <node role="operand" type="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" id="6254144863184057940" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="6254144863184057941">
+                <link role="property" targetNodeId="2v.1169194664001" resolveInfo="name" />
+              </node>
+            </node>
+            <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="6254144863184057942">
+              <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6254144863184057943">
+                <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6254144863184057944">
+                  <node role="operand" type="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" id="6254144863184057945" />
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" id="6254144863184057946">
+                    <node role="parameter" type="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" id="6254144863184057947">
+                      <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="6254144863184057948">
+                        <link role="conceptDeclaration" targetNodeId="4v.3454436015649667981" resolveInfo="Module" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="6254144863184057949">
+                  <link role="baseMethodDeclaration" targetNodeId="3v.1842244113830232336" resolveInfo="qualifiedLowLevelName" />
+                </node>
+              </node>
+              <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="6254144863184057950">
+                <property name="value" value="_" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="returnType" type="jetbrains.mps.baseLanguage.structure.StringType" id="6254144863184057931" />
+      <node role="visibility" type="jetbrains.mps.baseLanguage.structure.PublicVisibility" id="6254144863184057932" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.behavior.structure.ConceptBehavior" id="5196379128667768643">
