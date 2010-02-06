@@ -11,7 +11,7 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.lang.core.constraints)" version="2" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902ba(jetbrains.mps.lang.sharedConcepts.constraints)" version="0" />
-  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="1" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902db(jetbrains.mps.baseLanguage.blTypes.constraints)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590353(jetbrains.mps.lang.intentions.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" />
@@ -355,6 +355,41 @@
               <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="3104433618260629801" />
               <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="3104433618260629806">
                 <link role="property" targetNodeId="1.3104433618260629773" resolveInfo="dontMangleName" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" id="6254144863185758140">
+    <property name="name" value="toggleStatic" />
+    <link role="forConcept" targetNodeId="1.124896375630675529" resolveInfo="LocalVariableDeclaration" />
+    <node role="descriptionFunction" type="jetbrains.mps.lang.intentions.structure.DescriptionBlock" id="6254144863185758141">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6254144863185758142">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="6254144863185758145">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="6254144863185758146">
+            <property name="value" value="toggle static" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="executeFunction" type="jetbrains.mps.lang.intentions.structure.ExecuteBlock" id="6254144863185758143">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6254144863185758144">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="6254144863185758147">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.AssignmentExpression" id="6254144863185758154">
+            <node role="rValue" type="jetbrains.mps.baseLanguage.structure.NotExpression" id="6254144863185758157">
+              <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6254144863185758160">
+                <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="6254144863185758159" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="6254144863185758164">
+                  <link role="property" targetNodeId="1.6254144863185758128" resolveInfo="static" />
+                </node>
+              </node>
+            </node>
+            <node role="lValue" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6254144863185758149">
+              <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="6254144863185758148" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="6254144863185758153">
+                <link role="property" targetNodeId="1.6254144863185758128" resolveInfo="static" />
               </node>
             </node>
           </node>

@@ -4,7 +4,18 @@
     <modelRoot path="${language_descriptor}/languageModels" namespacePrefix="med.statemachine" />
   </models>
   <accessoryModels />
-  <generators />
+  <generators>
+    <generator name="main" generatorUID="med.statemachine#6254144863183949058" uuid="68b129e7-547f-47cd-a846-41deabee8f52">
+      <models>
+        <modelRoot path="${language_descriptor}/generator/template" namespacePrefix="med.statemachine.generator.template" />
+      </models>
+      <external-templates />
+      <usedDevKits>
+        <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
+      </usedDevKits>
+      <mapping-priorities />
+    </generator>
+  </generators>
   <classPath />
   <languageRuntimeClassPath />
   <sourcePath />

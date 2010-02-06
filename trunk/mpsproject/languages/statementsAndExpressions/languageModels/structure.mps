@@ -302,6 +302,10 @@
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="1881584577102787801">
       <link role="intfc" targetNodeId="1881584577102787805" resolveInfo="IVariableDeclaration" />
     </node>
+    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="6254144863185758128">
+      <property name="name" value="static" />
+      <link role="dataType" targetNodeId="2v.1082983657063" resolveInfo="boolean" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6441851857096548278">
     <property name="name" value="Expression" />
@@ -1758,6 +1762,47 @@
     <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="8437501635617843055">
       <property name="name" value="text" />
       <link role="dataType" targetNodeId="2v.1082983041843" resolveInfo="string" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6254144863184087909">
+    <property name="name" value="ModuleVariable" />
+    <property name="package" value="variables" />
+    <link role="extends" targetNodeId="3577454086729990666" resolveInfo="MedBase" />
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="6254144863184087910">
+      <link role="intfc" targetNodeId="306587673255505543" resolveInfo="IModuleContent" />
+    </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="6254144863184087912">
+      <link role="intfc" targetNodeId="343373828472902636" resolveInfo="IHasIdentifierName" />
+    </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="6254144863184576785">
+      <link role="intfc" targetNodeId="8772584333841904456" resolveInfo="IReduceToImplementation" />
+    </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="6254144863187279159">
+      <link role="intfc" targetNodeId="1881584577102787805" resolveInfo="IVariableDeclaration" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="6254144863187085423">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="init" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="6441851857096548278" resolveInfo="Expression" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="6254144863184559863">
+      <property name="value" value="var" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6254144863184158273">
+    <property name="package" value="variables" />
+    <property name="name" value="ModuleVariableRef" />
+    <link role="extends" targetNodeId="6441851857096548278" resolveInfo="Expression" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="6254144863184158274">
+      <property name="metaClass" value="reference" />
+      <property name="role" value="variable" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="6254144863184087909" resolveInfo="ModuleVariable" />
+    </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="6254144863187279160">
+      <link role="intfc" targetNodeId="5136468150843706453" resolveInfo="IVariableReference" />
     </node>
   </node>
 </model>

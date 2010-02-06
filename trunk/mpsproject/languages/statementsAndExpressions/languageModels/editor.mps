@@ -57,6 +57,21 @@
     <property name="package" value="statements" />
     <link role="conceptDeclaration" targetNodeId="1.124896375630675529" resolveInfo="LocalVariableDeclaration" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="124896375630675534">
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="6254144863185758130">
+        <property name="text" value="static" />
+        <node role="renderingCondition" type="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" id="6254144863185758131">
+          <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6254144863185758132">
+            <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="6254144863185758133">
+              <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6254144863185758135">
+                <node role="operand" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="6254144863185758134" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="6254144863185758139">
+                  <link role="property" targetNodeId="1.6254144863185758128" resolveInfo="static" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="124896375630675537">
         <link role="relationDeclaration" targetNodeId="1.4271434180064590876" />
       </node>
@@ -2841,6 +2856,47 @@
     <link role="conceptDeclaration" targetNodeId="1.8437501635617843053" resolveInfo="TextBlock" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="8437501635617843058">
       <link role="relationDeclaration" targetNodeId="1.8437501635617843055" resolveInfo="text" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="6254144863184158260">
+    <property name="package" value="variables" />
+    <link role="conceptDeclaration" targetNodeId="1.6254144863184087909" resolveInfo="ModuleVariable" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="6254144863184158262">
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="6254144863184158264" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="6254144863184158265">
+        <property name="text" value="var" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="6254144863184158269">
+        <link role="relationDeclaration" targetNodeId="1.4271434180064590876" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="6254144863184158267">
+        <link role="relationDeclaration" targetNodeId="2v.1169194664001" resolveInfo="name" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="6254144863187085425">
+        <property name="text" value=" = " />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="6254144863187085427">
+        <link role="relationDeclaration" targetNodeId="1.6254144863187085423" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="6254144863184158271">
+        <property name="text" value=";" />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" id="6254144863184158272">
+          <property name="flag" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="6254144863184158275">
+    <property name="package" value="variables" />
+    <link role="conceptDeclaration" targetNodeId="1.6254144863184158273" resolveInfo="ModuleVariableRef" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="6254144863184158277">
+      <link role="relationDeclaration" targetNodeId="1.6254144863184158274" />
+      <node role="editorComponent" type="jetbrains.mps.lang.editor.structure.InlineEditorComponent" id="6254144863184158278">
+        <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="6254144863184158280">
+          <property name="readOnly" value="true" />
+          <link role="relationDeclaration" targetNodeId="2v.1169194664001" resolveInfo="name" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

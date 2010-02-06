@@ -10,16 +10,15 @@
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="1" />
   <import index="1" modelUID="r:998fdfa3-6fe3-4cb3-b9b5-7f97e90a9606(med.statemachine.structure)" version="-1" />
-  <visible index="2" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-  <visible index="3" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
+  <visible index="2" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6254144863182652341">
     <property name="name" value="Statemachine" />
-    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <link role="extends" targetNodeId="2v.3577454086729990666" resolveInfo="MedBase" />
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="6254144863182652349">
-      <link role="intfc" targetNodeId="3v.343373828472902636" resolveInfo="IHasIdentifierName" />
+      <link role="intfc" targetNodeId="2v.343373828472902636" resolveInfo="IHasIdentifierName" />
     </node>
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="6254144863182652342">
-      <link role="intfc" targetNodeId="3v.306587673255505543" resolveInfo="IModuleContent" />
+      <link role="intfc" targetNodeId="2v.306587673255505543" resolveInfo="IModuleContent" />
     </node>
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="6254144863182652350">
       <property name="metaClass" value="aggregation" />
@@ -34,11 +33,12 @@
       <link role="target" targetNodeId="6254144863182652345" resolveInfo="Event" />
     </node>
   </node>
+  <visible index="3" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6254144863182652343">
     <property name="name" value="State" />
-    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <link role="extends" targetNodeId="2v.3577454086729990666" resolveInfo="MedBase" />
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="6254144863182652347">
-      <link role="intfc" targetNodeId="3v.343373828472902636" resolveInfo="IHasIdentifierName" />
+      <link role="intfc" targetNodeId="2v.343373828472902636" resolveInfo="IHasIdentifierName" />
     </node>
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="6254144863182652352">
       <property name="metaClass" value="aggregation" />
@@ -48,12 +48,12 @@
     </node>
     <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="6254144863182975676">
       <property name="name" value="initial" />
-      <link role="dataType" targetNodeId="2v.1082983657063" resolveInfo="boolean" />
+      <link role="dataType" targetNodeId="3v.1082983657063" resolveInfo="boolean" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6254144863182652344">
     <property name="name" value="Transition" />
-    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <link role="extends" targetNodeId="2v.3577454086729990666" resolveInfo="MedBase" />
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="6254144863182768327">
       <property name="metaClass" value="reference" />
       <property name="role" value="target" />
@@ -69,14 +69,14 @@
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6254144863182652345">
     <property name="name" value="Event" />
-    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <link role="extends" targetNodeId="2v.3577454086729990666" resolveInfo="MedBase" />
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="6254144863182652346">
-      <link role="intfc" targetNodeId="3v.343373828472902636" resolveInfo="IHasIdentifierName" />
+      <link role="intfc" targetNodeId="2v.343373828472902636" resolveInfo="IHasIdentifierName" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6254144863183184201">
     <property name="name" value="FireEventStatement" />
-    <link role="extends" targetNodeId="3v.6520964804316559123" resolveInfo="Statement" />
+    <link role="extends" targetNodeId="2v.6520964804316559123" resolveInfo="Statement" />
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="6254144863183184203">
       <property name="metaClass" value="reference" />
       <property name="role" value="trigger" />
@@ -91,12 +91,12 @@
     </node>
     <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="6254144863183184222">
       <property name="value" value="trigger" />
-      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473891462" resolveInfo="alias" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6254144863183193976">
     <property name="name" value="CheckStateExpression" />
-    <link role="extends" targetNodeId="3v.6441851857096548278" resolveInfo="Expression" />
+    <link role="extends" targetNodeId="2v.6441851857096548278" resolveInfo="Expression" />
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="6254144863183193979">
       <property name="metaClass" value="reference" />
       <property name="role" value="state" />
@@ -111,7 +111,7 @@
     </node>
     <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="6254144863183194001">
       <property name="value" value="isinstate" />
-      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473891462" resolveInfo="alias" />
     </node>
   </node>
 </model>

@@ -18,6 +18,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode dependClassName="med.core.structure.IHasIdentifierName" />
+    <classNode dependClassName="med.core.structure.MedBase" />
     <classNode extendsClassName="jetbrains.mps.lang.core.structure.BaseConcept" />
   </dependency>
   <dependency className="med.statemachine.structure.FireEventStatement">
@@ -40,6 +41,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode dependClassName="med.core.structure.IHasIdentifierName" />
+    <classNode dependClassName="med.core.structure.MedBase" />
     <classNode dependClassName="med.statemachine.structure.Transition" />
     <classNode extendsClassName="jetbrains.mps.lang.core.structure.BaseConcept" />
   </dependency>
@@ -53,6 +55,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode dependClassName="med.core.structure.IHasIdentifierName" />
     <classNode dependClassName="med.core.structure.IModuleContent" />
+    <classNode dependClassName="med.core.structure.MedBase" />
     <classNode dependClassName="med.statemachine.structure.Event" />
     <classNode dependClassName="med.statemachine.structure.State" />
     <classNode extendsClassName="jetbrains.mps.lang.core.structure.BaseConcept" />
@@ -68,6 +71,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="med.core.structure.MedBase" />
     <classNode dependClassName="med.statemachine.structure.Event" />
     <classNode dependClassName="med.statemachine.structure.State" />
     <classNode extendsClassName="jetbrains.mps.lang.core.structure.BaseConcept" />

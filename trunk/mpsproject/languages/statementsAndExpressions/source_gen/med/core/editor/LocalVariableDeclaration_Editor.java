@@ -17,6 +17,7 @@ import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.smodel.IScope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class LocalVariableDeclaration_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -26,10 +27,13 @@ public class LocalVariableDeclaration_Editor extends DefaultNodeEditor {
   private EditorCell createCollection_2231_0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_2231_0");
+    if (renderingCondition2231_2(node, editorContext, editorContext.getOperationContext().getScope())) {
+      editorCell.addEditorCell(this.createConstant_2231_1(editorContext, node));
+    }
     editorCell.addEditorCell(this.createRefNode_2231_0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_2231_0(editorContext, node));
     if (renderingCondition2231_0(node, editorContext, editorContext.getOperationContext().getScope())) {
-      editorCell.addEditorCell(this.createConstant_2231_1(editorContext, node));
+      editorCell.addEditorCell(this.createConstant_2231_2(editorContext, node));
     }
     if (renderingCondition2231_1(node, editorContext, editorContext.getOperationContext().getScope())) {
       editorCell.addEditorCell(this.createRefNode_2231_1(editorContext, node));
@@ -50,8 +54,15 @@ public class LocalVariableDeclaration_Editor extends DefaultNodeEditor {
   }
 
   private EditorCell createConstant_2231_1(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "=");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "static");
     editorCell.setCellId("Constant_2231_1");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createConstant_2231_2(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "=");
+    editorCell.setCellId("Constant_2231_2");
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -114,5 +125,9 @@ public class LocalVariableDeclaration_Editor extends DefaultNodeEditor {
 
   private static boolean renderingCondition2231_1(SNode node, EditorContext editorContext, IScope scope) {
     return SLinkOperations.getTarget(node, "init", true) != null;
+  }
+
+  private static boolean renderingCondition2231_2(SNode node, EditorContext editorContext, IScope scope) {
+    return SPropertyOperations.getBoolean(node, "static");
   }
 }

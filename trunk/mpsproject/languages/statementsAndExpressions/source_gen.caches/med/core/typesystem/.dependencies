@@ -48,6 +48,8 @@
     <classNode dependClassName="med.core.typesystem.typeof_IntegerType_InferenceRule" />
     <classNode dependClassName="med.core.typesystem.typeof_LocalVariableDeclaration_InferenceRule" />
     <classNode dependClassName="med.core.typesystem.typeof_LocalVariableReference_InferenceRule" />
+    <classNode dependClassName="med.core.typesystem.typeof_ModuleVariableRef_InferenceRule" />
+    <classNode dependClassName="med.core.typesystem.typeof_ModuleVariable_InferenceRule" />
     <classNode dependClassName="med.core.typesystem.typeof_NewExpression_InferenceRule" />
     <classNode dependClassName="med.core.typesystem.typeof_NullExpression_InferenceRule" />
     <classNode dependClassName="med.core.typesystem.typeof_ParameterReference_InferenceRule" />
@@ -535,6 +537,26 @@
     <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
   </dependency>
   <dependency className="med.core.typesystem.typeof_LocalVariableReference_InferenceRule">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.intentions.BaseIntentionProvider" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
+  </dependency>
+  <dependency className="med.core.typesystem.typeof_ModuleVariableRef_InferenceRule">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.intentions.BaseIntentionProvider" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeCheckingContext" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.AbstractInferenceRule_Runtime" />
+    <classNode extendsClassName="jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime" />
+  </dependency>
+  <dependency className="med.core.typesystem.typeof_ModuleVariable_InferenceRule">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.intentions.BaseIntentionProvider" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />

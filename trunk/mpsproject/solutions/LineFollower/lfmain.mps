@@ -63,11 +63,69 @@
       <node role="contents" type="med.tasks.structure.Task" id="6254144863182650230">
         <property name="name" value="setup" />
         <node role="body" type="med.core.structure.StatementList" id="6254144863182650231">
+          <node role="statements" type="med.core.structure.BlockStatement" id="6254144863187769421">
+            <node role="body" type="med.core.structure.StatementList" id="6254144863187769422">
+              <node role="statements" type="med.core.structure.ExpressionStatement" id="6254144863187769423">
+                <node role="expression" type="med.core.structure.ProcedureCall" id="6254144863187769424">
+                  <link role="procedure" targetNodeId="2v.5196379128662641915" resolveInfo="display_goto_xy" />
+                  <node role="actuals" type="med.core.structure.IntConstantExpression" id="6254144863187769425">
+                    <property name="value" value="0" />
+                  </node>
+                  <node role="actuals" type="med.core.structure.IntConstantExpression" id="6254144863187769426">
+                    <property name="value" value="0" />
+                  </node>
+                </node>
+              </node>
+              <node role="statements" type="med.core.structure.ExpressionStatement" id="6254144863187769427">
+                <node role="expression" type="med.core.structure.ProcedureCall" id="6254144863187769428">
+                  <link role="procedure" targetNodeId="2v.5196379128662641950" resolveInfo="display_string" />
+                  <node role="actuals" type="med.core.structure.StringConstantExpression" id="6254144863187769429">
+                    <property name="value" value="Initializing" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6254144863187769430">
+              <property name="isNew" value="false" />
+              <node role="expression" type="featureDependencies.structure.AtomicFE" id="6254144863187769432">
+                <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
+              </node>
+            </node>
+          </node>
           <node role="statements" type="med.core.structure.ExpressionStatement" id="6254144863182650234">
             <node role="expression" type="med.core.structure.ProcedureCall" id="6254144863182650235">
               <link role="procedure" targetNodeId="2v.5196379128662167372" resolveInfo="ecrobot_set_light_sensor_active" />
               <node role="actuals" type="med.core.structure.EnumLiteralRef" id="6254144863182650236">
                 <link role="literal" targetNodeId="2v.5196379128661020615" resolveInfo="NXT_PORT_S1" />
+              </node>
+            </node>
+          </node>
+          <node role="statements" type="med.core.structure.BlockStatement" id="6254144863187770642">
+            <node role="body" type="med.core.structure.StatementList" id="6254144863187770643">
+              <node role="statements" type="med.core.structure.ExpressionStatement" id="6254144863187770644">
+                <node role="expression" type="med.core.structure.ProcedureCall" id="6254144863187770645">
+                  <link role="procedure" targetNodeId="2v.5196379128662641915" resolveInfo="display_goto_xy" />
+                  <node role="actuals" type="med.core.structure.IntConstantExpression" id="6254144863187770646">
+                    <property name="value" value="0" />
+                  </node>
+                  <node role="actuals" type="med.core.structure.IntConstantExpression" id="6254144863187770647">
+                    <property name="value" value="0" />
+                  </node>
+                </node>
+              </node>
+              <node role="statements" type="med.core.structure.ExpressionStatement" id="6254144863187770648">
+                <node role="expression" type="med.core.structure.ProcedureCall" id="6254144863187770649">
+                  <link role="procedure" targetNodeId="2v.5196379128662641950" resolveInfo="display_string" />
+                  <node role="actuals" type="med.core.structure.StringConstantExpression" id="6254144863187770650">
+                    <property name="value" value="Running...." />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6254144863187770651">
+              <property name="isNew" value="false" />
+              <node role="expression" type="featureDependencies.structure.AtomicFE" id="6254144863187770652">
+                <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
               </node>
             </node>
           </node>
@@ -104,7 +162,7 @@
                         <property name="value" value="0" />
                       </node>
                       <node role="actuals" type="med.core.structure.IntConstantExpression" id="6254144863183193914">
-                        <property name="value" value="0" />
+                        <property name="value" value="2" />
                       </node>
                     </node>
                   </node>
@@ -123,7 +181,7 @@
                         <property name="value" value="1" />
                       </node>
                       <node role="actuals" type="med.core.structure.IntConstantExpression" id="6254144863183193921">
-                        <property name="value" value="1" />
+                        <property name="value" value="3" />
                       </node>
                     </node>
                   </node>
@@ -331,7 +389,7 @@
                 <property name="value" value="0" />
               </node>
               <node role="actuals" type="med.core.structure.IntConstantExpression" id="5196379128662886713">
-                <property name="value" value="3" />
+                <property name="value" value="5" />
               </node>
             </node>
           </node>
@@ -350,7 +408,7 @@
                 <property name="value" value="1" />
               </node>
               <node role="actuals" type="med.core.structure.IntConstantExpression" id="5196379128662886720">
-                <property name="value" value="3" />
+                <property name="value" value="6" />
               </node>
             </node>
           </node>
@@ -372,7 +430,7 @@
                 <property name="value" value="8" />
               </node>
               <node role="actuals" type="med.core.structure.IntConstantExpression" id="5196379128662886728">
-                <property name="value" value="4" />
+                <property name="value" value="6" />
               </node>
             </node>
           </node>
@@ -413,13 +471,13 @@
     </node>
   </node>
   <node type="featureDependencies.structure.FeatureDependencyConfiguration" id="5196379128662641904">
-    <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="8437501635617537234">
+    <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="6254144863187773148">
       <property name="showFeatureClause" value="true" />
       <property name="highlightFeatureDependentNodes" value="true" />
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="5196379128662641907">
       <property name="name" value="debugOutput" />
-      <property name="selected" value="true" />
+      <property name="selected" value="false" />
     </node>
   </node>
   <node type="med.core.structure.System" id="8437501635617536080">
