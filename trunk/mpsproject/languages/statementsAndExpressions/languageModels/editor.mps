@@ -39,24 +39,10 @@
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="6520964804316559127">
     <property name="package" value="statements" />
     <link role="conceptDeclaration" targetNodeId="1.6520964804316559124" resolveInfo="StatementList" />
-    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="6520964804316559129">
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" id="6254144863183887773">
       <property name="usesFolding" value="true" />
-      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" id="6520964804316559132">
-        <property name="usesFolding" value="true" />
-        <property name="usesBraces" value="false" />
-        <link role="relationDeclaration" targetNodeId="1.6520964804316559126" />
-        <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="6520964804316559133" />
-        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" id="6520964804316559134">
-          <property name="flag" value="true" />
-        </node>
-        <node role="emptyCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="6520964804316559135">
-          <property name="nullText" value="&lt;&lt;statement&gt;&gt;" />
-          <node role="styleItem" type="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" id="6520964804316559136">
-            <property name="flag" value="true" />
-          </node>
-        </node>
-      </node>
-      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="6520964804316559131" />
+      <link role="relationDeclaration" targetNodeId="1.6520964804316559126" />
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" id="6254144863183887774" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="6520964804316559139">
@@ -1034,6 +1020,7 @@
     <property name="package" value="statements" />
     <link role="conceptDeclaration" targetNodeId="1.5174648333272176110" resolveInfo="BlockStatement" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="5174648333272176114">
+      <property name="usesFolding" value="false" />
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5174648333272176117">
         <property name="text" value="{" />
       </node>

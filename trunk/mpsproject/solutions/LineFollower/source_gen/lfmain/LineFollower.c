@@ -16,13 +16,11 @@
 #include "kernel.h"
 #include "kernel_id.h"
 
+TASK(setup) {
+//added from the task
+ecrobot_set_light_sensor_active (NXT_PORT_S1 );
+TerminateTask(); // automatically added by platform.osek:addTermianateTask
 
-void ecrobot_device_initialize(void) {
-  ecrobot_set_light_sensor_active (NXT_PORT_S1 );
-}
-
-void ecrobot_device_terminate(void) {
-  ecrobot_set_light_sensor_inactive (NXT_PORT_S1 );
 }
 TASK(run) {
 int line = ecrobot_get_light_sensor (NXT_PORT_S1 );
@@ -46,7 +44,7 @@ if ((line < (((500 + 700)) / (2)))) {
 
 }
 display_update ( );
-TerminateTask ( );
+TerminateTask(); // automatically added by platform.osek:addTermianateTask
 
 }
 
@@ -63,6 +61,6 @@ void LineFollower_main_displaySpeeds(int leftSpeed, int rightSpeed) {
   display_goto_xy (8, 4 );
   display_int (rightSpeed, 0 );
 }
-DeclareCounter(SysTimerCnt);
-void user_1ms_isr_type2(void) { SignalCounter(SysTimerCnt); } 
+DeclareCounter(SysTimerCnt); // added by platform.osek:addCounterTrigger
+void user_1ms_isr_type2(void) { SignalCounter(SysTimerCnt); } // added by platform.osek:addCounterTrigger
 

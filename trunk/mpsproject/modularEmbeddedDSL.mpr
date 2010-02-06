@@ -19,6 +19,7 @@
       <languagePath path="${project}/languages/unittest/unittest.mpl" />
       <languagePath path="${project}/languages/win32/win32.mpl" />
       <languagePath path="${project}/languages/nxtosek/nxtosek.mpl" />
+      <languagePath path="${project}/languages/statemachine/statemachine.mpl" folder="" />
     </projectLanguages>
     <projectDevkits>
       <devkitPath path="${project}/devkits/ModularEmbeddedDSL/ModularEmbeddedDSL.devkit" />

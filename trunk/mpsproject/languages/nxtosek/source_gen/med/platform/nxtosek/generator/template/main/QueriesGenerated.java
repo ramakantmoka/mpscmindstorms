@@ -126,7 +126,7 @@ public class QueriesGenerated {
     }
   }
 
-  public static void mappingScript_CodeBlock_8437501635617944472(final IOperationContext operationContext, final MappingScriptContext _context) {
+  public static void mappingScript_CodeBlock_6254144863182533036(final IOperationContext operationContext, final MappingScriptContext _context) {
     List<SNode> resources = SModelOperations.getRoots(_context.getModel(), "med.core.structure.Resource");
     List<SNode> modules = new ArrayList<SNode>();
     for (SNode r : ListSequence.fromList(resources)) {
@@ -138,11 +138,32 @@ public class QueriesGenerated {
     }
 
     SNode declareCounter = SConceptOperations.createNewNode("med.core.structure.TextBlock", null);
-    SPropertyOperations.set(declareCounter, "text", "DeclareCounter(SysTimerCnt);");
+    SPropertyOperations.set(declareCounter, "text", "DeclareCounter(SysTimerCnt); // added by platform.osek:addCounterTrigger");
     SLinkOperations.addChild(SNodeOperations.cast(ListSequence.fromList(modules).first(), "med.core.structure.ImplementationModule"), "contents", declareCounter);
 
     SNode counterTrigger = SConceptOperations.createNewNode("med.core.structure.TextBlock", null);
-    SPropertyOperations.set(counterTrigger, "text", "void user_1ms_isr_type2(void) { SignalCounter(SysTimerCnt); } ");
+    SPropertyOperations.set(counterTrigger, "text", "void user_1ms_isr_type2(void) { SignalCounter(SysTimerCnt); } // added by platform.osek:addCounterTrigger");
     SLinkOperations.addChild(SNodeOperations.cast(ListSequence.fromList(modules).first(), "med.core.structure.ImplementationModule"), "contents", counterTrigger);
+  }
+
+  public static void mappingScript_CodeBlock_8437501635617944472(final IOperationContext operationContext, final MappingScriptContext _context) {
+    List<SNode> resources = SModelOperations.getRoots(_context.getModel(), "med.core.structure.Resource");
+    for (SNode r : ListSequence.fromList(resources)) {
+      for (SNode m : ListSequence.fromList(SLinkOperations.getTargets(r, "modules", true)).where(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return SNodeOperations.isInstanceOf(it, "med.core.structure.ImplementationModule");
+        }
+      })) {
+        for (SNode t : ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(m, "med.core.structure.ImplementationModule"), "contents", true)).where(new IWhereFilter<SNode>() {
+          public boolean accept(SNode it) {
+            return SNodeOperations.isInstanceOf(it, "med.tasks.structure.Task");
+          }
+        })) {
+          SNode s = SConceptOperations.createNewNode("med.core.structure.TextualCodeStatement", null);
+          SPropertyOperations.set(s, "code", "TerminateTask(); // automatically added by platform.osek:addTermianateTask");
+          SLinkOperations.addChild(SLinkOperations.getTarget(SNodeOperations.cast(t, "med.tasks.structure.Task"), "body", true), "statements", s);
+        }
+      }
+    }
   }
 }
