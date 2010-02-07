@@ -9,19 +9,19 @@
 #include "include/LineFollower.h"
 
 // used resources
+#include "ecrobot_interface.h"
 #include "kernel.h"
 #include "bitdata.h"
-#include "ecrobot_interface.h"
 
 // custom includes
 #include "kernel.h"
 #include "kernel_id.h"
 
-int LineFollower_main_linefollower_currentstate=STATE_INTIALIZING;
+int LineFollower_main_linefollower_currentstate=STATE_INITIALIZING;
 
 void LineFollower_main_linefollower_execute(int event) {
         
-    if ( LineFollower_main_linefollower_currentstate == STATE_INTIALIZING) {
+    if ( LineFollower_main_linefollower_currentstate == STATE_INITIALIZING) {
                 
       if ( event == EVENT_INITIALIZED) {
               LineFollower_main_linefollower_currentstate = STATE_RUNNING;
