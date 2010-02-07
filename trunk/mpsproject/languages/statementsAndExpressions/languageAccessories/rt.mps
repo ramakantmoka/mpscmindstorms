@@ -501,6 +501,20 @@
                             </node>
                           </node>
                         </node>
+                        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="3426893568456555337">
+                          <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="3426893568456555339">
+                            <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="3426893568456555338">
+                              <link role="variableDeclaration" targetNodeId="5288422977873041887" resolveInfo="okButton" />
+                            </node>
+                            <node role="operation" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" id="3426893568456560040">
+                              <link role="baseMethodDeclaration" targetNodeId="1.~AbstractButton.setMnemonic(int):void" resolveInfo="setMnemonic" />
+                              <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference" id="3426893568456560041">
+                                <link role="classifier" targetNodeId="5.~KeyEvent" resolveInfo="KeyEvent" />
+                                <link role="variableDeclaration" targetNodeId="5.~KeyEvent.VK_O" resolveInfo="VK_O" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="5288422977873347959">
                           <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5288422977873347961">
                             <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="5288422977873347960">
@@ -634,6 +648,20 @@
                                     </node>
                                   </node>
                                 </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="3426893568456560049">
+                          <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="3426893568456560051">
+                            <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="3426893568456560050">
+                              <link role="variableDeclaration" targetNodeId="5288422977873044140" resolveInfo="cancelButton" />
+                            </node>
+                            <node role="operation" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" id="3426893568456560055">
+                              <link role="baseMethodDeclaration" targetNodeId="1.~AbstractButton.setMnemonic(int):void" resolveInfo="setMnemonic" />
+                              <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference" id="3426893568456560056">
+                                <link role="classifier" targetNodeId="5.~KeyEvent" resolveInfo="KeyEvent" />
+                                <link role="variableDeclaration" targetNodeId="5.~KeyEvent.VK_CANCEL" resolveInfo="VK_CANCEL" />
                               </node>
                             </node>
                           </node>

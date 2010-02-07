@@ -76,7 +76,7 @@
       </node>
       <node role="contents" type="med.tasks.structure.Task" id="6254144863182650230">
         <property name="name" value="setup" />
-        <property name="text" value="This task is executed when the system starts up and initializes the light sensor." />
+        <property name="text" value="This task is executed when the system starts up and initializes the light sensor. And now wer're going to add even more!" />
         <node role="body" type="med.core.structure.StatementList" id="6254144863182650231">
           <node role="statements" type="med.core.structure.BlockStatement" id="9105096665974586743">
             <node role="body" type="med.core.structure.StatementList" id="9105096665974586744">
@@ -101,7 +101,7 @@
               </node>
             </node>
             <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="9105096665974586762">
-              <property name="isNew" value="true" />
+              <property name="isNew" value="false" />
               <node role="expression" type="featureDependencies.structure.AtomicFE" id="9105096665974586764">
                 <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
               </node>
@@ -138,7 +138,7 @@
               </node>
             </node>
             <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="9105096665974586765">
-              <property name="isNew" value="true" />
+              <property name="isNew" value="false" />
               <node role="expression" type="featureDependencies.structure.AtomicFE" id="9105096665974586767">
                 <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
               </node>
@@ -494,7 +494,7 @@
     </node>
   </node>
   <node type="featureDependencies.structure.FeatureDependencyConfiguration" id="5196379128662641904">
-    <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="6254144863187773148">
+    <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="3426893568456397304">
       <property name="showFeatureClause" value="true" />
       <property name="highlightFeatureDependentNodes" value="true" />
     </node>
