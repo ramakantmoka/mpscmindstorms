@@ -7,6 +7,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.EditorContext;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
+import jetbrains.mps.nodeEditor.AbstractCellProvider;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.style.Style;
 import jetbrains.mps.nodeEditor.style.StyleAttributes;
@@ -28,9 +29,14 @@ public class ExternalModule_Editor extends DefaultNodeEditor {
     return this.createCollection_4709_0(editorContext, node);
   }
 
+  public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
+    return this.createComponent_4709_0(editorContext, node);
+  }
+
   private EditorCell createCollection_4709_0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_4709_0");
+    editorCell.addEditorCell(this.createComponent_4709_1(editorContext, node));
     editorCell.addEditorCell(this.createConstant_4709_4(editorContext, node));
     editorCell.addEditorCell(this.createConstant_4709_5(editorContext, node));
     editorCell.addEditorCell(this.createProperty_4709_0(editorContext, node));
@@ -51,6 +57,18 @@ public class ExternalModule_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createRefNodeList_4709_5(editorContext, node));
     editorCell.addEditorCell(this.createConstant_4709_15(editorContext, node));
     editorCell.addEditorCell(this.createConstant_4709_16(editorContext, node));
+    return editorCell;
+  }
+
+  private EditorCell createComponent_4709_0(EditorContext editorContext, SNode node) {
+    AbstractCellProvider provider = new IDocumentable_EditorComponent(node);
+    EditorCell editorCell = provider.createEditorCell(editorContext);
+    return editorCell;
+  }
+
+  private EditorCell createComponent_4709_1(EditorContext editorContext, SNode node) {
+    AbstractCellProvider provider = new IDocumentable_PreviewEditor(node);
+    EditorCell editorCell = provider.createEditorCell(editorContext);
     return editorCell;
   }
 
@@ -79,6 +97,10 @@ public class ExternalModule_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_4709_4(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "external");
     editorCell.setCellId("Constant_4709_4");
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+    }
     editorCell.setDefaultText("");
     return editorCell;
   }

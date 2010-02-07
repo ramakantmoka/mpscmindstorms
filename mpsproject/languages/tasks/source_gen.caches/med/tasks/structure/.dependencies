@@ -51,6 +51,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="med.core.structure.IDocumentable" />
     <classNode dependClassName="med.core.structure.IExportableModuleContent" />
     <classNode dependClassName="med.core.structure.IHasIdentifierName" />
     <classNode dependClassName="med.core.structure.MedBase" />

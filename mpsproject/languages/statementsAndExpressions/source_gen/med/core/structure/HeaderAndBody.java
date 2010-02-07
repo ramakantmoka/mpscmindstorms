@@ -7,12 +7,13 @@ import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.project.GlobalScope;
 
-public class HeaderAndBody extends MedBase implements IModuleContent, IReduceToImplementation {
+public class HeaderAndBody extends MedBase implements IModuleContent, IReduceToImplementation, IDocumentable {
   public static final String concept = "med.core.structure.HeaderAndBody";
   public static final String HEADER = "header";
   public static final String SHORT_DESCRIPTION = "shortDescription";
   public static final String ALIAS = "alias";
   public static final String VIRTUAL_PACKAGE = "virtualPackage";
+  public static final String TEXT = "text";
   public static final String BODY = "body";
 
   public HeaderAndBody(SNode node) {
@@ -49,6 +50,14 @@ public class HeaderAndBody extends MedBase implements IModuleContent, IReduceToI
 
   public void setVirtualPackage(String value) {
     this.setProperty(HeaderAndBody.VIRTUAL_PACKAGE, value);
+  }
+
+  public String getText() {
+    return this.getProperty(HeaderAndBody.TEXT);
+  }
+
+  public void setText(String value) {
+    this.setProperty(HeaderAndBody.TEXT, value);
   }
 
   public StatementList getBody() {

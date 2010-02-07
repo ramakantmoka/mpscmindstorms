@@ -5,18 +5,20 @@ package med.tasks.structure;
 import med.core.structure.MedBase;
 import med.core.structure.IExportableModuleContent;
 import med.core.structure.IHasIdentifierName;
+import med.core.structure.IDocumentable;
 import jetbrains.mps.smodel.SNode;
 import med.core.structure.StatementList;
 import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.project.GlobalScope;
 
-public class Task extends MedBase implements IExportableModuleContent, IHasIdentifierName {
+public class Task extends MedBase implements IExportableModuleContent, IHasIdentifierName, IDocumentable {
   public static final String concept = "med.tasks.structure.Task";
   public static final String SHORT_DESCRIPTION = "shortDescription";
   public static final String ALIAS = "alias";
   public static final String VIRTUAL_PACKAGE = "virtualPackage";
   public static final String NAME = "name";
+  public static final String TEXT = "text";
   public static final String EXPORT = "export";
   public static final String SCHEDULING = "scheduling";
   public static final String BODY = "body";
@@ -55,6 +57,14 @@ public class Task extends MedBase implements IExportableModuleContent, IHasIdent
 
   public void setName(String value) {
     this.setProperty(Task.NAME, value);
+  }
+
+  public String getText() {
+    return this.getProperty(Task.TEXT);
+  }
+
+  public void setText(String value) {
+    this.setProperty(Task.TEXT, value);
   }
 
   public boolean getExport() {

@@ -33,7 +33,7 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 
 public class Procedure_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_7095_2(editorContext, node);
+    return this.createCollection_7095_0(editorContext, node);
   }
 
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
@@ -41,8 +41,24 @@ public class Procedure_Editor extends DefaultNodeEditor {
   }
 
   private EditorCell createCollection_7095_0(EditorContext editorContext, SNode node) {
-    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
     editorCell.setCellId("Collection_7095_0");
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.SELECTABLE, false);
+    }
+    editorCell.addEditorCell(this.createComponent_7095_1(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_7095_1(editorContext, node));
+    return editorCell;
+  }
+
+  private EditorCell createCollection_7095_1(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_7095_1");
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.SELECTABLE, false);
+    }
     if (renderingCondition7095_0(node, editorContext, editorContext.getOperationContext().getScope())) {
       editorCell.addEditorCell(this.createConstant_7095_0(editorContext, node));
     }
@@ -55,14 +71,14 @@ public class Procedure_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createRefNodeList_7095_0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_7095_4(editorContext, node));
     editorCell.addEditorCell(this.createConstant_7095_5(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_7095_1(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_7095_2(editorContext, node));
     editorCell.addEditorCell(this.createConstant_7095_7(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createCollection_7095_1(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_7095_2(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_7095_1");
+    editorCell.setCellId("Collection_7095_2");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
@@ -78,17 +94,14 @@ public class Procedure_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createCollection_7095_2(EditorContext editorContext, SNode node) {
-    EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
-    editorCell.setCellId("Collection_7095_2");
-    if (renderingCondition7095_4(node, editorContext, editorContext.getOperationContext().getScope())) {
-      editorCell.addEditorCell(this.createCollection_7095_0(editorContext, node));
-    }
+  private EditorCell createComponent_7095_0(EditorContext editorContext, SNode node) {
+    AbstractCellProvider provider = new IDocumentable_EditorComponent(node);
+    EditorCell editorCell = provider.createEditorCell(editorContext);
     return editorCell;
   }
 
-  private EditorCell createComponent_7095_0(EditorContext editorContext, SNode node) {
-    AbstractCellProvider provider = new IDocumentable_EditorComponent(node);
+  private EditorCell createComponent_7095_1(EditorContext editorContext, SNode node) {
+    AbstractCellProvider provider = new IDocumentable_PreviewEditor(node);
     EditorCell editorCell = provider.createEditorCell(editorContext);
     return editorCell;
   }
@@ -99,6 +112,7 @@ public class Procedure_Editor extends DefaultNodeEditor {
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.TEXT_COLOR, MPSColors.DARK_GREEN);
+      style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
     }
     editorCell.setDefaultText("");
     return editorCell;
@@ -236,10 +250,6 @@ public class Procedure_Editor extends DefaultNodeEditor {
 
   private static boolean renderingCondition7095_3(SNode node, EditorContext editorContext, IScope scope) {
     return !(IProjectionLevelAware_Behavior.call_hasProjectionLevel_343373828473056899(node, SConceptOperations.findConceptDeclaration("med.core.structure.ProjectionLevelAll")));
-  }
-
-  private static boolean renderingCondition7095_4(SNode node, EditorContext editorContext, IScope scope) {
-    return IProjectionLevelAware_Behavior.call_hasProjectionLevel_343373828473056899(node, SConceptOperations.findConceptDeclaration("med.core.structure.ProjectionLevelOutline"));
   }
 
   private static class parametersListHandler_7095_0 extends RefNodeListHandler {

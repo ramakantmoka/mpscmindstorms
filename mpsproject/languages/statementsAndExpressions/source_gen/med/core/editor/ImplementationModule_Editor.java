@@ -7,6 +7,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.EditorContext;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
+import jetbrains.mps.nodeEditor.AbstractCellProvider;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.style.Style;
 import jetbrains.mps.nodeEditor.style.StyleAttributes;
@@ -29,9 +30,14 @@ public class ImplementationModule_Editor extends DefaultNodeEditor {
     return this.createCollection_0418_0(editorContext, node);
   }
 
+  public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
+    return this.createComponent_0418_0(editorContext, node);
+  }
+
   private EditorCell createCollection_0418_0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_0418_0");
+    editorCell.addEditorCell(this.createComponent_0418_1(editorContext, node));
     editorCell.addEditorCell(this.createConstant_0418_0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_0418_0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_0418_1(editorContext, node));
@@ -44,9 +50,25 @@ public class ImplementationModule_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
+  private EditorCell createComponent_0418_0(EditorContext editorContext, SNode node) {
+    AbstractCellProvider provider = new IDocumentable_EditorComponent(node);
+    EditorCell editorCell = provider.createEditorCell(editorContext);
+    return editorCell;
+  }
+
+  private EditorCell createComponent_0418_1(EditorContext editorContext, SNode node) {
+    AbstractCellProvider provider = new IDocumentable_PreviewEditor(node);
+    EditorCell editorCell = provider.createEditorCell(editorContext);
+    return editorCell;
+  }
+
   private EditorCell createConstant_0418_0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "module");
     editorCell.setCellId("Constant_0418_0");
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+    }
     editorCell.setDefaultText("");
     return editorCell;
   }
