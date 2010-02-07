@@ -9,12 +9,13 @@ import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.project.GlobalScope;
 
-public class ProcedureSignature extends MedBase implements IHasIdentifierName, IExportableModuleContent {
+public class ProcedureSignature extends MedBase implements IHasIdentifierName, IExportableModuleContent, IDocumentable {
   public static final String concept = "med.core.structure.ProcedureSignature";
   public static final String NAME = "name";
   public static final String SHORT_DESCRIPTION = "shortDescription";
   public static final String ALIAS = "alias";
   public static final String VIRTUAL_PACKAGE = "virtualPackage";
+  public static final String TEXT = "text";
   public static final String DONT_MANGLE_NAME = "dontMangleName";
   public static final String EXPORT = "export";
   public static final String TYPE = "type";
@@ -54,6 +55,14 @@ public class ProcedureSignature extends MedBase implements IHasIdentifierName, I
 
   public void setVirtualPackage(String value) {
     this.setProperty(ProcedureSignature.VIRTUAL_PACKAGE, value);
+  }
+
+  public String getText() {
+    return this.getProperty(ProcedureSignature.TEXT);
+  }
+
+  public void setText(String value) {
+    this.setProperty(ProcedureSignature.TEXT, value);
   }
 
   public boolean getDontMangleName() {

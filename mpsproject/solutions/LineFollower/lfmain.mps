@@ -399,6 +399,7 @@
       </node>
       <node role="contents" type="med.core.structure.Procedure" id="5196379128662886701">
         <property name="name" value="displaySpeeds" />
+        <property name="text" value="Here is some documentation" />
         <node role="body" type="med.core.structure.StatementList" id="5196379128662886702">
           <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128662886710">
             <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128662886711">

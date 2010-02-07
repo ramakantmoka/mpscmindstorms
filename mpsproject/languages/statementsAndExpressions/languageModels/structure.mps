@@ -1156,6 +1156,9 @@
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="3454436015650441820">
       <link role="intfc" targetNodeId="306587673255505535" resolveInfo="IExportableModuleContent" />
     </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="5288422977872469418">
+      <link role="intfc" targetNodeId="5288422977871838031" resolveInfo="IDocumentable" />
+    </node>
     <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.BooleanConceptProperty" id="306587673256793458">
       <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473854053" resolveInfo="abstract" />
     </node>
@@ -1818,6 +1821,14 @@
       <property name="role" value="body" />
       <property name="sourceCardinality" value="1" />
       <link role="target" targetNodeId="6520964804316559124" resolveInfo="StatementList" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="5288422977871838031">
+    <property name="name" value="IDocumentable" />
+    <property name="package" value="doc" />
+    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="5288422977871838033">
+      <property name="name" value="text" />
+      <link role="dataType" targetNodeId="2v.1082983041843" resolveInfo="string" />
     </node>
   </node>
 </model>
