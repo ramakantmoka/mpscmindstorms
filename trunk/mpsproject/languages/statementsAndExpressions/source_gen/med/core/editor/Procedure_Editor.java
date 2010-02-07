@@ -9,6 +9,7 @@ import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.style.Style;
 import jetbrains.mps.nodeEditor.style.StyleAttributes;
+import jetbrains.mps.nodeEditor.AbstractCellProvider;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.MPSColors;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
@@ -33,6 +34,10 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 public class Procedure_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
     return this.createCollection_7095_2(editorContext, node);
+  }
+
+  public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
+    return this.createComponent_7095_0(editorContext, node);
   }
 
   private EditorCell createCollection_7095_0(EditorContext editorContext, SNode node) {
@@ -79,6 +84,12 @@ public class Procedure_Editor extends DefaultNodeEditor {
     if (renderingCondition7095_4(node, editorContext, editorContext.getOperationContext().getScope())) {
       editorCell.addEditorCell(this.createCollection_7095_0(editorContext, node));
     }
+    return editorCell;
+  }
+
+  private EditorCell createComponent_7095_0(EditorContext editorContext, SNode node) {
+    AbstractCellProvider provider = new IDocumentable_EditorComponent(node);
+    EditorCell editorCell = provider.createEditorCell(editorContext);
     return editorCell;
   }
 
