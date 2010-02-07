@@ -1,0 +1,99 @@
+<project name="modularEmbeddedDSL-languages" default="pack.med.collections0">
+  <fail unless="deploy.dir" message="Property deploy.dir unspecified." />
+  <target name="pack.med.collections0">
+    <mkdir dir="languages/collections/classes_gen" />
+    <mkdir dir="languages/collections/source_gen.caches" />
+    <jar destfile="${deploy.dir}/MPS/modularEmbeddedDSL/med.collections.mpsarch.jar" compress="true" duplicate="preserve" filesonly="true">
+      <zipfileset file="languages/collections/collections.mpl" prefix="module" />
+      <zipfileset dir="languages/collections/source_gen.caches" prefix="source_gen.caches" />
+      <zipfileset dir="languages/collections" excludes="**/*.iml, **/*.java, **/*.class, **/*.mpr, **/*.mws, **/*.mpl, **/*.msd, **/*.devkit, **/*.ipr" prefix="module" />
+      <zipfileset dir="languages/collections/classes_gen" />
+    </jar>
+  </target>
+  <target name="pack.ModularEmbeddedDSL0">
+    <jar destfile="${deploy.dir}/MPS/modularEmbeddedDSL/ModularEmbeddedDSL.mpsarch.jar" compress="true" duplicate="preserve" filesonly="true">
+      <zipfileset file="devkits/ModularEmbeddedDSL/ModularEmbeddedDSL.devkit" prefix="module" />
+      <zipfileset dir="devkits/ModularEmbeddedDSL" excludes="**/*.iml, **/*.java, **/*.class, **/*.mpr, **/*.mws, **/*.mpl, **/*.msd, **/*.devkit, **/*.ipr" prefix="module" />
+    </jar>
+  </target>
+  <target name="pack.med.platform.nxtosek0">
+    <mkdir dir="languages/nxtosek/classes_gen" />
+    <mkdir dir="languages/nxtosek/source_gen.caches" />
+    <jar destfile="${deploy.dir}/MPS/modularEmbeddedDSL/med.platform.nxtosek.mpsarch.jar" compress="true" duplicate="preserve" filesonly="true">
+      <zipfileset file="languages/nxtosek/nxtosek.mpl" prefix="module" />
+      <zipfileset dir="languages/nxtosek/source_gen.caches" prefix="source_gen.caches" />
+      <zipfileset dir="languages/nxtosek" excludes="**/*.iml, **/*.java, **/*.class, **/*.mpr, **/*.mws, **/*.mpl, **/*.msd, **/*.devkit, **/*.ipr" prefix="module" />
+      <zipfileset dir="languages/nxtosek/classes_gen" />
+    </jar>
+  </target>
+  <target name="pack.med.core0">
+    <mkdir dir="languages/statementsAndExpressions/classes_gen" />
+    <mkdir dir="languages/statementsAndExpressions/source_gen.caches" />
+    <jar destfile="${deploy.dir}/MPS/modularEmbeddedDSL/med.core.mpsarch.jar" compress="true" duplicate="preserve" filesonly="true">
+      <zipfileset file="languages/statementsAndExpressions/statementsAndExpressions.mpl" prefix="module" />
+      <zipfileset dir="languages/statementsAndExpressions/source_gen.caches" prefix="source_gen.caches" />
+      <zipfileset dir="languages/statementsAndExpressions" excludes="**/*.iml, **/*.java, **/*.class, **/*.mpr, **/*.mws, **/*.mpl, **/*.msd, **/*.devkit, **/*.ipr" prefix="module" />
+      <zipfileset dir="languages/statementsAndExpressions/classes_gen" />
+    </jar>
+  </target>
+  <target name="pack.med.platform.win320">
+    <mkdir dir="languages/win32/classes_gen" />
+    <mkdir dir="languages/win32/source_gen.caches" />
+    <jar destfile="${deploy.dir}/MPS/modularEmbeddedDSL/med.platform.win32.mpsarch.jar" compress="true" duplicate="preserve" filesonly="true">
+      <zipfileset file="languages/win32/win32.mpl" prefix="module" />
+      <zipfileset dir="languages/win32/source_gen.caches" prefix="source_gen.caches" />
+      <zipfileset dir="languages/win32" excludes="**/*.iml, **/*.java, **/*.class, **/*.mpr, **/*.mws, **/*.mpl, **/*.msd, **/*.devkit, **/*.ipr" prefix="module" />
+      <zipfileset dir="languages/win32/classes_gen" />
+    </jar>
+  </target>
+  <target name="pack.med.unittest0">
+    <mkdir dir="languages/unittest/classes_gen" />
+    <mkdir dir="languages/unittest/source_gen.caches" />
+    <jar destfile="${deploy.dir}/MPS/modularEmbeddedDSL/med.unittest.mpsarch.jar" compress="true" duplicate="preserve" filesonly="true">
+      <zipfileset file="languages/unittest/unittest.mpl" prefix="module" />
+      <zipfileset dir="languages/unittest/source_gen.caches" prefix="source_gen.caches" />
+      <zipfileset dir="languages/unittest" excludes="**/*.iml, **/*.java, **/*.class, **/*.mpr, **/*.mws, **/*.mpl, **/*.msd, **/*.devkit, **/*.ipr" prefix="module" />
+      <zipfileset dir="languages/unittest/classes_gen" />
+    </jar>
+  </target>
+  <target name="pack.featureDependencies0">
+    <mkdir dir="languages/featureDependencies/classes_gen" />
+    <mkdir dir="languages/featureDependencies/source_gen.caches" />
+    <jar destfile="${deploy.dir}/MPS/modularEmbeddedDSL/featureDependencies.mpsarch.jar" compress="true" duplicate="preserve" filesonly="true">
+      <zipfileset file="languages/featureDependencies/featureDependencies.mpl" prefix="module" />
+      <zipfileset dir="languages/featureDependencies/source_gen.caches" prefix="source_gen.caches" />
+      <zipfileset dir="languages/featureDependencies" excludes="**/*.iml, **/*.java, **/*.class, **/*.mpr, **/*.mws, **/*.mpl, **/*.msd, **/*.devkit, **/*.ipr" prefix="module" />
+      <zipfileset dir="languages/featureDependencies/classes_gen" />
+    </jar>
+  </target>
+  <target name="pack.med.quantities0">
+    <mkdir dir="languages/quantities/classes_gen" />
+    <mkdir dir="languages/quantities/source_gen.caches" />
+    <jar destfile="${deploy.dir}/MPS/modularEmbeddedDSL/med.quantities.mpsarch.jar" compress="true" duplicate="preserve" filesonly="true">
+      <zipfileset file="languages/quantities/quantities.mpl" prefix="module" />
+      <zipfileset dir="languages/quantities/source_gen.caches" prefix="source_gen.caches" />
+      <zipfileset dir="languages/quantities" excludes="**/*.iml, **/*.java, **/*.class, **/*.mpr, **/*.mws, **/*.mpl, **/*.msd, **/*.devkit, **/*.ipr" prefix="module" />
+      <zipfileset dir="languages/quantities/classes_gen" />
+    </jar>
+  </target>
+  <target name="pack.med.logging0">
+    <mkdir dir="languages/logging/classes_gen" />
+    <mkdir dir="languages/logging/source_gen.caches" />
+    <jar destfile="${deploy.dir}/MPS/modularEmbeddedDSL/med.logging.mpsarch.jar" compress="true" duplicate="preserve" filesonly="true">
+      <zipfileset file="languages/logging/logging.mpl" prefix="module" />
+      <zipfileset dir="languages/logging/source_gen.caches" prefix="source_gen.caches" />
+      <zipfileset dir="languages/logging" excludes="**/*.iml, **/*.java, **/*.class, **/*.mpr, **/*.mws, **/*.mpl, **/*.msd, **/*.devkit, **/*.ipr" prefix="module" />
+      <zipfileset dir="languages/logging/classes_gen" />
+    </jar>
+  </target>
+  <target name="pack.med.tasks0">
+    <mkdir dir="languages/tasks/classes_gen" />
+    <mkdir dir="languages/tasks/source_gen.caches" />
+    <jar destfile="${deploy.dir}/MPS/modularEmbeddedDSL/med.tasks.mpsarch.jar" compress="true" duplicate="preserve" filesonly="true">
+      <zipfileset file="languages/tasks/tasks.mpl" prefix="module" />
+      <zipfileset dir="languages/tasks/source_gen.caches" prefix="source_gen.caches" />
+      <zipfileset dir="languages/tasks" excludes="**/*.iml, **/*.java, **/*.class, **/*.mpr, **/*.mws, **/*.mpl, **/*.msd, **/*.devkit, **/*.ipr" prefix="module" />
+      <zipfileset dir="languages/tasks/classes_gen" />
+    </jar>
+  </target>
+</project>
