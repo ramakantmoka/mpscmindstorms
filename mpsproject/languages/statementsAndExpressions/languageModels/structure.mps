@@ -1805,5 +1805,20 @@
       <link role="intfc" targetNodeId="5136468150843706453" resolveInfo="IVariableReference" />
     </node>
   </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="9105096665974292677">
+    <property name="package" value="statements" />
+    <property name="name" value="BlockWithComment" />
+    <link role="extends" targetNodeId="6520964804316559123" resolveInfo="Statement" />
+    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="9105096665974292678">
+      <property name="name" value="comment" />
+      <link role="dataType" targetNodeId="2v.1082983041843" resolveInfo="string" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="9105096665974292679">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="body" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="6520964804316559124" resolveInfo="StatementList" />
+    </node>
+  </node>
 </model>
 
