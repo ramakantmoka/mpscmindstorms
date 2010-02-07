@@ -23,12 +23,19 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590340(jetbrains.mps.lang.pattern.constraints)" version="2" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959033d(jetbrains.mps.lang.annotations.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959034b(jetbrains.mps.lang.quotation.structure)" version="0" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590571(jetbrains.mps.gtext.constraints)" version="8" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590575(jetbrains.mps.gtext.structure)" version="0" />
+  <languageAspect modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" version="9" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590328(jetbrains.mps.baseLanguage.collections.constraints)" version="6" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="1" />
   <import index="1" modelUID="r:998fdfa3-6fe3-4cb3-b9b5-7f97e90a9606(med.statemachine.structure)" version="-1" />
   <visible index="2" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
   <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="6254144863183194002">
     <property name="name" value="typeof_CheckStateExpression" />
+    <property name="package" value="util" />
     <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6254144863183194003">
       <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" id="6254144863183217912">
         <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="6254144863183217916">
@@ -56,6 +63,7 @@
   </node>
   <node type="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" id="6254144863186252780">
     <property name="name" value="mustHaveAnInitialState" />
+    <property name="package" value="machine" />
     <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6254144863186252781">
       <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="6254144863186252784">
         <node role="condition" type="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" id="6254144863186252894">

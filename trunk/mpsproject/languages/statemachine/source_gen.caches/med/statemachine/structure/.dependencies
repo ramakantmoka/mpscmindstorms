@@ -45,6 +45,30 @@
     <classNode dependClassName="med.statemachine.structure.Transition" />
     <classNode extendsClassName="jetbrains.mps.lang.core.structure.BaseConcept" />
   </dependency>
+  <dependency className="med.statemachine.structure.StateSwitch">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Iterator" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModel" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="med.core.structure.Statement" />
+    <classNode dependClassName="med.core.structure.StatementList" />
+    <classNode dependClassName="med.statemachine.structure.StateSwitchCase" />
+    <classNode dependClassName="med.statemachine.structure.Statemachine" />
+    <classNode extendsClassName="jetbrains.mps.lang.core.structure.BaseConcept" />
+  </dependency>
+  <dependency className="med.statemachine.structure.StateSwitchCase">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModel" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="med.core.structure.StatementList" />
+    <classNode dependClassName="med.statemachine.structure.State" />
+    <classNode extendsClassName="jetbrains.mps.lang.core.structure.BaseConcept" />
+  </dependency>
   <dependency className="med.statemachine.structure.Statemachine">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Iterator" />
