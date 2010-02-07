@@ -26,6 +26,7 @@
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelArchitecture" id="5196379128660651512" />
     <node role="modules" type="med.core.structure.ImplementationModule" id="5196379128660651513">
       <property name="name" value="main" />
+      <property name="text" value="This module contains the complete linefollower" />
       <node role="contents" type="med.core.structure.SimpleIntConstant" id="5196379128666214925">
         <property name="name" value="WHITE" />
         <property name="value" value="500" />
@@ -155,7 +156,7 @@
       </node>
       <node role="contents" type="med.tasks.structure.Task" id="5196379128667961337">
         <property name="name" value="run" />
-        <property name="text" value="This task is executed cyclicly." />
+        <property name="text" value="This task is executed cyclicly. Hallo !&#10;&#10;#s#ädkf#dskf&#10;dslf&#10;sadkf&#10;üdsakf&#10;saüdkf&#10;saüfkdsa&#10;füpdsaf&#10;" />
         <node role="body" type="med.core.structure.StatementList" id="5196379128667961338">
           <node role="statements" type="med.statemachine.structure.StateSwitch" id="9105096665970351705">
             <link role="machine" targetNodeId="6790227271038808735" resolveInfo="linefollower" />
@@ -400,7 +401,7 @@
       </node>
       <node role="contents" type="med.core.structure.Procedure" id="5196379128662886701">
         <property name="name" value="displaySpeeds" />
-        <property name="text" value="&#10;Frank Buchli&#10;Software Ingenieur&#10;&#10;Zühlke Engineering AG&#10;Aarbergergasse 29&#10;3011 Bern&#10;Schweiz&#10;&#10;Telefon +41 44 733 6611&#10;Direkt +41 31 313 0911&#10;Telefax +41 31 313 0912&#10;Frank.Buchli@zuehlke.com&lt;mailto:Frank.Buchli@zuehlke.com&gt;&#10;____________________________________&#10;&#10;This e-mail is for the addressees only. The information it contains is confidential&#10;and may be legally privileged. If you are not an addressee you must not distribute,&#10;copy, disclose, use or rely on this e-mail or its contents and you must immediately&#10;notify the sender you are in receipt of this e-mail and delete all copies from your&#10;system. Any unauthorised use may be unlawful.&#10;________________________________&#10;Von: Bernhard Merkle [bernhard.merkle@googlemail.com]&#10;Gesendet: Donnerstag, 4. Februar 2010 23:53&#10;An: Markus Völter; Ulrich Merkel; Michael Hunger; Buchli, Frank; jan.koehnlein; lars.corneliussen; phillip.ghadir; roman.roelofsen; seeberger; stefan.tilkov&#10;Betreff: Re: Weitere Details zur DSL Unconference - Anreise" />
+        <property name="text" value="Test&#10;&#10;" />
         <node role="body" type="med.core.structure.StatementList" id="5196379128662886702">
           <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128662886710">
             <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128662886711">
