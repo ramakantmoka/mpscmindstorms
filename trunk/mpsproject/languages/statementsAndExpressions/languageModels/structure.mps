@@ -1356,6 +1356,9 @@
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="3454436015649667982">
       <link role="intfc" targetNodeId="343373828472902636" resolveInfo="IHasIdentifierName" />
     </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="6790227271037837015">
+      <link role="intfc" targetNodeId="5288422977871838031" resolveInfo="IDocumentable" />
+    </node>
     <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.BooleanConceptProperty" id="3454436015649713579">
       <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473854053" resolveInfo="abstract" />
     </node>
@@ -1492,6 +1495,9 @@
     </node>
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="3577454086728374516">
       <link role="intfc" targetNodeId="8772584333841904456" resolveInfo="IReduceToImplementation" />
+    </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="6790227271037837012">
+      <link role="intfc" targetNodeId="5288422977871838031" resolveInfo="IDocumentable" />
     </node>
     <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="3577454086728374497">
       <property name="name" value="header" />

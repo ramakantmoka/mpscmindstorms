@@ -37,6 +37,9 @@
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="6254144863182652342">
       <link role="intfc" targetNodeId="2v.306587673255505543" resolveInfo="IModuleContent" />
     </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="6790227271037837023">
+      <link role="intfc" targetNodeId="2v.5288422977871838031" resolveInfo="IDocumentable" />
+    </node>
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="6254144863182652350">
       <property name="metaClass" value="aggregation" />
       <property name="role" value="states" />

@@ -9,12 +9,13 @@ import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.project.GlobalScope;
 
-public class Module extends MedBase implements IHasIdentifierName {
+public class Module extends MedBase implements IHasIdentifierName, IDocumentable {
   public static final String concept = "med.core.structure.Module";
   public static final String NAME = "name";
   public static final String SHORT_DESCRIPTION = "shortDescription";
   public static final String ALIAS = "alias";
   public static final String VIRTUAL_PACKAGE = "virtualPackage";
+  public static final String TEXT = "text";
   public static final String IMPORTS = "imports";
 
   public Module(SNode node) {
@@ -51,6 +52,14 @@ public class Module extends MedBase implements IHasIdentifierName {
 
   public void setVirtualPackage(String value) {
     this.setProperty(Module.VIRTUAL_PACKAGE, value);
+  }
+
+  public String getText() {
+    return this.getProperty(Module.TEXT);
+  }
+
+  public void setText(String value) {
+    this.setProperty(Module.TEXT, value);
   }
 
   public int getImportsesCount() {

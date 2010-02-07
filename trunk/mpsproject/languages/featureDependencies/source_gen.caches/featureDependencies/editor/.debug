@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <nodeInfo nodeId="4595014168072116035" fileName="FeatureClause_Editor.java" startLine="155" startPosition="5" endLine="158" endPosition="5" />
-  <nodeInfo nodeId="4595014168072116041" fileName="FeatureClause_Editor.java" startLine="156" startPosition="114" endLine="157" endPosition="29" />
+  <nodeInfo nodeId="4595014168072116041" fileName="FeatureClause_Editor.java" startLine="156" startPosition="114" endLine="157" endPosition="38" />
   <nodeInfo nodeId="4595014168072116043" fileName="FeatureClause_Editor.java" startLine="158" startPosition="5" endLine="159" endPosition="23" />
   <nodeInfo nodeId="4595014168072116046" fileName="FeatureClause_Editor.java" startLine="152" startPosition="102" endLine="155" endPosition="5" />
-  <nodeInfo nodeId="4595014168072116056" fileName="FeatureClause_Editor.java" startLine="153" startPosition="56" endLine="154" endPosition="26" />
+  <nodeInfo nodeId="4595014168072116056" fileName="FeatureClause_Editor.java" startLine="153" startPosition="56" endLine="154" endPosition="38" />
   <nodeInfo nodeId="4595014168072289609" fileName="MacroFeatureDeclaration_Editor.java" startLine="75" startPosition="31" endLine="80" endPosition="9" />
   <nodeInfo nodeId="4595014168072289618" fileName="MacroFeatureDeclaration_Editor.java" startLine="76" startPosition="84" endLine="77" endPosition="24" />
   <nodeInfo nodeId="4595014168072289621" fileName="MacroFeatureDeclaration_Editor.java" startLine="78" startPosition="14" endLine="80" endPosition="9" />

@@ -9,6 +9,9 @@ import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.style.Style;
 import jetbrains.mps.nodeEditor.style.StyleAttributes;
+import jetbrains.mps.nodeEditor.AbstractCellProvider;
+import med.core.editor.IDocumentable_PreviewEditor;
+import med.core.editor.IDocumentable_EditorComponent;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.MPSColors;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
@@ -25,21 +28,37 @@ public class Task_Editor extends DefaultNodeEditor {
     return this.createCollection_0137_0(editorContext, node);
   }
 
+  public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
+    return this.createComponent_0137_1(editorContext, node);
+  }
+
   private EditorCell createCollection_0137_0(EditorContext editorContext, SNode node) {
-    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
     editorCell.setCellId("Collection_0137_0");
-    editorCell.addEditorCell(this.createConstant_0137_0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_0137_0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_0137_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_0137_1(editorContext, node));
+    editorCell.addEditorCell(this.createComponent_0137_0(editorContext, node));
     editorCell.addEditorCell(this.createCollection_0137_1(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_0137_2(editorContext, node));
     return editorCell;
   }
 
   private EditorCell createCollection_0137_1(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_0137_1");
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.SELECTABLE, false);
+    }
+    editorCell.addEditorCell(this.createConstant_0137_0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_0137_0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_0137_0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_0137_1(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_0137_2(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_0137_3(editorContext, node));
+    return editorCell;
+  }
+
+  private EditorCell createCollection_0137_2(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_0137_2");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
@@ -50,8 +69,20 @@ public class Task_Editor extends DefaultNodeEditor {
       editorCell.addEditorCell(this.createRefNode_0137_1(editorContext, node));
     }
     if (renderingCondition0137_1(node, editorContext, editorContext.getOperationContext().getScope())) {
-      editorCell.addEditorCell(this.createConstant_0137_3(editorContext, node));
+      editorCell.addEditorCell(this.createConstant_0137_2(editorContext, node));
     }
+    return editorCell;
+  }
+
+  private EditorCell createComponent_0137_0(EditorContext editorContext, SNode node) {
+    AbstractCellProvider provider = new IDocumentable_PreviewEditor(node);
+    EditorCell editorCell = provider.createEditorCell(editorContext);
+    return editorCell;
+  }
+
+  private EditorCell createComponent_0137_1(EditorContext editorContext, SNode node) {
+    AbstractCellProvider provider = new IDocumentable_EditorComponent(node);
+    EditorCell editorCell = provider.createEditorCell(editorContext);
     return editorCell;
   }
 
@@ -70,22 +101,22 @@ public class Task_Editor extends DefaultNodeEditor {
   }
 
   private EditorCell createConstant_0137_2(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "<<hidden, only visible in projection level 'all'>>");
     editorCell.setCellId("Constant_0137_2");
     {
       Style style = editorCell.getStyle();
-      style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+      style.set(StyleAttributes.TEXT_COLOR, MPSColors.gray);
     }
     editorCell.setDefaultText("");
     return editorCell;
   }
 
   private EditorCell createConstant_0137_3(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "<<hidden, only visible in projection level 'all'>>");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");
     editorCell.setCellId("Constant_0137_3");
     {
       Style style = editorCell.getStyle();
-      style.set(StyleAttributes.TEXT_COLOR, MPSColors.gray);
+      style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
     }
     editorCell.setDefaultText("");
     return editorCell;

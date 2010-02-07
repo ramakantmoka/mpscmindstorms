@@ -151,10 +151,10 @@ public class FeatureClause_Editor extends DefaultNodeEditor {
 
   private static Color _StyleParameter_QueryFunction_6215_0(SNode node, EditorContext editorContext) {
     if (SPropertyOperations.getBoolean(node, "isNew")) {
-      return Color.yellow;
+      return new Color(240, 220, 220);
     }
     if (SPropertyOperations.getBoolean(ConigurationAccessHelper.config(node), "highlightFeatureDependentNodes")) {
-      return Color.lightGray;
+      return new Color(240, 240, 240);
     }
     return Color.white;
   }

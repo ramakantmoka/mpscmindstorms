@@ -42,22 +42,21 @@
         <property name="name" value="FAST" />
         <property name="value" value="40" />
       </node>
-      <node role="contents" type="med.statemachine.structure.Statemachine" id="6254144863182768317">
+      <node role="contents" type="med.statemachine.structure.Statemachine" id="6790227271038808735">
         <property name="name" value="linefollower" />
-        <node role="events" type="med.statemachine.structure.Event" id="6254144863182768318">
+        <property name="text" value="This is the documentation." />
+        <node role="events" type="med.statemachine.structure.Event" id="6790227271038924454">
           <property name="name" value="initialized" />
         </node>
-        <node role="states" type="med.statemachine.structure.State" id="6254144863182768319">
-          <property name="name" value="intializing" />
+        <node role="states" type="med.statemachine.structure.State" id="6790227271038924456">
+          <property name="name" value="initializing" />
           <property name="initial" value="true" />
-          <node role="transitions" type="med.statemachine.structure.Transition" id="6254144863182768320">
-            <link role="trigger" targetNodeId="6254144863182768318" resolveInfo="initialized" />
-            <link role="target" targetNodeId="6254144863182876412" resolveInfo="running" />
-            <node role="target" type="med.statemachine.structure.State" id="6254144863182768321" />
-            <node role="trigger" type="med.statemachine.structure.Event" id="6254144863182768323" />
+          <node role="transitions" type="med.statemachine.structure.Transition" id="6790227271038924458">
+            <link role="trigger" targetNodeId="6790227271038924454" resolveInfo="initialized" />
+            <link role="target" targetNodeId="6790227271038924457" resolveInfo="running" />
           </node>
         </node>
-        <node role="states" type="med.statemachine.structure.State" id="6254144863182876412">
+        <node role="states" type="med.statemachine.structure.State" id="6790227271038924457">
           <property name="name" value="running" />
           <property name="initial" value="false" />
         </node>
@@ -77,6 +76,7 @@
       </node>
       <node role="contents" type="med.tasks.structure.Task" id="6254144863182650230">
         <property name="name" value="setup" />
+        <property name="text" value="This task is executed when the system starts up and initializes the light sensor." />
         <node role="body" type="med.core.structure.StatementList" id="6254144863182650231">
           <node role="statements" type="med.core.structure.BlockStatement" id="9105096665974586743">
             <node role="body" type="med.core.structure.StatementList" id="9105096665974586744">
@@ -145,8 +145,8 @@
             </node>
           </node>
           <node role="statements" type="med.statemachine.structure.FireEventStatement" id="6254144863183193894">
-            <link role="machine" targetNodeId="6254144863182768317" resolveInfo="linefollower" />
-            <link role="trigger" targetNodeId="6254144863182768318" resolveInfo="initialized" />
+            <link role="machine" targetNodeId="6790227271038808735" resolveInfo="linefollower" />
+            <link role="trigger" targetNodeId="6790227271038924454" resolveInfo="initialized" />
           </node>
         </node>
         <node role="scheduling" type="med.tasks.structure.SchedulingPolicyOnceUponStartup" id="6254144863182650233">
@@ -155,14 +155,15 @@
       </node>
       <node role="contents" type="med.tasks.structure.Task" id="5196379128667961337">
         <property name="name" value="run" />
+        <property name="text" value="This task is executed cyclicly." />
         <node role="body" type="med.core.structure.StatementList" id="5196379128667961338">
           <node role="statements" type="med.statemachine.structure.StateSwitch" id="9105096665970351705">
-            <link role="machine" targetNodeId="6254144863182768317" resolveInfo="linefollower" />
+            <link role="machine" targetNodeId="6790227271038808735" resolveInfo="linefollower" />
             <node role="default" type="med.core.structure.StatementList" id="9105096665970351706">
               <node role="statements" type="med.core.structure.NoopStatement" id="9105096665970351707" />
             </node>
             <node role="cases" type="med.statemachine.structure.StateSwitchCase" id="9105096665970351708">
-              <link role="state" targetNodeId="6254144863182876412" resolveInfo="running" />
+              <link role="state" targetNodeId="6790227271038924457" resolveInfo="running" />
               <node role="body" type="med.core.structure.StatementList" id="9105096665970351709">
                 <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="9105096665970351715">
                   <property name="name" value="line" />
@@ -399,7 +400,7 @@
       </node>
       <node role="contents" type="med.core.structure.Procedure" id="5196379128662886701">
         <property name="name" value="displaySpeeds" />
-        <property name="text" value="Here is some documentation" />
+        <property name="text" value="&#10;Frank Buchli&#10;Software Ingenieur&#10;&#10;Zühlke Engineering AG&#10;Aarbergergasse 29&#10;3011 Bern&#10;Schweiz&#10;&#10;Telefon +41 44 733 6611&#10;Direkt +41 31 313 0911&#10;Telefax +41 31 313 0912&#10;Frank.Buchli@zuehlke.com&lt;mailto:Frank.Buchli@zuehlke.com&gt;&#10;____________________________________&#10;&#10;This e-mail is for the addressees only. The information it contains is confidential&#10;and may be legally privileged. If you are not an addressee you must not distribute,&#10;copy, disclose, use or rely on this e-mail or its contents and you must immediately&#10;notify the sender you are in receipt of this e-mail and delete all copies from your&#10;system. Any unauthorised use may be unlawful.&#10;________________________________&#10;Von: Bernhard Merkle [bernhard.merkle@googlemail.com]&#10;Gesendet: Donnerstag, 4. Februar 2010 23:53&#10;An: Markus Völter; Ulrich Merkel; Michael Hunger; Buchli, Frank; jan.koehnlein; lars.corneliussen; phillip.ghadir; roman.roelofsen; seeberger; stefan.tilkov&#10;Betreff: Re: Weitere Details zur DSL Unconference - Anreise" />
         <node role="body" type="med.core.structure.StatementList" id="5196379128662886702">
           <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128662886710">
             <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128662886711">

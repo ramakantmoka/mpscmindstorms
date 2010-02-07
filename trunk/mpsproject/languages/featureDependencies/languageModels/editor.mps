@@ -137,9 +137,19 @@
               <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="4595014168072116046">
                 <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="4595014168072116047">
                   <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="4595014168072116056">
-                    <node role="expression" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference" id="4595014168072116058">
-                      <link role="classifier" targetNodeId="3.~Color" resolveInfo="Color" />
-                      <link role="variableDeclaration" targetNodeId="3.~Color.yellow" resolveInfo="yellow" />
+                    <node role="expression" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression" id="3426893568456234309">
+                      <node role="creator" type="jetbrains.mps.baseLanguage.structure.ClassCreator" id="3426893568456237366">
+                        <link role="baseMethodDeclaration" targetNodeId="3.~Color.&lt;init&gt;(int,int,int)" resolveInfo="Color" />
+                        <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="3426893568456237367">
+                          <property name="value" value="240" />
+                        </node>
+                        <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="3426893568456237369">
+                          <property name="value" value="220" />
+                        </node>
+                        <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="3426893568456237371">
+                          <property name="value" value="220" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -163,9 +173,19 @@
                 </node>
                 <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="4595014168072116040">
                   <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="4595014168072116041">
-                    <node role="expression" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference" id="4595014168072116042">
-                      <link role="classifier" targetNodeId="3.~Color" resolveInfo="Color" />
-                      <link role="variableDeclaration" targetNodeId="3.~Color.lightGray" resolveInfo="lightGray" />
+                    <node role="expression" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression" id="3426893568455740436">
+                      <node role="creator" type="jetbrains.mps.baseLanguage.structure.ClassCreator" id="3426893568455743493">
+                        <link role="baseMethodDeclaration" targetNodeId="3.~Color.&lt;init&gt;(int,int,int)" resolveInfo="Color" />
+                        <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="3426893568455758667">
+                          <property name="value" value="240" />
+                        </node>
+                        <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="3426893568455758668">
+                          <property name="value" value="240" />
+                        </node>
+                        <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="3426893568456074380">
+                          <property name="value" value="240" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>

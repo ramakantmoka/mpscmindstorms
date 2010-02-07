@@ -50,6 +50,11 @@
   <nodeInfo nodeId="5320189530627158299" fileName="Resource_Behavior.java" startLine="40" startPosition="70" endLine="41" endPosition="179" />
   <nodeInfo nodeId="5320189530627268540" fileName="Resource_Behavior.java" startLine="39" startPosition="75" endLine="42" endPosition="7" />
   <nodeInfo nodeId="6254144863184344232" fileName="ModuleVariable_Behavior.java" startLine="13" startPosition="90" endLine="14" endPosition="224" />
+  <nodeInfo nodeId="6790227271038052384" fileName="IDocumentable_Behavior.java" startLine="12" startPosition="77" endLine="19" endPosition="5" />
+  <nodeInfo nodeId="6790227271038052386" fileName="IDocumentable_Behavior.java" startLine="13" startPosition="66" endLine="14" endPosition="18" />
+  <nodeInfo nodeId="6790227271038052402" fileName="IDocumentable_Behavior.java" startLine="15" startPosition="79" endLine="16" endPosition="78" />
+  <nodeInfo nodeId="6790227271038052410" fileName="IDocumentable_Behavior.java" startLine="17" startPosition="10" endLine="19" endPosition="5" />
+  <nodeInfo nodeId="6790227271038052412" fileName="IDocumentable_Behavior.java" startLine="17" startPosition="12" endLine="18" endPosition="61" />
   <nodeInfo nodeId="7301321101283467924" fileName="ImplementationModule_Behavior.java" startLine="19" startPosition="90" endLine="20" endPosition="71" />
   <nodeInfo nodeId="7301321101283467931" fileName="ImplementationModule_Behavior.java" startLine="20" startPosition="71" endLine="27" endPosition="5" />
   <nodeInfo nodeId="7301321101283467933" fileName="ImplementationModule_Behavior.java" startLine="21" startPosition="82" endLine="26" endPosition="7" />
