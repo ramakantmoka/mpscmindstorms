@@ -2975,7 +2975,8 @@
                           <link role="property" targetNodeId="2v.1169194664001" resolveInfo="name" />
                         </node>
                       </node>
-                      <node role="actualArgument" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="5288422977874104298" />
+                      <node role="actualArgument" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" id="6790227271036636996" />
+                      <node role="actualArgument" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="6790227271036636998" />
                     </node>
                   </node>
                 </node>
@@ -3001,6 +3002,7 @@
                       <link role="property" targetNodeId="2v.1169194664001" resolveInfo="name" />
                     </node>
                   </node>
+                  <node role="actualArgument" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" id="6790227271036637000" />
                   <node role="actualArgument" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="5288422977874104300" />
                 </node>
               </node>
