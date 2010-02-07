@@ -1,0 +1,958 @@
+<project name="modularEmbeddedDSL-compile" default="compile.all">
+  <property name="med.core.classes" value="languages/statementsAndExpressions/classes_gen" />
+  <property name="med.collections.classes" value="languages/collections/classes_gen" />
+  <property name="featureDependencies.classes" value="languages/featureDependencies/classes_gen" />
+  <property name="med.logging.classes" value="languages/logging/classes_gen" />
+  <property name="med.tasks.classes" value="languages/tasks/classes_gen" />
+  <property name="med.platform.nxtosek.classes" value="languages/nxtosek/classes_gen" />
+  <property name="med.quantities.classes" value="languages/quantities/classes_gen" />
+  <property name="med.unittest.classes" value="languages/unittest/classes_gen" />
+  <property name="med.platform.win32.classes" value="languages/win32/classes_gen" />
+  <path id="common.classpath">
+    <path path="T:/MPS-1.1/lib/mps.jar" />
+    <path path="T:/MPS-1.1/lib/jetbrains-ideframework/platform-api.jar" />
+    <path path="T:/MPS-1.1/lib/jetbrains-ideframework/platform.jar" />
+    <path path="T:/MPS-1.1/lib/jetbrains-ideframework/util.jar" />
+    <path path="T:/MPS-1.1/lib/jetbrains-ideframework/extensions.jar" />
+  </path>
+  <path id="cycle.med.core0.src">
+    <path path="languages/statementsAndExpressions/source_gen" />
+  </path>
+  <path id="cycle.med.collections0.src">
+    <path path="languages/collections/source_gen" />
+  </path>
+  <path id="cycle.featureDependencies0.src">
+    <path path="languages/featureDependencies/source_gen" />
+  </path>
+  <path id="cycle.med.logging0.src">
+    <path path="languages/logging/source_gen" />
+  </path>
+  <path id="cycle.med.tasks0.src">
+    <path path="languages/tasks/source_gen" />
+  </path>
+  <path id="cycle.med.platform.nxtosek0.src">
+    <path path="languages/nxtosek/source_gen" />
+  </path>
+  <path id="cycle.med.quantities0.src">
+    <path path="languages/quantities/source_gen" />
+  </path>
+  <path id="cycle.med.unittest0.src">
+    <path path="languages/unittest/source_gen" />
+  </path>
+  <path id="cycle.med.platform.win320.src">
+    <path path="languages/win32/source_gen" />
+  </path>
+  <path id="cycle.med.core0.classpaths">
+    <path path="languages/statementsAndExpressions/classes_gen" />
+    <path path="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/statementsAndExpressions/classes_gen" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.gtext.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/commons-lang/commons-lang-2.1.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.gtext.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/closures.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.generator.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/jetbrains-ideframework/annotations.jar" />
+    <path path="T:/MPS-1.1/lib/picocontainer/picocontainer.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/MPS.Classpath.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/JDK.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.editor.runtime.jar" />
+    <path path="T:/MPS-1.1/lib/jdom/jdom.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.classifiers.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.dataFlow.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/beansbinding/beansbinding-1.2.1.jar" />
+    <path path="T:/MPS-1.1/workbench/jetbrains.mps.ide.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.ypath.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.core.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.structure.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.behavior.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguageInternal.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.dataFlow.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.dataFlow.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.refactoring.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.intentions.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.typesystem.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.quotation.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.annotations.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.math.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.smodel.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.editor.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.editor.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.collections.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.closures.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/joda-time/joda-time-1.6.jar" />
+    <path path="T:/MPS-1.1/lib/log4j/log4j.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.dates.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.money.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.findUsages.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.plugin.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.script.runtime.jar" />
+    <path path="T:/MPS-1.1/lib/commons-logging/commons-logging-1.1.jar" />
+    <path path="T:/MPS-1.1/lib/junit4/junit-4.1.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.textGen.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.pattern.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.pattern.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.smodel.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.constraints.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.refactoring.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/jetbrains.mps.kernel.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.textGen.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.plugin.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.findUsages.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.intentions.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.actions.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.sharedConcepts.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.typesystem.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.debug.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.uiLanguage.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.logging.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.nanoj.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mpslite.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.baseLanguage.regexp.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.ypath.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.generator.generationContext.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.quickQueryLanguage.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.blTypes.mpsarch.jar" />
+    <path refid="common.classpath" />
+  </path>
+  <path id="cycle.med.collections0.classpaths">
+    <path path="languages/collections/classes_gen" />
+    <path path="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/collections/classes_gen" />
+    <path path="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/statementsAndExpressions/classes_gen" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.gtext.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/commons-lang/commons-lang-2.1.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.gtext.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/closures.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.generator.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/jetbrains-ideframework/annotations.jar" />
+    <path path="T:/MPS-1.1/lib/picocontainer/picocontainer.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/MPS.Classpath.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/JDK.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.editor.runtime.jar" />
+    <path path="T:/MPS-1.1/lib/jdom/jdom.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.classifiers.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.dataFlow.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/beansbinding/beansbinding-1.2.1.jar" />
+    <path path="T:/MPS-1.1/workbench/jetbrains.mps.ide.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.ypath.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.core.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.structure.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.behavior.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguageInternal.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.dataFlow.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.dataFlow.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.refactoring.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.intentions.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.typesystem.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.quotation.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.annotations.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.math.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.smodel.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.editor.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.editor.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.collections.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.closures.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/joda-time/joda-time-1.6.jar" />
+    <path path="T:/MPS-1.1/lib/log4j/log4j.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.dates.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.money.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.findUsages.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.plugin.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.script.runtime.jar" />
+    <path path="T:/MPS-1.1/lib/commons-logging/commons-logging-1.1.jar" />
+    <path path="T:/MPS-1.1/lib/junit4/junit-4.1.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.textGen.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.pattern.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.pattern.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.smodel.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.constraints.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.refactoring.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/jetbrains.mps.kernel.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.textGen.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.plugin.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.findUsages.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.intentions.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.actions.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.sharedConcepts.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.typesystem.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.debug.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.uiLanguage.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.logging.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.nanoj.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mpslite.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.baseLanguage.regexp.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.ypath.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.generator.generationContext.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.quickQueryLanguage.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.blTypes.mpsarch.jar" />
+    <path refid="common.classpath" />
+  </path>
+  <path id="cycle.featureDependencies0.classpaths">
+    <path path="languages/featureDependencies/classes_gen" />
+    <path path="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/featureDependencies/classes_gen" />
+    <path path="T:/MPS-1.1/core/baseLanguage/JDK.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/commons-lang/commons-lang-2.1.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/closures.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.refactoring.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.intentions.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.typesystem.runtime.jar" />
+    <path path="T:/MPS-1.1/lib/jdom/jdom.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/jetbrains-ideframework/annotations.jar" />
+    <path path="T:/MPS-1.1/lib/picocontainer/picocontainer.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/MPS.Classpath.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.classifiers.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.dataFlow.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/beansbinding/beansbinding-1.2.1.jar" />
+    <path path="T:/MPS-1.1/workbench/jetbrains.mps.ide.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.ypath.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.core.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.structure.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.behavior.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.editor.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguageInternal.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.dataFlow.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.dataFlow.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.math.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.smodel.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.editor.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.editor.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.collections.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.closures.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/joda-time/joda-time-1.6.jar" />
+    <path path="T:/MPS-1.1/lib/log4j/log4j.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.dates.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.money.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.findUsages.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.plugin.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.script.runtime.jar" />
+    <path path="T:/MPS-1.1/lib/commons-logging/commons-logging-1.1.jar" />
+    <path path="T:/MPS-1.1/lib/junit4/junit-4.1.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.textGen.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.pattern.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.quotation.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.annotations.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.typesystem.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.actions.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.sharedConcepts.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.constraints.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.refactoring.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/jetbrains.mps.kernel.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.textGen.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.plugin.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.generator.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.generator.generationContext.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.intentions.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.smodel.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.pattern.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.findUsages.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.logging.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.debug.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.uiLanguage.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.nanoj.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mpslite.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.baseLanguage.regexp.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.ypath.runtime.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.quickQueryLanguage.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.blTypes.mpsarch.jar" />
+    <path refid="common.classpath" />
+  </path>
+  <path id="cycle.med.logging0.classpaths">
+    <path path="languages/logging/classes_gen" />
+    <path path="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/logging/classes_gen" />
+    <path path="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/statementsAndExpressions/classes_gen" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.gtext.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/commons-lang/commons-lang-2.1.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.gtext.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/closures.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.generator.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/jetbrains-ideframework/annotations.jar" />
+    <path path="T:/MPS-1.1/lib/picocontainer/picocontainer.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/MPS.Classpath.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/JDK.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.editor.runtime.jar" />
+    <path path="T:/MPS-1.1/lib/jdom/jdom.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.classifiers.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.dataFlow.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/beansbinding/beansbinding-1.2.1.jar" />
+    <path path="T:/MPS-1.1/workbench/jetbrains.mps.ide.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.ypath.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.core.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.structure.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.behavior.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguageInternal.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.dataFlow.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.dataFlow.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.refactoring.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.intentions.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.typesystem.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.quotation.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.annotations.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.math.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.smodel.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.editor.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.editor.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.collections.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.closures.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/joda-time/joda-time-1.6.jar" />
+    <path path="T:/MPS-1.1/lib/log4j/log4j.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.dates.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.money.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.findUsages.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.plugin.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.script.runtime.jar" />
+    <path path="T:/MPS-1.1/lib/commons-logging/commons-logging-1.1.jar" />
+    <path path="T:/MPS-1.1/lib/junit4/junit-4.1.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.textGen.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.pattern.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.pattern.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.smodel.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.constraints.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.refactoring.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/jetbrains.mps.kernel.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.textGen.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.plugin.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.findUsages.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.intentions.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.actions.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.sharedConcepts.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.typesystem.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.debug.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.uiLanguage.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.logging.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.nanoj.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mpslite.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.baseLanguage.regexp.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.ypath.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.generator.generationContext.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.quickQueryLanguage.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.blTypes.mpsarch.jar" />
+    <path refid="common.classpath" />
+  </path>
+  <path id="cycle.med.tasks0.classpaths">
+    <path path="languages/tasks/classes_gen" />
+    <path path="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/tasks/classes_gen" />
+    <path path="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/statementsAndExpressions/classes_gen" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.gtext.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/commons-lang/commons-lang-2.1.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.gtext.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/closures.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.generator.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/jetbrains-ideframework/annotations.jar" />
+    <path path="T:/MPS-1.1/lib/picocontainer/picocontainer.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/MPS.Classpath.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/JDK.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.editor.runtime.jar" />
+    <path path="T:/MPS-1.1/lib/jdom/jdom.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.classifiers.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.dataFlow.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/beansbinding/beansbinding-1.2.1.jar" />
+    <path path="T:/MPS-1.1/workbench/jetbrains.mps.ide.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.ypath.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.core.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.structure.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.behavior.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguageInternal.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.dataFlow.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.dataFlow.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.refactoring.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.intentions.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.typesystem.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.quotation.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.annotations.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.math.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.smodel.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.editor.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.editor.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.collections.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.closures.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/joda-time/joda-time-1.6.jar" />
+    <path path="T:/MPS-1.1/lib/log4j/log4j.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.dates.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.money.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.findUsages.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.plugin.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.script.runtime.jar" />
+    <path path="T:/MPS-1.1/lib/commons-logging/commons-logging-1.1.jar" />
+    <path path="T:/MPS-1.1/lib/junit4/junit-4.1.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.textGen.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.pattern.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.pattern.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.smodel.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.constraints.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.refactoring.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/jetbrains.mps.kernel.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.textGen.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.plugin.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.findUsages.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.intentions.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.actions.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.sharedConcepts.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.typesystem.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.debug.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.uiLanguage.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.logging.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.nanoj.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mpslite.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.baseLanguage.regexp.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.ypath.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.generator.generationContext.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.quickQueryLanguage.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.blTypes.mpsarch.jar" />
+    <path refid="common.classpath" />
+  </path>
+  <path id="cycle.med.platform.nxtosek0.classpaths">
+    <path path="languages/nxtosek/classes_gen" />
+    <path path="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/nxtosek/classes_gen" />
+    <path path="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/statementsAndExpressions/classes_gen" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.gtext.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/commons-lang/commons-lang-2.1.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.gtext.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/closures.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.generator.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/jetbrains-ideframework/annotations.jar" />
+    <path path="T:/MPS-1.1/lib/picocontainer/picocontainer.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/MPS.Classpath.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/JDK.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.editor.runtime.jar" />
+    <path path="T:/MPS-1.1/lib/jdom/jdom.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.classifiers.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.dataFlow.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/beansbinding/beansbinding-1.2.1.jar" />
+    <path path="T:/MPS-1.1/workbench/jetbrains.mps.ide.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.ypath.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.core.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.structure.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.behavior.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguageInternal.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.dataFlow.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.dataFlow.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.refactoring.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.intentions.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.typesystem.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.quotation.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.annotations.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.math.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.smodel.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.editor.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.editor.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.collections.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.closures.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/joda-time/joda-time-1.6.jar" />
+    <path path="T:/MPS-1.1/lib/log4j/log4j.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.dates.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.money.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.findUsages.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.plugin.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.script.runtime.jar" />
+    <path path="T:/MPS-1.1/lib/commons-logging/commons-logging-1.1.jar" />
+    <path path="T:/MPS-1.1/lib/junit4/junit-4.1.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.textGen.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.pattern.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.pattern.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.smodel.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.constraints.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.refactoring.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/jetbrains.mps.kernel.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.textGen.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.plugin.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.findUsages.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.intentions.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.actions.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.sharedConcepts.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.typesystem.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.debug.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.uiLanguage.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.logging.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.nanoj.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mpslite.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.baseLanguage.regexp.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.ypath.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.generator.generationContext.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.quickQueryLanguage.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.blTypes.mpsarch.jar" />
+    <path path="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/logging/classes_gen" />
+    <path path="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/tasks/classes_gen" />
+    <path refid="common.classpath" />
+  </path>
+  <path id="cycle.med.quantities0.classpaths">
+    <path path="languages/quantities/classes_gen" />
+    <path path="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/quantities/classes_gen" />
+    <path path="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/statementsAndExpressions/classes_gen" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.gtext.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/commons-lang/commons-lang-2.1.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.gtext.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/closures.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.generator.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/jetbrains-ideframework/annotations.jar" />
+    <path path="T:/MPS-1.1/lib/picocontainer/picocontainer.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/MPS.Classpath.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/JDK.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.editor.runtime.jar" />
+    <path path="T:/MPS-1.1/lib/jdom/jdom.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.classifiers.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.dataFlow.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/beansbinding/beansbinding-1.2.1.jar" />
+    <path path="T:/MPS-1.1/workbench/jetbrains.mps.ide.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.ypath.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.core.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.structure.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.behavior.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguageInternal.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.dataFlow.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.dataFlow.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.refactoring.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.intentions.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.typesystem.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.quotation.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.annotations.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.math.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.smodel.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.editor.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.editor.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.collections.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.closures.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/joda-time/joda-time-1.6.jar" />
+    <path path="T:/MPS-1.1/lib/log4j/log4j.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.dates.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.money.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.findUsages.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.plugin.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.script.runtime.jar" />
+    <path path="T:/MPS-1.1/lib/commons-logging/commons-logging-1.1.jar" />
+    <path path="T:/MPS-1.1/lib/junit4/junit-4.1.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.textGen.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.pattern.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.pattern.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.smodel.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.constraints.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.refactoring.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/jetbrains.mps.kernel.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.textGen.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.plugin.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.findUsages.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.intentions.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.actions.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.sharedConcepts.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.typesystem.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.debug.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.uiLanguage.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.logging.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.nanoj.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mpslite.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.baseLanguage.regexp.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.ypath.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.generator.generationContext.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.quickQueryLanguage.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.blTypes.mpsarch.jar" />
+    <path refid="common.classpath" />
+  </path>
+  <path id="cycle.med.unittest0.classpaths">
+    <path path="languages/unittest/classes_gen" />
+    <path path="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/unittest/classes_gen" />
+    <path path="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/statementsAndExpressions/classes_gen" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.gtext.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/commons-lang/commons-lang-2.1.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.gtext.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/closures.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.generator.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/jetbrains-ideframework/annotations.jar" />
+    <path path="T:/MPS-1.1/lib/picocontainer/picocontainer.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/MPS.Classpath.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/JDK.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.editor.runtime.jar" />
+    <path path="T:/MPS-1.1/lib/jdom/jdom.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.classifiers.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.dataFlow.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/beansbinding/beansbinding-1.2.1.jar" />
+    <path path="T:/MPS-1.1/workbench/jetbrains.mps.ide.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.ypath.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.core.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.structure.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.behavior.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguageInternal.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.dataFlow.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.dataFlow.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.refactoring.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.intentions.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.typesystem.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.quotation.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.annotations.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.math.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.smodel.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.editor.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.editor.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.collections.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.closures.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/joda-time/joda-time-1.6.jar" />
+    <path path="T:/MPS-1.1/lib/log4j/log4j.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.dates.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.money.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.findUsages.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.plugin.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.script.runtime.jar" />
+    <path path="T:/MPS-1.1/lib/commons-logging/commons-logging-1.1.jar" />
+    <path path="T:/MPS-1.1/lib/junit4/junit-4.1.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.textGen.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.pattern.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.pattern.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.smodel.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.constraints.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.refactoring.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/jetbrains.mps.kernel.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.textGen.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.plugin.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.findUsages.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.intentions.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.actions.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.sharedConcepts.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.typesystem.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.debug.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.uiLanguage.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.logging.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.nanoj.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mpslite.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.baseLanguage.regexp.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.ypath.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.generator.generationContext.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.quickQueryLanguage.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.blTypes.mpsarch.jar" />
+    <path path="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/logging/classes_gen" />
+    <path refid="common.classpath" />
+  </path>
+  <path id="cycle.med.platform.win320.classpaths">
+    <path path="languages/win32/classes_gen" />
+    <path path="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/win32/classes_gen" />
+    <path path="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/statementsAndExpressions/classes_gen" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.gtext.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/commons-lang/commons-lang-2.1.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.gtext.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.collections.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.closures.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/closures.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.generator.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/jetbrains-ideframework/annotations.jar" />
+    <path path="T:/MPS-1.1/lib/picocontainer/picocontainer.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/MPS.Classpath.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/JDK.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.editor.runtime.jar" />
+    <path path="T:/MPS-1.1/lib/jdom/jdom.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.classifiers.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.dataFlow.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/beansbinding/beansbinding-1.2.1.jar" />
+    <path path="T:/MPS-1.1/workbench/jetbrains.mps.ide.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.ypath.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.core.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.structure.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.behavior.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguageInternal.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.dataFlow.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.dataFlow.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.refactoring.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.intentions.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.typesystem.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.quotation.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.annotations.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.math.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.smodel.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.editor.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.editor.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.collections.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.closures.mpsarch.jar" />
+    <path path="T:/MPS-1.1/lib/joda-time/joda-time-1.6.jar" />
+    <path path="T:/MPS-1.1/lib/log4j/log4j.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.dates.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.money.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.findUsages.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.plugin.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.script.runtime.jar" />
+    <path path="T:/MPS-1.1/lib/commons-logging/commons-logging-1.1.jar" />
+    <path path="T:/MPS-1.1/lib/junit4/junit-4.1.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.textGen.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.pattern.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.pattern.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.smodel.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.constraints.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.refactoring.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/jetbrains.mps.kernel.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.textGen.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.plugin.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.findUsages.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.intentions.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.actions.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.sharedConcepts.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.typesystem.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.test.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.unitTest.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.debug.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.uiLanguage.runtime.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.logging.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.nanoj.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mpslite.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.baseLanguage.regexp.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.ypath.runtime.jar" />
+    <path path="T:/MPS-1.1/core/languageDesign/jetbrains.mps.lang.generator.generationContext.mpsarch.jar" />
+    <path path="T:/MPS-1.1/platform/jetbrains.mps.quickQueryLanguage.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.tuples.mpsarch.jar" />
+    <path path="T:/MPS-1.1/core/baseLanguage/jetbrains.mps.baseLanguage.blTypes.mpsarch.jar" />
+    <path path="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/logging/classes_gen" />
+    <path path="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/tasks/classes_gen" />
+    <path refid="common.classpath" />
+  </path>
+  <target name="compile.all" depends="compile.cycle.med.core0,compile.cycle.med.collections0,compile.cycle.featureDependencies0,compile.cycle.med.logging0,compile.cycle.med.tasks0,compile.cycle.med.platform.nxtosek0,compile.cycle.med.quantities0,compile.cycle.med.unittest0,compile.cycle.med.platform.win320" />
+  <target name="compile.cycle.med.core0">
+    <property name="classes.dump" value="${med.core.classes}.tmp" />
+    <mkdir dir="languages/statementsAndExpressions/source_gen" />
+    <mkdir dir="${classes.dump}" />
+    <mkdir dir="${med.core.classes}" />
+    <javac classpathref="cycle.med.core0.classpaths" destdir="${classes.dump}">
+      <src refid="cycle.med.core0.src" />
+    </javac>
+    <javac classpathref="cycle.med.core0.classpaths" classpath="${classes.dump}" destdir="${med.core.classes}">
+      <src>
+        <path path="languages/statementsAndExpressions/source_gen" />
+      </src>
+    </javac>
+    <delete dir="${classes.dump}" />
+  </target>
+  <target name="compile.cycle.med.collections0">
+    <property name="classes.dump" value="${med.collections.classes}.tmp" />
+    <mkdir dir="languages/collections/source_gen" />
+    <mkdir dir="${classes.dump}" />
+    <mkdir dir="${med.collections.classes}" />
+    <javac classpathref="cycle.med.collections0.classpaths" destdir="${classes.dump}">
+      <src refid="cycle.med.collections0.src" />
+    </javac>
+    <javac classpathref="cycle.med.collections0.classpaths" classpath="${classes.dump}" destdir="${med.collections.classes}">
+      <src>
+        <path path="languages/collections/source_gen" />
+      </src>
+    </javac>
+    <delete dir="${classes.dump}" />
+  </target>
+  <target name="compile.cycle.featureDependencies0">
+    <property name="classes.dump" value="${featureDependencies.classes}.tmp" />
+    <mkdir dir="languages/featureDependencies/source_gen" />
+    <mkdir dir="${classes.dump}" />
+    <mkdir dir="${featureDependencies.classes}" />
+    <javac classpathref="cycle.featureDependencies0.classpaths" destdir="${classes.dump}">
+      <src refid="cycle.featureDependencies0.src" />
+    </javac>
+    <javac classpathref="cycle.featureDependencies0.classpaths" classpath="${classes.dump}" destdir="${featureDependencies.classes}">
+      <src>
+        <path path="languages/featureDependencies/source_gen" />
+      </src>
+    </javac>
+    <delete dir="${classes.dump}" />
+  </target>
+  <target name="compile.cycle.med.logging0">
+    <property name="classes.dump" value="${med.logging.classes}.tmp" />
+    <mkdir dir="languages/logging/source_gen" />
+    <mkdir dir="${classes.dump}" />
+    <mkdir dir="${med.logging.classes}" />
+    <javac classpathref="cycle.med.logging0.classpaths" destdir="${classes.dump}">
+      <src refid="cycle.med.logging0.src" />
+    </javac>
+    <javac classpathref="cycle.med.logging0.classpaths" classpath="${classes.dump}" destdir="${med.logging.classes}">
+      <src>
+        <path path="languages/logging/source_gen" />
+      </src>
+    </javac>
+    <delete dir="${classes.dump}" />
+  </target>
+  <target name="compile.cycle.med.tasks0">
+    <property name="classes.dump" value="${med.tasks.classes}.tmp" />
+    <mkdir dir="languages/tasks/source_gen" />
+    <mkdir dir="${classes.dump}" />
+    <mkdir dir="${med.tasks.classes}" />
+    <javac classpathref="cycle.med.tasks0.classpaths" destdir="${classes.dump}">
+      <src refid="cycle.med.tasks0.src" />
+    </javac>
+    <javac classpathref="cycle.med.tasks0.classpaths" classpath="${classes.dump}" destdir="${med.tasks.classes}">
+      <src>
+        <path path="languages/tasks/source_gen" />
+      </src>
+    </javac>
+    <delete dir="${classes.dump}" />
+  </target>
+  <target name="compile.cycle.med.platform.nxtosek0">
+    <property name="classes.dump" value="${med.platform.nxtosek.classes}.tmp" />
+    <mkdir dir="languages/nxtosek/source_gen" />
+    <mkdir dir="${classes.dump}" />
+    <mkdir dir="${med.platform.nxtosek.classes}" />
+    <javac classpathref="cycle.med.platform.nxtosek0.classpaths" destdir="${classes.dump}">
+      <src refid="cycle.med.platform.nxtosek0.src" />
+    </javac>
+    <javac classpathref="cycle.med.platform.nxtosek0.classpaths" classpath="${classes.dump}" destdir="${med.platform.nxtosek.classes}">
+      <src>
+        <path path="languages/nxtosek/source_gen" />
+      </src>
+    </javac>
+    <delete dir="${classes.dump}" />
+  </target>
+  <target name="compile.cycle.med.quantities0">
+    <property name="classes.dump" value="${med.quantities.classes}.tmp" />
+    <mkdir dir="languages/quantities/source_gen" />
+    <mkdir dir="${classes.dump}" />
+    <mkdir dir="${med.quantities.classes}" />
+    <javac classpathref="cycle.med.quantities0.classpaths" destdir="${classes.dump}">
+      <src refid="cycle.med.quantities0.src" />
+    </javac>
+    <javac classpathref="cycle.med.quantities0.classpaths" classpath="${classes.dump}" destdir="${med.quantities.classes}">
+      <src>
+        <path path="languages/quantities/source_gen" />
+      </src>
+    </javac>
+    <delete dir="${classes.dump}" />
+  </target>
+  <target name="compile.cycle.med.unittest0">
+    <property name="classes.dump" value="${med.unittest.classes}.tmp" />
+    <mkdir dir="languages/unittest/source_gen" />
+    <mkdir dir="${classes.dump}" />
+    <mkdir dir="${med.unittest.classes}" />
+    <javac classpathref="cycle.med.unittest0.classpaths" destdir="${classes.dump}">
+      <src refid="cycle.med.unittest0.src" />
+    </javac>
+    <javac classpathref="cycle.med.unittest0.classpaths" classpath="${classes.dump}" destdir="${med.unittest.classes}">
+      <src>
+        <path path="languages/unittest/source_gen" />
+      </src>
+    </javac>
+    <delete dir="${classes.dump}" />
+  </target>
+  <target name="compile.cycle.med.platform.win320">
+    <property name="classes.dump" value="${med.platform.win32.classes}.tmp" />
+    <mkdir dir="languages/win32/source_gen" />
+    <mkdir dir="${classes.dump}" />
+    <mkdir dir="${med.platform.win32.classes}" />
+    <javac classpathref="cycle.med.platform.win320.classpaths" destdir="${classes.dump}">
+      <src refid="cycle.med.platform.win320.src" />
+    </javac>
+    <javac classpathref="cycle.med.platform.win320.classpaths" classpath="${classes.dump}" destdir="${med.platform.win32.classes}">
+      <src>
+        <path path="languages/win32/source_gen" />
+      </src>
+    </javac>
+    <delete dir="${classes.dump}" />
+  </target>
+  <target name="clean.classes">
+    <delete dir="${med.core.classes}" />
+    <delete dir="${med.collections.classes}" />
+    <delete dir="${featureDependencies.classes}" />
+    <delete dir="${med.logging.classes}" />
+    <delete dir="${med.tasks.classes}" />
+    <delete dir="${med.platform.nxtosek.classes}" />
+    <delete dir="${med.quantities.classes}" />
+    <delete dir="${med.unittest.classes}" />
+    <delete dir="${med.platform.win32.classes}" />
+  </target>
+</project>
