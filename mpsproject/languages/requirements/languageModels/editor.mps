@@ -34,10 +34,15 @@
         <node role="styleItem" type="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" id="7680622939171571638">
           <property name="flag" value="false" />
         </node>
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" id="7680622939173474325">
+          <node role="query" type="jetbrains.mps.lang.editor.structure.RGBColor" id="7680622939173474326">
+            <property name="value" value="DDFFDD" />
+          </node>
+        </node>
         <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="7680622939171571641">
           <property name="text" value="trace" />
-          <node role="styleItem" type="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" id="7680622939171874916">
-            <node role="query" type="jetbrains.mps.lang.editor.structure.RGBColor" id="7680622939171874917">
+          <node role="styleItem" type="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" id="7680622939173474328">
+            <node role="query" type="jetbrains.mps.lang.editor.structure.RGBColor" id="7680622939173474329">
               <property name="value" value="DDFFDD" />
             </node>
           </node>
@@ -49,6 +54,11 @@
         <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" id="7680622939171571643">
           <property name="separatorText" value="," />
           <link role="relationDeclaration" targetNodeId="1.7680622939171571628" />
+          <node role="styleItem" type="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" id="7680622939173474330">
+            <node role="query" type="jetbrains.mps.lang.editor.structure.RGBColor" id="7680622939173474331">
+              <property name="value" value="DDFFDD" />
+            </node>
+          </node>
           <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" id="7680622939171571644" />
         </node>
         <node role="renderingCondition" type="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" id="7680622939173089604">

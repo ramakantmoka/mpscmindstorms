@@ -946,6 +946,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode dependClassName="med.core.structure.IExportableModuleContent" />
     <classNode dependClassName="med.core.structure.IHasIdentifierName" />
+    <classNode dependClassName="med.core.structure.MedBase" />
     <classNode extendsClassName="jetbrains.mps.lang.core.structure.BaseConcept" />
   </dependency>
   <dependency className="med.core.structure.SimpleConstantRef">

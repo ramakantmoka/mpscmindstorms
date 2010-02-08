@@ -22,13 +22,13 @@
       <link role="target" targetNodeId="7680622939171571619" resolveInfo="TraceLink" />
     </node>
   </node>
+  <visible index="3" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <node type="jetbrains.mps.lang.structure.structure.AnnotationLinkDeclaration" id="7680622939171571618">
     <property name="role" value="traceAnnotation" />
     <property name="package" value="annotation" />
-    <link role="source" targetNodeId="2v.3577454086729990666" resolveInfo="MedBase" />
     <link role="target" targetNodeId="7680622939171547236" resolveInfo="RequirementsTrace" />
+    <link role="source" targetNodeId="3v.1133920641626" resolveInfo="BaseConcept" />
   </node>
-  <visible index="3" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="7680622939171571619">
     <property name="name" value="TraceLink" />
     <property name="package" value="annotation" />

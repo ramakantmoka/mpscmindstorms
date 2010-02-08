@@ -31,10 +31,20 @@
       <node role="contents" type="med.core.structure.SimpleIntConstant" id="5196379128666214925">
         <property name="name" value="WHITE" />
         <property name="value" value="500" />
+        <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="7680622939173623943">
+          <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="7680622939173623945">
+            <link role="requirement" targetNodeId="7680622939173602227" resolveInfo="Calib" />
+          </node>
+        </node>
       </node>
       <node role="contents" type="med.core.structure.SimpleIntConstant" id="5196379128666214927">
         <property name="name" value="BLACK" />
         <property name="value" value="700" />
+        <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="7680622939173623946">
+          <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="7680622939173623948">
+            <link role="requirement" targetNodeId="7680622939173602227" resolveInfo="Calib" />
+          </node>
+        </node>
       </node>
       <node role="contents" type="med.core.structure.SimpleIntConstant" id="5196379128666214941">
         <property name="name" value="SLOW" />
@@ -82,6 +92,11 @@
           <property name="from" value="5" />
           <property name="to" value="8" />
           <property name="name" value="right" />
+        </node>
+        <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="7680622939173623950">
+          <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="7680622939173623952">
+            <link role="requirement" targetNodeId="7680622939173623949" resolveInfo="Efficient" />
+          </node>
         </node>
       </node>
       <node role="contents" type="med.tasks.structure.Task" id="6254144863182650230">
@@ -174,6 +189,11 @@
                 <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
               </node>
             </node>
+            <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="7680622939173849681">
+              <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="7680622939173849683">
+                <link role="requirement" targetNodeId="7680622939173719749" resolveInfo="OptionalOutput" />
+              </node>
+            </node>
           </node>
           <node role="statements" type="med.core.structure.ExpressionStatement" id="6254144863182650234">
             <node role="expression" type="med.core.structure.ProcedureCall" id="6254144863182650235">
@@ -209,6 +229,11 @@
               <property name="isNew" value="false" />
               <node role="expression" type="featureDependencies.structure.AtomicFE" id="9105096665974586767">
                 <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
+              </node>
+            </node>
+            <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="7680622939173849684">
+              <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="7680622939173849686">
+                <link role="requirement" targetNodeId="7680622939173719749" resolveInfo="OptionalOutput" />
               </node>
             </node>
           </node>
@@ -301,6 +326,11 @@
                       <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
                     </node>
                   </node>
+                  <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="7680622939173849687">
+                    <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="7680622939173849689">
+                      <link role="requirement" targetNodeId="7680622939173719749" resolveInfo="OptionalOutput" />
+                    </node>
+                  </node>
                 </node>
                 <node role="statements" type="med.core.structure.IfStatement" id="9105096665970351738">
                   <node role="thenPart" type="med.core.structure.StatementList" id="9105096665970351739">
@@ -337,6 +367,11 @@
                         </node>
                         <node role="actuals" type="med.core.structure.LocalVariableReference" id="9105096665970351753">
                           <link role="variable" targetNodeId="9105096665970351743" resolveInfo="speedRight" />
+                        </node>
+                        <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="7680622939173849690">
+                          <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="7680622939173849692">
+                            <link role="requirement" targetNodeId="7680622939173719749" resolveInfo="OptionalOutput" />
+                          </node>
                         </node>
                       </node>
                       <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="9105096665970351754">
@@ -409,6 +444,11 @@
                           <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
                         </node>
                       </node>
+                      <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="7680622939173849693">
+                        <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="7680622939173849695">
+                          <link role="requirement" targetNodeId="7680622939173719749" resolveInfo="OptionalOutput" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -421,8 +461,18 @@
                         <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
                       </node>
                     </node>
+                    <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="7680622939173849696">
+                      <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="7680622939173849698">
+                        <link role="requirement" targetNodeId="7680622939173719749" resolveInfo="OptionalOutput" />
+                      </node>
+                    </node>
                   </node>
                 </node>
+              </node>
+            </node>
+            <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="7680622939173716757">
+              <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="7680622939173716759">
+                <link role="requirement" targetNodeId="7680622939172356369" resolveInfo="TwoPhases" />
               </node>
             </node>
           </node>
@@ -430,6 +480,11 @@
         <node role="scheduling" type="med.tasks.structure.SchedulingPolicyCyclic" id="8437501635617535014">
           <property name="priority" value="2" />
           <property name="every" value="2" />
+        </node>
+        <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="7680622939173716752">
+          <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="7680622939173716755">
+            <link role="requirement" targetNodeId="7680622939173623953" resolveInfo="Cyclic" />
+          </node>
         </node>
       </node>
       <node role="contents" type="med.core.structure.Procedure" id="5196379128662886748">
@@ -557,6 +612,11 @@
             <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
           </node>
         </node>
+        <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="7680622939173849699">
+          <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="7680622939173849701">
+            <link role="requirement" targetNodeId="7680622939173719749" resolveInfo="OptionalOutput" />
+          </node>
+        </node>
       </node>
       <node role="imports" type="med.core.structure.ModuleImport" id="5196379128663614634">
         <link role="importedModule" targetNodeId="2v.5196379128663212743" resolveInfo="OsekKernel" />
@@ -571,8 +631,8 @@
   </node>
   <node type="featureDependencies.structure.FeatureDependencyConfiguration" id="5196379128662641904">
     <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="3426893568456397304">
-      <property name="showFeatureClause" value="true" />
       <property name="highlightFeatureDependentNodes" value="true" />
+      <property name="showFeatureClause" value="true" />
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="5196379128662641907">
       <property name="name" value="debugOutput" />
@@ -593,6 +653,22 @@
       <node role="dependencies" type="med.requirements.structure.DummyRefines" id="7680622939172356374">
         <link role="target" targetNodeId="7680622939172356369" resolveInfo="1" />
       </node>
+    </node>
+    <node role="requirements" type="med.requirements.structure.DummyRequirement" id="7680622939173623949">
+      <property name="name" value="Efficient" />
+      <property name="text" value="The program should be as small regarding memory footprint as possible" />
+    </node>
+    <node role="requirements" type="med.requirements.structure.DummyRequirement" id="7680622939173623953">
+      <property name="name" value="Cyclic" />
+      <property name="text" value="the actual control of the device should be based on a cyclic task" />
+    </node>
+    <node role="requirements" type="med.requirements.structure.DummyRequirement" id="7680622939173602227">
+      <property name="name" value="Calib" />
+      <property name="text" value="The black/white values should be easily calibrated" />
+    </node>
+    <node role="requirements" type="med.requirements.structure.DummyRequirement" id="7680622939173719749">
+      <property name="name" value="OptionalOutput" />
+      <property name="text" value="Display output should be optional" />
     </node>
     <node role="requirements" type="med.requirements.structure.DummyRequirement" id="7680622939172356369">
       <property name="name" value="TwoPhases" />
