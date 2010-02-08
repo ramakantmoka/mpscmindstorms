@@ -1707,7 +1707,7 @@
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5196379128665751219">
     <property name="name" value="SimpleConstant" />
     <property name="package" value="constants" />
-    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <link role="extends" targetNodeId="3577454086729990666" resolveInfo="MedBase" />
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="5196379128665751220">
       <link role="intfc" targetNodeId="343373828472902636" resolveInfo="IHasIdentifierName" />
     </node>
