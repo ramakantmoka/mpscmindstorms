@@ -56,7 +56,7 @@
       </node>
       <node role="contents" type="med.statemachine.structure.Statemachine" id="6790227271038808735">
         <property name="name" value="linefollower" />
-        <property name="text" value="This is the documentation." />
+        <property name="text" value="Statemachine to manage the transition between the initialization and operation phases" />
         <node role="events" type="med.statemachine.structure.Event" id="6790227271038924454">
           <property name="name" value="initialized" />
         </node>
@@ -256,7 +256,7 @@
       </node>
       <node role="contents" type="med.tasks.structure.Task" id="5196379128667961337">
         <property name="name" value="run" />
-        <property name="text" value="Hallo" />
+        <property name="text" value="This is the cyclic task that is called every 1ms to do the actual control of the robot." />
         <node role="body" type="med.core.structure.StatementList" id="5196379128667961338">
           <node role="statements" type="med.statemachine.structure.StateSwitch" id="9105096665970351705">
             <link role="machine" targetNodeId="6790227271038808735" resolveInfo="linefollower" />
@@ -489,6 +489,7 @@
       </node>
       <node role="contents" type="med.core.structure.Procedure" id="5196379128662886748">
         <property name="name" value="updateMotorSettings" />
+        <property name="text" value="This procedure actually configures the motors based on the speed values passed into the procedure." />
         <node role="body" type="med.core.structure.StatementList" id="5196379128662886749">
           <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128662886757">
             <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128662886758">
@@ -531,7 +532,7 @@
       </node>
       <node role="contents" type="med.core.structure.Procedure" id="5196379128662886701">
         <property name="name" value="displaySpeeds" />
-        <property name="text" value="Test&#10;&#10;" />
+        <property name="text" value="This procedure displays the speed information on the robot's display.&#10;" />
         <node role="body" type="med.core.structure.StatementList" id="5196379128662886702">
           <node role="statements" type="med.core.structure.ExpressionStatement" id="5196379128662886710">
             <node role="expression" type="med.core.structure.ProcedureCall" id="5196379128662886711">

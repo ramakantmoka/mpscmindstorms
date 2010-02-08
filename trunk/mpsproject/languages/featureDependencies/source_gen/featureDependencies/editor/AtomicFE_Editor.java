@@ -38,7 +38,7 @@ public class AtomicFE_Editor extends DefaultNodeEditor {
     editorCell = provider.createEditorCell(editorContext);
     {
       Style style = editorCell.getStyle();
-      style.set(StyleAttributes.TEXT_COLOR, MPSColors.red);
+      style.set(StyleAttributes.TEXT_COLOR, MPSColors.DARK_BLUE);
     }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();

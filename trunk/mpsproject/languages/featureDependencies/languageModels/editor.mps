@@ -53,7 +53,7 @@
             <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="2063344986612529233">
               <property name="text" value="{" />
               <node role="styleItem" type="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" id="2411909105414870890">
-                <property name="color" value="darkGray" />
+                <property name="color" value="DARK_BLUE" />
               </node>
               <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" id="2411909105414479959">
                 <property name="flag" value="true" />
@@ -141,13 +141,13 @@
                       <node role="creator" type="jetbrains.mps.baseLanguage.structure.ClassCreator" id="3426893568456237366">
                         <link role="baseMethodDeclaration" targetNodeId="3.~Color.&lt;init&gt;(int,int,int)" resolveInfo="Color" />
                         <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="3426893568456237367">
-                          <property name="value" value="240" />
+                          <property name="value" value="180" />
                         </node>
                         <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="3426893568456237369">
-                          <property name="value" value="220" />
+                          <property name="value" value="180" />
                         </node>
                         <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="3426893568456237371">
-                          <property name="value" value="220" />
+                          <property name="value" value="255" />
                         </node>
                       </node>
                     </node>
@@ -177,13 +177,13 @@
                       <node role="creator" type="jetbrains.mps.baseLanguage.structure.ClassCreator" id="3426893568455743493">
                         <link role="baseMethodDeclaration" targetNodeId="3.~Color.&lt;init&gt;(int,int,int)" resolveInfo="Color" />
                         <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="3426893568455758667">
-                          <property name="value" value="240" />
+                          <property name="value" value="220" />
                         </node>
                         <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="3426893568455758668">
-                          <property name="value" value="240" />
+                          <property name="value" value="220" />
                         </node>
                         <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="3426893568456074380">
-                          <property name="value" value="240" />
+                          <property name="value" value="255" />
                         </node>
                       </node>
                     </node>
@@ -323,7 +323,7 @@
         </node>
       </node>
       <node role="styleItem" type="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" id="7715189151795905204">
-        <property name="color" value="red" />
+        <property name="color" value="DARK_BLUE" />
       </node>
     </node>
   </node>
