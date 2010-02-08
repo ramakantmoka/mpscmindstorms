@@ -6,6 +6,7 @@
   <language namespace="50b44c57-34f1-428d-a7c3-d100606f8e2a(featureDependencies)" />
   <language namespace="98178bb4-0742-4461-bea6-9fc251a502fa(med.statemachine)" />
   <language namespace="e941a310-8129-456e-ad58-044867852177(med.bitdata)" />
+  <language namespace="6f39da53-777c-4426-896e-bf1ddfbf16dc(med.requirements)" />
   <languageAspect modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" version="9" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590575(jetbrains.mps.gtext.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590571(jetbrains.mps.gtext.constraints)" version="8" />
@@ -61,6 +62,14 @@
           <property name="name" value="running" />
           <property name="initial" value="false" />
         </node>
+        <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="7680622939172784162">
+          <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="7680622939173087711">
+            <link role="requirement" targetNodeId="7680622939172356371" resolveInfo="Init" />
+          </node>
+          <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="7680622939173087713">
+            <link role="requirement" targetNodeId="7680622939172356369" resolveInfo="TwoPhases" />
+          </node>
+        </node>
       </node>
       <node role="contents" type="med.bitdata.structure.BitPatternDeclaration" id="9105096665975813153">
         <property name="name" value="speeds" />
@@ -79,6 +88,64 @@
         <property name="name" value="setup" />
         <property name="text" value="This task is executed when the system starts up and initializes the light sensor. And now wer're going to add even more!" />
         <node role="body" type="med.core.structure.StatementList" id="6254144863182650231">
+          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="7680622939171044413">
+            <property name="name" value="s" />
+            <node role="type" type="med.bitdata.structure.BitPatternType" id="7680622939171044414">
+              <link role="pattern" targetNodeId="9105096665975813153" resolveInfo="speeds" />
+            </node>
+          </node>
+          <node role="statements" type="med.core.structure.AssignmentStatement" id="7680622939171044421">
+            <node role="lvalue" type="med.bitdata.structure.BitAccessExpression" id="7680622939171044419">
+              <link role="bits" targetNodeId="9105096665975813154" resolveInfo="left" />
+              <node role="expression" type="med.core.structure.LocalVariableReference" id="7680622939171044418">
+                <link role="variable" targetNodeId="7680622939171044413" resolveInfo="s" />
+              </node>
+            </node>
+            <node role="rvalue" type="med.core.structure.IntConstantExpression" id="7680622939171044425">
+              <property name="value" value="10" />
+            </node>
+          </node>
+          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="7680622939171545339">
+            <property name="name" value="j" />
+            <node role="type" type="med.core.structure.GenericIntegerType" id="7680622939171545340" />
+            <node role="init" type="med.bitdata.structure.BitAccessExpression" id="7680622939171545343">
+              <link role="bits" targetNodeId="9105096665975813154" resolveInfo="left" />
+              <node role="expression" type="med.core.structure.LocalVariableReference" id="7680622939171545342">
+                <link role="variable" targetNodeId="7680622939171044413" resolveInfo="s" />
+              </node>
+            </node>
+          </node>
+          <node role="statements" type="med.core.structure.IfStatement" id="7680622939171545346">
+            <node role="thenPart" type="med.core.structure.StatementList" id="7680622939171545347">
+              <node role="statements" type="med.core.structure.ExpressionStatement" id="7680622939171545355">
+                <node role="expression" type="med.core.structure.ProcedureCall" id="7680622939171545356">
+                  <link role="procedure" targetNodeId="2v.5196379128662641915" resolveInfo="display_goto_xy" />
+                  <node role="actuals" type="med.core.structure.IntConstantExpression" id="7680622939171545357">
+                    <property name="value" value="0" />
+                  </node>
+                  <node role="actuals" type="med.core.structure.IntConstantExpression" id="7680622939171545358">
+                    <property name="value" value="7" />
+                  </node>
+                </node>
+              </node>
+              <node role="statements" type="med.core.structure.ExpressionStatement" id="7680622939171545359">
+                <node role="expression" type="med.core.structure.ProcedureCall" id="7680622939171545360">
+                  <link role="procedure" targetNodeId="2v.5196379128662641950" resolveInfo="display_string" />
+                  <node role="actuals" type="med.core.structure.StringConstantExpression" id="7680622939171545361">
+                    <property name="value" value="BIT TEST WORKS" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="condition" type="med.core.structure.EqualsExpression" id="7680622939171545350">
+              <node role="left" type="med.core.structure.LocalVariableReference" id="7680622939171545349">
+                <link role="variable" targetNodeId="7680622939171545339" resolveInfo="j" />
+              </node>
+              <node role="right" type="med.core.structure.IntConstantExpression" id="7680622939171545354">
+                <property name="value" value="10" />
+              </node>
+            </node>
+          </node>
           <node role="statements" type="med.core.structure.BlockStatement" id="9105096665974586743">
             <node role="body" type="med.core.structure.StatementList" id="9105096665974586744">
               <node role="statements" type="med.core.structure.ExpressionStatement" id="9105096665974586745">
@@ -153,10 +220,18 @@
         <node role="scheduling" type="med.tasks.structure.SchedulingPolicyOnceUponStartup" id="6254144863182650233">
           <property name="priority" value="1" />
         </node>
+        <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="7680622939173087714">
+          <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="7680622939173087716">
+            <link role="requirement" targetNodeId="7680622939172356371" resolveInfo="Init" />
+          </node>
+          <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="7680622939173087718">
+            <link role="requirement" targetNodeId="7680622939172356369" resolveInfo="TwoPhases" />
+          </node>
+        </node>
       </node>
       <node role="contents" type="med.tasks.structure.Task" id="5196379128667961337">
         <property name="name" value="run" />
-        <property name="text" value="This task is executed cyclicly. Hallo !&#10;&#10;#s#ädkf#dskf&#10;dslf&#10;sadkf&#10;üdsakf&#10;saüdkf&#10;saüfkdsa&#10;füpdsaf&#10;" />
+        <property name="text" value="Hallo" />
         <node role="body" type="med.core.structure.StatementList" id="5196379128667961338">
           <node role="statements" type="med.statemachine.structure.StateSwitch" id="9105096665970351705">
             <link role="machine" targetNodeId="6790227271038808735" resolveInfo="linefollower" />
@@ -508,6 +583,20 @@
     <property name="name" value="LineFollowerOSEK" />
     <node role="resources" type="med.core.structure.ResourceReference" id="8437501635617536081">
       <link role="resource" targetNodeId="5196379128660651509" resolveInfo="LineFollower" />
+    </node>
+  </node>
+  <node type="med.requirements.structure.DummyRequirementsCollection" id="7680622939172125914">
+    <property name="showRequirementsInModel" value="true" />
+    <node role="requirements" type="med.requirements.structure.DummyRequirement" id="7680622939172356371">
+      <property name="name" value="Init" />
+      <property name="text" value="The system should start operating only after it has been initialized property" />
+      <node role="dependencies" type="med.requirements.structure.DummyRefines" id="7680622939172356374">
+        <link role="target" targetNodeId="7680622939172356369" resolveInfo="1" />
+      </node>
+    </node>
+    <node role="requirements" type="med.requirements.structure.DummyRequirement" id="7680622939172356369">
+      <property name="name" value="TwoPhases" />
+      <property name="text" value="Initialization should be separate from operation" />
     </node>
   </node>
 </model>

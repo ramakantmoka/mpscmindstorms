@@ -323,7 +323,7 @@
         </node>
       </node>
       <node role="styleItem" type="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" id="7715189151795905204">
-        <property name="color" value="DARK_GREEN" />
+        <property name="color" value="red" />
       </node>
     </node>
   </node>
