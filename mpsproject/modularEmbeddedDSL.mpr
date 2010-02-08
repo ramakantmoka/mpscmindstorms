@@ -9,6 +9,7 @@
       <solutionPath path="${project}/solutions/modularEmbeddedDSL.sandbox/modularEmbeddedDSL.sandbox.msd" />
       <solutionPath path="${project}/solutions/MindstormHelloWorld/MindstormHelloWorld.msd" folder="" />
       <solutionPath path="${project}/solutions/LineFollower/LineFollower.msd" folder="" />
+      <solutionPath path="${project}/solutions/NorasDancingRobot/NorasDancingRobot.msd" folder="" />
     </projectSolutions>
     <projectLanguages>
       <languagePath path="${project}/languages/featureDependencies/featureDependencies.mpl" />

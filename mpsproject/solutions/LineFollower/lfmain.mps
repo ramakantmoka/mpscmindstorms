@@ -60,12 +60,16 @@
         <node role="events" type="med.statemachine.structure.Event" id="6790227271038924454">
           <property name="name" value="initialized" />
         </node>
+        <node role="events" type="med.statemachine.structure.Event" id="6556431234481808477">
+          <property name="name" value="kaputt" />
+        </node>
         <node role="states" type="med.statemachine.structure.State" id="6790227271038924456">
           <property name="name" value="initializing" />
           <property name="initial" value="true" />
           <node role="transitions" type="med.statemachine.structure.Transition" id="6790227271038924458">
             <link role="trigger" targetNodeId="6790227271038924454" resolveInfo="initialized" />
             <link role="target" targetNodeId="6790227271038924457" resolveInfo="running" />
+            <node role="guard" type="med.core.structure.TrueLiteral" id="6556431234482820425" />
           </node>
         </node>
         <node role="states" type="med.statemachine.structure.State" id="6790227271038924457">
@@ -87,6 +91,11 @@
           <property name="from" value="1" />
           <property name="to" value="4" />
           <property name="name" value="left" />
+          <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="6556431234481809985">
+            <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="6556431234481809987">
+              <link role="requirement" targetNodeId="6556431234481809984" resolveInfo="MaxSpeed" />
+            </node>
+          </node>
         </node>
         <node role="ranges" type="med.bitdata.structure.BitRange" id="9105096665975813155">
           <property name="from" value="5" />
@@ -101,64 +110,60 @@
       </node>
       <node role="contents" type="med.tasks.structure.Task" id="6254144863182650230">
         <property name="name" value="setup" />
-        <property name="text" value="This task is executed when the system starts up and initializes the light sensor. And now wer're going to add even more!" />
+        <property name="text" value="This task is executed when the system starts up and initializes the light sensor. And now wer're going to add even more! Here is some more docs." />
         <node role="body" type="med.core.structure.StatementList" id="6254144863182650231">
-          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="7680622939171044413">
+          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="6556431234482827963">
             <property name="name" value="s" />
-            <node role="type" type="med.bitdata.structure.BitPatternType" id="7680622939171044414">
+            <node role="type" type="med.bitdata.structure.BitPatternType" id="6556431234482827964">
               <link role="pattern" targetNodeId="9105096665975813153" resolveInfo="speeds" />
             </node>
           </node>
-          <node role="statements" type="med.core.structure.AssignmentStatement" id="7680622939171044421">
-            <node role="lvalue" type="med.bitdata.structure.BitAccessExpression" id="7680622939171044419">
+          <node role="statements" type="med.core.structure.AssignmentStatement" id="6556431234482827965">
+            <node role="lvalue" type="med.bitdata.structure.BitAccessExpression" id="6556431234482827966">
               <link role="bits" targetNodeId="9105096665975813154" resolveInfo="left" />
-              <node role="expression" type="med.core.structure.LocalVariableReference" id="7680622939171044418">
-                <link role="variable" targetNodeId="7680622939171044413" resolveInfo="s" />
+              <node role="expression" type="med.core.structure.LocalVariableReference" id="6556431234482827967">
+                <link role="variable" targetNodeId="6556431234482827963" resolveInfo="s" />
               </node>
             </node>
-            <node role="rvalue" type="med.core.structure.IntConstantExpression" id="7680622939171044425">
+            <node role="rvalue" type="med.core.structure.IntConstantExpression" id="6556431234482827968">
               <property name="value" value="10" />
             </node>
           </node>
-          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="7680622939171545339">
+          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="6556431234482827969">
             <property name="name" value="j" />
-            <node role="type" type="med.core.structure.GenericIntegerType" id="7680622939171545340" />
-            <node role="init" type="med.bitdata.structure.BitAccessExpression" id="7680622939171545343">
+            <node role="type" type="med.core.structure.GenericIntegerType" id="6556431234482827970" />
+            <node role="init" type="med.bitdata.structure.BitAccessExpression" id="6556431234482827971">
               <link role="bits" targetNodeId="9105096665975813154" resolveInfo="left" />
-              <node role="expression" type="med.core.structure.LocalVariableReference" id="7680622939171545342">
-                <link role="variable" targetNodeId="7680622939171044413" resolveInfo="s" />
+              <node role="expression" type="med.core.structure.LocalVariableReference" id="6556431234482827972">
+                <link role="variable" targetNodeId="6556431234482827963" resolveInfo="s" />
               </node>
             </node>
           </node>
-          <node role="statements" type="med.core.structure.IfStatement" id="7680622939171545346">
-            <node role="thenPart" type="med.core.structure.StatementList" id="7680622939171545347">
-              <node role="statements" type="med.core.structure.ExpressionStatement" id="7680622939171545355">
-                <node role="expression" type="med.core.structure.ProcedureCall" id="7680622939171545356">
-                  <link role="procedure" targetNodeId="2v.5196379128662641915" resolveInfo="display_goto_xy" />
-                  <node role="actuals" type="med.core.structure.IntConstantExpression" id="7680622939171545357">
-                    <property name="value" value="0" />
-                  </node>
-                  <node role="actuals" type="med.core.structure.IntConstantExpression" id="7680622939171545358">
-                    <property name="value" value="7" />
-                  </node>
-                </node>
+          <node role="statements" type="med.core.structure.ExpressionStatement" id="6556431234482827973">
+            <node role="expression" type="med.core.structure.ProcedureCall" id="6556431234482827974">
+              <link role="procedure" targetNodeId="2v.5196379128662641915" resolveInfo="display_goto_xy" />
+              <node role="actuals" type="med.core.structure.IntConstantExpression" id="6556431234482827975">
+                <property name="value" value="0" />
               </node>
-              <node role="statements" type="med.core.structure.ExpressionStatement" id="7680622939171545359">
-                <node role="expression" type="med.core.structure.ProcedureCall" id="7680622939171545360">
-                  <link role="procedure" targetNodeId="2v.5196379128662641950" resolveInfo="display_string" />
-                  <node role="actuals" type="med.core.structure.StringConstantExpression" id="7680622939171545361">
-                    <property name="value" value="BIT TEST WORKS" />
-                  </node>
-                </node>
+              <node role="actuals" type="med.core.structure.IntConstantExpression" id="6556431234482827976">
+                <property name="value" value="7" />
               </node>
             </node>
-            <node role="condition" type="med.core.structure.EqualsExpression" id="7680622939171545350">
-              <node role="left" type="med.core.structure.LocalVariableReference" id="7680622939171545349">
-                <link role="variable" targetNodeId="7680622939171545339" resolveInfo="j" />
+          </node>
+          <node role="statements" type="med.core.structure.ExpressionStatement" id="6556431234482827977">
+            <node role="expression" type="med.core.structure.ProcedureCall" id="6556431234482827978">
+              <link role="procedure" targetNodeId="2v.5196379128662641936" resolveInfo="display_int" />
+              <node role="actuals" type="med.core.structure.LocalVariableReference" id="6556431234482827979">
+                <link role="variable" targetNodeId="6556431234482827969" resolveInfo="j" />
               </node>
-              <node role="right" type="med.core.structure.IntConstantExpression" id="7680622939171545354">
-                <property name="value" value="10" />
+              <node role="actuals" type="med.core.structure.IntConstantExpression" id="6556431234482827980">
+                <property name="value" value="0" />
               </node>
+            </node>
+          </node>
+          <node role="statements" type="med.core.structure.ExpressionStatement" id="6556431234482829848">
+            <node role="expression" type="med.core.structure.ProcedureCall" id="6556431234482829849">
+              <link role="procedure" targetNodeId="2v.5196379128662886855" resolveInfo="display_update" />
             </node>
           </node>
           <node role="statements" type="med.core.structure.BlockStatement" id="9105096665974586743">
@@ -452,22 +457,6 @@
                     </node>
                   </node>
                 </node>
-                <node role="statements" type="med.core.structure.ExpressionStatement" id="9105096665970351781">
-                  <node role="expression" type="med.core.structure.ProcedureCall" id="9105096665970351782">
-                    <link role="procedure" targetNodeId="2v.5196379128662886855" resolveInfo="display_update" />
-                    <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="9105096665970351783">
-                      <property name="isNew" value="false" />
-                      <node role="expression" type="featureDependencies.structure.AtomicFE" id="9105096665970351784">
-                        <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
-                      </node>
-                    </node>
-                    <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="7680622939173849696">
-                      <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="7680622939173849698">
-                        <link role="requirement" targetNodeId="7680622939173719749" resolveInfo="OptionalOutput" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
               </node>
             </node>
             <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="7680622939173716757">
@@ -631,9 +620,15 @@
     </node>
   </node>
   <node type="featureDependencies.structure.FeatureDependencyConfiguration" id="5196379128662641904">
-    <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="3426893568456397304">
-      <property name="highlightFeatureDependentNodes" value="true" />
+    <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="6556431234481811945">
       <property name="showFeatureClause" value="true" />
+      <property name="highlightFeatureDependentNodes" value="true" />
+    </node>
+    <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="7680622939174614995">
+      <property name="name" value="runtimeCalibration" />
+    </node>
+    <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="7680622939174614997">
+      <property name="name" value="useBumper" />
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="5196379128662641907">
       <property name="name" value="debugOutput" />
@@ -666,6 +661,10 @@
     <node role="requirements" type="med.requirements.structure.DummyRequirement" id="7680622939173602227">
       <property name="name" value="Calib" />
       <property name="text" value="The black/white values should be easily calibrated" />
+    </node>
+    <node role="requirements" type="med.requirements.structure.DummyRequirement" id="6556431234481809984">
+      <property name="name" value="MaxSpeed" />
+      <property name="text" value="Speeds per motor can only be up to 80" />
     </node>
     <node role="requirements" type="med.requirements.structure.DummyRequirement" id="7680622939173719749">
       <property name="name" value="OptionalOutput" />

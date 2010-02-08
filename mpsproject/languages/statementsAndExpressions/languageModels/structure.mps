@@ -489,11 +489,19 @@
     <property name="name" value="TrueLiteral" />
     <property name="package" value="expressions.literals" />
     <link role="extends" targetNodeId="6441851857096548280" resolveInfo="ConstantExpression" />
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="6556431234482276381">
+      <property name="value" value="true" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2522599413187727537">
     <property name="name" value="FalseLiteral" />
     <property name="package" value="expressions.literals" />
     <link role="extends" targetNodeId="6441851857096548280" resolveInfo="ConstantExpression" />
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="6556431234482276382">
+      <property name="value" value="false" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2522599413187982982">
     <property name="name" value="ElseIfPart" />

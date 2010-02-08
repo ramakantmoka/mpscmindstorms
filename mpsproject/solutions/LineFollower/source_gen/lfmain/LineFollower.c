@@ -10,8 +10,8 @@
 
 // used resources
 #include "kernel.h"
-#include "ecrobot_interface.h"
 #include "bitdata.h"
+#include "ecrobot_interface.h"
 
 // custom includes
 #include "kernel.h"
@@ -25,7 +25,13 @@ void LineFollower_main_linefollower_execute(int event) {
     if ( LineFollower_main_linefollower_currentstate == STATE_INITIALIZING) {
                 
       if ( event == EVENT_INITIALIZED) {
-              LineFollower_main_linefollower_currentstate = STATE_RUNNING;
+                      
+        if ( 1) {
+                  LineFollower_main_linefollower_currentstate = STATE_RUNNING;
+          return ;
+
+        } // end if 
+
 
       } // end if 
 
@@ -38,13 +44,9 @@ TASK(LineFollower_main_setup){
     int8_t s;
     setBits (&s, 1, 4, 10 );
     int j = extractBits (&s, 1, 4 );
-        
-    if ( j == 10) {
-          display_goto_xy (0, 7 );
-      display_string ("BIT TEST WORKS" );
-
-    } // end if 
-
+    display_goto_xy (0, 7 );
+    display_int (j, 0 );
+    display_update ( );
         { // begin block
           display_goto_xy (0, 0 );
       display_string ("Initializing" );
@@ -92,7 +94,6 @@ TASK(LineFollower_main_run){
 
         } // end if 
 
-        display_update ( );
         TerminateTask();
         return ;
 

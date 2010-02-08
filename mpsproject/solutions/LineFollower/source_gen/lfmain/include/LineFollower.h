@@ -12,6 +12,7 @@
 
 enum linefollower_events_enum {
 EVENT_INITIALIZED
+, EVENT_KAPUTT
 };
 enum linefollower_states_enum {
 STATE_INITIALIZING

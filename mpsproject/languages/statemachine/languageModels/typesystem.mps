@@ -121,5 +121,123 @@
       <link role="concept" targetNodeId="1.6254144863182652341" resolveInfo="Statemachine" />
     </node>
   </node>
+  <node type="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" id="7680622939174392686">
+    <property name="package" value="machine" />
+    <property name="name" value="stateUnreachable" />
+    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="7680622939174392687">
+      <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="7680622939174392690">
+        <node role="condition" type="jetbrains.mps.baseLanguage.structure.AndExpression" id="7680622939174493320">
+          <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.NotExpression" id="7680622939174493339">
+            <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="7680622939174493340">
+              <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="7680622939174493341">
+                <link role="applicableNode" targetNodeId="7680622939174392689" resolveInfo="state" />
+              </node>
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="7680622939174493342">
+                <link role="property" targetNodeId="1.6254144863182975676" resolveInfo="initial" />
+              </node>
+            </node>
+          </node>
+          <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="7680622939174393093">
+            <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="7680622939174393030">
+              <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="7680622939174392703">
+                <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="7680622939174392694">
+                  <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="7680622939174392693">
+                    <link role="applicableNode" targetNodeId="7680622939174392689" resolveInfo="state" />
+                  </node>
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" id="7680622939174392698">
+                    <node role="parameter" type="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" id="7680622939174392699">
+                      <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="7680622939174392702">
+                        <link role="conceptDeclaration" targetNodeId="1.6254144863182652341" resolveInfo="Statemachine" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" id="7680622939174393025">
+                  <node role="parameter" type="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" id="7680622939174393026">
+                    <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="7680622939174393029">
+                      <link role="conceptDeclaration" targetNodeId="1.6254144863182652344" resolveInfo="Transition" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node role="operation" type="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" id="7680622939174393034">
+                <node role="closure" type="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" id="7680622939174393035">
+                  <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="7680622939174393036">
+                    <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="7680622939174393042">
+                      <node role="expression" type="jetbrains.mps.baseLanguage.structure.EqualsExpression" id="7680622939174393064">
+                        <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="7680622939174393072">
+                          <link role="applicableNode" targetNodeId="7680622939174392689" resolveInfo="state" />
+                        </node>
+                        <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="7680622939174393046">
+                          <node role="operand" type="jetbrains.mps.baseLanguage.structure.ParameterReference" id="7680622939174393043">
+                            <link role="variableDeclaration" targetNodeId="7680622939174393037" resolveInfo="it" />
+                          </node>
+                          <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="7680622939174393057">
+                            <link role="link" targetNodeId="1.6254144863182768327" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node role="parameter" type="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" id="7680622939174393037">
+                    <property name="name" value="it" />
+                    <node role="type" type="jetbrains.mps.baseLanguage.structure.WildCardType" id="7680622939174393038" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="operation" type="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" id="7680622939174393116" />
+          </node>
+        </node>
+        <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="7680622939174392692">
+          <node role="statement" type="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" id="7680622939174393122">
+            <node role="nodeToReport" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="7680622939174393126">
+              <link role="applicableNode" targetNodeId="7680622939174392689" resolveInfo="state" />
+            </node>
+            <node role="errorString" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="7680622939174393125">
+              <property name="value" value="orphan state - can never be reached" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="7680622939174392689">
+      <property name="name" value="state" />
+      <link role="concept" targetNodeId="1.6254144863182652343" resolveInfo="State" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="6556431234482366967">
+    <property name="package" value="machine" />
+    <property name="name" value="typeof_Transition" />
+    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6556431234482366968">
+      <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" id="6556431234482390883">
+        <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="6556431234482390887">
+          <node role="normalType" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression" id="6556431234482390888">
+            <node role="creator" type="jetbrains.mps.lang.smodel.structure.SNodeCreator" id="6556431234482390890">
+              <node role="createdType" type="jetbrains.mps.lang.smodel.structure.SNodeType" id="6556431234482390891">
+                <link role="concept" targetNodeId="2v.4641466063285667151" resolveInfo="BooleanType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="leftExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="6556431234482390886">
+          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="6556431234482366972">
+            <node role="term" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6556431234482390878">
+              <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="6556431234482390877">
+                <link role="applicableNode" targetNodeId="6556431234482366970" resolveInfo="transition" />
+              </node>
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="6556431234482390882">
+                <link role="link" targetNodeId="1.6556431234482161760" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="6556431234482366970">
+      <property name="name" value="transition" />
+      <link role="concept" targetNodeId="1.6254144863182652344" resolveInfo="Transition" />
+    </node>
+  </node>
 </model>
 
