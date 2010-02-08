@@ -9,13 +9,14 @@
 #include "include/LineFollower.h"
 
 // used resources
-#include "ecrobot_interface.h"
 #include "kernel.h"
+#include "ecrobot_interface.h"
 #include "bitdata.h"
 
 // custom includes
 #include "kernel.h"
 #include "kernel_id.h"
+#include "stdint.h"
 
 int LineFollower_main_linefollower_currentstate=STATE_INITIALIZING;
 
@@ -34,6 +35,16 @@ void LineFollower_main_linefollower_execute(int event) {
 }
 
 TASK(LineFollower_main_setup){
+    int8_t s;
+    setBits (&s, 1, 4, 10 );
+    int j = extractBits (&s, 1, 4 );
+        
+    if ( j == 10) {
+          display_goto_xy (0, 7 );
+      display_string ("BIT TEST WORKS" );
+
+    } // end if 
+
         { // begin block
           display_goto_xy (0, 0 );
       display_string ("Initializing" );

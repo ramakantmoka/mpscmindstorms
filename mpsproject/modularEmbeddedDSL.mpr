@@ -21,6 +21,7 @@
       <languagePath path="${project}/languages/nxtosek/nxtosek.mpl" />
       <languagePath path="${project}/languages/statemachine/statemachine.mpl" folder="" />
       <languagePath path="${project}/languages/bitdata/bitdata.mpl" />
+      <languagePath path="${project}/languages/requirements/requirements.mpl" />
     </projectLanguages>
     <projectDevkits>
       <devkitPath path="${project}/devkits/ModularEmbeddedDSL/ModularEmbeddedDSL.devkit" />
