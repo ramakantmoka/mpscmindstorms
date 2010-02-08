@@ -3010,10 +3010,15 @@
     <property name="name" value="IDocumentable_PreviewEditor" />
     <link role="conceptDeclaration" targetNodeId="1.5288422977871838031" resolveInfo="IDocumentable" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="6790227271038052435">
+      <node role="styleItem" type="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" id="7680622939174210203">
+        <node role="query" type="jetbrains.mps.lang.editor.structure.RGBColor" id="7680622939174210204">
+          <property name="value" value="EEEEEE" />
+        </node>
+      </node>
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="6790227271038239437">
         <property name="text" value="doc" />
         <node role="styleItem" type="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" id="6790227271038579457">
-          <property name="color" value="gray" />
+          <property name="color" value="darkGray" />
         </node>
       </node>
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" id="6790227271038052438">
@@ -3032,7 +3037,7 @@
           </node>
         </node>
         <node role="styleItem" type="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" id="6790227271038579458">
-          <property name="color" value="gray" />
+          <property name="color" value="darkGray" />
         </node>
       </node>
       <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="6790227271038052437" />
