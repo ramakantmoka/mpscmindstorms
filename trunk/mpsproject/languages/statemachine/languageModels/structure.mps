@@ -88,6 +88,12 @@
       <property name="sourceCardinality" value="1" />
       <link role="target" targetNodeId="6254144863182652345" resolveInfo="Event" />
     </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="6556431234482161760">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="guard" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="2v.6441851857096548278" resolveInfo="Expression" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6254144863182652345">
     <property name="name" value="Event" />
@@ -114,7 +120,7 @@
       <link role="target" targetNodeId="6254144863182652341" resolveInfo="Statemachine" />
     </node>
     <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="6254144863183184222">
-      <property name="value" value="trigger" />
+      <property name="value" value="event" />
       <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473891462" resolveInfo="alias" />
     </node>
   </node>

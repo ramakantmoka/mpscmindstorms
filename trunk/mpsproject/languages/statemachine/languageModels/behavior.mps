@@ -181,5 +181,27 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6254144863185032532" />
     </node>
   </node>
+  <visible index="3" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
+  <node type="jetbrains.mps.lang.behavior.structure.ConceptBehavior" id="6556431234482153147">
+    <property name="package" value="machine" />
+    <link role="concept" targetNodeId="1.6254144863182652344" resolveInfo="Transition" />
+    <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="6556431234482153148">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6556431234482153149">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="6556431234482153150">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6556431234482161775">
+            <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6556431234482153152">
+              <node role="operand" type="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" id="6556431234482153151" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="6556431234482161763">
+                <link role="link" targetNodeId="1.6556431234482161760" />
+              </node>
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" id="6556431234482161779">
+              <link role="concept" targetNodeId="3v.2522599413187727536" resolveInfo="TrueLiteral" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
