@@ -15,6 +15,10 @@
 #include "kernel.h"
 #include "kernel_id.h"
 
+
+int twmain_impl_speed(int val) {
+    return (2 * val);
+}
 int twmain_impl_stateLocalTime = 0;
 int twmain_impl_currentLeftDelta = 0;
 int twmain_impl_currentRightDelta = 0;
@@ -168,8 +172,8 @@ void twmain_impl_stopAndGoStateMachine_execute(int event) {
                   twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_0;
                       twmain_impl_stateLocalTime = 0;
 
-                      twmain_impl_currentLeftDelta = twmain_impl_calcStep (twmain_impl_currentLeftSpeed, 50, 3000 );
-            twmain_impl_currentRightDelta = twmain_impl_calcStep (twmain_impl_currentRightSpeed, 50, 3000 );
+                      twmain_impl_currentLeftDelta = twmain_impl_calcStep (twmain_impl_currentLeftSpeed, twmain_impl_speed (25 ), 3000 );
+            twmain_impl_currentRightDelta = twmain_impl_calcStep (twmain_impl_currentRightSpeed, twmain_impl_speed (25 ), 3000 );
 
           return ;
 

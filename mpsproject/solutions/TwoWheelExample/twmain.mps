@@ -21,14 +21,37 @@
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelArchitecture" id="6556431234482938468" />
     <node role="modules" type="med.core.structure.ImplementationModule" id="6556431234482938469">
       <property name="name" value="impl" />
+      <node role="contents" type="med.core.structure.Procedure" id="5231257431512335630">
+        <property name="name" value="speed" />
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="5231257431512335635">
+          <property name="name" value="val" />
+          <node role="type" type="med.core.structure.GenericIntegerType" id="5231257431512335637" />
+        </node>
+        <node role="body" type="med.core.structure.StatementList" id="5231257431512335631">
+          <node role="statements" type="med.core.structure.ReturnStatement" id="5231257431512335634">
+            <node role="expr" type="med.core.structure.MultiplicationExpression" id="5231257431512335639">
+              <node role="left" type="med.core.structure.IntConstantExpression" id="5231257431512335638">
+                <property name="value" value="2" />
+              </node>
+              <node role="right" type="med.core.structure.ParameterReference" id="5231257431512335643">
+                <link role="parameter" targetNodeId="5231257431512335635" resolveInfo="val" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="type" type="med.core.structure.GenericIntegerType" id="5231257431512335633" />
+      </node>
       <node role="contents" type="ds.twowheel.structure.RobotScript" id="6556431234482938470">
         <property name="name" value="stopAndGo" />
         <node role="statements" type="ds.twowheel.structure.AccelerateStatement" id="6556431234482938494">
           <node role="time" type="med.core.structure.IntConstantExpression" id="6556431234482938498">
             <property name="value" value="3000" />
           </node>
-          <node role="speed" type="med.core.structure.IntConstantExpression" id="6556431234483674122">
-            <property name="value" value="50" />
+          <node role="speed" type="med.core.structure.ProcedureCall" id="5231257431512335644">
+            <link role="procedure" targetNodeId="5231257431512335630" resolveInfo="speed" />
+            <node role="actuals" type="med.core.structure.IntConstantExpression" id="5231257431512335646">
+              <property name="value" value="25" />
+            </node>
           </node>
         </node>
         <node role="statements" type="ds.twowheel.structure.DriveOnStatement" id="5231257431511666972">
