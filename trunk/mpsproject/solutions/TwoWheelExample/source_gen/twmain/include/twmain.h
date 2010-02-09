@@ -9,6 +9,8 @@
 
 // custom includes for header
 
+
+int twmain_impl_speed(int val);
 enum stopAndGoStateMachine_events_enum {
 EVENT_TIMER
 };
