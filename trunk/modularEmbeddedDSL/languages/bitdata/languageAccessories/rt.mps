@@ -62,6 +62,9 @@
           <node role="type" type="med.core.structure.Int8" id="9105096665975701015" />
         </node>
       </node>
+      <node role="linkedResource" type="med.core.structure.LinkedResource" id="8609407923442222852">
+        <property name="filename" value="bitdata.c" />
+      </node>
     </node>
   </node>
 </model>

@@ -15,8 +15,8 @@
 #include "kernel.h"
 #include "kernel_id.h"
 
-int Main_robormain_i=0;
-int Main_robormain_steuerung_currentstate=STATE_INIT;
+int Main_robormain_i = 0;
+int Main_robormain_steuerung_currentstate = STATE_INIT;
 
 void Main_robormain_steuerung_execute(int event) {
         
