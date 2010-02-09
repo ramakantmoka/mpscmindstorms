@@ -61,6 +61,18 @@
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="6254144863182652347">
       <link role="intfc" targetNodeId="2v.343373828472902636" resolveInfo="IHasIdentifierName" />
     </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="6556431234483356410">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="entry" />
+      <property name="sourceCardinality" value="0..n" />
+      <link role="target" targetNodeId="5231257431511773216" resolveInfo="EntryAction" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="5231257431511779675">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="exit" />
+      <property name="sourceCardinality" value="0..n" />
+      <link role="target" targetNodeId="5231257431511773217" resolveInfo="ExitAction" />
+    </node>
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="6254144863182652352">
       <property name="metaClass" value="aggregation" />
       <property name="role" value="transitions" />
@@ -188,6 +200,30 @@
       <property name="sourceCardinality" value="1" />
       <link role="target" targetNodeId="2v.6520964804316559124" resolveInfo="StatementList" />
     </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6556431234483356404">
+    <property name="package" value="machine" />
+    <property name="name" value="Action" />
+    <link role="extends" targetNodeId="3v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="6556431234483356434">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="body" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="2v.6520964804316559124" resolveInfo="StatementList" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.BooleanConceptProperty" id="5231257431511773215">
+      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473854053" resolveInfo="abstract" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5231257431511773216">
+    <property name="package" value="machine" />
+    <property name="name" value="EntryAction" />
+    <link role="extends" targetNodeId="6556431234483356404" resolveInfo="Action" />
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5231257431511773217">
+    <property name="package" value="machine" />
+    <property name="name" value="ExitAction" />
+    <link role="extends" targetNodeId="6556431234483356404" resolveInfo="Action" />
   </node>
 </model>
 
