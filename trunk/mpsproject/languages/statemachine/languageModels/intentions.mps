@@ -101,5 +101,63 @@
       </node>
     </node>
   </node>
+  <node type="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" id="6556431234483356436">
+    <property name="package" value="machine" />
+    <property name="name" value="addExitAction" />
+    <link role="forConcept" targetNodeId="1.6254144863182652343" resolveInfo="State" />
+    <node role="descriptionFunction" type="jetbrains.mps.lang.intentions.structure.DescriptionBlock" id="6556431234483356437">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6556431234483356438">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="6556431234483356441">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="6556431234483356442">
+            <property name="value" value="add exit action" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="executeFunction" type="jetbrains.mps.lang.intentions.structure.ExecuteBlock" id="6556431234483356439">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6556431234483356440">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="6556431234483356443">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5231257431511886248">
+            <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5231257431511886243">
+              <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="6556431234483356444" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkListAccess" id="5231257431511886268">
+                <link role="link" targetNodeId="1.5231257431511779675" />
+              </node>
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" id="5231257431511886252" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" id="5231257431511886254">
+    <property name="package" value="machine" />
+    <property name="name" value="addEntryAction" />
+    <link role="forConcept" targetNodeId="1.6254144863182652343" resolveInfo="State" />
+    <node role="descriptionFunction" type="jetbrains.mps.lang.intentions.structure.DescriptionBlock" id="5231257431511886255">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5231257431511886256">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="5231257431511886257">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="5231257431511886258">
+            <property name="value" value="add entry action" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="executeFunction" type="jetbrains.mps.lang.intentions.structure.ExecuteBlock" id="5231257431511886259">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5231257431511886260">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="5231257431511886261">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5231257431511886262">
+            <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5231257431511886263">
+              <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="5231257431511886264" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkListAccess" id="5231257431511886265">
+                <link role="link" targetNodeId="1.6556431234483356410" />
+              </node>
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" id="5231257431511886266" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

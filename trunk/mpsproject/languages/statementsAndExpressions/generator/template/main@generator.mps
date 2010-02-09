@@ -4118,7 +4118,7 @@
             </node>
           </node>
           <node role="item" type="jetbrains.mps.gtext.structure.GText" id="6254144863187085460">
-            <property name="text" value="=" />
+            <property name="text" value=" = " />
           </node>
           <node role="item" type="jetbrains.mps.gtext.structure.GItem" id="6254144863187085461">
             <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" id="6254144863187085463">

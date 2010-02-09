@@ -10,6 +10,7 @@
       <solutionPath path="${project}/solutions/MindstormHelloWorld/MindstormHelloWorld.msd" folder="" />
       <solutionPath path="${project}/solutions/LineFollower/LineFollower.msd" folder="" />
       <solutionPath path="${project}/solutions/NorasDancingRobot/NorasDancingRobot.msd" folder="" />
+      <solutionPath path="${project}/solutions/TwoWheelExample/TwoWheelExample.msd" folder="" />
     </projectSolutions>
     <projectLanguages>
       <languagePath path="${project}/languages/featureDependencies/featureDependencies.mpl" />
@@ -23,6 +24,7 @@
       <languagePath path="${project}/languages/statemachine/statemachine.mpl" folder="" />
       <languagePath path="${project}/languages/bitdata/bitdata.mpl" />
       <languagePath path="${project}/languages/requirements/requirements.mpl" />
+      <languagePath path="${project}/languages/twowheel/twowheel.mpl" />
     </projectLanguages>
     <projectDevkits>
       <devkitPath path="${project}/devkits/ModularEmbeddedDSL/ModularEmbeddedDSL.devkit" />
