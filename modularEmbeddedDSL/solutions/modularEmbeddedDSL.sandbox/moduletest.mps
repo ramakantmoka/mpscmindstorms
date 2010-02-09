@@ -704,7 +704,9 @@
             <link role="test" targetNodeId="6275945668714243445" resolveInfo="testReferences" />
           </node>
         </node>
-        <node role="scheduling" type="med.tasks.structure.SchedulingPolicyOnceUponStartup" id="8937796720371752589" />
+        <node role="scheduling" type="med.tasks.structure.SchedulingPolicyOnceUponStartup" id="8937796720371752589">
+          <property name="priority" value="1" />
+        </node>
       </node>
     </node>
   </node>
