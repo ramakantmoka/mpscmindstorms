@@ -20,6 +20,25 @@ CPU ATMEL_AT91SAM7S256
      MAXALLOWEDVALUE = 10000;
      TICKSPERBASE = 1;
   };
+TASK LineFollower_main_sonartask {
+  AUTOSTART = FALSE;
+  PRIORITY = 2;
+  ACTIVATION = 1;
+  SCHEDULE = FULL;
+  STACKSIZE = 512;
+};
+ALARM LineFollower_main_sonartask_alarm {
+  COUNTER = SysTimerCnt;
+  ACTION = ACTIVATETASK {
+    TASK = LineFollower_main_sonartask;
+  };
+  AUTOSTART = TRUE
+ { 
+    ALARMTIME = 1;
+    CYCLETIME = 100;
+    APPMODE = appmode1;
+  };
+};
 TASK LineFollower_main_run {
   AUTOSTART = FALSE;
   PRIORITY = 2;
@@ -38,14 +57,5 @@ ALARM LineFollower_main_run_alarm {
     CYCLETIME = 2;
     APPMODE = appmode1;
   };
-};
-TASK LineFollower_main_setup{
-  AUTOSTART = TRUE {
-    APPMODE = appmode1;
-  };
-  PRIORITY = 1;
-  ACTIVATION = 1;
-  SCHEDULE = FULL;
-  STACKSIZE = 512;
 };
 };

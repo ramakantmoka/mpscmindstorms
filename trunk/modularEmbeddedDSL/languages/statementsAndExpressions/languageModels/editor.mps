@@ -650,6 +650,12 @@
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="4739672646790158664">
         <link role="relationDeclaration" targetNodeId="2v.1169194664001" resolveInfo="name" />
       </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="6821937377367986249">
+        <property name="text" value="=" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="6821937377367986251">
+        <link role="relationDeclaration" targetNodeId="1.6821937377367979804" />
+      </node>
     </node>
   </node>
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="4739672646790374697">
