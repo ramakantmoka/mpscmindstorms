@@ -10,6 +10,7 @@
       <solutionPath path="${project}/solutions/LineFollower/LineFollower.msd" folder="" />
       <solutionPath path="${project}/solutions/NorasDancingRobot/NorasDancingRobot.msd" folder="" />
       <solutionPath path="${project}/solutions/TwoWheelExample/TwoWheelExample.msd" folder="" />
+      <solutionPath path="${project}/solutions/LoggingTest/LoggingTest.msd" folder="" />
     </projectSolutions>
     <projectLanguages>
       <languagePath path="${project}/languages/featureDependencies/featureDependencies.mpl" />

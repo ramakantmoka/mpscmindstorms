@@ -710,6 +710,12 @@
       <link role="template" targetNodeId="3454436015655311639" resolveInfo="oilfile" />
       <link role="applicableConcept" targetNodeId="3v.3553474829273041289" resolveInfo="System" />
     </node>
+    <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="6821937377367711841">
+      <link role="applicableConcept" targetNodeId="1.6821937377367711812" resolveInfo="DeviceInitialization" />
+      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" id="6821937377367729497">
+        <link role="template" targetNodeId="6821937377367729495" resolveInfo="reduce_DeviceInitialization" />
+      </node>
+    </node>
     <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="3454436015655954073">
       <link role="applicableConcept" targetNodeId="2v.3454436015655736227" resolveInfo="SleepStatement" />
       <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" id="3454436015655964880">
@@ -1761,6 +1767,30 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.generator.structure.TemplateDeclaration" id="6821937377367729495">
+    <property name="name" value="reduce_DeviceInitialization" />
+    <link role="applicableConcept" targetNodeId="1.6821937377367711812" resolveInfo="DeviceInitialization" />
+    <node role="contentNode" type="med.core.structure.HeaderAndBody" id="6821937377367729498">
+      <property name="header" value="void ecrobot_device_initialize()" />
+      <node role="body" type="med.core.structure.StatementList" id="6821937377367729499">
+        <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" id="6821937377367729502">
+          <node role="sourceNodeQuery" type="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" id="6821937377367729505">
+            <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6821937377367729506">
+              <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="6821937377367729507">
+                <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6821937377367729508">
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="6821937377367729509">
+                    <link role="link" targetNodeId="1.6821937377367711814" />
+                  </node>
+                  <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="6821937377367729510" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="templateFragment$attribute" type="jetbrains.mps.lang.generator.structure.TemplateFragment" id="6821937377367729500" />
     </node>
   </node>
 </model>
