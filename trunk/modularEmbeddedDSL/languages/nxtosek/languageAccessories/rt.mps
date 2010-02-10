@@ -163,6 +163,43 @@
         <property name="export" value="true" />
         <node role="type" type="med.core.structure.VoidType" id="5196379128662886857" />
       </node>
+      <node role="procedures" type="med.core.structure.ExternalProcedure" id="6821937377367709181">
+        <property name="name" value="ecrobot_send_bt_packet" />
+        <property name="export" value="true" />
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="6821937377367709185">
+          <property name="name" value="buff" />
+          <node role="type" type="med.core.structure.PointerType" id="6821937377367711128">
+            <node role="baseType" type="med.core.structure.Int8" id="6821937377367711127" />
+          </node>
+        </node>
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="6821937377367709188">
+          <property name="name" value="size" />
+          <node role="type" type="med.core.structure.GenericIntegerType" id="6821937377367709190" />
+        </node>
+        <node role="type" type="med.core.structure.VoidType" id="6821937377367709191" />
+      </node>
+      <node role="procedures" type="med.core.structure.ExternalProcedure" id="6821937377367709192">
+        <property name="name" value="ecrobot_init_bt_slave" />
+        <property name="export" value="true" />
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="6821937377367709194">
+          <property name="name" value="btid" />
+          <node role="type" type="med.core.structure.GenericStringType" id="6821937377367709196" />
+        </node>
+        <node role="type" type="med.core.structure.VoidType" id="6821937377367709197" />
+      </node>
+      <node role="procedures" type="med.core.structure.ExternalProcedure" id="6821937377367854183">
+        <property name="name" value="ecrobot_bt_data_logger" />
+        <property name="export" value="true" />
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="6821937377367854185">
+          <property name="name" value="data1" />
+          <node role="type" type="med.core.structure.Int8" id="6821937377367854187" />
+        </node>
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="6821937377367854188">
+          <property name="name" value="data2" />
+          <node role="type" type="med.core.structure.Int8" id="6821937377367854190" />
+        </node>
+        <node role="type" type="med.core.structure.VoidType" id="6821937377367854191" />
+      </node>
       <node role="enums" type="med.core.structure.EnumDeclaration" id="5196379128661020614">
         <property name="name" value="SENSOR_PORT_T" />
         <property name="export" value="true" />
@@ -227,6 +264,28 @@
         <node role="baseType" type="med.core.structure.GenericIntegerType" id="5196379128665514638" />
       </node>
     </node>
+  </node>
+  <node type="med.core.structure.Resource" id="6821937377367856826">
+    <property name="name" value="NxtOsekLogging" />
+    <node role="modules" type="med.core.structure.ExternalModule" id="6821937377367856831">
+      <property name="name" value="EcBtLog" />
+      <property name="existingHeaderFile" value="btlog" />
+      <node role="linkedResource" type="med.core.structure.LinkedResource" id="6821937377367856836">
+        <property name="filename" value="btlog.c" />
+      </node>
+      <node role="procedures" type="med.core.structure.ExternalProcedure" id="6821937377367856832">
+        <property name="name" value="btlog" />
+        <property name="export" value="true" />
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="6821937377367856833">
+          <property name="name" value="data" />
+          <node role="type" type="med.core.structure.GenericStringType" id="6821937377367856834" />
+        </node>
+        <node role="type" type="med.core.structure.VoidType" id="6821937377367856835" />
+      </node>
+    </node>
+    <node role="projectionLevels" type="med.core.structure.ProjectionLevelAll" id="6821937377367856827" />
+    <node role="projectionLevels" type="med.core.structure.ProjectionLevelOutline" id="6821937377367856828" />
+    <node role="projectionLevels" type="med.core.structure.ProjectionLevelArchitecture" id="6821937377367856829" />
   </node>
 </model>
 
