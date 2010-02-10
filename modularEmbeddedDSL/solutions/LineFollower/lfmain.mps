@@ -45,34 +45,34 @@
         <property name="name" value="sonarHistory" />
         <node role="init" type="med.core.structure.ArrayLiteral" id="6821937377367979617">
           <node role="elements" type="med.core.structure.IntConstantExpression" id="6821937377367979619">
-            <property name="value" value="255" />
+            <property name="value" value="0" />
           </node>
           <node role="elements" type="med.core.structure.IntConstantExpression" id="6821937377367979623">
-            <property name="value" value="255" />
+            <property name="value" value="0" />
           </node>
           <node role="elements" type="med.core.structure.IntConstantExpression" id="6821937377367979626">
-            <property name="value" value="255" />
+            <property name="value" value="0" />
           </node>
           <node role="elements" type="med.core.structure.IntConstantExpression" id="6821937377367979629">
-            <property name="value" value="255" />
+            <property name="value" value="0" />
           </node>
           <node role="elements" type="med.core.structure.IntConstantExpression" id="6821937377367979632">
-            <property name="value" value="255" />
+            <property name="value" value="0" />
           </node>
           <node role="elements" type="med.core.structure.IntConstantExpression" id="6821937377367979635">
-            <property name="value" value="255" />
+            <property name="value" value="0" />
           </node>
           <node role="elements" type="med.core.structure.IntConstantExpression" id="6821937377367979638">
-            <property name="value" value="255" />
+            <property name="value" value="0" />
           </node>
           <node role="elements" type="med.core.structure.IntConstantExpression" id="6821937377367979641">
-            <property name="value" value="255" />
+            <property name="value" value="0" />
           </node>
           <node role="elements" type="med.core.structure.IntConstantExpression" id="6821937377367979645">
-            <property name="value" value="255" />
+            <property name="value" value="0" />
           </node>
           <node role="elements" type="med.core.structure.IntConstantExpression" id="6821937377367979648">
-            <property name="value" value="255" />
+            <property name="value" value="0" />
           </node>
         </node>
         <node role="type" type="med.core.structure.SizedArrayType" id="6821937377367979653">
@@ -559,18 +559,18 @@
                     </node>
                     <node role="statements" type="med.tasks.structure.TerminateTaskStatement" id="6821937377367976874" />
                   </node>
-                  <node role="condition" type="med.core.structure.EqualsExpression" id="6821937377367976875">
-                    <node role="left" type="med.core.structure.ModuleVariableRef" id="6821937377367976876">
-                      <link role="variable" targetNodeId="6821937377367863691" resolveInfo="currentSonar" />
-                    </node>
-                    <node role="right" type="med.core.structure.IntConstantExpression" id="6821937377367976877">
-                      <property name="value" value="255" />
-                    </node>
-                  </node>
                   <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6821937377367976878">
                     <property name="isNew" value="true" />
                     <node role="expression" type="featureDependencies.structure.AtomicFE" id="6821937377367976880">
                       <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
+                    </node>
+                  </node>
+                  <node role="condition" type="med.core.structure.SmallerExpression" id="3260472080518430555">
+                    <node role="left" type="med.core.structure.ModuleVariableRef" id="3260472080518430553">
+                      <link role="variable" targetNodeId="6821937377367863691" resolveInfo="currentSonar" />
+                    </node>
+                    <node role="right" type="med.core.structure.IntConstantExpression" id="3260472080518430560">
+                      <property name="value" value="150" />
                     </node>
                   </node>
                 </node>

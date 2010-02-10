@@ -10,15 +10,15 @@
 
 // used resources
 #include "ecrobot_interface.h"
-#include "bitdata.h"
 #include "kernel.h"
+#include "bitdata.h"
 
 // custom includes
 #include "kernel.h"
 #include "kernel_id.h"
 
 int LineFollower_main_currentSonar = 0;
-int LineFollower_main_sonarHistory[10] = { 255, 255, 255, 255, 255, 255, 255, 255, 255, 255 };
+int LineFollower_main_sonarHistory[10] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 int LineFollower_main_sonarIndex = 0;
 int LineFollower_main_linefollower_currentstate = STATE_INITIALIZING;
 
@@ -150,7 +150,7 @@ TASK(LineFollower_main_run){
         } // end if 
 
                 
-        if ( LineFollower_main_currentSonar == 255) {
+        if ( (LineFollower_main_currentSonar < 150)) {
                   LineFollower_main_linefollower_execute (EVENT_BLOCKED );
           TerminateTask();
 
