@@ -27,6 +27,7 @@
   <maxImportIndex value="1" />
   <import index="1" modelUID="r:998fdfa3-6fe3-4cb3-b9b5-7f97e90a9606(med.statemachine.structure)" version="-1" />
   <visible index="2" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
+  <visible index="3" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6254144863182652341">
     <property name="name" value="Statemachine" />
     <property name="package" value="machine" />
@@ -52,8 +53,11 @@
       <property name="sourceCardinality" value="0..n" />
       <link role="target" targetNodeId="6254144863182652345" resolveInfo="Event" />
     </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="6177678091393553528">
+      <property name="value" value="statemachine" />
+      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473891462" resolveInfo="alias" />
+    </node>
   </node>
-  <visible index="3" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6254144863182652343">
     <property name="name" value="State" />
     <property name="package" value="machine" />
@@ -83,6 +87,10 @@
       <property name="name" value="initial" />
       <link role="dataType" targetNodeId="3v.1082983657063" resolveInfo="boolean" />
     </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="6177678091393553529">
+      <property name="value" value="state" />
+      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473891462" resolveInfo="alias" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6254144863182652344">
     <property name="name" value="Transition" />
@@ -105,6 +113,10 @@
       <property name="role" value="guard" />
       <property name="sourceCardinality" value="1" />
       <link role="target" targetNodeId="2v.6441851857096548278" resolveInfo="Expression" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="6177678091393553527">
+      <property name="value" value="transition" />
+      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473891462" resolveInfo="alias" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6254144863182652345">
@@ -199,6 +211,10 @@
       <property name="role" value="body" />
       <property name="sourceCardinality" value="1" />
       <link role="target" targetNodeId="2v.6520964804316559124" resolveInfo="StatementList" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="6177678091393553531">
+      <property name="value" value="state" />
+      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473891462" resolveInfo="alias" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6556431234483356404">

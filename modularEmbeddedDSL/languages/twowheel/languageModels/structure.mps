@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:348a1356-437b-49fe-80d1-3c4453a73611(ds.twowheel.structure)">
   <persistence version="3" />
-  <refactoringHistory />
+  <refactoringHistory>
+    <refactoringContext modelVersion="0">
+      <refactoring refactoringClass="jetbrains.mps.lang.structure.scripts.MoveLinkUp" />
+      <moveMap>
+        <entry>
+          <key modelUID="r:348a1356-437b-49fe-80d1-3c4453a73611(ds.twowheel.structure)" nodeId="6556431234482831739" />
+          <value modelUID="r:348a1356-437b-49fe-80d1-3c4453a73611(ds.twowheel.structure)" nodeId="6177678091393978007" />
+        </entry>
+      </moveMap>
+      <conceptFeatureMap>
+        <entry>
+          <key featureName="statements" featureKind="CHILD" />
+          <value featureName="statements" conceptFQName="ds.twowheel.structure.IStatementContainer" featureKind="CHILD" />
+        </entry>
+      </conceptFeatureMap>
+    </refactoringContext>
+  </refactoringHistory>
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959028c(jetbrains.mps.lang.structure.constraints)" version="11" />
@@ -23,9 +39,10 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902db(jetbrains.mps.baseLanguage.blTypes.constraints)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590328(jetbrains.mps.baseLanguage.collections.constraints)" version="6" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590340(jetbrains.mps.lang.pattern.constraints)" version="2" />
+  <languageAspect modelUID="r:348a1356-437b-49fe-80d1-3c4453a73611(ds.twowheel.structure)" version="0" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="1" />
-  <import index="1" modelUID="r:348a1356-437b-49fe-80d1-3c4453a73611(ds.twowheel.structure)" version="-1" />
+  <import index="1" modelUID="r:348a1356-437b-49fe-80d1-3c4453a73611(ds.twowheel.structure)" version="0" />
   <visible index="2" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <visible index="3" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6556431234482831736">
@@ -37,7 +54,11 @@
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="6556431234482831747">
       <link role="intfc" targetNodeId="3v.343373828472902636" resolveInfo="IHasIdentifierName" />
     </node>
-    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="6556431234482831739">
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="6177678091393450559">
+      <property name="value" value="robot script" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="6177678091394830738">
       <property name="metaClass" value="aggregation" />
       <property name="role" value="statements" />
       <property name="sourceCardinality" value="0..n" />
@@ -122,6 +143,28 @@
     <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="5231257431511773206">
       <property name="value" value="right" />
       <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6177678091393977979">
+    <property name="name" value="BlockStatement" />
+    <link role="extends" targetNodeId="6556431234482831738" resolveInfo="RSStatement" />
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="6177678091393977987">
+      <link role="intfc" targetNodeId="3v.343373828472902636" resolveInfo="IHasIdentifierName" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="6177678091394088762">
+      <property name="value" value="block" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="6177678091394830700">
+      <property name="metaClass" value="aggregation" />
+      <property name="sourceCardinality" value="0..n" />
+      <property name="role" value="statements" />
+      <link role="target" targetNodeId="6556431234482831738" resolveInfo="RSStatement" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="6177678091395682519">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="bumpReaction" />
+      <link role="target" targetNodeId="6556431234482831738" resolveInfo="RSStatement" />
     </node>
   </node>
 </model>

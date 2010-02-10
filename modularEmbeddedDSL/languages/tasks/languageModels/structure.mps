@@ -71,11 +71,19 @@
     <property name="name" value="SchedulingPolicyOnceUponStartup" />
     <property name="package" value="policy" />
     <link role="extends" targetNodeId="6520964804315849120" resolveInfo="SchedulingPolicy" />
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="6177678091393553534">
+      <property name="value" value="autostart" />
+      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473891462" resolveInfo="alias" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="3454436015655704207">
     <property name="name" value="SchedulingPolicyKeepAliveInBackground" />
     <property name="package" value="policy" />
     <link role="extends" targetNodeId="6520964804315849120" resolveInfo="SchedulingPolicy" />
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="6177678091393553533">
+      <property name="value" value="background" />
+      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473891462" resolveInfo="alias" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="3454436015655736227">
     <property name="name" value="SleepStatement" />
@@ -92,6 +100,18 @@
     <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="5196379128667374974">
       <property name="name" value="every" />
       <link role="dataType" targetNodeId="3v.1082983657062" resolveInfo="integer" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="6177678091393553532">
+      <property name="value" value="cyclic" />
+      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473891462" resolveInfo="alias" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5296414764970022347">
+    <property name="name" value="TerminateTaskStatement" />
+    <link role="extends" targetNodeId="2v.6520964804316559123" resolveInfo="Statement" />
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="5296414764970022348">
+      <property name="value" value="terminate" />
+      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473891462" resolveInfo="alias" />
     </node>
   </node>
 </model>

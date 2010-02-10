@@ -915,6 +915,10 @@
       <property name="sourceCardinality" value="1" />
       <link role="target" targetNodeId="6520964804316559124" resolveInfo="StatementList" />
     </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="5296414764970503947">
+      <property name="value" value="block" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5174648333272882853">
     <property name="package" value="statements" />

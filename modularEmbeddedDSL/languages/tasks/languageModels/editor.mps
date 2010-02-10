@@ -38,7 +38,7 @@
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="6520964804315849125">
       <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="6520964804315849127" />
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="6520964804315849130">
-        <property name="text" value="onceUponStartup" />
+        <property name="text" value="autostart" />
       </node>
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128667476343">
         <property name="text" value="prio =" />
@@ -146,7 +146,7 @@
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="3454436015655704210">
       <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="3454436015655704212" />
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="3454436015655704213">
-        <property name="text" value="alwaysRunningInBackground" />
+        <property name="text" value="background" />
       </node>
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5196379128667476339">
         <property name="text" value="prio =" />
@@ -191,6 +191,12 @@
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="5196379128667374982">
         <link role="relationDeclaration" targetNodeId="1.5196379128667374974" resolveInfo="every" />
       </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="5296414764970022349">
+    <link role="conceptDeclaration" targetNodeId="1.5296414764970022347" resolveInfo="TerminateTaskStatement" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5296414764970022351">
+      <property name="text" value="terminate;" />
     </node>
   </node>
 </model>

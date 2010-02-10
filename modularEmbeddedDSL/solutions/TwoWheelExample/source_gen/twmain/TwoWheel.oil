@@ -39,4 +39,23 @@ ALARM twmain_impl_stopAndGoTask_alarm {
     APPMODE = appmode1;
   };
 };
+TASK twmain_impl_bumpercheck {
+  AUTOSTART = FALSE;
+  PRIORITY = 1;
+  ACTIVATION = 1;
+  SCHEDULE = FULL;
+  STACKSIZE = 512;
+};
+ALARM twmain_impl_bumpercheck_alarm {
+  COUNTER = SysTimerCnt;
+  ACTION = ACTIVATETASK {
+    TASK = twmain_impl_bumpercheck;
+  };
+  AUTOSTART = TRUE
+ { 
+    ALARMTIME = 1;
+    CYCLETIME = 1;
+    APPMODE = appmode1;
+  };
+};
 };

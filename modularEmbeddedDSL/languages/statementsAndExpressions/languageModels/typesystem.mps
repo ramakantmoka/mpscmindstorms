@@ -3294,5 +3294,110 @@
       <link role="concept" targetNodeId="1.6254144863184158273" resolveInfo="ModuleVariableRef" />
     </node>
   </node>
+  <node type="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" id="5296414764970273999">
+    <property name="package" value="statements" />
+    <property name="name" value="noVoidOnRightSideOfAssignment" />
+    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5296414764970274000">
+      <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="5296414764970280446">
+        <node role="condition" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5296414764970297920">
+          <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5296414764970297915">
+            <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5296414764970297910">
+              <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="5296414764970280449">
+                <link role="applicableNode" targetNodeId="5296414764970280445" resolveInfo="assignmentStatement" />
+              </node>
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="5296414764970297914">
+                <link role="link" targetNodeId="1.1881584577103641522" />
+              </node>
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" id="5296414764970297919" />
+          </node>
+          <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" id="5296414764970297924">
+            <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="5296414764970297926">
+              <link role="conceptDeclaration" targetNodeId="1.4641466063286471917" resolveInfo="VoidType" />
+            </node>
+          </node>
+        </node>
+        <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5296414764970280448">
+          <node role="statement" type="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" id="5296414764970297927">
+            <node role="errorString" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="5296414764970297930">
+              <property name="value" value="cannot assign void type" />
+            </node>
+            <node role="nodeToReport" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5296414764970297932">
+              <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="5296414764970297931">
+                <link role="applicableNode" targetNodeId="5296414764970280445" resolveInfo="assignmentStatement" />
+              </node>
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="5296414764970297936">
+                <link role="link" targetNodeId="1.1881584577103641522" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="5296414764970280445">
+      <property name="name" value="assignmentStatement" />
+      <link role="concept" targetNodeId="1.1881584577103641506" resolveInfo="AssignmentStatement" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" id="5296414764970398713">
+    <property name="package" value="statements" />
+    <property name="name" value="noVoidOnRightSideOfLocalVarDecl" />
+    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5296414764970398714">
+      <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="5296414764970410301">
+        <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5296414764970410302">
+          <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="5296414764970398715">
+            <node role="condition" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5296414764970398716">
+              <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5296414764970398717">
+                <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5296414764970398718">
+                  <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="5296414764970398719">
+                    <link role="applicableNode" targetNodeId="5296414764970398730" resolveInfo="assignmentStatement" />
+                  </node>
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="5296414764970410299">
+                    <link role="link" targetNodeId="1.6441851857096635497" />
+                  </node>
+                </node>
+                <node role="operation" type="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" id="5296414764970398721" />
+              </node>
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" id="5296414764970398722">
+                <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="5296414764970398723">
+                  <link role="conceptDeclaration" targetNodeId="1.4641466063286471917" resolveInfo="VoidType" />
+                </node>
+              </node>
+            </node>
+            <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5296414764970398724">
+              <node role="statement" type="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" id="5296414764970398725">
+                <node role="errorString" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="5296414764970398726">
+                  <property name="value" value="cannot assign void type" />
+                </node>
+                <node role="nodeToReport" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5296414764970398727">
+                  <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="5296414764970398728">
+                    <link role="applicableNode" targetNodeId="5296414764970398730" resolveInfo="assignmentStatement" />
+                  </node>
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="5296414764970410315">
+                    <link role="link" targetNodeId="1.6441851857096635497" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="condition" type="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" id="5296414764970410311">
+          <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.NullLiteral" id="5296414764970410314" />
+          <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5296414764970410306">
+            <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="5296414764970410305">
+              <link role="applicableNode" targetNodeId="5296414764970398730" resolveInfo="lvd" />
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="5296414764970410310">
+              <link role="link" targetNodeId="1.6441851857096635497" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="5296414764970398730">
+      <property name="name" value="lvd" />
+      <link role="concept" targetNodeId="1.124896375630675529" resolveInfo="LocalVariableDeclaration" />
+    </node>
+  </node>
 </model>
 
