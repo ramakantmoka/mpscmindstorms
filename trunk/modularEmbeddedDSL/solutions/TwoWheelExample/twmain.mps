@@ -84,7 +84,7 @@
               </node>
             </node>
             <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6177678091395694231">
-              <property name="isNew" value="true" />
+              <property name="isNew" value="false" />
               <node role="expression" type="featureDependencies.structure.AtomicFE" id="6177678091395694232">
                 <link role="feature" targetNodeId="6177678091393977967" resolveInfo="long" />
               </node>
@@ -130,7 +130,7 @@
             </node>
             <node role="statements" type="ds.twowheel.structure.StopStatement" id="5296414764969458074" />
             <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="5296414764969462394">
-              <property name="isNew" value="true" />
+              <property name="isNew" value="false" />
               <node role="expression" type="featureDependencies.structure.AtomicFE" id="5296414764969462396">
                 <link role="feature" targetNodeId="5296414764969462393" resolveInfo="reactOnBump" />
               </node>
@@ -147,9 +147,8 @@
     </node>
   </node>
   <node type="featureDependencies.structure.FeatureDependencyConfiguration" id="6177678091393977964">
-    <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="6177678091393977966">
-      <property name="showFeatureClause" value="true" />
-      <property name="highlightFeatureDependentNodes" value="true" />
+    <node role="mode" type="featureDependencies.structure.VariantDisplayMode" id="3260472080518430550">
+      <property name="removeNonSelectedStuffInEditor" value="true" />
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="6177678091393977967">
       <property name="name" value="long" />
