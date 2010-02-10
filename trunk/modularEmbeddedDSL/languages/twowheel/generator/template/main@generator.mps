@@ -37,12 +37,14 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902ae(jetbrains.mps.lang.typesystem.constraints)" version="17" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590328(jetbrains.mps.baseLanguage.collections.constraints)" version="6" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590340(jetbrains.mps.lang.pattern.constraints)" version="2" />
+  <languageAspect modelUID="r:348a1356-437b-49fe-80d1-3c4453a73611(ds.twowheel.structure)" version="0" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
-  <maxImportIndex value="4" />
-  <import index="1" modelUID="r:348a1356-437b-49fe-80d1-3c4453a73611(ds.twowheel.structure)" version="-1" />
+  <maxImportIndex value="5" />
+  <import index="1" modelUID="r:348a1356-437b-49fe-80d1-3c4453a73611(ds.twowheel.structure)" version="0" />
   <import index="2" modelUID="f:java_stub#java.lang(java.lang@java_stub)" version="-1" />
   <import index="3" modelUID="r:c8babea4-61f6-419b-a34b-e5bc5729b115(ds.twowheel.behavior)" version="-1" />
   <import index="4" modelUID="r:b02d8e6e-6ce1-44d6-8357-4812e6e9817d(med.platform.nxtosek.rt)" version="-1" />
+  <import index="5" modelUID="r:c6434d11-05f7-4f7f-b259-71e1e17b4db1(featureDependencies.generator.template.main@generator)" version="-1" />
   <visible index="2" modelUID="r:998fdfa3-6fe3-4cb3-b9b5-7f97e90a9606(med.statemachine.structure)" />
   <node type="jetbrains.mps.lang.generator.structure.MappingConfiguration" id="6556431234483146301">
     <property name="name" value="main" />
@@ -57,6 +59,9 @@
       <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" id="6556431234483154927">
         <link role="template" targetNodeId="6556431234483154925" resolveInfo="reduce_RobotScript" />
       </node>
+    </node>
+    <node role="preMappingScript" type="jetbrains.mps.lang.generator.structure.MappingScriptReference" id="6177678091394531947">
+      <link role="mappingScript" targetNodeId="5.8261019787197350453" resolveInfo="removeNonSelectedNodes" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.generator.structure.TemplateDeclaration" id="6556431234483154925">
@@ -104,6 +109,12 @@
         <node role="type" type="med.core.structure.GenericIntegerType" id="5231257431510833019" />
         <node role="templateFragment$attribute" type="jetbrains.mps.lang.generator.structure.TemplateFragment" id="5231257431510833020" />
       </node>
+      <node role="contents" type="med.core.structure.ModuleVariable" id="5296414764969119574">
+        <property name="name" value="bumped" />
+        <node role="init" type="med.core.structure.FalseLiteral" id="5296414764969121756" />
+        <node role="type" type="med.core.structure.BooleanType" id="5296414764969121755" />
+        <node role="templateFragment$attribute" type="jetbrains.mps.lang.generator.structure.TemplateFragment" id="5296414764969121757" />
+      </node>
       <node role="contents" type="med.statemachine.structure.Statemachine" id="6556431234483154929">
         <property name="name" value="smname" />
         <node role="templateFragment$attribute" type="jetbrains.mps.lang.generator.structure.TemplateFragment" id="6556431234483154930" />
@@ -146,8 +157,8 @@
                 <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="6556431234483256386">
                   <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6556431234483256388">
                     <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="6556431234483256387" />
-                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkListAccess" id="6556431234483256392">
-                      <link role="link" targetNodeId="1.6556431234482831739" />
+                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="6177678091394406207">
+                      <link role="baseMethodDeclaration" targetNodeId="3.6177678091394830739" resolveInfo="linearizedStatements" />
                     </node>
                   </node>
                 </node>
@@ -566,6 +577,85 @@
               </node>
             </node>
           </node>
+          <node role="transitions" type="med.statemachine.structure.Transition" id="6177678091395801195">
+            <link role="target" targetNodeId="6556431234483256470" resolveInfo="initial" />
+            <link role="trigger" targetNodeId="6556431234483256380" resolveInfo="timer" />
+            <node role="guard" type="med.core.structure.ModuleVariableRef" id="5296414764969121773">
+              <link role="variable" targetNodeId="5296414764969119574" resolveInfo="bumped" />
+            </node>
+            <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.IfMacro" id="6177678091395801198">
+              <node role="conditionFunction" type="jetbrains.mps.lang.generator.structure.IfMacro_Condition" id="6177678091395801199">
+                <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6177678091395801200">
+                  <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="5296414764969019039">
+                    <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5296414764969019040">
+                      <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="5296414764969019070">
+                        <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5296414764969019071">
+                          <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="5296414764969019089">
+                            <node role="expression" type="jetbrains.mps.baseLanguage.structure.BooleanConstant" id="5296414764969019091">
+                              <property name="value" value="true" />
+                            </node>
+                          </node>
+                        </node>
+                        <node role="condition" type="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" id="5296414764969019084">
+                          <node role="rightExpression" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="5296414764969019087" />
+                          <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5296414764969789177">
+                            <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5296414764969019077">
+                              <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="5296414764969019074" />
+                              <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="5296414764969019083">
+                                <link role="baseMethodDeclaration" targetNodeId="3.6177678091395801141" resolveInfo="bumpReaction" />
+                              </node>
+                            </node>
+                            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="5296414764969789182">
+                              <link role="baseMethodDeclaration" targetNodeId="3.5296414764969568700" resolveInfo="effectiveStep" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node role="condition" type="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" id="5296414764969019053">
+                      <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.NullLiteral" id="5296414764969019056" />
+                      <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5296414764969019046">
+                        <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="5296414764969019043" />
+                        <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="5296414764969019052">
+                          <link role="baseMethodDeclaration" targetNodeId="3.6177678091395801141" resolveInfo="bumpReaction" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="5296414764969019067">
+                    <node role="expression" type="jetbrains.mps.baseLanguage.structure.BooleanConstant" id="5296414764969019069">
+                      <property name="value" value="false" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="referenceMacro$link_attribute$target" type="jetbrains.mps.lang.generator.structure.ReferenceMacro" id="6177678091395801217">
+              <node role="referentFunction" type="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" id="6177678091395801218">
+                <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6177678091395801219">
+                  <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="6177678091395801220">
+                    <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6177678091395801222">
+                      <node role="operand" type="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" id="6177678091395801221" />
+                      <node role="operation" type="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOutputByLabelAndInput" id="6177678091395801226">
+                        <link role="label" targetNodeId="6556431234483256473" resolveInfo="stateForStep" />
+                        <node role="inputNode" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5296414764969568777">
+                          <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6177678091395801231">
+                            <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="6177678091395801228" />
+                            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="6177678091395801237">
+                              <link role="baseMethodDeclaration" targetNodeId="3.6177678091395801141" resolveInfo="bumpReaction" />
+                            </node>
+                          </node>
+                          <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="5296414764969568781">
+                            <link role="baseMethodDeclaration" targetNodeId="3.5296414764969568700" resolveInfo="effectiveStep" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node role="transitions" type="med.statemachine.structure.Transition" id="5231257431510517656">
             <link role="trigger" targetNodeId="6556431234483256380" resolveInfo="timer" />
             <link role="target" targetNodeId="6556431234483256470" resolveInfo="initial" />
@@ -592,8 +682,13 @@
                       <node role="operand" type="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" id="5231257431510519991" />
                       <node role="operation" type="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOutputByLabelAndInput" id="5231257431510519996">
                         <link role="label" targetNodeId="6556431234483256473" resolveInfo="stateForStep" />
-                        <node role="inputNode" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="5231257431510519998">
-                          <link role="variableDeclaration" targetNodeId="5231257431510519960" resolveInfo="next" />
+                        <node role="inputNode" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5296414764969570960">
+                          <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="5231257431510519998">
+                            <link role="variableDeclaration" targetNodeId="5231257431510519960" resolveInfo="next" />
+                          </node>
+                          <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="5296414764969570964">
+                            <link role="baseMethodDeclaration" targetNodeId="3.5296414764969568700" resolveInfo="effectiveStep" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -656,8 +751,13 @@
                       <node role="operand" type="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" id="5231257431511342782" />
                       <node role="operation" type="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOutputByLabelAndInput" id="5231257431511342783">
                         <link role="label" targetNodeId="6556431234483256473" resolveInfo="stateForStep" />
-                        <node role="inputNode" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="5231257431511342784">
-                          <link role="variableDeclaration" targetNodeId="5231257431511342775" resolveInfo="next" />
+                        <node role="inputNode" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5296414764969570965">
+                          <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="5231257431511342784">
+                            <link role="variableDeclaration" targetNodeId="5231257431511342775" resolveInfo="next" />
+                          </node>
+                          <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="5296414764969570969">
+                            <link role="baseMethodDeclaration" targetNodeId="3.5296414764969568700" resolveInfo="effectiveStep" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -800,14 +900,19 @@
                       <node role="operand" type="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" id="6556431234483256479" />
                       <node role="operation" type="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOutputByLabelAndInput" id="6556431234483256484">
                         <link role="label" targetNodeId="6556431234483256473" resolveInfo="stateForStep" />
-                        <node role="inputNode" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6556431234483256492">
-                          <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6556431234483256487">
-                            <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="6556431234483256486" />
-                            <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkListAccess" id="6556431234483256491">
-                              <link role="link" targetNodeId="1.6556431234482831739" />
+                        <node role="inputNode" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5296414764969673881">
+                          <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6556431234483256492">
+                            <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6556431234483256487">
+                              <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="6556431234483256486" />
+                              <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="6177678091395461029">
+                                <link role="baseMethodDeclaration" targetNodeId="3.6177678091394830739" resolveInfo="linearizedStatements" />
+                              </node>
                             </node>
+                            <node role="operation" type="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" id="6556431234483256496" />
                           </node>
-                          <node role="operation" type="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" id="6556431234483256496" />
+                          <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="5296414764969673888">
+                            <link role="baseMethodDeclaration" targetNodeId="3.5296414764969568700" resolveInfo="effectiveStep" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -918,6 +1023,69 @@
           </node>
         </node>
       </node>
+      <node role="contents" type="med.tasks.structure.Task" id="6177678091395798885">
+        <property name="name" value="bumpercheck" />
+        <node role="body" type="med.core.structure.StatementList" id="6177678091395798886">
+          <node role="statements" type="med.core.structure.IfStatement" id="6177678091395801068">
+            <node role="thenPart" type="med.core.structure.StatementList" id="6177678091395801069">
+              <node role="statements" type="med.core.structure.AssignmentStatement" id="5296414764969121760">
+                <node role="lvalue" type="med.core.structure.ModuleVariableRef" id="5296414764969121759">
+                  <link role="variable" targetNodeId="5296414764969119574" resolveInfo="bumped" />
+                </node>
+                <node role="rvalue" type="med.core.structure.TrueLiteral" id="5296414764969121764" />
+              </node>
+              <node role="statements" type="med.core.structure.ExpressionStatement" id="5296414764969230911">
+                <node role="expression" type="med.core.structure.ProcedureCall" id="5296414764969230912">
+                  <link role="procedure" targetNodeId="4.5196379128662641915" resolveInfo="display_goto_xy" />
+                  <node role="actuals" type="med.core.structure.IntConstantExpression" id="5296414764969230914">
+                    <property name="value" value="0" />
+                  </node>
+                  <node role="actuals" type="med.core.structure.IntConstantExpression" id="5296414764969230916">
+                    <property name="value" value="0" />
+                  </node>
+                </node>
+              </node>
+              <node role="statements" type="med.core.structure.ExpressionStatement" id="5296414764969230918">
+                <node role="expression" type="med.core.structure.ProcedureCall" id="5296414764969230919">
+                  <link role="procedure" targetNodeId="4.5196379128662641950" resolveInfo="display_string" />
+                  <node role="actuals" type="med.core.structure.StringConstantExpression" id="5296414764969230924">
+                    <property name="value" value="bumped" />
+                  </node>
+                </node>
+              </node>
+              <node role="statements" type="med.core.structure.ExpressionStatement" id="5296414764969230926">
+                <node role="expression" type="med.core.structure.ProcedureCall" id="5296414764969230927">
+                  <link role="procedure" targetNodeId="4.5196379128662886855" resolveInfo="display_update" />
+                </node>
+              </node>
+            </node>
+            <node role="condition" type="med.core.structure.EqualsExpression" id="6177678091395801078">
+              <node role="right" type="med.core.structure.IntConstantExpression" id="6177678091395801083">
+                <property name="value" value="1" />
+              </node>
+              <node role="left" type="med.core.structure.ProcedureCall" id="6177678091395801081">
+                <link role="procedure" targetNodeId="4.6177678091395801071" resolveInfo="ecrobot_get_touch_sensor" />
+                <node role="actuals" type="med.core.structure.EnumLiteralRef" id="5296414764969338238">
+                  <link role="literal" targetNodeId="4.5196379128661020617" resolveInfo="NXT_PORT_S3" />
+                </node>
+              </node>
+            </node>
+            <node role="elsePart" type="med.core.structure.StatementList" id="5296414764969121765">
+              <node role="statements" type="med.core.structure.AssignmentStatement" id="5296414764969121768">
+                <node role="lvalue" type="med.core.structure.ModuleVariableRef" id="5296414764969121767">
+                  <link role="variable" targetNodeId="5296414764969119574" resolveInfo="bumped" />
+                </node>
+                <node role="rvalue" type="med.core.structure.FalseLiteral" id="5296414764969121772" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="scheduling" type="med.tasks.structure.SchedulingPolicyCyclic" id="6177678091395798888">
+          <property name="priority" value="1" />
+          <property name="every" value="1" />
+        </node>
+        <node role="templateFragment$attribute" type="jetbrains.mps.lang.generator.structure.TemplateFragment" id="6177678091395798889" />
+      </node>
       <node role="contents" type="med.core.structure.Procedure" id="5231257431511444158">
         <property name="name" value="calcStep" />
         <node role="parameters" type="med.core.structure.ProcedureParameter" id="5231257431511446340">
@@ -958,11 +1126,11 @@
             </node>
           </node>
           <node role="statements" type="med.core.structure.ReturnStatement" id="5231257431511446370">
-            <node role="expr" type="med.core.structure.DivisionExpression" id="5231257431511446372">
-              <node role="left" type="med.core.structure.LocalVariableReference" id="5231257431511446371">
+            <node role="expr" type="med.core.structure.DivisionExpression" id="6177678091395682516">
+              <node role="left" type="med.core.structure.LocalVariableReference" id="6177678091395682517">
                 <link role="variable" targetNodeId="5231257431511446349" resolveInfo="ds" />
               </node>
-              <node role="right" type="med.core.structure.LocalVariableReference" id="5231257431511446376">
+              <node role="right" type="med.core.structure.LocalVariableReference" id="6177678091395682518">
                 <link role="variable" targetNodeId="5231257431511446359" resolveInfo="steps" />
               </node>
             </node>

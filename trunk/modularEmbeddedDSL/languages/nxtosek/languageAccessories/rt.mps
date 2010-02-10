@@ -60,6 +60,17 @@
           </node>
         </node>
       </node>
+      <node role="procedures" type="med.core.structure.ExternalProcedure" id="6177678091395801071">
+        <property name="name" value="ecrobot_get_touch_sensor" />
+        <property name="export" value="true" />
+        <node role="type" type="med.core.structure.GenericIntegerType" id="6177678091395801075" />
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="6177678091395801073">
+          <property name="name" value="port_id" />
+          <node role="type" type="med.core.structure.EnumType" id="6177678091395801074">
+            <link role="enum" targetNodeId="5196379128661020614" resolveInfo="SENSOR_PORT_T" />
+          </node>
+        </node>
+      </node>
       <node role="procedures" type="med.core.structure.ExternalProcedure" id="5196379128660651519">
         <property name="name" value="ecrobot_set_light_sensor_inactive" />
         <property name="export" value="true" />
@@ -70,6 +81,28 @@
             <link role="enum" targetNodeId="5196379128661020614" resolveInfo="SENSOR_PORT_T" />
           </node>
         </node>
+      </node>
+      <node role="procedures" type="med.core.structure.ExternalProcedure" id="5296414764969946973">
+        <property name="name" value="ecrobot_init_sonar_sensor" />
+        <property name="export" value="true" />
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="5296414764969946975">
+          <property name="name" value="port" />
+          <node role="type" type="med.core.structure.EnumType" id="5296414764969946977">
+            <link role="enum" targetNodeId="5196379128661020614" resolveInfo="SENSOR_PORT_T" />
+          </node>
+        </node>
+        <node role="type" type="med.core.structure.VoidType" id="5296414764969946978" />
+      </node>
+      <node role="procedures" type="med.core.structure.ExternalProcedure" id="5296414764969946981">
+        <property name="name" value="ecrobot_get_sonar_sensor" />
+        <property name="export" value="true" />
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="5296414764969946983">
+          <property name="name" value="port_id" />
+          <node role="type" type="med.core.structure.EnumType" id="5296414764969946985">
+            <link role="enum" targetNodeId="5196379128661020614" resolveInfo="SENSOR_PORT_T" />
+          </node>
+        </node>
+        <node role="type" type="med.core.structure.GenericIntegerType" id="5296414764969946986" />
       </node>
       <node role="procedures" type="med.core.structure.ExternalProcedure" id="5196379128662641915">
         <property name="name" value="display_goto_xy" />

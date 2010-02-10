@@ -202,6 +202,45 @@
       </node>
       <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="2063344986612529290" />
     </node>
+    <node role="inspectedCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="5296414764970851225">
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" id="5296414764970851226" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" id="5296414764970851227" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5296414764970851230" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="5296414764970851232">
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" id="5296414764970851233">
+          <property name="flag" value="false" />
+        </node>
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" id="5296414764970851240">
+          <node role="query" type="jetbrains.mps.lang.editor.structure.QueryFunction_Color" id="5296414764970851241">
+            <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5296414764970851242">
+              <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="5296414764970851278">
+                <node role="expression" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression" id="5296414764970851279">
+                  <node role="creator" type="jetbrains.mps.baseLanguage.structure.ClassCreator" id="5296414764970851280">
+                    <link role="baseMethodDeclaration" targetNodeId="3.~Color.&lt;init&gt;(int,int,int)" resolveInfo="Color" />
+                    <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="5296414764970851281">
+                      <property name="value" value="220" />
+                    </node>
+                    <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="5296414764970851282">
+                      <property name="value" value="220" />
+                    </node>
+                    <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="5296414764970851283">
+                      <property name="value" value="255" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5296414764970851236">
+          <property name="text" value="feature expression: " />
+        </node>
+        <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="5296414764970851235" />
+        <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="5296414764970851238">
+          <link role="relationDeclaration" targetNodeId="1.8261019787197550360" />
+        </node>
+      </node>
+    </node>
   </node>
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="8261019787196538940">
     <link role="conceptDeclaration" targetNodeId="1.8261019787196537346" resolveInfo="FeatureDependencyConfiguration" />
@@ -237,7 +276,7 @@
       </node>
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" id="8261019787197685681">
         <link role="relationDeclaration" targetNodeId="1.8261019787197673487" />
-        <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" id="8261019787197685682" />
+        <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" id="5296414764970982089" />
       </node>
     </node>
   </node>

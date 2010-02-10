@@ -367,8 +367,8 @@
             </node>
             <node role="cases" type="med.statemachine.structure.StateSwitchCase" id="6556431234481914821">
               <link role="state" targetNodeId="6556431234481811956" resolveInfo="init" />
-              <node role="body" type="med.core.structure.StatementList" id="6556431234481914822">
-                <node role="statements" type="med.statemachine.structure.FireEventStatement" id="6556431234481914824">
+              <node role="body" type="med.core.structure.StatementList" id="6177678091393888201">
+                <node role="statements" type="med.statemachine.structure.FireEventStatement" id="6177678091393888202">
                   <link role="machine" targetNodeId="6556431234481811954" resolveInfo="steuerung" />
                   <link role="trigger" targetNodeId="6556431234481811959" resolveInfo="timeout" />
                 </node>

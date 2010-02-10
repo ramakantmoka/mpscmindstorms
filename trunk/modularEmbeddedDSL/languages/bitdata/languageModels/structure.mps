@@ -27,6 +27,7 @@
   <maxImportIndex value="1" />
   <import index="1" modelUID="r:77eb98be-ed41-47b0-b1c5-667f3246e439(med.bitdata.structure)" version="-1" />
   <visible index="2" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
+  <visible index="3" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="9105096665975706782">
     <property name="name" value="BitPatternDeclaration" />
     <link role="extends" targetNodeId="2v.3577454086729990666" resolveInfo="MedBase" />
@@ -42,8 +43,11 @@
       <property name="sourceCardinality" value="0..n" />
       <link role="target" targetNodeId="9105096665975706786" resolveInfo="BitRange" />
     </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="6177678091393553526">
+      <property name="value" value="bit pattern" />
+      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473891462" resolveInfo="alias" />
+    </node>
   </node>
-  <visible index="3" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="9105096665975706786">
     <property name="name" value="BitRange" />
     <link role="extends" targetNodeId="2v.3577454086729990666" resolveInfo="MedBase" />

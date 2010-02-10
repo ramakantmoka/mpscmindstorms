@@ -1036,26 +1036,16 @@
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="5174648333272176112">
     <property name="package" value="statements" />
     <link role="conceptDeclaration" targetNodeId="1.5174648333272176110" resolveInfo="BlockStatement" />
-    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="5174648333272176114">
-      <property name="usesFolding" value="false" />
-      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5174648333272176117">
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="5296414764970556604">
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="5296414764970556605" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5296414764970556606">
         <property name="text" value="{" />
       </node>
-      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="5174648333272176116" />
-      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="5174648333272176121">
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="5296414764970556608">
         <link role="relationDeclaration" targetNodeId="1.5174648333272176111" />
-        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" id="5174648333272176122">
-          <property name="flag" value="true" />
-        </node>
-        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" id="5174648333272176124">
-          <property name="flag" value="true" />
-        </node>
       </node>
-      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5174648333272176119">
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5296414764970556610">
         <property name="text" value="}" />
-        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" id="5174648333272176126">
-          <property name="flag" value="true" />
-        </node>
       </node>
     </node>
   </node>
@@ -2895,7 +2885,7 @@
         <link role="relationDeclaration" targetNodeId="2v.1169194664001" resolveInfo="name" />
       </node>
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="6254144863187085425">
-        <property name="text" value=" = " />
+        <property name="text" value="=" />
       </node>
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="6254144863187085427">
         <link role="relationDeclaration" targetNodeId="1.6254144863187085423" />
