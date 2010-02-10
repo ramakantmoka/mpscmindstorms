@@ -1911,6 +1911,23 @@
           </node>
           <node role="item" type="jetbrains.mps.gtext.structure.GText" id="5670427403977327720">
             <property name="text" value=";" />
+            <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.IfMacro" id="6821937377368389654">
+              <node role="conditionFunction" type="jetbrains.mps.lang.generator.structure.IfMacro_Condition" id="6821937377368389655">
+                <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6821937377368389656">
+                  <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="6821937377368391835">
+                    <node role="expression" type="jetbrains.mps.baseLanguage.structure.NotExpression" id="6821937377368391842">
+                      <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6821937377368391843">
+                        <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="6821937377368391844" />
+                        <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsRoleOperation" id="6821937377368391845">
+                          <link role="conceptOfParent" targetNodeId="1.4739672646790033288" resolveInfo="ForStatement" />
+                          <link role="linkInParent" targetNodeId="1.4739672646790033295" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -1949,6 +1966,25 @@
                         <link role="property" targetNodeId="2v.1169194664001" resolveInfo="name" />
                       </node>
                       <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="5670427403977327756" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="item" type="jetbrains.mps.gtext.structure.GText" id="6821937377368282774">
+            <property name="text" value=" = " />
+          </node>
+          <node role="item" type="jetbrains.mps.gtext.structure.GItem" id="6821937377368282775">
+            <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" id="6821937377368282777">
+              <node role="sourceNodeQuery" type="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" id="6821937377368282780">
+                <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6821937377368282781">
+                  <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="6821937377368282782">
+                    <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6821937377368282783">
+                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="6821937377368282784">
+                        <link role="link" targetNodeId="1.6821937377367979804" />
+                      </node>
+                      <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="6821937377368282785" />
                     </node>
                   </node>
                 </node>

@@ -656,6 +656,12 @@
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="4739672646790033291">
       <link role="intfc" targetNodeId="1881584577102787805" resolveInfo="IVariableDeclaration" />
     </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="6821937377367979804">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="init" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="6441851857096548278" resolveInfo="Expression" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="4739672646790374696">
     <property name="package" value="expressions" />

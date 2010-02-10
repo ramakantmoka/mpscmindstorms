@@ -12,9 +12,12 @@
 enum linefollower_events_enum {
 EVENT_INITIALIZED
 , EVENT_BUMPED
+, EVENT_BLOCKED
+, EVENT_UNBLOCKED
 };
 enum linefollower_states_enum {
 STATE_INITIALIZING
+, STATE_PAUSED
 , STATE_RUNNING
 , STATE_CRASH
 };

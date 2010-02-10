@@ -10,13 +10,16 @@
 
 // used resources
 #include "ecrobot_interface.h"
-#include "kernel.h"
 #include "bitdata.h"
+#include "kernel.h"
 
 // custom includes
 #include "kernel.h"
 #include "kernel_id.h"
 
+int LineFollower_main_currentSonar = 0;
+int LineFollower_main_sonarHistory[10] = { 255, 255, 255, 255, 255, 255, 255, 255, 255, 255 };
+int LineFollower_main_sonarIndex = 0;
 int LineFollower_main_linefollower_currentstate = STATE_INITIALIZING;
 
 void LineFollower_main_linefollower_execute(int event) {
@@ -38,8 +41,37 @@ void LineFollower_main_linefollower_execute(int event) {
     } // end if 
 
         
+    if ( LineFollower_main_linefollower_currentstate == STATE_PAUSED) {
+                
+      if ( event == EVENT_UNBLOCKED) {
+                      
+        if ( 1) {
+                  LineFollower_main_linefollower_currentstate = STATE_RUNNING;
+          return ;
+
+        } // end if 
+
+
+      } // end if 
+
+
+    } // end if 
+
+        
     if ( LineFollower_main_linefollower_currentstate == STATE_RUNNING) {
                 
+      if ( event == EVENT_BLOCKED) {
+                      
+        if ( 1) {
+                  LineFollower_main_linefollower_currentstate = STATE_PAUSED;
+          return ;
+
+        } // end if 
+
+
+      } // end if 
+
+            
       if ( event == EVENT_BUMPED) {
                       
         if ( 1) {
@@ -56,7 +88,7 @@ void LineFollower_main_linefollower_execute(int event) {
 
 }
 
-TASK(LineFollower_main_setup){
+void ecrobot_device_initialize(){
         { // begin block
           LineFollower_main_debugString (0, "state:", "initializing" );
 
@@ -70,6 +102,33 @@ TASK(LineFollower_main_setup){
     } // end block
 
     LineFollower_main_linefollower_execute (EVENT_INITIALIZED );
+
+}
+
+TASK(LineFollower_main_sonartask){
+    int s = ecrobot_get_sonar_sensor (NXT_PORT_S2 );
+    LineFollower_main_sonarHistory[LineFollower_main_sonarIndex] = s;
+    LineFollower_main_sonarIndex = (LineFollower_main_sonarIndex + 1);
+        
+    if ( LineFollower_main_sonarIndex == 10) {
+          LineFollower_main_sonarIndex = 0;
+
+    } // end if 
+
+    int ss = 0;
+    for (int i = 0; (i < 10); i = (i + 1)) {
+        ss = (ss + LineFollower_main_sonarHistory[i]);
+}
+    LineFollower_main_currentSonar = (ss / (10));
+        { // begin block
+                { // begin block
+              LineFollower_main_debugInt (2, "sonar:", LineFollower_main_currentSonar );
+
+      } // end block
+
+
+    } // end block
+
     TerminateTask(); // automatically added by platform.osek:addTermianateTask
 
 }
@@ -77,18 +136,7 @@ TASK(LineFollower_main_setup){
 TASK(LineFollower_main_run){
                 
       if ( LineFollower_main_linefollower_currentstate == STATE_RUNNING) {
-                      { // begin block
-                  int sonar = ecrobot_get_sonar_sensor (NXT_PORT_S2 );
-                    { // begin block
-                      LineFollower_main_debugInt (2, "sonar:", sonar );
-
-          } // end block
-
-
-        } // end block
-
-        // no statement
-        int bump = ecrobot_get_touch_sensor (NXT_PORT_S3 );
+              int bump = ecrobot_get_touch_sensor (NXT_PORT_S3 );
                 
         if ( bump == 1) {
                             { // begin block
@@ -97,6 +145,13 @@ TASK(LineFollower_main_run){
           } // end block
 
           LineFollower_main_linefollower_execute (EVENT_BUMPED );
+          TerminateTask();
+
+        } // end if 
+
+                
+        if ( LineFollower_main_currentSonar == 255) {
+                  LineFollower_main_linefollower_execute (EVENT_BLOCKED );
           TerminateTask();
 
         } // end if 
@@ -117,6 +172,20 @@ TASK(LineFollower_main_run){
                   LineFollower_main_debugInt (4, "light:", light );
 
         } // end block
+
+        TerminateTask();
+        return ;
+
+      } // end if 
+
+            
+      if ( LineFollower_main_linefollower_currentstate == STATE_PAUSED) {
+              LineFollower_main_updateMotorSettings (0, 0 );
+                
+        if ( (LineFollower_main_currentSonar < 255)) {
+                  LineFollower_main_linefollower_execute (EVENT_UNBLOCKED );
+
+        } // end if 
 
         TerminateTask();
         return ;
