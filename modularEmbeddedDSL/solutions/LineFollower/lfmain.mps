@@ -536,18 +536,18 @@
                     </node>
                     <node role="statements" type="med.tasks.structure.TerminateTaskStatement" id="5296414764970139996" />
                   </node>
-                  <node role="condition" type="med.core.structure.EqualsExpression" id="5296414764970022340">
-                    <node role="left" type="med.core.structure.LocalVariableReference" id="5296414764970022339">
-                      <link role="variable" targetNodeId="5296414764970022329" resolveInfo="bump" />
-                    </node>
-                    <node role="right" type="med.core.structure.IntConstantExpression" id="5296414764970022344">
-                      <property name="value" value="1" />
-                    </node>
-                  </node>
                   <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="5296414764970153961">
                     <property name="isNew" value="false" />
                     <node role="expression" type="featureDependencies.structure.AtomicFE" id="5296414764970153963">
                       <link role="feature" targetNodeId="7680622939174614997" resolveInfo="useBumper" />
+                    </node>
+                  </node>
+                  <node role="condition" type="med.core.structure.EqualsExpression" id="8499595251260899380">
+                    <node role="left" type="med.core.structure.LocalVariableReference" id="8499595251260899379">
+                      <link role="variable" targetNodeId="5296414764970022329" resolveInfo="bump" />
+                    </node>
+                    <node role="right" type="med.core.structure.IntConstantExpression" id="8499595251260899384">
+                      <property name="value" value="1" />
                     </node>
                   </node>
                 </node>
