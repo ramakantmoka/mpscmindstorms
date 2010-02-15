@@ -1111,6 +1111,10 @@
   <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="306587673255505543">
     <property name="name" value="IModuleContent" />
     <property name="package" value="modules" />
+    <node role="conceptPropertyDeclaration" type="jetbrains.mps.lang.structure.structure.IntegerConceptPropertyDeclaration" id="5019031344944326644">
+      <property name="name" value="sortPriority" />
+      <property name="inheritable" value="true" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="306587673255505545">
     <property name="name" value="ModuleImport" />
@@ -1816,6 +1820,10 @@
     <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="6254144863184559863">
       <property name="value" value="var" />
       <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.IntegerConceptProperty" id="5019031344944326647">
+      <property name="value" value="20" />
+      <link role="conceptPropertyDeclaration" targetNodeId="5019031344944326644" resolveInfo="prio" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6254144863184158273">

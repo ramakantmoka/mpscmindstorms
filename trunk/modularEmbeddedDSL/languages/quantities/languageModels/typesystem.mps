@@ -26,11 +26,13 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590328(jetbrains.mps.baseLanguage.collections.constraints)" version="6" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590571(jetbrains.mps.gtext.constraints)" version="8" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590575(jetbrains.mps.gtext.structure)" version="0" />
+  <languageAspect modelUID="r:c8eeaafc-b8ed-41eb-96aa-711dbd66c11c(med.quantities.structure)" version="0" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="1" />
-  <import index="1" modelUID="r:c8eeaafc-b8ed-41eb-96aa-711dbd66c11c(med.quantities.structure)" version="-1" />
+  <import index="1" modelUID="r:c8eeaafc-b8ed-41eb-96aa-711dbd66c11c(med.quantities.structure)" version="0" />
   <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="3456749490051900564">
     <property name="name" value="typeof_QuantityType" />
+    <property name="package" value="quantities" />
     <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3456749490051900565">
       <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" id="3456749490051917931">
         <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="3456749490051917935">
@@ -57,6 +59,7 @@
   </node>
   <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="3456749490052512381">
     <property name="name" value="typeof_MarkAsPhysicalOperator" />
+    <property name="package" value="quantities" />
     <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3456749490052512382">
       <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" id="3456749490052523305">
         <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="3456749490052523309">
@@ -87,6 +90,7 @@
   </node>
   <node type="jetbrains.mps.lang.typesystem.structure.SubtypingRule" id="3456749490052706496">
     <property name="name" value="superTypeOf_QuantityType" />
+    <property name="package" value="quantities" />
     <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3456749490052706497">
       <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="3456749490052729668">
         <node role="expression" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression" id="3456749490052706504">
@@ -106,6 +110,7 @@
   </node>
   <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="3456749490052912791">
     <property name="name" value="typeof_MarkAsInternalOperator" />
+    <property name="package" value="quantities" />
     <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3456749490052912792">
       <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" id="3456749490052935958">
         <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="3456749490052935962">
@@ -133,6 +138,7 @@
   </node>
   <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="3456749490053122527">
     <property name="name" value="typeof_MarkAsInternalOperator" />
+    <property name="package" value="quantities" />
     <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3456749490053122528" />
     <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="3456749490053122529">
       <property name="name" value="operator" />
@@ -141,6 +147,7 @@
   </node>
   <node type="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" id="3456749490053122530">
     <property name="name" value="maxValueForInternals" />
+    <property name="package" value="quantities" />
     <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3456749490053122531">
       <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="3456749490053122534">
         <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3456749490053122536">
@@ -175,6 +182,7 @@
   </node>
   <node type="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" id="3456749490053228471">
     <property name="name" value="maxValueForPhyiscalQuantities" />
+    <property name="package" value="quantities" />
     <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3456749490053228472">
       <node role="statement" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" id="3456749490053321170">
         <node role="localVariableDeclaration" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" id="3456749490053321171">
@@ -288,6 +296,148 @@
     <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="3456749490053228474">
       <property name="name" value="markAsPhysicalOperator" />
       <link role="concept" targetNodeId="1.3456749490052512365" resolveInfo="MarkAsPhysicalOperator" />
+    </node>
+  </node>
+  <visible index="2" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
+  <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="8017791897008984455">
+    <property name="name" value="typeof_AveragingType" />
+    <property name="package" value="average" />
+    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8017791897008984456">
+      <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" id="8017791897008984467">
+        <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="8017791897008984471">
+          <node role="normalType" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression" id="8017791897008984472">
+            <node role="creator" type="jetbrains.mps.lang.smodel.structure.SNodeCreator" id="8017791897008984474">
+              <node role="createdType" type="jetbrains.mps.lang.smodel.structure.SNodeType" id="8017791897008984475">
+                <link role="concept" targetNodeId="2v.4641466063286334749" resolveInfo="GenericIntegerType" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="leftExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="8017791897008984470">
+          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="8017791897008984459">
+            <node role="term" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017791897008984462">
+              <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="8017791897008984461">
+                <link role="applicableNode" targetNodeId="8017791897008984457" resolveInfo="type" />
+              </node>
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="8017791897008984466">
+                <link role="link" targetNodeId="1.8017791897009273674" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" id="8017791897008984481">
+        <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="8017791897008984485">
+          <node role="normalType" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017791897008984487">
+            <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="8017791897008984486">
+              <link role="applicableNode" targetNodeId="8017791897008984457" resolveInfo="avg" />
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" id="8017791897008984491" />
+          </node>
+        </node>
+        <node role="leftExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="8017791897008984484">
+          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="8017791897008984478">
+            <node role="term" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="8017791897008984480">
+              <link role="applicableNode" targetNodeId="8017791897008984457" resolveInfo="type" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="8017791897008984457">
+      <property name="name" value="avg" />
+      <link role="concept" targetNodeId="1.8017791897008984431" resolveInfo="AveragingType" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="8017791897009167105">
+    <property name="name" value="typeof_AveragingInit" />
+    <property name="package" value="average" />
+    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8017791897009167106">
+      <node role="statement" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" id="8017791897009191022">
+        <node role="localVariableDeclaration" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" id="8017791897009191023">
+          <property name="name" value="t" />
+          <node role="type" type="jetbrains.mps.lang.smodel.structure.SNodeType" id="8017791897009191024">
+            <link role="concept" targetNodeId="1.8017791897009273673" resolveInfo="GenericAveragingType" />
+          </node>
+          <node role="initializer" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression" id="8017791897009191026">
+            <node role="creator" type="jetbrains.mps.lang.smodel.structure.SNodeCreator" id="8017791897009191028">
+              <node role="createdType" type="jetbrains.mps.lang.smodel.structure.SNodeType" id="8017791897009191029">
+                <link role="concept" targetNodeId="1.8017791897009273673" resolveInfo="GenericAveragingType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" id="8017791897009191077">
+        <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="8017791897009191081">
+          <node role="normalType" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017791897009191085">
+            <node role="operand" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="8017791897009191082">
+              <node role="term" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="8017791897009191084">
+                <link role="applicableNode" targetNodeId="8017791897009167107" resolveInfo="init" />
+              </node>
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" id="8017791897009191089" />
+          </node>
+        </node>
+        <node role="leftExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="8017791897009191080">
+          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="8017791897009191069">
+            <node role="term" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017791897009191072">
+              <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="8017791897009191071">
+                <link role="variableDeclaration" targetNodeId="8017791897009191023" resolveInfo="t" />
+              </node>
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="8017791897009191076">
+                <link role="link" targetNodeId="1.8017791897009273674" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" id="8017791897009191015">
+        <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="8017791897009191049">
+          <node role="normalType" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="8017791897009191050">
+            <link role="variableDeclaration" targetNodeId="8017791897009191023" resolveInfo="t" />
+          </node>
+        </node>
+        <node role="leftExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="8017791897009191018">
+          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="8017791897009167109">
+            <node role="term" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="8017791897009191014">
+              <link role="applicableNode" targetNodeId="8017791897009167107" resolveInfo="init" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="8017791897009167107">
+      <property name="name" value="init" />
+      <link role="concept" targetNodeId="1.8017791897009139598" resolveInfo="AveragingInit" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.typesystem.structure.SubtypingRule" id="8017791897009397362">
+    <property name="name" value="supertypeof_AveragingType" />
+    <property name="package" value="average" />
+    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8017791897009397363">
+      <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="8017791897009397366">
+        <node role="expression" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression" id="8017791897009397368">
+          <node role="creator" type="jetbrains.mps.lang.smodel.structure.SNodeCreator" id="8017791897009397370">
+            <node role="createdType" type="jetbrains.mps.lang.smodel.structure.SNodeType" id="8017791897009397371">
+              <link role="concept" targetNodeId="1.8017791897009273673" resolveInfo="GenericAveragingType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="8017791897009397365">
+      <property name="name" value="averagingType" />
+      <link role="concept" targetNodeId="1.8017791897008984431" resolveInfo="AveragingType" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="8017791897009806169">
+    <property name="name" value="typeof_AveragingAssignmentStatement" />
+    <property name="package" value="average" />
+    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8017791897009806170" />
+    <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="8017791897009806171">
+      <property name="name" value="statement" />
+      <link role="concept" targetNodeId="1.8017791897009806155" resolveInfo="AveragingAssignmentStatement" />
     </node>
   </node>
 </model>
