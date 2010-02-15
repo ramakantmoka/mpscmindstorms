@@ -15,6 +15,6 @@
 
 
 void aSecondResource_utilities_someMethod(void) {
-  cprintf( "someMethodCalled\n");
+    cprintf( "someMethodCalled\n");
 }
 

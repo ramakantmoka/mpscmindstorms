@@ -27,10 +27,12 @@
   <languageAspect modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" version="9" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959034b(jetbrains.mps.lang.quotation.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590328(jetbrains.mps.baseLanguage.collections.constraints)" version="6" />
+  <languageAspect modelUID="r:c8eeaafc-b8ed-41eb-96aa-711dbd66c11c(med.quantities.structure)" version="0" />
   <maxImportIndex value="1" />
-  <import index="1" modelUID="r:c8eeaafc-b8ed-41eb-96aa-711dbd66c11c(med.quantities.structure)" version="-1" />
+  <import index="1" modelUID="r:c8eeaafc-b8ed-41eb-96aa-711dbd66c11c(med.quantities.structure)" version="0" />
   <visible index="2" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="3456749490051670923">
+    <property name="package" value="quantities" />
     <link role="conceptDeclaration" targetNodeId="1.3456749490051670916" resolveInfo="QuantityDeclaration" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="3456749490051670925">
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="3456749490051670928">
@@ -61,6 +63,7 @@
     </node>
   </node>
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="3456749490051894750">
+    <property name="package" value="quantities" />
     <link role="conceptDeclaration" targetNodeId="1.3456749490051894748" resolveInfo="QuantityType" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="3456749490051894752">
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="3456749490051894755">
@@ -82,6 +85,7 @@
     </node>
   </node>
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="3456749490052512366">
+    <property name="package" value="quantities" />
     <link role="conceptDeclaration" targetNodeId="1.3456749490052512365" resolveInfo="MarkAsPhysicalOperator" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="3456749490052512368">
       <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="3456749490052512370" />
@@ -121,6 +125,7 @@
     </node>
   </node>
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="3456749490053020455">
+    <property name="package" value="quantities" />
     <link role="conceptDeclaration" targetNodeId="1.3456749490052912788" resolveInfo="MarkAsInternalOperator" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="3456749490053020457">
       <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="3456749490053020458" />
@@ -142,6 +147,99 @@
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="3456749490053020464">
         <property name="text" value="&gt;" />
         <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" id="3456749490053020465">
+          <property name="flag" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="8017791897008984435">
+    <property name="package" value="average" />
+    <link role="conceptDeclaration" targetNodeId="1.8017791897008984431" resolveInfo="AveragingType" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="8017791897008984437">
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="8017791897008984440">
+        <property name="text" value="avg" />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" id="8017791897008984451">
+          <property name="flag" value="true" />
+        </node>
+      </node>
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="8017791897008984439" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="8017791897008984442">
+        <property name="text" value="(" />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" id="8017791897008984452">
+          <property name="flag" value="true" />
+        </node>
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" id="8017791897009040369">
+          <property name="flag" value="true" />
+        </node>
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="8017791897008984446">
+        <link role="relationDeclaration" targetNodeId="1.8017791897009273674" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="8017791897008984448">
+        <property name="text" value="," />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" id="8017791897008984453">
+          <property name="flag" value="true" />
+        </node>
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="8017791897008984450">
+        <link role="relationDeclaration" targetNodeId="1.8017791897008984434" resolveInfo="size" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="8017791897008984444">
+        <property name="text" value=")" />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" id="8017791897009040370">
+          <property name="flag" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="8017791897009139602">
+    <property name="package" value="average" />
+    <link role="conceptDeclaration" targetNodeId="1.8017791897009139598" resolveInfo="AveragingInit" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="8017791897009139604">
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="8017791897009139607">
+        <property name="text" value="all" />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" id="8017791897009139614">
+          <property name="flag" value="true" />
+        </node>
+      </node>
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="8017791897009139606" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="8017791897009139609">
+        <property name="text" value="(" />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" id="8017791897009139615">
+          <property name="flag" value="true" />
+        </node>
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" id="8017791897009139617">
+          <property name="flag" value="true" />
+        </node>
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="8017791897009139613">
+        <link role="relationDeclaration" targetNodeId="1.8017791897009139600" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="8017791897009139611">
+        <property name="text" value=")" />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" id="8017791897009139618">
+          <property name="flag" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="8017791897009806159">
+    <property name="package" value="average" />
+    <link role="conceptDeclaration" targetNodeId="1.8017791897009806155" resolveInfo="AveragingAssignmentStatement" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="8017791897009806161">
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="8017791897009806164">
+        <link role="relationDeclaration" targetNodeId="1.8017791897009806157" />
+      </node>
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="8017791897009806163" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="8017791897009806166">
+        <property name="text" value="=/" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="8017791897009806168">
+        <link role="relationDeclaration" targetNodeId="1.8017791897009806156" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="5019031344945870125">
+        <property name="text" value=";" />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" id="5019031344945870126">
           <property name="flag" value="true" />
         </node>
       </node>

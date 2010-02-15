@@ -7,6 +7,7 @@
   <language namespace="98178bb4-0742-4461-bea6-9fc251a502fa(med.statemachine)" />
   <language namespace="e941a310-8129-456e-ad58-044867852177(med.bitdata)" />
   <language namespace="6f39da53-777c-4426-896e-bf1ddfbf16dc(med.requirements)" />
+  <language namespace="fa27d492-bc16-4e00-86c3-966c2cebd871(med.quantities)" />
   <languageAspect modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" version="9" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590575(jetbrains.mps.gtext.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590571(jetbrains.mps.gtext.constraints)" version="8" />
@@ -15,6 +16,7 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902db(jetbrains.mps.baseLanguage.blTypes.constraints)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.lang.core.constraints)" version="2" />
+  <languageAspect modelUID="r:c8eeaafc-b8ed-41eb-96aa-711dbd66c11c(med.quantities.structure)" version="0" />
   <language-engaged-on-generation namespace="150e33c6-372a-4396-b4cc-1c334fb3f438(med.platform.nxtosek)" />
   <devkit namespace="a891e14a-a3d6-466e-8364-4e1b14cbaa06(ModularEmbeddedDSL)" />
   <maxImportIndex value="0" />
@@ -35,7 +37,7 @@
           <property name="value" value="0" />
         </node>
         <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6821937377367863698">
-          <property name="isNew" value="true" />
+          <property name="isNew" value="false" />
           <node role="expression" type="featureDependencies.structure.AtomicFE" id="6821937377367863700">
             <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
           </node>
@@ -80,7 +82,7 @@
           <node role="elementType" type="med.core.structure.GenericIntegerType" id="6821937377367979651" />
         </node>
         <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6821937377367979655">
-          <property name="isNew" value="true" />
+          <property name="isNew" value="false" />
           <node role="expression" type="featureDependencies.structure.AtomicFE" id="6821937377367979658">
             <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
           </node>
@@ -93,9 +95,21 @@
         </node>
         <node role="type" type="med.core.structure.GenericIntegerType" id="6821937377367979666" />
         <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6821937377367979667">
-          <property name="isNew" value="true" />
+          <property name="isNew" value="false" />
           <node role="expression" type="featureDependencies.structure.AtomicFE" id="6821937377367979669">
             <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
+          </node>
+        </node>
+      </node>
+      <node role="contents" type="med.core.structure.ModuleVariable" id="5019031344946487728">
+        <property name="name" value="sonar2" />
+        <node role="type" type="med.quantities.structure.AveragingType" id="5019031344946487729">
+          <property name="size" value="10" />
+          <node role="baseType" type="med.core.structure.GenericIntegerType" id="5019031344946487730" />
+        </node>
+        <node role="init" type="med.quantities.structure.AveragingInit" id="5019031344946487731">
+          <node role="exp" type="med.core.structure.IntConstantExpression" id="5019031344946487732">
+            <property name="value" value="250" />
           </node>
         </node>
       </node>
@@ -137,7 +151,7 @@
         <node role="events" type="med.statemachine.structure.Event" id="6821937377367976827">
           <property name="name" value="blocked" />
           <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6821937377367976833">
-            <property name="isNew" value="true" />
+            <property name="isNew" value="false" />
             <node role="expression" type="featureDependencies.structure.AtomicFE" id="6821937377367976835">
               <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
             </node>
@@ -146,7 +160,7 @@
         <node role="events" type="med.statemachine.structure.Event" id="6821937377367976841">
           <property name="name" value="unblocked" />
           <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6821937377367976842">
-            <property name="isNew" value="true" />
+            <property name="isNew" value="false" />
             <node role="expression" type="featureDependencies.structure.AtomicFE" id="6821937377367976844">
               <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
             </node>
@@ -168,7 +182,7 @@
             <link role="target" targetNodeId="6790227271038924457" resolveInfo="running" />
             <node role="guard" type="med.core.structure.TrueLiteral" id="6821937377367976840" />
             <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6821937377367976845">
-              <property name="isNew" value="true" />
+              <property name="isNew" value="false" />
               <node role="expression" type="featureDependencies.structure.AtomicFE" id="6821937377367976847">
                 <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
               </node>
@@ -183,7 +197,7 @@
             <link role="target" targetNodeId="6821937377367976832" resolveInfo="paused" />
             <node role="guard" type="med.core.structure.TrueLiteral" id="6821937377367976831" />
             <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6821937377367976836">
-              <property name="isNew" value="true" />
+              <property name="isNew" value="false" />
               <node role="expression" type="featureDependencies.structure.AtomicFE" id="6821937377367976838">
                 <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
               </node>
@@ -470,7 +484,7 @@
           <property name="every" value="100" />
         </node>
         <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6821937377367863687">
-          <property name="isNew" value="true" />
+          <property name="isNew" value="false" />
           <node role="expression" type="featureDependencies.structure.AtomicFE" id="6821937377367863689">
             <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
           </node>
@@ -560,7 +574,7 @@
                     <node role="statements" type="med.tasks.structure.TerminateTaskStatement" id="6821937377367976874" />
                   </node>
                   <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6821937377367976878">
-                    <property name="isNew" value="true" />
+                    <property name="isNew" value="false" />
                     <node role="expression" type="featureDependencies.structure.AtomicFE" id="6821937377367976880">
                       <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
                     </node>
@@ -700,7 +714,7 @@
                 </node>
               </node>
               <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6821937377367976867">
-                <property name="isNew" value="true" />
+                <property name="isNew" value="false" />
                 <node role="expression" type="featureDependencies.structure.AtomicFE" id="6821937377367976869">
                   <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
                 </node>
@@ -1048,8 +1062,8 @@
     </node>
   </node>
   <node type="featureDependencies.structure.FeatureDependencyConfiguration" id="5196379128662641904">
-    <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="5296414764970730426">
-      <property name="showFeatureClause" value="true" />
+    <node role="mode" type="featureDependencies.structure.VariantDisplayMode" id="8017791897008774650">
+      <property name="removeNonSelectedStuffInEditor" value="true" />
       <property name="highlightFeatureDependentNodes" value="true" />
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="7680622939174614995">
@@ -1057,7 +1071,7 @@
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="7680622939174614997">
       <property name="name" value="bumper" />
-      <property name="selected" value="true" />
+      <property name="selected" value="false" />
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="5296414764970271815">
       <property name="name" value="sonar" />
@@ -1065,7 +1079,7 @@
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="5196379128662641907">
       <property name="name" value="debugOutput" />
-      <property name="selected" value="true" />
+      <property name="selected" value="false" />
     </node>
   </node>
   <node type="med.core.structure.System" id="8437501635617536080">

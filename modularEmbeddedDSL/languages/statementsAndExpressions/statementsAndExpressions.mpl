@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language namespace="med.core" uuid="3a8b8671-1532-4e8f-b780-594a27fa10c8" java-stubs-enabled="false" compileInMPS="true">
   <models>
+    <modelRoot path="${language_descriptor}/languageAccessories" namespacePrefix="med.core" />
     <modelRoot path="${language_descriptor}/languageModels" namespacePrefix="med.core" />
-    <modelRoot path="${language_descriptor}/languageAccessories" namespacePrefix="med.core" />
-    <modelRoot path="${language_descriptor}/languageAccessories" namespacePrefix="med.core" />
   </models>
   <accessoryModels>
     <model modelUID="r:0fb955ac-41d9-43fe-bd36-a2e748096778(med.core.rt)" />
