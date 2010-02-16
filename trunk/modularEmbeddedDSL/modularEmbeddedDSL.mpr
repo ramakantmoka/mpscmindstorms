@@ -9,6 +9,7 @@
       <solutionPath path="${project}/solutions/LineFollower/LineFollower.msd" folder="" />
       <solutionPath path="${project}/solutions/LoggingTest/LoggingTest.msd" folder="" />
       <solutionPath path="${project}/solutions/NorasDancingRobot/NorasDancingRobot.msd" folder="" />
+      <solutionPath path="${project}/solutions/ReportTest/ReportTest.msd" />
       <solutionPath path="${project}/solutions/TwoWheelExample/TwoWheelExample.msd" folder="" />
       <solutionPath path="${project}/solutions/modularEmbeddedDSL.sandbox/modularEmbeddedDSL.sandbox.msd" />
     </projectSolutions>
