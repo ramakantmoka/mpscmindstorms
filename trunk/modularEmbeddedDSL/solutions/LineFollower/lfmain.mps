@@ -24,12 +24,9 @@
   <visible index="3" modelUID="r:2d80b87c-ce7b-4f13-8178-2a63520124d0(med.bitdata.rt)" />
   <node type="med.core.structure.Resource" id="5196379128660651509">
     <property name="name" value="LineFollower" />
-    <node role="projectionLevels" type="med.core.structure.ProjectionLevelAll" id="5196379128660651510" />
-    <node role="projectionLevels" type="med.core.structure.ProjectionLevelOutline" id="5196379128660651511" />
-    <node role="projectionLevels" type="med.core.structure.ProjectionLevelArchitecture" id="5196379128660651512" />
     <node role="modules" type="med.core.structure.ImplementationModule" id="5196379128660651513">
       <property name="name" value="main" />
-      <property name="text" value="This module contains the complete linefollower" />
+      <property name="text" value="föflkölfksaöfsdöfkdsaf" />
       <node role="contents" type="med.core.structure.ModuleVariable" id="6821937377367863691">
         <property name="name" value="currentSonar" />
         <node role="type" type="med.core.structure.GenericIntegerType" id="6821937377367863694" />
@@ -332,6 +329,14 @@
               <node role="actuals" type="med.core.structure.EnumLiteralRef" id="6821937377367979675">
                 <link role="literal" targetNodeId="2v.5196379128661020616" resolveInfo="NXT_PORT_S2" />
               </node>
+            </node>
+          </node>
+          <node role="statements" type="med.quantities.structure.AveragingAssignmentStatement" id="7530832320798598554">
+            <node role="var" type="med.core.structure.ModuleVariableRef" id="7530832320798598557">
+              <link role="variable" targetNodeId="5019031344946487728" resolveInfo="sonar2" />
+            </node>
+            <node role="rvalue" type="med.core.structure.LocalVariableReference" id="7530832320798598558">
+              <link role="variable" targetNodeId="6821937377367979671" resolveInfo="s" />
             </node>
           </node>
           <node role="statements" type="med.core.structure.AssignmentStatement" id="6821937377367979691">
@@ -1060,10 +1065,13 @@
         <link role="importedModule" targetNodeId="3v.9105096665975700982" resolveInfo="BitLevelUtilies" />
       </node>
     </node>
+    <node role="projectionLevels" type="med.core.structure.ProjectionLevelArchitecture" id="7530832320798597056" />
+    <node role="projectionLevels" type="med.core.structure.ProjectionLevelAll" id="7530832320798597058" />
+    <node role="projectionLevels" type="med.core.structure.ProjectionLevelOutline" id="7530832320798597060" />
   </node>
   <node type="featureDependencies.structure.FeatureDependencyConfiguration" id="5196379128662641904">
-    <node role="mode" type="featureDependencies.structure.VariantDisplayMode" id="8017791897008774650">
-      <property name="removeNonSelectedStuffInEditor" value="true" />
+    <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="7530832320797129439">
+      <property name="showFeatureClause" value="true" />
       <property name="highlightFeatureDependentNodes" value="true" />
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="7680622939174614995">
@@ -1089,7 +1097,7 @@
     </node>
   </node>
   <node type="med.requirements.structure.DummyRequirementsCollection" id="7680622939172125914">
-    <property name="showRequirementsInModel" value="false" />
+    <property name="showRequirementsInModel" value="true" />
     <node role="requirements" type="med.requirements.structure.DummyRequirement" id="7680622939172356371">
       <property name="name" value="Init" />
       <property name="text" value="The system should start operating only after it has been initialized property" />

@@ -6,25 +6,26 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectSolutions>
-      <solutionPath path="${project}/solutions/modularEmbeddedDSL.sandbox/modularEmbeddedDSL.sandbox.msd" />
       <solutionPath path="${project}/solutions/LineFollower/LineFollower.msd" folder="" />
+      <solutionPath path="${project}/solutions/LoggingTest/LoggingTest.msd" folder="" />
       <solutionPath path="${project}/solutions/NorasDancingRobot/NorasDancingRobot.msd" folder="" />
       <solutionPath path="${project}/solutions/TwoWheelExample/TwoWheelExample.msd" folder="" />
-      <solutionPath path="${project}/solutions/LoggingTest/LoggingTest.msd" folder="" />
+      <solutionPath path="${project}/solutions/modularEmbeddedDSL.sandbox/modularEmbeddedDSL.sandbox.msd" />
     </projectSolutions>
     <projectLanguages>
+      <languagePath path="${project}/languages/bitdata/bitdata.mpl" />
       <languagePath path="${project}/languages/featureDependencies/featureDependencies.mpl" />
       <languagePath path="${project}/languages/logging/logging.mpl" folder="" />
+      <languagePath path="${project}/languages/nxtosek/nxtosek.mpl" />
       <languagePath path="${project}/languages/quantities/quantities.mpl" />
+      <languagePath path="${project}/languages/report/report.mpl" />
+      <languagePath path="${project}/languages/requirements/requirements.mpl" />
+      <languagePath path="${project}/languages/statemachine/statemachine.mpl" folder="" />
       <languagePath path="${project}/languages/statementsAndExpressions/statementsAndExpressions.mpl" />
       <languagePath path="${project}/languages/tasks/tasks.mpl" folder="" />
+      <languagePath path="${project}/languages/twowheel/twowheel.mpl" />
       <languagePath path="${project}/languages/unittest/unittest.mpl" />
       <languagePath path="${project}/languages/win32/win32.mpl" />
-      <languagePath path="${project}/languages/nxtosek/nxtosek.mpl" />
-      <languagePath path="${project}/languages/statemachine/statemachine.mpl" folder="" />
-      <languagePath path="${project}/languages/bitdata/bitdata.mpl" />
-      <languagePath path="${project}/languages/requirements/requirements.mpl" />
-      <languagePath path="${project}/languages/twowheel/twowheel.mpl" />
     </projectLanguages>
     <projectDevkits>
       <devkitPath path="${project}/devkits/ModularEmbeddedDSL/ModularEmbeddedDSL.devkit" />
