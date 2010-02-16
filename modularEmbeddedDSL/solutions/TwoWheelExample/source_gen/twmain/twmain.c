@@ -15,10 +15,6 @@
 #include "kernel.h"
 #include "kernel_id.h"
 
-
-int twmain_impl_speed(int val) {
-    return (2 * val);
-}
 int twmain_impl_stateLocalTime = 0;
 int twmain_impl_currentLeftDelta = 0;
 int twmain_impl_currentRightDelta = 0;
@@ -26,6 +22,10 @@ int twmain_impl_currentLeftSpeed = 0;
 int twmain_impl_currentRightSpeed = 0;
 int /*boolean*/ twmain_impl_bumped = 0;
 int twmain_impl_stopAndGoStateMachine_currentstate = STATE_INITIAL;
+
+int twmain_impl_speed(int val) {
+    return (2 * val);
+}
 
 void twmain_impl_stopAndGoStateMachine_execute(int event) {
         

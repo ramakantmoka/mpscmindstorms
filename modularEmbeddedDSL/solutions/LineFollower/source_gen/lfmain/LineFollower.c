@@ -9,9 +9,10 @@
 #include "include/LineFollower.h"
 
 // used resources
-#include "ecrobot_interface.h"
-#include "kernel.h"
 #include "bitdata.h"
+#include "avgutil.h"
+#include "kernel.h"
+#include "ecrobot_interface.h"
 
 // custom includes
 #include "kernel.h"
@@ -23,6 +24,7 @@ int LineFollower_main_sonarIndex = 0;
 int LineFollower_main_sonar2 = 250;
 int LineFollower_main_linefollower_currentstate = STATE_INITIALIZING;
 int LineFollower_main_sonar2_history[10] = { 250, 250, 250, 250, 250, 250, 250, 250, 250, 250 };
+int LineFollower_main_sonar2_index = 0;
 
 void LineFollower_main_linefollower_execute(int event) {
         
@@ -87,6 +89,7 @@ void ecrobot_device_initialize(){
 
 TASK(LineFollower_main_sonartask){
     int s = ecrobot_get_sonar_sensor (NXT_PORT_S2 );
+    LineFollower_main_sonar2 = calcAvgInt (LineFollower_main_sonar2_history, &LineFollower_main_sonar2_index, s, 10 );
     LineFollower_main_sonarHistory[LineFollower_main_sonarIndex] = s;
     LineFollower_main_sonarIndex = (LineFollower_main_sonarIndex + 1);
         

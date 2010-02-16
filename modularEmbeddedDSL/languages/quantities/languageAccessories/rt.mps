@@ -21,6 +21,9 @@
     <node role="modules" type="med.core.structure.ExternalModule" id="8017791897009835614">
       <property name="name" value="AvgUtil" />
       <property name="existingHeaderFile" value="avgutil" />
+      <node role="linkedResource" type="med.core.structure.LinkedResource" id="7530832320799779771">
+        <property name="filename" value="avgutil.c" />
+      </node>
       <node role="procedures" type="med.core.structure.ExternalProcedure" id="8017791897009835615">
         <property name="name" value="calcAvgInt" />
         <property name="export" value="true" />
@@ -29,6 +32,12 @@
           <property name="name" value="history" />
           <node role="type" type="med.core.structure.PointerType" id="8017791897009835622">
             <node role="baseType" type="med.core.structure.GenericIntegerType" id="8017791897009835621" />
+          </node>
+        </node>
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="7530832320799672060">
+          <property name="name" value="index" />
+          <node role="type" type="med.core.structure.PointerType" id="7530832320799672063">
+            <node role="baseType" type="med.core.structure.GenericIntegerType" id="7530832320799672062" />
           </node>
         </node>
         <node role="parameters" type="med.core.structure.ProcedureParameter" id="8017791897009835624">

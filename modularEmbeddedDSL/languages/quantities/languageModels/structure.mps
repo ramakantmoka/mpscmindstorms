@@ -161,7 +161,7 @@
       <property name="metaClass" value="aggregation" />
       <property name="role" value="var" />
       <property name="sourceCardinality" value="1" />
-      <link role="target" targetNodeId="3v.1881584577103641504" resolveInfo="ILValue" />
+      <link role="target" targetNodeId="3v.6254144863184158273" resolveInfo="ModuleVariableRef" />
     </node>
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="8017791897009806156">
       <property name="metaClass" value="aggregation" />
