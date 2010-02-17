@@ -416,13 +416,47 @@
     <property name="name" value="supertypeof_AveragingType" />
     <property name="package" value="average" />
     <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8017791897009397363">
-      <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="8017791897009397366">
-        <node role="expression" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression" id="8017791897009397368">
-          <node role="creator" type="jetbrains.mps.lang.smodel.structure.SNodeCreator" id="8017791897009397370">
-            <node role="createdType" type="jetbrains.mps.lang.smodel.structure.SNodeType" id="8017791897009397371">
-              <link role="concept" targetNodeId="1.8017791897009273673" resolveInfo="GenericAveragingType" />
+      <node role="statement" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" id="9024796767936297145">
+        <node role="localVariableDeclaration" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" id="9024796767936297146">
+          <property name="name" value="t" />
+          <node role="type" type="jetbrains.mps.lang.smodel.structure.SNodeType" id="9024796767936297147">
+            <link role="concept" targetNodeId="1.8017791897009273673" resolveInfo="GenericAveragingType" />
+          </node>
+          <node role="initializer" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression" id="9024796767936297149">
+            <node role="creator" type="jetbrains.mps.lang.smodel.structure.SNodeCreator" id="9024796767936297150">
+              <node role="createdType" type="jetbrains.mps.lang.smodel.structure.SNodeType" id="9024796767936297151">
+                <link role="concept" targetNodeId="1.8017791897009273673" resolveInfo="GenericAveragingType" />
+              </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="9024796767936297153">
+        <node role="expression" type="jetbrains.mps.baseLanguage.structure.AssignmentExpression" id="9024796767936321063">
+          <node role="rValue" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="9024796767936321072">
+            <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="9024796767936321067">
+              <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="9024796767936321066">
+                <link role="applicableNode" targetNodeId="8017791897009397365" resolveInfo="averagingType" />
+              </node>
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="9024796767936321071">
+                <link role="link" targetNodeId="1.8017791897009273674" />
+              </node>
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" id="9024796767936321076" />
+          </node>
+          <node role="lValue" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="9024796767936321058">
+            <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="9024796767936297154">
+              <link role="variableDeclaration" targetNodeId="9024796767936297146" resolveInfo="t" />
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="9024796767936321062">
+              <link role="link" targetNodeId="1.8017791897009273674" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="8017791897009397366">
+        <node role="expression" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="9024796767936321080">
+          <link role="variableDeclaration" targetNodeId="9024796767936297146" resolveInfo="t" />
         </node>
       </node>
     </node>
@@ -438,6 +472,77 @@
     <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="8017791897009806171">
       <property name="name" value="statement" />
       <link role="concept" targetNodeId="1.8017791897009806155" resolveInfo="AveragingAssignmentStatement" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.typesystem.structure.SubtypingRule" id="9024796767935157108">
+    <property name="name" value="supertypeof_GenericAveragingType" />
+    <property name="package" value="average" />
+    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="9024796767935157109">
+      <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="9024796767936202055">
+        <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="9024796767936220074">
+          <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="9024796767936220069">
+            <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="9024796767936202057">
+              <link role="applicableNode" targetNodeId="9024796767935157114" resolveInfo="genericAveragingType" />
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="9024796767936220073">
+              <link role="link" targetNodeId="1.8017791897009273674" />
+            </node>
+          </node>
+          <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" id="9024796767936220078" />
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="9024796767935157114">
+      <property name="name" value="genericAveragingType" />
+      <link role="concept" targetNodeId="1.8017791897009273673" resolveInfo="GenericAveragingType" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.typesystem.structure.ComparisonRule" id="9024796767936422077">
+    <property name="package" value="average" />
+    <property name="name" value="compareIntAndAvg" />
+    <node role="anotherNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="9024796767936422082">
+      <property name="name" value="type" />
+      <link role="concept" targetNodeId="2v.4641466063286591366" resolveInfo="Type" />
+    </node>
+    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="9024796767936422079">
+      <node role="statement" type="jetbrains.mps.baseLanguage.structure.Statement" id="9024796767936438667" />
+      <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="9024796767936438628">
+        <node role="condition" type="jetbrains.mps.baseLanguage.structure.EqualsExpression" id="9024796767936438672">
+          <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="9024796767936438677">
+            <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="9024796767936438676">
+              <link role="applicableNode" targetNodeId="9024796767936422082" resolveInfo="type" />
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" id="9024796767936438682" />
+          </node>
+          <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="9024796767936438663">
+            <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="9024796767936438641">
+              <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="9024796767936438631">
+                <link role="applicableNode" targetNodeId="9024796767936422081" resolveInfo="averagingType" />
+              </node>
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="9024796767936438645">
+                <link role="link" targetNodeId="1.8017791897009273674" />
+              </node>
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" id="9024796767936438668" />
+          </node>
+        </node>
+        <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="9024796767936438630">
+          <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="9024796767936438685">
+            <node role="expression" type="jetbrains.mps.baseLanguage.structure.BooleanConstant" id="9024796767936438687">
+              <property name="value" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="9024796767936438689">
+        <node role="expression" type="jetbrains.mps.baseLanguage.structure.BooleanConstant" id="9024796767936438691">
+          <property name="value" value="false" />
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="9024796767936422081">
+      <property name="name" value="averagingType" />
+      <link role="concept" targetNodeId="1.8017791897008984431" resolveInfo="AveragingType" />
     </node>
   </node>
 </model>
