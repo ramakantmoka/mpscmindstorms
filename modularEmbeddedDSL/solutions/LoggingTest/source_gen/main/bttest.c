@@ -9,8 +9,8 @@
 #include "include/bttest.h"
 
 // used resources
-#include "ecrobot_interface.h"
 #include "btlog.h"
+#include "ecrobot_interface.h"
 
 // custom includes
 #include "kernel.h"

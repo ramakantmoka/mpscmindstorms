@@ -27,6 +27,7 @@
     <node role="modules" type="med.core.structure.ImplementationModule" id="5196379128660651513">
       <property name="name" value="main" />
       <property name="text" value="föflkölfksaöfsdöfkdsaf" />
+      <property name="safe" value="true" />
       <node role="contents" type="med.core.structure.ModuleVariable" id="5019031344946487728">
         <property name="name" value="currentSonar" />
         <node role="type" type="med.quantities.structure.AveragingType" id="5019031344946487729">
@@ -311,17 +312,31 @@
               <node role="body" type="med.core.structure.StatementList" id="9105096665970351709">
                 <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="5296414764970022329">
                   <property name="name" value="bump" />
-                  <node role="type" type="med.core.structure.GenericIntegerType" id="5296414764970022330" />
-                  <node role="init" type="med.core.structure.ProcedureCall" id="5296414764970022332">
-                    <link role="procedure" targetNodeId="2v.6177678091395801071" resolveInfo="ecrobot_get_touch_sensor" />
-                    <node role="actuals" type="med.core.structure.EnumLiteralRef" id="5296414764970022334">
-                      <link role="literal" targetNodeId="2v.5196379128661020617" resolveInfo="NXT_PORT_S3" />
-                    </node>
-                  </node>
+                  <node role="type" type="med.core.structure.Int8" id="738757997633730998" />
                   <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="5296414764970153964">
                     <property name="isNew" value="false" />
                     <node role="expression" type="featureDependencies.structure.AtomicFE" id="5296414764970153966">
                       <link role="feature" targetNodeId="7680622939174614997" resolveInfo="useBumper" />
+                    </node>
+                  </node>
+                  <node role="init" type="med.core.structure.IntConstantExpression" id="738757997633731000">
+                    <property name="value" value="0" />
+                  </node>
+                </node>
+                <node role="statements" type="med.core.structure.AssignmentStatement" id="738757997633731007">
+                  <node role="lvalue" type="med.core.structure.LocalVariableReference" id="738757997633731006">
+                    <link role="variable" targetNodeId="5296414764970022329" resolveInfo="bump" />
+                  </node>
+                  <node role="rvalue" type="med.core.structure.ProcedureCall" id="738757997633731011">
+                    <link role="procedure" targetNodeId="2v.6177678091395801071" resolveInfo="ecrobot_get_touch_sensor" />
+                    <node role="actuals" type="med.core.structure.EnumLiteralRef" id="738757997633731012">
+                      <link role="literal" targetNodeId="2v.5196379128661020617" resolveInfo="NXT_PORT_S3" />
+                    </node>
+                  </node>
+                  <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="738757997633731013">
+                    <property name="isNew" value="true" />
+                    <node role="expression" type="featureDependencies.structure.AtomicFE" id="738757997633731015">
+                      <link role="feature" targetNodeId="7680622939174614997" resolveInfo="bumper" />
                     </node>
                   </node>
                 </node>
@@ -397,10 +412,18 @@
                 </node>
                 <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="5296414764970503959">
                   <property name="name" value="light" />
-                  <node role="type" type="med.core.structure.GenericIntegerType" id="5296414764970503960" />
-                  <node role="init" type="med.core.structure.ProcedureCall" id="5296414764970503961">
+                  <node role="type" type="med.core.structure.Int32" id="738757997633731016" />
+                  <node role="init" type="med.core.structure.IntConstantExpression" id="738757997633731018">
+                    <property name="value" value="0" />
+                  </node>
+                </node>
+                <node role="statements" type="med.core.structure.AssignmentStatement" id="738757997633731024">
+                  <node role="lvalue" type="med.core.structure.LocalVariableReference" id="738757997633731023">
+                    <link role="variable" targetNodeId="5296414764970503959" resolveInfo="light" />
+                  </node>
+                  <node role="rvalue" type="med.core.structure.ProcedureCall" id="738757997633731028">
                     <link role="procedure" targetNodeId="2v.5196379128662641964" resolveInfo="ecrobot_get_light_sensor" />
-                    <node role="actuals" type="med.core.structure.EnumLiteralRef" id="5296414764970503962">
+                    <node role="actuals" type="med.core.structure.EnumLiteralRef" id="738757997633731029">
                       <link role="literal" targetNodeId="2v.5196379128661020615" resolveInfo="NXT_PORT_S1" />
                     </node>
                   </node>
