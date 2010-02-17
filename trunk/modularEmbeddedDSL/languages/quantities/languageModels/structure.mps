@@ -127,21 +127,6 @@
       <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
     </node>
   </node>
-  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="8017791897009139598">
-    <property name="package" value="average" />
-    <property name="name" value="AveragingInit" />
-    <link role="extends" targetNodeId="3v.6441851857096548278" resolveInfo="Expression" />
-    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="8017791897009139600">
-      <property name="metaClass" value="aggregation" />
-      <property name="role" value="exp" />
-      <property name="sourceCardinality" value="1" />
-      <link role="target" targetNodeId="3v.6441851857096548278" resolveInfo="Expression" />
-    </node>
-    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="8017791897009139601">
-      <property name="value" value="avginit" />
-      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
-    </node>
-  </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="8017791897009273673">
     <property name="package" value="average" />
     <property name="name" value="GenericAveragingType" />

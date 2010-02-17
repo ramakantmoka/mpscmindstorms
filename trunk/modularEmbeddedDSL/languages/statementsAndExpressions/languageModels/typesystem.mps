@@ -63,26 +63,26 @@
       </node>
       <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="1583024025813111682">
         <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1583024025813111683">
-          <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateLessThanInequationStatement" id="3454436015654254087">
-            <node role="leftExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="3454436015654254088">
-              <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="3454436015654254089">
-                <node role="term" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="3454436015654254090">
-                  <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="3454436015654254091">
-                    <link role="applicableNode" targetNodeId="1881584577101954940" resolveInfo="localVariableDeclaration" />
+          <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateComparableEquationStatement" id="9024796767936756444">
+            <node role="leftExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="9024796767936756445">
+              <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="9024796767936756446">
+                <node role="term" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="9024796767936756447">
+                  <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="9024796767936756448">
+                    <link role="applicableNode" targetNodeId="1881584577101954940" resolveInfo="lvd" />
                   </node>
-                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="3454436015654254092">
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="9024796767936756449">
                     <link role="link" targetNodeId="1.6441851857096635497" />
                   </node>
                 </node>
               </node>
             </node>
-            <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="3454436015654254093">
-              <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="3454436015654254094">
-                <node role="term" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="3454436015654254095">
-                  <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="3454436015654254096">
-                    <link role="applicableNode" targetNodeId="1881584577101954940" resolveInfo="localVariableDeclaration" />
+            <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="9024796767936756450">
+              <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="9024796767936756451">
+                <node role="term" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="9024796767936756452">
+                  <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="9024796767936756453">
+                    <link role="applicableNode" targetNodeId="1881584577101954940" resolveInfo="lvd" />
                   </node>
-                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="3454436015654254097">
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="9024796767936756454">
                     <link role="link" targetNodeId="1.4271434180064590876" />
                   </node>
                 </node>
@@ -3226,27 +3226,27 @@
           </node>
         </node>
       </node>
-      <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateLessThanInequationStatement" id="6254144863187085446">
-        <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="6254144863187085450">
-          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="6254144863187085451">
-            <node role="term" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6254144863187085454">
-              <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="6254144863187085453">
+      <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateComparableEquationStatement" id="9024796767936756433">
+        <node role="leftExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="9024796767936756434">
+          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="9024796767936756435">
+            <node role="term" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="9024796767936756436">
+              <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="9024796767936756437">
                 <link role="applicableNode" targetNodeId="6254144863184158283" resolveInfo="variable" />
               </node>
-              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="6254144863187294258">
-                <link role="link" targetNodeId="1.4271434180064590876" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="9024796767936756438">
+                <link role="link" targetNodeId="1.6254144863187085423" />
               </node>
             </node>
           </node>
         </node>
-        <node role="leftExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="6254144863187085449">
-          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="6254144863187085430">
-            <node role="term" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6254144863187085433">
-              <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="6254144863187085432">
+        <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="9024796767936756439">
+          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="9024796767936756440">
+            <node role="term" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="9024796767936756441">
+              <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="9024796767936756442">
                 <link role="applicableNode" targetNodeId="6254144863184158283" resolveInfo="variable" />
               </node>
-              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="6254144863187085437">
-                <link role="link" targetNodeId="1.6254144863187085423" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="9024796767936756443">
+                <link role="link" targetNodeId="1.4271434180064590876" />
               </node>
             </node>
           </node>
