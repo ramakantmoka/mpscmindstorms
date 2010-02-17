@@ -27,79 +27,8 @@
     <node role="modules" type="med.core.structure.ImplementationModule" id="5196379128660651513">
       <property name="name" value="main" />
       <property name="text" value="föflkölfksaöfsdöfkdsaf" />
-      <node role="contents" type="med.core.structure.ModuleVariable" id="6821937377367863691">
-        <property name="name" value="currentSonar" />
-        <node role="type" type="med.core.structure.GenericIntegerType" id="6821937377367863694" />
-        <node role="init" type="med.core.structure.IntConstantExpression" id="6821937377367863697">
-          <property name="value" value="0" />
-        </node>
-        <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6821937377367863698">
-          <property name="isNew" value="false" />
-          <node role="expression" type="featureDependencies.structure.AtomicFE" id="6821937377367863700">
-            <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" type="med.core.structure.ModuleVariable" id="6821937377367979608">
-        <property name="name" value="sonarHistory" />
-        <node role="init" type="med.core.structure.ArrayLiteral" id="6821937377367979617">
-          <node role="elements" type="med.core.structure.IntConstantExpression" id="6821937377367979619">
-            <property name="value" value="0" />
-          </node>
-          <node role="elements" type="med.core.structure.IntConstantExpression" id="6821937377367979623">
-            <property name="value" value="0" />
-          </node>
-          <node role="elements" type="med.core.structure.IntConstantExpression" id="6821937377367979626">
-            <property name="value" value="0" />
-          </node>
-          <node role="elements" type="med.core.structure.IntConstantExpression" id="6821937377367979629">
-            <property name="value" value="0" />
-          </node>
-          <node role="elements" type="med.core.structure.IntConstantExpression" id="6821937377367979632">
-            <property name="value" value="0" />
-          </node>
-          <node role="elements" type="med.core.structure.IntConstantExpression" id="6821937377367979635">
-            <property name="value" value="0" />
-          </node>
-          <node role="elements" type="med.core.structure.IntConstantExpression" id="6821937377367979638">
-            <property name="value" value="0" />
-          </node>
-          <node role="elements" type="med.core.structure.IntConstantExpression" id="6821937377367979641">
-            <property name="value" value="0" />
-          </node>
-          <node role="elements" type="med.core.structure.IntConstantExpression" id="6821937377367979645">
-            <property name="value" value="0" />
-          </node>
-          <node role="elements" type="med.core.structure.IntConstantExpression" id="6821937377367979648">
-            <property name="value" value="0" />
-          </node>
-        </node>
-        <node role="type" type="med.core.structure.SizedArrayType" id="6821937377367979653">
-          <property name="arraySize" value="10" />
-          <node role="elementType" type="med.core.structure.GenericIntegerType" id="6821937377367979651" />
-        </node>
-        <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6821937377367979655">
-          <property name="isNew" value="false" />
-          <node role="expression" type="featureDependencies.structure.AtomicFE" id="6821937377367979658">
-            <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
-          </node>
-        </node>
-      </node>
-      <node role="contents" type="med.core.structure.ModuleVariable" id="6821937377367979662">
-        <property name="name" value="sonarIndex" />
-        <node role="init" type="med.core.structure.IntConstantExpression" id="6821937377367979665">
-          <property name="value" value="0" />
-        </node>
-        <node role="type" type="med.core.structure.GenericIntegerType" id="6821937377367979666" />
-        <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6821937377367979667">
-          <property name="isNew" value="false" />
-          <node role="expression" type="featureDependencies.structure.AtomicFE" id="6821937377367979669">
-            <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
-          </node>
-        </node>
-      </node>
       <node role="contents" type="med.core.structure.ModuleVariable" id="5019031344946487728">
-        <property name="name" value="sonar2" />
+        <property name="name" value="currentSonar" />
         <node role="type" type="med.quantities.structure.AveragingType" id="5019031344946487729">
           <property name="size" value="10" />
           <node role="baseType" type="med.core.structure.GenericIntegerType" id="5019031344946487730" />
@@ -107,6 +36,12 @@
         <node role="init" type="med.quantities.structure.AveragingInit" id="5019031344946487731">
           <node role="exp" type="med.core.structure.IntConstantExpression" id="5019031344946487732">
             <property name="value" value="250" />
+          </node>
+        </node>
+        <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="9024796767935157096">
+          <property name="isNew" value="true" />
+          <node role="expression" type="featureDependencies.structure.AtomicFE" id="9024796767935157099">
+            <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
           </node>
         </node>
       </node>
@@ -321,165 +256,25 @@
       <node role="contents" type="med.tasks.structure.Task" id="6821937377367863665">
         <property name="name" value="sonartask" />
         <node role="body" type="med.core.structure.StatementList" id="6821937377367863666">
-          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="6821937377367979671">
-            <property name="name" value="s" />
-            <node role="type" type="med.core.structure.GenericIntegerType" id="6821937377367979672" />
-            <node role="init" type="med.core.structure.ProcedureCall" id="6821937377367979674">
-              <link role="procedure" targetNodeId="2v.5296414764969946981" resolveInfo="ecrobot_get_sonar_sensor" />
-              <node role="actuals" type="med.core.structure.EnumLiteralRef" id="6821937377367979675">
-                <link role="literal" targetNodeId="2v.5196379128661020616" resolveInfo="NXT_PORT_S2" />
-              </node>
-            </node>
-          </node>
           <node role="statements" type="med.quantities.structure.AveragingAssignmentStatement" id="7530832320798598554">
             <node role="var" type="med.core.structure.ModuleVariableRef" id="7530832320798598557">
               <link role="variable" targetNodeId="5019031344946487728" resolveInfo="sonar2" />
             </node>
-            <node role="rvalue" type="med.core.structure.LocalVariableReference" id="7530832320798598558">
-              <link role="variable" targetNodeId="6821937377367979671" resolveInfo="s" />
-            </node>
-          </node>
-          <node role="statements" type="med.core.structure.AssignmentStatement" id="6821937377367979691">
-            <node role="lvalue" type="med.core.structure.ArrayAccessExpression" id="6821937377367979685">
-              <node role="array" type="med.core.structure.ModuleVariableRef" id="6821937377367979688">
-                <link role="variable" targetNodeId="6821937377367979608" resolveInfo="sonarHistory" />
-              </node>
-              <node role="index" type="med.core.structure.ModuleVariableRef" id="6821937377367979689">
-                <link role="variable" targetNodeId="6821937377367979662" resolveInfo="sonarIndex" />
-              </node>
-            </node>
-            <node role="rvalue" type="med.core.structure.LocalVariableReference" id="6821937377367979696">
-              <link role="variable" targetNodeId="6821937377367979671" resolveInfo="s" />
-            </node>
-          </node>
-          <node role="statements" type="med.core.structure.AssignmentStatement" id="6821937377367979702">
-            <node role="lvalue" type="med.core.structure.ModuleVariableRef" id="6821937377367979701">
-              <link role="variable" targetNodeId="6821937377367979662" resolveInfo="sonarIndex" />
-            </node>
-            <node role="rvalue" type="med.core.structure.PlusExpression" id="6821937377367979710">
-              <node role="left" type="med.core.structure.ModuleVariableRef" id="6821937377367979708">
-                <link role="variable" targetNodeId="6821937377367979662" resolveInfo="sonarIndex" />
-              </node>
-              <node role="right" type="med.core.structure.IntConstantExpression" id="6821937377367979714">
-                <property name="value" value="1" />
+            <node role="rvalue" type="med.core.structure.ProcedureCall" id="9024796767935157101">
+              <link role="procedure" targetNodeId="2v.5296414764969946981" resolveInfo="ecrobot_get_sonar_sensor" />
+              <node role="actuals" type="med.core.structure.EnumLiteralRef" id="9024796767935157102">
+                <link role="literal" targetNodeId="2v.5196379128661020616" resolveInfo="NXT_PORT_S2" />
               </node>
             </node>
           </node>
-          <node role="statements" type="med.core.structure.IfStatement" id="6821937377367979718">
-            <node role="thenPart" type="med.core.structure.StatementList" id="6821937377367979719">
-              <node role="statements" type="med.core.structure.AssignmentStatement" id="6821937377367979731">
-                <node role="lvalue" type="med.core.structure.ModuleVariableRef" id="6821937377367979730">
-                  <link role="variable" targetNodeId="6821937377367979662" resolveInfo="sonarIndex" />
-                </node>
-                <node role="rvalue" type="med.core.structure.IntConstantExpression" id="6821937377367979735">
-                  <property name="value" value="0" />
-                </node>
+          <node role="statements" type="med.core.structure.ExpressionStatement" id="9024796767936101063">
+            <node role="expression" type="med.core.structure.ProcedureCall" id="9024796767936101064">
+              <link role="procedure" targetNodeId="2v.5196379128662641936" resolveInfo="display_int" />
+              <node role="actuals" type="med.core.structure.ModuleVariableRef" id="9024796767936101066">
+                <link role="variable" targetNodeId="5019031344946487728" resolveInfo="currentSonar" />
               </node>
-            </node>
-            <node role="condition" type="med.core.structure.EqualsExpression" id="6821937377367979722">
-              <node role="left" type="med.core.structure.ModuleVariableRef" id="6821937377367979721">
-                <link role="variable" targetNodeId="6821937377367979662" resolveInfo="sonarIndex" />
-              </node>
-              <node role="right" type="med.core.structure.IntConstantExpression" id="6821937377367979727">
-                <property name="value" value="10" />
-              </node>
-            </node>
-          </node>
-          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="6821937377367979738">
-            <property name="name" value="ss" />
-            <node role="type" type="med.core.structure.GenericIntegerType" id="6821937377367979739" />
-            <node role="init" type="med.core.structure.IntConstantExpression" id="6821937377367979741">
-              <property name="value" value="0" />
-            </node>
-          </node>
-          <node role="statements" type="med.core.structure.ForStatement" id="6821937377367979743">
-            <node role="var" type="med.core.structure.ForVariableDeclaration" id="6821937377367979744">
-              <property name="name" value="i" />
-              <node role="type" type="med.core.structure.GenericIntegerType" id="6821937377367979749" />
-              <node role="init" type="med.core.structure.IntConstantExpression" id="6821937377368279734">
-                <property name="value" value="0" />
-              </node>
-            </node>
-            <node role="condition" type="med.core.structure.SmallerExpression" id="6821937377367979752">
-              <node role="left" type="med.core.structure.ForVariableDeclarationReference" id="6821937377367979751">
-                <link role="variable" targetNodeId="6821937377367979744" resolveInfo="i" />
-              </node>
-              <node role="right" type="med.core.structure.IntConstantExpression" id="6821937377367979756">
-                <property name="value" value="10" />
-              </node>
-            </node>
-            <node role="iterationStatement" type="med.core.structure.AssignmentStatement" id="6821937377367979768">
-              <node role="lvalue" type="med.core.structure.ForVariableDeclarationReference" id="6821937377367979767">
-                <link role="variable" targetNodeId="6821937377367979744" resolveInfo="i" />
-              </node>
-              <node role="rvalue" type="med.core.structure.PlusExpression" id="6821937377367979773">
-                <node role="left" type="med.core.structure.ForVariableDeclarationReference" id="6821937377367979772">
-                  <link role="variable" targetNodeId="6821937377367979744" resolveInfo="i" />
-                </node>
-                <node role="right" type="med.core.structure.IntConstantExpression" id="6821937377367979777">
-                  <property name="value" value="1" />
-                </node>
-              </node>
-            </node>
-            <node role="body" type="med.core.structure.StatementList" id="6821937377367979748">
-              <node role="statements" type="med.core.structure.AssignmentStatement" id="6821937377367979780">
-                <node role="lvalue" type="med.core.structure.LocalVariableReference" id="6821937377367979779">
-                  <link role="variable" targetNodeId="6821937377367979738" resolveInfo="ss" />
-                </node>
-                <node role="rvalue" type="med.core.structure.PlusExpression" id="6821937377367979785">
-                  <node role="left" type="med.core.structure.LocalVariableReference" id="6821937377367979784">
-                    <link role="variable" targetNodeId="6821937377367979738" resolveInfo="ss" />
-                  </node>
-                  <node role="right" type="med.core.structure.ArrayAccessExpression" id="6821937377367979789">
-                    <node role="array" type="med.core.structure.ModuleVariableRef" id="6821937377367979792">
-                      <link role="variable" targetNodeId="6821937377367979608" resolveInfo="sonarHistory" />
-                    </node>
-                    <node role="index" type="med.core.structure.ForVariableDeclarationReference" id="6821937377367979793">
-                      <link role="variable" targetNodeId="6821937377367979744" resolveInfo="i" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node role="statements" type="med.core.structure.AssignmentStatement" id="6821937377367863712">
-            <node role="lvalue" type="med.core.structure.ModuleVariableRef" id="6821937377367863711">
-              <link role="variable" targetNodeId="6821937377367863691" resolveInfo="currentSonar" />
-            </node>
-            <node role="rvalue" type="med.core.structure.DivisionExpression" id="6821937377367979797">
-              <node role="left" type="med.core.structure.LocalVariableReference" id="6821937377367979795">
-                <link role="variable" targetNodeId="6821937377367979738" resolveInfo="ss" />
-              </node>
-              <node role="right" type="med.core.structure.IntConstantExpression" id="6821937377367979802">
-                <property name="value" value="10" />
-              </node>
-            </node>
-          </node>
-          <node role="statements" type="med.core.structure.BlockStatement" id="6821937377367863670">
-            <node role="body" type="med.core.structure.StatementList" id="6821937377367863671">
-              <node role="statements" type="med.core.structure.BlockStatement" id="6821937377367863676">
-                <node role="body" type="med.core.structure.StatementList" id="6821937377367863677">
-                  <node role="statements" type="med.core.structure.ExpressionStatement" id="6821937377367863678">
-                    <node role="expression" type="med.core.structure.ProcedureCall" id="6821937377367863679">
-                      <link role="procedure" targetNodeId="5296414764970547845" resolveInfo="debugInt" />
-                      <node role="actuals" type="med.core.structure.IntConstantExpression" id="6821937377367863680">
-                        <property name="value" value="2" />
-                      </node>
-                      <node role="actuals" type="med.core.structure.StringConstantExpression" id="6821937377367863681">
-                        <property name="value" value="sonar:" />
-                      </node>
-                      <node role="actuals" type="med.core.structure.ModuleVariableRef" id="6821937377367863718">
-                        <link role="variable" targetNodeId="6821937377367863691" resolveInfo="currentSonar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6821937377367863683">
-                  <property name="isNew" value="false" />
-                  <node role="expression" type="featureDependencies.structure.AtomicFE" id="6821937377367863684">
-                    <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
-                  </node>
-                </node>
+              <node role="actuals" type="med.core.structure.IntConstantExpression" id="9024796767936101068">
+                <property name="value" value="2" />
               </node>
             </node>
           </node>
@@ -586,7 +381,7 @@
                   </node>
                   <node role="condition" type="med.core.structure.SmallerExpression" id="3260472080518430555">
                     <node role="left" type="med.core.structure.ModuleVariableRef" id="3260472080518430553">
-                      <link role="variable" targetNodeId="6821937377367863691" resolveInfo="currentSonar" />
+                      <link role="variable" targetNodeId="5019031344946487728" resolveInfo="currentSonar" />
                     </node>
                     <node role="right" type="med.core.structure.IntConstantExpression" id="3260472080518430560">
                       <property name="value" value="150" />
@@ -710,7 +505,7 @@
                   </node>
                   <node role="condition" type="med.core.structure.SmallerExpression" id="6821937377367976852">
                     <node role="left" type="med.core.structure.ModuleVariableRef" id="6821937377367976851">
-                      <link role="variable" targetNodeId="6821937377367863691" resolveInfo="currentSonar" />
+                      <link role="variable" targetNodeId="5019031344946487728" resolveInfo="currentSonar" />
                     </node>
                     <node role="right" type="med.core.structure.IntConstantExpression" id="6821937377367976856">
                       <property name="value" value="255" />
