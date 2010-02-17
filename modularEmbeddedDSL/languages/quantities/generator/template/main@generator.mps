@@ -157,28 +157,6 @@
         <link role="template" targetNodeId="7530832320798600745" resolveInfo="reduce_AveragingAssignmentStatement" />
       </node>
     </node>
-    <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="8017791897009702405">
-      <link role="applicableConcept" targetNodeId="1.8017791897009139598" resolveInfo="AveragingInit" />
-      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" id="8017791897009704585">
-        <node role="templateNode" type="med.core.structure.IntConstantExpression" id="8017791897009704587">
-          <property name="value" value="10" />
-          <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" id="8017791897009704589">
-            <node role="sourceNodeQuery" type="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" id="8017791897009704590">
-              <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8017791897009704591">
-                <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8017791897009704592">
-                  <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017791897009704594">
-                    <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="8017791897009704593" />
-                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="8017791897009704598">
-                      <link role="link" targetNodeId="1.8017791897009139600" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="8017791897009597259">
       <link role="applicableConcept" targetNodeId="1.8017791897008984431" resolveInfo="AveragingType" />
       <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" id="8017791897009599439">
@@ -385,18 +363,10 @@
                           </node>
                           <node role="operation" type="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" id="5019031344944456887">
                             <node role="argument" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5019031344944456929">
-                              <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5019031344944456920">
-                                <node role="operand" type="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" id="5019031344944456914">
-                                  <link role="concept" targetNodeId="1.8017791897009139598" resolveInfo="AveragingInit" />
-                                  <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5019031344944456905">
-                                    <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="5019031344944456891" />
-                                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="5019031344944456911">
-                                      <link role="link" targetNodeId="2v.6254144863187085423" />
-                                    </node>
-                                  </node>
-                                </node>
-                                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="5019031344944456926">
-                                  <link role="link" targetNodeId="1.8017791897009139600" />
+                              <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5019031344944456905">
+                                <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="5019031344944456891" />
+                                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="5019031344944456911">
+                                  <link role="link" targetNodeId="2v.6254144863187085423" />
                                 </node>
                               </node>
                               <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" id="5019031344944456935" />

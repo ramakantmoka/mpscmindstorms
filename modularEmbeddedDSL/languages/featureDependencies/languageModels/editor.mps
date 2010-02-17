@@ -134,32 +134,6 @@
         <node role="styleItem" type="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" id="4595014168072116032">
           <node role="query" type="jetbrains.mps.lang.editor.structure.QueryFunction_Color" id="4595014168072116033">
             <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="4595014168072116034">
-              <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="4595014168072116046">
-                <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="4595014168072116047">
-                  <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="4595014168072116056">
-                    <node role="expression" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression" id="3426893568456234309">
-                      <node role="creator" type="jetbrains.mps.baseLanguage.structure.ClassCreator" id="3426893568456237366">
-                        <link role="baseMethodDeclaration" targetNodeId="3.~Color.&lt;init&gt;(int,int,int)" resolveInfo="Color" />
-                        <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="3426893568456237367">
-                          <property name="value" value="180" />
-                        </node>
-                        <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="3426893568456237369">
-                          <property name="value" value="180" />
-                        </node>
-                        <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="3426893568456237371">
-                          <property name="value" value="255" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node role="condition" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="4595014168072116051">
-                  <node role="operand" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="4595014168072116050" />
-                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="4595014168072116055">
-                    <link role="property" targetNodeId="1.7715189151798803934" resolveInfo="isNew" />
-                  </node>
-                </node>
-              </node>
               <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="4595014168072116035">
                 <node role="condition" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="4595014168072116036">
                   <node role="operand" type="jetbrains.mps.baseLanguage.structure.StaticMethodCall" id="4595014168072116037">
@@ -172,6 +146,32 @@
                   </node>
                 </node>
                 <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="4595014168072116040">
+                  <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="3454409893515401583">
+                    <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3454409893515401584">
+                      <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="3454409893515401585">
+                        <node role="expression" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression" id="3454409893515401586">
+                          <node role="creator" type="jetbrains.mps.baseLanguage.structure.ClassCreator" id="3454409893515401587">
+                            <link role="baseMethodDeclaration" targetNodeId="3.~Color.&lt;init&gt;(int,int,int)" resolveInfo="Color" />
+                            <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="3454409893515401588">
+                              <property name="value" value="180" />
+                            </node>
+                            <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="3454409893515401589">
+                              <property name="value" value="180" />
+                            </node>
+                            <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="3454409893515401590">
+                              <property name="value" value="255" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node role="condition" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="3454409893515401591">
+                      <node role="operand" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="3454409893515401592" />
+                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="3454409893515401593">
+                        <link role="property" targetNodeId="1.7715189151798803934" resolveInfo="isNew" />
+                      </node>
+                    </node>
+                  </node>
                   <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="4595014168072116041">
                     <node role="expression" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression" id="3426893568455740436">
                       <node role="creator" type="jetbrains.mps.baseLanguage.structure.ClassCreator" id="3426893568455743493">

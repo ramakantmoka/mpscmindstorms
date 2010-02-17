@@ -33,16 +33,14 @@
           <property name="size" value="10" />
           <node role="baseType" type="med.core.structure.GenericIntegerType" id="5019031344946487730" />
         </node>
-        <node role="init" type="med.quantities.structure.AveragingInit" id="5019031344946487731">
-          <node role="exp" type="med.core.structure.IntConstantExpression" id="5019031344946487732">
-            <property name="value" value="250" />
-          </node>
-        </node>
         <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="9024796767935157096">
           <property name="isNew" value="true" />
           <node role="expression" type="featureDependencies.structure.AtomicFE" id="9024796767935157099">
             <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
           </node>
+        </node>
+        <node role="init" type="med.core.structure.IntConstantExpression" id="3454409893515541322">
+          <property name="value" value="250" />
         </node>
       </node>
       <node role="contents" type="med.core.structure.SimpleIntConstant" id="5196379128666214925">
@@ -267,14 +265,23 @@
               </node>
             </node>
           </node>
-          <node role="statements" type="med.core.structure.ExpressionStatement" id="9024796767936101063">
-            <node role="expression" type="med.core.structure.ProcedureCall" id="9024796767936101064">
-              <link role="procedure" targetNodeId="2v.5196379128662641936" resolveInfo="display_int" />
-              <node role="actuals" type="med.core.structure.ModuleVariableRef" id="9024796767936101066">
+          <node role="statements" type="med.core.structure.ExpressionStatement" id="3454409893515280775">
+            <node role="expression" type="med.core.structure.ProcedureCall" id="3454409893515280776">
+              <link role="procedure" targetNodeId="5296414764970547845" resolveInfo="debugInt" />
+              <node role="actuals" type="med.core.structure.IntConstantExpression" id="3454409893515280778">
+                <property name="value" value="2" />
+              </node>
+              <node role="actuals" type="med.core.structure.StringConstantExpression" id="3454409893515280780">
+                <property name="value" value="sonar:" />
+              </node>
+              <node role="actuals" type="med.core.structure.ModuleVariableRef" id="3454409893515280782">
                 <link role="variable" targetNodeId="5019031344946487728" resolveInfo="currentSonar" />
               </node>
-              <node role="actuals" type="med.core.structure.IntConstantExpression" id="9024796767936101068">
-                <property name="value" value="2" />
+            </node>
+            <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="3454409893515280783">
+              <property name="isNew" value="true" />
+              <node role="expression" type="featureDependencies.structure.AtomicFE" id="3454409893515280786">
+                <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
               </node>
             </node>
           </node>
@@ -867,7 +874,7 @@
   <node type="featureDependencies.structure.FeatureDependencyConfiguration" id="5196379128662641904">
     <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="7530832320797129439">
       <property name="showFeatureClause" value="true" />
-      <property name="highlightFeatureDependentNodes" value="true" />
+      <property name="highlightFeatureDependentNodes" value="false" />
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="7680622939174614995">
       <property name="name" value="runtimeCalibration" />

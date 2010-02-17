@@ -9,22 +9,19 @@
 #include "include/LineFollower.h"
 
 // used resources
-#include "ecrobot_interface.h"
 #include "avgutil.h"
 #include "kernel.h"
 #include "bitdata.h"
+#include "ecrobot_interface.h"
 
 // custom includes
 #include "kernel.h"
 #include "kernel_id.h"
 
-int LineFollower_main_currentSonar = 0;
-int LineFollower_main_sonarHistory[10] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-int LineFollower_main_sonarIndex = 0;
-int LineFollower_main_sonar2 = 250;
+int LineFollower_main_currentSonar = 250;
 int LineFollower_main_linefollower_currentstate = STATE_INITIALIZING;
-int LineFollower_main_sonar2_history[10] = { 250, 250, 250, 250, 250, 250, 250, 250, 250, 250 };
-int LineFollower_main_sonar2_index = 0;
+int LineFollower_main_currentSonar_history[10] = { 250, 250, 250, 250, 250, 250, 250, 250, 250, 250 };
+int LineFollower_main_currentSonar_index = 0;
 
 void LineFollower_main_linefollower_execute(int event) {
         
@@ -88,31 +85,7 @@ void ecrobot_device_initialize(){
 }
 
 TASK(LineFollower_main_sonartask){
-    int s = ecrobot_get_sonar_sensor (NXT_PORT_S2 );
-    LineFollower_main_sonar2 = calcAvgInt (LineFollower_main_sonar2_history, &LineFollower_main_sonar2_index, s, 10 );
-    display_goto_xy (5, 5 );
-    display_int (LineFollower_main_sonar2, 3 );
-    display_update ( );
-    LineFollower_main_sonarHistory[LineFollower_main_sonarIndex] = s;
-    LineFollower_main_sonarIndex = (LineFollower_main_sonarIndex + 1);
-        
-    if ( LineFollower_main_sonarIndex == 10) {
-          LineFollower_main_sonarIndex = 0;
-
-    } // end if 
-
-    int ss = 0;
-    for (int i = 0; (i < 10); i = (i + 1)) {
-        ss = (ss + LineFollower_main_sonarHistory[i]);
-}
-    LineFollower_main_currentSonar = (ss / (10));
-    display_goto_xy (5, 6 );
-    display_int (LineFollower_main_currentSonar, 3 );
-    display_update ( );
-        { // begin block
-    
-    } // end block
-
+    LineFollower_main_currentSonar = calcAvgInt (LineFollower_main_currentSonar_history, &LineFollower_main_currentSonar_index, ecrobot_get_sonar_sensor (NXT_PORT_S2 ), 10 );
     TerminateTask(); // automatically added by platform.osek:addTermianateTask
 
 }
