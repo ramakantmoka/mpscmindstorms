@@ -1,7 +1,340 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)">
   <persistence version="3" />
-  <refactoringHistory />
+  <refactoringHistory>
+    <refactoringContext modelVersion="0">
+      <refactoring refactoringClass="jetbrains.mps.lang.core.scripts.MoveNodes" />
+      <moveMap>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="5670427403977327690" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289787" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="5670427403977327692" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289788" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="5670427403977327694" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289789" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="5670427403977327695" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289790" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="5670427403977327697" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289799" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="5670427403977327699" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289791" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="5670427403977327702" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289792" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="5670427403977327703" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289793" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="5670427403977327704" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289794" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="5670427403977327705" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289795" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="5670427403977327706" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289796" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="5670427403977327707" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289797" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="5670427403977327708" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289798" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="5670427403977327710" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289800" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="5670427403977327713" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289801" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="5670427403977327714" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289802" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="5670427403977327715" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289803" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="5670427403977327716" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289804" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="5670427403977327717" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289805" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="5670427403977327718" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289806" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="5670427403977327720" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289807" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="6821937377368389654" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289808" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="6821937377368389655" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289809" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="6821937377368389656" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289810" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="6821937377368391835" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289811" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="6821937377368391842" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289812" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="6821937377368391843" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289813" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="6821937377368391844" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289814" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="6821937377368391845" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289815" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997633356286" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289816" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997633356287" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289817" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997633358466" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289818" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997633358482" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289819" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997633358483" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289820" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997633358484" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289821" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997633358485" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289822" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997633358486" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289823" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997633358487" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289824" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997633358488" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289825" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997633358489" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289826" />
+        </entry>
+      </moveMap>
+      <conceptFeatureMap />
+    </refactoringContext>
+    <refactoringContext modelVersion="1">
+      <refactoring refactoringClass="jetbrains.mps.lang.core.scripts.MoveNodes" />
+      <moveMap>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289787" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399063" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289788" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399064" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289789" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399065" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289790" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399066" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289791" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399067" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289792" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399068" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289793" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399069" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289794" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399070" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289795" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399071" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289796" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399072" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289797" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399073" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289798" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399074" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289799" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399075" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289800" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399076" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289801" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399077" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289802" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399078" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289803" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399079" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289804" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399080" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289805" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399081" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289806" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399082" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289807" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399083" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289808" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399084" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289809" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399085" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289810" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399086" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289811" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399087" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289812" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399088" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289813" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399089" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289814" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399090" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289815" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399091" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289816" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399092" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289817" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399093" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289818" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399094" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289819" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399095" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289820" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399096" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289821" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399097" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289822" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399098" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289823" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399099" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289824" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399100" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289825" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399101" />
+        </entry>
+        <entry>
+          <key modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634289826" />
+          <value modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeId="738757997634399102" />
+        </entry>
+      </moveMap>
+      <conceptFeatureMap />
+    </refactoringContext>
+  </refactoringHistory>
   <language namespace="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" />
   <language namespace="a83c3bd0-2f7e-4ba1-8373-12d49e99f57e(jetbrains.mps.gtext)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
@@ -40,6 +373,7 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959034b(jetbrains.mps.lang.quotation.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" />
   <languageAspect modelUID="r:9f9959ae-ed4b-4339-a71e-62a180fa22ec(med.base.structure)" version="2" />
+  <languageAspect modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" version="1" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="8" />
   <import index="1" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" version="9" />
@@ -1871,68 +2205,6 @@
         <link role="template" targetNodeId="5670427403977327598" resolveInfo="reduce_ForStatement" />
       </node>
     </node>
-    <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="5670427403977327690">
-      <link role="applicableConcept" targetNodeId="1.1881584577103641506" resolveInfo="AssignmentStatement" />
-      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" id="5670427403977327692">
-        <node role="templateNode" type="jetbrains.mps.gtext.structure.GItemList" id="5670427403977327694">
-          <node role="item" type="jetbrains.mps.gtext.structure.GItem" id="5670427403977327695">
-            <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" id="5670427403977327699">
-              <node role="sourceNodeQuery" type="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" id="5670427403977327702">
-                <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5670427403977327703">
-                  <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="5670427403977327704">
-                    <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5670427403977327705">
-                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="5670427403977327706">
-                        <link role="link" targetNodeId="1.4271434180066374711" />
-                      </node>
-                      <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="5670427403977327707" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node role="item" type="jetbrains.mps.gtext.structure.GText" id="5670427403977327708">
-            <property name="text" value=" = " />
-          </node>
-          <node role="item" type="jetbrains.mps.gtext.structure.GItem" id="5670427403977327697">
-            <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" id="5670427403977327710">
-              <node role="sourceNodeQuery" type="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" id="5670427403977327713">
-                <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5670427403977327714">
-                  <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="5670427403977327715">
-                    <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5670427403977327716">
-                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="5670427403977327717">
-                        <link role="link" targetNodeId="1.1881584577103641522" />
-                      </node>
-                      <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="5670427403977327718" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node role="item" type="jetbrains.mps.gtext.structure.GText" id="5670427403977327720">
-            <property name="text" value=";" />
-            <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.IfMacro" id="6821937377368389654">
-              <node role="conditionFunction" type="jetbrains.mps.lang.generator.structure.IfMacro_Condition" id="6821937377368389655">
-                <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6821937377368389656">
-                  <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="6821937377368391835">
-                    <node role="expression" type="jetbrains.mps.baseLanguage.structure.NotExpression" id="6821937377368391842">
-                      <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6821937377368391843">
-                        <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="6821937377368391844" />
-                        <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsRoleOperation" id="6821937377368391845">
-                          <link role="conceptOfParent" targetNodeId="1.4739672646790033288" resolveInfo="ForStatement" />
-                          <link role="linkInParent" targetNodeId="1.4739672646790033295" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="5670427403977327721">
       <link role="applicableConcept" targetNodeId="1.4739672646790033290" resolveInfo="ForVariableDeclaration" />
       <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" id="5670427403977327723">
@@ -2238,6 +2510,68 @@
         </node>
       </node>
     </node>
+    <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="738757997634399063">
+      <link role="applicableConcept" targetNodeId="1.1881584577103641506" resolveInfo="AssignmentStatement" />
+      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" id="738757997634399064">
+        <node role="templateNode" type="jetbrains.mps.gtext.structure.GItemList" id="738757997634399065">
+          <node role="item" type="jetbrains.mps.gtext.structure.GItem" id="738757997634399066">
+            <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" id="738757997634399067">
+              <node role="sourceNodeQuery" type="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" id="738757997634399068">
+                <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997634399069">
+                  <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997634399070">
+                    <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997634399071">
+                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="738757997634399072">
+                        <link role="link" targetNodeId="1.4271434180066374711" />
+                      </node>
+                      <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="738757997634399073" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="item" type="jetbrains.mps.gtext.structure.GText" id="738757997634399074">
+            <property name="text" value=" = " />
+          </node>
+          <node role="item" type="jetbrains.mps.gtext.structure.GItem" id="738757997634399075">
+            <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" id="738757997634399076">
+              <node role="sourceNodeQuery" type="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" id="738757997634399077">
+                <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997634399078">
+                  <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997634399079">
+                    <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997634399080">
+                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="738757997634399081">
+                        <link role="link" targetNodeId="1.1881584577103641522" />
+                      </node>
+                      <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="738757997634399082" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="item" type="jetbrains.mps.gtext.structure.GText" id="738757997634399083">
+            <property name="text" value=";" />
+            <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.IfMacro" id="738757997634399084">
+              <node role="conditionFunction" type="jetbrains.mps.lang.generator.structure.IfMacro_Condition" id="738757997634399085">
+                <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997634399086">
+                  <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997634399087">
+                    <node role="expression" type="jetbrains.mps.baseLanguage.structure.NotExpression" id="738757997634399088">
+                      <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997634399089">
+                        <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="738757997634399090" />
+                        <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsRoleOperation" id="738757997634399091">
+                          <link role="conceptOfParent" targetNodeId="1.4739672646790033288" resolveInfo="ForStatement" />
+                          <link role="linkInParent" targetNodeId="1.4739672646790033295" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node type="jetbrains.mps.lang.generator.structure.TemplateDeclaration" id="5670427403977023460">
     <property name="name" value="reduce_StringConstantExpression" />
@@ -2336,12 +2670,6 @@
       </node>
       <node role="templateFragment$attribute" type="jetbrains.mps.lang.generator.structure.TemplateFragment" id="5670427403977327634" />
     </node>
-  </node>
-  <node type="jetbrains.mps.lang.generator.structure.TemplateDeclaration" id="5670427403977327687">
-    <property name="name" value="reduce_AssignmentStatement" />
-    <property name="package" value="statements" />
-    <link role="applicableConcept" targetNodeId="1.1881584577103641506" resolveInfo="AssignmentStatement" />
-    <node role="contentNode" type="jetbrains.mps.lang.core.structure.BaseConcept" id="5670427403977327688" />
   </node>
   <node type="jetbrains.mps.lang.generator.structure.MappingConfiguration" id="2005811434196937215">
     <property name="name" value="procedures" />
@@ -4564,6 +4892,420 @@
     <property name="name" value="reduce_System" />
     <link role="applicableConcept" targetNodeId="1.3553474829273041289" resolveInfo="System" />
     <node role="contentNode" type="jetbrains.mps.lang.core.structure.BaseConcept" id="8017791897007712661" />
+  </node>
+  <visible index="3" modelUID="r:0fb955ac-41d9-43fe-bd36-a2e748096778(med.core.rt)" />
+  <node type="jetbrains.mps.lang.generator.structure.TemplateDeclaration" id="738757997633404310">
+    <property name="name" value="reduce_AssignmentStatementSafeInt32" />
+    <property name="package" value="statements" />
+    <link role="applicableConcept" targetNodeId="1.1881584577103641506" resolveInfo="AssignmentStatement" />
+    <node role="contentNode" type="med.core.structure.ImplementationModule" id="738757997633404313">
+      <property name="name" value="m" />
+      <node role="contents" type="med.core.structure.Procedure" id="738757997633404314">
+        <property name="name" value="x" />
+        <node role="body" type="med.core.structure.StatementList" id="738757997633404315">
+          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="738757997633404323">
+            <property name="name" value="x" />
+            <node role="type" type="med.core.structure.GenericIntegerType" id="738757997633404324" />
+          </node>
+          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="738757997633404342">
+            <property name="name" value="y" />
+            <node role="type" type="med.core.structure.Int32" id="738757997633697106" />
+          </node>
+          <node role="statements" type="med.core.structure.AssignmentStatement" id="738757997633404317">
+            <node role="lvalue" type="med.core.structure.LocalVariableReference" id="738757997633404325">
+              <link role="variable" targetNodeId="738757997633404323" resolveInfo="x" />
+              <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" id="738757997633404327">
+                <node role="sourceNodeQuery" type="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" id="738757997633404330">
+                  <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997633404331">
+                    <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997633404332">
+                      <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997633404333">
+                        <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="738757997633404334">
+                          <link role="link" targetNodeId="1.4271434180066374711" />
+                        </node>
+                        <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="738757997633404335" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="rvalue" type="med.core.structure.ProcedureCall" id="738757997633404337">
+              <link role="procedure" targetNodeId="3v.738757997633404247" resolveInfo="isValidInt32" />
+              <node role="actuals" type="med.core.structure.LocalVariableReference" id="738757997633404345">
+                <link role="variable" targetNodeId="738757997633404342" resolveInfo="y" />
+                <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" id="738757997633404347">
+                  <node role="sourceNodeQuery" type="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" id="738757997633404350">
+                    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997633404351">
+                      <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997633404352">
+                        <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997633404353">
+                          <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="738757997633404354">
+                            <link role="link" targetNodeId="1.1881584577103641522" />
+                          </node>
+                          <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="738757997633404355" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node role="moduleDependencyAnnotation$attribute" type="med.core.structure.ModuleDependency" id="738757997633404356">
+                <node role="import" type="med.core.structure.ModuleImport" id="738757997633404358">
+                  <link role="importedModule" targetNodeId="3v.738757997633403729" resolveInfo="SafeUtil" />
+                </node>
+              </node>
+              <node role="tag$attribute" type="med.core.structure.Tag" id="738757997635257517">
+                <property name="name" value="default" />
+              </node>
+            </node>
+            <node role="templateFragment$attribute" type="jetbrains.mps.lang.generator.structure.TemplateFragment" id="738757997633404320" />
+          </node>
+        </node>
+        <node role="type" type="med.core.structure.Type" id="738757997633404316" />
+      </node>
+      <node role="imports" type="med.core.structure.ModuleImport" id="738757997633404336">
+        <link role="importedModule" targetNodeId="3v.738757997633403729" resolveInfo="SafeUtil" />
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.generator.structure.TemplateDeclaration" id="738757997633697017">
+    <property name="name" value="reduce_AssignmentStatementSafeInt8" />
+    <property name="package" value="statements" />
+    <link role="applicableConcept" targetNodeId="1.1881584577103641506" resolveInfo="AssignmentStatement" />
+    <node role="contentNode" type="med.core.structure.ImplementationModule" id="738757997633697018">
+      <property name="name" value="m" />
+      <node role="contents" type="med.core.structure.Procedure" id="738757997633697019">
+        <property name="name" value="x" />
+        <node role="body" type="med.core.structure.StatementList" id="738757997633697020">
+          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="738757997633697021">
+            <property name="name" value="x" />
+            <node role="type" type="med.core.structure.GenericIntegerType" id="738757997633697022" />
+          </node>
+          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="738757997633697023">
+            <property name="name" value="y" />
+            <node role="type" type="med.core.structure.Int8" id="738757997633697024" />
+          </node>
+          <node role="statements" type="med.core.structure.AssignmentStatement" id="738757997633697025">
+            <node role="lvalue" type="med.core.structure.LocalVariableReference" id="738757997633697026">
+              <link role="variable" targetNodeId="738757997633697021" resolveInfo="x" />
+              <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" id="738757997633697027">
+                <node role="sourceNodeQuery" type="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" id="738757997633697028">
+                  <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997633697029">
+                    <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997633697030">
+                      <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997633697031">
+                        <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="738757997633697032">
+                          <link role="link" targetNodeId="1.4271434180066374711" />
+                        </node>
+                        <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="738757997633697033" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="rvalue" type="med.core.structure.ProcedureCall" id="738757997633697034">
+              <link role="procedure" targetNodeId="3v.738757997633403731" resolveInfo="isValidInt8" />
+              <node role="actuals" type="med.core.structure.LocalVariableReference" id="738757997633697035">
+                <link role="variable" targetNodeId="738757997633697023" resolveInfo="y" />
+                <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" id="738757997633697036">
+                  <node role="sourceNodeQuery" type="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" id="738757997633697037">
+                    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997633697038">
+                      <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997633697039">
+                        <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997633697040">
+                          <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="738757997633697041">
+                            <link role="link" targetNodeId="1.1881584577103641522" />
+                          </node>
+                          <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="738757997633697042" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node role="moduleDependencyAnnotation$attribute" type="med.core.structure.ModuleDependency" id="738757997633697043">
+                <node role="import" type="med.core.structure.ModuleImport" id="738757997633697044">
+                  <link role="importedModule" targetNodeId="3v.738757997633403729" resolveInfo="SafeUtil" />
+                </node>
+              </node>
+              <node role="tag$attribute" type="med.core.structure.Tag" id="738757997634992778">
+                <property name="name" value="default" />
+              </node>
+            </node>
+            <node role="templateFragment$attribute" type="jetbrains.mps.lang.generator.structure.TemplateFragment" id="738757997633697045" />
+          </node>
+        </node>
+        <node role="type" type="med.core.structure.Type" id="738757997633697046" />
+      </node>
+      <node role="imports" type="med.core.structure.ModuleImport" id="738757997633697047">
+        <link role="importedModule" targetNodeId="3v.738757997633403729" resolveInfo="SafeUtil" />
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.generator.structure.TemplateDeclaration" id="738757997633697074">
+    <property name="name" value="reduce_AssignmentStatementSafeInt16" />
+    <property name="package" value="statements" />
+    <link role="applicableConcept" targetNodeId="1.1881584577103641506" resolveInfo="AssignmentStatement" />
+    <node role="contentNode" type="med.core.structure.ImplementationModule" id="738757997633697075">
+      <property name="name" value="m" />
+      <node role="contents" type="med.core.structure.Procedure" id="738757997633697076">
+        <property name="name" value="x" />
+        <node role="body" type="med.core.structure.StatementList" id="738757997633697077">
+          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="738757997633697078">
+            <property name="name" value="x" />
+            <node role="type" type="med.core.structure.GenericIntegerType" id="738757997633697079" />
+          </node>
+          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="738757997633697080">
+            <property name="name" value="y" />
+            <node role="type" type="med.core.structure.Int16" id="738757997633697081" />
+          </node>
+          <node role="statements" type="med.core.structure.AssignmentStatement" id="738757997633697082">
+            <node role="lvalue" type="med.core.structure.LocalVariableReference" id="738757997633697083">
+              <link role="variable" targetNodeId="738757997633697078" resolveInfo="x" />
+              <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" id="738757997633697084">
+                <node role="sourceNodeQuery" type="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" id="738757997633697085">
+                  <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997633697086">
+                    <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997633697087">
+                      <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997633697088">
+                        <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="738757997633697089">
+                          <link role="link" targetNodeId="1.4271434180066374711" />
+                        </node>
+                        <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="738757997633697090" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="rvalue" type="med.core.structure.ProcedureCall" id="738757997633697091">
+              <link role="procedure" targetNodeId="3v.738757997633404243" resolveInfo="isValidInt16" />
+              <node role="actuals" type="med.core.structure.LocalVariableReference" id="738757997633697092">
+                <link role="variable" targetNodeId="738757997633697080" resolveInfo="y" />
+                <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" id="738757997633697093">
+                  <node role="sourceNodeQuery" type="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" id="738757997633697094">
+                    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997633697095">
+                      <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997633697096">
+                        <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997633697097">
+                          <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="738757997633697098">
+                            <link role="link" targetNodeId="1.1881584577103641522" />
+                          </node>
+                          <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="738757997633697099" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node role="moduleDependencyAnnotation$attribute" type="med.core.structure.ModuleDependency" id="738757997633697100">
+                <node role="import" type="med.core.structure.ModuleImport" id="738757997633697101">
+                  <link role="importedModule" targetNodeId="3v.738757997633403729" resolveInfo="SafeUtil" />
+                </node>
+              </node>
+              <node role="tag$attribute" type="med.core.structure.Tag" id="738757997635257518">
+                <property name="name" value="default" />
+              </node>
+            </node>
+            <node role="templateFragment$attribute" type="jetbrains.mps.lang.generator.structure.TemplateFragment" id="738757997633697102" />
+          </node>
+        </node>
+        <node role="type" type="med.core.structure.Type" id="738757997633697103" />
+      </node>
+      <node role="imports" type="med.core.structure.ModuleImport" id="738757997633697104">
+        <link role="importedModule" targetNodeId="3v.738757997633403729" resolveInfo="SafeUtil" />
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.generator.structure.MappingConfiguration" id="738757997634179630">
+    <property name="package" value="statements" />
+    <property name="name" value="statements_highPrio" />
+    <property name="topPriorityGroup" value="true" />
+    <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="738757997634179631">
+      <link role="applicableConcept" targetNodeId="1.1881584577103641506" resolveInfo="AssignmentStatement" />
+      <node role="conditionFunction" type="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" id="738757997634179632">
+        <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997634179633">
+          <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997634179634">
+            <node role="expression" type="jetbrains.mps.baseLanguage.structure.AndExpression" id="738757997635257519">
+              <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997635259713">
+                <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997635259706">
+                  <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997635259701">
+                    <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="738757997635259700" />
+                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="738757997635259705">
+                      <link role="link" targetNodeId="1.1881584577103641522" />
+                    </node>
+                  </node>
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.AttributeAccessOperation" id="738757997635259710">
+                    <node role="attributeQualifier" type="jetbrains.mps.lang.smodel.structure.NodeAttributeAccessQualifier" id="738757997635259712">
+                      <link role="annotationLink" targetNodeId="1.738757997634744214" resolveInfo="tag" />
+                    </node>
+                  </node>
+                </node>
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" id="738757997635259717" />
+              </node>
+              <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.AndExpression" id="738757997634179635">
+                <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997634179644">
+                  <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997634179645">
+                    <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="738757997634179646" />
+                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" id="738757997634179647">
+                      <node role="parameter" type="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" id="738757997634179648">
+                        <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="738757997634179649">
+                          <link role="conceptDeclaration" targetNodeId="1.306587673255505547" resolveInfo="ImplementationModule" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="738757997634179650">
+                    <link role="property" targetNodeId="1.738757997633257011" resolveInfo="safe" />
+                  </node>
+                </node>
+                <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997634179636">
+                  <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997634179637">
+                    <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997634179638">
+                      <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="738757997634179639" />
+                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="738757997634179640">
+                        <link role="link" targetNodeId="1.4271434180066374711" />
+                      </node>
+                    </node>
+                    <node role="operation" type="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" id="738757997634179641" />
+                  </node>
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" id="738757997634179642">
+                    <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="738757997634179643">
+                      <link role="conceptDeclaration" targetNodeId="1.3454436015653030758" resolveInfo="Int8" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" id="738757997634179651">
+        <link role="template" targetNodeId="738757997633697017" resolveInfo="reduce_AssignmentStatementSafeInt8" />
+      </node>
+    </node>
+    <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="738757997634179652">
+      <link role="applicableConcept" targetNodeId="1.1881584577103641506" resolveInfo="AssignmentStatement" />
+      <node role="conditionFunction" type="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" id="738757997634179653">
+        <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997634179654">
+          <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997634179655">
+            <node role="expression" type="jetbrains.mps.baseLanguage.structure.AndExpression" id="738757997635259718">
+              <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.AndExpression" id="738757997634179656">
+                <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997634179665">
+                  <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997634179666">
+                    <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="738757997634179667" />
+                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" id="738757997634179668">
+                      <node role="parameter" type="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" id="738757997634179669">
+                        <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="738757997634179670">
+                          <link role="conceptDeclaration" targetNodeId="1.306587673255505547" resolveInfo="ImplementationModule" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="738757997634179671">
+                    <link role="property" targetNodeId="1.738757997633257011" resolveInfo="safe" />
+                  </node>
+                </node>
+                <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997634179657">
+                  <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997634179658">
+                    <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997634179659">
+                      <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="738757997634179660" />
+                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="738757997634179661">
+                        <link role="link" targetNodeId="1.4271434180066374711" />
+                      </node>
+                    </node>
+                    <node role="operation" type="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" id="738757997634179662" />
+                  </node>
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" id="738757997634179663">
+                    <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="738757997634179664">
+                      <link role="conceptDeclaration" targetNodeId="1.3454436015653030752" resolveInfo="Int16" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997635259721">
+                <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997635259722">
+                  <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997635259723">
+                    <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="738757997635259724" />
+                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="738757997635259725">
+                      <link role="link" targetNodeId="1.1881584577103641522" />
+                    </node>
+                  </node>
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.AttributeAccessOperation" id="738757997635259726">
+                    <node role="attributeQualifier" type="jetbrains.mps.lang.smodel.structure.NodeAttributeAccessQualifier" id="738757997635259727">
+                      <link role="annotationLink" targetNodeId="1.738757997634744214" resolveInfo="tag" />
+                    </node>
+                  </node>
+                </node>
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" id="738757997635259728" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" id="738757997634179672">
+        <link role="template" targetNodeId="738757997633697074" resolveInfo="reduce_AssignmentStatementSafeInt16" />
+      </node>
+    </node>
+    <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="738757997634179673">
+      <link role="applicableConcept" targetNodeId="1.1881584577103641506" resolveInfo="AssignmentStatement" />
+      <node role="conditionFunction" type="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" id="738757997634179674">
+        <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997634179675">
+          <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997634179676">
+            <node role="expression" type="jetbrains.mps.baseLanguage.structure.AndExpression" id="738757997635259729">
+              <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.AndExpression" id="738757997634179677">
+                <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997634179686">
+                  <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997634179687">
+                    <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="738757997634179688" />
+                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" id="738757997634179689">
+                      <node role="parameter" type="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" id="738757997634179690">
+                        <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="738757997634179691">
+                          <link role="conceptDeclaration" targetNodeId="1.306587673255505547" resolveInfo="ImplementationModule" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="738757997634179692">
+                    <link role="property" targetNodeId="1.738757997633257011" resolveInfo="safe" />
+                  </node>
+                </node>
+                <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997634179678">
+                  <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997634179679">
+                    <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997634179680">
+                      <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="738757997634179681" />
+                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="738757997634179682">
+                        <link role="link" targetNodeId="1.4271434180066374711" />
+                      </node>
+                    </node>
+                    <node role="operation" type="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" id="738757997634179683" />
+                  </node>
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" id="738757997634179684">
+                    <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="738757997634179685">
+                      <link role="conceptDeclaration" targetNodeId="1.3454436015653030754" resolveInfo="Int32" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997635259732">
+                <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997635259733">
+                  <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997635259734">
+                    <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="738757997635259735" />
+                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="738757997635259736">
+                      <link role="link" targetNodeId="1.1881584577103641522" />
+                    </node>
+                  </node>
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.AttributeAccessOperation" id="738757997635259737">
+                    <node role="attributeQualifier" type="jetbrains.mps.lang.smodel.structure.NodeAttributeAccessQualifier" id="738757997635259738">
+                      <link role="annotationLink" targetNodeId="1.738757997634744214" resolveInfo="tag" />
+                    </node>
+                  </node>
+                </node>
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" id="738757997635259739" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" id="738757997634179693">
+        <link role="template" targetNodeId="738757997633404310" resolveInfo="reduce_AssignmentStatementSafeInt32" />
+      </node>
+    </node>
   </node>
 </model>
 

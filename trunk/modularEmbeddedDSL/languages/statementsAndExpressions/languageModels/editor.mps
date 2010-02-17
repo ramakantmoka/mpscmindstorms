@@ -1419,6 +1419,24 @@
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="306587673255505569">
         <link role="relationDeclaration" targetNodeId="2v.1169194664001" resolveInfo="name" />
       </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="738757997633263457">
+        <property name="text" value="safe" />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" id="738757997633263481">
+          <property name="color" value="red" />
+        </node>
+        <node role="renderingCondition" type="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" id="738757997633263482">
+          <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997633263483">
+            <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997633356252">
+              <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997633356254">
+                <node role="operand" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="738757997633356253" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="738757997633356258">
+                  <link role="property" targetNodeId="1.738757997633257011" resolveInfo="safe" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="306587673255505570">
         <property name="text" value="imports" />
       </node>
@@ -3055,6 +3073,41 @@
       <node role="styleItem" type="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" id="6790227271038579455">
         <property name="style" value="ITALIC" />
       </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="738757997634784757">
+    <property name="package" value="util" />
+    <link role="conceptDeclaration" targetNodeId="1.738757997634744215" resolveInfo="Tag" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="738757997634784759">
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="738757997634784762">
+        <property name="text" value="[" />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" id="738757997634784769">
+          <property name="flag" value="true" />
+        </node>
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" id="738757997634992781">
+          <property name="color" value="gray" />
+        </node>
+      </node>
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="738757997634784761" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="738757997634784766">
+        <link role="relationDeclaration" targetNodeId="1.738757997634784756" resolveInfo="name" />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" id="738757997634992782">
+          <property name="color" value="gray" />
+        </node>
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="738757997634784764">
+        <property name="text" value="]" />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" id="738757997634784770">
+          <property name="flag" value="true" />
+        </node>
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" id="738757997634784772">
+          <property name="flag" value="true" />
+        </node>
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" id="738757997634992784">
+          <property name="color" value="gray" />
+        </node>
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" id="738757997634784776" />
     </node>
   </node>
 </model>

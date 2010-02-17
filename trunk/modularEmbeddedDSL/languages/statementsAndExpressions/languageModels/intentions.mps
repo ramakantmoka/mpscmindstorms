@@ -33,6 +33,8 @@
   <languageAspect modelUID="r:9f9959ae-ed4b-4339-a71e-62a180fa22ec(med.base.structure)" version="2" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590575(jetbrains.mps.gtext.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590571(jetbrains.mps.gtext.constraints)" version="8" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590298(jetbrains.mps.lang.editor.constraints)" version="21" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" version="32" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="2" />
   <import index="1" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" version="9" />
@@ -395,6 +397,71 @@
                 <link role="property" targetNodeId="1.6254144863185758128" resolveInfo="static" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" id="738757997633356259">
+    <property name="name" value="makeModuleSafe" />
+    <link role="forConcept" targetNodeId="1.306587673255505547" resolveInfo="ImplementationModule" />
+    <node role="descriptionFunction" type="jetbrains.mps.lang.intentions.structure.DescriptionBlock" id="738757997633356260">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997633356261">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997633356264">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="738757997633356265">
+            <property name="value" value="toggle safe" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="executeFunction" type="jetbrains.mps.lang.intentions.structure.ExecuteBlock" id="738757997633356262">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997633356263">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997633356267">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.AssignmentExpression" id="738757997633356274">
+            <node role="rValue" type="jetbrains.mps.baseLanguage.structure.NotExpression" id="738757997633356277">
+              <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997633356280">
+                <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="738757997633356279" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="738757997635512363">
+                  <link role="property" targetNodeId="1.738757997633257011" resolveInfo="safe" />
+                </node>
+              </node>
+            </node>
+            <node role="lValue" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997633356269">
+              <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="738757997633356268" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="738757997633356273">
+                <link role="property" targetNodeId="1.738757997633257011" resolveInfo="safe" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" id="738757997634744216">
+    <property name="name" value="addTag" />
+    <link role="forConcept" targetNodeId="1.3577454086729990666" resolveInfo="MedBase" />
+    <node role="descriptionFunction" type="jetbrains.mps.lang.intentions.structure.DescriptionBlock" id="738757997634744217">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997634744218">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997634744221">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="738757997634744222">
+            <property name="value" value="add Tag" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="executeFunction" type="jetbrains.mps.lang.intentions.structure.ExecuteBlock" id="738757997634744219">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997634744220">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997634744223">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997634744232">
+            <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997634744225">
+              <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="738757997634744224" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.AttributeAccessOperation" id="738757997634744229">
+                <node role="attributeQualifier" type="jetbrains.mps.lang.smodel.structure.NodeAttributeAccessQualifier" id="738757997634744231">
+                  <link role="annotationLink" targetNodeId="1.738757997634744214" resolveInfo="tag" />
+                </node>
+              </node>
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" id="738757997634744239" />
           </node>
         </node>
       </node>

@@ -1132,6 +1132,10 @@
     <property name="rootable" value="false" />
     <property name="package" value="modules" />
     <link role="extends" targetNodeId="3454436015649667981" resolveInfo="Module" />
+    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="738757997633257011">
+      <property name="name" value="safe" />
+      <link role="dataType" targetNodeId="2v.1082983657063" resolveInfo="boolean" />
+    </node>
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="306587673255505550">
       <property name="metaClass" value="aggregation" />
       <property name="sourceCardinality" value="0..n" />
@@ -1860,6 +1864,21 @@
     <property name="package" value="doc" />
     <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="5288422977871838033">
       <property name="name" value="text" />
+      <link role="dataType" targetNodeId="2v.1082983041843" resolveInfo="string" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.AnnotationLinkDeclaration" id="738757997634744214">
+    <property name="role" value="tag" />
+    <property name="package" value="util" />
+    <link role="source" targetNodeId="3577454086729990666" resolveInfo="MedBase" />
+    <link role="target" targetNodeId="738757997634744215" resolveInfo="Tag" />
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="738757997634744215">
+    <property name="package" value="util" />
+    <property name="name" value="Tag" />
+    <link role="extends" targetNodeId="3577454086729990666" resolveInfo="MedBase" />
+    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="738757997634784756">
+      <property name="name" value="name" />
       <link role="dataType" targetNodeId="2v.1082983041843" resolveInfo="string" />
     </node>
   </node>

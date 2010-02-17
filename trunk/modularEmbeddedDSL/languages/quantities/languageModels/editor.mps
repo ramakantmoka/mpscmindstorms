@@ -192,37 +192,6 @@
       </node>
     </node>
   </node>
-  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="8017791897009139602">
-    <property name="package" value="average" />
-    <link role="conceptDeclaration" targetNodeId="1.8017791897009139598" resolveInfo="AveragingInit" />
-    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="8017791897009139604">
-      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="8017791897009139607">
-        <property name="text" value="all" />
-        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" id="8017791897009139614">
-          <property name="flag" value="true" />
-        </node>
-      </node>
-      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="8017791897009139606" />
-      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="8017791897009139609">
-        <property name="text" value="(" />
-        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" id="8017791897009139615">
-          <property name="flag" value="true" />
-        </node>
-        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" id="8017791897009139617">
-          <property name="flag" value="true" />
-        </node>
-      </node>
-      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="8017791897009139613">
-        <link role="relationDeclaration" targetNodeId="1.8017791897009139600" />
-      </node>
-      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="8017791897009139611">
-        <property name="text" value=")" />
-        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" id="8017791897009139618">
-          <property name="flag" value="true" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="8017791897009806159">
     <property name="package" value="average" />
     <link role="conceptDeclaration" targetNodeId="1.8017791897009806155" resolveInfo="AveragingAssignmentStatement" />

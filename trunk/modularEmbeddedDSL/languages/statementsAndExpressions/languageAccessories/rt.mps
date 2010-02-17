@@ -4,6 +4,7 @@
   <refactoringHistory />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <language namespace="28f9e497-3b42-4291-aeba-0a1039153ab1(jetbrains.mps.lang.plugin)" />
+  <language namespace="3a8b8671-1532-4e8f-b780-594a27fa10c8(med.core)" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.lang.core.constraints)" version="2" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590575(jetbrains.mps.gtext.structure)" version="0" />
   <languageAspect modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" version="9" />
@@ -821,6 +822,55 @@
       <node role="parameter" type="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" id="3426893568457129591">
         <property name="name" value="initialText" />
         <node role="type" type="jetbrains.mps.baseLanguage.structure.StringType" id="3426893568457129592" />
+      </node>
+    </node>
+  </node>
+  <node type="med.core.structure.Resource" id="738757997633403725">
+    <property name="name" value="SafeUtil" />
+    <node role="projectionLevels" type="med.core.structure.ProjectionLevelAll" id="738757997633403726" />
+    <node role="projectionLevels" type="med.core.structure.ProjectionLevelOutline" id="738757997633403727" />
+    <node role="projectionLevels" type="med.core.structure.ProjectionLevelArchitecture" id="738757997633403728" />
+    <node role="modules" type="med.core.structure.ExternalModule" id="738757997633403729">
+      <property name="name" value="SafeUtil" />
+      <property name="existingHeaderFile" value="safeutil" />
+      <node role="procedures" type="med.core.structure.ExternalProcedure" id="738757997633403731">
+        <property name="name" value="isValidInt8" />
+        <property name="export" value="true" />
+        <node role="type" type="med.core.structure.Int8" id="738757997633404240" />
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="738757997633404241">
+          <property name="name" value="value" />
+          <node role="type" type="med.core.structure.Int64" id="738757997633404242" />
+        </node>
+      </node>
+      <node role="procedures" type="med.core.structure.ExternalProcedure" id="738757997633404243">
+        <property name="name" value="isValidInt16" />
+        <property name="export" value="true" />
+        <node role="type" type="med.core.structure.Int16" id="738757997633404255" />
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="738757997633404245">
+          <property name="name" value="value" />
+          <node role="type" type="med.core.structure.Int64" id="738757997633404246" />
+        </node>
+      </node>
+      <node role="procedures" type="med.core.structure.ExternalProcedure" id="738757997633404247">
+        <property name="name" value="isValidInt32" />
+        <property name="export" value="true" />
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="738757997633404249">
+          <property name="name" value="value" />
+          <node role="type" type="med.core.structure.Int64" id="738757997633404250" />
+        </node>
+        <node role="type" type="med.core.structure.Int32" id="738757997633404256" />
+      </node>
+      <node role="procedures" type="med.core.structure.ExternalProcedure" id="738757997633404251">
+        <property name="name" value="isValidInt64" />
+        <property name="export" value="true" />
+        <node role="type" type="med.core.structure.Int64" id="738757997633404257" />
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="738757997633404253">
+          <property name="name" value="value" />
+          <node role="type" type="med.core.structure.Int64" id="738757997633404254" />
+        </node>
+      </node>
+      <node role="linkedResource" type="med.core.structure.LinkedResource" id="738757997633403730">
+        <property name="filename" value="safeutil.c" />
       </node>
     </node>
   </node>
