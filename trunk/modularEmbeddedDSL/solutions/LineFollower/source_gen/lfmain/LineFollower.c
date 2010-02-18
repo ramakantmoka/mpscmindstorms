@@ -19,7 +19,6 @@
 #include "kernel.h"
 #include "kernel_id.h"
 #include "stdint.h"
-#include "stdint.h"
 
 int LineFollower_main_currentSonar = 250;
 int LineFollower_main_linefollower_currentstate = STATE_INITIALIZING;

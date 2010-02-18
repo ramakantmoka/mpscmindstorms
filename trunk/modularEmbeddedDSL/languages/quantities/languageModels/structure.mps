@@ -65,6 +65,10 @@
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="3456749490051670919">
       <link role="intfc" targetNodeId="3v.343373828472902636" resolveInfo="IHasIdentifierName" />
     </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="738757997635612460">
+      <property name="value" value="quantity" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="3456749490051894748">
     <property name="name" value="QuantityType" />

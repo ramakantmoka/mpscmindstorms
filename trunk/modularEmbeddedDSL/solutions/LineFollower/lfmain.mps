@@ -26,24 +26,8 @@
     <property name="name" value="LineFollower" />
     <node role="modules" type="med.core.structure.ImplementationModule" id="5196379128660651513">
       <property name="name" value="main" />
-      <property name="text" value="föflkölfksaöfsdöfkdsaf" />
+      <property name="text" value="This module represents the code for the line follower lego robot. It has a couple of tasks, procedures and variables." />
       <property name="safe" value="true" />
-      <node role="contents" type="med.core.structure.ModuleVariable" id="5019031344946487728">
-        <property name="name" value="currentSonar" />
-        <node role="type" type="med.quantities.structure.AveragingType" id="5019031344946487729">
-          <property name="size" value="10" />
-          <node role="baseType" type="med.core.structure.GenericIntegerType" id="5019031344946487730" />
-        </node>
-        <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="9024796767935157096">
-          <property name="isNew" value="true" />
-          <node role="expression" type="featureDependencies.structure.AtomicFE" id="9024796767935157099">
-            <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
-          </node>
-        </node>
-        <node role="init" type="med.core.structure.IntConstantExpression" id="3454409893515541322">
-          <property name="value" value="250" />
-        </node>
-      </node>
       <node role="contents" type="med.core.structure.SimpleIntConstant" id="5196379128666214925">
         <property name="name" value="WHITE" />
         <property name="value" value="500" />
@@ -69,6 +53,22 @@
       <node role="contents" type="med.core.structure.SimpleIntConstant" id="5196379128666214943">
         <property name="name" value="FAST" />
         <property name="value" value="40" />
+      </node>
+      <node role="contents" type="med.core.structure.ModuleVariable" id="5019031344946487728">
+        <property name="name" value="currentSonar" />
+        <node role="type" type="med.quantities.structure.AveragingType" id="5019031344946487729">
+          <property name="size" value="10" />
+          <node role="baseType" type="med.core.structure.GenericIntegerType" id="5019031344946487730" />
+        </node>
+        <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="9024796767935157096">
+          <property name="isNew" value="true" />
+          <node role="expression" type="featureDependencies.structure.AtomicFE" id="9024796767935157099">
+            <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
+          </node>
+        </node>
+        <node role="init" type="med.core.structure.IntConstantExpression" id="3454409893515541322">
+          <property name="value" value="250" />
+        </node>
       </node>
       <node role="contents" type="med.statemachine.structure.Statemachine" id="6790227271038808735">
         <property name="name" value="linefollower" />
