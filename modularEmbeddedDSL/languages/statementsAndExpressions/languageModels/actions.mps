@@ -1696,5 +1696,49 @@
       </node>
     </node>
   </node>
+  <node type="jetbrains.mps.lang.actions.structure.NodeFactories" id="738757997636479057">
+    <property name="name" value="createProcedureCall" />
+    <node role="nodeFactory" type="jetbrains.mps.lang.actions.structure.NodeFactory" id="738757997636479058">
+      <link role="applicableConcept" targetNodeId="2v.2005811434196936510" resolveInfo="ProcedureCall" />
+      <node role="setupFunction" type="jetbrains.mps.lang.actions.structure.NodeSetupFunction" id="738757997636479059">
+        <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997636479060">
+          <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="738757997636479061">
+            <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997636479063">
+              <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997636479089">
+                <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997636479096">
+                  <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997636479091">
+                    <node role="operand" type="jetbrains.mps.lang.actions.structure.NodeSetupFunction_NewNode" id="738757997636479090" />
+                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkListAccess" id="738757997636479095">
+                      <link role="link" targetNodeId="2v.2005811434196936512" />
+                    </node>
+                  </node>
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" id="738757997636479100" />
+                </node>
+              </node>
+            </node>
+            <node role="condition" type="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" id="738757997636479085">
+              <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="738757997636479088">
+                <property name="value" value="0" />
+              </node>
+              <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997636479080">
+                <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997636479075">
+                  <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997636479070">
+                    <node role="operand" type="jetbrains.mps.lang.actions.structure.NodeSetupFunction_NewNode" id="738757997636479069" />
+                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="738757997636479074">
+                      <link role="link" targetNodeId="2v.2005811434196936511" />
+                    </node>
+                  </node>
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkListAccess" id="738757997636479079">
+                    <link role="link" targetNodeId="2v.306587673256793453" />
+                  </node>
+                </node>
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.LinkList_GetCountOperation" id="738757997636479084" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

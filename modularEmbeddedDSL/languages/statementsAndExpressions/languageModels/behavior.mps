@@ -710,7 +710,21 @@
     <property name="package" value="procedures" />
     <link role="concept" targetNodeId="1.2005811434196936441" resolveInfo="Procedure" />
     <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="8772584333841904476">
-      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8772584333841904477" />
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8772584333841904477">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997635751555">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997635751562">
+            <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997635751557">
+              <node role="operand" type="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" id="738757997635751556" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="738757997635751561">
+                <link role="link" targetNodeId="1.306587673256793454" />
+              </node>
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" id="738757997635751569">
+              <link role="concept" targetNodeId="1.4641466063286471917" resolveInfo="VoidType" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node role="method" type="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" id="8772584333841904478">
       <property name="name" value="getHeaderContent" />

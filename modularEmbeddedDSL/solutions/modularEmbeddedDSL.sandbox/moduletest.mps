@@ -8,6 +8,7 @@
   <language namespace="383209c5-49eb-4560-9027-f906632589d6(med.unittest)" />
   <language namespace="50b44c57-34f1-428d-a7c3-d100606f8e2a(featureDependencies)" />
   <language namespace="fa27d492-bc16-4e00-86c3-966c2cebd871(med.quantities)" />
+  <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.lang.core.constraints)" version="2" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
   <languageAspect modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" version="9" />
@@ -166,7 +167,9 @@
             <link role="test" targetNodeId="306587673256693154" resolveInfo="testAdding" />
           </node>
         </node>
-        <node role="scheduling" type="med.tasks.structure.SchedulingPolicyOnceUponStartup" id="306587673256693181" />
+        <node role="scheduling" type="med.tasks.structure.SchedulingPolicyOnceUponStartup" id="306587673256693181">
+          <property name="priority" value="1" />
+        </node>
       </node>
       <node role="imports" type="med.core.structure.ModuleImport" id="306587673260153285">
         <link role="importedModule" targetNodeId="306587673258977575" resolveInfo="util" />
@@ -384,7 +387,9 @@
             <link role="test" targetNodeId="8937796720370296654" resolveInfo="addingPhysicalANdInternal" />
           </node>
         </node>
-        <node role="scheduling" type="med.tasks.structure.SchedulingPolicyOnceUponStartup" id="8937796720370088505" />
+        <node role="scheduling" type="med.tasks.structure.SchedulingPolicyOnceUponStartup" id="8937796720370088505">
+          <property name="priority" value="1" />
+        </node>
       </node>
     </node>
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelAll" id="8937796720370088426" />
@@ -935,7 +940,9 @@
             <link role="test" targetNodeId="1532320234890803348" resolveInfo="createArrays" />
           </node>
         </node>
-        <node role="scheduling" type="med.tasks.structure.SchedulingPolicyOnceUponStartup" id="1532320234891567090" />
+        <node role="scheduling" type="med.tasks.structure.SchedulingPolicyOnceUponStartup" id="1532320234891567090">
+          <property name="priority" value="1" />
+        </node>
       </node>
     </node>
   </node>
@@ -1121,7 +1128,9 @@
             <link role="test" targetNodeId="165111250875398262" resolveInfo="staticstuff" />
           </node>
         </node>
-        <node role="scheduling" type="med.tasks.structure.SchedulingPolicyOnceUponStartup" id="165111250876588450" />
+        <node role="scheduling" type="med.tasks.structure.SchedulingPolicyOnceUponStartup" id="165111250876588450">
+          <property name="priority" value="1" />
+        </node>
       </node>
     </node>
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelAll" id="165111250875398226" />

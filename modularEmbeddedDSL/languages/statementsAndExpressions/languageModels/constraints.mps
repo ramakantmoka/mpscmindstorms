@@ -574,5 +574,29 @@
       </node>
     </node>
   </node>
+  <node type="jetbrains.mps.lang.constraints.structure.ConceptConstraints" id="738757997635612467">
+    <property name="package" value="external" />
+    <link role="concept" targetNodeId="1.7647825645222801538" resolveInfo="ExternalProcedure" />
+    <node role="canBeChild" type="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" id="738757997635612468">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997635612469">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997635612470">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997635612483">
+            <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="738757997635612472">
+              <node role="operand" type="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" id="738757997635612471" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" id="738757997635612476">
+                <node role="parameter" type="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" id="738757997635612477">
+                  <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="738757997635612480">
+                    <link role="conceptDeclaration" targetNodeId="1.7647825645222690255" resolveInfo="ExternalModule" />
+                  </node>
+                </node>
+                <node role="parameter" type="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" id="738757997635612482" />
+              </node>
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" id="738757997635612487" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

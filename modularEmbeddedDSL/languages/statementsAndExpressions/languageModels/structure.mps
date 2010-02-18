@@ -970,6 +970,10 @@
       <property name="sourceCardinality" value="1" />
       <link role="target" targetNodeId="6520964804316559124" resolveInfo="StatementList" />
     </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="738757997635612461">
+      <property name="value" value="procedure" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2005811434196936510">
     <property name="name" value="ProcedureCall" />
@@ -1751,6 +1755,10 @@
     <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="5196379128665751227">
       <property name="name" value="value" />
       <link role="dataType" targetNodeId="2v.1082983657062" resolveInfo="integer" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="738757997635612463">
+      <property name="value" value="intconstant" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5196379128666124078">
