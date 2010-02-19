@@ -130,13 +130,13 @@
     </node>
   </node>
   <node type="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" id="306587673259384567">
-    <property name="name" value="makeExported" />
+    <property name="name" value="toggleExported" />
     <link role="forConcept" targetNodeId="1.306587673255505535" resolveInfo="IExportableModuleContent" />
     <node role="descriptionFunction" type="jetbrains.mps.lang.intentions.structure.DescriptionBlock" id="306587673259384568">
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="306587673259384569">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="306587673259384572">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="306587673259384573">
-            <property name="value" value="export" />
+            <property name="value" value="toggle export" />
           </node>
         </node>
       </node>
@@ -145,13 +145,18 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="306587673259384571">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="306587673259384587">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.AssignmentExpression" id="306587673259485098">
-            <node role="rValue" type="jetbrains.mps.baseLanguage.structure.BooleanConstant" id="306587673259485101">
-              <property name="value" value="true" />
-            </node>
             <node role="lValue" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="306587673259485093">
               <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="306587673259384588" />
               <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="306587673259485097">
                 <link role="property" targetNodeId="1.306587673255505537" resolveInfo="export" />
+              </node>
+            </node>
+            <node role="rValue" type="jetbrains.mps.baseLanguage.structure.NotExpression" id="5223430962847236731">
+              <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5223430962847236734">
+                <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="5223430962847236733" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="5223430962847236738">
+                  <link role="property" targetNodeId="1.306587673255505537" resolveInfo="export" />
+                </node>
               </node>
             </node>
           </node>
