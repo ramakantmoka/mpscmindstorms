@@ -27,7 +27,7 @@
     <node role="modules" type="med.core.structure.ImplementationModule" id="5196379128660651513">
       <property name="name" value="main" />
       <property name="text" value="This module represents the code for the line follower lego robot. It has a couple of tasks, procedures and variables." />
-      <property name="safe" value="true" />
+      <property name="safe" value="false" />
       <node role="contents" type="med.core.structure.SimpleIntConstant" id="5196379128666214925">
         <property name="name" value="WHITE" />
         <property name="value" value="500" />
@@ -61,7 +61,7 @@
           <node role="baseType" type="med.core.structure.GenericIntegerType" id="5019031344946487730" />
         </node>
         <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="9024796767935157096">
-          <property name="isNew" value="true" />
+          <property name="isNew" value="false" />
           <node role="expression" type="featureDependencies.structure.AtomicFE" id="9024796767935157099">
             <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
           </node>
@@ -280,7 +280,7 @@
               </node>
             </node>
             <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="3454409893515280783">
-              <property name="isNew" value="true" />
+              <property name="isNew" value="false" />
               <node role="expression" type="featureDependencies.structure.AtomicFE" id="3454409893515280786">
                 <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
               </node>
@@ -334,7 +334,7 @@
                     </node>
                   </node>
                   <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="738757997633731013">
-                    <property name="isNew" value="true" />
+                    <property name="isNew" value="false" />
                     <node role="expression" type="featureDependencies.structure.AtomicFE" id="738757997633731015">
                       <link role="feature" targetNodeId="7680622939174614997" resolveInfo="bumper" />
                     </node>
@@ -397,8 +397,13 @@
                   </node>
                   <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6821937377367976878">
                     <property name="isNew" value="false" />
-                    <node role="expression" type="featureDependencies.structure.AtomicFE" id="6821937377367976880">
-                      <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
+                    <node role="expression" type="featureDependencies.structure.AndFE" id="7698012287010204963">
+                      <node role="right" type="featureDependencies.structure.AtomicFE" id="7698012287010204966">
+                        <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
+                      </node>
+                      <node role="left" type="featureDependencies.structure.AtomicFE" id="6821937377367976880">
+                        <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
+                      </node>
                     </node>
                   </node>
                   <node role="condition" type="med.core.structure.SmallerExpression" id="3260472080518430555">
@@ -895,20 +900,20 @@
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelOutline" id="7530832320798597060" />
   </node>
   <node type="featureDependencies.structure.FeatureDependencyConfiguration" id="5196379128662641904">
-    <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="7530832320797129439">
+    <node role="mode" type="featureDependencies.structure.VariantDisplayMode" id="7698012287010204967">
+      <property name="removeNonSelectedStuffInEditor" value="true" />
       <property name="showFeatureClause" value="true" />
-      <property name="highlightFeatureDependentNodes" value="false" />
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="7680622939174614995">
       <property name="name" value="runtimeCalibration" />
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="7680622939174614997">
       <property name="name" value="bumper" />
-      <property name="selected" value="false" />
+      <property name="selected" value="true" />
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="5296414764970271815">
       <property name="name" value="sonar" />
-      <property name="selected" value="true" />
+      <property name="selected" value="false" />
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="5196379128662641907">
       <property name="name" value="debugOutput" />
