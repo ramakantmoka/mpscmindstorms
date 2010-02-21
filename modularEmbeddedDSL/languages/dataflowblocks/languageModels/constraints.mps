@@ -31,6 +31,7 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902fb(jetbrains.mps.lang.smodel.constraints)" version="21" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" />
   <languageAspect modelUID="r:6ce2a434-7d4f-440d-b3ed-5914b43add94(med.dataflowblocks.structure)" version="3" />
+  <languageAspect modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" version="9" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="2" />
   <import index="1" modelUID="r:6ce2a434-7d4f-440d-b3ed-5914b43add94(med.dataflowblocks.structure)" version="3" />
@@ -183,38 +184,9 @@
     <property name="package" value="test" />
     <link role="concept" targetNodeId="1.5223430962843659461" resolveInfo="Split" />
   </node>
-  <visible index="3" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
   <node type="jetbrains.mps.lang.constraints.structure.ConceptConstraints" id="5223430962846334514">
     <property name="package" value="test" />
     <link role="concept" targetNodeId="1.6310580604567730494" resolveInfo="PortType" />
-    <node role="referent" type="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" id="5223430962846334515">
-      <link role="applicableLink" targetNodeId="1.5223430962844072034" />
-      <node role="searchScopeFactory" type="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Factory" id="5223430962846334516">
-        <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5223430962846334517">
-          <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="5223430962846358423">
-            <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5223430962846358436">
-              <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5223430962846358425">
-                <node role="operand" type="jetbrains.mps.lang.constraints.structure.ConceptParameter_ReferentSearchScope_enclosingNode" id="5223430962846358424" />
-                <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" id="5223430962846358429">
-                  <node role="parameter" type="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" id="5223430962846358430">
-                    <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="5223430962846358433">
-                      <link role="conceptDeclaration" targetNodeId="3v.306587673255505547" resolveInfo="ImplementationModule" />
-                    </node>
-                  </node>
-                  <node role="parameter" type="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" id="5223430962846358435" />
-                </node>
-              </node>
-              <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="5223430962846358440">
-                <link role="baseMethodDeclaration" targetNodeId="2.7301321101283468502" resolveInfo="visibleInstancesOfType" />
-                <node role="actualArgument" type="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" id="5223430962846428783">
-                  <link role="conceptDeclaration" targetNodeId="3v.4641466063286591366" resolveInfo="Type" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node type="jetbrains.mps.lang.constraints.structure.ConceptConstraints" id="5223430962847642647">
     <property name="package" value="test" />
