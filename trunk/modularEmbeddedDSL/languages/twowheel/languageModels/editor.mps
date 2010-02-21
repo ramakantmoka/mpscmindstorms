@@ -174,9 +174,39 @@
         </node>
         <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="6177678091395682521">
           <property name="text" value="on bump" />
+          <node role="renderingCondition" type="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" id="2644792117219870825">
+            <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="2644792117219870826">
+              <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="2644792117219870827">
+                <node role="expression" type="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" id="2644792117219870834">
+                  <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.NullLiteral" id="2644792117219870837" />
+                  <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="2644792117219870829">
+                    <node role="operand" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="2644792117219870828" />
+                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="2644792117219870833">
+                      <link role="link" targetNodeId="1.6177678091395682519" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="6177678091395682523">
           <link role="relationDeclaration" targetNodeId="1.6177678091395682519" />
+          <node role="renderingCondition" type="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" id="2644792117219870838">
+            <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="2644792117219870839">
+              <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="2644792117219870840">
+                <node role="expression" type="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" id="2644792117219870847">
+                  <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.NullLiteral" id="2644792117219870850" />
+                  <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="2644792117219870842">
+                    <node role="operand" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="2644792117219870841" />
+                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="2644792117219870846">
+                      <link role="link" targetNodeId="1.6177678091395682519" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" id="6177678091393977990" />

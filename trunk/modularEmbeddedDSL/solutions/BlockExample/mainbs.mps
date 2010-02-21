@@ -7,6 +7,12 @@
   <languageAspect modelUID="r:6ce2a434-7d4f-440d-b3ed-5914b43add94(med.dataflowblocks.structure)" version="3" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.lang.core.constraints)" version="2" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590575(jetbrains.mps.gtext.structure)" version="0" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" />
+  <languageAspect modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" version="9" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902c1(jetbrains.mps.baseLanguage.constraints)" version="83" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902db(jetbrains.mps.baseLanguage.blTypes.constraints)" version="0" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590571(jetbrains.mps.gtext.constraints)" version="8" />
   <maxImportIndex value="0" />
   <node type="med.core.structure.Resource" id="5223430962846308817">
     <property name="name" value="BlockTest" />
@@ -35,6 +41,12 @@
           </node>
         </node>
         <node role="body" type="med.core.structure.StatementList" id="5223430962846758819" />
+        <node role="inports" type="med.dataflowblocks.structure.PortType" id="8430512334776369828">
+          <property name="name" value="comp" />
+          <node role="type" type="med.core.structure.StructType" id="8430512334776369830">
+            <link role="struct" targetNodeId="5223430962846308832" resolveInfo="Speed" />
+          </node>
+        </node>
       </node>
       <node role="contents" type="med.dataflowblocks.structure.BlockType" id="5223430962846308826">
         <property name="name" value="SpeedCalibrator" />
@@ -83,33 +95,54 @@
         <node role="body" type="med.core.structure.StatementList" id="5223430962846758825" />
       </node>
       <node role="contents" type="med.dataflowblocks.structure.DataflowComposition" id="5223430962846308841">
-        <node role="blocks" type="med.dataflowblocks.structure.Block" id="5223430962846308842">
-          <property name="name" value="sensor" />
+        <node role="blocks" type="med.dataflowblocks.structure.Block" id="8430512334776121725">
+          <property name="name" value="ss" />
           <link role="porttype" targetNodeId="5223430962846308823" resolveInfo="SpeedSensor" />
-          <node role="ports" type="med.dataflowblocks.structure.Port" id="5223430962846308843">
+          <node role="ports" type="med.dataflowblocks.structure.Port" id="8430512334776121726">
             <link role="porttype" targetNodeId="5223430962846539715" resolveInfo="speed" />
-            <node role="target" type="med.dataflowblocks.structure.Block" id="5223430962846308844">
+            <node role="target" type="med.dataflowblocks.structure.Block" id="8430512334776121730">
               <link role="porttype" targetNodeId="5223430962846308826" resolveInfo="SpeedCalibrator" />
-              <node role="ports" type="med.dataflowblocks.structure.Port" id="5223430962846308845">
-                <link role="porttype" targetNodeId="5223430962846758827" resolveInfo="calibrated" />
-                <node role="target" type="med.dataflowblocks.structure.Split" id="5223430962846308846">
-                  <node role="outs" type="med.dataflowblocks.structure.SplitOut" id="5223430962846308847">
-                    <node role="block" type="med.dataflowblocks.structure.Block" id="5223430962846308848">
+              <node role="ports" type="med.dataflowblocks.structure.Port" id="8430512334776121731">
+                <link role="porttype" targetNodeId="5223430962846758636" resolveInfo="calibreated" />
+                <node role="target" type="med.dataflowblocks.structure.Split" id="8430512334776121734">
+                  <node role="outs" type="med.dataflowblocks.structure.SplitOut" id="8430512334776121735">
+                    <node role="block" type="med.dataflowblocks.structure.Block" id="8430512334776121739">
+                      <property name="name" value="ui" />
                       <link role="porttype" targetNodeId="5223430962846308829" resolveInfo="UI" />
                     </node>
                   </node>
-                  <node role="outs" type="med.dataflowblocks.structure.SplitOut" id="5223430962846308849">
-                    <node role="block" type="med.dataflowblocks.structure.BlockRef" id="5223430962846308850">
-                      <link role="block" targetNodeId="5223430962846308842" resolveInfo="sensor" />
+                  <node role="outs" type="med.dataflowblocks.structure.SplitOut" id="8430512334776121737">
+                    <node role="block" type="med.dataflowblocks.structure.BlockRef" id="8430512334776121740">
+                      <link role="block" targetNodeId="8430512334776121725" resolveInfo="ss" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node role="ports" type="med.dataflowblocks.structure.Port" id="5223430962846308851">
+          <node role="ports" type="med.dataflowblocks.structure.Port" id="8430512334776121728">
             <link role="porttype" targetNodeId="5223430962846758639" resolveInfo="acc" />
-            <node role="target" type="med.dataflowblocks.structure.StopBlock" id="5223430962846308852" />
+            <node role="target" type="med.dataflowblocks.structure.StopBlock" id="8430512334776121733" />
+          </node>
+        </node>
+        <node role="blocks" type="med.dataflowblocks.structure.Block" id="8430512334776121743">
+          <property name="name" value="ss2" />
+          <link role="porttype" targetNodeId="5223430962846308823" resolveInfo="SpeedSensor" />
+          <node role="ports" type="med.dataflowblocks.structure.Port" id="8430512334776121744">
+            <link role="porttype" targetNodeId="5223430962846539715" resolveInfo="speed" />
+            <node role="target" type="med.dataflowblocks.structure.Block" id="8430512334776121749">
+              <link role="porttype" targetNodeId="5223430962846308826" resolveInfo="SpeedCalibrator" />
+              <node role="ports" type="med.dataflowblocks.structure.Port" id="8430512334776121750">
+                <link role="porttype" targetNodeId="5223430962846758636" resolveInfo="calibreated" />
+                <node role="target" type="med.dataflowblocks.structure.BlockRef" id="8430512334776121752">
+                  <link role="block" targetNodeId="8430512334776121739" resolveInfo="ui" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="ports" type="med.dataflowblocks.structure.Port" id="8430512334776121746">
+            <link role="porttype" targetNodeId="5223430962846758639" resolveInfo="acc" />
+            <node role="target" type="med.dataflowblocks.structure.StopBlock" id="8430512334776121748" />
           </node>
         </node>
       </node>

@@ -119,6 +119,12 @@
               </node>
             </node>
           </node>
+          <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="2644792117219870808">
+            <property name="isNew" value="false" />
+            <node role="expression" type="featureDependencies.structure.AtomicFE" id="2644792117219870810">
+              <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
+            </node>
+          </node>
         </node>
         <node role="states" type="med.statemachine.structure.State" id="6790227271038924457">
           <property name="name" value="running" />
@@ -900,16 +906,17 @@
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelOutline" id="7530832320798597060" />
   </node>
   <node type="featureDependencies.structure.FeatureDependencyConfiguration" id="5196379128662641904">
-    <node role="mode" type="featureDependencies.structure.VariantDisplayMode" id="7698012287010204967">
+    <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="2644792117219870812">
+      <property name="showFeatureClause" value="false" />
+      <property name="highlightFeatureDependentNodes" value="false" />
       <property name="removeNonSelectedStuffInEditor" value="true" />
-      <property name="showFeatureClause" value="true" />
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="7680622939174614995">
       <property name="name" value="runtimeCalibration" />
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="7680622939174614997">
       <property name="name" value="bumper" />
-      <property name="selected" value="true" />
+      <property name="selected" value="false" />
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="5296414764970271815">
       <property name="name" value="sonar" />
@@ -927,7 +934,7 @@
     </node>
   </node>
   <node type="med.requirements.structure.DummyRequirementsCollection" id="7680622939172125914">
-    <property name="showRequirementsInModel" value="true" />
+    <property name="showRequirementsInModel" value="false" />
     <node role="requirements" type="med.requirements.structure.DummyRequirement" id="7680622939172356371">
       <property name="name" value="Init" />
       <property name="text" value="The system should start operating only after it has been initialized property" />
