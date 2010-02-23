@@ -26,6 +26,8 @@
         <property name="name" value="motor" />
         <link role="interface" targetNodeId="2739617086195939385" resolveInfo="MotorControl" />
         <link role="implementation" targetNodeId="2739617086195939443" resolveInfo="MotorMock" />
+        <link role="component" targetNodeId="2739617086195939401" resolveInfo="Motors" />
+        <link role="componentImplementation" targetNodeId="2739617086195939406" resolveInfo="MotorsNXT" />
       </node>
       <node role="contents" type="med.core.structure.Procedure" id="2739617086196320872">
         <property name="name" value="hallo" />
@@ -42,8 +44,8 @@
               </node>
             </node>
           </node>
-          <node role="statements" type="med.core.structure.ExpressionStatement" id="2739617086197255372">
-            <node role="expression" type="med.core.structure.ProcedureCall" id="2739617086197255373">
+          <node role="statements" type="med.core.structure.ExpressionStatement" id="2739617086198443753">
+            <node role="expression" type="med.core.structure.ProcedureCall" id="2739617086198443754">
               <link role="procedure" targetNodeId="2739617086197255368" resolveInfo="test" />
             </node>
           </node>
@@ -115,9 +117,6 @@
           <property name="name" value="status" />
           <link role="interface" targetNodeId="2739617086195939396" resolveInfo="MotorStatus" />
         </node>
-      </node>
-      <node role="contents" type="med.core.structure.Separator" id="2739617086195939405">
-        <property name="shortDescr" value="NXT Implementation" />
       </node>
       <node role="contents" type="med.components.structure.ComponentImplementation" id="2739617086195939406">
         <property name="name" value="MotorsNXT" />
@@ -197,9 +196,6 @@
             </node>
           </node>
         </node>
-      </node>
-      <node role="contents" type="med.core.structure.Separator" id="2739617086195939436">
-        <property name="shortDescr" value="Mock Stuff" />
       </node>
       <node role="contents" type="med.core.structure.ModuleVariable" id="2739617086195939437">
         <property name="name" value="leftSpeedMock" />
