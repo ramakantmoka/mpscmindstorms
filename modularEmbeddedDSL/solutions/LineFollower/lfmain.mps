@@ -27,7 +27,7 @@
     <node role="modules" type="med.core.structure.ImplementationModule" id="5196379128660651513">
       <property name="name" value="main" />
       <property name="text" value="This module represents the code for the line follower lego robot. It has a couple of tasks, procedures and variables." />
-      <property name="safe" value="false" />
+      <property name="safe" value="true" />
       <node role="contents" type="med.core.structure.SimpleIntConstant" id="5196379128666214925">
         <property name="name" value="WHITE" />
         <property name="value" value="500" />
@@ -49,6 +49,11 @@
       <node role="contents" type="med.core.structure.SimpleIntConstant" id="5196379128666214941">
         <property name="name" value="SLOW" />
         <property name="value" value="20" />
+        <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="2739617086191913202">
+          <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="2739617086191913204">
+            <link role="requirement" targetNodeId="6556431234481809984" resolveInfo="MaxSpeed" />
+          </node>
+        </node>
       </node>
       <node role="contents" type="med.core.structure.SimpleIntConstant" id="5196379128666214943">
         <property name="name" value="FAST" />
@@ -78,6 +83,12 @@
         </node>
         <node role="events" type="med.statemachine.structure.Event" id="5296414764970022303">
           <property name="name" value="bumped" />
+          <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="2739617086197489661">
+            <property name="isNew" value="false" />
+            <node role="expression" type="featureDependencies.structure.AtomicFE" id="2739617086197489663">
+              <link role="feature" targetNodeId="7680622939174614997" resolveInfo="bumper" />
+            </node>
+          </node>
         </node>
         <node role="events" type="med.statemachine.structure.Event" id="6821937377367976827">
           <property name="name" value="blocked" />
@@ -367,8 +378,15 @@
                       </node>
                       <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="5296414764970154006">
                         <property name="isNew" value="false" />
-                        <node role="expression" type="featureDependencies.structure.AtomicFE" id="5296414764970154008">
-                          <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
+                        <node role="expression" type="featureDependencies.structure.AndFE" id="2739617086191913212">
+                          <node role="left" type="featureDependencies.structure.AtomicFE" id="5296414764970154008">
+                            <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
+                          </node>
+                          <node role="right" type="featureDependencies.structure.NotFE" id="2739617086191913215">
+                            <node role="expr" type="featureDependencies.structure.AtomicFE" id="2739617086191913217">
+                              <link role="feature" targetNodeId="7680622939174614997" resolveInfo="bumper" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -449,6 +467,19 @@
                         </node>
                         <node role="actuals" type="med.core.structure.SimpleConstantRef" id="5296414764970161717">
                           <link role="constant" targetNodeId="5196379128666214943" resolveInfo="FAST" />
+                        </node>
+                        <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="2739617086197490781">
+                          <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="2739617086197490783">
+                            <link role="requirement" targetNodeId="7680622939172356371" resolveInfo="Init" />
+                          </node>
+                        </node>
+                      </node>
+                      <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="2739617086186164837">
+                        <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="2739617086186164839">
+                          <link role="requirement" targetNodeId="7680622939172356371" resolveInfo="Init" />
+                        </node>
+                        <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="2739617086186164841">
+                          <link role="requirement" targetNodeId="7680622939173602227" resolveInfo="Calib" />
                         </node>
                       </node>
                     </node>
@@ -660,8 +691,11 @@
         <node role="type" type="med.core.structure.VoidType" id="5296414764970547848" />
         <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="5296414764970547918">
           <property name="isNew" value="false" />
-          <node role="expression" type="featureDependencies.structure.AtomicFE" id="5296414764970547920">
-            <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
+          <node role="expression" type="featureDependencies.structure.AndFE" id="2739617086191913205">
+            <node role="right" type="featureDependencies.structure.BaseFE" id="2739617086191913206" />
+            <node role="left" type="featureDependencies.structure.AtomicFE" id="5296414764970547920">
+              <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
+            </node>
           </node>
         </node>
       </node>
@@ -727,8 +761,11 @@
         <node role="type" type="med.core.structure.VoidType" id="5296414764970547912" />
         <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="5296414764970547921">
           <property name="isNew" value="false" />
-          <node role="expression" type="featureDependencies.structure.AtomicFE" id="5296414764970547923">
-            <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
+          <node role="expression" type="featureDependencies.structure.AndFE" id="2739617086191913208">
+            <node role="right" type="featureDependencies.structure.BaseFE" id="2739617086191913209" />
+            <node role="left" type="featureDependencies.structure.AtomicFE" id="5296414764970547923">
+              <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
+            </node>
           </node>
         </node>
       </node>
@@ -906,9 +943,9 @@
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelOutline" id="7530832320798597060" />
   </node>
   <node type="featureDependencies.structure.FeatureDependencyConfiguration" id="5196379128662641904">
-    <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="2644792117219870812">
-      <property name="showFeatureClause" value="false" />
-      <property name="highlightFeatureDependentNodes" value="false" />
+    <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="2739617086197489665">
+      <property name="showFeatureClause" value="true" />
+      <property name="highlightFeatureDependentNodes" value="true" />
       <property name="removeNonSelectedStuffInEditor" value="true" />
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="7680622939174614995">
@@ -916,11 +953,11 @@
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="7680622939174614997">
       <property name="name" value="bumper" />
-      <property name="selected" value="false" />
+      <property name="selected" value="true" />
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="5296414764970271815">
       <property name="name" value="sonar" />
-      <property name="selected" value="false" />
+      <property name="selected" value="true" />
     </node>
     <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="5196379128662641907">
       <property name="name" value="debugOutput" />
@@ -934,7 +971,7 @@
     </node>
   </node>
   <node type="med.requirements.structure.DummyRequirementsCollection" id="7680622939172125914">
-    <property name="showRequirementsInModel" value="false" />
+    <property name="showRequirementsInModel" value="true" />
     <node role="requirements" type="med.requirements.structure.DummyRequirement" id="7680622939172356371">
       <property name="name" value="Init" />
       <property name="text" value="The system should start operating only after it has been initialized property" />

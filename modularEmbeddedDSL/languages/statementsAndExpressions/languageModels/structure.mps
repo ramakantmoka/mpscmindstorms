@@ -964,6 +964,9 @@
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="8772584333841904474">
       <link role="intfc" targetNodeId="8772584333841904457" resolveInfo="IReduceToHeader" />
     </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2739617086189439400">
+      <link role="intfc" targetNodeId="2739617086189439398" resolveInfo="IReturnable" />
+    </node>
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="2005811434196936446">
       <property name="metaClass" value="aggregation" />
       <property name="role" value="body" />
@@ -1888,6 +1891,25 @@
     <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="738757997634784756">
       <property name="name" value="name" />
       <link role="dataType" targetNodeId="2v.1082983041843" resolveInfo="string" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="2739617086189439398">
+    <property name="package" value="procedures" />
+    <property name="name" value="IReturnable" />
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2739617086195632618">
+    <property name="package" value="doc" />
+    <property name="name" value="Separator" />
+    <link role="extends" targetNodeId="3577454086729990666" resolveInfo="MedBase" />
+    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="2739617086195632623">
+      <property name="name" value="shortDescr" />
+      <link role="dataType" targetNodeId="2v.1082983041843" resolveInfo="string" />
+    </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2739617086195632619">
+      <link role="intfc" targetNodeId="306587673255505543" resolveInfo="IModuleContent" />
+    </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2739617086195632621">
+      <link role="intfc" targetNodeId="5288422977871838031" resolveInfo="IDocumentable" />
     </node>
   </node>
 </model>

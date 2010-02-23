@@ -1394,7 +1394,21 @@
     <property name="package" value="procedures" />
     <link role="concept" targetNodeId="1.2005811434196936527" resolveInfo="ProcedureParameter" />
     <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="3454436015651732965">
-      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3454436015651732966" />
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3454436015651732966">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="2739617086185379538">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="2739617086185379545">
+            <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="2739617086185379540">
+              <node role="operand" type="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" id="2739617086185379539" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="2739617086185379544">
+                <link role="link" targetNodeId="1.4271434180064590876" />
+              </node>
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" id="2739617086185379549">
+              <link role="concept" targetNodeId="1.3454436015653030758" resolveInfo="Int8" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node type="jetbrains.mps.lang.behavior.structure.ConceptBehavior" id="7647825645222690301">

@@ -58,14 +58,29 @@
               </node>
             </node>
           </node>
-          <node role="statements" type="ds.twowheel.structure.DriveOnStatement" id="6177678091395694221">
-            <node role="time" type="med.core.structure.IntConstantExpression" id="6177678091395694222">
-              <property name="value" value="2000" />
+          <node role="statements" type="ds.twowheel.structure.BlockStatement" id="2739617086197496028">
+            <property name="name" value="newBlock" />
+            <node role="statements" type="ds.twowheel.structure.DriveOnStatement" id="6177678091395694221">
+              <node role="time" type="med.core.structure.IntConstantExpression" id="6177678091395694222">
+                <property name="value" value="2000" />
+              </node>
+              <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="2739617086186164854">
+                <property name="isNew" value="true" />
+                <node role="expression" type="featureDependencies.structure.BaseFE" id="2739617086186164855" />
+              </node>
             </node>
-          </node>
-          <node role="statements" type="ds.twowheel.structure.TurnLeftStatement" id="6177678091395694223">
-            <node role="time" type="med.core.structure.IntConstantExpression" id="6177678091395694224">
-              <property name="value" value="2000" />
+            <node role="statements" type="ds.twowheel.structure.TurnLeftStatement" id="6177678091395694223">
+              <node role="time" type="med.core.structure.IntConstantExpression" id="6177678091395694224">
+                <property name="value" value="200" />
+              </node>
+            </node>
+            <node role="bumpReaction" type="ds.twowheel.structure.DecelerateStatement" id="2739617086197496032">
+              <node role="speed" type="med.core.structure.IntConstantExpression" id="2739617086197496035">
+                <property name="value" value="0" />
+              </node>
+              <node role="time" type="med.core.structure.IntConstantExpression" id="2739617086197496036">
+                <property name="value" value="2000" />
+              </node>
             </node>
           </node>
           <node role="statements" type="ds.twowheel.structure.BlockStatement" id="6177678091395694225">

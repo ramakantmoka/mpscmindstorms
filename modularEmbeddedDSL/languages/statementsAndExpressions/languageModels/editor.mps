@@ -3110,5 +3110,33 @@
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" id="738757997634784776" />
     </node>
   </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="2739617086195632624">
+    <property name="package" value="doc" />
+    <link role="conceptDeclaration" targetNodeId="1.2739617086195632618" resolveInfo="Separator" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="2739617086195632626">
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="2739617086195632629">
+        <property name="text" value="-------------------------------------------------------------------------------" />
+      </node>
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" id="2739617086195632628" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Component" id="2739617086195632634">
+        <link role="editorComponent" targetNodeId="6790227271038052433" resolveInfo="IDocumentable_PreviewEditor" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="2739617086195632632">
+        <link role="relationDeclaration" targetNodeId="1.2739617086195632623" resolveInfo="shortDescr" />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" id="2739617086195632640">
+          <property name="style" value="BOLD" />
+        </node>
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="2739617086195632636">
+        <property name="text" value="-------------------------------------------------------------------------------" />
+      </node>
+      <node role="styleItem" type="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" id="2739617086195632637">
+        <property name="flag" value="true" />
+      </node>
+      <node role="styleItem" type="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" id="2739617086195632639">
+        <property name="color" value="lightGray" />
+      </node>
+    </node>
+  </node>
 </model>
 

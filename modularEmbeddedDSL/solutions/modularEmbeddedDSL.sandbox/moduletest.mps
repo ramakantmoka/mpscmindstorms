@@ -923,6 +923,18 @@
               </node>
             </node>
           </node>
+          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="2739617086191913180">
+            <property name="name" value="i" />
+            <node role="type" type="med.core.structure.GenericIntegerType" id="2739617086191913181" />
+            <node role="init" type="med.core.structure.MultiplicationExpression" id="2739617086191913184">
+              <node role="left" type="med.core.structure.IntConstantExpression" id="2739617086191913183">
+                <property name="value" value="2" />
+              </node>
+              <node role="right" type="med.core.structure.IntConstantExpression" id="2739617086191913188">
+                <property name="value" value="3" />
+              </node>
+            </node>
+          </node>
           <node role="statements" type="med.core.structure.ReturnStatement" id="3454436015654467207">
             <node role="expr" type="med.core.structure.LocalVariableReference" id="3454436015654467208">
               <link role="variable" targetNodeId="4946775246121301271" resolveInfo="anArray" />

@@ -168,27 +168,27 @@
     <property name="name" value="typeof_BinaryArithmeticExpression" />
     <property name="package" value="expressions" />
     <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1881584577102679558">
-      <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" id="1881584577102696929">
-        <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="1881584577102696933">
-          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="1881584577102696934">
-            <node role="term" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1881584577102696937">
-              <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="1881584577102696936">
+      <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateComparableEquationStatement" id="2739617086189206205">
+        <node role="leftExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="2739617086189206206">
+          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="2739617086189206207">
+            <node role="term" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="2739617086189206208">
+              <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="2739617086189206209">
                 <link role="applicableNode" targetNodeId="1881584577102679559" resolveInfo="expression" />
               </node>
-              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="186582152001195336">
-                <link role="link" targetNodeId="1.1881584577102679544" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="2739617086189206210">
+                <link role="link" targetNodeId="1.1881584577102679543" />
               </node>
             </node>
           </node>
         </node>
-        <node role="leftExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="1881584577102696932">
-          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="1881584577102679561">
-            <node role="term" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1881584577102696924">
-              <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="1881584577102679563">
+        <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="2739617086189206211">
+          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="2739617086189206212">
+            <node role="term" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="2739617086189206213">
+              <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="2739617086189206214">
                 <link role="applicableNode" targetNodeId="1881584577102679559" resolveInfo="expression" />
               </node>
-              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="186582152001195335">
-                <link role="link" targetNodeId="1.1881584577102679543" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="2739617086189206215">
+                <link role="link" targetNodeId="1.1881584577102679544" />
               </node>
             </node>
           </node>
@@ -1262,7 +1262,7 @@
     </node>
   </node>
   <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="2005811434196936647">
-    <property name="name" value="typeof_Procedure" />
+    <property name="name" value="typeof_ProcedureSignature" />
     <property name="package" value="procedures" />
     <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="2005811434196936648">
       <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" id="2005811434196936649">
@@ -1288,8 +1288,8 @@
       </node>
     </node>
     <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="2005811434196936658">
-      <property name="name" value="procedure" />
-      <link role="concept" targetNodeId="1.2005811434196936441" resolveInfo="Procedure" />
+      <property name="name" value="procedureSignature" />
+      <link role="concept" targetNodeId="1.306587673256793451" resolveInfo="ProcedureSignature" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="2005811434196936659">
@@ -1364,8 +1364,8 @@
               </node>
               <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" id="3454436015654360666">
                 <node role="parameter" type="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" id="3454436015654360667">
-                  <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="3454436015654360668">
-                    <link role="conceptDeclaration" targetNodeId="1.2005811434196936441" resolveInfo="Procedure" />
+                  <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="2739617086190150526">
+                    <link role="conceptDeclaration" targetNodeId="1.2739617086189439398" resolveInfo="IReturnable" />
                   </node>
                 </node>
               </node>

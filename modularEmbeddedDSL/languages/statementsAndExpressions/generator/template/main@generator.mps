@@ -3296,6 +3296,10 @@
         <link role="template" targetNodeId="8017791897007712660" resolveInfo="reduce_System" />
       </node>
     </node>
+    <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="2739617086195829238">
+      <link role="applicableConcept" targetNodeId="1.2739617086195632618" resolveInfo="Separator" />
+      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" id="2739617086195831418" />
+    </node>
   </node>
   <node type="jetbrains.mps.gtext.structure.GDocument" id="306587673255505687">
     <property name="documentName" value="ResourceCFile" />
