@@ -34,7 +34,7 @@ void twmain_impl_stopAndGoStateMachine_execute(int event) {
       if ( event == EVENT_TIMER) {
                       
         if ( twmain_impl_bumped) {
-                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_STOPSTATEMENT_7;
+                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_STOPSTATEMENT_6;
                       twmain_impl_stateLocalTime = 0;
 
                       twmain_impl_currentLeftDelta = 0;
@@ -53,48 +53,7 @@ void twmain_impl_stopAndGoStateMachine_execute(int event) {
       if ( event == EVENT_TIMER) {
                       
         if ( (twmain_impl_stateLocalTime > 3000)) {
-                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_DRIVEONSTATEMENT_1;
-                      twmain_impl_stateLocalTime = 0;
-
-                      twmain_impl_currentLeftDelta = 0;
-            twmain_impl_currentRightDelta = 0;
-
-          return ;
-
-        } // end if 
-
-
-      } // end if 
-
-
-    } // end if 
-
-        
-    if ( twmain_impl_stopAndGoStateMachine_currentstate == STATE_STEP_DRIVEONSTATEMENT_1) {
-                
-      if ( event == EVENT_TIMER) {
-                      
-        if ( twmain_impl_bumped) {
-                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_STOPSTATEMENT_7;
-                      twmain_impl_stateLocalTime = 0;
-
-                      twmain_impl_currentLeftDelta = 0;
-            twmain_impl_currentRightDelta = 0;
-            twmain_impl_currentLeftSpeed = 0;
-            twmain_impl_currentRightSpeed = 0;
-
-          return ;
-
-        } // end if 
-
-
-      } // end if 
-
-            
-      if ( event == EVENT_TIMER) {
-                      
-        if ( (twmain_impl_stateLocalTime > 2000)) {
-                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_TURNLEFTSTATEMENT_2;
+                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_TURNLEFTSTATEMENT_1;
                       twmain_impl_stateLocalTime = 0;
 
                       twmain_impl_currentLeftSpeed = (twmain_impl_currentLeftSpeed - 20);
@@ -110,14 +69,14 @@ void twmain_impl_stopAndGoStateMachine_execute(int event) {
     } // end if 
 
         
-    if ( twmain_impl_stopAndGoStateMachine_currentstate == STATE_STEP_TURNLEFTSTATEMENT_2) {
+    if ( twmain_impl_stopAndGoStateMachine_currentstate == STATE_STEP_TURNLEFTSTATEMENT_1) {
                 
       if ( event == EVENT_TIMER) {
                       
         if ( twmain_impl_bumped) {
                               twmain_impl_currentLeftSpeed = (twmain_impl_currentLeftSpeed + 20);
 
-          twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_STOPSTATEMENT_7;
+          twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_STOPSTATEMENT_6;
                       twmain_impl_stateLocalTime = 0;
 
                       twmain_impl_currentLeftDelta = 0;
@@ -138,7 +97,7 @@ void twmain_impl_stopAndGoStateMachine_execute(int event) {
         if ( (twmain_impl_stateLocalTime > 2000)) {
                               twmain_impl_currentLeftSpeed = (twmain_impl_currentLeftSpeed + 20);
 
-          twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_ACCELERATESTATEMENT_3;
+          twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_ACCELERATESTATEMENT_2;
                       twmain_impl_stateLocalTime = 0;
 
                       twmain_impl_currentLeftDelta = twmain_impl_calcStep (twmain_impl_currentLeftSpeed, 80, 2000 );
@@ -155,12 +114,12 @@ void twmain_impl_stopAndGoStateMachine_execute(int event) {
     } // end if 
 
         
-    if ( twmain_impl_stopAndGoStateMachine_currentstate == STATE_STEP_ACCELERATESTATEMENT_3) {
+    if ( twmain_impl_stopAndGoStateMachine_currentstate == STATE_STEP_ACCELERATESTATEMENT_2) {
                 
       if ( event == EVENT_TIMER) {
                       
         if ( twmain_impl_bumped) {
-                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_STOPSTATEMENT_7;
+                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_STOPSTATEMENT_6;
                       twmain_impl_stateLocalTime = 0;
 
                       twmain_impl_currentLeftDelta = 0;
@@ -179,7 +138,7 @@ void twmain_impl_stopAndGoStateMachine_execute(int event) {
       if ( event == EVENT_TIMER) {
                       
         if ( (twmain_impl_stateLocalTime > 2000)) {
-                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_TURNRIGHTSTATEMENT_4;
+                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_TURNRIGHTSTATEMENT_3;
                       twmain_impl_stateLocalTime = 0;
 
                       twmain_impl_currentRightSpeed = (twmain_impl_currentRightSpeed - 20);
@@ -195,14 +154,14 @@ void twmain_impl_stopAndGoStateMachine_execute(int event) {
     } // end if 
 
         
-    if ( twmain_impl_stopAndGoStateMachine_currentstate == STATE_STEP_TURNRIGHTSTATEMENT_4) {
+    if ( twmain_impl_stopAndGoStateMachine_currentstate == STATE_STEP_TURNRIGHTSTATEMENT_3) {
                 
       if ( event == EVENT_TIMER) {
                       
         if ( twmain_impl_bumped) {
                               twmain_impl_currentRightSpeed = (twmain_impl_currentRightSpeed + 20);
 
-          twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_STOPSTATEMENT_7;
+          twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_STOPSTATEMENT_6;
                       twmain_impl_stateLocalTime = 0;
 
                       twmain_impl_currentLeftDelta = 0;
@@ -223,7 +182,7 @@ void twmain_impl_stopAndGoStateMachine_execute(int event) {
         if ( (twmain_impl_stateLocalTime > 3000)) {
                               twmain_impl_currentRightSpeed = (twmain_impl_currentRightSpeed + 20);
 
-          twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_DECELERATESTATEMENT_5;
+          twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_DECELERATESTATEMENT_4;
                       twmain_impl_stateLocalTime = 0;
 
                       twmain_impl_currentLeftDelta = twmain_impl_calcStep (twmain_impl_currentLeftSpeed, 0, 3000 );
@@ -240,12 +199,12 @@ void twmain_impl_stopAndGoStateMachine_execute(int event) {
     } // end if 
 
         
-    if ( twmain_impl_stopAndGoStateMachine_currentstate == STATE_STEP_DECELERATESTATEMENT_5) {
+    if ( twmain_impl_stopAndGoStateMachine_currentstate == STATE_STEP_DECELERATESTATEMENT_4) {
                 
       if ( event == EVENT_TIMER) {
                       
         if ( twmain_impl_bumped) {
-                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_STOPSTATEMENT_7;
+                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_STOPSTATEMENT_6;
                       twmain_impl_stateLocalTime = 0;
 
                       twmain_impl_currentLeftDelta = 0;
@@ -264,6 +223,49 @@ void twmain_impl_stopAndGoStateMachine_execute(int event) {
       if ( event == EVENT_TIMER) {
                       
         if ( (twmain_impl_stateLocalTime > 3000)) {
+                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_STOPSTATEMENT_5;
+                      twmain_impl_stateLocalTime = 0;
+
+                      twmain_impl_currentLeftDelta = 0;
+            twmain_impl_currentRightDelta = 0;
+            twmain_impl_currentLeftSpeed = 0;
+            twmain_impl_currentRightSpeed = 0;
+
+          return ;
+
+        } // end if 
+
+
+      } // end if 
+
+
+    } // end if 
+
+        
+    if ( twmain_impl_stopAndGoStateMachine_currentstate == STATE_STEP_STOPSTATEMENT_5) {
+                
+      if ( event == EVENT_TIMER) {
+                      
+        if ( twmain_impl_bumped) {
+                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_STOPSTATEMENT_6;
+                      twmain_impl_stateLocalTime = 0;
+
+                      twmain_impl_currentLeftDelta = 0;
+            twmain_impl_currentRightDelta = 0;
+            twmain_impl_currentLeftSpeed = 0;
+            twmain_impl_currentRightSpeed = 0;
+
+          return ;
+
+        } // end if 
+
+
+      } // end if 
+
+            
+      if ( event == EVENT_TIMER) {
+                      
+        if ( 1) {
                   twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_STOPSTATEMENT_6;
                       twmain_impl_stateLocalTime = 0;
 
@@ -287,51 +289,8 @@ void twmain_impl_stopAndGoStateMachine_execute(int event) {
                 
       if ( event == EVENT_TIMER) {
                       
-        if ( twmain_impl_bumped) {
-                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_STOPSTATEMENT_7;
-                      twmain_impl_stateLocalTime = 0;
-
-                      twmain_impl_currentLeftDelta = 0;
-            twmain_impl_currentRightDelta = 0;
-            twmain_impl_currentLeftSpeed = 0;
-            twmain_impl_currentRightSpeed = 0;
-
-          return ;
-
-        } // end if 
-
-
-      } // end if 
-
-            
-      if ( event == EVENT_TIMER) {
-                      
         if ( 1) {
-                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_STOPSTATEMENT_7;
-                      twmain_impl_stateLocalTime = 0;
-
-                      twmain_impl_currentLeftDelta = 0;
-            twmain_impl_currentRightDelta = 0;
-            twmain_impl_currentLeftSpeed = 0;
-            twmain_impl_currentRightSpeed = 0;
-
-          return ;
-
-        } // end if 
-
-
-      } // end if 
-
-
-    } // end if 
-
-        
-    if ( twmain_impl_stopAndGoStateMachine_currentstate == STATE_STEP_STOPSTATEMENT_7) {
-                
-      if ( event == EVENT_TIMER) {
-                      
-        if ( 1) {
-                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_ACCELERATESTATEMENT_8;
+                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_ACCELERATESTATEMENT_7;
                       twmain_impl_stateLocalTime = 0;
 
                       twmain_impl_currentLeftDelta = twmain_impl_calcStep (twmain_impl_currentLeftSpeed, (0 - 30), 2000 );
@@ -348,12 +307,12 @@ void twmain_impl_stopAndGoStateMachine_execute(int event) {
     } // end if 
 
         
-    if ( twmain_impl_stopAndGoStateMachine_currentstate == STATE_STEP_ACCELERATESTATEMENT_8) {
+    if ( twmain_impl_stopAndGoStateMachine_currentstate == STATE_STEP_ACCELERATESTATEMENT_7) {
                 
       if ( event == EVENT_TIMER) {
                       
         if ( (twmain_impl_stateLocalTime > 2000)) {
-                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_DRIVEONSTATEMENT_9;
+                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_DRIVEONSTATEMENT_8;
                       twmain_impl_stateLocalTime = 0;
 
                       twmain_impl_currentLeftDelta = 0;
@@ -370,12 +329,12 @@ void twmain_impl_stopAndGoStateMachine_execute(int event) {
     } // end if 
 
         
-    if ( twmain_impl_stopAndGoStateMachine_currentstate == STATE_STEP_DRIVEONSTATEMENT_9) {
+    if ( twmain_impl_stopAndGoStateMachine_currentstate == STATE_STEP_DRIVEONSTATEMENT_8) {
                 
       if ( event == EVENT_TIMER) {
                       
         if ( (twmain_impl_stateLocalTime > 2000)) {
-                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_DECELERATESTATEMENT_10;
+                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_DECELERATESTATEMENT_9;
                       twmain_impl_stateLocalTime = 0;
 
                       twmain_impl_currentLeftDelta = twmain_impl_calcStep (twmain_impl_currentLeftSpeed, 0, 1000 );
@@ -392,12 +351,12 @@ void twmain_impl_stopAndGoStateMachine_execute(int event) {
     } // end if 
 
         
-    if ( twmain_impl_stopAndGoStateMachine_currentstate == STATE_STEP_DECELERATESTATEMENT_10) {
+    if ( twmain_impl_stopAndGoStateMachine_currentstate == STATE_STEP_DECELERATESTATEMENT_9) {
                 
       if ( event == EVENT_TIMER) {
                       
         if ( (twmain_impl_stateLocalTime > 1000)) {
-                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_STOPSTATEMENT_11;
+                  twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_STOPSTATEMENT_10;
                       twmain_impl_stateLocalTime = 0;
 
                       twmain_impl_currentLeftDelta = 0;

@@ -42,13 +42,13 @@
     <node role="parameter" type="jetbrains.mps.lang.refactoring.structure.RefactoringParameter" id="2644792117220115769">
       <property name="name" value="blockName" />
       <node role="chooser" type="jetbrains.mps.lang.refactoring.structure.MPSParameterChooser" id="2644792117220115771">
-        <property name="title" value="&quot;Enter Block Name&quot;" />
+        <property name="title" value="Enter Block Name" />
         <node role="paramType" type="jetbrains.mps.lang.refactoring.structure.StringMPSParameterType" id="2644792117220115773" />
         <node role="initialValueBlock" type="jetbrains.mps.lang.refactoring.structure.InitialPropertyValueClause" id="2644792117220217424">
           <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="2644792117220217425">
             <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="2644792117220217426">
               <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="2644792117220217427">
-                <property name="value" value="NewBlock" />
+                <property name="value" value="newBlock" />
               </node>
             </node>
           </node>
@@ -133,20 +133,11 @@
     </node>
     <node role="initBlock" type="jetbrains.mps.lang.refactoring.structure.InitClause" id="2644792117220215887">
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="2644792117220215888">
-        <node role="statement" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" id="2644792117220215889">
-          <node role="localVariableDeclaration" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" id="2644792117220215890">
-            <property name="name" value="result" />
-            <node role="type" type="jetbrains.mps.baseLanguage.structure.BooleanType" id="2644792117220217435" />
-            <node role="initializer" type="jetbrains.mps.lang.refactoring.structure.AskExpression" id="2644792117220217432">
-              <node role="parameter" type="jetbrains.mps.lang.refactoring.structure.RefactoringParameterReference" id="2644792117220217434">
-                <link role="refactoringParameter" targetNodeId="2644792117220115769" resolveInfo="blockName" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="2644792117220217120">
-          <node role="expression" type="jetbrains.mps.baseLanguage.structure.BooleanConstant" id="2644792117220217122">
-            <property name="value" value="true" />
+          <node role="expression" type="jetbrains.mps.lang.refactoring.structure.AskExpression" id="2644792117220623813">
+            <node role="parameter" type="jetbrains.mps.lang.refactoring.structure.RefactoringParameterReference" id="2644792117220623814">
+              <link role="refactoringParameter" targetNodeId="2644792117220115769" resolveInfo="blockName" />
+            </node>
           </node>
         </node>
       </node>
