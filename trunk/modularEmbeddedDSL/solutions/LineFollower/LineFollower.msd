@@ -6,7 +6,7 @@
   <classPath />
   <sourcePath />
   <usedLanguages>
-    <usedLanguage>50b44c57-34f1-428d-a7c3-d100606f8e2a(featureDependencies)</usedLanguage>
+    <usedLanguage>50b44c57-34f1-428d-a7c3-d100606f8e2a(med.features)</usedLanguage>
     <usedLanguage>e941a310-8129-456e-ad58-044867852177(med.bitdata)</usedLanguage>
     <usedLanguage>150e33c6-372a-4396-b4cc-1c334fb3f438(med.platform.nxtosek)</usedLanguage>
     <usedLanguage>fa27d492-bc16-4e00-86c3-966c2cebd871(med.quantities)</usedLanguage>

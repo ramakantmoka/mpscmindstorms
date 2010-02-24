@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:4eb1d373-3fb7-427f-b32f-3438dc6291cf(featureDependencies.editor)">
+<model modelUID="r:4eb1d373-3fb7-427f-b32f-3438dc6291cf(med.features.editor)">
   <persistence version="3" />
   <refactoringHistory />
   <language namespace="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)" />
@@ -28,12 +28,12 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590345(jetbrains.mps.lang.pattern.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590328(jetbrains.mps.baseLanguage.collections.constraints)" version="6" />
-  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(featureDependencies.structure)" version="1" />
+  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="2" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="3" />
-  <import index="1" modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(featureDependencies.structure)" version="1" />
+  <import index="1" modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="2" />
   <import index="3" modelUID="f:java_stub#java.awt(java.awt@java_stub)" version="-1" />
-  <visible index="2" modelUID="r:12189e21-2a1f-4db7-adb5-8ae6f450fb71(featureDependencies.behavior)" />
+  <visible index="2" modelUID="r:12189e21-2a1f-4db7-adb5-8ae6f450fb71(med.features.behavior)" />
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="8261019787194990500">
     <property name="package" value="normal" />
     <link role="conceptDeclaration" targetNodeId="1.8261019787194990498" resolveInfo="FeatureClause" />

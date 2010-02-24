@@ -505,5 +505,24 @@
       </node>
     </node>
   </node>
+  <node type="jetbrains.mps.lang.behavior.structure.ConceptBehavior" id="8017499479427462446">
+    <property name="package" value="adaptor" />
+    <link role="concept" targetNodeId="1.2739617086198022583" resolveInfo="PortAdaptor" />
+    <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="8017499479427462447">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8017499479427462448">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8017499479427462449">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479427486359">
+            <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479427486354">
+              <node role="operand" type="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" id="8017499479427462450" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="8017499479427486358">
+                <link role="link" targetNodeId="1.8017499479425233841" />
+              </node>
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" id="8017499479427486366" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

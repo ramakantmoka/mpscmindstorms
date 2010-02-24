@@ -6,7 +6,7 @@
   <language namespace="98178bb4-0742-4461-bea6-9fc251a502fa(med.statemachine)" />
   <language namespace="690fcffe-d4e9-47ba-96cd-723f8e365186(med.tasks)" />
   <language namespace="150e33c6-372a-4396-b4cc-1c334fb3f438(med.platform.nxtosek)" />
-  <language namespace="50b44c57-34f1-428d-a7c3-d100606f8e2a(featureDependencies)" />
+  <language namespace="50b44c57-34f1-428d-a7c3-d100606f8e2a(med.features)" />
   <languageAspect modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" version="9" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590571(jetbrains.mps.gtext.constraints)" version="8" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590575(jetbrains.mps.gtext.structure)" version="0" />
@@ -15,7 +15,7 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902db(jetbrains.mps.baseLanguage.blTypes.constraints)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.lang.core.constraints)" version="2" />
-  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(featureDependencies.structure)" version="1" />
+  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="2" />
   <language-engaged-on-generation namespace="150e33c6-372a-4396-b4cc-1c334fb3f438(med.platform.nxtosek)" />
   <maxImportIndex value="0" />
   <visible index="2" modelUID="r:b02d8e6e-6ce1-44d6-8357-4812e6e9817d(med.platform.nxtosek.rt)" />
@@ -65,9 +65,9 @@
                 <property name="value" value="3" />
               </node>
             </node>
-            <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6556431234482390918">
+            <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="6556431234482390918">
               <property name="isNew" value="true" />
-              <node role="expression" type="featureDependencies.structure.AtomicFE" id="6556431234482390920">
+              <node role="expression" type="med.features.structure.AtomicFE" id="6556431234482390920">
                 <link role="feature" targetNodeId="6556431234482123255" resolveInfo="stopAfter2" />
               </node>
             </node>
@@ -83,9 +83,9 @@
                 <property name="value" value="3" />
               </node>
             </node>
-            <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6556431234482390921">
+            <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="6556431234482390921">
               <property name="isNew" value="true" />
-              <node role="expression" type="featureDependencies.structure.AtomicFE" id="6556431234482390923">
+              <node role="expression" type="med.features.structure.AtomicFE" id="6556431234482390923">
                 <link role="feature" targetNodeId="6556431234482123255" resolveInfo="stopAfter2" />
               </node>
             </node>
@@ -94,10 +94,10 @@
             <link role="trigger" targetNodeId="6556431234481811959" resolveInfo="timeout" />
             <link role="target" targetNodeId="6556431234481811957" resolveInfo="turningLeft" />
             <node role="guard" type="med.core.structure.TrueLiteral" id="6556431234482390925" />
-            <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6556431234482390926">
+            <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="6556431234482390926">
               <property name="isNew" value="true" />
-              <node role="expression" type="featureDependencies.structure.NotFE" id="6556431234482390928">
-                <node role="expr" type="featureDependencies.structure.AtomicFE" id="6556431234482390930">
+              <node role="expression" type="med.features.structure.NotFE" id="6556431234482390928">
+                <node role="expr" type="med.features.structure.AtomicFE" id="6556431234482390930">
                   <link role="feature" targetNodeId="6556431234482123255" resolveInfo="stopAfter2" />
                 </node>
               </node>
@@ -106,9 +106,9 @@
         </node>
         <node role="states" type="med.statemachine.structure.State" id="6556431234482121387">
           <property name="name" value="end" />
-          <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6556431234482123265">
+          <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="6556431234482123265">
             <property name="isNew" value="false" />
-            <node role="expression" type="featureDependencies.structure.AtomicFE" id="6556431234482123267">
+            <node role="expression" type="med.features.structure.AtomicFE" id="6556431234482123267">
               <link role="feature" targetNodeId="6556431234482123255" resolveInfo="stopAfter2" />
             </node>
           </node>
@@ -359,9 +359,9 @@
                   </node>
                 </node>
               </node>
-              <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6556431234482123268">
+              <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="6556431234482123268">
                 <property name="isNew" value="false" />
-                <node role="expression" type="featureDependencies.structure.AtomicFE" id="6556431234482123270">
+                <node role="expression" type="med.features.structure.AtomicFE" id="6556431234482123270">
                   <link role="feature" targetNodeId="6556431234482123255" resolveInfo="stopAfter2" />
                 </node>
               </node>
@@ -393,12 +393,12 @@
       <link role="resource" targetNodeId="6556431234481811949" resolveInfo="Main" />
     </node>
   </node>
-  <node type="featureDependencies.structure.FeatureDependencyConfiguration" id="6556431234482123252">
-    <node role="mode" type="featureDependencies.structure.ShowClauseDisplayMode" id="6556431234482151387">
+  <node type="med.features.structure.FeatureDependencyConfiguration" id="6556431234482123252">
+    <node role="mode" type="med.features.structure.ShowClauseDisplayMode" id="6556431234482151387">
       <property name="showFeatureClause" value="true" />
       <property name="highlightFeatureDependentNodes" value="true" />
     </node>
-    <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="6556431234482123255">
+    <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="6556431234482123255">
       <property name="name" value="stopAfter2" />
       <property name="selected" value="true" />
     </node>

@@ -44,7 +44,7 @@
   <import index="2" modelUID="f:java_stub#java.lang(java.lang@java_stub)" version="-1" />
   <import index="3" modelUID="r:c8babea4-61f6-419b-a34b-e5bc5729b115(ds.twowheel.behavior)" version="-1" />
   <import index="4" modelUID="r:b02d8e6e-6ce1-44d6-8357-4812e6e9817d(med.platform.nxtosek.rt)" version="-1" />
-  <import index="5" modelUID="r:c6434d11-05f7-4f7f-b259-71e1e17b4db1(featureDependencies.generator.template.main@generator)" version="-1" />
+  <import index="5" modelUID="r:c6434d11-05f7-4f7f-b259-71e1e17b4db1(med.features.generator.template.main@generator)" version="-1" />
   <visible index="2" modelUID="r:998fdfa3-6fe3-4cb3-b9b5-7f97e90a9606(med.statemachine.structure)" />
   <node type="jetbrains.mps.lang.generator.structure.MappingConfiguration" id="6556431234483146301">
     <property name="name" value="main" />

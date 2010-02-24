@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(featureDependencies.structure)">
+<model modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)">
   <persistence version="3" />
   <refactoringHistory>
     <refactoringContext modelVersion="0">
@@ -32,6 +32,80 @@
         </entry>
       </conceptFeatureMap>
     </refactoringContext>
+    <refactoringContext modelVersion="2">
+      <refactoring refactoringClass="jetbrains.mps.refactoring.renameLanguage.LanguageRenamer$MyRefactoring" />
+      <moveMap />
+      <conceptFeatureMap>
+        <entry>
+          <key featureName="AbstractFeatureClause" conceptFQName="featureDependencies.structure.AbstractFeatureClause" featureKind="CONCEPT" />
+          <value featureName="AbstractFeatureClause" conceptFQName="med.features.structure.AbstractFeatureClause" featureKind="CONCEPT" />
+        </entry>
+        <entry>
+          <key featureName="AndFE" conceptFQName="featureDependencies.structure.AndFE" featureKind="CONCEPT" />
+          <value featureName="AndFE" conceptFQName="med.features.structure.AndFE" featureKind="CONCEPT" />
+        </entry>
+        <entry>
+          <key featureName="AtomicFE" conceptFQName="featureDependencies.structure.AtomicFE" featureKind="CONCEPT" />
+          <value featureName="AtomicFE" conceptFQName="med.features.structure.AtomicFE" featureKind="CONCEPT" />
+        </entry>
+        <entry>
+          <key featureName="BaseFE" conceptFQName="featureDependencies.structure.BaseFE" featureKind="CONCEPT" />
+          <value featureName="BaseFE" conceptFQName="med.features.structure.BaseFE" featureKind="CONCEPT" />
+        </entry>
+        <entry>
+          <key featureName="BinaryFE" conceptFQName="featureDependencies.structure.BinaryFE" featureKind="CONCEPT" />
+          <value featureName="BinaryFE" conceptFQName="med.features.structure.BinaryFE" featureKind="CONCEPT" />
+        </entry>
+        <entry>
+          <key featureName="DisplayMode" conceptFQName="featureDependencies.structure.DisplayMode" featureKind="CONCEPT" />
+          <value featureName="DisplayMode" conceptFQName="med.features.structure.DisplayMode" featureKind="CONCEPT" />
+        </entry>
+        <entry>
+          <key featureName="FeatureClause" conceptFQName="featureDependencies.structure.FeatureClause" featureKind="CONCEPT" />
+          <value featureName="FeatureClause" conceptFQName="med.features.structure.FeatureClause" featureKind="CONCEPT" />
+        </entry>
+        <entry>
+          <key featureName="FeatureDeclaration" conceptFQName="featureDependencies.structure.FeatureDeclaration" featureKind="CONCEPT" />
+          <value featureName="FeatureDeclaration" conceptFQName="med.features.structure.FeatureDeclaration" featureKind="CONCEPT" />
+        </entry>
+        <entry>
+          <key featureName="FeatureDependencyConfiguration" conceptFQName="featureDependencies.structure.FeatureDependencyConfiguration" featureKind="CONCEPT" />
+          <value featureName="FeatureDependencyConfiguration" conceptFQName="med.features.structure.FeatureDependencyConfiguration" featureKind="CONCEPT" />
+        </entry>
+        <entry>
+          <key featureName="IFEValidIdentifier" conceptFQName="featureDependencies.structure.IFEValidIdentifier" featureKind="CONCEPT" />
+          <value featureName="IFEValidIdentifier" conceptFQName="med.features.structure.IFEValidIdentifier" featureKind="CONCEPT" />
+        </entry>
+        <entry>
+          <key featureName="MacroFeatureDeclaration" conceptFQName="featureDependencies.structure.MacroFeatureDeclaration" featureKind="CONCEPT" />
+          <value featureName="MacroFeatureDeclaration" conceptFQName="med.features.structure.MacroFeatureDeclaration" featureKind="CONCEPT" />
+        </entry>
+        <entry>
+          <key featureName="NotFE" conceptFQName="featureDependencies.structure.NotFE" featureKind="CONCEPT" />
+          <value featureName="NotFE" conceptFQName="med.features.structure.NotFE" featureKind="CONCEPT" />
+        </entry>
+        <entry>
+          <key featureName="OrFE" conceptFQName="featureDependencies.structure.OrFE" featureKind="CONCEPT" />
+          <value featureName="OrFE" conceptFQName="med.features.structure.OrFE" featureKind="CONCEPT" />
+        </entry>
+        <entry>
+          <key featureName="ReplacementFeatureClause" conceptFQName="featureDependencies.structure.ReplacementFeatureClause" featureKind="CONCEPT" />
+          <value featureName="ReplacementFeatureClause" conceptFQName="med.features.structure.ReplacementFeatureClause" featureKind="CONCEPT" />
+        </entry>
+        <entry>
+          <key featureName="ShowClauseDisplayMode" conceptFQName="featureDependencies.structure.ShowClauseDisplayMode" featureKind="CONCEPT" />
+          <value featureName="ShowClauseDisplayMode" conceptFQName="med.features.structure.ShowClauseDisplayMode" featureKind="CONCEPT" />
+        </entry>
+        <entry>
+          <key featureName="SimpleFeatureDeclaration" conceptFQName="featureDependencies.structure.SimpleFeatureDeclaration" featureKind="CONCEPT" />
+          <value featureName="SimpleFeatureDeclaration" conceptFQName="med.features.structure.SimpleFeatureDeclaration" featureKind="CONCEPT" />
+        </entry>
+        <entry>
+          <key featureName="VariantDisplayMode" conceptFQName="featureDependencies.structure.VariantDisplayMode" featureKind="CONCEPT" />
+          <value featureName="VariantDisplayMode" conceptFQName="med.features.structure.VariantDisplayMode" featureKind="CONCEPT" />
+        </entry>
+      </conceptFeatureMap>
+    </refactoringContext>
   </refactoringHistory>
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
@@ -55,10 +129,10 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902ae(jetbrains.mps.lang.typesystem.constraints)" version="17" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959033d(jetbrains.mps.lang.annotations.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" />
-  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(featureDependencies.structure)" version="1" />
+  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="2" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="2" />
-  <import index="1" modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(featureDependencies.structure)" version="1" />
+  <import index="1" modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="2" />
   <import index="2" modelUID="f:java_stub#java.lang(java.lang@java_stub)" version="-1" />
   <visible index="2" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <node type="jetbrains.mps.lang.structure.structure.AnnotationLinkDeclaration" id="8261019787194263237">

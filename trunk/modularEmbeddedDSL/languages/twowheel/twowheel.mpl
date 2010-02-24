@@ -10,7 +10,7 @@
         <modelRoot path="${language_descriptor}/generator/template" namespacePrefix="ds.twowheel.generator.template" />
       </models>
       <external-templates>
-        <generator generatorUID="c799c22a-0b61-4409-a17e-6e6bed16cd83(featureDependencies#8261019787197339042)" />
+        <generator generatorUID="c799c22a-0b61-4409-a17e-6e6bed16cd83(med.features#8261019787197339042)" />
         <generator generatorUID="5a9075dc-380e-41cb-a166-c29b1245e3c3(med.core#3747647978568410848)" />
         <generator generatorUID="e6195d47-7615-4a79-9fe5-cbb950864e31(med.platform.nxtosek#3454436015655285766)" />
       </external-templates>
@@ -42,7 +42,7 @@
   <languageRuntimeClassPath />
   <sourcePath />
   <usedLanguages>
-    <usedLanguage>50b44c57-34f1-428d-a7c3-d100606f8e2a(featureDependencies)</usedLanguage>
+    <usedLanguage>50b44c57-34f1-428d-a7c3-d100606f8e2a(med.features)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>

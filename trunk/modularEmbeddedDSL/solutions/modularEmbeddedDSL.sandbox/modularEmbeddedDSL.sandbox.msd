@@ -6,7 +6,7 @@
   <classPath />
   <sourcePath />
   <usedLanguages>
-    <usedLanguage>50b44c57-34f1-428d-a7c3-d100606f8e2a(featureDependencies)</usedLanguage>
+    <usedLanguage>50b44c57-34f1-428d-a7c3-d100606f8e2a(med.features)</usedLanguage>
     <usedLanguage>3a8b8671-1532-4e8f-b780-594a27fa10c8(med.core)</usedLanguage>
     <usedLanguage>d1a10200-64d4-45ca-afd0-41b350f63b0d(med.logging)</usedLanguage>
     <usedLanguage>5229675a-24de-430d-951b-24682b3b8235(med.platform.win32)</usedLanguage>
