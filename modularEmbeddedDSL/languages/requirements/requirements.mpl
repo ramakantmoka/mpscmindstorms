@@ -2,8 +2,12 @@
 <language namespace="med.requirements" uuid="6f39da53-777c-4426-896e-bf1ddfbf16dc" java-stubs-enabled="false" compileInMPS="true">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" namespacePrefix="med.requirements" />
+    <modelRoot path="${language_descriptor}/languageAccessories" namespacePrefix="med.requirements" />
+    <modelRoot path="${language_descriptor}/languageAccessories" namespacePrefix="med.requirements" />
   </models>
-  <accessoryModels />
+  <accessoryModels>
+    <model modelUID="r:9f5c764a-3834-4d4f-97b7-39accb25faf9(med.requirements.rt)" />
+  </accessoryModels>
   <generators />
   <classPath />
   <languageRuntimeClassPath />

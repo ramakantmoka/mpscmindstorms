@@ -60,6 +60,7 @@
   <dependency className="med.components.typesystem.typeof_PortAdaptor_InferenceRule">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.intentions.BaseIntentionProvider" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />

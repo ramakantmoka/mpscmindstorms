@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="med.components.generator.template.main.QueriesGenerated">
+    <classNode dependClassName="java.lang.Iterable" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="jetbrains.mps.generator.template.PropertyMacroContext" />
+    <classNode dependClassName="jetbrains.mps.generator.template.ReferenceMacroContext" />
+    <classNode dependClassName="jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext" />
+    <classNode dependClassName="jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="jetbrains.mps.typesystem.inference.TypeChecker" />
+    <classNode dependClassName="med.components.behavior.ComponentImplementation_Behavior" />
+    <classNode dependClassName="med.components.behavior.InterfaceProcedureImplementation_Behavior" />
+  </dependency>
+</dependenciesRoot>
+
