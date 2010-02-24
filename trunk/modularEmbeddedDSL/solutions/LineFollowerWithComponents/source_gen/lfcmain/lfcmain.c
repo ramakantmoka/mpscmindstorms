@@ -9,7 +9,6 @@
 #include "include/lfcmain.h"
 
 // used resources
-#include "ecrobot_interface.h"
 #include "include/lfcAPI.h"
 
 // custom includes
@@ -40,8 +39,7 @@ void lfcmain_main_linefollower_execute(int event) {
 }
 
 void ecrobot_device_initialize(){
-    int8_t testingIsTrue;
-    ecrobot_set_light_sensor_active (NXT_PORT_S1 );
+    lfcAPI_api_LightSensorNXT_init ( );
     lfcmain_main_linefollower_execute (EVENT_INITIALIZED );
 
 }
@@ -49,8 +47,7 @@ void ecrobot_device_initialize(){
 TASK(lfcmain_main_run){
                 
       if ( lfcmain_main_linefollower_currentstate == STATE_RUNNING) {
-              int32_t light = 0;
-        light = ecrobot_get_light_sensor (NXT_PORT_S1 );
+              int8_t light = lfcAPI_api_LightSensorNXT_lightValue ( );
                 
         if ( (light < (((500 + 700)) / (2)))) {
                   lfcAPI_api_MotorMock_setLeftSpeed (20 );

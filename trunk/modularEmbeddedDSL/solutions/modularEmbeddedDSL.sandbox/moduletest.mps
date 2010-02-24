@@ -42,196 +42,110 @@
   <maxImportIndex value="0" />
   <node type="med.core.structure.Resource" id="306587673256693129">
     <property name="name" value="testMethodCall" />
-    <node role="modules" type="med.core.structure.ImplementationModule" id="306587673256693134">
+    <node role="modules" type="med.core.structure.ImplementationModule" id="8017499479428436952">
       <property name="name" value="test" />
-      <node role="contents" type="med.core.structure.StructDeclaration" id="306587673260153294">
+      <node role="contents" type="med.core.structure.StructDeclaration" id="8017499479428436953">
         <property name="name" value="intHolder" />
-        <node role="attributes" type="med.core.structure.StructAttribute" id="306587673260153295">
+        <node role="attributes" type="med.core.structure.StructAttribute" id="8017499479428436954">
           <property name="name" value="a" />
-          <node role="type" type="med.core.structure.Int32" id="3454436015654467226" />
+          <node role="type" type="med.core.structure.Int32" id="8017499479428436955" />
         </node>
       </node>
-      <node role="contents" type="med.unittest.structure.Test" id="306587673256693154">
+      <node role="contents" type="med.unittest.structure.Test" id="8017499479428436956">
         <property name="name" value="testAdding" />
         <property name="description" value="try to add two numbers" />
-        <node role="body" type="med.core.structure.StatementList" id="306587673256693155">
-          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="306587673256693156">
+        <node role="body" type="med.core.structure.StatementList" id="8017499479428436957">
+          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="8017499479428436958">
             <property name="name" value="v1" />
-            <node role="type" type="med.core.structure.Int32" id="3454436015654467227" />
-            <node role="init" type="med.core.structure.IntConstantExpression" id="306587673256693160">
+            <node role="type" type="med.core.structure.Int32" id="8017499479428436959" />
+            <node role="init" type="med.core.structure.IntConstantExpression" id="8017499479428436960">
               <property name="value" value="10" />
             </node>
           </node>
-          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="306587673260153289">
+          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="8017499479428436961">
             <property name="name" value="i" />
-            <node role="type" type="med.core.structure.Int32" id="3454436015654467228" />
-            <node role="init" type="med.core.structure.IntConstantExpression" id="306587673260153292">
+            <node role="type" type="med.core.structure.Int32" id="8017499479428436962" />
+            <node role="init" type="med.core.structure.IntConstantExpression" id="8017499479428436963">
               <property name="value" value="10" />
             </node>
           </node>
-          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="8937796720369876470">
+          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="8017499479428436964">
             <property name="name" value="ih" />
-            <node role="type" type="med.core.structure.StructType" id="8937796720369876471">
-              <link role="struct" targetNodeId="306587673260153294" resolveInfo="intHolder" />
+            <node role="type" type="med.core.structure.StructType" id="8017499479428436965">
+              <link role="struct" targetNodeId="8017499479428436953" resolveInfo="intHolder" />
             </node>
           </node>
-          <node role="statements" type="med.core.structure.AssignmentStatement" id="8937796720369876466">
-            <node role="rvalue" type="med.core.structure.IntConstantExpression" id="8937796720369876475">
+          <node role="statements" type="med.core.structure.AssignmentStatement" id="8017499479428436966">
+            <node role="rvalue" type="med.core.structure.IntConstantExpression" id="8017499479428436967">
               <property name="value" value="10" />
             </node>
-            <node role="lvalue" type="med.core.structure.StructByValueAttributeReference" id="8328996737396118227">
-              <link role="attribute" targetNodeId="306587673260153295" resolveInfo="a" />
-              <node role="variable" type="med.core.structure.LocalVariableReference" id="8328996737396118226">
-                <link role="variable" targetNodeId="8937796720369876470" resolveInfo="ih" />
+            <node role="lvalue" type="med.core.structure.StructByValueAttributeReference" id="8017499479428436968">
+              <link role="attribute" targetNodeId="8017499479428436954" resolveInfo="a" />
+              <node role="variable" type="med.core.structure.LocalVariableReference" id="8017499479428436969">
+                <link role="variable" targetNodeId="8017499479428436964" resolveInfo="ih" />
               </node>
             </node>
           </node>
-          <node role="statements" type="med.unittest.structure.AssertEquals" id="306587673256693167">
+          <node role="statements" type="med.unittest.structure.AssertEquals" id="8017499479428436970">
             <property name="errorMessage" value="adding two ints" />
-            <node role="actual" type="med.core.structure.ProcedureCall" id="306587673256693173">
-              <link role="procedure" targetNodeId="306587673256693136" resolveInfo="add" />
-              <node role="actuals" type="med.core.structure.LocalVariableReference" id="8772584333841769916">
-                <link role="variable" targetNodeId="306587673256693156" resolveInfo="v1" />
+            <node role="actual" type="med.core.structure.ProcedureCall" id="8017499479428436971">
+              <link role="procedure" targetNodeId="8017499479428436976" resolveInfo="add" />
+              <node role="actuals" type="med.core.structure.LocalVariableReference" id="8017499479428436972">
+                <link role="variable" targetNodeId="8017499479428436958" resolveInfo="v1" />
               </node>
-              <node role="actuals" type="med.core.structure.StructByValueAttributeReference" id="8328996737396118230">
-                <link role="attribute" targetNodeId="306587673260153295" resolveInfo="a" />
-                <node role="variable" type="med.core.structure.LocalVariableReference" id="8328996737396118229">
-                  <link role="variable" targetNodeId="8937796720369876470" resolveInfo="ih" />
+              <node role="actuals" type="med.core.structure.StructByValueAttributeReference" id="8017499479428436973">
+                <link role="attribute" targetNodeId="8017499479428436954" resolveInfo="a" />
+                <node role="variable" type="med.core.structure.LocalVariableReference" id="8017499479428436974">
+                  <link role="variable" targetNodeId="8017499479428436964" resolveInfo="ih" />
                 </node>
               </node>
             </node>
-            <node role="expected" type="med.core.structure.IntConstantExpression" id="306587673256693171">
+            <node role="expected" type="med.core.structure.IntConstantExpression" id="8017499479428436975">
               <property name="value" value="20" />
             </node>
           </node>
         </node>
       </node>
-      <node role="contents" type="med.core.structure.Procedure" id="306587673256693136">
+      <node role="contents" type="med.core.structure.Procedure" id="8017499479428436976">
         <property name="name" value="add" />
         <property name="export" value="true" />
-        <node role="parameters" type="med.core.structure.ProcedureParameter" id="306587673256693140">
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="8017499479428436977">
           <property name="name" value="p1" />
-          <node role="type" type="med.core.structure.Int32" id="3454436015654467230" />
+          <node role="type" type="med.core.structure.Int32" id="8017499479428436978" />
         </node>
-        <node role="parameters" type="med.core.structure.ProcedureParameter" id="306587673256693143">
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="8017499479428436979">
           <property name="name" value="p2" />
-          <node role="type" type="med.core.structure.Int32" id="3454436015654467231" />
+          <node role="type" type="med.core.structure.Int32" id="8017499479428436980" />
         </node>
-        <node role="body" type="med.core.structure.StatementList" id="306587673256693137">
-          <node role="statements" type="med.core.structure.ReturnStatement" id="2411909105413587983">
-            <node role="expr" type="med.core.structure.PlusExpression" id="2411909105413587984">
-              <node role="right" type="med.core.structure.ParameterReference" id="2411909105413587988">
-                <link role="parameter" targetNodeId="306587673256693143" resolveInfo="p2" />
+        <node role="body" type="med.core.structure.StatementList" id="8017499479428436981">
+          <node role="statements" type="med.core.structure.ReturnStatement" id="8017499479428440026">
+            <node role="expr" type="med.core.structure.PlusExpression" id="8017499479428440028">
+              <node role="left" type="med.core.structure.ParameterReference" id="8017499479428440027">
+                <link role="parameter" targetNodeId="8017499479428436977" resolveInfo="p1" />
               </node>
-              <node role="left" type="med.core.structure.ParameterReference" id="2411909105413587987">
-                <link role="parameter" targetNodeId="306587673256693140" resolveInfo="p1" />
-              </node>
-            </node>
-            <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="2411909105414208451">
-              <property name="isNew" value="false" />
-              <node role="expression" type="med.features.structure.NotFE" id="2411909105414208453">
-                <node role="expr" type="med.features.structure.AtomicFE" id="2411909105414208455">
-                  <link role="feature" targetNodeId="2411909105413587975" resolveInfo="useHelper" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node role="statements" type="med.core.structure.ReturnStatement" id="306587673256693146">
-            <node role="expr" type="med.core.structure.ProcedureCall" id="306587673260153281">
-              <link role="procedure" targetNodeId="306587673259805790" resolveInfo="addHelper" />
-              <node role="actuals" type="med.core.structure.ParameterReference" id="306587673260153282">
-                <link role="parameter" targetNodeId="306587673256693140" resolveInfo="p1" />
-              </node>
-              <node role="actuals" type="med.core.structure.ParameterReference" id="306587673260153284">
-                <link role="parameter" targetNodeId="306587673256693143" resolveInfo="p2" />
-              </node>
-            </node>
-            <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="2411909105414185265">
-              <property name="isNew" value="false" />
-              <node role="expression" type="med.features.structure.AtomicFE" id="2411909105414185267">
-                <link role="feature" targetNodeId="2411909105413587975" resolveInfo="useHelper" />
+              <node role="right" type="med.core.structure.ParameterReference" id="8017499479428440032">
+                <link role="parameter" targetNodeId="8017499479428436979" resolveInfo="p2" />
               </node>
             </node>
           </node>
         </node>
-        <node role="type" type="med.core.structure.Int32" id="3454436015654467229" />
+        <node role="type" type="med.core.structure.Int32" id="8017499479428436995" />
       </node>
-      <node role="contents" type="med.tasks.structure.Task" id="306587673256693178">
+      <node role="contents" type="med.tasks.structure.Task" id="8017499479428436996">
         <property name="name" value="startup" />
-        <node role="body" type="med.core.structure.StatementList" id="306587673256693179">
-          <node role="statements" type="med.core.structure.ExpressionStatement" id="5320189530627066214">
-            <node role="expression" type="med.core.structure.ProcedureCall" id="5320189530627066216">
-              <link role="procedure" targetNodeId="5320189530627066208" resolveInfo="someMethod" />
-            </node>
-          </node>
-          <node role="statements" type="med.unittest.structure.RunTestStatement" id="306587673256693182">
-            <link role="test" targetNodeId="306587673256693154" resolveInfo="testAdding" />
+        <node role="body" type="med.core.structure.StatementList" id="8017499479428436997">
+          <node role="statements" type="med.unittest.structure.RunTestStatement" id="8017499479428437000">
+            <link role="test" targetNodeId="8017499479428436956" resolveInfo="testAdding" />
           </node>
         </node>
-        <node role="scheduling" type="med.tasks.structure.SchedulingPolicyOnceUponStartup" id="306587673256693181">
+        <node role="scheduling" type="med.tasks.structure.SchedulingPolicyOnceUponStartup" id="8017499479428437001">
           <property name="priority" value="1" />
-        </node>
-      </node>
-      <node role="imports" type="med.core.structure.ModuleImport" id="306587673260153285">
-        <link role="importedModule" targetNodeId="306587673258977575" resolveInfo="util" />
-        <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="2411909105414208456">
-          <property name="isNew" value="false" />
-          <node role="expression" type="featureDependencies.structure.AtomicFE" id="2411909105414208458">
-            <link role="feature" targetNodeId="2411909105413587975" resolveInfo="useHelper" />
-          </node>
-        </node>
-      </node>
-      <node role="imports" type="med.core.structure.ModuleImport" id="5320189530627066207">
-        <link role="importedModule" targetNodeId="5320189530627066204" resolveInfo="utilities" />
-      </node>
-    </node>
-    <node role="modules" type="med.core.structure.ImplementationModule" id="306587673258977575">
-      <property name="name" value="util" />
-      <node role="contents" type="med.core.structure.Procedure" id="306587673259805790">
-        <property name="name" value="addHelper" />
-        <property name="export" value="true" />
-        <node role="parameters" type="med.core.structure.ProcedureParameter" id="306587673259805794">
-          <property name="name" value="a" />
-          <node role="type" type="med.core.structure.Int32" id="3454436015654467233" />
-        </node>
-        <node role="parameters" type="med.core.structure.ProcedureParameter" id="306587673259805797">
-          <property name="name" value="b" />
-          <node role="type" type="med.core.structure.Int32" id="3454436015654467234" />
-        </node>
-        <node role="body" type="med.core.structure.StatementList" id="306587673259805791">
-          <node role="statements" type="med.core.structure.ReturnStatement" id="306587673259805800">
-            <node role="expr" type="med.core.structure.PlusExpression" id="306587673259805801">
-              <node role="left" type="med.core.structure.ParameterReference" id="306587673259805804">
-                <link role="parameter" targetNodeId="306587673259805794" resolveInfo="a" />
-              </node>
-              <node role="right" type="med.core.structure.ParameterReference" id="306587673259805805">
-                <link role="parameter" targetNodeId="306587673259805797" resolveInfo="b" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="type" type="med.core.structure.Int32" id="3454436015654467232" />
-      </node>
-      <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="2411909105413587976">
-        <property name="isNew" value="false" />
-        <node role="expression" type="med.features.structure.AtomicFE" id="2411909105413587978">
-          <link role="feature" targetNodeId="2411909105413587975" resolveInfo="useHelper" />
         </node>
       </node>
     </node>
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelOutline" id="306587673256693131" />
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelAll" id="3106315015966211334" />
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelArchitecture" id="306587673256693132" />
-  </node>
-  <node type="med.features.structure.FeatureDependencyConfiguration" id="2411909105413587972">
-    <node role="mode" type="med.features.structure.VariantDisplayMode" id="7974571013346434150">
-      <property name="removeNonSelectedStuffInEditor" value="true" />
-      <property name="showFeatureClause" value="true" />
-    </node>
-    <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="2411909105413587975">
-      <property name="name" value="useHelper" />
-      <property name="selected" value="true" />
-    </node>
   </node>
   <node type="med.core.structure.Resource" id="5320189530627066200">
     <property name="name" value="aSecondResource" />
