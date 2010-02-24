@@ -28,15 +28,17 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902fb(jetbrains.mps.lang.smodel.constraints)" version="21" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959033d(jetbrains.mps.lang.annotations.structure)" version="0" />
+  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(featureDependencies.structure)" version="1" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="4" />
-  <import index="1" modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(featureDependencies.structure)" version="-1" />
+  <import index="1" modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(featureDependencies.structure)" version="1" />
   <import index="2" modelUID="f:java_stub#java.lang(java.lang@java_stub)" version="-1" />
   <import index="3" modelUID="f:java_stub#java.io(java.io@java_stub)" version="-1" />
   <import index="4" modelUID="f:java_stub#jetbrains.mps.nodeEditor(jetbrains.mps.nodeEditor@java_stub)" version="-1" />
   <visible index="2" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <node type="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" id="8261019787194263249">
     <property name="name" value="addFeatureDependencyAnnotation" />
+    <property name="package" value="normal" />
     <link role="forConcept" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
     <node role="descriptionFunction" type="jetbrains.mps.lang.intentions.structure.DescriptionBlock" id="8261019787194263250">
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8261019787194263251">
@@ -78,7 +80,7 @@
                   <link role="variableDeclaration" targetNodeId="8261019787199028631" resolveInfo="clause" />
                 </node>
                 <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="8261019787199028648">
-                  <link role="link" targetNodeId="1.8261019787197550360" />
+                  <link role="link" targetNodeId="1.8017499479424426769" />
                 </node>
               </node>
             </node>
@@ -117,8 +119,9 @@
     </node>
   </node>
   <node type="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" id="8261019787194891524">
-    <property name="name" value="removeFeatureDependencyAnnotation" />
-    <link role="forConcept" targetNodeId="1.8261019787194990498" resolveInfo="FeatureClause" />
+    <property name="name" value="removeFeatureDependencyAnnotationOnElement" />
+    <property name="package" value="normal" />
+    <link role="forConcept" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
     <node role="descriptionFunction" type="jetbrains.mps.lang.intentions.structure.DescriptionBlock" id="8261019787194891525">
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8261019787194891526">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8261019787194891529">
@@ -134,10 +137,7 @@
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.AssignmentExpression" id="8261019787196946462">
             <node role="rValue" type="jetbrains.mps.baseLanguage.structure.NullLiteral" id="8261019787196946463" />
             <node role="lValue" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8261019787196946464">
-              <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8261019787196946465">
-                <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="8261019787196946466" />
-                <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" id="8261019787196946467" />
-              </node>
+              <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="8261019787196946466" />
               <node role="operation" type="jetbrains.mps.lang.smodel.structure.AttributeAccessOperation" id="8261019787196946468">
                 <node role="attributeQualifier" type="jetbrains.mps.lang.smodel.structure.NodeAttributeAccessQualifier" id="8261019787196946469">
                   <link role="annotationLink" targetNodeId="1.8261019787194263237" resolveInfo="featureDependencyAnnotation" />
@@ -146,11 +146,55 @@
             </node>
           </node>
         </node>
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8017499479424575989">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.AssignmentExpression" id="8017499479424576003">
+            <node role="rValue" type="jetbrains.mps.baseLanguage.structure.NullLiteral" id="8017499479424576006" />
+            <node role="lValue" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479424575996">
+              <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="8017499479424575990" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.AttributeAccessOperation" id="8017499479424576000">
+                <node role="attributeQualifier" type="jetbrains.mps.lang.smodel.structure.NodeAttributeAccessQualifier" id="8017499479424576002">
+                  <link role="annotationLink" targetNodeId="1.8017499479424321802" resolveInfo="replacementFeatureDependencyAnnotation" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="isApplicableFunction" type="jetbrains.mps.lang.intentions.structure.IsApplicableBlock" id="8017499479425117019">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8017499479425117020">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8017499479425117021">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.OrExpression" id="8017499479425117034">
+            <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" id="8017499479425117045">
+              <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479425117038">
+                <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="8017499479425117037" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.AttributeAccessOperation" id="8017499479425117042">
+                  <node role="attributeQualifier" type="jetbrains.mps.lang.smodel.structure.NodeAttributeAccessQualifier" id="8017499479425117044">
+                    <link role="annotationLink" targetNodeId="1.8017499479424321802" resolveInfo="replacementFeatureDependencyAnnotation" />
+                  </node>
+                </node>
+              </node>
+              <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.NullLiteral" id="8017499479425117048" />
+            </node>
+            <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" id="8017499479425117030">
+              <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479425117023">
+                <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="8017499479425117022" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.AttributeAccessOperation" id="8017499479425117027">
+                  <node role="attributeQualifier" type="jetbrains.mps.lang.smodel.structure.NodeAttributeAccessQualifier" id="8017499479425117029">
+                    <link role="annotationLink" targetNodeId="1.8261019787194263237" resolveInfo="featureDependencyAnnotation" />
+                  </node>
+                </node>
+              </node>
+              <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.NullLiteral" id="8017499479425117033" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
   <node type="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" id="2644792117219665537">
     <property name="name" value="switchMode" />
+    <property name="package" value="config" />
     <link role="forConcept" targetNodeId="1.7715189151798803960" resolveInfo="DisplayMode" />
     <node role="descriptionFunction" type="jetbrains.mps.lang.intentions.structure.DescriptionBlock" id="2644792117219665538">
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="2644792117219665539">
@@ -190,6 +234,151 @@
                   <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithNewOperation" id="2644792117219770568">
                     <link role="concept" targetNodeId="1.7715189151798803962" resolveInfo="ShowClauseDisplayMode" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" id="8017499479423988124">
+    <property name="name" value="addReplacementFeatureDependencyAnnotation" />
+    <property name="package" value="replacement" />
+    <link role="forConcept" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="descriptionFunction" type="jetbrains.mps.lang.intentions.structure.DescriptionBlock" id="8017499479423988125">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8017499479423988126">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8017499479423988127">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="8017499479423988128">
+            <property name="value" value="Add Replacement Feature Dependency" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="executeFunction" type="jetbrains.mps.lang.intentions.structure.ExecuteBlock" id="8017499479423988129">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8017499479423988130">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" id="8017499479423988131">
+          <node role="localVariableDeclaration" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" id="8017499479423988132">
+            <property name="name" value="clause" />
+            <node role="type" type="jetbrains.mps.lang.smodel.structure.SNodeType" id="8017499479423988133">
+              <link role="concept" targetNodeId="1.8017499479423867246" resolveInfo="ReplacementFeatureClause" />
+            </node>
+            <node role="initializer" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression" id="8017499479423988190">
+              <node role="creator" type="jetbrains.mps.lang.smodel.structure.SNodeCreator" id="8017499479423988191">
+                <node role="createdType" type="jetbrains.mps.lang.smodel.structure.SNodeType" id="8017499479423988192">
+                  <link role="concept" targetNodeId="1.8017499479423867246" resolveInfo="ReplacementFeatureClause" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8017499479423988170">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479423988179">
+            <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479423988172">
+              <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="8017499479423988173" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.AttributeAccessOperation" id="8017499479423988174">
+                <node role="attributeQualifier" type="jetbrains.mps.lang.smodel.structure.NodeAttributeAccessQualifier" id="8017499479424414573">
+                  <link role="annotationLink" targetNodeId="1.8017499479424321802" resolveInfo="replacementFeatureDependencyAnnotation" />
+                </node>
+              </node>
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Link_SetTargetOperation" id="8017499479423988183">
+              <node role="linkTarget" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="8017499479423988186">
+                <link role="variableDeclaration" targetNodeId="8017499479423988132" resolveInfo="clause" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8017499479423988140">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479423988141">
+            <node role="operand" type="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_editorContext" id="8017499479423988142" />
+            <node role="operation" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" id="8017499479423988143">
+              <link role="baseMethodDeclaration" targetNodeId="4.~EditorContext.selectBefore(jetbrains.mps.smodel.SNode):void" resolveInfo="selectBefore" />
+              <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479423988144">
+                <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="8017499479423988145">
+                  <link role="variableDeclaration" targetNodeId="8017499479423988132" resolveInfo="clause" />
+                </node>
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="8017499479423988146">
+                  <link role="link" targetNodeId="1.8017499479424426769" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="isApplicableFunction" type="jetbrains.mps.lang.intentions.structure.IsApplicableBlock" id="8017499479423988147">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8017499479423988148">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8017499479423988149">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.AndExpression" id="8017499479423988150">
+            <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.NotExpression" id="8017499479423988151">
+              <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479423988152">
+                <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="8017499479423988153" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" id="8017499479423988154">
+                  <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="8017499479424414572">
+                    <link role="conceptDeclaration" targetNodeId="1.8017499479423867246" resolveInfo="ReplacementFeatureClause" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.EqualsExpression" id="8017499479423988156">
+              <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479423988157">
+                <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="8017499479423988158" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.AttributeAccessOperation" id="8017499479423988159">
+                  <node role="attributeQualifier" type="jetbrains.mps.lang.smodel.structure.NodeAttributeAccessQualifier" id="8017499479423988160">
+                    <link role="annotationLink" targetNodeId="1.8261019787194263237" resolveInfo="featureDependencyAnnotation" />
+                  </node>
+                </node>
+              </node>
+              <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.NullLiteral" id="8017499479423988161" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" id="8017499479425116994">
+    <property name="name" value="removeFeatureDependencyAnnotation" />
+    <property name="package" value="normal" />
+    <link role="forConcept" targetNodeId="1.8017499479424414575" resolveInfo="AbstractFeatureClause" />
+    <node role="descriptionFunction" type="jetbrains.mps.lang.intentions.structure.DescriptionBlock" id="8017499479425116995">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8017499479425116996">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8017499479425116997">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="8017499479425116998">
+            <property name="value" value="Remove Feature Dependency" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="executeFunction" type="jetbrains.mps.lang.intentions.structure.ExecuteBlock" id="8017499479425116999">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8017499479425117000">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8017499479425117001">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.AssignmentExpression" id="8017499479425117002">
+            <node role="rValue" type="jetbrains.mps.baseLanguage.structure.NullLiteral" id="8017499479425117003" />
+            <node role="lValue" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479425117004">
+              <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479425117005">
+                <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="8017499479425117006" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" id="8017499479425117007" />
+              </node>
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.AttributeAccessOperation" id="8017499479425117008">
+                <node role="attributeQualifier" type="jetbrains.mps.lang.smodel.structure.NodeAttributeAccessQualifier" id="8017499479425117009">
+                  <link role="annotationLink" targetNodeId="1.8261019787194263237" resolveInfo="featureDependencyAnnotation" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8017499479425117010">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.AssignmentExpression" id="8017499479425117011">
+            <node role="rValue" type="jetbrains.mps.baseLanguage.structure.NullLiteral" id="8017499479425117012" />
+            <node role="lValue" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479425117013">
+              <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479425117014">
+                <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="8017499479425117015" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" id="8017499479425117016" />
+              </node>
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.AttributeAccessOperation" id="8017499479425117017">
+                <node role="attributeQualifier" type="jetbrains.mps.lang.smodel.structure.NodeAttributeAccessQualifier" id="8017499479425117018">
+                  <link role="annotationLink" targetNodeId="1.8017499479424321802" resolveInfo="replacementFeatureDependencyAnnotation" />
                 </node>
               </node>
             </node>
