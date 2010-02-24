@@ -663,6 +663,9 @@
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="2739617086197011481">
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="2739617086197011484">
         <link role="relationDeclaration" targetNodeId="1.2739617086197006487" />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" id="8017499479423824714">
+          <property name="style" value="ITALIC" />
+        </node>
       </node>
       <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="2739617086197011483" />
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="2739617086197011486">
@@ -734,36 +737,8 @@
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="2739617086198184250">
         <property name="text" value=":" />
       </node>
-      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="2739617086198022601">
-        <link role="relationDeclaration" targetNodeId="1.2739617086198022588" />
-        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" id="2739617086198272055">
-          <node role="query" type="jetbrains.mps.lang.editor.structure.RGBColor" id="2739617086198272056">
-            <property name="value" value="C4FFC6" />
-          </node>
-        </node>
-        <node role="editorComponent" type="jetbrains.mps.lang.editor.structure.InlineEditorComponent" id="2739617086198022602">
-          <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="2739617086198022604">
-            <property name="readOnly" value="true" />
-            <link role="relationDeclaration" targetNodeId="3v.1169194664001" resolveInfo="name" />
-          </node>
-        </node>
-      </node>
-      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="2739617086198022606">
-        <property name="text" value=":" />
-      </node>
-      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="2739617086198022608">
-        <link role="relationDeclaration" targetNodeId="1.2739617086198022589" />
-        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" id="2739617086198272057">
-          <node role="query" type="jetbrains.mps.lang.editor.structure.RGBColor" id="2739617086198272058">
-            <property name="value" value="CFFCFE" />
-          </node>
-        </node>
-        <node role="editorComponent" type="jetbrains.mps.lang.editor.structure.InlineEditorComponent" id="2739617086198022609">
-          <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="2739617086198022611">
-            <property name="readOnly" value="true" />
-            <link role="relationDeclaration" targetNodeId="3v.1169194664001" resolveInfo="name" />
-          </node>
-        </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="8017499479425233842">
+        <link role="relationDeclaration" targetNodeId="1.8017499479425233841" />
       </node>
     </node>
   </node>
@@ -776,6 +751,34 @@
         <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="3113923837077903610">
           <property name="readOnly" value="true" />
           <link role="relationDeclaration" targetNodeId="3v.1169194664001" resolveInfo="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="8017499479425222409">
+    <property name="package" value="adaptor" />
+    <link role="conceptDeclaration" targetNodeId="1.8017499479425222405" resolveInfo="ComponentDescriptor" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="8017499479425233824">
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="8017499479425233826">
+        <link role="relationDeclaration" targetNodeId="1.8017499479425222406" />
+        <node role="editorComponent" type="jetbrains.mps.lang.editor.structure.InlineEditorComponent" id="8017499479425233827">
+          <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="8017499479425233828">
+            <property name="readOnly" value="true" />
+            <link role="relationDeclaration" targetNodeId="3v.1169194664001" resolveInfo="name" />
+          </node>
+        </node>
+      </node>
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="8017499479425233825" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="8017499479425233830">
+        <property name="text" value="-&gt;" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="8017499479425233832">
+        <link role="relationDeclaration" targetNodeId="1.8017499479425222408" />
+        <node role="editorComponent" type="jetbrains.mps.lang.editor.structure.InlineEditorComponent" id="8017499479425233833">
+          <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="8017499479425233835">
+            <property name="readOnly" value="true" />
+            <link role="relationDeclaration" targetNodeId="3v.1169194664001" resolveInfo="name" />
+          </node>
         </node>
       </node>
     </node>

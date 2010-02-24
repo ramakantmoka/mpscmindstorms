@@ -20,4 +20,23 @@ CPU ATMEL_AT91SAM7S256
      MAXALLOWEDVALUE = 10000;
      TICKSPERBASE = 1;
   };
+TASK lfcmain_main_run {
+  AUTOSTART = FALSE;
+  PRIORITY = 2;
+  ACTIVATION = 1;
+  SCHEDULE = FULL;
+  STACKSIZE = 512;
+};
+ALARM lfcmain_main_run_alarm {
+  COUNTER = SysTimerCnt;
+  ACTION = ACTIVATETASK {
+    TASK = lfcmain_main_run;
+  };
+  AUTOSTART = TRUE
+ { 
+    ALARMTIME = 1;
+    CYCLETIME = 2;
+    APPMODE = appmode1;
+  };
+};
 };

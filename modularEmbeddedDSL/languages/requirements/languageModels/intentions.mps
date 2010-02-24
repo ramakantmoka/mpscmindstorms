@@ -16,6 +16,18 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902ba(jetbrains.mps.lang.sharedConcepts.constraints)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959028c(jetbrains.mps.lang.structure.constraints)" version="11" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" version="0" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590345(jetbrains.mps.lang.pattern.structure)" version="0" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590340(jetbrains.mps.lang.pattern.constraints)" version="2" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590334(jetbrains.mps.baseLanguage.closures.constraints)" version="2" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902ae(jetbrains.mps.lang.typesystem.constraints)" version="17" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959034b(jetbrains.mps.lang.quotation.structure)" version="0" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959033d(jetbrains.mps.lang.annotations.structure)" version="0" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="16" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590328(jetbrains.mps.baseLanguage.collections.constraints)" version="6" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902fb(jetbrains.mps.lang.smodel.constraints)" version="21" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="1" />
   <import index="1" modelUID="r:48b845ea-8f99-4168-9f90-1674c08b254d(med.requirements.structure)" version="-1" />
@@ -27,7 +39,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="7680622939171571647">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="7680622939171670861">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="7680622939171670862">
-            <property name="value" value="add requirements trace" />
+            <property name="value" value="add trace" />
           </node>
         </node>
       </node>
@@ -49,6 +61,35 @@
         </node>
       </node>
     </node>
+    <node role="isApplicableFunction" type="jetbrains.mps.lang.intentions.structure.IsApplicableBlock" id="8017499479423421107">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8017499479423421108">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8017499479423421109">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.AndExpression" id="8017499479423622872">
+            <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.NotExpression" id="8017499479423622875">
+              <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479423622878">
+                <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="8017499479423622877" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" id="8017499479423622882">
+                  <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="8017499479423622884">
+                    <link role="conceptDeclaration" targetNodeId="1.7680622939171547236" resolveInfo="RequirementsTrace" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479423421118">
+              <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479423421111">
+                <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="8017499479423421110" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.AttributeAccessOperation" id="8017499479423421115">
+                  <node role="attributeQualifier" type="jetbrains.mps.lang.smodel.structure.NodeAttributeAccessQualifier" id="8017499479423421117">
+                    <link role="annotationLink" targetNodeId="1.7680622939171571618" resolveInfo="traceAnnotation" />
+                  </node>
+                </node>
+              </node>
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" id="8017499479423421122" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node type="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" id="7680622939172684478">
     <property name="name" value="removeTrace" />
@@ -57,7 +98,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="7680622939172684480">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="7680622939172684483">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="7680622939172684484">
-            <property name="value" value="remove" />
+            <property name="value" value="remove trace" />
           </node>
         </node>
       </node>

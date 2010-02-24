@@ -30,9 +30,10 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959034b(jetbrains.mps.lang.quotation.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959033d(jetbrains.mps.lang.annotations.structure)" version="0" />
+  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(featureDependencies.structure)" version="1" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="4" />
-  <import index="1" modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(featureDependencies.structure)" version="-1" />
+  <import index="1" modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(featureDependencies.structure)" version="1" />
   <import index="2" modelUID="f:java_stub#java.lang(java.lang@java_stub)" version="-1" />
   <import index="3" modelUID="r:12189e21-2a1f-4db7-adb5-8ae6f450fb71(featureDependencies.behavior)" version="-1" />
   <import index="4" modelUID="f:java_stub#java.io(java.io@java_stub)" version="-1" />
@@ -86,7 +87,7 @@
                     <link role="variableDeclaration" targetNodeId="8261019787197352555" resolveInfo="cls" />
                   </node>
                   <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="8261019787198927391">
-                    <link role="baseMethodDeclaration" targetNodeId="3.8261019787198925259" resolveInfo="isTrue" />
+                    <link role="baseMethodDeclaration" targetNodeId="3.8017499479424575958" resolveInfo="isTrue" />
                     <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.BooleanConstant" id="2411909105414187452">
                       <property name="value" value="false" />
                     </node>
@@ -100,6 +101,66 @@
                   <link role="variableDeclaration" targetNodeId="8261019787197352555" resolveInfo="cls" />
                 </node>
                 <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" id="3281061475583144579" />
+              </node>
+            </node>
+            <node role="statement" type="jetbrains.mps.baseLanguage.structure.Statement" id="8017499479424871993" />
+          </node>
+        </node>
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ForeachStatement" id="8017499479424874200">
+          <node role="iterable" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479424874201">
+            <node role="operand" type="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_model" id="8017499479424874202" />
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" id="8017499479424874203">
+              <link role="concept" targetNodeId="1.8017499479423867246" resolveInfo="ReplacementFeatureClause" />
+            </node>
+          </node>
+          <node role="variable" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" id="8017499479424874204">
+            <property name="name" value="cls" />
+            <node role="type" type="jetbrains.mps.lang.smodel.structure.SNodeType" id="8017499479424874205">
+              <link role="concept" targetNodeId="1.8017499479423867246" resolveInfo="ReplacementFeatureClause" />
+            </node>
+          </node>
+          <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8017499479424874206">
+            <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="8017499479424874207">
+              <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8017499479424874208">
+                <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8017499479424874209">
+                  <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479424874210">
+                    <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479424874211">
+                      <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="8017499479424874212">
+                        <link role="variableDeclaration" targetNodeId="8017499479424874204" resolveInfo="cls" />
+                      </node>
+                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" id="8017499479424874213" />
+                    </node>
+                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" id="8017499479424874233">
+                      <node role="replacementNode" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479424874236">
+                        <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="8017499479424874235">
+                          <link role="variableDeclaration" targetNodeId="8017499479424874204" resolveInfo="cls" />
+                        </node>
+                        <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="8017499479424874240">
+                          <link role="link" targetNodeId="1.8017499479423873690" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node role="condition" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479425218847">
+                <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="8017499479425218848">
+                  <link role="variableDeclaration" targetNodeId="8017499479424874204" resolveInfo="cls" />
+                </node>
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="8017499479425218849">
+                  <link role="baseMethodDeclaration" targetNodeId="3.8017499479424575958" resolveInfo="isTrue" />
+                  <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.BooleanConstant" id="8017499479425218850">
+                    <property name="value" value="false" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8017499479424874220">
+              <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479424874221">
+                <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="8017499479424874222">
+                  <link role="variableDeclaration" targetNodeId="8017499479424874204" resolveInfo="cls" />
+                </node>
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" id="8017499479424874223" />
               </node>
             </node>
           </node>

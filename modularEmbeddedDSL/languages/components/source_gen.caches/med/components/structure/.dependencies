@@ -15,6 +15,16 @@
     <classNode dependClassName="med.core.structure.MedBase" />
     <classNode extendsClassName="jetbrains.mps.lang.core.structure.BaseConcept" />
   </dependency>
+  <dependency className="med.components.structure.ComponentDescriptor">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModel" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="med.components.structure.Component" />
+    <classNode dependClassName="med.components.structure.ComponentImplementation" />
+    <classNode extendsClassName="jetbrains.mps.lang.core.structure.BaseConcept" />
+  </dependency>
   <dependency className="med.components.structure.ComponentImplementation">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Iterator" />
@@ -118,8 +128,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
-    <classNode dependClassName="med.components.structure.Component" />
-    <classNode dependClassName="med.components.structure.ComponentImplementation" />
+    <classNode dependClassName="med.components.structure.ComponentDescriptor" />
     <classNode dependClassName="med.components.structure.Interface" />
     <classNode dependClassName="med.core.structure.IHasIdentifierName" />
     <classNode dependClassName="med.core.structure.IModuleContent" />

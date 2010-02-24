@@ -241,23 +241,17 @@
     <property name="package" value="adaptor" />
     <property name="name" value="PortAdaptor" />
     <link role="extends" targetNodeId="2v.3577454086729990666" resolveInfo="MedBase" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="8017499479425233841">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="descriptor" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="8017499479425222405" resolveInfo="ComponentDescriptor" />
+    </node>
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2739617086198022584">
       <link role="intfc" targetNodeId="2v.306587673255505543" resolveInfo="IModuleContent" />
     </node>
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2739617086198022586">
       <link role="intfc" targetNodeId="2v.343373828472902636" resolveInfo="IHasIdentifierName" />
-    </node>
-    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="2739617086198022589">
-      <property name="metaClass" value="reference" />
-      <property name="role" value="componentImplementation" />
-      <property name="sourceCardinality" value="1" />
-      <link role="target" targetNodeId="2739617086186285669" resolveInfo="ComponentImplementation" />
-    </node>
-    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="2739617086198022588">
-      <property name="metaClass" value="reference" />
-      <property name="role" value="component" />
-      <property name="sourceCardinality" value="1" />
-      <link role="target" targetNodeId="2739617086185486240" resolveInfo="Component" />
     </node>
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="2739617086198022587">
       <property name="metaClass" value="reference" />
@@ -275,6 +269,23 @@
       <property name="role" value="adapter" />
       <property name="sourceCardinality" value="1" />
       <link role="target" targetNodeId="2739617086198022583" resolveInfo="PortAdaptor" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="8017499479425222405">
+    <property name="package" value="adaptor" />
+    <property name="name" value="ComponentDescriptor" />
+    <link role="extends" targetNodeId="3v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="8017499479425222408">
+      <property name="metaClass" value="reference" />
+      <property name="role" value="implementation" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="2739617086186285669" resolveInfo="ComponentImplementation" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="8017499479425222406">
+      <property name="metaClass" value="reference" />
+      <property name="role" value="component" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="2739617086185486240" resolveInfo="Component" />
     </node>
   </node>
 </model>

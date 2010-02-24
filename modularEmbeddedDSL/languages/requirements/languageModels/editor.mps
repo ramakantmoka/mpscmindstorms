@@ -99,37 +99,34 @@
   </node>
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="7680622939171997899">
     <link role="conceptDeclaration" targetNodeId="1.7680622939171997898" resolveInfo="RequirementsCollection" />
-    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="2739617086199315683">
-      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="2739617086199315684">
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="3113923837082811880">
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="3113923837082811881">
         <property name="text" value="DUMMY REQUIREMENTS (to be replaced by interface to real RE tool)" />
       </node>
-      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" id="2739617086199315685" />
-      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="2739617086199315686">
-        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" id="2739617086199315687">
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" id="3113923837082811882" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="3113923837082811883">
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" id="3113923837082811884">
           <property name="flag" value="false" />
         </node>
-        <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="2739617086199315688">
+        <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="3113923837082811885">
           <property name="text" value="show trace" />
         </node>
-        <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" id="2739617086199315689" />
-        <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="2739617086199315690">
+        <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" id="3113923837082811886" />
+        <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="3113923837082811887">
           <link role="relationDeclaration" targetNodeId="1.7680622939173087722" resolveInfo="showRequirementsInModel" />
         </node>
       </node>
-      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="2739617086199315691" />
-      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" id="2739617086199315692">
-        <link role="relationDeclaration" targetNodeId="1.7680622939171997907" />
-        <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" id="2739617086199315693" />
-      </node>
-    </node>
-    <node role="inspectedCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_JComponent" id="2739617086199315694">
-      <node role="componentProvider" type="jetbrains.mps.lang.editor.structure.QueryFunction_JComponent" id="2739617086199315695">
-        <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="2739617086199315696">
-          <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="2739617086199315700">
-            <node role="expression" type="jetbrains.mps.baseLanguage.structure.StaticMethodCall" id="2739617086199315702">
-              <link role="baseMethodDeclaration" targetNodeId="2.2739617086198782445" resolveInfo="create" />
-              <link role="classConcept" targetNodeId="2.2739617086198782439" resolveInfo="ReqEditorUtil" />
-              <node role="actualArgument" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" id="2739617086199315703" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="3113923837082811888" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_JComponent" id="3113923837082811889">
+        <node role="componentProvider" type="jetbrains.mps.lang.editor.structure.QueryFunction_JComponent" id="3113923837082811890">
+          <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3113923837082811891">
+            <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="3113923837082811892">
+              <node role="expression" type="jetbrains.mps.baseLanguage.structure.StaticMethodCall" id="3113923837082811893">
+                <link role="classConcept" targetNodeId="2.2739617086198782439" resolveInfo="ReqEditorUtil" />
+                <link role="baseMethodDeclaration" targetNodeId="2.2739617086198782445" resolveInfo="create" />
+                <node role="actualArgument" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" id="3113923837082811894" />
+                <node role="actualArgument" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="3113923837082811895" />
+              </node>
             </node>
           </node>
         </node>

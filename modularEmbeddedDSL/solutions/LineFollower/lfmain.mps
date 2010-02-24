@@ -17,6 +17,7 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.lang.core.constraints)" version="2" />
   <languageAspect modelUID="r:c8eeaafc-b8ed-41eb-96aa-711dbd66c11c(med.quantities.structure)" version="0" />
+  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(featureDependencies.structure)" version="1" />
   <language-engaged-on-generation namespace="150e33c6-372a-4396-b4cc-1c334fb3f438(med.platform.nxtosek)" />
   <devkit namespace="a891e14a-a3d6-466e-8364-4e1b14cbaa06(ModularEmbeddedDSL)" />
   <maxImportIndex value="0" />
@@ -32,8 +33,8 @@
         <property name="name" value="WHITE" />
         <property name="value" value="500" />
         <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="7680622939173623943">
-          <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="7680622939173623945">
-            <link role="requirement" targetNodeId="7680622939173602227" resolveInfo="Calib" />
+          <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="8017499479423234242">
+            <link role="requirement" targetNodeId="6556431234481809984" resolveInfo="MaxSpeed" />
           </node>
         </node>
       </node>
@@ -988,7 +989,7 @@
       <property name="text" value="the actual control of the device should be based on a cyclic task" />
     </node>
     <node role="requirements" type="med.requirements.structure.DummyRequirement" id="7680622939173602227">
-      <property name="name" value="Calib" />
+      <property name="name" value="Calibration" />
       <property name="text" value="The black/white values should be easily calibrated" />
     </node>
     <node role="requirements" type="med.requirements.structure.DummyRequirement" id="6556431234481809984">
