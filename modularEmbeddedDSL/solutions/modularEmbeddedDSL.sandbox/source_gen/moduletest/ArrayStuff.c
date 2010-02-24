@@ -60,6 +60,7 @@ int16_t* ArrayStuff_array_notSoVeryNice(void) {
 int16_t* ArrayStuff_array_aNicerWay(void) {
     int16_t* anArray = (int16_t*)malloc(4*sizeof(int16_t));
     anArray[0] = 1;
+    int i = (2 * 3);
     return anArray;
 }
 

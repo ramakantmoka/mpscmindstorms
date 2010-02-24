@@ -9,13 +9,12 @@
 #include "include/bttest.h"
 
 // used resources
-#include "btlog.h"
 #include "ecrobot_interface.h"
+#include "btlog.h"
 
 // custom includes
 #include "kernel.h"
 #include "kernel_id.h"
-#include "stdint.h"
 #include "stdint.h"
 
 int8_t bttest_main_data = 0;

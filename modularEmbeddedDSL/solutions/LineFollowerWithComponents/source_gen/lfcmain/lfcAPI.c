@@ -18,9 +18,7 @@
 
 int8_t lfcAPI_api_leftSpeedMock = 0;
 int8_t lfcAPI_api_rightSpeedMock = 0;
-
-void lfcAPI_api_test(void) {
-}
+int8_t lfcAPI_api_light = 0;
 
 void lfcAPI_api_MotorMock_stop(void) {
     lfcAPI_api_rightSpeedMock = 0;
@@ -41,5 +39,25 @@ int8_t lfcAPI_api_MotorMockSTatus_leftSpeed(void) {
 
 int8_t lfcAPI_api_MotorMockSTatus_rightSpeed(void) {
     return lfcAPI_api_rightSpeedMock;
+}
+
+int8_t lfcAPI_api_LightSensorNXT_lightValue(void) {
+    return ecrobot_get_light_sensor (NXT_PORT_S1 );
+}
+
+void lfcAPI_api_LightSensorNXT_init(void) {
+    ecrobot_set_light_sensor_active (NXT_PORT_S1 );
+}
+
+void lfcAPI_api_LightSensorMock_setLight(int8_t value) {
+    lfcAPI_api_light = value;
+}
+
+int8_t lfcAPI_api_LightSensorMock_lightValue(void) {
+    return lfcAPI_api_light;
+}
+
+void lfcAPI_api_LightSensorMock_init(void) {
+    /*noop*/
 }
 

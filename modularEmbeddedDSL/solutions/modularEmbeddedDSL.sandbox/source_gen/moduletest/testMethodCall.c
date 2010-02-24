@@ -9,7 +9,6 @@
 #include "include/testMethodCall.h"
 
 // used resources
-#include "include/aSecondResource.h"
 
 // custom includes
 #include "stdint.h"
@@ -31,15 +30,10 @@ void testMethodCall_test_testproc_testAdding(void) {
 }
 
 int32_t testMethodCall_test_add(int32_t p1, int32_t p2) {
-    return testMethodCall_util_addHelper (p1, p2 );
+    return (p1 + p2);
 }
 
 void testMethodCall_test_task_startup(void) {
-    aSecondResource_utilities_someMethod ( );
     testMethodCall_test_testproc_testAdding ( );
-}
-
-int32_t testMethodCall_util_addHelper(int32_t a, int32_t b) {
-    return (a + b);
 }
 
