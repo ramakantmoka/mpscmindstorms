@@ -767,5 +767,18 @@
       </node>
     </node>
   </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="3113923837077903605">
+    <property name="package" value="adaptor" />
+    <link role="conceptDeclaration" targetNodeId="1.3113923837077903603" resolveInfo="PortAdapterType" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="3113923837077903607">
+      <link role="relationDeclaration" targetNodeId="1.3113923837077903604" />
+      <node role="editorComponent" type="jetbrains.mps.lang.editor.structure.InlineEditorComponent" id="3113923837077903608">
+        <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="3113923837077903610">
+          <property name="readOnly" value="true" />
+          <link role="relationDeclaration" targetNodeId="3v.1169194664001" resolveInfo="name" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

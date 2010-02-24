@@ -266,5 +266,16 @@
       <link role="target" targetNodeId="2644792117221124041" resolveInfo="Interface" />
     </node>
   </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="3113923837077903603">
+    <property name="package" value="adaptor" />
+    <property name="name" value="PortAdapterType" />
+    <link role="extends" targetNodeId="2v.4641466063286591366" resolveInfo="Type" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="3113923837077903604">
+      <property name="metaClass" value="reference" />
+      <property name="role" value="adapter" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="2739617086198022583" resolveInfo="PortAdaptor" />
+    </node>
+  </node>
 </model>
 

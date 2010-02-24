@@ -66,11 +66,16 @@
     <property name="name" value="lfcAPI" />
     <node role="modules" type="med.core.structure.ImplementationModule" id="2739617086195939384">
       <property name="name" value="api" />
+      <node role="contents" type="med.core.structure.Procedure" id="3113923837077273554">
+        <property name="name" value="test" />
+        <node role="type" type="med.core.structure.VoidType" id="3113923837077273555" />
+        <node role="body" type="med.core.structure.StatementList" id="3113923837077273556" />
+      </node>
       <node role="contents" type="med.components.structure.Interface" id="2739617086195939385">
         <property name="export" value="true" />
         <property name="name" value="MotorControl" />
         <node role="procedures" type="med.components.structure.InterfaceProcedure" id="2739617086195939386">
-          <property name="name" value="top" />
+          <property name="name" value="stop" />
           <node role="type" type="med.core.structure.VoidType" id="2739617086195939387" />
         </node>
         <node role="procedures" type="med.components.structure.InterfaceProcedure" id="2739617086195939388">
@@ -300,6 +305,15 @@
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelAll" id="2739617086195939368" />
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelOutline" id="2739617086195939369" />
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelArchitecture" id="2739617086195939370" />
+  </node>
+  <node type="med.core.structure.System" id="3113923837076891604">
+    <property name="name" value="LineFollowerWithComponents" />
+    <node role="resources" type="med.core.structure.ResourceReference" id="3113923837076891605">
+      <link role="resource" targetNodeId="2739617086195939367" resolveInfo="lfcAPI" />
+    </node>
+    <node role="resources" type="med.core.structure.ResourceReference" id="3113923837076891607">
+      <link role="resource" targetNodeId="2739617086194230973" resolveInfo="lfcmain" />
+    </node>
   </node>
 </model>
 

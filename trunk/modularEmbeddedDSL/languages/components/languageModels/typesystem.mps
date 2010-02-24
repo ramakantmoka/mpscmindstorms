@@ -267,17 +267,40 @@
     <property name="name" value="typeof_PortAdaptor" />
     <property name="package" value="adaptor" />
     <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="2739617086198022613">
-      <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" id="2739617086198022619">
-        <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="2739617086198022623">
-          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="2739617086198022624">
-            <node role="term" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="2739617086198022631">
-              <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="2739617086198022630">
-                <link role="applicableNode" targetNodeId="2739617086198022614" resolveInfo="adaptor" />
-              </node>
-              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="2739617086198022635">
-                <link role="link" targetNodeId="1.2739617086198022587" />
+      <node role="statement" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" id="3113923837077903612">
+        <node role="localVariableDeclaration" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" id="3113923837077903613">
+          <property name="name" value="t" />
+          <node role="type" type="jetbrains.mps.lang.smodel.structure.SNodeType" id="3113923837077903614">
+            <link role="concept" targetNodeId="1.3113923837077903603" resolveInfo="PortAdapterType" />
+          </node>
+          <node role="initializer" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression" id="3113923837077903616">
+            <node role="creator" type="jetbrains.mps.lang.smodel.structure.SNodeCreator" id="3113923837077903617">
+              <node role="createdType" type="jetbrains.mps.lang.smodel.structure.SNodeType" id="3113923837077903618">
+                <link role="concept" targetNodeId="1.3113923837077903603" resolveInfo="PortAdapterType" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+      <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="3113923837077903620">
+        <node role="expression" type="jetbrains.mps.baseLanguage.structure.AssignmentExpression" id="3113923837077903627">
+          <node role="rValue" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="3113923837077903630">
+            <link role="applicableNode" targetNodeId="2739617086198022614" resolveInfo="adaptor" />
+          </node>
+          <node role="lValue" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="3113923837077903622">
+            <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="3113923837077903621">
+              <link role="variableDeclaration" targetNodeId="3113923837077903613" resolveInfo="t" />
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="3113923837077903626">
+              <link role="link" targetNodeId="1.3113923837077903604" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" id="2739617086198022619">
+        <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="3113923837078357285">
+          <node role="normalType" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="3113923837078357286">
+            <link role="variableDeclaration" targetNodeId="3113923837077903613" resolveInfo="t" />
           </node>
         </node>
         <node role="leftExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="2739617086198022622">
