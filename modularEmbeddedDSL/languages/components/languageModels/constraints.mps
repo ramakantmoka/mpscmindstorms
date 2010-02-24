@@ -33,9 +33,11 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590328(jetbrains.mps.baseLanguage.collections.constraints)" version="6" />
   <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="0" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
-  <maxImportIndex value="2" />
+  <maxImportIndex value="4" />
   <import index="1" modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="0" />
   <import index="2" modelUID="r:14a060e8-2002-4063-9ac2-3317a0d2c940(med.core.behavior)" version="-1" />
+  <import index="3" modelUID="f:java_stub#java.lang(java.lang@java_stub)" version="-1" />
+  <import index="4" modelUID="f:java_stub#java.io(java.io@java_stub)" version="-1" />
   <visible index="2" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
   <node type="jetbrains.mps.lang.constraints.structure.ConceptConstraints" id="2739617086185486280">
     <property name="package" value="component" />
@@ -370,6 +372,7 @@
                         <link role="conceptDeclaration" targetNodeId="1.2739617086198022583" resolveInfo="PortAdaptor" />
                       </node>
                     </node>
+                    <node role="parameter" type="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" id="8017499479427868711" />
                   </node>
                 </node>
                 <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="8017499479425417930">
@@ -423,9 +426,8 @@
                 <node role="closure" type="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" id="8017499479425493337">
                   <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8017499479425493338">
                     <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8017499479425493353">
-                      <node role="expression" type="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" id="8017499479425493435">
-                        <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.NullLiteral" id="8017499479425493452" />
-                        <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479425493371">
+                      <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479427871740">
+                        <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8017499479425493371">
                           <node role="operand" type="jetbrains.mps.baseLanguage.structure.ParameterReference" id="8017499479425493354">
                             <link role="variableDeclaration" targetNodeId="8017499479425493339" resolveInfo="it" />
                           </node>
@@ -436,6 +438,7 @@
                             </node>
                           </node>
                         </node>
+                        <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" id="8017499479427871758" />
                       </node>
                     </node>
                   </node>

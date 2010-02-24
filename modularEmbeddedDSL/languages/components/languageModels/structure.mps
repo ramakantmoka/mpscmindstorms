@@ -259,6 +259,10 @@
       <property name="sourceCardinality" value="1" />
       <link role="target" targetNodeId="2644792117221124041" resolveInfo="Interface" />
     </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="8017499479427356412">
+      <property name="value" value="port adaptor" />
+      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473891462" resolveInfo="alias" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="3113923837077903603">
     <property name="package" value="adaptor" />

@@ -59,7 +59,7 @@
   <import index="2" modelUID="f:java_stub#java.lang(java.lang@java_stub)" version="-1" />
   <import index="3" modelUID="r:d410d4fe-3f1c-4b6c-ba11-ccec429fec9b(med.components.behavior)" version="-1" />
   <import index="4" modelUID="f:java_stub#java.io(java.io@java_stub)" version="-1" />
-  <import index="5" modelUID="r:c6434d11-05f7-4f7f-b259-71e1e17b4db1(featureDependencies.generator.template.main@generator)" version="-1" />
+  <import index="5" modelUID="r:c6434d11-05f7-4f7f-b259-71e1e17b4db1(med.features.generator.template.main@generator)" version="-1" />
   <visible index="2" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
   <node type="jetbrains.mps.lang.generator.structure.MappingConfiguration" id="3113923837076787425">
     <property name="name" value="main" />

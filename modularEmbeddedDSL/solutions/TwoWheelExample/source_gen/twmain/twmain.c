@@ -94,7 +94,7 @@ void twmain_impl_stopAndGoStateMachine_execute(int event) {
             
       if ( event == EVENT_TIMER) {
                       
-        if ( (twmain_impl_stateLocalTime > 2000)) {
+        if ( (twmain_impl_stateLocalTime > 200)) {
                               twmain_impl_currentLeftSpeed = (twmain_impl_currentLeftSpeed + 20);
 
           twmain_impl_stopAndGoStateMachine_currentstate = STATE_STEP_ACCELERATESTATEMENT_2;

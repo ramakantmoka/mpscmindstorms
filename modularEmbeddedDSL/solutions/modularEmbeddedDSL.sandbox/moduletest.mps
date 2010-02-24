@@ -6,7 +6,7 @@
   <language namespace="3a8b8671-1532-4e8f-b780-594a27fa10c8(med.core)" />
   <language namespace="d1a10200-64d4-45ca-afd0-41b350f63b0d(med.logging)" />
   <language namespace="383209c5-49eb-4560-9027-f906632589d6(med.unittest)" />
-  <language namespace="50b44c57-34f1-428d-a7c3-d100606f8e2a(featureDependencies)" />
+  <language namespace="50b44c57-34f1-428d-a7c3-d100606f8e2a(med.features)" />
   <language namespace="fa27d492-bc16-4e00-86c3-966c2cebd871(med.quantities)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.lang.core.constraints)" version="2" />
@@ -36,7 +36,7 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590575(jetbrains.mps.gtext.structure)" version="0" />
   <languageAspect modelUID="r:7636c4cd-da85-496f-87dd-5fbef0253900(med.collections.structure)" version="2" />
   <languageAspect modelUID="r:c8eeaafc-b8ed-41eb-96aa-711dbd66c11c(med.quantities.structure)" version="0" />
-  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(featureDependencies.structure)" version="1" />
+  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="2" />
   <language-engaged-on-generation namespace="5229675a-24de-430d-951b-24682b3b8235(med.platform.win32)" />
   <language-engaged-on-generation namespace="d1a10200-64d4-45ca-afd0-41b350f63b0d(med.logging)" />
   <maxImportIndex value="0" />
@@ -127,10 +127,10 @@
                 <link role="parameter" targetNodeId="306587673256693140" resolveInfo="p1" />
               </node>
             </node>
-            <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="2411909105414208451">
+            <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="2411909105414208451">
               <property name="isNew" value="false" />
-              <node role="expression" type="featureDependencies.structure.NotFE" id="2411909105414208453">
-                <node role="expr" type="featureDependencies.structure.AtomicFE" id="2411909105414208455">
+              <node role="expression" type="med.features.structure.NotFE" id="2411909105414208453">
+                <node role="expr" type="med.features.structure.AtomicFE" id="2411909105414208455">
                   <link role="feature" targetNodeId="2411909105413587975" resolveInfo="useHelper" />
                 </node>
               </node>
@@ -146,9 +146,9 @@
                 <link role="parameter" targetNodeId="306587673256693143" resolveInfo="p2" />
               </node>
             </node>
-            <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="2411909105414185265">
+            <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="2411909105414185265">
               <property name="isNew" value="false" />
-              <node role="expression" type="featureDependencies.structure.AtomicFE" id="2411909105414185267">
+              <node role="expression" type="med.features.structure.AtomicFE" id="2411909105414185267">
                 <link role="feature" targetNodeId="2411909105413587975" resolveInfo="useHelper" />
               </node>
             </node>
@@ -212,9 +212,9 @@
         </node>
         <node role="type" type="med.core.structure.Int32" id="3454436015654467232" />
       </node>
-      <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="2411909105413587976">
+      <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="2411909105413587976">
         <property name="isNew" value="false" />
-        <node role="expression" type="featureDependencies.structure.AtomicFE" id="2411909105413587978">
+        <node role="expression" type="med.features.structure.AtomicFE" id="2411909105413587978">
           <link role="feature" targetNodeId="2411909105413587975" resolveInfo="useHelper" />
         </node>
       </node>
@@ -223,12 +223,12 @@
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelAll" id="3106315015966211334" />
     <node role="projectionLevels" type="med.core.structure.ProjectionLevelArchitecture" id="306587673256693132" />
   </node>
-  <node type="featureDependencies.structure.FeatureDependencyConfiguration" id="2411909105413587972">
-    <node role="mode" type="featureDependencies.structure.VariantDisplayMode" id="7974571013346434150">
+  <node type="med.features.structure.FeatureDependencyConfiguration" id="2411909105413587972">
+    <node role="mode" type="med.features.structure.VariantDisplayMode" id="7974571013346434150">
       <property name="removeNonSelectedStuffInEditor" value="true" />
       <property name="showFeatureClause" value="true" />
     </node>
-    <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="2411909105413587975">
+    <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="2411909105413587975">
       <property name="name" value="useHelper" />
       <property name="selected" value="true" />
     </node>

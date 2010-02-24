@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="featureDependencies" uuid="50b44c57-34f1-428d-a7c3-d100606f8e2a" java-stubs-enabled="false" compileInMPS="true">
+<language namespace="med.features" uuid="50b44c57-34f1-428d-a7c3-d100606f8e2a" java-stubs-enabled="false" compileInMPS="true">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" namespacePrefix="featureDependencies" />
+    <modelRoot path="${language_descriptor}/languageModels" namespacePrefix="med.features" />
   </models>
   <accessoryModels />
   <generators>
-    <generator name="" generatorUID="featureDependencies#8261019787197339042" uuid="c799c22a-0b61-4409-a17e-6e6bed16cd83">
+    <generator name="" generatorUID="med.features#8261019787197339042" uuid="c799c22a-0b61-4409-a17e-6e6bed16cd83">
       <models>
-        <modelRoot path="${language_descriptor}/generator/template" namespacePrefix="featureDependencies.generator.template" />
+        <modelRoot path="${language_descriptor}/generator/template" namespacePrefix="med.features.generator.template" />
       </models>
       <external-templates />
       <usedDevKits>

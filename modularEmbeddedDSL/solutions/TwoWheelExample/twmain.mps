@@ -3,7 +3,8 @@
   <persistence version="3" />
   <refactoringHistory />
   <language namespace="810301f2-7f68-47b8-9a00-f2bc361d82c4(ds.twowheel)" />
-  <language namespace="50b44c57-34f1-428d-a7c3-d100606f8e2a(featureDependencies)" />
+  <language namespace="50b44c57-34f1-428d-a7c3-d100606f8e2a(med.features)" />
+  <language namespace="98178bb4-0742-4461-bea6-9fc251a502fa(med.statemachine)" />
   <languageAspect modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" version="9" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590571(jetbrains.mps.gtext.constraints)" version="8" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590575(jetbrains.mps.gtext.structure)" version="0" />
@@ -13,7 +14,7 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.lang.core.constraints)" version="2" />
   <languageAspect modelUID="r:348a1356-437b-49fe-80d1-3c4453a73611(ds.twowheel.structure)" version="1" />
-  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(featureDependencies.structure)" version="1" />
+  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="2" />
   <language-engaged-on-generation namespace="150e33c6-372a-4396-b4cc-1c334fb3f438(med.platform.nxtosek)" />
   <devkit namespace="a891e14a-a3d6-466e-8364-4e1b14cbaa06(ModularEmbeddedDSL)" />
   <maxImportIndex value="0" />
@@ -59,28 +60,20 @@
               </node>
             </node>
           </node>
-          <node role="statements" type="ds.twowheel.structure.BlockStatement" id="2739617086197496028">
+          <node role="statements" type="ds.twowheel.structure.BlockStatement" id="8017499479426260588">
             <property name="name" value="newBlock" />
-            <node role="statements" type="ds.twowheel.structure.DriveOnStatement" id="6177678091395694221">
-              <node role="time" type="med.core.structure.IntConstantExpression" id="6177678091395694222">
+            <node role="statements" type="ds.twowheel.structure.DriveOnStatement" id="8017499479426260582">
+              <node role="time" type="med.core.structure.IntConstantExpression" id="8017499479426260583">
                 <property name="value" value="2000" />
               </node>
-              <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="2739617086186164854">
+              <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="8017499479426260584">
                 <property name="isNew" value="true" />
-                <node role="expression" type="featureDependencies.structure.BaseFE" id="2739617086186164855" />
+                <node role="expression" type="med.features.structure.BaseFE" id="8017499479426260585" />
               </node>
             </node>
-            <node role="statements" type="ds.twowheel.structure.TurnLeftStatement" id="6177678091395694223">
-              <node role="time" type="med.core.structure.IntConstantExpression" id="6177678091395694224">
+            <node role="statements" type="ds.twowheel.structure.TurnLeftStatement" id="8017499479426260586">
+              <node role="time" type="med.core.structure.IntConstantExpression" id="8017499479426260587">
                 <property name="value" value="200" />
-              </node>
-            </node>
-            <node role="bumpReaction" type="ds.twowheel.structure.DecelerateStatement" id="2739617086197496032">
-              <node role="speed" type="med.core.structure.IntConstantExpression" id="2739617086197496035">
-                <property name="value" value="0" />
-              </node>
-              <node role="time" type="med.core.structure.IntConstantExpression" id="2739617086197496036">
-                <property name="value" value="2000" />
               </node>
             </node>
           </node>
@@ -99,9 +92,9 @@
                 <property name="value" value="3000" />
               </node>
             </node>
-            <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="6177678091395694231">
+            <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="6177678091395694231">
               <property name="isNew" value="false" />
-              <node role="expression" type="featureDependencies.structure.AtomicFE" id="6177678091395694232">
+              <node role="expression" type="med.features.structure.AtomicFE" id="6177678091395694232">
                 <link role="feature" targetNodeId="6177678091393977967" resolveInfo="long" />
               </node>
             </node>
@@ -145,9 +138,9 @@
               </node>
             </node>
             <node role="statements" type="ds.twowheel.structure.StopStatement" id="5296414764969458074" />
-            <node role="featureDependencyAnnotation$attribute" type="featureDependencies.structure.FeatureClause" id="5296414764969462394">
+            <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="5296414764969462394">
               <property name="isNew" value="false" />
-              <node role="expression" type="featureDependencies.structure.AtomicFE" id="5296414764969462396">
+              <node role="expression" type="med.features.structure.AtomicFE" id="5296414764969462396">
                 <link role="feature" targetNodeId="5296414764969462393" resolveInfo="reactOnBump" />
               </node>
             </node>
@@ -162,23 +155,23 @@
       <link role="resource" targetNodeId="6556431234482938465" resolveInfo="twmain" />
     </node>
   </node>
-  <node type="featureDependencies.structure.FeatureDependencyConfiguration" id="6177678091393977964">
-    <node role="mode" type="featureDependencies.structure.VariantDisplayMode" id="3260472080518430550">
+  <node type="med.features.structure.FeatureDependencyConfiguration" id="6177678091393977964">
+    <node role="mode" type="med.features.structure.VariantDisplayMode" id="3260472080518430550">
       <property name="removeNonSelectedStuffInEditor" value="true" />
     </node>
-    <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="6177678091393977967">
+    <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="6177678091393977967">
       <property name="name" value="long" />
       <property name="selected" value="true" />
     </node>
-    <node role="features" type="featureDependencies.structure.MacroFeatureDeclaration" id="6177678091393977969">
+    <node role="features" type="med.features.structure.MacroFeatureDeclaration" id="6177678091393977969">
       <property name="name" value="short" />
-      <node role="expression" type="featureDependencies.structure.NotFE" id="6177678091393977971">
-        <node role="expr" type="featureDependencies.structure.AtomicFE" id="6177678091393977973">
+      <node role="expression" type="med.features.structure.NotFE" id="6177678091393977971">
+        <node role="expr" type="med.features.structure.AtomicFE" id="6177678091393977973">
           <link role="feature" targetNodeId="6177678091393977967" resolveInfo="long" />
         </node>
       </node>
     </node>
-    <node role="features" type="featureDependencies.structure.SimpleFeatureDeclaration" id="5296414764969462393">
+    <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="5296414764969462393">
       <property name="name" value="reactOnBump" />
       <property name="selected" value="true" />
     </node>
