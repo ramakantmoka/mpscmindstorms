@@ -5,6 +5,7 @@
   <language namespace="d7a92d38-f7db-40d0-8431-763b0c3c9f20(jetbrains.mps.lang.intentions)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <language namespace="13744753-c81f-424a-9c1b-cf8943bf4e86(jetbrains.mps.lang.sharedConcepts)" />
+  <language namespace="28f9e497-3b42-4291-aeba-0a1039153ab1(jetbrains.mps.lang.plugin)" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959034f(jetbrains.mps.lang.intentions.constraints)" version="1" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959028c(jetbrains.mps.lang.structure.constraints)" version="11" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" version="0" />
@@ -29,12 +30,17 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959033d(jetbrains.mps.lang.annotations.structure)" version="0" />
   <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="2" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590368(jetbrains.mps.lang.plugin.structure)" version="21" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590361(jetbrains.mps.lang.plugin.constraints)" version="19" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959036e(jetbrains.mps.baseLanguage.classifiers.constraints)" version="7" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590373(jetbrains.mps.baseLanguage.classifiers.structure)" version="0" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
-  <maxImportIndex value="4" />
+  <maxImportIndex value="5" />
   <import index="1" modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="2" />
   <import index="2" modelUID="f:java_stub#java.lang(java.lang@java_stub)" version="-1" />
   <import index="3" modelUID="f:java_stub#java.io(java.io@java_stub)" version="-1" />
   <import index="4" modelUID="f:java_stub#jetbrains.mps.nodeEditor(jetbrains.mps.nodeEditor@java_stub)" version="-1" />
+  <import index="5" modelUID="r:2eaee9de-69f2-4b2c-a068-a570d34b1030(med.features.rt)" version="-1" />
   <visible index="2" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <node type="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" id="8261019787194263249">
     <property name="name" value="addFeatureDependencyAnnotation" />
@@ -382,6 +388,62 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" id="3455492224010161462">
+    <property name="package" value="config" />
+    <property name="name" value="updateValidationBase" />
+    <link role="forConcept" targetNodeId="1.8261019787196537346" resolveInfo="FeatureDependencyConfiguration" />
+    <node role="descriptionFunction" type="jetbrains.mps.lang.intentions.structure.DescriptionBlock" id="3455492224010161463">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3455492224010161464">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="3455492224010243696">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="3455492224010243697">
+            <property name="value" value="update validtion base" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="executeFunction" type="jetbrains.mps.lang.intentions.structure.ExecuteBlock" id="3455492224010161465">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3455492224010161466">
+        <node role="statement" type="jetbrains.mps.lang.plugin.structure.ExecuteCommandStatement" id="3455492224010754427">
+          <node role="commandClosureLiteral" type="jetbrains.mps.lang.plugin.structure.CommandClosureLiteral" id="3455492224010754428">
+            <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3455492224010754429">
+              <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="4093046831255898027">
+                <node role="expression" type="jetbrains.mps.baseLanguage.structure.StaticMethodCall" id="4093046831255898028">
+                  <link role="baseMethodDeclaration" targetNodeId="5.3455492224010161430" resolveInfo="buildValidFeatureList" />
+                  <link role="classConcept" targetNodeId="5.3455492224010140265" resolveInfo="ValidationBaseBuilder" />
+                  <node role="actualArgument" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="4093046831255898029" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" id="3455492224010922363">
+    <property name="package" value="config" />
+    <property name="name" value="checkModel" />
+    <link role="forConcept" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="descriptionFunction" type="jetbrains.mps.lang.intentions.structure.DescriptionBlock" id="3455492224010922364">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3455492224010922365">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="3455492224010923591">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="3455492224010923592">
+            <property name="value" value="check model" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="executeFunction" type="jetbrains.mps.lang.intentions.structure.ExecuteBlock" id="3455492224010922366">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3455492224010922367">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1833385247966410520">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.StaticMethodCall" id="1833385247966410522">
+            <link role="baseMethodDeclaration" targetNodeId="5.1833385247966408736" resolveInfo="checkModel" />
+            <link role="classConcept" targetNodeId="5.1833385247966408730" resolveInfo="FeatureConfigChecker" />
+            <node role="actualArgument" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="1833385247966410523" />
           </node>
         </node>
       </node>

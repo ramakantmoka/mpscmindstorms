@@ -47,6 +47,25 @@
         </node>
       </node>
     </node>
+    <node role="method" type="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" id="1833385247967456436">
+      <property name="name" value="isTrue" />
+      <property name="isVirtual" value="true" />
+      <node role="visibility" type="jetbrains.mps.baseLanguage.structure.PublicVisibility" id="1833385247967456437" />
+      <node role="returnType" type="jetbrains.mps.baseLanguage.structure.BooleanType" id="1833385247967456440" />
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1833385247967456439">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1833385247967456444">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.BooleanConstant" id="1833385247967456446">
+            <property name="value" value="false" />
+          </node>
+        </node>
+      </node>
+      <node role="parameter" type="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" id="1833385247967456441">
+        <property name="name" value="selectionScenario" />
+        <node role="type" type="jetbrains.mps.lang.smodel.structure.SNodeListType" id="1833385247967456442">
+          <link role="elementConcept" targetNodeId="1.8261019787197673485" resolveInfo="FeatureDeclaration" />
+        </node>
+      </node>
+    </node>
   </node>
   <node type="jetbrains.mps.lang.behavior.structure.ConceptBehavior" id="8261019787198922990">
     <property name="package" value="expr" />
@@ -71,6 +90,35 @@
       </node>
       <node role="returnType" type="jetbrains.mps.baseLanguage.structure.BooleanType" id="8261019787199228166" />
       <node role="visibility" type="jetbrains.mps.baseLanguage.structure.PublicVisibility" id="8261019787199228167" />
+    </node>
+    <node role="method" type="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" id="1833385247967456483">
+      <property name="name" value="isTrue" />
+      <link role="overriddenMethod" targetNodeId="1833385247967456436" resolveInfo="isTrue" />
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1833385247967456486">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1833385247967456491">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1833385247967456493">
+            <node role="operand" type="jetbrains.mps.baseLanguage.structure.ParameterReference" id="1833385247967456492">
+              <link role="variableDeclaration" targetNodeId="1833385247967456487" resolveInfo="selectionScenario" />
+            </node>
+            <node role="operation" type="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" id="1833385247967456497">
+              <node role="argument" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1833385247967456501">
+                <node role="operand" type="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" id="1833385247967456500" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="1833385247967456506">
+                  <link role="link" targetNodeId="1.8261019787197803202" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="parameter" type="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" id="1833385247967456487">
+        <property name="name" value="selectionScenario" />
+        <node role="type" type="jetbrains.mps.lang.smodel.structure.SNodeListType" id="1833385247967456488">
+          <link role="elementConcept" targetNodeId="1.8261019787197673485" resolveInfo="FeatureDeclaration" />
+        </node>
+      </node>
+      <node role="returnType" type="jetbrains.mps.baseLanguage.structure.BooleanType" id="1833385247967456489" />
+      <node role="visibility" type="jetbrains.mps.baseLanguage.structure.PublicVisibility" id="1833385247967456490" />
     </node>
     <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="8261019787198922991">
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8261019787198922992" />
@@ -113,6 +161,52 @@
       <node role="returnType" type="jetbrains.mps.baseLanguage.structure.BooleanType" id="8261019787199228180" />
       <node role="visibility" type="jetbrains.mps.baseLanguage.structure.PublicVisibility" id="8261019787199228181" />
     </node>
+    <node role="method" type="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" id="1833385247967456447">
+      <property name="name" value="isTrue" />
+      <link role="overriddenMethod" targetNodeId="1833385247967456436" resolveInfo="isTrue" />
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1833385247967456450">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1833385247967456455">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.AndExpression" id="1833385247967456468">
+            <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1833385247967456477">
+              <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1833385247967456472">
+                <node role="operand" type="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" id="1833385247967456471" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="1833385247967456476">
+                  <link role="link" targetNodeId="1.8261019787197538140" />
+                </node>
+              </node>
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="1833385247967456481">
+                <link role="baseMethodDeclaration" targetNodeId="1833385247967456436" resolveInfo="isTrue" />
+                <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.ParameterReference" id="1833385247967456482">
+                  <link role="variableDeclaration" targetNodeId="1833385247967456451" resolveInfo="selectionScenario" />
+                </node>
+              </node>
+            </node>
+            <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1833385247967456462">
+              <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1833385247967456457">
+                <node role="operand" type="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" id="1833385247967456456" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="1833385247967456461">
+                  <link role="link" targetNodeId="1.8261019787197538139" />
+                </node>
+              </node>
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="1833385247967456466">
+                <link role="baseMethodDeclaration" targetNodeId="1833385247967456436" resolveInfo="isTrue" />
+                <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.ParameterReference" id="1833385247967456467">
+                  <link role="variableDeclaration" targetNodeId="1833385247967456451" resolveInfo="selectionScenario" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="parameter" type="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" id="1833385247967456451">
+        <property name="name" value="selectionScenario" />
+        <node role="type" type="jetbrains.mps.lang.smodel.structure.SNodeListType" id="1833385247967456452">
+          <link role="elementConcept" targetNodeId="1.8261019787197673485" resolveInfo="FeatureDeclaration" />
+        </node>
+      </node>
+      <node role="returnType" type="jetbrains.mps.baseLanguage.structure.BooleanType" id="1833385247967456453" />
+      <node role="visibility" type="jetbrains.mps.baseLanguage.structure.PublicVisibility" id="1833385247967456454" />
+    </node>
     <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="8261019787198923005">
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8261019787198923006" />
     </node>
@@ -153,6 +247,52 @@
       </node>
       <node role="returnType" type="jetbrains.mps.baseLanguage.structure.BooleanType" id="8261019787199228198" />
       <node role="visibility" type="jetbrains.mps.baseLanguage.structure.PublicVisibility" id="8261019787199228199" />
+    </node>
+    <node role="method" type="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" id="1833385247967456541">
+      <property name="name" value="isTrue" />
+      <link role="overriddenMethod" targetNodeId="1833385247967456436" resolveInfo="isTrue" />
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1833385247967456544">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1833385247967456549">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.OrExpression" id="1833385247967456562">
+            <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1833385247967456571">
+              <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1833385247967456566">
+                <node role="operand" type="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" id="1833385247967456565" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="1833385247967456570">
+                  <link role="link" targetNodeId="1.8261019787197538140" />
+                </node>
+              </node>
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="1833385247967456575">
+                <link role="baseMethodDeclaration" targetNodeId="1833385247967456436" resolveInfo="isTrue" />
+                <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.ParameterReference" id="1833385247967456576">
+                  <link role="variableDeclaration" targetNodeId="1833385247967456545" resolveInfo="selectionScenario" />
+                </node>
+              </node>
+            </node>
+            <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1833385247967456556">
+              <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1833385247967456551">
+                <node role="operand" type="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" id="1833385247967456550" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="1833385247967456555">
+                  <link role="link" targetNodeId="1.8261019787197538139" />
+                </node>
+              </node>
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="1833385247967456560">
+                <link role="baseMethodDeclaration" targetNodeId="1833385247967456436" resolveInfo="isTrue" />
+                <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.ParameterReference" id="1833385247967456561">
+                  <link role="variableDeclaration" targetNodeId="1833385247967456545" resolveInfo="selectionScenario" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="parameter" type="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" id="1833385247967456545">
+        <property name="name" value="selectionScenario" />
+        <node role="type" type="jetbrains.mps.lang.smodel.structure.SNodeListType" id="1833385247967456546">
+          <link role="elementConcept" targetNodeId="1.8261019787197673485" resolveInfo="FeatureDeclaration" />
+        </node>
+      </node>
+      <node role="returnType" type="jetbrains.mps.baseLanguage.structure.BooleanType" id="1833385247967456547" />
+      <node role="visibility" type="jetbrains.mps.baseLanguage.structure.PublicVisibility" id="1833385247967456548" />
     </node>
     <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="8261019787198925189">
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8261019787198925190" />
@@ -207,6 +347,38 @@
       </node>
       <node role="returnType" type="jetbrains.mps.baseLanguage.structure.BooleanType" id="5047504493555896666" />
       <node role="visibility" type="jetbrains.mps.baseLanguage.structure.PublicVisibility" id="5047504493555896667" />
+    </node>
+    <node role="method" type="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" id="1833385247967456513">
+      <property name="name" value="isTrue" />
+      <link role="overriddenMethod" targetNodeId="1833385247967456436" resolveInfo="isTrue" />
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1833385247967456516">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1833385247967456521">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.NotExpression" id="1833385247967456534">
+            <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1833385247967456535">
+              <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1833385247967456536">
+                <node role="operand" type="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" id="1833385247967456537" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="1833385247967456538">
+                  <link role="link" targetNodeId="1.5047504493555884399" />
+                </node>
+              </node>
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="1833385247967456539">
+                <link role="baseMethodDeclaration" targetNodeId="1833385247967456436" resolveInfo="isTrue" />
+                <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.ParameterReference" id="1833385247967456540">
+                  <link role="variableDeclaration" targetNodeId="1833385247967456517" resolveInfo="selectionScenario" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="parameter" type="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" id="1833385247967456517">
+        <property name="name" value="selectionScenario" />
+        <node role="type" type="jetbrains.mps.lang.smodel.structure.SNodeListType" id="1833385247967456518">
+          <link role="elementConcept" targetNodeId="1.8261019787197673485" resolveInfo="FeatureDeclaration" />
+        </node>
+      </node>
+      <node role="returnType" type="jetbrains.mps.baseLanguage.structure.BooleanType" id="1833385247967456519" />
+      <node role="visibility" type="jetbrains.mps.baseLanguage.structure.PublicVisibility" id="1833385247967456520" />
     </node>
     <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="5047504493555896660">
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5047504493555896661" />
@@ -460,6 +632,45 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.behavior.structure.ConceptBehavior" id="1833385247968769148">
+    <property name="package" value="expr" />
+    <link role="concept" targetNodeId="1.1833385247968756954" resolveInfo="TrueFE" />
+    <node role="method" type="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" id="1833385247968769151">
+      <property name="name" value="isTrue" />
+      <link role="overriddenMethod" targetNodeId="8261019787198922983" resolveInfo="isTrue" />
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1833385247968769154">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1833385247968769157">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.BooleanConstant" id="1833385247968769158">
+            <property name="value" value="true" />
+          </node>
+        </node>
+      </node>
+      <node role="returnType" type="jetbrains.mps.baseLanguage.structure.BooleanType" id="1833385247968769155" />
+      <node role="visibility" type="jetbrains.mps.baseLanguage.structure.PublicVisibility" id="1833385247968769156" />
+    </node>
+    <node role="method" type="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" id="1833385247968769159">
+      <property name="name" value="isTrue" />
+      <link role="overriddenMethod" targetNodeId="1833385247967456436" resolveInfo="isTrue" />
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1833385247968769162">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1833385247968769167">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.BooleanConstant" id="1833385247968769168">
+            <property name="value" value="true" />
+          </node>
+        </node>
+      </node>
+      <node role="parameter" type="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" id="1833385247968769163">
+        <property name="name" value="selectionScenario" />
+        <node role="type" type="jetbrains.mps.lang.smodel.structure.SNodeListType" id="1833385247968769164">
+          <link role="elementConcept" targetNodeId="1.8261019787197673485" resolveInfo="FeatureDeclaration" />
+        </node>
+      </node>
+      <node role="returnType" type="jetbrains.mps.baseLanguage.structure.BooleanType" id="1833385247968769165" />
+      <node role="visibility" type="jetbrains.mps.baseLanguage.structure.PublicVisibility" id="1833385247968769166" />
+    </node>
+    <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="1833385247968769149">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1833385247968769150" />
     </node>
   </node>
 </model>

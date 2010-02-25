@@ -9,6 +9,7 @@
 
 // custom includes for header
 #include "stdint.h"
+#include "stdint.h"
 
 enum linefollower_events_enum {
 EVENT_INITIALIZED
