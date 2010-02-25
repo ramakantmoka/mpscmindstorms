@@ -14,6 +14,7 @@
       <solutionPath path="${project}/solutions/modularEmbeddedDSL.sandbox/modularEmbeddedDSL.sandbox.msd" folder="_samples" />
       <solutionPath path="${project}/solutions/BlockExample/BlockExample.msd" folder="_samples" />
       <solutionPath path="${project}/solutions/LineFollowerWithComponents/LineFollowerWithComponents.msd" folder="_samples" />
+      <solutionPath path="${project}/solutions/DependencyTest/DependencyTest.msd" folder="_samples" />
     </projectSolutions>
     <projectLanguages>
       <languagePath path="${project}/languages/bitdata/bitdata.mpl" folder="med" />
@@ -33,7 +34,7 @@
       <languagePath path="${project}/languages/components/components.mpl" folder="med" />
     </projectLanguages>
     <projectDevkits>
-      <devkitPath path="${project}/devkits/ModularEmbeddedDSL/ModularEmbeddedDSL.devkit" />
+      <devkitPath path="${project}/devkits/ModularEmbeddedDSL/ModularEmbeddedDSL.devkit" folder="med" />
     </projectDevkits>
     <genConfs />
   </component>

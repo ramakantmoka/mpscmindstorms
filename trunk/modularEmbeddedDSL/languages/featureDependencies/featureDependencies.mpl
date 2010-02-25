@@ -2,8 +2,12 @@
 <language namespace="med.features" uuid="50b44c57-34f1-428d-a7c3-d100606f8e2a" java-stubs-enabled="false" compileInMPS="true">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" namespacePrefix="med.features" />
+    <modelRoot path="${language_descriptor}/languageAccessories" namespacePrefix="med.features" />
+    <modelRoot path="${language_descriptor}/languageAccessories" namespacePrefix="med.features" />
   </models>
-  <accessoryModels />
+  <accessoryModels>
+    <model modelUID="r:2eaee9de-69f2-4b2c-a068-a570d34b1030(med.features.rt)" />
+  </accessoryModels>
   <generators>
     <generator name="" generatorUID="med.features#8261019787197339042" uuid="c799c22a-0b61-4409-a17e-6e6bed16cd83">
       <models>

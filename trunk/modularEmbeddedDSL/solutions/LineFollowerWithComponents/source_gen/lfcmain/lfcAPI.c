@@ -15,6 +15,7 @@
 #include "kernel.h"
 #include "kernel_id.h"
 #include "stdint.h"
+#include "stdint.h"
 
 int8_t lfcAPI_api_leftSpeedMock = 0;
 int8_t lfcAPI_api_rightSpeedMock = 0;

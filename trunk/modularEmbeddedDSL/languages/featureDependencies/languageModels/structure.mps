@@ -164,6 +164,12 @@
       <property name="sourceCardinality" value="0..n" />
       <link role="target" targetNodeId="8261019787197673485" resolveInfo="FeatureDeclaration" />
     </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="1833385247968290592">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="problems" />
+      <property name="sourceCardinality" value="0..n" />
+      <link role="target" targetNodeId="1833385247968278190" resolveInfo="DependencyProblem" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="8261019787197538136">
     <property name="name" value="BaseFE" />
@@ -346,6 +352,28 @@
       <property name="sourceCardinality" value="1" />
       <link role="target" targetNodeId="8261019787197538136" resolveInfo="BaseFE" />
     </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="1833385247968278190">
+    <property name="name" value="DependencyProblem" />
+    <property name="package" value="problems" />
+    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="1833385247968278192">
+      <property name="metaClass" value="reference" />
+      <property name="role" value="target" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="1833385247968278191">
+      <property name="metaClass" value="reference" />
+      <property name="role" value="source" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="1833385247968756954">
+    <property name="package" value="expr" />
+    <property name="name" value="TrueFE" />
+    <link role="extends" targetNodeId="8261019787197538136" resolveInfo="BaseFE" />
   </node>
 </model>
 

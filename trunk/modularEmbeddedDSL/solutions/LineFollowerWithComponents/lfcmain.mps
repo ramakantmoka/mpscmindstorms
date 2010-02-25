@@ -20,8 +20,9 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.lang.core.constraints)" version="2" />
   <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="2" />
   <devkit namespace="a891e14a-a3d6-466e-8364-4e1b14cbaa06(ModularEmbeddedDSL)" />
-  <maxImportIndex value="1" />
+  <maxImportIndex value="2" />
   <import index="1" modelUID="r:87349ab3-9b12-4481-9a60-1d03a1d1532e(lfmain)" version="-1" />
+  <import index="2" modelUID="r:008cad8e-40cf-430d-89be-894b04245172(dtm)" version="-1" />
   <node type="med.core.structure.Resource" id="2739617086194230973">
     <property name="name" value="lfcmain" />
     <node role="modules" type="med.core.structure.ImplementationModule" id="2739617086195939478">
@@ -607,6 +608,7 @@
     </node>
   </node>
   <node type="med.features.structure.FeatureDependencyConfiguration" id="8017499479424103537">
+    <property name="numberOfValidConfigurations" value="2" />
     <node role="mode" type="med.features.structure.ShowClauseDisplayMode" id="8017499479424103538">
       <property name="showFeatureClause" value="true" />
       <property name="highlightFeatureDependentNodes" value="true" />
