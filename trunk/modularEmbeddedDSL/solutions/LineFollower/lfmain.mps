@@ -127,7 +127,7 @@
           </node>
           <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="2644792117219870808">
             <property name="isNew" value="false" />
-            <node role="expression" type="med.features.structure.AtomicFE" id="2644792117219870810">
+            <node role="expression" type="med.features.structure.AtomicFE" id="1766304526710089685">
               <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
             </node>
           </node>

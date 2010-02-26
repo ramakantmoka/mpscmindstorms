@@ -375,6 +375,18 @@
       <property name="sourceCardinality" value="0..n" />
       <link role="target" targetNodeId="1766304526708492520" resolveInfo="InvalidConfig" />
     </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="1766304526709423472">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="sourceExpression" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="8261019787197538136" resolveInfo="BaseFE" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="1766304526709423473">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="targetExpression" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="8261019787197538136" resolveInfo="BaseFE" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="1833385247968756954">
     <property name="package" value="expr" />
