@@ -369,11 +369,37 @@
       <property name="sourceCardinality" value="1" />
       <link role="target" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
     </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="1766304526708492533">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="invalids" />
+      <property name="sourceCardinality" value="0..n" />
+      <link role="target" targetNodeId="1766304526708492520" resolveInfo="InvalidConfig" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="1833385247968756954">
     <property name="package" value="expr" />
     <property name="name" value="TrueFE" />
     <link role="extends" targetNodeId="8261019787197538136" resolveInfo="BaseFE" />
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="4093046831256420650">
+    <property name="package" value="expr" />
+    <property name="name" value="ListAndClause" />
+    <link role="extends" targetNodeId="8261019787197538136" resolveInfo="BaseFE" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="4093046831256420651">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="elements" />
+      <property name="sourceCardinality" value="0..n" />
+      <link role="target" targetNodeId="8261019787197538136" resolveInfo="BaseFE" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="1766304526708492520">
+    <property name="package" value="problems" />
+    <property name="name" value="InvalidConfig" />
+    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="1766304526708492521">
+      <property name="name" value="dependencyString" />
+      <link role="dataType" targetNodeId="2v.1082983041843" resolveInfo="string" />
+    </node>
   </node>
 </model>
 

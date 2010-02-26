@@ -47,7 +47,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="2522599413187865673">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="2522599413187865676">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="2522599413187865677">
-            <property name="value" value="add else part" />
+            <property name="value" value="if: add else part" />
           </node>
         </node>
       </node>
@@ -76,7 +76,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="2522599413188081502">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="2522599413188081505">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="2522599413188081506">
-            <property name="value" value="add else if" />
+            <property name="value" value="if: add else if" />
           </node>
         </node>
       </node>
@@ -104,7 +104,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6300047501519549251">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="6300047501519549254">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="6300047501519549255">
-            <property name="value" value="Add Include File Reference" />
+            <property name="value" value="dep: Add Include File Ref" />
           </node>
         </node>
       </node>
@@ -136,7 +136,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="306587673259384569">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="306587673259384572">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="306587673259384573">
-            <property name="value" value="toggle export" />
+            <property name="value" value="export: toggle" />
           </node>
         </node>
       </node>
@@ -171,7 +171,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8470053389337870133">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8470053389337963455">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="8470053389337963456">
-            <property name="value" value="remove size specification" />
+            <property name="value" value="array: remove size spec" />
           </node>
         </node>
       </node>
@@ -242,7 +242,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8470053389337963505">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8470053389337963508">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="8470053389337963509">
-            <property name="value" value="add size specification" />
+            <property name="value" value="array: add size spec" />
           </node>
         </node>
       </node>
@@ -314,7 +314,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3577454086726657677">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="3577454086726756886">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="3577454086726756887">
-            <property name="value" value="add module dependency annotation" />
+            <property name="value" value="dep: add module dependency annotation" />
           </node>
         </node>
       </node>
@@ -344,7 +344,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3104433618260629790">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="3104433618260629791">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="3104433618260629792">
-            <property name="value" value="toggle name lock" />
+            <property name="value" value="name: toggle lock" />
           </node>
         </node>
       </node>
@@ -379,7 +379,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6254144863185758142">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="6254144863185758145">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="6254144863185758146">
-            <property name="value" value="toggle static" />
+            <property name="value" value="static: toggle" />
           </node>
         </node>
       </node>
@@ -414,7 +414,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997633356261">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997633356264">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="738757997633356265">
-            <property name="value" value="toggle safe" />
+            <property name="value" value="safe: toggle" />
           </node>
         </node>
       </node>
@@ -449,7 +449,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="738757997634744218">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="738757997634744221">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="738757997634744222">
-            <property name="value" value="add Tag" />
+            <property name="value" value="tag: add" />
           </node>
         </node>
       </node>

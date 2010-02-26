@@ -50,7 +50,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8261019787194263251">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8261019787194361698">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="8261019787194361699">
-            <property name="value" value="Add Feature Dependency" />
+            <property name="value" value="features: add clause" />
           </node>
         </node>
       </node>
@@ -132,7 +132,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8261019787194891526">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8261019787194891529">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="8261019787194891530">
-            <property name="value" value="Remove Feature Dependency" />
+            <property name="value" value="features: remove clause" />
           </node>
         </node>
       </node>
@@ -206,7 +206,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="2644792117219665539">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="2644792117219768211">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="2644792117219768212">
-            <property name="value" value="switch" />
+            <property name="value" value="features: switch mode" />
           </node>
         </node>
       </node>
@@ -256,7 +256,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8017499479423988126">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8017499479423988127">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="8017499479423988128">
-            <property name="value" value="Add Replacement Feature Dependency" />
+            <property name="value" value="features: add replacement" />
           </node>
         </node>
       </node>
@@ -351,7 +351,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8017499479425116996">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8017499479425116997">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="8017499479425116998">
-            <property name="value" value="Remove Feature Dependency" />
+            <property name="value" value="features: remove clause" />
           </node>
         </node>
       </node>
@@ -401,7 +401,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3455492224010161464">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="3455492224010243696">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="3455492224010243697">
-            <property name="value" value="update validtion base" />
+            <property name="value" value="features: update validtion base" />
           </node>
         </node>
       </node>
@@ -432,7 +432,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3455492224010922365">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="3455492224010923591">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="3455492224010923592">
-            <property name="value" value="check model" />
+            <property name="value" value="features: check model" />
           </node>
         </node>
       </node>

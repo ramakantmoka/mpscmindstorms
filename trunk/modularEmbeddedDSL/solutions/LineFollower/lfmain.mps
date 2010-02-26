@@ -686,11 +686,8 @@
         <node role="type" type="med.core.structure.VoidType" id="5296414764970547848" />
         <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="5296414764970547918">
           <property name="isNew" value="false" />
-          <node role="expression" type="med.features.structure.AndFE" id="2739617086191913205">
-            <node role="right" type="med.features.structure.BaseFE" id="2739617086191913206" />
-            <node role="left" type="med.features.structure.AtomicFE" id="5296414764970547920">
-              <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
-            </node>
+          <node role="expression" type="med.features.structure.AtomicFE" id="1766304526708863769">
+            <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
           </node>
         </node>
       </node>
@@ -756,11 +753,8 @@
         <node role="type" type="med.core.structure.VoidType" id="5296414764970547912" />
         <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="5296414764970547921">
           <property name="isNew" value="false" />
-          <node role="expression" type="med.features.structure.AndFE" id="2739617086191913208">
-            <node role="right" type="med.features.structure.BaseFE" id="2739617086191913209" />
-            <node role="left" type="med.features.structure.AtomicFE" id="5296414764970547923">
-              <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
-            </node>
+          <node role="expression" type="med.features.structure.AtomicFE" id="1766304526708863770">
+            <link role="feature" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
           </node>
         </node>
       </node>
@@ -946,6 +940,7 @@
     </node>
     <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="7680622939174614995">
       <property name="name" value="runtimeCalibration" />
+      <property name="selected" value="true" />
     </node>
     <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="7680622939174614997">
       <property name="name" value="bumper" />
@@ -957,7 +952,7 @@
     </node>
     <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="5196379128662641907">
       <property name="name" value="debugOutput" />
-      <property name="selected" value="false" />
+      <property name="selected" value="true" />
     </node>
   </node>
   <node type="med.core.structure.System" id="8437501635617536080">

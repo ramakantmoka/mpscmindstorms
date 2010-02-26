@@ -41,7 +41,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6254144863182876415">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="6254144863182975629">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="6254144863182975630">
-            <property name="value" value="make initial" />
+            <property name="value" value="statemachine: make initial" />
           </node>
         </node>
       </node>
@@ -109,7 +109,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6556431234483356438">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="6556431234483356441">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="6556431234483356442">
-            <property name="value" value="add exit action" />
+            <property name="value" value="statemachine: add exit action" />
           </node>
         </node>
       </node>
@@ -138,7 +138,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5231257431511886256">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="5231257431511886257">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="5231257431511886258">
-            <property name="value" value="add entry action" />
+            <property name="value" value="statemachine: add entry action" />
           </node>
         </node>
       </node>

@@ -40,7 +40,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="2739617086187249549">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="2739617086187249552">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="2739617086187249553">
-            <property name="value" value="update procedures" />
+            <property name="value" value="components: update procedures" />
           </node>
         </node>
       </node>

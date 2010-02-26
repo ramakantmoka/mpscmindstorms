@@ -39,7 +39,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="7680622939171571647">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="7680622939171670861">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="7680622939171670862">
-            <property name="value" value="add trace" />
+            <property name="value" value="trace: add" />
           </node>
         </node>
       </node>
@@ -98,7 +98,7 @@
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="7680622939172684480">
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="7680622939172684483">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="7680622939172684484">
-            <property name="value" value="remove trace" />
+            <property name="value" value="trace: remove" />
           </node>
         </node>
       </node>
