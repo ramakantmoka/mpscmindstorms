@@ -624,6 +624,7 @@
     <property name="package" value="config" />
     <link role="conceptDeclaration" targetNodeId="1.7715189151798118636" resolveInfo="SimpleFeatureDeclaration" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="7715189151798118640">
+      <link role="keyMap" targetNodeId="1281592426318053756" resolveInfo="enterToSwitch" />
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="7715189151798118641">
         <property name="text" value="feature" />
       </node>
@@ -1301,6 +1302,39 @@
     <link role="conceptDeclaration" targetNodeId="1.1766304526708492520" resolveInfo="InvalidConfig" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="1766304526708492524">
       <link role="relationDeclaration" targetNodeId="1.1766304526708492521" resolveInfo="dependencyString" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.editor.structure.CellKeyMapDeclaration" id="1281592426318053756">
+    <property name="package" value="config" />
+    <property name="name" value="enterToSwitch" />
+    <link role="applicableConcept" targetNodeId="1.7715189151798118636" resolveInfo="SimpleFeatureDeclaration" />
+    <node role="item" type="jetbrains.mps.lang.editor.structure.CellKeyMapItem" id="1281592426318053757">
+      <node role="keystroke" type="jetbrains.mps.lang.editor.structure.CellKeyMapKeystroke" id="1281592426318053758">
+        <property name="keycode" value="VK_ENTER" />
+        <property name="modifiers" value="ctrl" />
+      </node>
+      <node role="executeFunction" type="jetbrains.mps.lang.editor.structure.CellKeyMap_ExecuteFunction" id="1281592426318053759">
+        <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1281592426318053760">
+          <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1281592426318053761">
+            <node role="expression" type="jetbrains.mps.baseLanguage.structure.AssignmentExpression" id="1281592426318053768">
+              <node role="rValue" type="jetbrains.mps.baseLanguage.structure.NotExpression" id="1281592426318053771">
+                <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1281592426318053774">
+                  <node role="operand" type="jetbrains.mps.lang.editor.structure.CellKeyMap_FunctionParm_selectedNode" id="1281592426318053773" />
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="1281592426318053778">
+                    <link role="property" targetNodeId="1.7715189151798118637" resolveInfo="selected" />
+                  </node>
+                </node>
+              </node>
+              <node role="lValue" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1281592426318053763">
+                <node role="operand" type="jetbrains.mps.lang.editor.structure.CellKeyMap_FunctionParm_selectedNode" id="1281592426318053762" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="1281592426318053767">
+                  <link role="property" targetNodeId="1.7715189151798118637" resolveInfo="selected" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
