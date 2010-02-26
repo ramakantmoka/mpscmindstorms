@@ -949,10 +949,10 @@
       <property name="name" value="debugOutput" />
       <property name="selected" value="false" />
     </node>
-    <node role="mode" type="med.features.structure.VariantDisplayMode" id="5783202554014264604">
+    <node role="mode" type="med.features.structure.VariantDisplayMode" id="1281592426317932958">
       <property name="removeNonSelectedStuffInEditor" value="true" />
     </node>
-    <node role="backup" type="med.features.structure.ShowClauseDisplayMode" id="5783202554014264605">
+    <node role="backup" type="med.features.structure.ShowClauseDisplayMode" id="1281592426317932959">
       <property name="showFeatureClause" value="true" />
       <property name="highlightFeatureDependentNodes" value="true" />
       <property name="removeNonSelectedStuffInEditor" value="false" />
