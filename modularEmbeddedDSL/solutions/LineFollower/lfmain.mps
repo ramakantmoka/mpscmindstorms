@@ -127,7 +127,7 @@
           </node>
           <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="2644792117219870808">
             <property name="isNew" value="false" />
-            <node role="expression" type="med.features.structure.AtomicFE" id="1766304526710089685">
+            <node role="expression" type="med.features.structure.AtomicFE" id="5783202554013034433">
               <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
             </node>
           </node>
@@ -933,11 +933,6 @@
   </node>
   <node type="med.features.structure.FeatureDependencyConfiguration" id="5196379128662641904">
     <property name="numberOfValidConfigurations" value="16" />
-    <node role="mode" type="med.features.structure.ShowClauseDisplayMode" id="2739617086197489665">
-      <property name="showFeatureClause" value="true" />
-      <property name="highlightFeatureDependentNodes" value="true" />
-      <property name="removeNonSelectedStuffInEditor" value="false" />
-    </node>
     <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="7680622939174614995">
       <property name="name" value="runtimeCalibration" />
       <property name="selected" value="true" />
@@ -948,11 +943,19 @@
     </node>
     <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="5296414764970271815">
       <property name="name" value="sonar" />
-      <property name="selected" value="true" />
+      <property name="selected" value="false" />
     </node>
     <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="5196379128662641907">
       <property name="name" value="debugOutput" />
-      <property name="selected" value="true" />
+      <property name="selected" value="false" />
+    </node>
+    <node role="mode" type="med.features.structure.VariantDisplayMode" id="5783202554014264604">
+      <property name="removeNonSelectedStuffInEditor" value="true" />
+    </node>
+    <node role="backup" type="med.features.structure.ShowClauseDisplayMode" id="5783202554014264605">
+      <property name="showFeatureClause" value="true" />
+      <property name="highlightFeatureDependentNodes" value="true" />
+      <property name="removeNonSelectedStuffInEditor" value="false" />
     </node>
   </node>
   <node type="med.core.structure.System" id="8437501635617536080">
