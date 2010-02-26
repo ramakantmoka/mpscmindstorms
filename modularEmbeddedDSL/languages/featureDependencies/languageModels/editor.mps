@@ -1004,67 +1004,177 @@
     <property name="package" value="problems" />
     <link role="conceptDeclaration" targetNodeId="1.1833385247968278190" resolveInfo="DependencyProblem" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="1766304526708492422">
-      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="1766304526708492424">
-        <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="1766304526708492425">
-          <link role="relationDeclaration" targetNodeId="1.1833385247968278191" />
-          <node role="editorComponent" type="jetbrains.mps.lang.editor.structure.InlineEditorComponent" id="1766304526708492426">
-            <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" id="1766304526708492427">
-              <node role="modelAccessor" type="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" id="1766304526708492428">
-                <node role="getter" type="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" id="1766304526708492429">
-                  <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1766304526708492430">
-                    <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="1766304526708492431">
-                      <node role="condition" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526708492432">
-                        <node role="operand" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="1766304526708492433" />
-                        <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" id="1766304526708492434">
-                          <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="1766304526708492435">
-                            <link role="conceptDeclaration" targetNodeId="3v.1169194658468" resolveInfo="INamedConcept" />
-                          </node>
-                        </node>
-                      </node>
-                      <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1766304526708492436">
-                        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="1766304526708492437">
-                          <node role="expression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1766304526708492438">
-                            <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526708492439">
-                              <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526708492440">
-                                <node role="operand" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="1766304526708492441" />
-                                <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" id="1766304526708492442" />
-                              </node>
-                              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="1766304526708492443">
-                                <link role="property" targetNodeId="3v.1169194664001" resolveInfo="name" />
-                              </node>
-                            </node>
-                            <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1766304526708492444">
-                              <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526708492445">
-                                <node role="operand" type="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" id="1766304526708492446">
-                                  <link role="concept" targetNodeId="3v.1169194658468" resolveInfo="INamedConcept" />
-                                  <node role="leftExpression" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="1766304526708492447" />
-                                </node>
-                                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="1766304526708492448">
-                                  <link role="property" targetNodeId="3v.1169194664001" resolveInfo="name" />
-                                </node>
-                              </node>
-                              <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1766304526708492449">
-                                <property name="value" value="/" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="1766304526709288932">
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" id="1766304526709288933">
+          <property name="flag" value="false" />
+        </node>
+        <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="1766304526709698988">
+          <node role="styleItem" type="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" id="1766304526709698989">
+            <property name="flag" value="false" />
+          </node>
+          <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="1766304526709698994">
+            <node role="styleItem" type="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" id="1766304526709698995">
+              <property name="flag" value="false" />
+            </node>
+            <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="1766304526709698998">
+              <link role="relationDeclaration" targetNodeId="1.1833385247968278191" />
+              <node role="editorComponent" type="jetbrains.mps.lang.editor.structure.InlineEditorComponent" id="1766304526709698999">
+                <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" id="1766304526709699000">
+                  <node role="modelAccessor" type="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" id="1766304526709699001">
+                    <node role="getter" type="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" id="1766304526709699002">
+                      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1766304526709699003">
+                        <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="1766304526709699004">
+                          <node role="condition" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526709699005">
+                            <node role="operand" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="1766304526709699006" />
+                            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" id="1766304526709699007">
+                              <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="1766304526709699008">
+                                <link role="conceptDeclaration" targetNodeId="3v.1169194658468" resolveInfo="INamedConcept" />
                               </node>
                             </node>
                           </node>
-                        </node>
-                      </node>
-                      <node role="ifFalseStatement" type="jetbrains.mps.baseLanguage.structure.BlockStatement" id="1766304526708492450">
-                        <node role="statements" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1766304526708492451">
-                          <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="1766304526708492452">
-                            <node role="expression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1766304526708492453">
-                              <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526708492454">
-                                <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526708492455">
-                                  <node role="operand" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="1766304526708492456" />
-                                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" id="1766304526708492457" />
+                          <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1766304526709699009">
+                            <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="1766304526709699010">
+                              <node role="expression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1766304526709699011">
+                                <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526709699012">
+                                  <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526709699013">
+                                    <node role="operand" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="1766304526709699014" />
+                                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" id="1766304526709699015" />
+                                  </node>
+                                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="1766304526709699016">
+                                    <link role="property" targetNodeId="3v.1169194664001" resolveInfo="name" />
+                                  </node>
                                 </node>
-                                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="1766304526708492458">
-                                  <link role="property" targetNodeId="3v.1169194664001" resolveInfo="name" />
+                                <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1766304526709699017">
+                                  <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526709699018">
+                                    <node role="operand" type="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" id="1766304526709699019">
+                                      <link role="concept" targetNodeId="3v.1169194658468" resolveInfo="INamedConcept" />
+                                      <node role="leftExpression" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="1766304526709699020" />
+                                    </node>
+                                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="1766304526709699021">
+                                      <link role="property" targetNodeId="3v.1169194664001" resolveInfo="name" />
+                                    </node>
+                                  </node>
+                                  <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1766304526709699022">
+                                    <property name="value" value="/" />
+                                  </node>
                                 </node>
                               </node>
-                              <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1766304526708492459">
-                                <property name="value" value="&lt;unnamed&gt;/" />
+                            </node>
+                          </node>
+                          <node role="ifFalseStatement" type="jetbrains.mps.baseLanguage.structure.BlockStatement" id="1766304526709699023">
+                            <node role="statements" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1766304526709699024">
+                              <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="1766304526709699025">
+                                <node role="expression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1766304526709699026">
+                                  <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526709699027">
+                                    <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526709699028">
+                                      <node role="operand" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="1766304526709699029" />
+                                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" id="1766304526709699030" />
+                                    </node>
+                                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="1766304526709699031">
+                                      <link role="property" targetNodeId="3v.1169194664001" resolveInfo="name" />
+                                    </node>
+                                  </node>
+                                  <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1766304526709699032">
+                                    <property name="value" value="&lt;unnamed&gt;/" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node role="styleItem" type="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" id="1766304526709833254">
+                <property name="style" value="BOLD" />
+              </node>
+            </node>
+            <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" id="1766304526709698997" />
+            <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="1766304526709833239">
+              <node role="styleItem" type="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" id="1766304526709833240">
+                <property name="flag" value="false" />
+              </node>
+              <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Indent" id="1766304526709833243" />
+              <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="1766304526709833242" />
+              <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="1766304526709833245">
+                <link role="relationDeclaration" targetNodeId="1.1766304526709423472" />
+              </node>
+            </node>
+          </node>
+          <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="1766304526709699039">
+            <property name="text" value="--&gt;" />
+          </node>
+          <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="1766304526709699040">
+            <node role="styleItem" type="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" id="1766304526709699041">
+              <property name="flag" value="false" />
+            </node>
+            <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="1766304526709699044">
+              <link role="relationDeclaration" targetNodeId="1.1833385247968278192" />
+              <node role="styleItem" type="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" id="1766304526709833257">
+                <property name="style" value="BOLD" />
+              </node>
+              <node role="editorComponent" type="jetbrains.mps.lang.editor.structure.InlineEditorComponent" id="1766304526709699045">
+                <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" id="1766304526709699046">
+                  <node role="modelAccessor" type="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" id="1766304526709699047">
+                    <node role="getter" type="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" id="1766304526709699048">
+                      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1766304526709699049">
+                        <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="1766304526709699050">
+                          <node role="condition" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526709699051">
+                            <node role="operand" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="1766304526709699052" />
+                            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" id="1766304526709699053">
+                              <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="1766304526709699054">
+                                <link role="conceptDeclaration" targetNodeId="3v.1169194658468" resolveInfo="INamedConcept" />
+                              </node>
+                            </node>
+                          </node>
+                          <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1766304526709699055">
+                            <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="1766304526709699056">
+                              <node role="expression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1766304526709699057">
+                                <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526709699058">
+                                  <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526709699059">
+                                    <node role="operand" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="1766304526709699060" />
+                                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" id="1766304526709699061" />
+                                  </node>
+                                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="1766304526709699062">
+                                    <link role="property" targetNodeId="3v.1169194664001" resolveInfo="name" />
+                                  </node>
+                                </node>
+                                <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1766304526709699063">
+                                  <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526709699064">
+                                    <node role="operand" type="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" id="1766304526709699065">
+                                      <link role="concept" targetNodeId="3v.1169194658468" resolveInfo="INamedConcept" />
+                                      <node role="leftExpression" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="1766304526709699066" />
+                                    </node>
+                                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="1766304526709699067">
+                                      <link role="property" targetNodeId="3v.1169194664001" resolveInfo="name" />
+                                    </node>
+                                  </node>
+                                  <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1766304526709699068">
+                                    <property name="value" value="/" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node role="ifFalseStatement" type="jetbrains.mps.baseLanguage.structure.BlockStatement" id="1766304526709699069">
+                            <node role="statements" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1766304526709699070">
+                              <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="1766304526709699071">
+                                <node role="expression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1766304526709699072">
+                                  <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526709699073">
+                                    <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526709699074">
+                                      <node role="operand" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="1766304526709699075" />
+                                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" id="1766304526709699076" />
+                                    </node>
+                                    <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="1766304526709699077">
+                                      <link role="property" targetNodeId="3v.1169194664001" resolveInfo="name" />
+                                    </node>
+                                  </node>
+                                  <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1766304526709699078">
+                                    <property name="value" value="&lt;unnamed&gt;/" />
+                                  </node>
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -1075,87 +1185,14 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="1766304526708492460" />
-        <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="1766304526708492461">
-          <property name="text" value="--&gt;" />
-        </node>
-        <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="1766304526708492462">
-          <link role="relationDeclaration" targetNodeId="1.1833385247968278192" />
-          <node role="editorComponent" type="jetbrains.mps.lang.editor.structure.InlineEditorComponent" id="1766304526708492463">
-            <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" id="1766304526708492464">
-              <node role="modelAccessor" type="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" id="1766304526708492465">
-                <node role="getter" type="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" id="1766304526708492466">
-                  <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1766304526708492467">
-                    <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="1766304526708492468">
-                      <node role="condition" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526708492469">
-                        <node role="operand" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="1766304526708492470" />
-                        <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" id="1766304526708492471">
-                          <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="1766304526708492472">
-                            <link role="conceptDeclaration" targetNodeId="3v.1169194658468" resolveInfo="INamedConcept" />
-                          </node>
-                        </node>
-                      </node>
-                      <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1766304526708492473">
-                        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="1766304526708492474">
-                          <node role="expression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1766304526708492475">
-                            <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526708492476">
-                              <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526708492477">
-                                <node role="operand" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="1766304526708492478" />
-                                <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" id="1766304526708492479" />
-                              </node>
-                              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="1766304526708492480">
-                                <link role="property" targetNodeId="3v.1169194664001" resolveInfo="name" />
-                              </node>
-                            </node>
-                            <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1766304526708492481">
-                              <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526708492482">
-                                <node role="operand" type="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" id="1766304526708492483">
-                                  <link role="concept" targetNodeId="3v.1169194658468" resolveInfo="INamedConcept" />
-                                  <node role="leftExpression" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="1766304526708492484" />
-                                </node>
-                                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="1766304526708492485">
-                                  <link role="property" targetNodeId="3v.1169194664001" resolveInfo="name" />
-                                </node>
-                              </node>
-                              <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1766304526708492486">
-                                <property name="value" value="/" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node role="ifFalseStatement" type="jetbrains.mps.baseLanguage.structure.BlockStatement" id="1766304526708492487">
-                        <node role="statements" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1766304526708492488">
-                          <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="1766304526708492489">
-                            <node role="expression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1766304526708492490">
-                              <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526708492491">
-                                <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1766304526708492492">
-                                  <node role="operand" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="1766304526708492493" />
-                                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" id="1766304526708492494" />
-                                </node>
-                                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="1766304526708492495">
-                                  <link role="property" targetNodeId="3v.1169194664001" resolveInfo="name" />
-                                </node>
-                              </node>
-                              <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1766304526708492496">
-                                <property name="value" value="&lt;unnamed&gt;/" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
+            <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" id="1766304526709699043" />
+            <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="1766304526709955409">
+              <link role="relationDeclaration" targetNodeId="1.1766304526709423473" />
             </node>
           </node>
+          <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" id="1766304526709698991" />
         </node>
-        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" id="1766304526708626047">
-          <property name="style" value="BOLD" />
-        </node>
+        <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" id="1766304526709288935" />
       </node>
       <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" id="1766304526708492423" />
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="1766304526708492506">
@@ -1165,9 +1202,13 @@
         <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Indent" id="1766304526708492510" />
         <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="1766304526708492509" />
         <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" id="1766304526708492531">
+          <property name="usesFolding" value="true" />
           <link role="relationDeclaration" targetNodeId="1.1766304526708492533" />
           <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" id="1766304526708492532" />
         </node>
+      </node>
+      <node role="styleItem" type="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" id="1766304526709955410">
+        <property name="flag" value="true" />
       </node>
     </node>
   </node>
@@ -1183,19 +1224,19 @@
     <link role="conceptDeclaration" targetNodeId="1.4093046831256420650" resolveInfo="ListAndClause" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="4093046831256432844">
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="4093046831256432847">
-        <property name="text" value="and[" />
+        <property name="text" value="(" />
         <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" id="4093046831256432851">
           <property name="flag" value="true" />
         </node>
       </node>
       <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="4093046831256432846" />
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" id="4093046831256432854">
-        <property name="separatorText" value=", " />
+        <property name="separatorText" value=" &amp;&amp; " />
         <link role="relationDeclaration" targetNodeId="1.4093046831256420651" />
         <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="4093046831256432855" />
       </node>
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="4093046831256432850">
-        <property name="text" value="]" />
+        <property name="text" value=")" />
         <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" id="4093046831256432852">
           <property name="flag" value="true" />
         </node>
