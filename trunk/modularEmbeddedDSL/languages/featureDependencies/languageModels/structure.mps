@@ -158,6 +158,12 @@
       <property name="sourceCardinality" value="1" />
       <link role="target" targetNodeId="7715189151798803960" resolveInfo="DisplayMode" />
     </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="5783202554013034434">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="backup" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="7715189151798803960" resolveInfo="DisplayMode" />
+    </node>
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="8261019787197673487">
       <property name="metaClass" value="aggregation" />
       <property name="role" value="features" />
