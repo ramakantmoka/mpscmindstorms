@@ -25,49 +25,45 @@
         <property name="name" value="x" />
         <node role="type" type="med.core.structure.VoidType" id="1833385247967679478" />
         <node role="body" type="med.core.structure.StatementList" id="1833385247967679479">
-          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="1833385247967679480">
-            <property name="name" value="i" />
-            <node role="type" type="med.core.structure.GenericIntegerType" id="1833385247967679481" />
-            <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="1833385247969718873">
+          <node role="statements" type="med.core.structure.IfStatement" id="1766304526707655016">
+            <node role="thenPart" type="med.core.structure.StatementList" id="1766304526707655017">
+              <node role="statements" type="med.core.structure.ExpressionStatement" id="1766304526707656599">
+                <node role="expression" type="med.core.structure.ProcedureCall" id="1766304526707656600">
+                  <link role="procedure" targetNodeId="1766304526707656593" resolveInfo="test" />
+                  <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="1766304526707656601">
+                    <property name="isNew" value="true" />
+                    <node role="expression" type="med.features.structure.AtomicFE" id="1766304526707656603">
+                      <link role="feature" targetNodeId="1833385247967679503" resolveInfo="f2" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="condition" type="med.core.structure.GreaterExpression" id="1766304526707655022">
+              <node role="left" type="med.core.structure.IntConstantExpression" id="1766304526707655021">
+                <property name="value" value="1" />
+              </node>
+              <node role="right" type="med.core.structure.IntConstantExpression" id="1766304526707655026">
+                <property name="value" value="2" />
+              </node>
+            </node>
+            <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="1766304526707655027">
               <property name="isNew" value="true" />
-              <node role="expression" type="med.features.structure.AtomicFE" id="1833385247969718875">
+              <node role="expression" type="med.features.structure.AtomicFE" id="1766304526707655030">
                 <link role="feature" targetNodeId="1833385247967679501" resolveInfo="f1" />
               </node>
             </node>
           </node>
-          <node role="statements" type="med.core.structure.ExpressionStatement" id="1833385247968894302">
-            <node role="expression" type="med.core.structure.LocalVariableReference" id="1833385247968894304">
-              <link role="variable" targetNodeId="1833385247967679480" resolveInfo="i" />
-            </node>
-          </node>
-          <node role="statements" type="med.core.structure.ExpressionStatement" id="1833385247969749517">
-            <node role="expression" type="med.core.structure.LocalVariableReference" id="1833385247969749519">
-              <link role="variable" targetNodeId="1833385247967679480" resolveInfo="i" />
-            </node>
-          </node>
-          <node role="statements" type="med.core.structure.ExpressionStatement" id="1833385247969749529">
-            <node role="expression" type="med.core.structure.ProcedureCall" id="1833385247969749531">
-              <link role="procedure" targetNodeId="1833385247969749525" resolveInfo="test" />
-            </node>
-          </node>
-          <node role="statements" type="med.core.structure.OneLineCommetStatement" id="1833385247968753932">
-            <property name="comment" value="bei hierarchischen FDs diese Verunden" />
-          </node>
         </node>
       </node>
-      <node role="contents" type="med.core.structure.Procedure" id="1833385247969749525">
+      <node role="contents" type="med.core.structure.Procedure" id="1766304526707656593">
         <property name="name" value="test" />
-        <node role="type" type="med.core.structure.VoidType" id="1833385247969749526" />
-        <node role="body" type="med.core.structure.StatementList" id="1833385247969749527">
-          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="1833385247969749538">
-            <property name="name" value="j" />
-            <node role="type" type="med.core.structure.GenericIntegerType" id="1833385247969749539" />
-          </node>
-        </node>
-        <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="1833385247969749532">
+        <node role="type" type="med.core.structure.VoidType" id="1766304526707656594" />
+        <node role="body" type="med.core.structure.StatementList" id="1766304526707656595" />
+        <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="1766304526707656596">
           <property name="isNew" value="true" />
-          <node role="expression" type="med.features.structure.AtomicFE" id="1833385247969749534">
-            <link role="feature" targetNodeId="1833385247967679503" resolveInfo="f2" />
+          <node role="expression" type="med.features.structure.AtomicFE" id="1766304526708863694">
+            <link role="feature" targetNodeId="1766304526708480181" resolveInfo="f3" />
           </node>
         </node>
       </node>
@@ -86,6 +82,16 @@
     <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="1833385247967679503">
       <property name="name" value="f2" />
       <property name="selected" value="false" />
+    </node>
+    <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="1766304526708480181">
+      <property name="name" value="f3" />
+    </node>
+    <node role="problems" type="med.features.structure.DependencyProblem" id="1766304526708863695">
+      <link role="source" targetNodeId="1766304526707656600" />
+      <link role="target" targetNodeId="1766304526707656593" resolveInfo="test" />
+      <node role="invalids" type="med.features.structure.InvalidConfig" id="1766304526708863696">
+        <property name="dependencyString" value="[f1, f2]" />
+      </node>
     </node>
   </node>
 </model>
