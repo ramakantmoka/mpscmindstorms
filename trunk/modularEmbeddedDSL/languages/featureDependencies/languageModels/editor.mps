@@ -356,6 +356,20 @@
         <link role="relationDeclaration" targetNodeId="1.8261019787197673487" />
         <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" id="5296414764970982089" />
       </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="3525105684383016446" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_JComponent" id="3525105684383016448">
+        <node role="componentProvider" type="jetbrains.mps.lang.editor.structure.QueryFunction_JComponent" id="3525105684383016449">
+          <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3525105684383016450">
+            <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="3525105684383016451">
+              <node role="expression" type="jetbrains.mps.baseLanguage.structure.StaticMethodCall" id="3525105684383022403">
+                <link role="baseMethodDeclaration" targetNodeId="4.3525105684383020681" resolveInfo="checkModelButton" />
+                <link role="classConcept" targetNodeId="4.5783202554013170023" resolveInfo="ButtonProvider" />
+                <node role="actualArgument" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" id="3525105684383022404" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="1833385247968906509" />
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="1833385247968429618">
         <property name="text" value="Problems" />
