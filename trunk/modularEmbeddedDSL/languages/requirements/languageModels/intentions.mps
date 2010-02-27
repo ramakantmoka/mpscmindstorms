@@ -114,5 +114,33 @@
       </node>
     </node>
   </node>
+  <node type="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" id="3525105684384850454">
+    <property name="name" value="addDependency" />
+    <link role="forConcept" targetNodeId="1.7680622939171997905" resolveInfo="DummyRequirement" />
+    <node role="descriptionFunction" type="jetbrains.mps.lang.intentions.structure.DescriptionBlock" id="3525105684384850455">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3525105684384850456">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="3525105684384850459">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="3525105684384850460">
+            <property name="value" value="trace: add dependency" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="executeFunction" type="jetbrains.mps.lang.intentions.structure.ExecuteBlock" id="3525105684384850457">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3525105684384850458">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="3525105684384850461">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="3525105684384850468">
+            <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="3525105684384850463">
+              <node role="operand" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" id="3525105684384850462" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkListAccess" id="3525105684384850467">
+                <link role="link" targetNodeId="1.7680622939171997942" />
+              </node>
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" id="3525105684384850472" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
