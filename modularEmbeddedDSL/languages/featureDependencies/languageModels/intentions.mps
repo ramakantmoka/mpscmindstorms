@@ -439,6 +439,12 @@
     </node>
     <node role="executeFunction" type="jetbrains.mps.lang.intentions.structure.ExecuteBlock" id="3455492224010922366">
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3455492224010922367">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="3525105684383056807">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.StaticMethodCall" id="3525105684383056808">
+            <link role="baseMethodDeclaration" targetNodeId="5.1833385247968290582" resolveInfo="clearProblems" />
+            <link role="classConcept" targetNodeId="5.3455492224010140265" resolveInfo="ValidationBaseBuilder" />
+          </node>
+        </node>
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1833385247966410520">
           <node role="expression" type="jetbrains.mps.baseLanguage.structure.StaticMethodCall" id="1833385247966410522">
             <link role="baseMethodDeclaration" targetNodeId="5.1833385247966408736" resolveInfo="checkModel" />

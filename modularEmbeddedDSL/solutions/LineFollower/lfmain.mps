@@ -86,7 +86,7 @@
           <property name="name" value="bumped" />
           <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="2739617086197489661">
             <property name="isNew" value="false" />
-            <node role="expression" type="med.features.structure.AtomicFE" id="2739617086197489663">
+            <node role="expression" type="med.features.structure.AtomicFE" id="3525105684383687437">
               <link role="feature" targetNodeId="7680622939174614997" resolveInfo="bumper" />
             </node>
           </node>
@@ -127,7 +127,7 @@
           </node>
           <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="2644792117219870808">
             <property name="isNew" value="false" />
-            <node role="expression" type="med.features.structure.AtomicFE" id="5783202554013034433">
+            <node role="expression" type="med.features.structure.AtomicFE" id="3525105684383527208">
               <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
             </node>
           </node>
@@ -949,13 +949,13 @@
       <property name="name" value="debugOutput" />
       <property name="selected" value="false" />
     </node>
-    <node role="mode" type="med.features.structure.VariantDisplayMode" id="1281592426317932958">
-      <property name="removeNonSelectedStuffInEditor" value="true" />
-    </node>
-    <node role="backup" type="med.features.structure.ShowClauseDisplayMode" id="1281592426317932959">
+    <node role="mode" type="med.features.structure.ShowClauseDisplayMode" id="3525105684383687448">
       <property name="showFeatureClause" value="true" />
       <property name="highlightFeatureDependentNodes" value="true" />
       <property name="removeNonSelectedStuffInEditor" value="false" />
+    </node>
+    <node role="backup" type="med.features.structure.VariantDisplayMode" id="3525105684383687449">
+      <property name="removeNonSelectedStuffInEditor" value="true" />
     </node>
   </node>
   <node type="med.core.structure.System" id="8437501635617536080">
