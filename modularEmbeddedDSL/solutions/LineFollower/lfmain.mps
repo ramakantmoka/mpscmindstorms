@@ -434,10 +434,6 @@
                     </node>
                   </node>
                 </node>
-                <node role="statements" type="med.statemachine.structure.FireEventStatement" id="3525105684383687451">
-                  <link role="machine" targetNodeId="6790227271038808735" resolveInfo="linefollower" />
-                  <link role="trigger" targetNodeId="5296414764970022303" resolveInfo="bumped" />
-                </node>
                 <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="5296414764970503959">
                   <property name="name" value="light" />
                   <node role="type" type="med.core.structure.Int32" id="738757997633731016" />
@@ -953,47 +949,13 @@
       <property name="name" value="debugOutput" />
       <property name="selected" value="false" />
     </node>
-    <node role="mode" type="med.features.structure.ShowClauseDisplayMode" id="3525105684383687448">
+    <node role="mode" type="med.features.structure.ShowClauseDisplayMode" id="3525105684384272186">
       <property name="showFeatureClause" value="true" />
       <property name="highlightFeatureDependentNodes" value="true" />
       <property name="removeNonSelectedStuffInEditor" value="false" />
     </node>
-    <node role="backup" type="med.features.structure.VariantDisplayMode" id="3525105684383687449">
+    <node role="backup" type="med.features.structure.VariantDisplayMode" id="3525105684384272187">
       <property name="removeNonSelectedStuffInEditor" value="true" />
-    </node>
-    <node role="problems" type="med.features.structure.DependencyProblem" id="3525105684383687452">
-      <link role="source" targetNodeId="3525105684383687451" />
-      <link role="target" targetNodeId="5296414764970022303" resolveInfo="bumped" />
-      <node role="invalids" type="med.features.structure.InvalidConfig" id="3525105684383687453">
-        <property name="dependencyString" value="[]" />
-      </node>
-      <node role="invalids" type="med.features.structure.InvalidConfig" id="3525105684383687454">
-        <property name="dependencyString" value="[debugOutput]" />
-      </node>
-      <node role="invalids" type="med.features.structure.InvalidConfig" id="3525105684383687455">
-        <property name="dependencyString" value="[sonar]" />
-      </node>
-      <node role="invalids" type="med.features.structure.InvalidConfig" id="3525105684383687456">
-        <property name="dependencyString" value="[sonar, debugOutput]" />
-      </node>
-      <node role="invalids" type="med.features.structure.InvalidConfig" id="3525105684383687457">
-        <property name="dependencyString" value="[runtimeCalibration]" />
-      </node>
-      <node role="invalids" type="med.features.structure.InvalidConfig" id="3525105684383687458">
-        <property name="dependencyString" value="[runtimeCalibration, debugOutput]" />
-      </node>
-      <node role="invalids" type="med.features.structure.InvalidConfig" id="3525105684383687459">
-        <property name="dependencyString" value="[runtimeCalibration, sonar]" />
-      </node>
-      <node role="invalids" type="med.features.structure.InvalidConfig" id="3525105684383687460">
-        <property name="dependencyString" value="[runtimeCalibration, sonar, debugOutput]" />
-      </node>
-      <node role="sourceExpression" type="med.features.structure.ListAndClause" id="3525105684383687461" />
-      <node role="targetExpression" type="med.features.structure.ListAndClause" id="3525105684383687462">
-        <node role="elements" type="med.features.structure.AtomicFE" id="3525105684383687463">
-          <link role="feature" targetNodeId="7680622939174614997" resolveInfo="bumper" />
-        </node>
-      </node>
     </node>
   </node>
   <node type="med.core.structure.System" id="8437501635617536080">
@@ -1014,6 +976,12 @@
     <node role="requirements" type="med.requirements.structure.DummyRequirement" id="7680622939173623949">
       <property name="name" value="Efficient" />
       <property name="text" value="The program should be as small regarding memory footprint as possible" />
+      <node role="dependencies" type="med.requirements.structure.DummyRefines" id="3525105684385727135">
+        <link role="target" targetNodeId="7680622939172356371" resolveInfo="Init" />
+      </node>
+      <node role="dependencies" type="med.requirements.structure.DummyRefines" id="3525105684385727137">
+        <link role="target" targetNodeId="6556431234481809984" resolveInfo="MaxSpeed" />
+      </node>
     </node>
     <node role="requirements" type="med.requirements.structure.DummyRequirement" id="7680622939173623953">
       <property name="name" value="Cyclic" />
