@@ -178,7 +178,7 @@
         <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" id="3525105684384742205" />
         <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" id="3525105684384742208">
           <link role="relationDeclaration" targetNodeId="1.7680622939171997942" />
-          <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" id="3525105684384742209" />
+          <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="3525105684386172919" />
           <node role="renderingCondition" type="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" id="3525105684384742210">
             <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3525105684384742211">
               <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="3525105684384742216">
@@ -203,6 +203,9 @@
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="7680622939171997933">
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="7680622939171997936">
         <property name="text" value="refines" />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" id="3525105684385883690">
+          <property name="color" value="blue" />
+        </node>
       </node>
       <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="7680622939171997935" />
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="7680622939171997938">
@@ -212,6 +215,9 @@
             <property name="readOnly" value="true" />
             <link role="relationDeclaration" targetNodeId="1.7680622939171997915" resolveInfo="id" />
           </node>
+        </node>
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" id="3525105684385883691">
+          <property name="color" value="blue" />
         </node>
       </node>
     </node>
