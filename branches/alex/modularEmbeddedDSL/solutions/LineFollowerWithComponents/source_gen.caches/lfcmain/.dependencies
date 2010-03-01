@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="lfcmain.LineFollowerWithComponents" />
+  <dependency className="lfcmain.include/lfcAPI" />
+  <dependency className="lfcmain.include/lfcmain" />
+  <dependency className="lfcmain.lfcAPI" />
+  <dependency className="lfcmain.lfcmain" />
+  <dependency className="lfcmain.makefile" />
+</dependenciesRoot>
+
