@@ -12,6 +12,16 @@
         </entry>
       </conceptFeatureMap>
     </refactoringContext>
+    <refactoringContext modelVersion="1">
+      <refactoring refactoringClass="jetbrains.mps.lang.structure.refactorings.RenameConcept" />
+      <moveMap />
+      <conceptFeatureMap>
+        <entry>
+          <key featureName="RequiredPortCall" conceptFQName="med.components.structure.RequiredPortCall" featureKind="CONCEPT" />
+          <value featureName="RequiredPortProcedureCall" conceptFQName="med.components.structure.RequiredPortProcedureCall" featureKind="CONCEPT" />
+        </entry>
+      </conceptFeatureMap>
+    </refactoringContext>
   </refactoringHistory>
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.lang.core.constraints)" version="2" />
@@ -34,10 +44,10 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590340(jetbrains.mps.lang.pattern.constraints)" version="2" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902db(jetbrains.mps.baseLanguage.blTypes.constraints)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590328(jetbrains.mps.baseLanguage.collections.constraints)" version="6" />
-  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="0" />
+  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="1" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="1" />
-  <import index="1" modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="0" />
+  <import index="1" modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="1" />
   <visible index="2" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
   <visible index="3" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2644792117221124041">
@@ -166,7 +176,7 @@
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2739617086186398163">
     <property name="package" value="implementation" />
     <property name="name" value="InterfaceProcedureImplementation" />
-    <link role="extends" targetNodeId="2739617086185148564" resolveInfo="InterfaceProcedure" />
+    <link role="extends" targetNodeId="2v.3577454086729990666" resolveInfo="MedBase" />
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="2739617086187547187">
       <property name="metaClass" value="aggregation" />
       <property name="role" value="body" />
@@ -209,7 +219,7 @@
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2739617086196771952">
-    <property name="package" value="adaptor" />
+    <property name="package" value="wiring.adaptor" />
     <property name="name" value="PortAdapterExpression" />
     <link role="extends" targetNodeId="2v.6441851857096548278" resolveInfo="Expression" />
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="2739617086196771953">
@@ -220,14 +230,14 @@
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2739617086197006486">
-    <property name="package" value="adaptor" />
+    <property name="package" value="wiring.adaptor" />
     <property name="name" value="PortProcedureCall" />
     <link role="extends" targetNodeId="2v.2005811434196936510" resolveInfo="ProcedureCall" />
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="2739617086197006487">
       <property name="metaClass" value="aggregation" />
       <property name="role" value="portExpression" />
       <property name="sourceCardinality" value="1" />
-      <link role="target" targetNodeId="2v.6441851857096548278" resolveInfo="Expression" />
+      <link role="target" targetNodeId="2739617086196771952" resolveInfo="PortAdapterExpression" />
     </node>
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="2739617086197006512">
       <property name="metaClass" value="reference" />
@@ -238,7 +248,7 @@
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2739617086198022583">
-    <property name="package" value="adaptor" />
+    <property name="package" value="wiring.adaptor" />
     <property name="name" value="PortAdaptor" />
     <link role="extends" targetNodeId="2v.3577454086729990666" resolveInfo="MedBase" />
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="8017499479425233841">
@@ -265,7 +275,7 @@
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="3113923837077903603">
-    <property name="package" value="adaptor" />
+    <property name="package" value="wiring.adaptor" />
     <property name="name" value="PortAdapterType" />
     <link role="extends" targetNodeId="2v.4641466063286591366" resolveInfo="Type" />
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="3113923837077903604">
@@ -276,7 +286,7 @@
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="8017499479425222405">
-    <property name="package" value="adaptor" />
+    <property name="package" value="wiring" />
     <property name="name" value="ComponentDescriptor" />
     <link role="extends" targetNodeId="3v.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="8017499479425222408">
@@ -291,6 +301,98 @@
       <property name="sourceCardinality" value="1" />
       <link role="target" targetNodeId="2739617086185486240" resolveInfo="Component" />
     </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="7678656588248037704">
+    <property name="package" value="implementation" />
+    <property name="name" value="RequiredPortProcedureCall" />
+    <link role="extends" targetNodeId="2v.2005811434196936510" resolveInfo="ProcedureCall" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="7678656588248766409">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="portExpression" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="7678656588248621200" resolveInfo="RequiredPortExpression" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="7678656588248037706">
+      <property name="metaClass" value="reference" />
+      <property name="role" value="procedure" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="2739617086185148564" resolveInfo="InterfaceProcedure" />
+      <link role="specializedLink" targetNodeId="2v.2005811434196936511" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="7678656588248621200">
+    <property name="package" value="implementation" />
+    <property name="name" value="RequiredPortExpression" />
+    <link role="extends" targetNodeId="2v.6441851857096548278" resolveInfo="Expression" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="7678656588248621201">
+      <property name="metaClass" value="reference" />
+      <property name="role" value="port" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="2739617086185486248" resolveInfo="RequiredPort" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="7678656588248720478">
+    <property name="package" value="implementation" />
+    <property name="name" value="RequiredPortType" />
+    <link role="extends" targetNodeId="2v.4641466063286591366" resolveInfo="Type" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="7678656588248720479">
+      <property name="metaClass" value="reference" />
+      <property name="role" value="port" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="2739617086185486248" resolveInfo="RequiredPort" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="7678656588250497459">
+    <property name="name" value="Wiring" />
+    <property name="rootable" value="true" />
+    <property name="package" value="wiring" />
+    <link role="extends" targetNodeId="2v.3577454086729990666" resolveInfo="MedBase" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="7678656588250508919">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="mappings" />
+      <property name="sourceCardinality" value="0..n" />
+      <link role="target" targetNodeId="7678656588250497460" resolveInfo="InterfaceMapping" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="7678656588250497460">
+    <property name="package" value="wiring" />
+    <property name="name" value="InterfaceMapping" />
+    <link role="extends" targetNodeId="2v.3577454086729990666" resolveInfo="MedBase" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="7678656588250508881">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="scope" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="7678656588250497465" resolveInfo="WiringScope" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="7678656588250497462">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="descriptor" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="8017499479425222405" resolveInfo="ComponentDescriptor" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="7678656588250497461">
+      <property name="metaClass" value="reference" />
+      <property name="role" value="interface" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="2644792117221124041" resolveInfo="Interface" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="7678656588250772480">
+      <property name="value" value="mapping" />
+      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473891462" resolveInfo="alias" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="7678656588250497465">
+    <property name="package" value="wiring" />
+    <property name="name" value="WiringScope" />
+    <link role="extends" targetNodeId="2v.3577454086729990666" resolveInfo="MedBase" />
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.BooleanConceptProperty" id="7678656588250497466">
+      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473854053" resolveInfo="abstract" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="7678656588250497467">
+    <property name="package" value="wiring" />
+    <property name="name" value="GlobalWiringScope" />
+    <link role="extends" targetNodeId="7678656588250497465" resolveInfo="WiringScope" />
   </node>
 </model>
 
