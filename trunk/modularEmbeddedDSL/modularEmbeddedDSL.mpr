@@ -7,14 +7,11 @@
   <component name="MPSProject">
     <projectSolutions>
       <solutionPath path="${project}/solutions/LineFollower/LineFollower.msd" folder="_samples" />
-      <solutionPath path="${project}/solutions/LoggingTest/LoggingTest.msd" folder="_samples" />
       <solutionPath path="${project}/solutions/NorasDancingRobot/NorasDancingRobot.msd" folder="_samples" />
-      <solutionPath path="${project}/solutions/ReportTest/ReportTest.msd" folder="_samples" />
       <solutionPath path="${project}/solutions/TwoWheelExample/TwoWheelExample.msd" folder="_samples" />
       <solutionPath path="${project}/solutions/modularEmbeddedDSL.sandbox/modularEmbeddedDSL.sandbox.msd" folder="_samples" />
       <solutionPath path="${project}/solutions/BlockExample/BlockExample.msd" folder="_samples" />
       <solutionPath path="${project}/solutions/LineFollowerWithComponents/LineFollowerWithComponents.msd" folder="_samples" />
-      <solutionPath path="${project}/solutions/DependencyTest/DependencyTest.msd" folder="_samples" />
     </projectSolutions>
     <projectLanguages>
       <languagePath path="${project}/languages/bitdata/bitdata.mpl" folder="med" />

@@ -9,20 +9,18 @@
 #include "include/LineFollower.h"
 
 // used resources
-#include "ecrobot_interface.h"
-#include "kernel.h"
+#include "safeutil.h"
 #include "bitdata.h"
-#include "avgutil.h"
+#include "kernel.h"
+#include "ecrobot_interface.h"
 
 // custom includes
 #include "kernel.h"
 #include "kernel_id.h"
 #include "stdint.h"
+#include "stdint.h"
 
-int LineFollower_main_currentSonar = 250;
 int LineFollower_main_linefollower_currentstate = STATE_INITIALIZING;
-int LineFollower_main_currentSonar_history[10] = { 250, 250, 250, 250, 250, 250, 250, 250, 250, 250 };
-int LineFollower_main_currentSonar_index = 0;
 
 void LineFollower_main_linefollower_execute(int event) {
         
@@ -42,81 +40,19 @@ void LineFollower_main_linefollower_execute(int event) {
 
     } // end if 
 
-        
-    if ( LineFollower_main_linefollower_currentstate == STATE_PAUSED) {
-                
-      if ( event == EVENT_UNBLOCKED) {
-                      
-        if ( 1) {
-                  LineFollower_main_linefollower_currentstate = STATE_RUNNING;
-          return ;
-
-        } // end if 
-
-
-      } // end if 
-
-
-    } // end if 
-
-        
-    if ( LineFollower_main_linefollower_currentstate == STATE_RUNNING) {
-                
-      if ( event == EVENT_BLOCKED) {
-                      
-        if ( 1) {
-                  LineFollower_main_linefollower_currentstate = STATE_PAUSED;
-          return ;
-
-        } // end if 
-
-
-      } // end if 
-
-            
-      if ( event == EVENT_BUMPED) {
-                      
-        if ( 1) {
-                  LineFollower_main_linefollower_currentstate = STATE_CRASH;
-          return ;
-
-        } // end if 
-
-
-      } // end if 
-
-
-    } // end if 
-
 }
 
 void ecrobot_device_initialize(){
     ecrobot_set_light_sensor_active (NXT_PORT_S1 );
-    ecrobot_init_sonar_sensor (NXT_PORT_S2 );
     LineFollower_main_linefollower_execute (EVENT_INITIALIZED );
-
-}
-
-TASK(LineFollower_main_sonartask){
-    LineFollower_main_currentSonar = calcAvgInt (LineFollower_main_currentSonar_history, &LineFollower_main_currentSonar_index, ecrobot_get_sonar_sensor (NXT_PORT_S2 ), 10 );
-    TerminateTask(); // automatically added by platform.osek:addTermianateTask
 
 }
 
 TASK(LineFollower_main_run){
                 
       if ( LineFollower_main_linefollower_currentstate == STATE_RUNNING) {
-              int8_t bump = 0;
-        bump = ecrobot_get_touch_sensor (NXT_PORT_S3 );
-                
-        if ( bump == 1) {
-                  LineFollower_main_linefollower_execute (EVENT_BUMPED );
-          TerminateTask();
-
-        } // end if 
-
-        int32_t light = 0;
-        light = ecrobot_get_light_sensor (NXT_PORT_S1 );
+              int32_t light = 0;
+        light = isValidInt32 (ecrobot_get_light_sensor (NXT_PORT_S1 ) );
                 
         if ( (light < (((500 + 700)) / (2)))) {
                   LineFollower_main_updateMotorSettings (20, 40 );
@@ -128,28 +64,6 @@ TASK(LineFollower_main_run){
 
         } // end if 
 
-        TerminateTask();
-        return ;
-
-      } // end if 
-
-            
-      if ( LineFollower_main_linefollower_currentstate == STATE_PAUSED) {
-              LineFollower_main_updateMotorSettings (0, 0 );
-                
-        if ( (LineFollower_main_currentSonar < 255)) {
-                  LineFollower_main_linefollower_execute (EVENT_UNBLOCKED );
-
-        } // end if 
-
-        TerminateTask();
-        return ;
-
-      } // end if 
-
-            
-      if ( LineFollower_main_linefollower_currentstate == STATE_CRASH) {
-              LineFollower_main_updateMotorSettings (0, 0 );
         TerminateTask();
         return ;
 

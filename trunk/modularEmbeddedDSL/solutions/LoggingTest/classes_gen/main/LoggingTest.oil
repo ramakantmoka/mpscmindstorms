@@ -20,22 +20,22 @@ CPU ATMEL_AT91SAM7S256
      MAXALLOWEDVALUE = 10000;
      TICKSPERBASE = 1;
   };
-TASK LineFollower_main_run {
+TASK bttest_main_send {
   AUTOSTART = FALSE;
-  PRIORITY = 2;
+  PRIORITY = 1;
   ACTIVATION = 1;
   SCHEDULE = FULL;
   STACKSIZE = 512;
 };
-ALARM LineFollower_main_run_alarm {
+ALARM bttest_main_send_alarm {
   COUNTER = SysTimerCnt;
   ACTION = ACTIVATETASK {
-    TASK = LineFollower_main_run;
+    TASK = bttest_main_send;
   };
   AUTOSTART = TRUE
  { 
     ALARMTIME = 1;
-    CYCLETIME = 2;
+    CYCLETIME = 1000;
     APPMODE = appmode1;
   };
 };
