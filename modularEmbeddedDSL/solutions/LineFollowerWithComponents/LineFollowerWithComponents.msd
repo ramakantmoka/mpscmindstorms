@@ -7,7 +7,6 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">6d19f522-3cb5-4a9a-8a8f-cb3148150c0b(LineFollower)</dependency>
-    <dependency reexport="false">898db7fc-d166-47a0-90fc-961ecbe84460(DependencyTest)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>0b76d494-4082-4599-8da8-7c40cc7aa186(med.components)</usedLanguage>

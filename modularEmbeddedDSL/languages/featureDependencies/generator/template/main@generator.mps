@@ -103,7 +103,6 @@
                 <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" id="3281061475583144579" />
               </node>
             </node>
-            <node role="statement" type="jetbrains.mps.baseLanguage.structure.Statement" id="8017499479424871993" />
           </node>
         </node>
         <node role="statement" type="jetbrains.mps.baseLanguage.structure.ForeachStatement" id="8017499479424874200">
