@@ -30,10 +30,10 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590340(jetbrains.mps.lang.pattern.constraints)" version="2" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590328(jetbrains.mps.baseLanguage.collections.constraints)" version="6" />
-  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="0" />
+  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="1" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="3" />
-  <import index="1" modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="0" />
+  <import index="1" modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="1" />
   <import index="2" modelUID="f:java_stub#java.lang(java.lang@java_stub)" version="-1" />
   <import index="3" modelUID="f:java_stub#java.io(java.io@java_stub)" version="-1" />
   <visible index="2" modelUID="r:09d01149-7031-4616-b1e9-9d38ffcdfe9d(med.core.editor)" />
@@ -645,7 +645,7 @@
     </node>
   </node>
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="2739617086196771954">
-    <property name="package" value="adaptor" />
+    <property name="package" value="wiring.adaptor" />
     <link role="conceptDeclaration" targetNodeId="1.2739617086196771952" resolveInfo="PortAdapterExpression" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="2739617086196783365">
       <link role="relationDeclaration" targetNodeId="1.2739617086196771953" />
@@ -658,7 +658,7 @@
     </node>
   </node>
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="2739617086197006513">
-    <property name="package" value="adaptor" />
+    <property name="package" value="wiring.adaptor" />
     <link role="conceptDeclaration" targetNodeId="1.2739617086197006486" resolveInfo="PortProcedureCall" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="2739617086197011481">
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="2739617086197011484">
@@ -713,7 +713,7 @@
     </node>
   </node>
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="2739617086198022590">
-    <property name="package" value="adaptor" />
+    <property name="package" value="wiring.adaptor" />
     <link role="conceptDeclaration" targetNodeId="1.2739617086198022583" resolveInfo="PortAdaptor" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="2739617086198022592">
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="2739617086198022595">
@@ -749,7 +749,7 @@
     </node>
   </node>
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="3113923837077903605">
-    <property name="package" value="adaptor" />
+    <property name="package" value="wiring.adaptor" />
     <link role="conceptDeclaration" targetNodeId="1.3113923837077903603" resolveInfo="PortAdapterType" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="3113923837077903607">
       <link role="relationDeclaration" targetNodeId="1.3113923837077903604" />
@@ -762,7 +762,7 @@
     </node>
   </node>
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="8017499479425222409">
-    <property name="package" value="adaptor" />
+    <property name="package" value="wiring" />
     <link role="conceptDeclaration" targetNodeId="1.8017499479425222405" resolveInfo="ComponentDescriptor" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="8017499479425233824">
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="8017499479425233826">
@@ -786,6 +786,151 @@
             <link role="relationDeclaration" targetNodeId="3v.1169194664001" resolveInfo="name" />
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="7678656588248038225">
+    <property name="package" value="implementation" />
+    <link role="conceptDeclaration" targetNodeId="1.7678656588248037704" resolveInfo="RequiredPortCall" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="7678656588248137446">
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="7678656588248137448" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="7678656588248766411">
+        <link role="relationDeclaration" targetNodeId="1.7678656588248766409" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="7678656588248137452">
+        <property name="text" value="." />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" id="7678656588248207624">
+          <property name="flag" value="true" />
+        </node>
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" id="7678656588248207626">
+          <property name="flag" value="true" />
+        </node>
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="7678656588248137454">
+        <link role="relationDeclaration" targetNodeId="1.7678656588248037706" />
+        <node role="editorComponent" type="jetbrains.mps.lang.editor.structure.InlineEditorComponent" id="7678656588248137455">
+          <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="7678656588248137457">
+            <property name="readOnly" value="true" />
+            <link role="relationDeclaration" targetNodeId="3v.1169194664001" resolveInfo="name" />
+          </node>
+        </node>
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="7678656588248442208">
+        <property name="text" value="(" />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" id="7678656588248442209">
+          <property name="flag" value="true" />
+        </node>
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" id="7678656588248442211">
+          <property name="flag" value="true" />
+        </node>
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" id="7678656588248207621">
+        <property name="separatorText" value="," />
+        <link role="relationDeclaration" targetNodeId="4v.2005811434196936512" />
+        <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="7678656588248207622" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="7678656588248442213">
+        <property name="text" value=")" />
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" id="7678656588248442214">
+          <property name="flag" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="7678656588248720480">
+    <property name="package" value="implementation" />
+    <link role="conceptDeclaration" targetNodeId="1.7678656588248720478" resolveInfo="RequiredPortType" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="7678656588248720482">
+      <link role="relationDeclaration" targetNodeId="1.7678656588248720479" />
+      <node role="editorComponent" type="jetbrains.mps.lang.editor.structure.InlineEditorComponent" id="7678656588248720483">
+        <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="7678656588248720485">
+          <property name="readOnly" value="true" />
+          <link role="relationDeclaration" targetNodeId="3v.1169194664001" resolveInfo="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="7678656588248720500">
+    <property name="package" value="implementation" />
+    <link role="conceptDeclaration" targetNodeId="1.7678656588248621200" resolveInfo="RequiredPortExpression" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="7678656588248720502">
+      <link role="relationDeclaration" targetNodeId="1.7678656588248621201" />
+      <node role="editorComponent" type="jetbrains.mps.lang.editor.structure.InlineEditorComponent" id="7678656588248720503">
+        <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="7678656588248720505">
+          <property name="readOnly" value="true" />
+          <link role="relationDeclaration" targetNodeId="3v.1169194664001" resolveInfo="name" />
+        </node>
+      </node>
+      <node role="styleItem" type="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" id="7678656588249040051">
+        <property name="style" value="ITALIC" />
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="7678656588250497463">
+    <property name="package" value="wiring" />
+    <link role="conceptDeclaration" targetNodeId="1.7678656588250497459" resolveInfo="Wiring" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="7678656588250508900">
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="7678656588250508903">
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" id="7678656588250508904">
+          <property name="flag" value="false" />
+        </node>
+        <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="7678656588250508907">
+          <property name="text" value="component" />
+        </node>
+        <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="7678656588250508909">
+          <property name="text" value="wiring" />
+        </node>
+        <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="7678656588250508906" />
+        <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="7678656588250508911">
+          <property name="text" value="{" />
+        </node>
+      </node>
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" id="7678656588250508902" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="7678656588251015789">
+        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" id="7678656588251015790">
+          <property name="flag" value="false" />
+        </node>
+        <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Indent" id="7678656588251015793" />
+        <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="7678656588251015792" />
+        <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" id="7678656588251015795">
+          <link role="relationDeclaration" targetNodeId="1.7678656588250508919" />
+          <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" id="7678656588251015796" />
+        </node>
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="7678656588250508915">
+        <property name="text" value="}" />
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="7678656588250497468">
+    <property name="package" value="wiring" />
+    <link role="conceptDeclaration" targetNodeId="1.7678656588250497467" resolveInfo="GlobalWiringScope" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="7678656588250508880">
+      <property name="text" value="global" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="7678656588250508882">
+    <property name="package" value="wiring" />
+    <link role="conceptDeclaration" targetNodeId="1.7678656588250497460" resolveInfo="InterfaceMapping" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="7678656588250508884">
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="7678656588250508887">
+        <link role="relationDeclaration" targetNodeId="1.7678656588250508881" />
+      </node>
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="7678656588250508886" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="7678656588250508892">
+        <link role="relationDeclaration" targetNodeId="1.7678656588250497461" />
+        <node role="editorComponent" type="jetbrains.mps.lang.editor.structure.InlineEditorComponent" id="7678656588250508893">
+          <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="7678656588250508895">
+            <property name="readOnly" value="true" />
+            <link role="relationDeclaration" targetNodeId="3v.1169194664001" resolveInfo="name" />
+          </node>
+        </node>
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="7678656588250508897">
+        <property name="text" value=":" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="7678656588250508899">
+        <link role="relationDeclaration" targetNodeId="1.7678656588250497462" />
       </node>
     </node>
   </node>

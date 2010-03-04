@@ -139,7 +139,7 @@
         <node role="renderingCondition" type="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" id="3525105684384311909">
           <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="3525105684384311910">
             <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="3525105684384311911">
-              <node role="expression" type="jetbrains.mps.baseLanguage.structure.BooleanConstant" id="3525105684384311912">
+              <node role="expression" type="jetbrains.mps.baseLanguage.structure.BooleanConstant" id="715248129724778374">
                 <property name="value" value="false" />
               </node>
             </node>
