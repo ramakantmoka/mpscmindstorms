@@ -9,7 +9,7 @@
   <language namespace="6f39da53-777c-4426-896e-bf1ddfbf16dc(med.requirements)" />
   <language namespace="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" />
   <language namespace="383209c5-49eb-4560-9027-f906632589d6(med.unittest)" />
-  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="0" />
+  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="1" />
   <languageAspect modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" version="9" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590571(jetbrains.mps.gtext.constraints)" version="8" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590575(jetbrains.mps.gtext.structure)" version="0" />
@@ -22,7 +22,6 @@
   <devkit namespace="a891e14a-a3d6-466e-8364-4e1b14cbaa06(ModularEmbeddedDSL)" />
   <maxImportIndex value="2" />
   <import index="1" modelUID="r:87349ab3-9b12-4481-9a60-1d03a1d1532e(lfmain)" version="-1" />
-  <import index="2" modelUID="r:008cad8e-40cf-430d-89be-894b04245172(dtm)" version="-1" />
   <node type="med.core.structure.Resource" id="2739617086194230973">
     <property name="name" value="lfcmain" />
     <node role="modules" type="med.core.structure.ImplementationModule" id="2739617086195939478">
@@ -36,16 +35,16 @@
         <link role="implementation" targetNodeId="2739617086195939443" resolveInfo="MotorMock" />
         <link role="component" targetNodeId="2739617086195939401" resolveInfo="Motors" />
         <link role="componentImplementation" targetNodeId="2739617086195939406" resolveInfo="MotorsNXT" />
-        <node role="descriptor" type="med.components.structure.ComponentDescriptor" id="8017499479425592193">
+        <node role="descriptor" type="med.components.structure.ComponentDescriptor" id="8949829907856593476">
           <link role="component" targetNodeId="2739617086195939401" resolveInfo="Motors" />
           <link role="implementation" targetNodeId="2739617086195939406" resolveInfo="MotorsNXT" />
-          <node role="replacementFeatureDependencyAnnotation$attribute" type="med.features.structure.ReplacementFeatureClause" id="8017499479425592194">
+          <node role="replacementFeatureDependencyAnnotation$attribute" type="med.features.structure.ReplacementFeatureClause" id="8949829907856668834">
             <property name="isNew" value="true" />
-            <node role="replacementNode" type="med.components.structure.ComponentDescriptor" id="8017499479425592198">
+            <node role="replacementNode" type="med.components.structure.ComponentDescriptor" id="8949829907856668838">
               <link role="component" targetNodeId="2739617086195939401" resolveInfo="Motors" />
               <link role="implementation" targetNodeId="2739617086195939443" resolveInfo="MotorMock" />
             </node>
-            <node role="expression" type="med.features.structure.AtomicFE" id="8017499479425592197">
+            <node role="expression" type="med.features.structure.AtomicFE" id="8949829907856668837">
               <link role="feature" targetNodeId="8017499479424103542" resolveInfo="testing" />
             </node>
           </node>
@@ -247,6 +246,10 @@
           <property name="name" value="motorControl" />
           <link role="interface" targetNodeId="2739617086195939385" resolveInfo="MotorControl" />
         </node>
+        <node role="ports" type="med.components.structure.RequiredPort" id="7678656588247983004">
+          <property name="name" value="tracing" />
+          <link role="interface" targetNodeId="7678656588247982990" resolveInfo="RtTrace" />
+        </node>
       </node>
       <node role="contents" type="med.components.structure.Component" id="2739617086195939403">
         <property name="name" value="MotorStatus" />
@@ -266,85 +269,99 @@
         <property name="name" value="MotorsNXT" />
         <property name="export" value="true" />
         <link role="componentType" targetNodeId="2739617086195939401" resolveInfo="Motors" />
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="2739617086195939407">
-          <link role="procedure" targetNodeId="2739617086195939386" resolveInfo="top" />
-          <node role="type" type="med.core.structure.VoidType" id="2739617086195939408" />
-          <node role="body" type="med.core.structure.StatementList" id="2739617086195939409">
-            <node role="statements" type="med.core.structure.ExpressionStatement" id="2739617086195939410">
-              <node role="expression" type="med.core.structure.ProcedureCall" id="2739617086195939411">
-                <link role="procedure" targetNodeId="2v.5196379128662886664" resolveInfo="nxt_motor_set_speed" />
-                <node role="actuals" type="med.core.structure.EnumLiteralRef" id="2739617086195939412">
-                  <link role="literal" targetNodeId="2v.5196379128662886662" resolveInfo="NXT_PORT_B" />
-                </node>
-                <node role="actuals" type="med.core.structure.IntConstantExpression" id="2739617086195939413">
-                  <property name="value" value="0" />
-                </node>
-                <node role="actuals" type="med.core.structure.IntConstantExpression" id="2739617086195939414">
-                  <property name="value" value="1" />
-                </node>
-              </node>
-            </node>
-            <node role="statements" type="med.core.structure.ExpressionStatement" id="2739617086195939415">
-              <node role="expression" type="med.core.structure.ProcedureCall" id="2739617086195939416">
-                <link role="procedure" targetNodeId="2v.5196379128662886664" resolveInfo="nxt_motor_set_speed" />
-                <node role="actuals" type="med.core.structure.EnumLiteralRef" id="2739617086195939417">
-                  <link role="literal" targetNodeId="2v.5196379128662886663" resolveInfo="NXT_PORT_C" />
-                </node>
-                <node role="actuals" type="med.core.structure.IntConstantExpression" id="2739617086195939418">
-                  <property name="value" value="0" />
-                </node>
-                <node role="actuals" type="med.core.structure.IntConstantExpression" id="2739617086195939419">
-                  <property name="value" value="1" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="2739617086195939420">
-          <link role="procedure" targetNodeId="2739617086195939388" resolveInfo="setLeftSpeed" />
-          <node role="type" type="med.core.structure.VoidType" id="2739617086195939421" />
-          <node role="body" type="med.core.structure.StatementList" id="2739617086195939422">
-            <node role="statements" type="med.core.structure.ExpressionStatement" id="2739617086195939423">
-              <node role="expression" type="med.core.structure.ProcedureCall" id="2739617086195939424">
-                <link role="procedure" targetNodeId="2v.5196379128662886664" resolveInfo="nxt_motor_set_speed" />
-                <node role="actuals" type="med.core.structure.EnumLiteralRef" id="2739617086195939425">
-                  <link role="literal" targetNodeId="2v.5196379128662886663" resolveInfo="NXT_PORT_C" />
-                </node>
-                <node role="actuals" type="med.components.structure.InterfaceProcParameterReference" id="2739617086195939426">
-                  <link role="param" targetNodeId="2739617086195939389" resolveInfo="speed" />
-                </node>
-                <node role="actuals" type="med.core.structure.IntConstantExpression" id="2739617086195939427">
-                  <property name="value" value="1" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="2739617086195939428">
-          <link role="procedure" targetNodeId="2739617086195939392" resolveInfo="setRightSpeed" />
-          <node role="type" type="med.core.structure.VoidType" id="2739617086195939429" />
-          <node role="body" type="med.core.structure.StatementList" id="2739617086195939430">
-            <node role="statements" type="med.core.structure.ExpressionStatement" id="2739617086195939431">
-              <node role="expression" type="med.core.structure.ProcedureCall" id="2739617086195939432">
-                <link role="procedure" targetNodeId="2v.5196379128662886664" resolveInfo="nxt_motor_set_speed" />
-                <node role="actuals" type="med.core.structure.EnumLiteralRef" id="2739617086195939433">
-                  <link role="literal" targetNodeId="2v.5196379128662886662" resolveInfo="NXT_PORT_B" />
-                </node>
-                <node role="actuals" type="med.components.structure.InterfaceProcParameterReference" id="2739617086195939434">
-                  <link role="param" targetNodeId="2739617086195939393" resolveInfo="speed" />
-                </node>
-                <node role="actuals" type="med.core.structure.IntConstantExpression" id="2739617086195939435">
-                  <property name="value" value="1" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="8017499479425696642">
           <property name="isNew" value="true" />
           <node role="expression" type="med.features.structure.NotFE" id="8017499479425696644">
             <node role="expr" type="med.features.structure.AtomicFE" id="8017499479425696646">
               <link role="feature" targetNodeId="8017499479424103542" resolveInfo="testing" />
+            </node>
+          </node>
+        </node>
+        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350458">
+          <link role="procedure" targetNodeId="2739617086195939392" resolveInfo="setRightSpeed" />
+          <node role="body" type="med.core.structure.StatementList" id="7678656588252350459">
+            <node role="statements" type="med.core.structure.ExpressionStatement" id="7678656588252350460">
+              <node role="expression" type="med.core.structure.ProcedureCall" id="7678656588252350461">
+                <link role="procedure" targetNodeId="2v.5196379128662886664" resolveInfo="nxt_motor_set_speed" />
+                <node role="actuals" type="med.core.structure.EnumLiteralRef" id="7678656588252350462">
+                  <link role="literal" targetNodeId="2v.5196379128662886662" resolveInfo="NXT_PORT_B" />
+                </node>
+                <node role="actuals" type="med.components.structure.InterfaceProcParameterReference" id="7678656588252350463">
+                  <link role="param" targetNodeId="2739617086195939393" resolveInfo="speed" />
+                </node>
+                <node role="actuals" type="med.core.structure.IntConstantExpression" id="7678656588252350464">
+                  <property name="value" value="1" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350465">
+          <link role="procedure" targetNodeId="2739617086195939388" resolveInfo="setLeftSpeed" />
+          <node role="body" type="med.core.structure.StatementList" id="7678656588252350466">
+            <node role="statements" type="med.core.structure.ExpressionStatement" id="7678656588252350467">
+              <node role="expression" type="med.core.structure.ProcedureCall" id="7678656588252350468">
+                <link role="procedure" targetNodeId="2v.5196379128662886664" resolveInfo="nxt_motor_set_speed" />
+                <node role="actuals" type="med.core.structure.EnumLiteralRef" id="7678656588252350469">
+                  <link role="literal" targetNodeId="2v.5196379128662886663" resolveInfo="NXT_PORT_C" />
+                </node>
+                <node role="actuals" type="med.components.structure.InterfaceProcParameterReference" id="7678656588252350470">
+                  <link role="param" targetNodeId="2739617086195939389" resolveInfo="speed" />
+                </node>
+                <node role="actuals" type="med.core.structure.IntConstantExpression" id="7678656588252350471">
+                  <property name="value" value="1" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350472">
+          <link role="procedure" targetNodeId="2739617086195939386" resolveInfo="stop" />
+          <node role="body" type="med.core.structure.StatementList" id="7678656588252350473">
+            <node role="statements" type="med.core.structure.OneLineCommetStatement" id="8949829907855647610">
+              <property name="comment" value="hallo" />
+            </node>
+            <node role="statements" type="med.core.structure.ExpressionStatement" id="7678656588252350484">
+              <node role="expression" type="med.components.structure.RequiredPortProcedureCall" id="7678656588252350485">
+                <link role="procedure" targetNodeId="7678656588247982991" resolveInfo="motors" />
+                <node role="actuals" type="med.core.structure.IntConstantExpression" id="7678656588252350486">
+                  <property name="value" value="10" />
+                </node>
+                <node role="actuals" type="med.core.structure.IntConstantExpression" id="7678656588252350487">
+                  <property name="value" value="10" />
+                </node>
+                <node role="portExpression" type="med.components.structure.RequiredPortExpression" id="7678656588252350488">
+                  <link role="port" targetNodeId="7678656588247983004" resolveInfo="tracing" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" type="med.core.structure.ExpressionStatement" id="7678656588252350474">
+              <node role="expression" type="med.core.structure.ProcedureCall" id="7678656588252350475">
+                <link role="procedure" targetNodeId="2v.5196379128662886664" resolveInfo="nxt_motor_set_speed" />
+                <node role="actuals" type="med.core.structure.EnumLiteralRef" id="7678656588252350476">
+                  <link role="literal" targetNodeId="2v.5196379128662886662" resolveInfo="NXT_PORT_B" />
+                </node>
+                <node role="actuals" type="med.core.structure.IntConstantExpression" id="7678656588252350477">
+                  <property name="value" value="0" />
+                </node>
+                <node role="actuals" type="med.core.structure.IntConstantExpression" id="7678656588252350478">
+                  <property name="value" value="1" />
+                </node>
+              </node>
+            </node>
+            <node role="statements" type="med.core.structure.ExpressionStatement" id="7678656588252350479">
+              <node role="expression" type="med.core.structure.ProcedureCall" id="7678656588252350480">
+                <link role="procedure" targetNodeId="2v.5196379128662886664" resolveInfo="nxt_motor_set_speed" />
+                <node role="actuals" type="med.core.structure.EnumLiteralRef" id="7678656588252350481">
+                  <link role="literal" targetNodeId="2v.5196379128662886663" resolveInfo="NXT_PORT_C" />
+                </node>
+                <node role="actuals" type="med.core.structure.IntConstantExpression" id="7678656588252350482">
+                  <property name="value" value="0" />
+                </node>
+                <node role="actuals" type="med.core.structure.IntConstantExpression" id="7678656588252350483">
+                  <property name="value" value="1" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -379,60 +396,57 @@
         <property name="name" value="MotorMock" />
         <property name="export" value="true" />
         <link role="componentType" targetNodeId="2739617086195939401" resolveInfo="Motors" />
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="2739617086195939444">
-          <link role="procedure" targetNodeId="2739617086195939386" resolveInfo="top" />
-          <node role="type" type="med.core.structure.VoidType" id="2739617086195939445" />
-          <node role="body" type="med.core.structure.StatementList" id="2739617086195939446">
-            <node role="statements" type="med.core.structure.AssignmentStatement" id="2739617086195939447">
-              <node role="lvalue" type="med.core.structure.ModuleVariableRef" id="2739617086195939448">
-                <link role="variable" targetNodeId="2739617086195939440" resolveInfo="rightSpeedMock" />
+        <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="8017499479425696636">
+          <property name="isNew" value="true" />
+          <node role="expression" type="med.features.structure.AtomicFE" id="8017499479425696638">
+            <link role="feature" targetNodeId="8017499479424103542" resolveInfo="testing" />
+          </node>
+        </node>
+        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350423">
+          <link role="procedure" targetNodeId="2739617086195939386" resolveInfo="stop" />
+          <node role="body" type="med.core.structure.StatementList" id="7678656588252350424">
+            <node role="statements" type="med.core.structure.AssignmentStatement" id="7678656588252350431">
+              <node role="lvalue" type="med.core.structure.ModuleVariableRef" id="7678656588252350430">
+                <link role="variable" targetNodeId="2739617086195939437" resolveInfo="leftSpeedMock" />
               </node>
-              <node role="rvalue" type="med.core.structure.IntConstantExpression" id="2739617086195939449">
+              <node role="rvalue" type="med.core.structure.IntConstantExpression" id="7678656588252350435">
                 <property name="value" value="0" />
               </node>
             </node>
-            <node role="statements" type="med.core.structure.AssignmentStatement" id="2739617086195939450">
-              <node role="lvalue" type="med.core.structure.ModuleVariableRef" id="2739617086195939451">
-                <link role="variable" targetNodeId="2739617086195939437" resolveInfo="leftSpeedMock" />
+            <node role="statements" type="med.core.structure.AssignmentStatement" id="7678656588252350439">
+              <node role="lvalue" type="med.core.structure.ModuleVariableRef" id="7678656588252350438">
+                <link role="variable" targetNodeId="2739617086195939440" resolveInfo="rightSpeedMock" />
               </node>
-              <node role="rvalue" type="med.core.structure.IntConstantExpression" id="2739617086195939452">
+              <node role="rvalue" type="med.core.structure.IntConstantExpression" id="7678656588252350443">
                 <property name="value" value="0" />
               </node>
             </node>
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="2739617086195939453">
+        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350425">
           <link role="procedure" targetNodeId="2739617086195939388" resolveInfo="setLeftSpeed" />
-          <node role="type" type="med.core.structure.VoidType" id="2739617086195939454" />
-          <node role="body" type="med.core.structure.StatementList" id="2739617086195939455">
-            <node role="statements" type="med.core.structure.AssignmentStatement" id="2739617086195939456">
-              <node role="lvalue" type="med.core.structure.ModuleVariableRef" id="2739617086195939457">
+          <node role="body" type="med.core.structure.StatementList" id="7678656588252350426">
+            <node role="statements" type="med.core.structure.AssignmentStatement" id="7678656588252350446">
+              <node role="lvalue" type="med.core.structure.ModuleVariableRef" id="7678656588252350445">
                 <link role="variable" targetNodeId="2739617086195939437" resolveInfo="leftSpeedMock" />
               </node>
-              <node role="rvalue" type="med.components.structure.InterfaceProcParameterReference" id="2739617086195939458">
+              <node role="rvalue" type="med.components.structure.InterfaceProcParameterReference" id="7678656588252350450">
                 <link role="param" targetNodeId="2739617086195939389" resolveInfo="speed" />
               </node>
             </node>
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="2739617086195939459">
+        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350427">
           <link role="procedure" targetNodeId="2739617086195939392" resolveInfo="setRightSpeed" />
-          <node role="type" type="med.core.structure.VoidType" id="2739617086195939460" />
-          <node role="body" type="med.core.structure.StatementList" id="2739617086195939461">
-            <node role="statements" type="med.core.structure.AssignmentStatement" id="2739617086195939462">
-              <node role="lvalue" type="med.core.structure.ModuleVariableRef" id="2739617086195939463">
+          <node role="body" type="med.core.structure.StatementList" id="7678656588252350428">
+            <node role="statements" type="med.core.structure.AssignmentStatement" id="7678656588252350453">
+              <node role="lvalue" type="med.core.structure.ModuleVariableRef" id="7678656588252350452">
                 <link role="variable" targetNodeId="2739617086195939440" resolveInfo="rightSpeedMock" />
               </node>
-              <node role="rvalue" type="med.core.structure.IntConstantExpression" id="2739617086195939464">
-                <property name="value" value="0" />
+              <node role="rvalue" type="med.components.structure.InterfaceProcParameterReference" id="7678656588252350457">
+                <link role="param" targetNodeId="2739617086195939393" resolveInfo="speed" />
               </node>
             </node>
-          </node>
-        </node>
-        <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="8017499479425696636">
-          <property name="isNew" value="true" />
-          <node role="expression" type="med.features.structure.AtomicFE" id="8017499479425696638">
-            <link role="feature" targetNodeId="8017499479424103542" resolveInfo="testing" />
           </node>
         </node>
       </node>
@@ -440,32 +454,30 @@
         <property name="name" value="MotorMockSTatus" />
         <property name="export" value="true" />
         <link role="componentType" targetNodeId="2739617086195939403" resolveInfo="MotorStatusMock" />
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="2739617086195939466">
+        <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="8017499479425696639">
+          <property name="isNew" value="true" />
+          <node role="expression" type="med.features.structure.AtomicFE" id="8017499479425696641">
+            <link role="feature" targetNodeId="8017499479424103542" resolveInfo="testing" />
+          </node>
+        </node>
+        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350415">
           <link role="procedure" targetNodeId="2739617086195939397" resolveInfo="leftSpeed" />
-          <node role="type" type="med.core.structure.VoidType" id="2739617086195939467" />
-          <node role="body" type="med.core.structure.StatementList" id="2739617086195939468">
-            <node role="statements" type="med.core.structure.ReturnStatement" id="2739617086195939469">
-              <node role="expr" type="med.core.structure.ModuleVariableRef" id="2739617086195939470">
+          <node role="body" type="med.core.structure.StatementList" id="7678656588252350416">
+            <node role="statements" type="med.core.structure.ReturnStatement" id="7678656588252350419">
+              <node role="expr" type="med.core.structure.ModuleVariableRef" id="7678656588252350420">
                 <link role="variable" targetNodeId="2739617086195939437" resolveInfo="leftSpeedMock" />
               </node>
             </node>
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="2739617086195939471">
+        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350417">
           <link role="procedure" targetNodeId="2739617086195939399" resolveInfo="rightSpeed" />
-          <node role="type" type="med.core.structure.VoidType" id="2739617086195939472" />
-          <node role="body" type="med.core.structure.StatementList" id="2739617086195939473">
-            <node role="statements" type="med.core.structure.ReturnStatement" id="2739617086195939474">
-              <node role="expr" type="med.core.structure.ModuleVariableRef" id="2739617086195939475">
+          <node role="body" type="med.core.structure.StatementList" id="7678656588252350418">
+            <node role="statements" type="med.core.structure.ReturnStatement" id="7678656588252350421">
+              <node role="expr" type="med.core.structure.ModuleVariableRef" id="7678656588252350422">
                 <link role="variable" targetNodeId="2739617086195939440" resolveInfo="rightSpeedMock" />
               </node>
             </node>
-          </node>
-        </node>
-        <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="8017499479425696639">
-          <property name="isNew" value="true" />
-          <node role="expression" type="med.features.structure.AtomicFE" id="8017499479425696641">
-            <link role="feature" targetNodeId="8017499479424103542" resolveInfo="testing" />
           </node>
         </node>
       </node>
@@ -517,28 +529,26 @@
         <property name="name" value="LightSensorNXT" />
         <property name="export" value="true" />
         <link role="componentType" targetNodeId="8017499479427662363" resolveInfo="LightSensor" />
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="8017499479427662367">
-          <link role="procedure" targetNodeId="8017499479427662359" resolveInfo="light" />
-          <node role="type" type="med.core.structure.VoidType" id="8017499479427662368" />
-          <node role="body" type="med.core.structure.StatementList" id="8017499479427662369">
-            <node role="statements" type="med.core.structure.ReturnStatement" id="8017499479427662376">
-              <node role="expr" type="med.core.structure.ProcedureCall" id="8017499479427662377">
+        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350398">
+          <link role="procedure" targetNodeId="8017499479427662359" resolveInfo="lightValue" />
+          <node role="body" type="med.core.structure.StatementList" id="7678656588252350399">
+            <node role="statements" type="med.core.structure.ReturnStatement" id="7678656588252350407">
+              <node role="expr" type="med.core.structure.ProcedureCall" id="7678656588252350408">
                 <link role="procedure" targetNodeId="2v.5196379128662641964" resolveInfo="ecrobot_get_light_sensor" />
-                <node role="actuals" type="med.core.structure.EnumLiteralRef" id="8017499479427662378">
+                <node role="actuals" type="med.core.structure.EnumLiteralRef" id="7678656588252350409">
                   <link role="literal" targetNodeId="2v.5196379128661020615" resolveInfo="NXT_PORT_S1" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="8017499479427973202">
+        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350410">
           <link role="procedure" targetNodeId="8017499479427973200" resolveInfo="init" />
-          <node role="type" type="med.core.structure.VoidType" id="8017499479427973203" />
-          <node role="body" type="med.core.structure.StatementList" id="8017499479427973204">
-            <node role="statements" type="med.core.structure.ExpressionStatement" id="8017499479427973206">
-              <node role="expression" type="med.core.structure.ProcedureCall" id="8017499479427973207">
+          <node role="body" type="med.core.structure.StatementList" id="7678656588252350411">
+            <node role="statements" type="med.core.structure.ExpressionStatement" id="7678656588252350412">
+              <node role="expression" type="med.core.structure.ProcedureCall" id="7678656588252350413">
                 <link role="procedure" targetNodeId="2v.5196379128662167372" resolveInfo="ecrobot_set_light_sensor_active" />
-                <node role="actuals" type="med.core.structure.EnumLiteralRef" id="8017499479427973208">
+                <node role="actuals" type="med.core.structure.EnumLiteralRef" id="7678656588252350414">
                   <link role="literal" targetNodeId="2v.5196379128661020615" resolveInfo="NXT_PORT_S1" />
                 </node>
               </node>
@@ -557,36 +567,75 @@
         <property name="name" value="LightSensorMock" />
         <property name="export" value="true" />
         <link role="componentType" targetNodeId="8017499479427662386" resolveInfo="LightSensorMock" />
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="8017499479427662392">
+        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350369">
           <link role="procedure" targetNodeId="8017499479427662381" resolveInfo="setLight" />
-          <node role="type" type="med.core.structure.VoidType" id="8017499479427662393" />
-          <node role="body" type="med.core.structure.StatementList" id="8017499479427662394">
-            <node role="statements" type="med.core.structure.AssignmentStatement" id="8017499479427662406">
-              <node role="lvalue" type="med.core.structure.ModuleVariableRef" id="8017499479427662405">
+          <node role="body" type="med.core.structure.StatementList" id="7678656588252350370">
+            <node role="statements" type="med.core.structure.AssignmentStatement" id="7678656588252350377">
+              <node role="lvalue" type="med.core.structure.ModuleVariableRef" id="7678656588252350376">
                 <link role="variable" targetNodeId="8017499479427662399" resolveInfo="light" />
               </node>
-              <node role="rvalue" type="med.components.structure.InterfaceProcParameterReference" id="8017499479427662410">
+              <node role="rvalue" type="med.components.structure.InterfaceProcParameterReference" id="7678656588252350381">
                 <link role="param" targetNodeId="8017499479427662383" resolveInfo="value" />
               </node>
             </node>
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="8017499479427662395">
-          <link role="procedure" targetNodeId="8017499479427662359" resolveInfo="light" />
-          <node role="type" type="med.core.structure.VoidType" id="8017499479427662396" />
-          <node role="body" type="med.core.structure.StatementList" id="8017499479427662397">
-            <node role="statements" type="med.core.structure.ReturnStatement" id="8017499479427662411">
-              <node role="expr" type="med.core.structure.ModuleVariableRef" id="8017499479427662412">
+        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350371">
+          <link role="procedure" targetNodeId="8017499479427973200" resolveInfo="init" />
+          <node role="body" type="med.core.structure.StatementList" id="7678656588252350372">
+            <node role="statements" type="med.core.structure.AssignmentStatement" id="7678656588252350386">
+              <node role="lvalue" type="med.core.structure.ModuleVariableRef" id="7678656588252350385">
+                <link role="variable" targetNodeId="8017499479427662399" resolveInfo="light" />
+              </node>
+              <node role="rvalue" type="med.core.structure.IntConstantExpression" id="7678656588252350390">
+                <property name="value" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350373">
+          <link role="procedure" targetNodeId="8017499479427662359" resolveInfo="lightValue" />
+          <node role="body" type="med.core.structure.StatementList" id="7678656588252350374">
+            <node role="statements" type="med.core.structure.ReturnStatement" id="7678656588252350391">
+              <node role="expr" type="med.core.structure.ModuleVariableRef" id="7678656588252350392">
                 <link role="variable" targetNodeId="8017499479427662399" resolveInfo="light" />
               </node>
             </node>
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="8017499479427973209">
-          <link role="procedure" targetNodeId="8017499479427973200" resolveInfo="init" />
-          <node role="type" type="med.core.structure.VoidType" id="8017499479427973210" />
-          <node role="body" type="med.core.structure.StatementList" id="8017499479427973211">
-            <node role="statements" type="med.core.structure.NoopStatement" id="8017499479427973212" />
+      </node>
+      <node role="contents" type="med.components.structure.Interface" id="7678656588247982990">
+        <property name="export" value="true" />
+        <property name="name" value="RtTrace" />
+        <node role="procedures" type="med.components.structure.InterfaceProcedure" id="7678656588247982991">
+          <property name="name" value="motors" />
+          <node role="parameters" type="med.core.structure.ProcedureParameter" id="7678656588247982992">
+            <property name="name" value="left" />
+            <node role="type" type="med.core.structure.Int8" id="7678656588247982993" />
+          </node>
+          <node role="parameters" type="med.core.structure.ProcedureParameter" id="7678656588247982994">
+            <property name="name" value="right" />
+            <node role="type" type="med.core.structure.Int8" id="7678656588247982995" />
+          </node>
+          <node role="type" type="med.core.structure.VoidType" id="7678656588247982996" />
+        </node>
+      </node>
+      <node role="contents" type="med.components.structure.Component" id="7678656588251813733">
+        <property name="name" value="Tracer" />
+        <node role="ports" type="med.components.structure.ProvidedPort" id="7678656588251813734">
+          <property name="name" value="t" />
+          <link role="interface" targetNodeId="7678656588247982990" resolveInfo="RtTrace" />
+        </node>
+      </node>
+      <node role="contents" type="med.components.structure.ComponentImplementation" id="7678656588251813736">
+        <property name="name" value="LogTracer" />
+        <link role="componentType" targetNodeId="7678656588251813733" resolveInfo="Tracer" />
+        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588251813737">
+          <link role="procedure" targetNodeId="7678656588247982991" resolveInfo="motors" />
+          <node role="body" type="med.core.structure.StatementList" id="7678656588251813738">
+            <node role="statements" type="med.logging.structure.LogStatement" id="7678656588251813739">
+              <property name="message" value="testmessage" />
+            </node>
           </node>
         </node>
       </node>
@@ -609,14 +658,24 @@
   </node>
   <node type="med.features.structure.FeatureDependencyConfiguration" id="8017499479424103537">
     <property name="numberOfValidConfigurations" value="2" />
-    <node role="mode" type="med.features.structure.ShowClauseDisplayMode" id="8017499479424103538">
+    <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="8017499479424103542">
+      <property name="selected" value="false" />
+      <property name="name" value="testing" />
+    </node>
+    <node role="mode" type="med.features.structure.ShowClauseDisplayMode" id="7678656588250497458">
       <property name="showFeatureClause" value="true" />
       <property name="highlightFeatureDependentNodes" value="true" />
       <property name="removeNonSelectedStuffInEditor" value="true" />
     </node>
-    <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="8017499479424103542">
-      <property name="selected" value="true" />
-      <property name="name" value="testing" />
+  </node>
+  <node type="med.components.structure.Wiring" id="7678656588251004375">
+    <node role="mappings" type="med.components.structure.InterfaceMapping" id="7678656588251004376">
+      <link role="interface" targetNodeId="7678656588247982990" resolveInfo="RtTrace" />
+      <node role="scope" type="med.components.structure.GlobalWiringScope" id="7678656588251004377" />
+      <node role="descriptor" type="med.components.structure.ComponentDescriptor" id="7678656588251004378">
+        <link role="component" targetNodeId="7678656588251813733" resolveInfo="Tracer" />
+        <link role="implementation" targetNodeId="7678656588251813736" resolveInfo="LogTracer" />
+      </node>
     </node>
   </node>
 </model>

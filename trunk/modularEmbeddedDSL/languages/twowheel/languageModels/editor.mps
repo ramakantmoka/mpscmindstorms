@@ -223,5 +223,17 @@
       </node>
     </node>
   </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="8949829907855207221">
+    <link role="conceptDeclaration" targetNodeId="1.8949829907855207219" resolveInfo="TurnAround" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="8949829907855207223">
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="8949829907855207226">
+        <property name="text" value="fahrimkreis" />
+      </node>
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="8949829907855207225" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="8949829907855207228">
+        <link role="relationDeclaration" targetNodeId="1.5231257431510415620" />
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -15,7 +15,6 @@
 #include "kernel.h"
 #include "kernel_id.h"
 #include "stdint.h"
-#include "stdint.h"
 
 int lfcmain_main_linefollower_currentstate = STATE_INITIALIZING;
 
@@ -51,13 +50,13 @@ TASK(lfcmain_main_run){
               int8_t light = lfcAPI_api_LightSensorNXT_lightValue ( );
                 
         if ( (light < (((500 + 700)) / (2)))) {
-                  lfcAPI_api_MotorMock_setLeftSpeed (20 );
-          lfcAPI_api_MotorMock_setRightSpeed (40 );
+                  lfcAPI_api_MotorsNXT_setLeftSpeed (20 );
+          lfcAPI_api_MotorsNXT_setRightSpeed (40 );
 
                 
         } else {
-                  lfcAPI_api_MotorMock_setLeftSpeed (40 );
-          lfcAPI_api_MotorMock_setRightSpeed (20 );
+                  lfcAPI_api_MotorsNXT_setLeftSpeed (40 );
+          lfcAPI_api_MotorsNXT_setRightSpeed (20 );
 
 
         } // end if 
