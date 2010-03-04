@@ -34,5 +34,8 @@
   <node type="jetbrains.mps.lang.constraints.structure.ConceptConstraints" id="5296414764970026996">
     <link role="concept" targetNodeId="2v.3454436015655736227" resolveInfo="SleepStatement" />
   </node>
+  <node type="jetbrains.mps.lang.constraints.structure.ConceptConstraints" id="7678656588247986075">
+    <link role="concept" targetNodeId="2v.5296414764970022347" resolveInfo="TerminateTaskStatement" />
+  </node>
 </model>
 

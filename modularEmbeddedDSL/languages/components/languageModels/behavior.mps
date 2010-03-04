@@ -31,10 +31,10 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959030d(jetbrains.mps.lang.constraints.structure)" version="8" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590307(jetbrains.mps.lang.constraints.constraints)" version="9" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902bc(jetbrains.mps.lang.sharedConcepts.structure)" version="0" />
-  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="0" />
+  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="1" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="1" />
-  <import index="1" modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="0" />
+  <import index="1" modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="1" />
   <visible index="2" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
   <node type="jetbrains.mps.lang.behavior.structure.ConceptBehavior" id="2739617086185276727">
     <property name="package" value="interface" />
@@ -506,7 +506,7 @@
     </node>
   </node>
   <node type="jetbrains.mps.lang.behavior.structure.ConceptBehavior" id="8017499479427462446">
-    <property name="package" value="adaptor" />
+    <property name="package" value="wiring.adaptor" />
     <link role="concept" targetNodeId="1.2739617086198022583" resolveInfo="PortAdaptor" />
     <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="8017499479427462447">
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8017499479427462448">
@@ -519,6 +519,34 @@
               </node>
             </node>
             <node role="operation" type="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" id="8017499479427486366" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.behavior.structure.ConceptBehavior" id="7678656588250647921">
+    <property name="package" value="wiring" />
+    <link role="concept" targetNodeId="1.7678656588250497459" resolveInfo="Wiring" />
+    <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="7678656588250647922">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="7678656588250647923" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.behavior.structure.ConceptBehavior" id="7678656588250671833">
+    <property name="package" value="wiring" />
+    <link role="concept" targetNodeId="1.7678656588250497460" resolveInfo="InterfaceMapping" />
+    <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="7678656588250671834">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="7678656588250671835">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="7678656588250671836">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="7678656588250671843">
+            <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="7678656588250671838">
+              <node role="operand" type="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" id="7678656588250671837" />
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="7678656588250671842">
+                <link role="link" targetNodeId="1.7678656588250508881" />
+              </node>
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" id="7678656588250671847">
+              <link role="concept" targetNodeId="1.7678656588250497467" resolveInfo="GlobalWiringScope" />
+            </node>
           </node>
         </node>
       </node>
