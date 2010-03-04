@@ -53,28 +53,35 @@
             <node role="time" type="med.core.structure.IntConstantExpression" id="6177678091395694218">
               <property name="value" value="3000" />
             </node>
-            <node role="speed" type="med.core.structure.ProcedureCall" id="6177678091395694219">
-              <link role="procedure" targetNodeId="5231257431512335630" resolveInfo="speed" />
-              <node role="actuals" type="med.core.structure.IntConstantExpression" id="6177678091395694220">
-                <property name="value" value="25" />
+            <node role="speed" type="med.core.structure.PlusExpression" id="715248129724948012">
+              <node role="left" type="med.core.structure.IntConstantExpression" id="715248129724948011">
+                <property name="value" value="1" />
+              </node>
+              <node role="right" type="med.core.structure.ProcedureCall" id="715248129724948017">
+                <link role="procedure" targetNodeId="5231257431512335630" resolveInfo="speed" />
+                <node role="actuals" type="med.core.structure.IntConstantExpression" id="715248129724948019">
+                  <property name="value" value="24" />
+                </node>
               </node>
             </node>
           </node>
-          <node role="statements" type="ds.twowheel.structure.BlockStatement" id="8017499479426260588">
+          <node role="statements" type="ds.twowheel.structure.BlockStatement" id="8949829907856211053">
             <property name="name" value="newBlock" />
-            <node role="statements" type="ds.twowheel.structure.DriveOnStatement" id="8017499479426260582">
-              <node role="time" type="med.core.structure.IntConstantExpression" id="8017499479426260583">
+            <node role="statements" type="ds.twowheel.structure.TurnAround" id="8949829907856211038">
+              <node role="time" type="med.core.structure.IntConstantExpression" id="8949829907856211039">
                 <property name="value" value="2000" />
               </node>
-              <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="8017499479426260584">
-                <property name="isNew" value="true" />
-                <node role="expression" type="med.features.structure.BaseFE" id="8017499479426260585" />
-              </node>
             </node>
-            <node role="statements" type="ds.twowheel.structure.TurnLeftStatement" id="8017499479426260586">
-              <node role="time" type="med.core.structure.IntConstantExpression" id="8017499479426260587">
+            <node role="statements" type="ds.twowheel.structure.TurnLeftStatement" id="8949829907856211036">
+              <node role="time" type="med.core.structure.IntConstantExpression" id="8949829907856211037">
                 <property name="value" value="200" />
               </node>
+            </node>
+            <node role="bumpReaction" type="ds.twowheel.structure.StopStatement" id="8949829907856211058" />
+          </node>
+          <node role="statements" type="ds.twowheel.structure.DriveOnStatement" id="8949829907856211040">
+            <node role="time" type="med.core.structure.IntConstantExpression" id="8949829907856211041">
+              <property name="value" value="2000" />
             </node>
           </node>
           <node role="statements" type="ds.twowheel.structure.BlockStatement" id="6177678091395694225">
@@ -156,9 +163,6 @@
     </node>
   </node>
   <node type="med.features.structure.FeatureDependencyConfiguration" id="6177678091393977964">
-    <node role="mode" type="med.features.structure.VariantDisplayMode" id="3260472080518430550">
-      <property name="removeNonSelectedStuffInEditor" value="true" />
-    </node>
     <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="6177678091393977967">
       <property name="name" value="long" />
       <property name="selected" value="true" />
@@ -174,6 +178,13 @@
     <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="5296414764969462393">
       <property name="name" value="reactOnBump" />
       <property name="selected" value="true" />
+    </node>
+    <node role="backup" type="med.features.structure.VariantDisplayMode" id="8949829907856211046">
+      <property name="removeNonSelectedStuffInEditor" value="true" />
+    </node>
+    <node role="mode" type="med.features.structure.ShowClauseDisplayMode" id="8949829907856211047">
+      <property name="showFeatureClause" value="true" />
+      <property name="highlightFeatureDependentNodes" value="true" />
     </node>
   </node>
 </model>

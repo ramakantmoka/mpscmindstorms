@@ -9,6 +9,7 @@
 
 // custom includes for header
 #include "stdint.h"
+#include "stdint.h"
 
 struct PointerStuff_testingPointerSyntaxAndTypes_aStruct{
   int16_t a;
