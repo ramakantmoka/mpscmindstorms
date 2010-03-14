@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language namespace="med.features" uuid="50b44c57-34f1-428d-a7c3-d100606f8e2a" java-stubs-enabled="false" compileInMPS="true">
   <models>
+    <modelRoot path="${language_descriptor}/languageAccessories" namespacePrefix="med.features" />
     <modelRoot path="${language_descriptor}/languageModels" namespacePrefix="med.features" />
-    <modelRoot path="${language_descriptor}/languageAccessories" namespacePrefix="med.features" />
-    <modelRoot path="${language_descriptor}/languageAccessories" namespacePrefix="med.features" />
   </models>
   <accessoryModels>
     <model modelUID="r:2eaee9de-69f2-4b2c-a068-a570d34b1030(med.features.rt)" />
@@ -29,6 +28,8 @@
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</extendedLanguage>
+  </extendedLanguages>
 </language>
 

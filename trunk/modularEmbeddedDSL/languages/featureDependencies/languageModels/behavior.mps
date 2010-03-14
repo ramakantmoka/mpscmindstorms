@@ -24,10 +24,10 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959033d(jetbrains.mps.lang.annotations.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902db(jetbrains.mps.baseLanguage.blTypes.constraints)" version="0" />
-  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="2" />
+  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="4" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="1" />
-  <import index="1" modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="2" />
+  <import index="1" modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="4" />
   <node type="jetbrains.mps.lang.behavior.structure.ConceptBehavior" id="8261019787198922980">
     <property name="package" value="expr" />
     <link role="concept" targetNodeId="1.8261019787197538136" resolveInfo="BaseFE" />
@@ -777,6 +777,13 @@
     </node>
     <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="4093046831256432857">
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="4093046831256432858" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.behavior.structure.ConceptBehavior" id="5615815995169110327">
+    <property name="package" value="config.structured" />
+    <link role="concept" targetNodeId="1.5615815995168989527" resolveInfo="CompositeFeatureDeclaration" />
+    <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="5615815995169110328">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5615815995169110329" />
     </node>
   </node>
 </model>

@@ -36,7 +36,7 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590575(jetbrains.mps.gtext.structure)" version="0" />
   <languageAspect modelUID="r:7636c4cd-da85-496f-87dd-5fbef0253900(med.collections.structure)" version="2" />
   <languageAspect modelUID="r:c8eeaafc-b8ed-41eb-96aa-711dbd66c11c(med.quantities.structure)" version="0" />
-  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="2" />
+  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="4" />
   <language-engaged-on-generation namespace="5229675a-24de-430d-951b-24682b3b8235(med.platform.win32)" />
   <language-engaged-on-generation namespace="d1a10200-64d4-45ca-afd0-41b350f63b0d(med.logging)" />
   <maxImportIndex value="0" />
