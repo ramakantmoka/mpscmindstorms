@@ -18,7 +18,7 @@ public class typeof_ProcedureParameter_InferenceRule extends AbstractInferenceRu
     {
       SNode _nodeToCheck_1029348928467 = parameter;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "2005811434196936663", true), (SNode)typeCheckingContext.typeOf(SLinkOperations.getTarget(parameter, "type", true), "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "2005811434196936666", true), _nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "2005811434196936661", intentionProvider);
+      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "2005811434196936663", true), (SNode)typeCheckingContext.typeOf(SLinkOperations.getTarget(parameter, "type", true), "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "2005811434196936666", true), _nodeToCheck_1029348928467, null, "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "2005811434196936661", intentionProvider);
     }
   }
 

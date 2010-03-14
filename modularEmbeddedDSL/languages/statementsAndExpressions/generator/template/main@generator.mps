@@ -1170,6 +1170,35 @@
         </node>
       </node>
     </node>
+    <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="4621601338807060139">
+      <link role="applicableConcept" targetNodeId="1.4621601338807035358" resolveInfo="NotExpression" />
+      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" id="4621601338807062319">
+        <node role="templateNode" type="jetbrains.mps.gtext.structure.GItemList" id="4621601338807062321">
+          <node role="item" type="jetbrains.mps.gtext.structure.GText" id="4621601338807062322">
+            <property name="text" value="!(" />
+          </node>
+          <node role="item" type="jetbrains.mps.gtext.structure.GItem" id="4621601338807062323">
+            <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" id="4621601338807062324">
+              <node role="sourceNodeQuery" type="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" id="4621601338807062325">
+                <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="4621601338807062326">
+                  <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="4621601338807062327">
+                    <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="4621601338807062328">
+                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="4621601338807062332">
+                        <link role="link" targetNodeId="1.4621601338807035359" />
+                      </node>
+                      <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="4621601338807062330" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="item" type="jetbrains.mps.gtext.structure.GText" id="4621601338807062331">
+            <property name="text" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="5670427403977023467">
       <link role="applicableConcept" targetNodeId="1.6441851857096655027" resolveInfo="StringConstantExpression" />
       <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" id="5670427403977023468">
@@ -1868,6 +1897,48 @@
           </node>
           <node role="item" type="jetbrains.mps.gtext.structure.GText" id="1532320234891672264">
             <property name="text" value="]" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="4621601338806589109">
+      <link role="applicableConcept" targetNodeId="1.4621601338806589062" resolveInfo="AndExpression" />
+      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" id="4621601338806591289">
+        <node role="templateNode" type="jetbrains.mps.gtext.structure.GItemList" id="4621601338806591291">
+          <node role="item" type="jetbrains.mps.gtext.structure.GItem" id="4621601338806591292">
+            <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" id="4621601338806591293">
+              <node role="sourceNodeQuery" type="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" id="4621601338806591294">
+                <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="4621601338806591295">
+                  <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="4621601338806591296">
+                    <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="4621601338806591297">
+                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="4621601338806591309">
+                        <link role="link" targetNodeId="1.4621601338806372750" />
+                      </node>
+                      <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="4621601338806591299" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="item" type="jetbrains.mps.gtext.structure.GText" id="4621601338806591300">
+            <property name="text" value=" &amp;&amp; " />
+          </node>
+          <node role="item" type="jetbrains.mps.gtext.structure.GItem" id="4621601338806591301">
+            <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" id="4621601338806591302">
+              <node role="sourceNodeQuery" type="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" id="4621601338806591303">
+                <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="4621601338806591304">
+                  <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="4621601338806591305">
+                    <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="4621601338806591306">
+                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="4621601338806591310">
+                        <link role="link" targetNodeId="1.4621601338806372751" />
+                      </node>
+                      <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="4621601338806591308" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

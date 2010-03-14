@@ -18,7 +18,7 @@ public class typeof_IntConstantExpression_InferenceRule extends AbstractInferenc
     {
       SNode _nodeToCheck_1029348928467 = expression;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "1881584577102491144", true), (SNode)SConceptOperations.createNewNode("med.core.structure.GenericIntegerType", null), _nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "1881584577102491138", intentionProvider);
+      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "1881584577102491144", true), (SNode)SConceptOperations.createNewNode("med.core.structure.GenericIntegerType", null), _nodeToCheck_1029348928467, null, "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "1881584577102491138", intentionProvider);
     }
   }
 
