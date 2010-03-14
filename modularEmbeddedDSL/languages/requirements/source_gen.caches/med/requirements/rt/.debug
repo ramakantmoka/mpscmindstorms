@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <nodeInfo nodeId="2739617086198798778" fileName="ReqEditorUtil.java" startLine="19" startPosition="65" endLine="20" endPosition="31" />
+  <nodeInfo nodeId="2739617086198821170" fileName="ReqEditorUtil.java" startLine="36" startPosition="40" endLine="37" endPosition="16" />
+  <nodeInfo nodeId="3113923837078718571" fileName="ReqEditorUtil.java" startLine="21" startPosition="6" endLine="22" endPosition="68" />
+  <nodeInfo nodeId="3113923837081963036" fileName="ReqEditorUtil.java" startLine="24" startPosition="52" endLine="25" endPosition="39" />
+  <nodeInfo nodeId="3113923837081984164" fileName="ReqEditorUtil.java" startLine="26" startPosition="6" endLine="27" endPosition="40" />
+  <nodeInfo nodeId="3113923837081984173" fileName="ReqEditorUtil.java" startLine="29" startPosition="6" endLine="30" endPosition="48" />
+  <nodeInfo nodeId="3113923837081987669" fileName="ReqEditorUtil.java" startLine="32" startPosition="63" endLine="33" endPosition="33" />
+  <nodeInfo nodeId="3113923837081987703" fileName="RequirementsTableModel.java" startLine="14" startPosition="64" endLine="15" endPosition="35" />
+  <nodeInfo nodeId="3113923837081987707" fileName="RequirementsTableModel.java" startLine="17" startPosition="45" endLine="18" endPosition="119" />
+  <nodeInfo nodeId="3113923837081987716" fileName="RequirementsTableModel.java" startLine="22" startPosition="52" endLine="27" endPosition="7" />
+  <nodeInfo nodeId="3113923837081987743" fileName="RequirementsTableModel.java" startLine="21" startPosition="28" endLine="22" endPosition="52" />
+  <nodeInfo nodeId="3113923837081987749" fileName="RequirementsTableModel.java" startLine="27" startPosition="7" endLine="28" endPosition="22" />
+  <nodeInfo nodeId="3113923837081987753" fileName="RequirementsTableModel.java" startLine="24" startPosition="25" endLine="25" endPosition="93" />
+  <nodeInfo nodeId="3113923837081987783" fileName="RequirementsTableModel.java" startLine="47" startPosition="31" endLine="48" endPosition="13" />
+  <nodeInfo nodeId="3113923837081987791" fileName="ReqEditorUtil.java" startLine="31" startPosition="6" endLine="32" endPosition="63" />
+  <nodeInfo nodeId="3113923837081987806" fileName="ReqEditorUtil.java" startLine="35" startPosition="49" endLine="36" endPosition="40" />
+  <nodeInfo nodeId="3113923837082515580" fileName="RequirementsTableModel.java" startLine="32" startPosition="69" endLine="33" endPosition="77" />
+  <nodeInfo nodeId="3113923837082515703" fileName="RequirementsTableModel.java" startLine="43" startPosition="7" endLine="44" endPosition="24" />
+  <nodeInfo nodeId="3113923837082585285" fileName="RequirementsTableModel.java" startLine="31" startPosition="52" endLine="32" endPosition="69" />
+  <nodeInfo nodeId="3113923837082655637" fileName="RequirementsTableModel.java" startLine="33" startPosition="77" endLine="43" endPosition="7" />
+  <nodeInfo nodeId="3113923837082655640" fileName="RequirementsTableModel.java" startLine="35" startPosition="25" endLine="38" endPosition="9" />
+  <nodeInfo nodeId="3113923837082655649" fileName="RequirementsTableModel.java" startLine="38" startPosition="9" endLine="41" endPosition="9" />
+  <nodeInfo nodeId="3113923837082655679" fileName="RequirementsTableModel.java" startLine="36" startPosition="23" endLine="37" endPosition="66" />
+  <nodeInfo nodeId="3113923837082656914" fileName="RequirementsTableModel.java" startLine="39" startPosition="23" endLine="40" endPosition="66" />
+  <nodeInfo nodeId="3113923837082960834" fileName="RequirementsTableModel.java" startLine="52" startPosition="40" endLine="55" endPosition="5" />
+  <nodeInfo nodeId="3113923837082960839" fileName="RequirementsTableModel.java" startLine="53" startPosition="19" endLine="54" endPosition="18" />
+  <nodeInfo nodeId="3113923837082960841" fileName="RequirementsTableModel.java" startLine="55" startPosition="5" endLine="56" endPosition="25" />
+  <nodeInfo nodeId="8017499479422358141" fileName="ReqEditorUtil.java" startLine="33" startPosition="33" endLine="34" endPosition="46" />
+  <nodeInfo nodeId="8017499479422676600" fileName="ReqEditorUtil.java" startLine="20" startPosition="31" endLine="23" endPosition="6" />
+  <nodeInfo nodeId="8017499479422686365" fileName="ReqEditorUtil.java" startLine="23" startPosition="6" endLine="24" endPosition="52" />
+  <nodeInfo nodeId="8017499479423000935" fileName="ReqEditorUtil.java" startLine="28" startPosition="6" endLine="31" endPosition="6" />
+  <nodeInfo nodeId="8017499479423000937" fileName="ReqEditorUtil.java" startLine="25" startPosition="39" endLine="28" endPosition="6" />
+  <nodeInfo nodeId="8017499479423000939" fileName="ReqEditorUtil.java" startLine="34" startPosition="46" endLine="35" endPosition="49" />
+  <nodeInfo nodeId="8017499479423165961" fileName="RequirementsTableModel.java" startLine="65" startPosition="75" endLine="76" endPosition="7" />
+  <nodeInfo nodeId="8017499479423166109" fileName="RequirementsTableModel.java" startLine="67" startPosition="25" endLine="68" endPosition="98" />
+  <nodeInfo nodeId="8017499479423167490" fileName="RequirementsTableModel.java" startLine="68" startPosition="98" endLine="71" endPosition="9" />
+  <nodeInfo nodeId="8017499479423167524" fileName="RequirementsTableModel.java" startLine="69" startPosition="23" endLine="70" endPosition="59" />
+  <nodeInfo nodeId="8017499479423167548" fileName="RequirementsTableModel.java" startLine="71" startPosition="9" endLine="74" endPosition="9" />
+  <nodeInfo nodeId="8017499479423167550" fileName="RequirementsTableModel.java" startLine="72" startPosition="23" endLine="73" endPosition="59" />
+</debugInfo>
+

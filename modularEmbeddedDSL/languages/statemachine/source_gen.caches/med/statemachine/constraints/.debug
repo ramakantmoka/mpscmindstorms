@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <nodeInfo nodeId="6177678091393689490" fileName="FireEventStatement_trigger_ReferentConstraint.java" startLine="24" startPosition="132" endLine="29" endPosition="5" />
+  <nodeInfo nodeId="6177678091393689507" fileName="FireEventStatement_trigger_ReferentConstraint.java" startLine="27" startPosition="10" endLine="29" endPosition="5" />
+  <nodeInfo nodeId="6177678091393689509" fileName="FireEventStatement_trigger_ReferentConstraint.java" startLine="27" startPosition="12" endLine="28" endPosition="18" />
+  <nodeInfo nodeId="6177678091393689512" fileName="FireEventStatement_trigger_ReferentConstraint.java" startLine="25" startPosition="91" endLine="26" endPosition="130" />
+  <nodeInfo nodeId="6177678091393689560" fileName="StateSwitchCase_state_ReferentConstraint.java" startLine="27" startPosition="177" endLine="32" endPosition="5" />
+  <nodeInfo nodeId="6177678091393689573" fileName="StateSwitchCase_state_ReferentConstraint.java" startLine="30" startPosition="10" endLine="32" endPosition="5" />
+  <nodeInfo nodeId="6177678091393689575" fileName="StateSwitchCase_state_ReferentConstraint.java" startLine="30" startPosition="12" endLine="31" endPosition="18" />
+  <nodeInfo nodeId="6177678091393689592" fileName="StateSwitchCase_state_ReferentConstraint.java" startLine="26" startPosition="132" endLine="27" endPosition="177" />
+  <nodeInfo nodeId="6177678091393689622" fileName="StateSwitchCase_state_ReferentConstraint.java" startLine="28" startPosition="26" endLine="29" endPosition="65" />
+</debugInfo>
+

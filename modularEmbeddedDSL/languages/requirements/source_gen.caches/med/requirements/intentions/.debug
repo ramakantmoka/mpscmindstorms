@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <nodeInfo nodeId="3525105684384850461" fileName="addDependency_Intention.java" startLine="34" startPosition="76" endLine="35" endPosition="100" />
+  <nodeInfo nodeId="7680622939171670863" fileName="addRequirementsTrace_Intention.java" startLine="47" startPosition="76" endLine="48" endPosition="153" />
+  <nodeInfo nodeId="7680622939172684485" fileName="removeTrace_Intention.java" startLine="34" startPosition="76" endLine="35" endPosition="37" />
+</debugInfo>
+
