@@ -357,6 +357,26 @@
       <link role="applicableLink" targetNodeId="1.8017499479425222406" />
       <node role="searchScopeFactory" type="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Factory" id="8017499479425394007">
         <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8017499479425394008">
+          <node role="statement" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" id="4982955159595952639">
+            <node role="localVariableDeclaration" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" id="4982955159595952640">
+              <property name="name" value="adaptor" />
+              <property name="isFinal" value="true" />
+              <node role="type" type="jetbrains.mps.lang.smodel.structure.SNodeType" id="4982955159595952641">
+                <link role="concept" targetNodeId="1.2739617086198022583" resolveInfo="PortAdaptor" />
+              </node>
+              <node role="initializer" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="4982955159595952642">
+                <node role="operand" type="jetbrains.mps.lang.constraints.structure.ConceptParameter_ReferentSearchScope_enclosingNode" id="4982955159595952643" />
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" id="4982955159595952644">
+                  <node role="parameter" type="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" id="4982955159595952645">
+                    <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="4982955159595952646">
+                      <link role="conceptDeclaration" targetNodeId="1.2739617086198022583" resolveInfo="PortAdaptor" />
+                    </node>
+                  </node>
+                  <node role="parameter" type="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" id="4982955159595952647" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="7678656588251709692">
             <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="7678656588251709693">
               <node role="statement" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" id="8017499479425417919">
@@ -369,15 +389,8 @@
                     <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="8017499479425417930">
                       <link role="link" targetNodeId="1.2739617086198022587" />
                     </node>
-                    <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8949829907856842900">
-                      <node role="operand" type="jetbrains.mps.lang.constraints.structure.ConceptParameter_ReferentSearchScope_enclosingNode" id="8949829907855856496" />
-                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" id="8949829907856842923">
-                        <node role="parameter" type="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" id="8949829907856842924">
-                          <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="8949829907856842946">
-                            <link role="conceptDeclaration" targetNodeId="1.2739617086198022583" resolveInfo="PortAdaptor" />
-                          </node>
-                        </node>
-                      </node>
+                    <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="4982955159595952668">
+                      <link role="variableDeclaration" targetNodeId="4982955159595952640" resolveInfo="adaptor" />
                     </node>
                   </node>
                 </node>
@@ -453,16 +466,8 @@
               </node>
             </node>
             <node role="condition" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8949829907856739387">
-              <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8949829907856739223">
-                <node role="operand" type="jetbrains.mps.lang.constraints.structure.ConceptParameter_ReferentSearchScope_enclosingNode" id="7678656588251709710" />
-                <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" id="8949829907856739246">
-                  <node role="parameter" type="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" id="8949829907856739247">
-                    <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="8949829907856739269">
-                      <link role="conceptDeclaration" targetNodeId="1.2739617086198022583" resolveInfo="PortAdaptor" />
-                    </node>
-                  </node>
-                  <node role="parameter" type="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" id="8949829907856739348" />
-                </node>
+              <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="4982955159595952648">
+                <link role="variableDeclaration" targetNodeId="4982955159595952640" resolveInfo="adaptor" />
               </node>
               <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" id="8949829907856739429" />
             </node>
