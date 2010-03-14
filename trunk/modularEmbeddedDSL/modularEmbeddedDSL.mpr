@@ -14,6 +14,7 @@
       <solutionPath path="${project}/solutions/LineFollowerWithComponents/LineFollowerWithComponents.msd" folder="_samples" />
       <solutionPath path="${project}/solutions/tabletest/tabletest.msd" folder="util" />
       <solutionPath path="${project}/solutions/StructureFeatureTest/StructureFeatureTest.msd" folder="_samples" />
+      <solutionPath path="${project}/solutions/Bluetooth/bluetooth.msd" folder="_samples" />
     </projectSolutions>
     <projectLanguages>
       <languagePath path="${project}/languages/bitdata/bitdata.mpl" folder="med" />
