@@ -1,0 +1,51 @@
+#include "implementation.oil"
+CPU ATMEL_AT91SAM7S256
+{
+  OS LEJOS_OSEK
+  {
+    STATUS = EXTENDED;
+    STARTUPHOOK = FALSE;
+    ERRORHOOK = FALSE;
+    SHUTDOWNHOOK = FALSE;
+    PRETASKHOOK = FALSE;
+    POSTTASKHOOK = FALSE;
+    USEGETSERVICEID = FALSE;
+    USEPARAMETERACCESS = FALSE;
+    USERESSCHEDULER = FALSE;
+  };
+  APPMODE appmode1{}; 
+  COUNTER SysTimerCnt
+  {
+     MINCYCLE = 1;
+     MAXALLOWEDVALUE = 10000;
+     TICKSPERBASE = 1;
+  };
+TASK btmain_main_main {
+  AUTOSTART = FALSE;
+  PRIORITY = 2;
+  ACTIVATION = 1;
+  SCHEDULE = FULL;
+  STACKSIZE = 512;
+};
+ALARM btmain_main_main_alarm {
+  COUNTER = SysTimerCnt;
+  ACTION = ACTIVATETASK {
+    TASK = btmain_main_main;
+  };
+  AUTOSTART = TRUE
+ { 
+    ALARMTIME = 1;
+    CYCLETIME = 2;
+    APPMODE = appmode1;
+  };
+};
+TASK btmain_main_idle{
+  AUTOSTART = TRUE {
+    APPMODE = appmode1;
+  };
+  PRIORITY = 1;
+  ACTIVATION = 1;
+  SCHEDULE = FULL;
+  STACKSIZE = 512;
+};
+};
