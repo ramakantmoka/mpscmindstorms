@@ -104,6 +104,20 @@
         </node>
         <node role="type" type="med.core.structure.GenericIntegerType" id="5296414764969946986" />
       </node>
+      <node role="procedures" type="med.core.structure.ExternalProcedure" id="5196379128662886855">
+        <property name="name" value="display_update" />
+        <property name="export" value="true" />
+        <node role="type" type="med.core.structure.VoidType" id="5196379128662886857" />
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="4621601338807270882">
+          <property name="name" value="update_too" />
+          <node role="type" type="med.core.structure.GenericIntegerType" id="4621601338807270883" />
+        </node>
+      </node>
+      <node role="procedures" type="med.core.structure.ExternalProcedure" id="4621601338807270879">
+        <property name="name" value="display_clear" />
+        <property name="export" value="true" />
+        <node role="type" type="med.core.structure.VoidType" id="4621601338807270881" />
+      </node>
       <node role="procedures" type="med.core.structure.ExternalProcedure" id="5196379128662641915">
         <property name="name" value="display_goto_xy" />
         <property name="export" value="true" />
@@ -135,8 +149,21 @@
           <node role="type" type="med.core.structure.GenericIntegerType" id="5196379128662641954" />
         </node>
         <node role="parameters" type="med.core.structure.ProcedureParameter" id="5196379128662641955">
-          <property name="name" value="anotherArgumentIDontKnowWhatItMeans" />
-          <node role="type" type="med.core.structure.GenericIntegerType" id="5196379128662641957" />
+          <property name="name" value="places" />
+          <node role="type" type="med.core.structure.UInt32" id="4621601338807310494" />
+        </node>
+      </node>
+      <node role="procedures" type="med.core.structure.ExternalProcedure" id="4621601338807310487">
+        <property name="name" value="display_unsigned" />
+        <property name="export" value="true" />
+        <node role="type" type="med.core.structure.VoidType" id="4621601338807310489" />
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="4621601338807310490">
+          <property name="name" value="val" />
+          <node role="type" type="med.core.structure.UInt32" id="4621601338807310491" />
+        </node>
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="4621601338807310492">
+          <property name="name" value="places" />
+          <node role="type" type="med.core.structure.UInt32" id="4621601338807310495" />
         </node>
       </node>
       <node role="procedures" type="med.core.structure.ExternalProcedure" id="5196379128662886664">
@@ -158,18 +185,13 @@
           <node role="type" type="med.core.structure.GenericIntegerType" id="5196379128662886673" />
         </node>
       </node>
-      <node role="procedures" type="med.core.structure.ExternalProcedure" id="5196379128662886855">
-        <property name="name" value="display_update" />
-        <property name="export" value="true" />
-        <node role="type" type="med.core.structure.VoidType" id="5196379128662886857" />
-      </node>
       <node role="procedures" type="med.core.structure.ExternalProcedure" id="6821937377367709181">
         <property name="name" value="ecrobot_send_bt_packet" />
         <property name="export" value="true" />
         <node role="parameters" type="med.core.structure.ProcedureParameter" id="6821937377367709185">
           <property name="name" value="buff" />
           <node role="type" type="med.core.structure.PointerType" id="6821937377367711128">
-            <node role="baseType" type="med.core.structure.Int8" id="6821937377367711127" />
+            <node role="baseType" type="med.core.structure.UInt8" id="4621601338807310478" />
           </node>
         </node>
         <node role="parameters" type="med.core.structure.ProcedureParameter" id="6821937377367709188">
@@ -187,6 +209,11 @@
         </node>
         <node role="type" type="med.core.structure.VoidType" id="6821937377367709197" />
       </node>
+      <node role="procedures" type="med.core.structure.ExternalProcedure" id="4621601338807322556">
+        <property name="name" value="ecrobot_init_bt_connection" />
+        <property name="export" value="true" />
+        <node role="type" type="med.core.structure.VoidType" id="4621601338807322558" />
+      </node>
       <node role="procedures" type="med.core.structure.ExternalProcedure" id="6821937377367854183">
         <property name="name" value="ecrobot_bt_data_logger" />
         <property name="export" value="true" />
@@ -199,6 +226,33 @@
           <node role="type" type="med.core.structure.Int8" id="6821937377367854190" />
         </node>
         <node role="type" type="med.core.structure.VoidType" id="6821937377367854191" />
+      </node>
+      <node role="procedures" type="med.core.structure.ExternalProcedure" id="4073188428749340419">
+        <property name="name" value="ecrobot_read_bt_packet" />
+        <property name="export" value="true" />
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="4073188428749340420">
+          <property name="name" value="buff" />
+          <node role="type" type="med.core.structure.PointerType" id="4073188428749340421">
+            <node role="baseType" type="med.core.structure.UInt8" id="4621601338807310479" />
+          </node>
+        </node>
+        <node role="parameters" type="med.core.structure.ProcedureParameter" id="4073188428749340423">
+          <property name="name" value="size" />
+          <node role="type" type="med.core.structure.GenericIntegerType" id="4073188428749340424" />
+        </node>
+        <node role="type" type="med.core.structure.GenericIntegerType" id="4073188428749340426" />
+      </node>
+      <node role="procedures" type="med.core.structure.ExternalProcedure" id="4982955159596061977">
+        <property name="name" value="ecrobot_term_bt_connection" />
+        <property name="export" value="true" />
+        <node role="type" type="med.core.structure.GenericIntegerType" id="4982955159596061983" />
+      </node>
+      <node role="procedures" type="med.core.structure.ExternalProcedure" id="4621601338806095433">
+        <property name="export" value="true" />
+        <property name="name" value="ecrobot_get_bt_status" />
+        <node role="type" type="med.core.structure.EnumType" id="4621601338806283380">
+          <link role="enum" targetNodeId="4621601338806103799" resolveInfo="SYSTEM_T" />
+        </node>
       </node>
       <node role="enums" type="med.core.structure.EnumDeclaration" id="5196379128661020614">
         <property name="name" value="SENSOR_PORT_T" />
@@ -227,6 +281,34 @@
         </node>
         <node role="literals" type="med.core.structure.EnumLiteral" id="5196379128662886663">
           <property name="name" value="NXT_PORT_C" />
+        </node>
+      </node>
+      <node role="enums" type="med.core.structure.EnumDeclaration" id="4621601338806103799">
+        <property name="export" value="true" />
+        <property name="name" value="SYSTEM_T" />
+        <node role="literals" type="med.core.structure.EnumLiteral" id="4621601338806103800">
+          <property name="name" value="EXECUTED_FROM_FLASH" />
+        </node>
+        <node role="literals" type="med.core.structure.EnumLiteral" id="4621601338806103801">
+          <property name="name" value="EXECUTED_FROM_SRAM" />
+        </node>
+        <node role="literals" type="med.core.structure.EnumLiteral" id="4621601338806103802">
+          <property name="name" value="DEVICE_NO_INIT" />
+        </node>
+        <node role="literals" type="med.core.structure.EnumLiteral" id="4621601338806103803">
+          <property name="name" value="DEVICE_INITIALIZED" />
+        </node>
+        <node role="literals" type="med.core.structure.EnumLiteral" id="4621601338806103804">
+          <property name="name" value="BT_NO_INIT" />
+        </node>
+        <node role="literals" type="med.core.structure.EnumLiteral" id="4621601338806103805">
+          <property name="name" value="BT_INITIALIZED" />
+        </node>
+        <node role="literals" type="med.core.structure.EnumLiteral" id="4621601338806103806">
+          <property name="name" value="BT_CONNECTED" />
+        </node>
+        <node role="literals" type="med.core.structure.EnumLiteral" id="4621601338806103807">
+          <property name="name" value="BT_STREAM" />
         </node>
       </node>
     </node>
