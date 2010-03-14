@@ -22,7 +22,7 @@ public class typeof_EnumLiteral_InferenceRule extends AbstractInferenceRule_Runt
     {
       SNode _nodeToCheck_1029348928467 = enumLiteral;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "5196379128662167445", true), (SNode)t, _nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "5196379128662167441", intentionProvider);
+      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "5196379128662167445", true), (SNode)t, _nodeToCheck_1029348928467, null, "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "5196379128662167441", intentionProvider);
     }
   }
 

@@ -19,7 +19,7 @@ public class handleTypedefsAndBaseTypes_InequationReplacementRule extends Abstra
     {
       SNode _nodeToCheck_1029348928467 = equationInfo.getNodeWithError();
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation((SNode)SLinkOperations.getTarget(SLinkOperations.getTarget(supertype, "typedef", false), "baseType", true), (SNode)subtype, _nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "5196379128665643396", intentionProvider);
+      typeCheckingContext.createEquation((SNode)SLinkOperations.getTarget(SLinkOperations.getTarget(supertype, "typedef", false), "baseType", true), (SNode)subtype, _nodeToCheck_1029348928467, null, "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "5196379128665643396", intentionProvider);
     }
   }
 

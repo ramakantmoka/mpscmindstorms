@@ -18,7 +18,7 @@ public class typeof_LocalVariableReference_InferenceRule extends AbstractInferen
     {
       SNode _nodeToCheck_1029348928467 = localVariableReference;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "4271434180065339920", true), (SNode)typeCheckingContext.typeOf(SLinkOperations.getTarget(localVariableReference, "variable", false), "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "4271434180065339915", true), _nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "4271434180065339913", intentionProvider);
+      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "4271434180065339920", true), (SNode)typeCheckingContext.typeOf(SLinkOperations.getTarget(localVariableReference, "variable", false), "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "4271434180065339915", true), _nodeToCheck_1029348928467, null, "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "4271434180065339913", intentionProvider);
     }
   }
 

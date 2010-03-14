@@ -384,6 +384,18 @@ public class QueriesGenerated {
     return SLinkOperations.getTarget(_context.getNode(), "type", true);
   }
 
+  public static SNode sourceNodeQuery_4621601338806591294(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "leftExpression", true);
+  }
+
+  public static SNode sourceNodeQuery_4621601338806591303(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "rightExpression", true);
+  }
+
+  public static SNode sourceNodeQuery_4621601338807062325(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "expression", true);
+  }
+
   public static SNode sourceNodeQuery_4946775246120938763(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), "type", true);
   }

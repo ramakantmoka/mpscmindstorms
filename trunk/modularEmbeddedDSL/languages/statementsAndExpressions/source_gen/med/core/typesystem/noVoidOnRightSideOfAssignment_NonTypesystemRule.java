@@ -23,7 +23,7 @@ public class noVoidOnRightSideOfAssignment_NonTypesystemRule extends AbstractNon
       {
         BaseIntentionProvider intentionProvider = null;
         IErrorTarget errorTarget = new NodeErrorTarget();
-        typeCheckingContext.reportTypeError(SLinkOperations.getTarget(assignmentStatement, "rvalue", true), "cannot assign void type", "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "5296414764970297927", intentionProvider, errorTarget);
+        typeCheckingContext.reportTypeError(SLinkOperations.getTarget(assignmentStatement, "rvalue", true), "cannot assign void type", "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "5296414764970297927", intentionProvider, errorTarget);
       }
     }
   }

@@ -56,6 +56,12 @@
   <nodeInfo nodeId="3454436015655059591" fileName="handleCovariantArraySubtypes_InequationReplacementRule.java" startLine="23" startPosition="157" endLine="28" endPosition="5" />
   <nodeInfo nodeId="3454436015655059591" fileName="handleCovariantArraySubtypes_InequationReplacementRule.java" startLine="32" startPosition="35" endLine="33" endPosition="235" />
   <nodeInfo nodeId="4271434180065339913" fileName="typeof_LocalVariableReference_InferenceRule.java" startLine="17" startPosition="108" endLine="22" endPosition="5" />
+  <nodeInfo nodeId="4621601338806589070" fileName="typeof_AndExpression_InferenceRule.java" startLine="17" startPosition="93" endLine="18" endPosition="23" />
+  <nodeInfo nodeId="4621601338806589074" fileName="typeof_AndExpression_InferenceRule.java" startLine="18" startPosition="23" endLine="23" endPosition="5" />
+  <nodeInfo nodeId="4621601338806589083" fileName="typeof_AndExpression_InferenceRule.java" startLine="23" startPosition="5" endLine="28" endPosition="5" />
+  <nodeInfo nodeId="4621601338806589092" fileName="typeof_AndExpression_InferenceRule.java" startLine="28" startPosition="5" endLine="33" endPosition="5" />
+  <nodeInfo nodeId="4621601338807060115" fileName="typeof_NotExpression_InferenceRule.java" startLine="17" startPosition="93" endLine="22" endPosition="5" />
+  <nodeInfo nodeId="4621601338807060122" fileName="typeof_NotExpression_InferenceRule.java" startLine="22" startPosition="5" endLine="27" endPosition="5" />
   <nodeInfo nodeId="4641466063285430428" fileName="typeof_ArrayType_InferenceRule.java" startLine="17" startPosition="95" endLine="22" endPosition="5" />
   <nodeInfo nodeId="4641466063285667157" fileName="typeof_BooleanType_InferenceRule.java" startLine="17" startPosition="90" endLine="22" endPosition="5" />
   <nodeInfo nodeId="4641466063285997913" fileName="typeof_StringType_InferenceRule.java" startLine="17" startPosition="90" endLine="22" endPosition="5" />
@@ -120,7 +126,7 @@
   <nodeInfo nodeId="6275945668714243360" fileName="typeof_StructPointerAttributeReference_InferenceRule.java" startLine="19" startPosition="95" endLine="24" endPosition="5" />
   <nodeInfo nodeId="6275945668714243370" fileName="typeof_StructPointerAttributeReference_InferenceRule.java" startLine="31" startPosition="5" endLine="36" endPosition="5" />
   <nodeInfo nodeId="6275945668714243381" fileName="typeof_StructPointerAttributeReference_InferenceRule.java" startLine="24" startPosition="5" endLine="31" endPosition="5" />
-  <nodeInfo nodeId="6275945668714243434" fileName="typeof_StructPointerAttributeReference_InferenceRule.java" startLine="25" startPosition="256" endLine="30" endPosition="7" />
+  <nodeInfo nodeId="6275945668714243434" fileName="typeof_StructPointerAttributeReference_InferenceRule.java" startLine="25" startPosition="260" endLine="30" endPosition="7" />
   <nodeInfo nodeId="7647825645222874125" fileName="onlyOneThingInAnExternalModuleResource_NonTypesystemRule.java" startLine="21" startPosition="94" endLine="32" endPosition="5" />
   <nodeInfo nodeId="7647825645222874127" fileName="onlyOneThingInAnExternalModuleResource_NonTypesystemRule.java" startLine="22" startPosition="75" endLine="31" endPosition="7" />
   <nodeInfo nodeId="7647825645222874133" fileName="onlyOneThingInAnExternalModuleResource_NonTypesystemRule.java" startLine="23" startPosition="81" endLine="30" endPosition="9" />
@@ -135,13 +141,13 @@
   <nodeInfo nodeId="7874226701048658997" fileName="supertypeOf_ArrayType_SubtypingRule.java" startLine="17" startPosition="94" endLine="18" endPosition="15" />
   <nodeInfo nodeId="7874226701048682898" fileName="supertypeOf_ArrayType_Pointer_SubtypingRule.java" startLine="19" startPosition="89" endLine="20" endPosition="138" />
   <nodeInfo nodeId="8470053389337680002" fileName="typeof_AddressOfExpression_InferenceRule.java" startLine="19" startPosition="96" endLine="20" endPosition="97" />
-  <nodeInfo nodeId="8470053389337680010" fileName="typeof_AddressOfExpression_InferenceRule.java" startLine="20" startPosition="97" endLine="21" endPosition="266" />
-  <nodeInfo nodeId="8470053389337848338" fileName="typeof_AddressOfExpression_InferenceRule.java" startLine="21" startPosition="266" endLine="26" endPosition="5" />
+  <nodeInfo nodeId="8470053389337680010" fileName="typeof_AddressOfExpression_InferenceRule.java" startLine="20" startPosition="97" endLine="21" endPosition="270" />
+  <nodeInfo nodeId="8470053389337848338" fileName="typeof_AddressOfExpression_InferenceRule.java" startLine="21" startPosition="270" endLine="26" endPosition="5" />
   <nodeInfo nodeId="8937796720370468521" fileName="typeof_NewExpression_InferenceRule.java" startLine="28" startPosition="12" endLine="29" endPosition="91" />
   <nodeInfo nodeId="8937796720370468529" fileName="typeof_NewExpression_InferenceRule.java" startLine="29" startPosition="91" endLine="30" endPosition="134" />
   <nodeInfo nodeId="8937796720370492449" fileName="typeof_NewExpression_InferenceRule.java" startLine="30" startPosition="134" endLine="35" endPosition="7" />
   <nodeInfo nodeId="8937796720371363266" fileName="supertypeOf_PointerType2_SubtypingRule.java" startLine="20" startPosition="138" endLine="21" endPosition="13" />
-  <nodeInfo nodeId="8937796720371363275" fileName="typeof_DereferenceExpression_InferenceRule.java" startLine="26" startPosition="249" endLine="31" endPosition="9" />
+  <nodeInfo nodeId="8937796720371363275" fileName="typeof_DereferenceExpression_InferenceRule.java" startLine="26" startPosition="253" endLine="31" endPosition="9" />
   <nodeInfo nodeId="8937796720371741169" fileName="typeof_DereferenceExpression_InferenceRule.java" startLine="19" startPosition="91" endLine="33" endPosition="5" />
   <nodeInfo nodeId="8937796720371741187" fileName="typeof_DereferenceExpression_InferenceRule.java" startLine="20" startPosition="71" endLine="25" endPosition="7" />
   <nodeInfo nodeId="8937796720371741198" fileName="typeof_DereferenceExpression_InferenceRule.java" startLine="25" startPosition="7" endLine="32" endPosition="7" />

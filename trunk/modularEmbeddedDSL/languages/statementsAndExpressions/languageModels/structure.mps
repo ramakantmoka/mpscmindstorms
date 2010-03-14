@@ -648,6 +648,14 @@
       <property name="sourceCardinality" value="1" />
       <link role="target" targetNodeId="6520964804316559124" resolveInfo="StatementList" />
     </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="4621601338807277306">
+      <property name="value" value="for" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="4621601338807277308">
+      <property name="value" value="for(type name = init; condition; update)" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473914776" resolveInfo="shortDescription" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="4739672646790033290">
     <property name="package" value="statements" />
@@ -730,6 +738,10 @@
       <property name="role" value="body" />
       <property name="sourceCardinality" value="1" />
       <link role="target" targetNodeId="6520964804316559124" resolveInfo="StatementList" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="4621601338806103855">
+      <property name="value" value="while" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="4739672646790855282">
@@ -1910,6 +1922,66 @@
     </node>
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2739617086195632621">
       <link role="intfc" targetNodeId="5288422977871838031" resolveInfo="IDocumentable" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="4621601338806372749">
+    <property name="name" value="BinaryOperation" />
+    <property name="package" value="operations" />
+    <link role="extends" targetNodeId="6441851857096548278" resolveInfo="Expression" />
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.BooleanConceptProperty" id="4621601338806372752">
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473854053" resolveInfo="abstract" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="4621601338806372753">
+      <property name="value" value="&lt;?&gt;" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="4621601338806372754">
+      <property name="value" value="abstract binary operation" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473914776" resolveInfo="shortDescription" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="4621601338806372750">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="leftExpression" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="6441851857096548278" resolveInfo="Expression" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="4621601338806372751">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="rightExpression" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="6441851857096548278" resolveInfo="Expression" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="4621601338806589062">
+    <property name="package" value="operations" />
+    <property name="name" value="AndExpression" />
+    <link role="extends" targetNodeId="4621601338806372749" resolveInfo="BinaryOperation" />
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="4621601338806589063">
+      <property name="value" value="&amp;&amp;" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="4621601338806589064">
+      <property name="value" value="conditional-and operation" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473914776" resolveInfo="shortDescription" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="4621601338807035358">
+    <property name="package" value="expressions" />
+    <property name="name" value="NotExpression" />
+    <link role="extends" targetNodeId="6441851857096548278" resolveInfo="Expression" />
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="4621601338807035360">
+      <property name="value" value="!(expr)" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="4621601338807035361">
+      <property name="value" value="not-expression" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473914776" resolveInfo="shortDescription" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="4621601338807035359">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="expression" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="6441851857096548278" resolveInfo="Expression" />
     </node>
   </node>
 </model>

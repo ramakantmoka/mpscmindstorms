@@ -18,7 +18,7 @@ public class typeof_ModuleVariableRef_InferenceRule extends AbstractInferenceRul
     {
       SNode _nodeToCheck_1029348928467 = ref;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "6254144863184158305", true), (SNode)typeCheckingContext.typeOf(SLinkOperations.getTarget(SLinkOperations.getTarget(ref, "variable", false), "type", true), "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "6254144863184158313", true), _nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "6254144863184158308", intentionProvider);
+      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "6254144863184158305", true), (SNode)typeCheckingContext.typeOf(SLinkOperations.getTarget(SLinkOperations.getTarget(ref, "variable", false), "type", true), "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "6254144863184158313", true), _nodeToCheck_1029348928467, null, "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "6254144863184158308", intentionProvider);
     }
   }
 
