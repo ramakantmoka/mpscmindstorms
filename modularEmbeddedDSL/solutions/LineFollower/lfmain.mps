@@ -17,7 +17,7 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.lang.core.constraints)" version="2" />
   <languageAspect modelUID="r:c8eeaafc-b8ed-41eb-96aa-711dbd66c11c(med.quantities.structure)" version="0" />
-  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="2" />
+  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="4" />
   <language-engaged-on-generation namespace="150e33c6-372a-4396-b4cc-1c334fb3f438(med.platform.nxtosek)" />
   <devkit namespace="a891e14a-a3d6-466e-8364-4e1b14cbaa06(ModularEmbeddedDSL)" />
   <maxImportIndex value="0" />
@@ -28,7 +28,7 @@
     <node role="modules" type="med.core.structure.ImplementationModule" id="5196379128660651513">
       <property name="name" value="main" />
       <property name="text" value="This module represents the code for the line follower lego robot. It has a couple of tasks, procedures and variables." />
-      <property name="safe" value="true" />
+      <property name="safe" value="false" />
       <node role="contents" type="med.core.structure.SimpleIntConstant" id="5196379128666214925">
         <property name="name" value="WHITE" />
         <property name="value" value="500" />
@@ -152,7 +152,7 @@
             <node role="guard" type="med.core.structure.TrueLiteral" id="5296414764970022305" />
             <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="5296414764970153973">
               <property name="isNew" value="false" />
-              <node role="expression" type="med.features.structure.AtomicFE" id="7678656588247986068">
+              <node role="expression" type="med.features.structure.AtomicFE" id="4737589258920317591">
                 <link role="feature" targetNodeId="7680622939174614997" resolveInfo="bumper" />
               </node>
             </node>
@@ -461,11 +461,6 @@
                       <link role="literal" targetNodeId="2v.5196379128661020615" resolveInfo="NXT_PORT_S1" />
                     </node>
                   </node>
-                  <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="7678656588248025753">
-                    <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="7678656588248025755">
-                      <link role="requirement" targetNodeId="6556431234481809984" resolveInfo="MaxSpeed" />
-                    </node>
-                  </node>
                 </node>
                 <node role="statements" type="med.core.structure.IfStatement" id="9105096665970351738">
                   <node role="thenPart" type="med.core.structure.StatementList" id="9105096665970351739">
@@ -478,18 +473,10 @@
                         <node role="actuals" type="med.core.structure.SimpleConstantRef" id="5296414764970161717">
                           <link role="constant" targetNodeId="5196379128666214943" resolveInfo="FAST" />
                         </node>
-                        <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="2739617086197490781">
-                          <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="2739617086197490783">
-                            <link role="requirement" targetNodeId="7680622939172356371" resolveInfo="Init" />
+                        <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="3316363611019489788">
+                          <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="3316363611019489791">
+                            <link role="requirement" targetNodeId="3316363611019489787" resolveInfo="ConsistentSetting" />
                           </node>
-                        </node>
-                      </node>
-                      <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="2739617086186164837">
-                        <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="2739617086186164839">
-                          <link role="requirement" targetNodeId="7680622939172356371" resolveInfo="Init" />
-                        </node>
-                        <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="2739617086186164841">
-                          <link role="requirement" targetNodeId="7680622939173602227" resolveInfo="Calib" />
                         </node>
                       </node>
                     </node>
@@ -524,10 +511,10 @@
                         <node role="actuals" type="med.core.structure.SimpleConstantRef" id="5296414764970161710">
                           <link role="constant" targetNodeId="5196379128666214941" resolveInfo="SLOW" />
                         </node>
-                      </node>
-                      <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="8949829907855087058">
-                        <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="8949829907855087060">
-                          <link role="requirement" targetNodeId="7680622939172356371" resolveInfo="Init" />
+                        <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="3316363611019489792">
+                          <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="3316363611019489794">
+                            <link role="requirement" targetNodeId="3316363611019489787" resolveInfo="ConsistentSetting" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -936,7 +923,6 @@
               <link role="procedure" targetNodeId="2v.5196379128662886855" resolveInfo="display_update" />
             </node>
           </node>
-          <node role="statements" type="med.tasks.structure.TerminateTaskStatement" id="7678656588247986074" />
         </node>
         <node role="type" type="med.core.structure.VoidType" id="5196379128662886704" />
         <node role="parameters" type="med.core.structure.ProcedureParameter" id="5196379128662886705">
@@ -985,20 +971,21 @@
     </node>
     <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="5296414764970271815">
       <property name="name" value="sonar" />
-      <property name="selected" value="true" />
+      <property name="selected" value="false" />
     </node>
     <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="5196379128662641907">
       <property name="name" value="debugOutput" />
       <property name="selected" value="false" />
     </node>
-    <node role="mode" type="med.features.structure.ShowClauseDisplayMode" id="8949829907856211059">
-      <property name="showFeatureClause" value="true" />
-      <property name="highlightFeatureDependentNodes" value="true" />
-      <property name="removeNonSelectedStuffInEditor" value="false" />
-    </node>
-    <node role="backup" type="med.features.structure.VariantDisplayMode" id="8949829907856211060">
+    <node role="moduleDependencyAnnotation$attribute" type="med.core.structure.ModuleDependency" id="7400233627844407295" />
+    <node role="mode" type="med.features.structure.VariantDisplayMode" id="1870087877644207723">
       <property name="removeNonSelectedStuffInEditor" value="true" />
       <property name="showFeatureClause" value="true" />
+    </node>
+    <node role="backup" type="med.features.structure.ShowClauseDisplayMode" id="1870087877644207724">
+      <property name="showFeatureClause" value="false" />
+      <property name="highlightFeatureDependentNodes" value="true" />
+      <property name="removeNonSelectedStuffInEditor" value="false" />
     </node>
   </node>
   <node type="med.core.structure.System" id="8437501635617536080">
@@ -1045,6 +1032,10 @@
     <node role="requirements" type="med.requirements.structure.DummyRequirement" id="7680622939172356369">
       <property name="name" value="TwoPhases" />
       <property name="text" value="Initialization should be separate from operation" />
+    </node>
+    <node role="requirements" type="med.requirements.structure.DummyRequirement" id="3316363611019489787">
+      <property name="name" value="ConsistentSetting" />
+      <property name="text" value="Motor settings have to be updated consistently" />
     </node>
   </node>
 </model>

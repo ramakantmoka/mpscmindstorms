@@ -106,6 +106,36 @@
         </entry>
       </conceptFeatureMap>
     </refactoringContext>
+    <refactoringContext modelVersion="3">
+      <refactoring refactoringClass="jetbrains.mps.lang.structure.scripts.MoveLinkUp" />
+      <moveMap>
+        <entry>
+          <key modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" nodeId="5615815995168995971" />
+          <value modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" nodeId="5615815995169198048" />
+        </entry>
+      </moveMap>
+      <conceptFeatureMap>
+        <entry>
+          <key featureName="features" featureKind="CHILD" />
+          <value featureName="features" conceptFQName="med.features.structure.StructuredFeatureDeclaration" featureKind="CHILD" />
+        </entry>
+      </conceptFeatureMap>
+    </refactoringContext>
+    <refactoringContext modelVersion="4">
+      <refactoring refactoringClass="jetbrains.mps.lang.structure.scripts.MoveLinkUp" />
+      <moveMap>
+        <entry>
+          <key modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" nodeId="5615815995171493270" />
+          <value modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" nodeId="5615815995171496278" />
+        </entry>
+      </moveMap>
+      <conceptFeatureMap>
+        <entry>
+          <key featureName="attributes" featureKind="CHILD" />
+          <value featureName="attributes" conceptFQName="med.features.structure.StructuredFeatureDeclaration" featureKind="CHILD" />
+        </entry>
+      </conceptFeatureMap>
+    </refactoringContext>
   </refactoringHistory>
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
@@ -129,10 +159,10 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902ae(jetbrains.mps.lang.typesystem.constraints)" version="17" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959033d(jetbrains.mps.lang.annotations.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" />
-  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="2" />
+  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="4" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="2" />
-  <import index="1" modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="2" />
+  <import index="1" modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="4" />
   <import index="2" modelUID="f:java_stub#java.lang(java.lang@java_stub)" version="-1" />
   <visible index="2" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <node type="jetbrains.mps.lang.structure.structure.AnnotationLinkDeclaration" id="8261019787194263237">
@@ -417,6 +447,166 @@
     <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="1766304526708492521">
       <property name="name" value="dependencyString" />
       <link role="dataType" targetNodeId="2v.1082983041843" resolveInfo="string" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5615815995168989527">
+    <property name="package" value="config.structured" />
+    <property name="name" value="CompositeFeatureDeclaration" />
+    <link role="extends" targetNodeId="5615815995169110396" resolveInfo="StructuredFeatureDeclaration" />
+    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="5615815995169110395">
+      <property name="name" value="mode" />
+      <link role="dataType" targetNodeId="5615815995169110399" resolveInfo="CompositeFeatureMode" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="5615815995169613398">
+      <property name="value" value="comp" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5615815995169110396">
+    <property name="package" value="config.structured" />
+    <property name="name" value="StructuredFeatureDeclaration" />
+    <link role="extends" targetNodeId="8261019787197673485" resolveInfo="FeatureDeclaration" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="5615815995169198048">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="features" />
+      <property name="sourceCardinality" value="0..n" />
+      <link role="target" targetNodeId="8261019787197673485" resolveInfo="FeatureDeclaration" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="5615815995171496278">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="attributes" />
+      <property name="sourceCardinality" value="0..n" />
+      <link role="target" targetNodeId="5615815995171204968" resolveInfo="FeatureAttribute" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" id="5615815995169110399">
+    <property name="package" value="config.structured" />
+    <property name="name" value="CompositeFeatureMode" />
+    <link role="memberDataType" targetNodeId="2v.1082983041843" resolveInfo="string" />
+    <link role="defaultMember" targetNodeId="5615815995169110401" />
+    <node role="member" type="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" id="5615815995169110400">
+      <property name="internalValue" value="mandatory" />
+      <property name="externalValue" value="mandatory" />
+    </node>
+    <node role="member" type="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" id="5615815995169110401">
+      <property name="internalValue" value="optional" />
+      <property name="externalValue" value="optional" />
+    </node>
+    <node role="member" type="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" id="5615815995169717846">
+      <property name="internalValue" value="or" />
+      <property name="externalValue" value="or" />
+    </node>
+    <node role="member" type="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" id="5615815995169717845">
+      <property name="internalValue" value="xor" />
+      <property name="externalValue" value="xor" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5615815995171204968">
+    <property name="package" value="config.structured" />
+    <property name="name" value="FeatureAttribute" />
+    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="5615815995171204969">
+      <link role="intfc" targetNodeId="2v.1169194658468" resolveInfo="INamedConcept" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="5615815995171496256">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="type" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="5615815995171204970" resolveInfo="FeatureAttributeType" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5615815995171204970">
+    <property name="package" value="config.structured" />
+    <property name="name" value="FeatureAttributeType" />
+    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="5615815995171204971">
+      <link role="intfc" targetNodeId="2v.1169194658468" resolveInfo="INamedConcept" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.BooleanConceptProperty" id="5615815995171204973">
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473854053" resolveInfo="abstract" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5615815995171204974">
+    <property name="package" value="config.structured" />
+    <property name="name" value="FATInt" />
+    <link role="extends" targetNodeId="5615815995171204970" resolveInfo="FeatureAttributeType" />
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="5615815995171217173">
+      <property name="value" value="int" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5615815995171217168">
+    <property name="package" value="config.structured" />
+    <property name="name" value="FATString" />
+    <link role="extends" targetNodeId="5615815995171204970" resolveInfo="FeatureAttributeType" />
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="5615815995171217172">
+      <property name="value" value="string" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5615815995171217174">
+    <property name="package" value="config.structured" />
+    <property name="name" value="FATCustom" />
+    <link role="extends" targetNodeId="5615815995171204970" resolveInfo="FeatureAttributeType" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="5615815995171971992">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="root" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="5615815995172293505">
+      <property name="value" value="custom" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5615815995172497415">
+    <property name="package" value="config.structured.demo" />
+    <property name="name" value="RetryScript" />
+    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="5615815995172509645">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="steps" />
+      <property name="sourceCardinality" value="1..n" />
+      <link role="target" targetNodeId="5615815995172497416" resolveInfo="RetryStep" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5615815995172497416">
+    <property name="package" value="config.structured.demo" />
+    <property name="name" value="RetryStep" />
+    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.BooleanConceptProperty" id="5615815995172509626">
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473854053" resolveInfo="abstract" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5615815995172509627">
+    <property name="package" value="config.structured.demo" />
+    <property name="name" value="GiveUp" />
+    <link role="extends" targetNodeId="5615815995172497416" resolveInfo="RetryStep" />
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="5615815995172509628">
+      <property name="value" value="giveup" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5615815995172509632">
+    <property name="package" value="config.structured.demo" />
+    <property name="name" value="TryAgain" />
+    <link role="extends" targetNodeId="5615815995172497416" resolveInfo="RetryStep" />
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="5615815995172509635">
+      <property name="value" value="try" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5615815995172509637">
+    <property name="package" value="config.structured.demo" />
+    <property name="name" value="Wait" />
+    <link role="extends" targetNodeId="5615815995172497416" resolveInfo="RetryStep" />
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="5615815995172509638">
+      <property name="value" value="wait" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="5615815995172509657">
+      <property name="name" value="time" />
+      <link role="dataType" targetNodeId="2v.1082983657062" resolveInfo="integer" />
     </node>
   </node>
 </model>
