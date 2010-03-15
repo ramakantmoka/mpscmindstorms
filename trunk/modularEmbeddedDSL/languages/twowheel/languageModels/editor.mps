@@ -67,11 +67,6 @@
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="6556431234482831769">
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="6556431234482831772">
         <property name="text" value="accelerate" />
-        <node role="styleItem" type="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" id="7400233627843886152">
-          <node role="query" type="jetbrains.mps.lang.editor.structure.QueryFunction_Color" id="7400233627843886471">
-            <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="7400233627843886472" />
-          </node>
-        </node>
       </node>
       <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="6556431234482831771" />
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="6556431234482831774">
@@ -238,7 +233,6 @@
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="8949829907855207228">
         <link role="relationDeclaration" targetNodeId="1.5231257431510415620" />
       </node>
-      <node role="styleItem" type="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" id="7400233627844448904" />
     </node>
   </node>
 </model>

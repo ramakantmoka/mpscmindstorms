@@ -9,8 +9,8 @@
 #include "include/btmain.h"
 
 // used resources
-#include "ecrobot_interface.h"
 #include "include/btAPI.h"
+#include "ecrobot_interface.h"
 
 // custom includes
 #include "kernel.h"
@@ -75,13 +75,14 @@ void btmain_main_bluetoothListener_execute(int event) {
 
 TASK(btmain_main_main){
     //TODO: should be able to put BT_RCV_BUF_SIZE instead of hard-coded constant here
-    uint8_t bt_recieve_buf[32];
+    //MV: where is "here"? Where do you want to put the constant?
+    uint8_t bt_receive_buf[32];
     static uint32_t bt_idle_ticks;
                 
       if ( btmain_main_bluetoothListener_currentstate == STATE_INITIALIZING) {
               bt_idle_ticks = 0;
         for (int8_t i = 0; (i < 32); i = (i + 1)) {
-            bt_recieve_buf[i] = 0;
+            bt_receive_buf[i] = 0;
 }
         TerminateTask();
         return ;
@@ -90,7 +91,10 @@ TASK(btmain_main_main){
 
             
       if ( btmain_main_bluetoothListener_currentstate == STATE_LISTEN) {
-              int read = btAPI_api_BlueToothNXT_read (bt_recieve_buf, 32 );
+              int read = btAPI_api_BlueToothNXT_read (bt_receive_buf, 32 );
+        //MV: I wonder why the following line works. The typesystem seems
+        //to be broken, since the type of "read" should be "int", but the if should
+        //expect a boolean type.
                 
         if ( read) {
                   //actually, successful (non-zero) read will always return BT_RCV_BUF_SIZE
@@ -100,13 +104,13 @@ TASK(btmain_main_main){
           for (int8_t i = 0; (i < 7); i = (i + 1)) {
               //display several first bytes of BT message
               display_goto_xy (0, (i + 1) );
-              display_unsigned (bt_recieve_buf[i], 0 );
+              display_unsigned (bt_receive_buf[i], 0 );
 }
           display_goto_xy (7, 3 );
           display_string ("     " );
           display_update ( );
           for (int8_t i = 0; (i < read); i = (i + 1)) {
-              bt_recieve_buf[i] = 0;
+              bt_receive_buf[i] = 0;
 }
 
                 
@@ -202,13 +206,18 @@ TASK(btmain_main_idle){
 
 }
 
-void ecrobot_device_initialize(){
-    btmain_main_bluetoothListener_execute (EVENT_INITIALIZED );
+void ecrobot_device_terminate(){
+    //MV: you could also make this a normal procedure and then set the
+    //name lock, using the intention "name: toggle lock". This makes
+    //sure the name is not changed when C code is generated.
+    //Or, even better: just as we have a initialize block, we should
+    // add a shutdown block, too. 
+    btAPI_api_BlueToothNXT_terminate ( );
 
 }
 
-void ecrobot_device_terminate(){
-    btAPI_api_BlueToothNXT_terminate ( );
+void ecrobot_device_initialize(){
+    btmain_main_bluetoothListener_execute (EVENT_INITIALIZED );
 
 }
 DeclareCounter(SysTimerCnt); // added by platform.osek:addCounterTrigger

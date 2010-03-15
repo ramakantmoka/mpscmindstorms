@@ -100,8 +100,11 @@
           <node role="statements" type="med.core.structure.OneLineCommetStatement" id="4644402698233737066">
             <property name="comment" value="TODO: should be able to put BT_RCV_BUF_SIZE instead of hard-coded constant here" />
           </node>
+          <node role="statements" type="med.core.structure.OneLineCommetStatement" id="361440579109131617">
+            <property name="comment" value="MV: where is &quot;here&quot;? Where do you want to put the constant?" />
+          </node>
           <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="4621601338807277319">
-            <property name="name" value="bt_recieve_buf" />
+            <property name="name" value="bt_receive_buf" />
             <property name="static" value="true" />
             <node role="type" type="med.core.structure.SizedArrayType" id="4644402698233737055">
               <property name="arraySize" value="32" />
@@ -194,6 +197,15 @@
                       <link role="constant" targetNodeId="4982955159596063529" resolveInfo="BT_RCV_BUF_SIZE" />
                     </node>
                   </node>
+                </node>
+                <node role="statements" type="med.core.structure.OneLineCommetStatement" id="361440579109131619">
+                  <property name="comment" value="MV: I wonder why the following line works. The typesystem seems" />
+                </node>
+                <node role="statements" type="med.core.structure.OneLineCommetStatement" id="361440579109131621">
+                  <property name="comment" value="to be broken, since the type of &quot;read&quot; should be &quot;int&quot;, but the if should" />
+                </node>
+                <node role="statements" type="med.core.structure.OneLineCommetStatement" id="361440579109131623">
+                  <property name="comment" value="expect a boolean type." />
                 </node>
                 <node role="statements" type="med.core.structure.IfStatement" id="4621601338807312798">
                   <node role="thenPart" type="med.core.structure.StatementList" id="4621601338807312799">
@@ -680,17 +692,24 @@
           <property name="priority" value="1" />
         </node>
       </node>
-      <node role="contents" type="med.platform.nxtosek.structure.DeviceInitialization" id="4073188428749553018">
-        <node role="body" type="med.core.structure.StatementList" id="4073188428749553019">
-          <node role="statements" type="med.statemachine.structure.FireEventStatement" id="4982955159596061964">
-            <link role="machine" targetNodeId="4073188428749340632" resolveInfo="bluetoothListener" />
-            <link role="trigger" targetNodeId="4982955159596061953" resolveInfo="initialized" />
-          </node>
-        </node>
-      </node>
       <node role="contents" type="med.core.structure.HeaderAndBody" id="4982955159596061883">
         <property name="header" value="void ecrobot_device_terminate()" />
         <node role="body" type="med.core.structure.StatementList" id="4982955159596061884">
+          <node role="statements" type="med.core.structure.OneLineCommetStatement" id="361440579109131596">
+            <property name="comment" value="MV: you could also make this a normal procedure and then set the" />
+          </node>
+          <node role="statements" type="med.core.structure.OneLineCommetStatement" id="361440579109131609">
+            <property name="comment" value="name lock, using the intention &quot;name: toggle lock&quot;. This makes" />
+          </node>
+          <node role="statements" type="med.core.structure.OneLineCommetStatement" id="361440579109131611">
+            <property name="comment" value="sure the name is not changed when C code is generated." />
+          </node>
+          <node role="statements" type="med.core.structure.OneLineCommetStatement" id="361440579109131613">
+            <property name="comment" value="Or, even better: just as we have a initialize block, we should" />
+          </node>
+          <node role="statements" type="med.core.structure.OneLineCommetStatement" id="361440579109131615">
+            <property name="comment" value=" add a shutdown block, too. " />
+          </node>
           <node role="statements" type="med.core.structure.ExpressionStatement" id="4982955159596061967">
             <node role="expression" type="med.components.structure.PortProcedureCall" id="4982955159596061969">
               <link role="procedure" targetNodeId="4982955159596061971" resolveInfo="terminate" />
@@ -698,6 +717,14 @@
                 <link role="portAdaptor" targetNodeId="4073188428749340637" resolveInfo="bluetooth" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+      <node role="contents" type="med.platform.nxtosek.structure.DeviceInitialization" id="4073188428749553018">
+        <node role="body" type="med.core.structure.StatementList" id="4073188428749553019">
+          <node role="statements" type="med.statemachine.structure.FireEventStatement" id="4982955159596061964">
+            <link role="machine" targetNodeId="4073188428749340632" resolveInfo="bluetoothListener" />
+            <link role="trigger" targetNodeId="4982955159596061953" resolveInfo="initialized" />
           </node>
         </node>
       </node>
@@ -780,7 +807,7 @@
             <property name="name" value="size" />
             <node role="type" type="med.core.structure.GenericIntegerType" id="4073188428749340604" />
           </node>
-          <node role="type" type="med.core.structure.GenericIntegerType" id="4073188428749340605" />
+          <node role="type" type="med.core.structure.Int8" id="361440579109293784" />
         </node>
       </node>
       <node role="contents" type="med.components.structure.Component" id="4073188428749340572">

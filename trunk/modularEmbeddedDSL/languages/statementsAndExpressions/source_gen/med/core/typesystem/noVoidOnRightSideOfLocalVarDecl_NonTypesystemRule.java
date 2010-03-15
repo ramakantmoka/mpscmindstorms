@@ -24,7 +24,7 @@ public class noVoidOnRightSideOfLocalVarDecl_NonTypesystemRule extends AbstractN
         {
           BaseIntentionProvider intentionProvider = null;
           IErrorTarget errorTarget = new NodeErrorTarget();
-          typeCheckingContext.reportTypeError(SLinkOperations.getTarget(lvd, "init", true), "cannot assign void type", "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "5296414764970398725", intentionProvider, errorTarget);
+          typeCheckingContext.reportTypeError(SLinkOperations.getTarget(lvd, "init", true), "cannot assign void type", "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "5296414764970398725", intentionProvider, errorTarget);
         }
       }
     }

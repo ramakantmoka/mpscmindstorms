@@ -492,5 +492,37 @@
       <link role="concept" targetNodeId="1.2739617086186398163" resolveInfo="InterfaceProcedureImplementation" />
     </node>
   </node>
+  <visible index="3" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
+  <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="361440579109131626">
+    <property name="name" value="typeof_InterfaceProcedure" />
+    <property name="package" value="interface" />
+    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="361440579109131627">
+      <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" id="361440579109131633">
+        <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="361440579109131637">
+          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="361440579109131638">
+            <node role="term" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="361440579109131641">
+              <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="361440579109131640">
+                <link role="applicableNode" targetNodeId="361440579109131628" resolveInfo="procedure" />
+              </node>
+              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="361440579109131645">
+                <link role="link" targetNodeId="3v.306587673256793454" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="leftExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="361440579109131636">
+          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="361440579109131630">
+            <node role="term" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="361440579109131632">
+              <link role="applicableNode" targetNodeId="361440579109131628" resolveInfo="procedure" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="361440579109131628">
+      <property name="name" value="procedure" />
+      <link role="concept" targetNodeId="1.2739617086185148564" resolveInfo="InterfaceProcedure" />
+    </node>
+  </node>
 </model>
 

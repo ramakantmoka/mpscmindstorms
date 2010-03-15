@@ -42,22 +42,22 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 
 public class InterfaceProcedureImplementation_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_7312_0(editorContext, node);
+    return this.createCollection_7312_2(editorContext, node);
   }
 
-  private EditorCell createCollection_7312_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_7312_2(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
-    editorCell.setCellId("Collection_7312_0");
+    editorCell.setCellId("Collection_7312_2");
     editorCell.addEditorCell(this.createConstant_7312_5(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_7312_1(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_7312_2(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_7312_3(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_7312_4(editorContext, node));
     editorCell.addEditorCell(this.createConstant_7312_2(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createCollection_7312_1(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_7312_3(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_7312_1");
+    editorCell.setCellId("Collection_7312_3");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
@@ -76,15 +76,15 @@ public class InterfaceProcedureImplementation_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createCollection_7312_2(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_7312_4(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_7312_2");
+    editorCell.setCellId("Collection_7312_4");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
     }
     editorCell.addEditorCell(this.createIndentCell7312_0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_7312_0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_7312_1(editorContext, node));
     return editorCell;
   }
 
@@ -227,7 +227,7 @@ public class InterfaceProcedureImplementation_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNode_7312_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_7312_1(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("body");
     provider.setNoTargetText("<no body>");
@@ -276,17 +276,17 @@ public class InterfaceProcedureImplementation_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createCollection_7312_3(editorContext, node);
+      return this.createCollection_7312_0(editorContext, node);
     }
 
-    private EditorCell createCollection_7312_3(EditorContext editorContext, SNode node) {
+    private EditorCell createCollection_7312_0(EditorContext editorContext, SNode node) {
       EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-      editorCell.setCellId("Collection_7312_3");
-      editorCell.addEditorCell(this.createRefNode_7312_1(editorContext, node));
+      editorCell.setCellId("Collection_7312_0");
+      editorCell.addEditorCell(this.createRefNode_7312_0(editorContext, node));
       return editorCell;
     }
 
-    private EditorCell createRefNode_7312_1(EditorContext editorContext, SNode node) {
+    private EditorCell createRefNode_7312_0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
       provider.setRole("type");
       provider.setNoTargetText("<no type>");
@@ -318,12 +318,12 @@ public class InterfaceProcedureImplementation_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createCollection_7312_4(editorContext, node);
+      return this.createCollection_7312_1(editorContext, node);
     }
 
-    private EditorCell createCollection_7312_4(EditorContext editorContext, SNode node) {
+    private EditorCell createCollection_7312_1(EditorContext editorContext, SNode node) {
       EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-      editorCell.setCellId("Collection_7312_4");
+      editorCell.setCellId("Collection_7312_1");
       editorCell.addEditorCell(this.createRefNodeList_7312_0(editorContext, node));
       return editorCell;
     }

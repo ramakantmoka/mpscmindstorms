@@ -10,6 +10,7 @@
   <nodeInfo nodeId="2739617086198022619" fileName="typeof_PortAdaptor_InferenceRule.java" startLine="20" startPosition="60" endLine="25" endPosition="5" />
   <nodeInfo nodeId="3113923837077903612" fileName="typeof_PortAdaptor_InferenceRule.java" startLine="18" startPosition="93" endLine="19" endPosition="97" />
   <nodeInfo nodeId="3113923837077903620" fileName="typeof_PortAdaptor_InferenceRule.java" startLine="19" startPosition="97" endLine="20" endPosition="60" />
+  <nodeInfo nodeId="361440579109131633" fileName="typeof_InterfaceProcedure_InferenceRule.java" startLine="17" startPosition="95" endLine="22" endPosition="5" />
   <nodeInfo nodeId="7678656588248296309" fileName="typeof_RequiredPort_InferenceRule.java" startLine="20" startPosition="54" endLine="25" endPosition="5" />
   <nodeInfo nodeId="7678656588248296314" fileName="typeof_RequiredPort_InferenceRule.java" startLine="18" startPosition="90" endLine="19" endPosition="98" />
   <nodeInfo nodeId="7678656588248296322" fileName="typeof_RequiredPort_InferenceRule.java" startLine="19" startPosition="98" endLine="20" endPosition="54" />

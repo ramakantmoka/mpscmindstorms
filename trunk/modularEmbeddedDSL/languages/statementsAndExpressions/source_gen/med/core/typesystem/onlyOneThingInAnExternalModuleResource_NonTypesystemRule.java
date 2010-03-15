@@ -25,7 +25,7 @@ public class onlyOneThingInAnExternalModuleResource_NonTypesystemRule extends Ab
           {
             BaseIntentionProvider intentionProvider = null;
             IErrorTarget errorTarget = new NodeErrorTarget();
-            typeCheckingContext.reportTypeError(resource, "if a resource contains an external module, nothing else can be in the resource", "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "7647825645222874135", intentionProvider, errorTarget);
+            typeCheckingContext.reportTypeError(resource, "if a resource contains an external module, nothing else can be in the resource", "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "7647825645222874135", intentionProvider, errorTarget);
           }
         }
       }

@@ -23,5 +23,5 @@ void btAPI_api_BlueToothNXT_terminate(void);
 
 void btAPI_api_BlueToothNXT_send(uint8_t* buff, int size);
 
-int btAPI_api_BlueToothNXT_read(uint8_t* buff, int size);
+int8_t btAPI_api_BlueToothNXT_read(uint8_t* buff, int size);
 #endif
