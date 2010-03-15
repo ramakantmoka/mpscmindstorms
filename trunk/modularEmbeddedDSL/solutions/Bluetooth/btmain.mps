@@ -202,13 +202,26 @@
                   <property name="comment" value="MV: I wonder why the following line works. The typesystem seems" />
                 </node>
                 <node role="statements" type="med.core.structure.OneLineCommetStatement" id="361440579109131621">
-                  <property name="comment" value="to be broken, since the type of &quot;read&quot; should be &quot;int&quot;, but the if should" />
+                  <property name="comment" value="to be broken, since the type of &quot;read&quot; should be &quot;int&quot;, but the &quot;if&quot; should" />
                 </node>
                 <node role="statements" type="med.core.structure.OneLineCommetStatement" id="361440579109131623">
                   <property name="comment" value="expect a boolean type." />
                 </node>
+                <node role="statements" type="med.core.structure.OneLineCommetStatement" id="3435053855578703138">
+                  <property name="comment" value="actually, it seems the complete typesystem is broken since I don't get any" />
+                </node>
+                <node role="statements" type="med.core.structure.OneLineCommetStatement" id="3435053855578703140">
+                  <property name="comment" value="type on the int8 z = 0 in the next line" />
+                </node>
                 <node role="statements" type="med.core.structure.IfStatement" id="4621601338807312798">
                   <node role="thenPart" type="med.core.structure.StatementList" id="4621601338807312799">
+                    <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="3435053855578703142">
+                      <property name="name" value="z" />
+                      <node role="type" type="med.core.structure.Int8" id="3435053855578703143" />
+                      <node role="init" type="med.core.structure.IntConstantExpression" id="3435053855578703145">
+                        <property name="value" value="0" />
+                      </node>
+                    </node>
                     <node role="statements" type="med.core.structure.OneLineCommetStatement" id="4644402698233737050">
                       <property name="comment" value="actually, successful (non-zero) read will always return BT_RCV_BUF_SIZE" />
                     </node>
