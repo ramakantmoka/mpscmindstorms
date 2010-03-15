@@ -18,13 +18,13 @@ public class typeof_LocalVariableDeclaration_InferenceRule extends AbstractInfer
     {
       SNode _nodeToCheck_1029348928467 = lvd;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "1881584577101954942", true), (SNode)typeCheckingContext.typeOf(SLinkOperations.getTarget(lvd, "type", true), "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "1881584577102046952", true), _nodeToCheck_1029348928467, null, "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "1881584577102046947", intentionProvider);
+      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "1881584577101954942", true), (SNode)typeCheckingContext.typeOf(SLinkOperations.getTarget(lvd, "type", true), "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "1881584577102046952", true), _nodeToCheck_1029348928467, null, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "1881584577102046947", intentionProvider);
     }
     if (SLinkOperations.getTarget(lvd, "init", true) != null) {
       {
         SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(lvd, "init", true);
         BaseIntentionProvider intentionProvider = null;
-        typeCheckingContext.createComparableEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "9024796767936756446", true), (SNode)typeCheckingContext.typeOf(SLinkOperations.getTarget(lvd, "type", true), "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "9024796767936756451", true), _nodeToCheck_1029348928467, null, "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "9024796767936756444", intentionProvider);
+        typeCheckingContext.createComparableEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "9024796767936756446", true), (SNode)typeCheckingContext.typeOf(SLinkOperations.getTarget(lvd, "type", true), "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "9024796767936756451", true), _nodeToCheck_1029348928467, null, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "9024796767936756444", intentionProvider);
       }
     }
   }

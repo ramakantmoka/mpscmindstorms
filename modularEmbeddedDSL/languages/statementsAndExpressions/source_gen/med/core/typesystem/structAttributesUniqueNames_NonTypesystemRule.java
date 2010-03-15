@@ -29,7 +29,7 @@ public class structAttributesUniqueNames_NonTypesystemRule extends AbstractNonTy
         {
           BaseIntentionProvider intentionProvider = null;
           IErrorTarget errorTarget = new NodeErrorTarget();
-          typeCheckingContext.reportTypeError(attr, "duplicate name", "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "5136468150843055520", intentionProvider, errorTarget);
+          typeCheckingContext.reportTypeError(attr, "duplicate name", "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "5136468150843055520", intentionProvider, errorTarget);
         }
       }
     }

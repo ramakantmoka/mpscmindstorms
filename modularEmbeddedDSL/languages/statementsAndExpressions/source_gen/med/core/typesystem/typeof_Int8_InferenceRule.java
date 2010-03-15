@@ -18,7 +18,7 @@ public class typeof_Int8_InferenceRule extends AbstractInferenceRule_Runtime imp
     {
       SNode _nodeToCheck_1029348928467 = int8;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "3454436015652882789", true), (SNode)SNodeOperations.copyNode(int8), _nodeToCheck_1029348928467, null, "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "3454436015652882792", intentionProvider);
+      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "3454436015652882789", true), (SNode)SNodeOperations.copyNode(int8), _nodeToCheck_1029348928467, null, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "3454436015652882792", intentionProvider);
     }
   }
 

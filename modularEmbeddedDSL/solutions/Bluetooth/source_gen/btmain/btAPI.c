@@ -42,7 +42,7 @@ void btAPI_api_BlueToothNXT_send(uint8_t* buff, int size) {
     ecrobot_send_bt_packet (buff, size );
 }
 
-int btAPI_api_BlueToothNXT_read(uint8_t* buff, int size) {
+int8_t btAPI_api_BlueToothNXT_read(uint8_t* buff, int size) {
     return ecrobot_read_bt_packet (buff, size );
 }
 

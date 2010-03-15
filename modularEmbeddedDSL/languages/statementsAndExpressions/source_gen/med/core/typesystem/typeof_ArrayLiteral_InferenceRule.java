@@ -24,7 +24,7 @@ public class typeof_ArrayLiteral_InferenceRule extends AbstractInferenceRule_Run
       {
         SNode _nodeToCheck_1029348928467 = item;
         BaseIntentionProvider intentionProvider = null;
-        typeCheckingContext.createGreaterThanInequation((SNode)typeCheckingContext.getEquationManager().getRepresentator(elementType_typevar_3454436015654591125), (SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "3454436015654591137", true), _nodeToCheck_1029348928467, null, "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "3454436015654591133", false, 0, intentionProvider);
+        typeCheckingContext.createGreaterThanInequation((SNode)typeCheckingContext.getEquationManager().getRepresentator(elementType_typevar_3454436015654591125), (SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "3454436015654591137", true), _nodeToCheck_1029348928467, null, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "3454436015654591133", false, 0, intentionProvider);
       }
     }
     SNode t = SConceptOperations.createNewNode("med.core.structure.SizedArrayType", null);
@@ -33,7 +33,7 @@ public class typeof_ArrayLiteral_InferenceRule extends AbstractInferenceRule_Run
     {
       SNode _nodeToCheck_1029348928467 = literal;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "3454436015654717096", true), (SNode)t, _nodeToCheck_1029348928467, null, "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "3454436015654728667", intentionProvider);
+      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "3454436015654717096", true), (SNode)t, _nodeToCheck_1029348928467, null, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "3454436015654728667", intentionProvider);
     }
   }
 

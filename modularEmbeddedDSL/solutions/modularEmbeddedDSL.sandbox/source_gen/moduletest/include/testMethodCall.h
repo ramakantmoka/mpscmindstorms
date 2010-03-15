@@ -9,7 +9,6 @@
 
 // custom includes for header
 #include "stdint.h"
-#include "stdint.h"
 
 struct testMethodCall_test_intHolder{
   int32_t a;

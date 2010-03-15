@@ -23,7 +23,7 @@ public class noDotHForExternalHeaderFile_NonTypesystemRule extends AbstractNonTy
         {
           BaseIntentionProvider intentionProvider = null;
           IErrorTarget errorTarget = new NodeErrorTarget();
-          typeCheckingContext.reportTypeError(externalModule, "filename should not contain extension.", "r:5ff05cc3-3b55-438a-b8ba-562b16669977(med.core.typesystem@9_0)", "7647825645224091666", intentionProvider, errorTarget);
+          typeCheckingContext.reportTypeError(externalModule, "filename should not contain extension.", "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "7647825645224091666", intentionProvider, errorTarget);
         }
       }
 
