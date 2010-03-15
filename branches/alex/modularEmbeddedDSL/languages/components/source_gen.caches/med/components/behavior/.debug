@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <nodeInfo nodeId="2739617086185276730" fileName="Interface_Behavior.java" startLine="9" startPosition="43" endLine="10" endPosition="59" />
+  <nodeInfo nodeId="2739617086185276744" fileName="InterfaceProcedure_Behavior.java" startLine="9" startPosition="43" endLine="10" endPosition="81" />
+  <nodeInfo nodeId="2739617086186422658" fileName="Component_Behavior.java" startLine="17" startPosition="84" endLine="18" endPosition="45" />
+  <nodeInfo nodeId="2739617086186422667" fileName="Component_Behavior.java" startLine="25" startPosition="5" endLine="26" endPosition="15" />
+  <nodeInfo nodeId="2739617086186422670" fileName="Component_Behavior.java" startLine="18" startPosition="45" endLine="25" endPosition="5" />
+  <nodeInfo nodeId="2739617086186498037" fileName="Component_Behavior.java" startLine="23" startPosition="9" endLine="24" endPosition="166" />
+  <nodeInfo nodeId="2739617086187249568" fileName="ComponentImplementation_Behavior.java" startLine="15" startPosition="97" endLine="26" endPosition="5" />
+  <nodeInfo nodeId="2739617086187249602" fileName="ComponentImplementation_Behavior.java" startLine="16" startPosition="120" endLine="25" endPosition="7" />
+  <nodeInfo nodeId="2739617086187249725" fileName="ComponentImplementation_Behavior.java" startLine="21" startPosition="21" endLine="22" endPosition="121" />
+  <nodeInfo nodeId="2739617086187249731" fileName="ComponentImplementation_Behavior.java" startLine="22" startPosition="121" endLine="23" endPosition="64" />
+  <nodeInfo nodeId="2739617086187249737" fileName="ComponentImplementation_Behavior.java" startLine="23" startPosition="64" endLine="24" endPosition="67" />
+  <nodeInfo nodeId="2739617086189061058" fileName="InterfaceProcParameterReference_Behavior.java" startLine="12" startPosition="86" endLine="13" endPosition="63" />
+  <nodeInfo nodeId="2739617086196425905" fileName="Component_Behavior.java" startLine="29" startPosition="99" endLine="38" endPosition="57" />
+  <nodeInfo nodeId="7678656588250671836" fileName="InterfaceMapping_Behavior.java" startLine="9" startPosition="43" endLine="10" endPosition="97" />
+  <nodeInfo nodeId="8017499479427462449" fileName="PortAdaptor_Behavior.java" startLine="9" startPosition="43" endLine="10" endPosition="104" />
+</debugInfo>
+
