@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dependenciesRoot>
-  <dependency className="twmain.TwoWheel" />
-  <dependency className="twmain.include/twmain" />
-  <dependency className="twmain.makefile" />
-  <dependency className="twmain.twmain" />
-</dependenciesRoot>
-

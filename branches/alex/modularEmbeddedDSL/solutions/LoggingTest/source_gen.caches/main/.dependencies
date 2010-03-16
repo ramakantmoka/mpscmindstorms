@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dependenciesRoot>
-  <dependency className="main.LoggingTest" />
-  <dependency className="main.bttest" />
-  <dependency className="main.include/bttest" />
-  <dependency className="main.makefile" />
-</dependenciesRoot>
-

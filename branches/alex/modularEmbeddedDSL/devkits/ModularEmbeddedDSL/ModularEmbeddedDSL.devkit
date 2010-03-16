@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dev-kit name="ModularEmbeddedDSL" uuid="a891e14a-a3d6-466e-8364-4e1b14cbaa06">
-  <exported-language name="3a8b8671-1532-4e8f-b780-594a27fa10c8(med.core)" />
-  <exported-language name="d1a10200-64d4-45ca-afd0-41b350f63b0d(med.logging)" />
-  <exported-language name="690fcffe-d4e9-47ba-96cd-723f8e365186(med.tasks)" />
-  <classPath />
-</dev-kit>
-
