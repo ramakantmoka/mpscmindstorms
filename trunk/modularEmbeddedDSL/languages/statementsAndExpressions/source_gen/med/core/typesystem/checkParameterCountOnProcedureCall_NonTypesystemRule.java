@@ -22,7 +22,7 @@ public class checkParameterCountOnProcedureCall_NonTypesystemRule extends Abstra
       {
         BaseIntentionProvider intentionProvider = null;
         IErrorTarget errorTarget = new NodeErrorTarget();
-        typeCheckingContext.reportTypeError(procedureCall, "wrong number of arguments", "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "2005811434196936587", intentionProvider, errorTarget);
+        typeCheckingContext.reportTypeError(procedureCall, "wrong number of arguments", "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "2005811434196936587", intentionProvider, errorTarget);
       }
     }
   }

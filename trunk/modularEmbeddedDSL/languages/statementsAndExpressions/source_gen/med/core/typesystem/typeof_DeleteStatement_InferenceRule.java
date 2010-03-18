@@ -19,7 +19,7 @@ public class typeof_DeleteStatement_InferenceRule extends AbstractInferenceRule_
     {
       SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(statement, "expr", true);
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createLessThanInequationStrong((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "4946775246121800854", true), (SNode)SConceptOperations.createNewNode("med.core.structure.GenericPointerType", null), _nodeToCheck_1029348928467, null, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "4946775246121535019", false, 0, intentionProvider);
+      typeCheckingContext.createLessThanInequationStrong((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "4946775246121800854", true), (SNode)SConceptOperations.createNewNode("med.core.structure.GenericPointerType", null), _nodeToCheck_1029348928467, null, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "4946775246121535019", false, 0, intentionProvider);
     }
   }
 

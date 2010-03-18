@@ -3543,5 +3543,113 @@
       <link role="concept" targetNodeId="1.4621601338807035358" resolveInfo="NotExpression" />
     </node>
   </node>
+  <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="2420527669696023978">
+    <property name="package" value="types.numeric" />
+    <property name="name" value="typeof_UInt8" />
+    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="2420527669696023979">
+      <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" id="2420527669696023986">
+        <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="2420527669696023990">
+          <node role="normalType" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="2420527669696023992">
+            <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="2420527669696023991">
+              <link role="applicableNode" targetNodeId="2420527669696023981" resolveInfo="uInt8" />
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" id="2420527669696023996" />
+          </node>
+        </node>
+        <node role="leftExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="2420527669696023989">
+          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="2420527669696023983">
+            <node role="term" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="2420527669696023985">
+              <link role="applicableNode" targetNodeId="2420527669696023981" resolveInfo="uInt8" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="2420527669696023981">
+      <property name="name" value="uInt8" />
+      <link role="concept" targetNodeId="1.3454436015652858820" resolveInfo="UInt8" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="2420527669696023998">
+    <property name="package" value="types.numeric" />
+    <property name="name" value="typeof_UInt16" />
+    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="2420527669696023999">
+      <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" id="2420527669696024006">
+        <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="2420527669696024010">
+          <node role="normalType" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="2420527669696024012">
+            <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="2420527669696024011">
+              <link role="applicableNode" targetNodeId="2420527669696024001" resolveInfo="uInt16" />
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" id="2420527669696024016" />
+          </node>
+        </node>
+        <node role="leftExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="2420527669696024009">
+          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="2420527669696024003">
+            <node role="term" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="2420527669696024005">
+              <link role="applicableNode" targetNodeId="2420527669696024001" resolveInfo="uInt16" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="2420527669696024001">
+      <property name="name" value="uInt16" />
+      <link role="concept" targetNodeId="1.3454436015652858819" resolveInfo="UInt16" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="2420527669696024018">
+    <property name="package" value="types.numeric" />
+    <property name="name" value="typeof_UInt32" />
+    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="2420527669696024019">
+      <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" id="2420527669696024026">
+        <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="2420527669696024030">
+          <node role="normalType" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="2420527669696024032">
+            <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="2420527669696024031">
+              <link role="applicableNode" targetNodeId="2420527669696024021" resolveInfo="uInt32" />
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" id="2420527669696024036" />
+          </node>
+        </node>
+        <node role="leftExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="2420527669696024029">
+          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="2420527669696024023">
+            <node role="term" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="2420527669696024025">
+              <link role="applicableNode" targetNodeId="2420527669696024021" resolveInfo="uInt32" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="2420527669696024021">
+      <property name="name" value="uInt32" />
+      <link role="concept" targetNodeId="1.3454436015652858818" resolveInfo="UInt32" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="2420527669696024038">
+    <property name="package" value="types.numeric" />
+    <property name="name" value="typeof_UInt64" />
+    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="2420527669696024039">
+      <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateEquationStatement" id="2420527669696024046">
+        <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="2420527669696024050">
+          <node role="normalType" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="2420527669696024052">
+            <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="2420527669696024051">
+              <link role="applicableNode" targetNodeId="2420527669696024041" resolveInfo="uInt64" />
+            </node>
+            <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" id="2420527669696024056" />
+          </node>
+        </node>
+        <node role="leftExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="2420527669696024049">
+          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="2420527669696024043">
+            <node role="term" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="2420527669696024045">
+              <link role="applicableNode" targetNodeId="2420527669696024041" resolveInfo="uInt64" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="2420527669696024041">
+      <property name="name" value="uInt64" />
+      <link role="concept" targetNodeId="1.3454436015652858814" resolveInfo="UInt64" />
+    </node>
+  </node>
 </model>
 

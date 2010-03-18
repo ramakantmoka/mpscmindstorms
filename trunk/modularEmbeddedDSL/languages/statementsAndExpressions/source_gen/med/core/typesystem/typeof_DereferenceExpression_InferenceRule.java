@@ -21,13 +21,13 @@ public class typeof_DereferenceExpression_InferenceRule extends AbstractInferenc
       {
         SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(deref, "expression", true);
         BaseIntentionProvider intentionProvider = null;
-        typeCheckingContext.createLessThanInequationStrong((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "8937796720371741193", true), (SNode)SConceptOperations.createNewNode("med.core.structure.GenericPointerType", null), _nodeToCheck_1029348928467, null, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "8937796720371741187", false, 0, intentionProvider);
+        typeCheckingContext.createLessThanInequationStrong((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "8937796720371741193", true), (SNode)SConceptOperations.createNewNode("med.core.structure.GenericPointerType", null), _nodeToCheck_1029348928467, null, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "8937796720371741187", false, 0, intentionProvider);
       }
-      if (SNodeOperations.isInstanceOf(typeCheckingContext.typeOf(SLinkOperations.getTarget(deref, "expression", true), "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "8937796720371741202", true), "med.core.structure.PointerType")) {
+      if (SNodeOperations.isInstanceOf(typeCheckingContext.typeOf(SLinkOperations.getTarget(deref, "expression", true), "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "8937796720371741202", true), "med.core.structure.PointerType")) {
         {
           SNode _nodeToCheck_1029348928467 = deref;
           BaseIntentionProvider intentionProvider = null;
-          typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "8937796720371363272", true), (SNode)SNodeOperations.copyNode(SLinkOperations.getTarget((SNodeOperations.cast(typeCheckingContext.typeOf(SLinkOperations.getTarget(deref, "expression", true), "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "8937796720371363292", true), "med.core.structure.PointerType")), "baseType", true)), _nodeToCheck_1029348928467, null, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "8937796720371363275", intentionProvider);
+          typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "8937796720371363272", true), (SNode)SNodeOperations.copyNode(SLinkOperations.getTarget((SNodeOperations.cast(typeCheckingContext.typeOf(SLinkOperations.getTarget(deref, "expression", true), "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "8937796720371363292", true), "med.core.structure.PointerType")), "baseType", true)), _nodeToCheck_1029348928467, null, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "8937796720371363275", intentionProvider);
         }
       }
     }

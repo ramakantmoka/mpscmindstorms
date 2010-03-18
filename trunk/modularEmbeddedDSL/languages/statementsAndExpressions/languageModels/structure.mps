@@ -1100,7 +1100,7 @@
     <property name="name" value="Resource" />
     <property name="rootable" value="true" />
     <property name="package" value="modules" />
-    <property name="iconPath" value="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/resource.gif" />
+    <property name="iconPath" value="L:/mpsWorkspace-1.1/med-trunk/languages/resource.gif" />
     <link role="extends" targetNodeId="3577454086729990666" resolveInfo="MedBase" />
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="306587673256795717">
       <property name="metaClass" value="aggregation" />
@@ -1240,7 +1240,7 @@
     <property name="name" value="System" />
     <property name="package" value="system" />
     <property name="rootable" value="true" />
-    <property name="iconPath" value="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/system.gif" />
+    <property name="iconPath" value="L:/mpsWorkspace-1.1/med-trunk/languages/system.gif" />
     <link role="extends" targetNodeId="3577454086729990666" resolveInfo="MedBase" />
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="3553474829273041290">
       <link role="intfc" targetNodeId="343373828472902636" resolveInfo="IHasIdentifierName" />

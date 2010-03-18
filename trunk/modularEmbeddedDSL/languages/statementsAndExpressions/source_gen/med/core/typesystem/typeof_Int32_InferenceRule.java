@@ -18,7 +18,7 @@ public class typeof_Int32_InferenceRule extends AbstractInferenceRule_Runtime im
     {
       SNode _nodeToCheck_1029348928467 = int32;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "3454436015652882751", true), (SNode)SNodeOperations.copyNode(int32), _nodeToCheck_1029348928467, null, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "3454436015652882754", intentionProvider);
+      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "3454436015652882751", true), (SNode)SNodeOperations.copyNode(int32), _nodeToCheck_1029348928467, null, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "3454436015652882754", intentionProvider);
     }
   }
 

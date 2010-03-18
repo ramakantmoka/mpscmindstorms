@@ -19,12 +19,12 @@ public class typeof_ArrayAccessExpression_InferenceRule extends AbstractInferenc
     {
       SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(expression, "array", true);
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createLessThanInequationStrong((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "1532320234891416983", true), (SNode)SConceptOperations.createNewNode("med.core.structure.GenericArrayType", null), _nodeToCheck_1029348928467, null, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "1532320234891416981", false, 0, intentionProvider);
+      typeCheckingContext.createLessThanInequationStrong((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "1532320234891416983", true), (SNode)SConceptOperations.createNewNode("med.core.structure.GenericArrayType", null), _nodeToCheck_1029348928467, null, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "1532320234891416981", false, 0, intentionProvider);
     }
     {
       SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(expression, "index", true);
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createLessThanInequationStrong((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "1532320234891416997", true), (SNode)SConceptOperations.createNewNode("med.core.structure.GenericIntegerType", null), _nodeToCheck_1029348928467, null, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "1532320234891417005", false, 0, intentionProvider);
+      typeCheckingContext.createLessThanInequationStrong((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "1532320234891416997", true), (SNode)SConceptOperations.createNewNode("med.core.structure.GenericIntegerType", null), _nodeToCheck_1029348928467, null, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "1532320234891417005", false, 0, intentionProvider);
     }
   }
 
