@@ -179,7 +179,7 @@
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="8261019787196537346">
     <property name="name" value="FeatureDependencyConfiguration" />
     <property name="rootable" value="true" />
-    <property name="iconPath" value="L:/mpsWorkspace-1.1/modularEmbeddedDSL/languages/feature.gif" />
+    <property name="iconPath" value="L:/mpsWorkspace-1.1/med-trunk/languages/feature.gif" />
     <property name="package" value="config" />
     <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="7715189151798803995">

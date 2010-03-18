@@ -18,6 +18,8 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.lang.core.constraints)" version="2" />
   <languageAspect modelUID="r:c8eeaafc-b8ed-41eb-96aa-711dbd66c11c(med.quantities.structure)" version="0" />
   <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="4" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959028c(jetbrains.mps.lang.structure.constraints)" version="11" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" />
   <language-engaged-on-generation namespace="150e33c6-372a-4396-b4cc-1c334fb3f438(med.platform.nxtosek)" />
   <devkit namespace="a891e14a-a3d6-466e-8364-4e1b14cbaa06(ModularEmbeddedDSL)" />
   <maxImportIndex value="0" />
@@ -978,14 +980,14 @@
       <property name="selected" value="false" />
     </node>
     <node role="moduleDependencyAnnotation$attribute" type="med.core.structure.ModuleDependency" id="7400233627844407295" />
-    <node role="mode" type="med.features.structure.VariantDisplayMode" id="1870087877644207723">
-      <property name="removeNonSelectedStuffInEditor" value="true" />
-      <property name="showFeatureClause" value="true" />
-    </node>
-    <node role="backup" type="med.features.structure.ShowClauseDisplayMode" id="1870087877644207724">
+    <node role="mode" type="med.features.structure.ShowClauseDisplayMode" id="2420527669696042818">
       <property name="showFeatureClause" value="false" />
       <property name="highlightFeatureDependentNodes" value="true" />
       <property name="removeNonSelectedStuffInEditor" value="false" />
+    </node>
+    <node role="backup" type="med.features.structure.VariantDisplayMode" id="2420527669696042819">
+      <property name="removeNonSelectedStuffInEditor" value="true" />
+      <property name="showFeatureClause" value="true" />
     </node>
   </node>
   <node type="med.core.structure.System" id="8437501635617536080">

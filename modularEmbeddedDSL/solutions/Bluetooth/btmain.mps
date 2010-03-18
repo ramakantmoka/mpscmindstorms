@@ -184,7 +184,7 @@
               <node role="body" type="med.core.structure.StatementList" id="4982955159596063525">
                 <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="4621601338807302278">
                   <property name="name" value="read" />
-                  <node role="type" type="med.core.structure.GenericIntegerType" id="4621601338807302279" />
+                  <node role="type" type="med.core.structure.Int8" id="2420527669696042812" />
                   <node role="init" type="med.components.structure.PortProcedureCall" id="4621601338807302281">
                     <link role="procedure" targetNodeId="4073188428749340599" resolveInfo="read" />
                     <node role="portExpression" type="med.components.structure.PortAdapterExpression" id="4621601338807302282">
@@ -392,8 +392,13 @@
                       </node>
                     </node>
                   </node>
-                  <node role="condition" type="med.core.structure.LocalVariableReference" id="4621601338807312805">
-                    <link role="variable" targetNodeId="4621601338807302278" resolveInfo="read" />
+                  <node role="condition" type="med.core.structure.NotEqualsExpression" id="2420527669696042813">
+                    <node role="left" type="med.core.structure.LocalVariableReference" id="4621601338807312805">
+                      <link role="variable" targetNodeId="4621601338807302278" resolveInfo="read" />
+                    </node>
+                    <node role="right" type="med.core.structure.IntConstantExpression" id="2420527669696042817">
+                      <property name="value" value="0" />
+                    </node>
                   </node>
                   <node role="elsePart" type="med.core.structure.StatementList" id="4621601338807337026">
                     <node role="statements" type="med.core.structure.AssignmentStatement" id="4621601338807345208">
@@ -550,9 +555,6 @@
                   <node role="statements" type="med.core.structure.ExpressionStatement" id="4621601338807270884">
                     <node role="expression" type="med.core.structure.ProcedureCall" id="4621601338807270885">
                       <link role="procedure" targetNodeId="2v.4621601338807270879" resolveInfo="display_clear" />
-                      <node role="actuals" type="med.core.structure.IntConstantExpression" id="4621601338807270887">
-                        <property name="value" value="0" />
-                      </node>
                     </node>
                   </node>
                   <node role="statements" type="med.core.structure.ExpressionStatement" id="4621601338807317591">

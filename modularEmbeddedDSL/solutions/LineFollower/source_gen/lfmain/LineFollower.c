@@ -9,9 +9,9 @@
 #include "include/LineFollower.h"
 
 // used resources
+#include "ecrobot_interface.h"
 #include "bitdata.h"
 #include "kernel.h"
-#include "ecrobot_interface.h"
 
 // custom includes
 #include "kernel.h"

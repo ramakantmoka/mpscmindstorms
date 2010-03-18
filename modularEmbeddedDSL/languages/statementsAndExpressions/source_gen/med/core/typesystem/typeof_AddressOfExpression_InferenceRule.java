@@ -18,11 +18,11 @@ public class typeof_AddressOfExpression_InferenceRule extends AbstractInferenceR
 
   public void applyRule(final SNode exrepssion, final TypeCheckingContext typeCheckingContext) {
     SNode pointertype = SConceptOperations.createNewNode("med.core.structure.PointerType", null);
-    SLinkOperations.setTarget(pointertype, "baseType", SNodeOperations.copyNode(typeCheckingContext.typeOf(SLinkOperations.getTarget(exrepssion, "expression", true), "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "8470053389337703923", true)), true);
+    SLinkOperations.setTarget(pointertype, "baseType", SNodeOperations.copyNode(typeCheckingContext.typeOf(SLinkOperations.getTarget(exrepssion, "expression", true), "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "8470053389337703923", true)), true);
     {
       SNode _nodeToCheck_1029348928467 = exrepssion;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "8470053389337848335", true), (SNode)pointertype, _nodeToCheck_1029348928467, null, "r:3d70d4be-a562-4b30-9af0-117d21b87b6e(med.core.typesystem@12_0)", "8470053389337848338", intentionProvider);
+      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "8470053389337848335", true), (SNode)pointertype, _nodeToCheck_1029348928467, null, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "8470053389337848338", intentionProvider);
     }
   }
 

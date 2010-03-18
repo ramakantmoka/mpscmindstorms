@@ -108,10 +108,6 @@
         <property name="name" value="display_update" />
         <property name="export" value="true" />
         <node role="type" type="med.core.structure.VoidType" id="5196379128662886857" />
-        <node role="parameters" type="med.core.structure.ProcedureParameter" id="4621601338807270882">
-          <property name="name" value="update_too" />
-          <node role="type" type="med.core.structure.GenericIntegerType" id="4621601338807270883" />
-        </node>
       </node>
       <node role="procedures" type="med.core.structure.ExternalProcedure" id="4621601338807270879">
         <property name="name" value="display_clear" />
