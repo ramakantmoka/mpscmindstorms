@@ -42,9 +42,10 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959034b(jetbrains.mps.lang.quotation.structure)" version="0" />
   <languageAspect modelUID="r:8234fb67-1049-46f0-bf39-a9058c4964f6(med.external.structure)" version="1" />
   <languageAspect modelUID="r:202795d3-bacc-48e0-8afc-c254098b7868(med.external.typesystem)" version="0" />
+  <languageAspect modelUID="r:5e9df045-8930-4ba7-8720-4642d630b9ff(med.platform.nxtosek.structure)" version="0" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="6" />
-  <import index="1" modelUID="r:5e9df045-8930-4ba7-8720-4642d630b9ff(med.platform.nxtosek.structure)" version="-1" />
+  <import index="1" modelUID="r:5e9df045-8930-4ba7-8720-4642d630b9ff(med.platform.nxtosek.structure)" version="0" />
   <import index="3" modelUID="r:b02d8e6e-6ce1-44d6-8357-4812e6e9817d(med.platform.nxtosek.rt)" version="-1" />
   <import index="4" modelUID="r:14a060e8-2002-4063-9ac2-3317a0d2c940(med.core.behavior)" version="-1" />
   <import index="5" modelUID="f:java_stub#java.lang(java.lang@java_stub)" version="-1" />
@@ -714,6 +715,12 @@
       <link role="applicableConcept" targetNodeId="1.6821937377367711812" resolveInfo="DeviceInitialization" />
       <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" id="6821937377367729497">
         <link role="template" targetNodeId="6821937377367729495" resolveInfo="reduce_DeviceInitialization" />
+      </node>
+    </node>
+    <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="1265321504638464015">
+      <link role="applicableConcept" targetNodeId="1.1265321504638342960" resolveInfo="DeviceDeInitialization" />
+      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" id="1265321504638466212">
+        <link role="template" targetNodeId="1265321504638466210" resolveInfo="reduce_DeviceDeInitialization" />
       </node>
     </node>
     <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="3454436015655954073">
@@ -1791,6 +1798,30 @@
         </node>
       </node>
       <node role="templateFragment$attribute" type="jetbrains.mps.lang.generator.structure.TemplateFragment" id="6821937377367729500" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.generator.structure.TemplateDeclaration" id="1265321504638466210">
+    <property name="name" value="reduce_DeviceTermination" />
+    <link role="applicableConcept" targetNodeId="1.1265321504638342960" resolveInfo="DeviceDeInitialization" />
+    <node role="contentNode" type="med.core.structure.HeaderAndBody" id="1265321504638466213">
+      <property name="header" value="void ecrobot_device_terminate()" />
+      <node role="body" type="med.core.structure.StatementList" id="1265321504638466214">
+        <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" id="1265321504638466215">
+          <node role="sourceNodeQuery" type="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" id="1265321504638466216">
+            <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1265321504638466217">
+              <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1265321504638466218">
+                <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1265321504638466219">
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="1265321504638466223">
+                    <link role="link" targetNodeId="1.1265321504638342962" />
+                  </node>
+                  <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="1265321504638466221" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="templateFragment$attribute" type="jetbrains.mps.lang.generator.structure.TemplateFragment" id="1265321504638466222" />
     </node>
   </node>
 </model>

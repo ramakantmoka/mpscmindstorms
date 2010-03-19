@@ -91,13 +91,11 @@ TASK(btmain_main_main){
 
             
       if ( btmain_main_bluetoothListener_currentstate == STATE_LISTEN) {
-              int read = btAPI_api_BlueToothNXT_read (bt_receive_buf, 32 );
-        //MV: I wonder why the following line works. The typesystem seems
-        //to be broken, since the type of "read" should be "int", but the if should
-        //expect a boolean type.
+              int8_t read = btAPI_api_BlueToothNXT_read (bt_receive_buf, 32 );
                 
-        if ( read) {
-                  //actually, successful (non-zero) read will always return BT_RCV_BUF_SIZE
+        if ( read != 0) {
+                  int8_t z = 0;
+          //actually, successful (non-zero) read will always return BT_RCV_BUF_SIZE
           bt_idle_ticks = 0;
           display_goto_xy (0, 0 );
           display_int (read, 0 );
@@ -165,7 +163,7 @@ TASK(btmain_main_idle){
                 
         if ( current_status != bt_status) {
                   //update bluetooth status display on change
-          display_clear (0 );
+          display_clear ( );
           display_goto_xy (7, 0 );
           display_unsigned (current_status, 0 );
           display_goto_xy (7, 1 );
@@ -207,11 +205,6 @@ TASK(btmain_main_idle){
 }
 
 void ecrobot_device_terminate(){
-    //MV: you could also make this a normal procedure and then set the
-    //name lock, using the intention "name: toggle lock". This makes
-    //sure the name is not changed when C code is generated.
-    //Or, even better: just as we have a initialize block, we should
-    // add a shutdown block, too. 
     btAPI_api_BlueToothNXT_terminate ( );
 
 }

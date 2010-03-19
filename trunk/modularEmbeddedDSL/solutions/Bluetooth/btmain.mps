@@ -25,6 +25,7 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902d5(jetbrains.mps.baseLanguage.unitTest.plugin)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959028c(jetbrains.mps.lang.structure.constraints)" version="11" />
+  <languageAspect modelUID="r:5e9df045-8930-4ba7-8720-4642d630b9ff(med.platform.nxtosek.structure)" version="0" />
   <maxImportIndex value="0" />
   <visible index="2" modelUID="r:b02d8e6e-6ce1-44d6-8357-4812e6e9817d(med.platform.nxtosek.rt)" />
   <node type="med.core.structure.Resource" id="4073188428749340281">
@@ -197,21 +198,6 @@
                       <link role="constant" targetNodeId="4982955159596063529" resolveInfo="BT_RCV_BUF_SIZE" />
                     </node>
                   </node>
-                </node>
-                <node role="statements" type="med.core.structure.OneLineCommetStatement" id="361440579109131619">
-                  <property name="comment" value="MV: I wonder why the following line works. The typesystem seems" />
-                </node>
-                <node role="statements" type="med.core.structure.OneLineCommetStatement" id="361440579109131621">
-                  <property name="comment" value="to be broken, since the type of &quot;read&quot; should be &quot;int&quot;, but the &quot;if&quot; should" />
-                </node>
-                <node role="statements" type="med.core.structure.OneLineCommetStatement" id="361440579109131623">
-                  <property name="comment" value="expect a boolean type." />
-                </node>
-                <node role="statements" type="med.core.structure.OneLineCommetStatement" id="3435053855578703138">
-                  <property name="comment" value="actually, it seems the complete typesystem is broken since I don't get any" />
-                </node>
-                <node role="statements" type="med.core.structure.OneLineCommetStatement" id="3435053855578703140">
-                  <property name="comment" value="type on the int8 z = 0 in the next line" />
                 </node>
                 <node role="statements" type="med.core.structure.IfStatement" id="4621601338807312798">
                   <node role="thenPart" type="med.core.structure.StatementList" id="4621601338807312799">
@@ -707,28 +693,12 @@
           <property name="priority" value="1" />
         </node>
       </node>
-      <node role="contents" type="med.core.structure.HeaderAndBody" id="4982955159596061883">
-        <property name="header" value="void ecrobot_device_terminate()" />
-        <node role="body" type="med.core.structure.StatementList" id="4982955159596061884">
-          <node role="statements" type="med.core.structure.OneLineCommetStatement" id="361440579109131596">
-            <property name="comment" value="MV: you could also make this a normal procedure and then set the" />
-          </node>
-          <node role="statements" type="med.core.structure.OneLineCommetStatement" id="361440579109131609">
-            <property name="comment" value="name lock, using the intention &quot;name: toggle lock&quot;. This makes" />
-          </node>
-          <node role="statements" type="med.core.structure.OneLineCommetStatement" id="361440579109131611">
-            <property name="comment" value="sure the name is not changed when C code is generated." />
-          </node>
-          <node role="statements" type="med.core.structure.OneLineCommetStatement" id="361440579109131613">
-            <property name="comment" value="Or, even better: just as we have a initialize block, we should" />
-          </node>
-          <node role="statements" type="med.core.structure.OneLineCommetStatement" id="361440579109131615">
-            <property name="comment" value=" add a shutdown block, too. " />
-          </node>
-          <node role="statements" type="med.core.structure.ExpressionStatement" id="4982955159596061967">
-            <node role="expression" type="med.components.structure.PortProcedureCall" id="4982955159596061969">
+      <node role="contents" type="med.platform.nxtosek.structure.DeviceTermination" id="1265321504638464010">
+        <node role="body" type="med.core.structure.StatementList" id="1265321504638464011">
+          <node role="statements" type="med.core.structure.ExpressionStatement" id="1265321504638464012">
+            <node role="expression" type="med.components.structure.PortProcedureCall" id="1265321504638464013">
               <link role="procedure" targetNodeId="4982955159596061971" resolveInfo="terminate" />
-              <node role="portExpression" type="med.components.structure.PortAdapterExpression" id="4982955159596061968">
+              <node role="portExpression" type="med.components.structure.PortAdapterExpression" id="1265321504638464014">
                 <link role="portAdaptor" targetNodeId="4073188428749340637" resolveInfo="bluetooth" />
               </node>
             </node>

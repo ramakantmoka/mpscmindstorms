@@ -9,6 +9,7 @@
 
 // custom includes for header
 #include "stdint.h"
+#include "stdint.h"
 
 
 void systick_wait_ms(int durationInMs);
@@ -27,7 +28,7 @@ void ecrobot_init_sonar_sensor(int port);
 
 int ecrobot_get_sonar_sensor(int port_id);
 
-void display_update(int update_too);
+void display_update(void);
 
 void display_clear(void);
 

@@ -31,9 +31,10 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959034b(jetbrains.mps.lang.quotation.structure)" version="0" />
   <languageAspect modelUID="r:8234fb67-1049-46f0-bf39-a9058c4964f6(med.external.structure)" version="1" />
   <languageAspect modelUID="r:202795d3-bacc-48e0-8afc-c254098b7868(med.external.typesystem)" version="0" />
+  <languageAspect modelUID="r:5e9df045-8930-4ba7-8720-4642d630b9ff(med.platform.nxtosek.structure)" version="0" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="2" />
-  <import index="1" modelUID="r:5e9df045-8930-4ba7-8720-4642d630b9ff(med.platform.nxtosek.structure)" version="-1" />
+  <import index="1" modelUID="r:5e9df045-8930-4ba7-8720-4642d630b9ff(med.platform.nxtosek.structure)" version="0" />
   <import index="2" modelUID="r:b02d8e6e-6ce1-44d6-8357-4812e6e9817d(med.platform.nxtosek.rt)" version="-1" />
   <visible index="2" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
   <node type="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" id="738757997636072266">
@@ -104,6 +105,76 @@
     <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="738757997636072269">
       <property name="name" value="deviceInitialization" />
       <link role="concept" targetNodeId="1.6821937377367711812" resolveInfo="DeviceInitialization" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" id="1265321504638418340">
+    <property name="name" value="onlyOneDeInitialization" />
+    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1265321504638418341">
+      <node role="statement" type="jetbrains.mps.baseLanguage.structure.IfStatement" id="1265321504638418344">
+        <node role="ifTrue" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1265321504638418345">
+          <node role="statement" type="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" id="1265321504638418346">
+            <node role="errorString" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1265321504638418347">
+              <property name="value" value="you can only have one device de-init block" />
+            </node>
+            <node role="nodeToReport" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="1265321504638418380">
+              <link role="applicableNode" targetNodeId="1265321504638418343" resolveInfo="deviceDeInitialization" />
+            </node>
+          </node>
+        </node>
+        <node role="condition" type="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" id="1265321504638418349">
+          <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="1265321504638418350">
+            <property name="value" value="1" />
+          </node>
+          <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1265321504638418351">
+            <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1265321504638418352">
+              <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1265321504638418353">
+                <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1265321504638418354">
+                  <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="1265321504638418379">
+                    <link role="applicableNode" targetNodeId="1265321504638418343" resolveInfo="deviceDeInitialization" />
+                  </node>
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" id="1265321504638418356">
+                    <node role="parameter" type="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" id="1265321504638418357">
+                      <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="1265321504638418358">
+                        <link role="conceptDeclaration" targetNodeId="2v.306587673255505547" resolveInfo="ImplementationModule" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkListAccess" id="1265321504638418359">
+                  <link role="link" targetNodeId="2v.306587673255505550" />
+                </node>
+              </node>
+              <node role="operation" type="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" id="1265321504638418360">
+                <node role="closure" type="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" id="1265321504638418361">
+                  <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1265321504638418362">
+                    <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1265321504638418363">
+                      <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1265321504638418364">
+                        <node role="operand" type="jetbrains.mps.baseLanguage.structure.ParameterReference" id="1265321504638418365">
+                          <link role="variableDeclaration" targetNodeId="1265321504638418368" resolveInfo="it" />
+                        </node>
+                        <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" id="1265321504638418366">
+                          <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="1265321504638418367">
+                            <link role="conceptDeclaration" targetNodeId="1.1265321504638342960" resolveInfo="DeviceDeInitialization" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node role="parameter" type="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" id="1265321504638418368">
+                    <property name="name" value="it" />
+                    <node role="type" type="jetbrains.mps.baseLanguage.structure.WildCardType" id="1265321504638418369" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="operation" type="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" id="1265321504638418370" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="1265321504638418343">
+      <property name="name" value="deviceDeInitialization" />
+      <link role="concept" targetNodeId="1.1265321504638342960" resolveInfo="DeviceDeInitialization" />
     </node>
   </node>
 </model>
