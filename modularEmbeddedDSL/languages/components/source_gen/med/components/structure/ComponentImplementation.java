@@ -22,7 +22,7 @@ public class ComponentImplementation extends MedBase implements IExportableModul
   public static final String TEXT = "text";
   public static final String EXPORT = "export";
   public static final String COMPONENT_TYPE = "componentType";
-  public static final String PROCEDURE_IMPLS = "procedureImpls";
+  public static final String CONTENTS = "contents";
 
   public ComponentImplementation(SNode node) {
     super(node);
@@ -84,24 +84,24 @@ public class ComponentImplementation extends MedBase implements IExportableModul
     super.setReferent(ComponentImplementation.COMPONENT_TYPE, node);
   }
 
-  public int getProcedureImplsesCount() {
-    return this.getChildCount(ComponentImplementation.PROCEDURE_IMPLS);
+  public int getContentsesCount() {
+    return this.getChildCount(ComponentImplementation.CONTENTS);
   }
 
-  public Iterator<InterfaceProcedureImplementation> procedureImplses() {
-    return this.children(InterfaceProcedureImplementation.class, ComponentImplementation.PROCEDURE_IMPLS);
+  public Iterator<IComponentImplContent> contentses() {
+    return this.children(IComponentImplContent.class, ComponentImplementation.CONTENTS);
   }
 
-  public List<InterfaceProcedureImplementation> getProcedureImplses() {
-    return this.getChildren(InterfaceProcedureImplementation.class, ComponentImplementation.PROCEDURE_IMPLS);
+  public List<IComponentImplContent> getContentses() {
+    return this.getChildren(IComponentImplContent.class, ComponentImplementation.CONTENTS);
   }
 
-  public void addProcedureImpls(InterfaceProcedureImplementation node) {
-    this.addChild(ComponentImplementation.PROCEDURE_IMPLS, node);
+  public void addContents(IComponentImplContent node) {
+    this.addChild(ComponentImplementation.CONTENTS, node);
   }
 
-  public void insertProcedureImpls(InterfaceProcedureImplementation prev, InterfaceProcedureImplementation node) {
-    this.insertChild(prev, ComponentImplementation.PROCEDURE_IMPLS, node);
+  public void insertContents(IComponentImplContent prev, IComponentImplContent node) {
+    this.insertChild(prev, ComponentImplementation.CONTENTS, node);
   }
 
   public static ComponentImplementation newInstance(SModel sm, boolean init) {

@@ -79,19 +79,19 @@ public class Component extends MedBase implements IExportableModuleContent, IHas
     return this.getChildCount(Component.PORTS);
   }
 
-  public Iterator<ProceduralPort> portses() {
-    return this.children(ProceduralPort.class, Component.PORTS);
+  public Iterator<Port> portses() {
+    return this.children(Port.class, Component.PORTS);
   }
 
-  public List<ProceduralPort> getPortses() {
-    return this.getChildren(ProceduralPort.class, Component.PORTS);
+  public List<Port> getPortses() {
+    return this.getChildren(Port.class, Component.PORTS);
   }
 
-  public void addPorts(ProceduralPort node) {
+  public void addPorts(Port node) {
     this.addChild(Component.PORTS, node);
   }
 
-  public void insertPorts(ProceduralPort prev, ProceduralPort node) {
+  public void insertPorts(Port prev, Port node) {
     this.insertChild(prev, Component.PORTS, node);
   }
 

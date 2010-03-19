@@ -6,10 +6,11 @@ import jetbrains.mps.lang.typesystem.runtime.AbstractNonTypesystemRule_Runtime;
 import jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.Sequence;
+import med.components.behavior.Component_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.intentions.BaseIntentionProvider;
 import jetbrains.mps.typesystem.inference.IErrorTarget;
 import jetbrains.mps.typesystem.inference.NodeErrorTarget;
@@ -21,7 +22,7 @@ public class onlyOnePPPerInterface_NonTypesystemRule extends AbstractNonTypesyst
   }
 
   public void applyRule(final SNode providedPort, final TypeCheckingContext typeCheckingContext) {
-    if (ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.getAncestor(providedPort, "med.components.structure.Component", false, false), "ports", true)).where(new IWhereFilter<SNode>() {
+    if (Sequence.fromIterable(Component_Behavior.call_proceduralPorts_1265321504638808144(SNodeOperations.getAncestor(providedPort, "med.components.structure.Component", false, false))).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return SNodeOperations.isInstanceOf(it, "med.components.structure.ProvidedPort");
       }

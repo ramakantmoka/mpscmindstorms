@@ -31,10 +31,10 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590340(jetbrains.mps.lang.pattern.constraints)" version="2" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590328(jetbrains.mps.baseLanguage.collections.constraints)" version="6" />
-  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="1" />
+  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="2" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="4" />
-  <import index="1" modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="1" />
+  <import index="1" modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="2" />
   <import index="2" modelUID="r:14a060e8-2002-4063-9ac2-3317a0d2c940(med.core.behavior)" version="-1" />
   <import index="3" modelUID="f:java_stub#java.lang(java.lang@java_stub)" version="-1" />
   <import index="4" modelUID="f:java_stub#java.io(java.io@java_stub)" version="-1" />
@@ -724,8 +724,8 @@
               <node role="operand" type="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" id="7678656588248295953" />
               <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" id="7678656588248295958">
                 <node role="parameter" type="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" id="7678656588248295959">
-                  <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="7678656588248295963">
-                    <link role="conceptDeclaration" targetNodeId="1.2739617086186398163" resolveInfo="InterfaceProcedureImplementation" />
+                  <node role="conceptArgument" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" id="1265321504641631505">
+                    <link role="conceptDeclaration" targetNodeId="1.2739617086186285669" resolveInfo="ComponentImplementation" />
                   </node>
                 </node>
                 <node role="parameter" type="jetbrains.mps.lang.smodel.structure.OperationParm_Inclusion" id="7678656588248295972" />
@@ -764,8 +764,8 @@
                       <link role="link" targetNodeId="1.2739617086186285670" />
                     </node>
                   </node>
-                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkListAccess" id="7678656588248720445">
-                    <link role="link" targetNodeId="1.2739617086185933041" />
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="1265321504638883772">
+                    <link role="baseMethodDeclaration" targetNodeId="3v.1265321504638808144" resolveInfo="proceduralPorts" />
                   </node>
                 </node>
                 <node role="operation" type="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" id="7678656588248720446">

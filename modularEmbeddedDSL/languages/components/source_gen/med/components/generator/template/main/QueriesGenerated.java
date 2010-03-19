@@ -58,7 +58,7 @@ public class QueriesGenerated {
   }
 
   public static Iterable sourceNodesQuery_3113923837076889365(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getTargets(_context.getNode(), "procedureImpls", true);
+    return SLinkOperations.getTargets(_context.getNode(), "contents", true);
   }
 
   public static Iterable sourceNodesQuery_3113923837076889456(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
+  <nodeInfo nodeId="1265321504640473212" fileName="Logger.java" startLine="14" startPosition="54" endLine="15" endPosition="45" />
+  <nodeInfo nodeId="1265321504640474451" fileName="Logger.java" startLine="10" startPosition="44" endLine="11" endPosition="63" />
   <nodeInfo nodeId="3426893568457111268" fileName="SwingUtil.java" startLine="93" startPosition="28" endLine="94" endPosition="63" />
   <nodeInfo nodeId="3426893568457111275" fileName="SwingUtil.java" startLine="94" startPosition="63" endLine="95" endPosition="24" />
   <nodeInfo nodeId="3426893568457111281" fileName="SwingUtil.java" startLine="95" startPosition="24" endLine="96" endPosition="28" />

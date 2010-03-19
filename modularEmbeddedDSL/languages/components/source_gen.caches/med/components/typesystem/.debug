@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <nodeInfo nodeId="2739617086189122559" fileName="typeof_InterfaceProcParameterReference_InferenceRule.java" startLine="17" startPosition="95" endLine="22" endPosition="5" />
-  <nodeInfo nodeId="2739617086193995929" fileName="onlyOnePPPerInterface_NonTypesystemRule.java" startLine="23" startPosition="98" endLine="38" endPosition="5" />
-  <nodeInfo nodeId="2739617086194095584" fileName="onlyOnePPPerInterface_NonTypesystemRule.java" startLine="32" startPosition="21" endLine="37" endPosition="7" />
+  <nodeInfo nodeId="2739617086193995929" fileName="onlyOnePPPerInterface_NonTypesystemRule.java" startLine="24" startPosition="98" endLine="39" endPosition="5" />
+  <nodeInfo nodeId="2739617086194095584" fileName="onlyOnePPPerInterface_NonTypesystemRule.java" startLine="33" startPosition="21" endLine="38" endPosition="7" />
   <nodeInfo nodeId="2739617086196008847" fileName="typeof_Interface_InferenceRule.java" startLine="18" startPosition="90" endLine="19" endPosition="95" />
   <nodeInfo nodeId="2739617086196008855" fileName="typeof_Interface_InferenceRule.java" startLine="19" startPosition="95" endLine="20" endPosition="59" />
   <nodeInfo nodeId="2739617086196008871" fileName="typeof_Interface_InferenceRule.java" startLine="20" startPosition="59" endLine="25" endPosition="5" />

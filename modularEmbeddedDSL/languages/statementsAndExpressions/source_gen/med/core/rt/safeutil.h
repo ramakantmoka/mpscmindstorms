@@ -9,7 +9,6 @@
 
 // custom includes for header
 #include "stdint.h"
-#include "stdint.h"
 
 
 int8_t isValidInt8(int64_t value);

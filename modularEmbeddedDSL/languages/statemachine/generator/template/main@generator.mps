@@ -80,6 +80,12 @@
         <link role="template" targetNodeId="6254144863184827193" resolveInfo="reduce_Statemachine" />
       </node>
     </node>
+    <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="1265321504640998752">
+      <link role="applicableConcept" targetNodeId="1.1265321504640783488" resolveInfo="EventTrigger" />
+      <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" id="1265321504641000949">
+        <link role="template" targetNodeId="1265321504641000947" resolveInfo="reduce_EventTrigger" />
+      </node>
+    </node>
     <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="6254144863183957684">
       <link role="applicableConcept" targetNodeId="1.6254144863183184201" resolveInfo="FireEventStatement" />
       <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" id="6254144863186774283">
@@ -403,21 +409,15 @@
                   </node>
                   <node role="right" type="med.core.structure.EnumLiteralRef" id="6254144863185942091">
                     <link role="literal" targetNodeId="6254144863185344164" resolveInfo="eventLiteral" />
-                    <node role="referenceMacro$link_attribute$literal" type="jetbrains.mps.lang.generator.structure.ReferenceMacro" id="6254144863186149478">
-                      <node role="referentFunction" type="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" id="6254144863186149479">
-                        <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="6254144863186149480">
-                          <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="6254144863186149481">
-                            <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6254144863186149483">
-                              <node role="operand" type="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" id="6254144863186149482" />
-                              <node role="operation" type="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOutputByLabelAndInput" id="6254144863186149487">
-                                <link role="label" targetNodeId="6254144863186147298" resolveInfo="eventEnumLiternal" />
-                                <node role="inputNode" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="6254144863186149492">
-                                  <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="6254144863186149489" />
-                                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="6254144863186149499">
-                                    <link role="link" targetNodeId="1.6254144863182768326" />
-                                  </node>
-                                </node>
+                    <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" id="1265321504641000954">
+                      <node role="sourceNodeQuery" type="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" id="1265321504641000957">
+                        <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1265321504641000958">
+                          <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1265321504641000959">
+                            <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1265321504641000960">
+                              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="1265321504641000961">
+                                <link role="link" targetNodeId="1.1265321504640783508" />
                               </node>
+                              <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="1265321504641000962" />
                             </node>
                           </node>
                         </node>
@@ -839,6 +839,51 @@
           <node role="templateFragment$attribute" type="jetbrains.mps.lang.generator.structure.TemplateFragment" id="9105096665975271140" />
         </node>
         <node role="type" type="med.core.structure.VoidType" id="9105096665975271082" />
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.generator.structure.TemplateDeclaration" id="1265321504641000947">
+    <property name="name" value="reduce_EventTrigger" />
+    <link role="applicableConcept" targetNodeId="1.1265321504640783488" resolveInfo="EventTrigger" />
+    <node role="contentNode" type="med.core.structure.ImplementationModule" id="1265321504641000964">
+      <property name="name" value="m" />
+      <node role="contents" type="med.core.structure.EnumDeclaration" id="1265321504641000965">
+        <property name="name" value="eventEnums" />
+        <node role="literals" type="med.core.structure.EnumLiteral" id="1265321504641000966">
+          <property name="name" value="eventLiteral" />
+        </node>
+      </node>
+      <node role="contents" type="med.core.structure.Procedure" id="1265321504641000968">
+        <property name="name" value="x" />
+        <node role="type" type="med.core.structure.VoidType" id="1265321504641000969" />
+        <node role="body" type="med.core.structure.StatementList" id="1265321504641000970">
+          <node role="statements" type="med.core.structure.ExpressionStatement" id="1265321504641000971">
+            <node role="expression" type="med.core.structure.EnumLiteralRef" id="1265321504641000972">
+              <link role="literal" targetNodeId="1265321504641000966" resolveInfo="eventLiteral" />
+              <node role="templateFragment$attribute" type="jetbrains.mps.lang.generator.structure.TemplateFragment" id="1265321504641000973" />
+              <node role="referenceMacro$link_attribute$literal" type="jetbrains.mps.lang.generator.structure.ReferenceMacro" id="1265321504641000974">
+                <node role="referentFunction" type="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" id="1265321504641000975">
+                  <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1265321504641000976">
+                    <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1265321504641000977">
+                      <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1265321504641000979">
+                        <node role="operand" type="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" id="1265321504641000978" />
+                        <node role="operation" type="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOutputByLabelAndInput" id="1265321504641000983">
+                          <link role="label" targetNodeId="6254144863186147298" resolveInfo="eventEnumLiternal" />
+                          <node role="inputNode" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1265321504641000986">
+                            <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="1265321504641000985" />
+                            <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="1265321504641000990">
+                              <link role="link" targetNodeId="1.1265321504640783489" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

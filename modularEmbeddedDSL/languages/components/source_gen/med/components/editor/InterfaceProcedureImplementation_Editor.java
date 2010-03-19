@@ -15,9 +15,9 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
 import jetbrains.mps.nodeEditor.cells.ModelAccessor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.internal.collections.runtime.Sequence;
+import med.components.behavior.Component_Behavior;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.util.EqualUtil;
 import jetbrains.mps.nodeEditor.CellActionType;
@@ -29,6 +29,7 @@ import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
 import jetbrains.mps.smodel.IScope;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
@@ -157,7 +158,7 @@ public class InterfaceProcedureImplementation_Editor extends DefaultNodeEditor {
         final SNode interfaceContainingOperation = SNodeOperations.getAncestor(SLinkOperations.getTarget(node, "procedure", false), "med.components.structure.Interface", true, false);
         SNode currentComponentImpl = SNodeOperations.getAncestor(node, "med.components.structure.ComponentImplementation", true, false);
         SNode ct = SLinkOperations.getTarget(currentComponentImpl, "componentType", false);
-        Iterable<SNode> allProvidedPortsOfComponent = ListSequence.fromList(SLinkOperations.getTargets(ct, "ports", true)).where(new IWhereFilter<SNode>() {
+        Iterable<SNode> allProvidedPortsOfComponent = Sequence.fromIterable(Component_Behavior.call_proceduralPorts_1265321504638808144(ct)).where(new IWhereFilter<SNode>() {
           public boolean accept(SNode it) {
             return SNodeOperations.isInstanceOf(it, "med.components.structure.ProvidedPort");
           }

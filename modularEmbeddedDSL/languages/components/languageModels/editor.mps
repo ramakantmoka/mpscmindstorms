@@ -30,10 +30,10 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" version="3" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590340(jetbrains.mps.lang.pattern.constraints)" version="2" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590328(jetbrains.mps.baseLanguage.collections.constraints)" version="6" />
-  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="1" />
+  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="2" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="3" />
-  <import index="1" modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="1" />
+  <import index="1" modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="2" />
   <import index="2" modelUID="f:java_stub#java.lang(java.lang@java_stub)" version="-1" />
   <import index="3" modelUID="f:java_stub#java.io(java.io@java_stub)" version="-1" />
   <visible index="2" modelUID="r:09d01149-7031-4616-b1e9-9d38ffcdfe9d(med.core.editor)" />
@@ -343,6 +343,7 @@
       <link role="editorComponent" targetNodeId="2v.5288422977873518304" resolveInfo="IDocumentable_EditorComponent" />
     </node>
   </node>
+  <visible index="5" modelUID="r:d410d4fe-3f1c-4b6c-ba11-ccec429fec9b(med.components.behavior)" />
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="2739617086186398165">
     <property name="package" value="implementation" />
     <link role="conceptDeclaration" targetNodeId="1.2739617086186398163" resolveInfo="InterfaceProcedureImplementation" />
@@ -443,8 +444,8 @@
                         <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="2739617086191009719">
                           <link role="variableDeclaration" targetNodeId="2739617086190877527" resolveInfo="ct" />
                         </node>
-                        <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkListAccess" id="2739617086191009720">
-                          <link role="link" targetNodeId="1.2739617086185933041" />
+                        <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="1265321504638883802">
+                          <link role="baseMethodDeclaration" targetNodeId="5v.1265321504638808144" resolveInfo="proceduralPorts" />
                         </node>
                       </node>
                       <node role="operation" type="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" id="2739617086191009721">

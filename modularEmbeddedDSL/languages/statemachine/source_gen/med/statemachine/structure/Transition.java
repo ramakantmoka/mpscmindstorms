@@ -27,12 +27,12 @@ public class Transition extends MedBase {
     super.setReferent(Transition.TARGET, node);
   }
 
-  public Event getTrigger() {
-    return (Event)this.getReferent(Event.class, Transition.TRIGGER);
+  public Trigger getTrigger() {
+    return (Trigger)this.getChild(Trigger.class, Transition.TRIGGER);
   }
 
-  public void setTrigger(Event node) {
-    super.setReferent(Transition.TRIGGER, node);
+  public void setTrigger(Trigger node) {
+    super.setChild(Transition.TRIGGER, node);
   }
 
   public Expression getGuard() {

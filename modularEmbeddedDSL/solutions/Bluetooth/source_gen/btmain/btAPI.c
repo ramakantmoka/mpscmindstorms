@@ -15,6 +15,7 @@
 #include "kernel.h"
 #include "kernel_id.h"
 #include "stdint.h"
+#include "stdint.h"
 
 char* btAPI_api_BT_PASS_KEY = "1239";
 

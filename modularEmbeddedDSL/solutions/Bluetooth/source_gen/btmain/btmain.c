@@ -9,12 +9,13 @@
 #include "include/btmain.h"
 
 // used resources
-#include "include/btAPI.h"
 #include "ecrobot_interface.h"
+#include "include/btAPI.h"
 
 // custom includes
 #include "kernel.h"
 #include "kernel_id.h"
+#include "stdint.h"
 #include "stdint.h"
 
 int btmain_main_bluetoothListener_currentstate = STATE_INITIALIZING;
@@ -23,7 +24,7 @@ void btmain_main_bluetoothListener_execute(int event) {
         
     if ( btmain_main_bluetoothListener_currentstate == STATE_INITIALIZING) {
                 
-      if ( event == EVENT_INITIALIZED) {
+      if ( event == ) {
                       
         if ( 1) {
                   btmain_main_bluetoothListener_currentstate = STATE_IDLE;
@@ -40,7 +41,7 @@ void btmain_main_bluetoothListener_execute(int event) {
         
     if ( btmain_main_bluetoothListener_currentstate == STATE_LISTEN) {
                 
-      if ( event == EVENT_DISCONNECTED) {
+      if ( event == ) {
                       
         if ( 1) {
                   btmain_main_bluetoothListener_currentstate = STATE_IDLE;
@@ -57,7 +58,7 @@ void btmain_main_bluetoothListener_execute(int event) {
         
     if ( btmain_main_bluetoothListener_currentstate == STATE_IDLE) {
                 
-      if ( event == EVENT_CONNECTED) {
+      if ( event == ) {
                       
         if ( 1) {
                   btmain_main_bluetoothListener_currentstate = STATE_LISTEN;

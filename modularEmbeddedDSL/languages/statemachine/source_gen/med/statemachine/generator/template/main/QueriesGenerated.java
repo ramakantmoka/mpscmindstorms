@@ -42,8 +42,8 @@ public class QueriesGenerated {
     return Statemachine_Behavior.call_currentStateVariableName_6254144863184927596(_context.getNode());
   }
 
-  public static Object referenceMacro_GetReferent_6254144863186149479(final IOperationContext operationContext, final ReferenceMacroContext _context) {
-    return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), "trigger", false), "eventEnumLiternal");
+  public static Object referenceMacro_GetReferent_1265321504641000975(final IOperationContext operationContext, final ReferenceMacroContext _context) {
+    return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), "event", false), "eventEnumLiternal");
   }
 
   public static Object referenceMacro_GetReferent_6254144863186465766(final IOperationContext operationContext, final ReferenceMacroContext _context) {
@@ -80,6 +80,10 @@ public class QueriesGenerated {
 
   public static Object referenceMacro_GetReferent_9105096665975271179(final IOperationContext operationContext, final ReferenceMacroContext _context) {
     return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), "state", false), "stateEnumLiteral");
+  }
+
+  public static SNode sourceNodeQuery_1265321504641000957(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "trigger", true);
   }
 
   public static SNode sourceNodeQuery_5231257431511888527(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {

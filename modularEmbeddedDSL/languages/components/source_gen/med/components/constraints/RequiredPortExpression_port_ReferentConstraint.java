@@ -7,7 +7,8 @@ import jetbrains.mps.smodel.constraints.IModelConstraints;
 import jetbrains.mps.smodel.constraints.ModelConstraintsManager;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.constraints.ReferentConstraintContext;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.internal.collections.runtime.Sequence;
+import med.components.behavior.Component_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
@@ -27,7 +28,7 @@ public class RequiredPortExpression_port_ReferentConstraint extends BaseNodeRefe
   }
 
   public Object createSearchScopeOrListOfNodes(final IOperationContext operationContext, final ReferentConstraintContext _context) {
-    return ListSequence.fromList(SLinkOperations.getTargets(SLinkOperations.getTarget(SNodeOperations.getAncestor(_context.getEnclosingNode(), "med.components.structure.ComponentImplementation", true, false), "componentType", false), "ports", true)).where(new IWhereFilter<SNode>() {
+    return Sequence.fromIterable(Component_Behavior.call_proceduralPorts_1265321504638808144(SLinkOperations.getTarget(SNodeOperations.getAncestor(_context.getEnclosingNode(), "med.components.structure.ComponentImplementation", true, false), "componentType", false))).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return SNodeOperations.isInstanceOf(it, "med.components.structure.RequiredPort");
       }

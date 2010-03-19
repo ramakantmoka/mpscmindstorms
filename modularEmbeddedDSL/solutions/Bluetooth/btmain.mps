@@ -11,7 +11,7 @@
   <language namespace="f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)" />
   <language namespace="3a8b8671-1532-4e8f-b780-594a27fa10c8(med.core)" />
   <language namespace="690fcffe-d4e9-47ba-96cd-723f8e365186(med.tasks)" />
-  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="1" />
+  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="2" />
   <languageAspect modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" version="9" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590571(jetbrains.mps.gtext.constraints)" version="8" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590575(jetbrains.mps.gtext.structure)" version="0" />
@@ -807,7 +807,7 @@
         <property name="export" value="true" />
         <property name="name" value="BlueToothNXT" />
         <link role="componentType" targetNodeId="4073188428749340572" resolveInfo="BlueTooth" />
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="4982955159596056775">
+        <node role="contents" type="med.components.structure.InterfaceProcedureImplementation" id="4982955159596056775">
           <link role="procedure" targetNodeId="4982955159596056803" resolveInfo="init" />
           <node role="body" type="med.core.structure.StatementList" id="4982955159596056776">
             <node role="statements" type="med.core.structure.ExpressionStatement" id="4982955159596056777">
@@ -820,7 +820,7 @@
             </node>
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="4621601338806095442">
+        <node role="contents" type="med.components.structure.InterfaceProcedureImplementation" id="4621601338806095442">
           <link role="procedure" targetNodeId="4621601338806095438" resolveInfo="status" />
           <node role="body" type="med.core.structure.StatementList" id="4621601338806095443">
             <node role="statements" type="med.core.structure.ReturnStatement" id="4621601338806097054">
@@ -830,7 +830,7 @@
             </node>
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="4621601338806103813">
+        <node role="contents" type="med.components.structure.InterfaceProcedureImplementation" id="4621601338806103813">
           <link role="procedure" targetNodeId="4621601338806103808" resolveInfo="isStream" />
           <node role="body" type="med.core.structure.StatementList" id="4621601338806103814">
             <node role="statements" type="med.core.structure.ReturnStatement" id="4621601338806103815">
@@ -845,7 +845,7 @@
             </node>
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="4621601338806103833">
+        <node role="contents" type="med.components.structure.InterfaceProcedureImplementation" id="4621601338806103833">
           <link role="procedure" targetNodeId="4621601338806103826" resolveInfo="isConnected" />
           <node role="body" type="med.core.structure.StatementList" id="4621601338806103834">
             <node role="statements" type="med.core.structure.ReturnStatement" id="4621601338806103835">
@@ -860,7 +860,7 @@
             </node>
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="4982955159596061973">
+        <node role="contents" type="med.components.structure.InterfaceProcedureImplementation" id="4982955159596061973">
           <link role="procedure" targetNodeId="4982955159596061971" resolveInfo="terminate" />
           <node role="body" type="med.core.structure.StatementList" id="4982955159596061974">
             <node role="statements" type="med.core.structure.ExpressionStatement" id="4982955159596061987">
@@ -870,7 +870,7 @@
             </node>
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="4073188428749340611">
+        <node role="contents" type="med.components.structure.InterfaceProcedureImplementation" id="4073188428749340611">
           <link role="procedure" targetNodeId="4073188428749340589" resolveInfo="send" />
           <node role="body" type="med.core.structure.StatementList" id="4073188428749340612">
             <node role="statements" type="med.core.structure.ExpressionStatement" id="4073188428749340620">
@@ -886,7 +886,7 @@
             </node>
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="4073188428749340613">
+        <node role="contents" type="med.components.structure.InterfaceProcedureImplementation" id="4073188428749340613">
           <link role="procedure" targetNodeId="4073188428749340599" resolveInfo="read" />
           <node role="body" type="med.core.structure.StatementList" id="4073188428749340614">
             <node role="statements" type="med.core.structure.ReturnStatement" id="4621601338806097057">
