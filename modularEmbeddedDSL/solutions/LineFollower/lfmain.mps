@@ -272,6 +272,18 @@
           </node>
         </node>
       </node>
+      <node role="contents" type="med.platform.nxtosek.structure.DeviceTermination" id="1265321504638678761">
+        <node role="body" type="med.core.structure.StatementList" id="1265321504638678762">
+          <node role="statements" type="med.core.structure.ExpressionStatement" id="1265321504638678763">
+            <node role="expression" type="med.core.structure.ProcedureCall" id="1265321504638678764">
+              <link role="procedure" targetNodeId="2v.5196379128660651519" resolveInfo="ecrobot_set_light_sensor_inactive" />
+              <node role="actuals" type="med.core.structure.EnumLiteralRef" id="1265321504638678765">
+                <link role="literal" targetNodeId="2v.5196379128661020615" resolveInfo="NXT_PORT_S1" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node role="contents" type="med.tasks.structure.Task" id="6821937377367863665">
         <property name="name" value="sonartask" />
         <node role="body" type="med.core.structure.StatementList" id="6821937377367863666">
@@ -982,7 +994,7 @@
     </node>
     <node role="moduleDependencyAnnotation$attribute" type="med.core.structure.ModuleDependency" id="7400233627844407295" />
     <node role="mode" type="med.features.structure.ShowClauseDisplayMode" id="2420527669696042818">
-      <property name="showFeatureClause" value="false" />
+      <property name="showFeatureClause" value="true" />
       <property name="highlightFeatureDependentNodes" value="true" />
       <property name="removeNonSelectedStuffInEditor" value="false" />
     </node>
