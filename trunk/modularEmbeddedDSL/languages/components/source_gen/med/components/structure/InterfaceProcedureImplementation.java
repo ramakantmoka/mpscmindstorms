@@ -10,7 +10,7 @@ import jetbrains.mps.smodel.SModel;
 import jetbrains.mps.smodel.SModelUtil_new;
 import jetbrains.mps.project.GlobalScope;
 
-public class InterfaceProcedureImplementation extends MedBase implements IReturnable {
+public class InterfaceProcedureImplementation extends MedBase implements IReturnable, IComponentImplContent {
   public static final String concept = "med.components.structure.InterfaceProcedureImplementation";
   public static final String SHORT_DESCRIPTION = "shortDescription";
   public static final String ALIAS = "alias";

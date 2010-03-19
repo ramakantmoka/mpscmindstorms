@@ -4,9 +4,12 @@ package med.components.behavior;
 
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.internal.collections.runtime.ISelector;
 
 public class ComponentImplementation_Behavior {
   public static void init(SNode thisNode) {
@@ -14,20 +17,32 @@ public class ComponentImplementation_Behavior {
 
   public static void call_updateProcedures_2739617086187249561(SNode thisNode, SNode component) {
     for (final SNode op : ListSequence.fromList(Component_Behavior.call_allProcedures_2739617086186422653(component))) {
-      if (ListSequence.fromList(SLinkOperations.getTargets(thisNode, "procedureImpls", true)).where(new IWhereFilter<SNode>() {
+      if (Sequence.fromIterable(ComponentImplementation_Behavior.call_procedureImplementations_1265321504639707378(thisNode)).where(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
           return SLinkOperations.getTarget(it, "procedure", false) == op;
         }
       }).isEmpty()) {
         SNode impl = SConceptOperations.createNewNode("med.components.structure.InterfaceProcedureImplementation", null);
         SLinkOperations.setTarget(impl, "procedure", op, false);
-        SLinkOperations.addChild(thisNode, "procedureImpls", impl);
+        SLinkOperations.addChild(thisNode, "contents", impl);
       }
     }
   }
 
+  public static Iterable<SNode> call_procedureImplementations_1265321504639707378(SNode thisNode) {
+    return ListSequence.fromList(SLinkOperations.getTargets(thisNode, "contents", true)).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SNodeOperations.isInstanceOf(it, "med.components.structure.InterfaceProcedureImplementation");
+      }
+    }).select(new ISelector<SNode, SNode>() {
+      public SNode select(SNode it) {
+        return SNodeOperations.cast(it, "med.components.structure.InterfaceProcedureImplementation");
+      }
+    });
+  }
+
   public static SNode call_findMethodImplementation_3113923837077903669(SNode thisNode, final SNode p) {
-    return ListSequence.fromList(SLinkOperations.getTargets(thisNode, "procedureImpls", true)).where(new IWhereFilter<SNode>() {
+    return Sequence.fromIterable(ComponentImplementation_Behavior.call_procedureImplementations_1265321504639707378(thisNode)).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return (SLinkOperations.getTarget(it, "procedure", false) == p);
       }

@@ -12,7 +12,7 @@ public class ConstraintsDescriptor implements IModelConstraints {
   private List<IModelConstraints> myConstraints = ListSequence.fromList(new ArrayList<IModelConstraints>());
 
   public ConstraintsDescriptor() {
-    ListSequence.fromList(this.myConstraints).addElement(new Transition_trigger_ReferentConstraint());
+    ListSequence.fromList(this.myConstraints).addElement(new EventTrigger_event_ReferentConstraint());
     ListSequence.fromList(this.myConstraints).addElement(new Transition_target_ReferentConstraint());
     ListSequence.fromList(this.myConstraints).addElement(new FireEventStatement_machine_ReferentConstraint());
     ListSequence.fromList(this.myConstraints).addElement(new FireEventStatement_trigger_ReferentConstraint());

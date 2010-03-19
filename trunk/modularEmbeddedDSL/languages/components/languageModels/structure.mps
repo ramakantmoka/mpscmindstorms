@@ -22,6 +22,16 @@
         </entry>
       </conceptFeatureMap>
     </refactoringContext>
+    <refactoringContext modelVersion="2">
+      <refactoring refactoringClass="jetbrains.mps.lang.structure.refactorings.RenameLink" />
+      <moveMap />
+      <conceptFeatureMap>
+        <entry>
+          <key featureName="procedureImpls" conceptFQName="med.components.structure.ComponentImplementation" featureKind="CHILD" />
+          <value featureName="contents" conceptFQName="med.components.structure.ComponentImplementation" featureKind="CHILD" />
+        </entry>
+      </conceptFeatureMap>
+    </refactoringContext>
   </refactoringHistory>
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.lang.core.constraints)" version="2" />
@@ -44,10 +54,10 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590340(jetbrains.mps.lang.pattern.constraints)" version="2" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902db(jetbrains.mps.baseLanguage.blTypes.constraints)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590328(jetbrains.mps.baseLanguage.collections.constraints)" version="6" />
-  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="1" />
+  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="2" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="1" />
-  <import index="1" modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="1" />
+  <import index="1" modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="2" />
   <visible index="2" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
   <visible index="3" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2644792117221124041">
@@ -101,7 +111,7 @@
       <property name="metaClass" value="aggregation" />
       <property name="role" value="ports" />
       <property name="sourceCardinality" value="0..n" />
-      <link role="target" targetNodeId="2739617086185486244" resolveInfo="ProceduralPort" />
+      <link role="target" targetNodeId="1265321504638679333" resolveInfo="Port" />
     </node>
     <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="2739617086186062535">
       <property name="value" value="component" />
@@ -111,10 +121,7 @@
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2739617086185486244">
     <property name="name" value="ProceduralPort" />
     <property name="package" value="component" />
-    <link role="extends" targetNodeId="2v.3577454086729990666" resolveInfo="MedBase" />
-    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2739617086185486245">
-      <link role="intfc" targetNodeId="2v.343373828472902636" resolveInfo="IHasIdentifierName" />
-    </node>
+    <link role="extends" targetNodeId="1265321504638679333" resolveInfo="Port" />
     <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.BooleanConceptProperty" id="2739617086185486246">
       <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473854053" resolveInfo="abstract" />
     </node>
@@ -133,6 +140,9 @@
       <property name="value" value="provided" />
       <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473891462" resolveInfo="alias" />
     </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="1265321504638958797">
+      <link role="intfc" targetNodeId="1265321504638958795" resolveInfo="IProvided" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2739617086185486248">
     <property name="name" value="RequiredPort" />
@@ -142,6 +152,9 @@
       <property name="value" value="requires" />
       <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473891462" resolveInfo="alias" />
     </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="1265321504638958798">
+      <link role="intfc" targetNodeId="1265321504638958796" resolveInfo="IRequired" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2739617086186285669">
     <property name="name" value="ComponentImplementation" />
@@ -149,9 +162,9 @@
     <link role="extends" targetNodeId="2v.3577454086729990666" resolveInfo="MedBase" />
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="2739617086186625786">
       <property name="metaClass" value="aggregation" />
-      <property name="role" value="procedureImpls" />
+      <property name="role" value="contents" />
       <property name="sourceCardinality" value="0..n" />
-      <link role="target" targetNodeId="2739617086186398163" resolveInfo="InterfaceProcedureImplementation" />
+      <link role="target" targetNodeId="1265321504639458537" resolveInfo="IComponentImplContent" />
     </node>
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="2739617086186285670">
       <property name="metaClass" value="reference" />
@@ -191,6 +204,9 @@
     </node>
     <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="2739617086191809662">
       <link role="intfc" targetNodeId="2v.2739617086189439398" resolveInfo="IReturnable" />
+    </node>
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="1265321504639458539">
+      <link role="intfc" targetNodeId="1265321504639458537" resolveInfo="IComponentImplContents" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2739617086187690948">
@@ -393,6 +409,29 @@
     <property name="package" value="wiring" />
     <property name="name" value="GlobalWiringScope" />
     <link role="extends" targetNodeId="7678656588250497465" resolveInfo="WiringScope" />
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="1265321504638679333">
+    <property name="package" value="component" />
+    <property name="name" value="Port" />
+    <link role="extends" targetNodeId="2v.3577454086729990666" resolveInfo="MedBase" />
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="1265321504638679334">
+      <link role="intfc" targetNodeId="2v.343373828472902636" resolveInfo="IHasIdentifierName" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.BooleanConceptProperty" id="1265321504638679335">
+      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473854053" resolveInfo="abstract" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="1265321504638958795">
+    <property name="package" value="component" />
+    <property name="name" value="IProvided" />
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="1265321504638958796">
+    <property name="package" value="component" />
+    <property name="name" value="IRequired" />
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="1265321504639458537">
+    <property name="package" value="implementation" />
+    <property name="name" value="IComponentImplContent" />
   </node>
 </model>
 

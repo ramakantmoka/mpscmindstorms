@@ -5,10 +5,12 @@ package med.components.behavior;
 import jetbrains.mps.smodel.SNode;
 import java.util.List;
 import java.util.ArrayList;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.ISelector;
 
 public class Component_Behavior {
   public static void init(SNode thisNode) {
@@ -16,7 +18,7 @@ public class Component_Behavior {
 
   public static List<SNode> call_allProcedures_2739617086186422653(SNode thisNode) {
     List<SNode> res = new ArrayList<SNode>();
-    for (SNode p : ListSequence.fromList(SLinkOperations.getTargets(thisNode, "ports", true)).where(new IWhereFilter<SNode>() {
+    for (SNode p : Sequence.fromIterable(Component_Behavior.call_proceduralPorts_1265321504638808144(thisNode)).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return SNodeOperations.isInstanceOf(it, "med.components.structure.ProvidedPort");
       }
@@ -27,7 +29,7 @@ public class Component_Behavior {
   }
 
   public static SNode call_portForInterface_2739617086196425897(SNode thisNode, final SNode intf) {
-    return SNodeOperations.cast(ListSequence.fromList(SLinkOperations.getTargets(thisNode, "ports", true)).where(new IWhereFilter<SNode>() {
+    return SNodeOperations.cast(Sequence.fromIterable(Component_Behavior.call_proceduralPorts_1265321504638808144(thisNode)).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return SNodeOperations.isInstanceOf(it, "med.components.structure.ProvidedPort");
       }
@@ -36,5 +38,17 @@ public class Component_Behavior {
         return SLinkOperations.getTarget(it, "interface", false) == intf;
       }
     }).first(), "med.components.structure.ProvidedPort");
+  }
+
+  public static Iterable<SNode> call_proceduralPorts_1265321504638808144(SNode thisNode) {
+    return ListSequence.fromList(SLinkOperations.getTargets(thisNode, "ports", true)).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SNodeOperations.isInstanceOf(it, "med.components.structure.ProceduralPort");
+      }
+    }).select(new ISelector<SNode, SNode>() {
+      public SNode select(SNode it) {
+        return SNodeOperations.cast(it, "med.components.structure.ProceduralPort");
+      }
+    });
   }
 }

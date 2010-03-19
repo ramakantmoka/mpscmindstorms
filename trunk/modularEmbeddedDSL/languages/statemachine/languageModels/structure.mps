@@ -102,11 +102,11 @@
       <property name="sourceCardinality" value="1" />
       <link role="target" targetNodeId="6254144863182652343" resolveInfo="State" />
     </node>
-    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="6254144863182768326">
-      <property name="metaClass" value="reference" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="1265321504640783508">
+      <property name="metaClass" value="aggregation" />
       <property name="role" value="trigger" />
       <property name="sourceCardinality" value="1" />
-      <link role="target" targetNodeId="6254144863182652345" resolveInfo="Event" />
+      <link role="target" targetNodeId="1265321504640783486" resolveInfo="Trigger" />
     </node>
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="6556431234482161760">
       <property name="metaClass" value="aggregation" />
@@ -240,6 +240,25 @@
     <property name="package" value="machine" />
     <property name="name" value="ExitAction" />
     <link role="extends" targetNodeId="6556431234483356404" resolveInfo="Action" />
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="1265321504640783486">
+    <property name="package" value="machine" />
+    <property name="name" value="Trigger" />
+    <link role="extends" targetNodeId="2v.3577454086729990666" resolveInfo="MedBase" />
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.BooleanConceptProperty" id="1265321504640783487">
+      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473854053" resolveInfo="abstract" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="1265321504640783488">
+    <property name="package" value="machine" />
+    <property name="name" value="EventTrigger" />
+    <link role="extends" targetNodeId="1265321504640783486" resolveInfo="Trigger" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="1265321504640783489">
+      <property name="metaClass" value="reference" />
+      <property name="role" value="event" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="6254144863182652345" resolveInfo="Event" />
+    </node>
   </node>
 </model>
 

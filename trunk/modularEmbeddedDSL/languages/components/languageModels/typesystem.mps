@@ -29,10 +29,10 @@
   <languageAspect modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" version="9" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590575(jetbrains.mps.gtext.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590328(jetbrains.mps.baseLanguage.collections.constraints)" version="6" />
-  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="1" />
+  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="2" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="1" />
-  <import index="1" modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="1" />
+  <import index="1" modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="2" />
   <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="2739617086189104541">
     <property name="name" value="typeof_InterfaceProcParameterReference" />
     <property name="package" value="implementation" />
@@ -64,7 +64,8 @@
       <link role="concept" targetNodeId="1.2739617086187690948" resolveInfo="InterfaceProcParameterReference" />
     </node>
   </node>
-  <visible index="2" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+  <visible index="2" modelUID="r:d410d4fe-3f1c-4b6c-ba11-ccec429fec9b(med.components.behavior)" />
+  <visible index="3" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <node type="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" id="2739617086193995925">
     <property name="name" value="onlyOnePPPerInterface" />
     <property name="package" value="component" />
@@ -90,8 +91,8 @@
                       </node>
                     </node>
                   </node>
-                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkListAccess" id="2739617086194019849">
-                    <link role="link" targetNodeId="1.2739617086185933041" />
+                  <node role="operation" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" id="1265321504638883833">
+                    <link role="baseMethodDeclaration" targetNodeId="2v.1265321504638808144" resolveInfo="proceduralPorts" />
                   </node>
                 </node>
                 <node role="operation" type="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" id="2739617086194090196">
@@ -165,7 +166,7 @@
                   <link role="applicableNode" targetNodeId="2739617086193995928" resolveInfo="providedPort" />
                 </node>
                 <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="2739617086194095623">
-                  <link role="property" targetNodeId="2v.1169194664001" resolveInfo="name" />
+                  <link role="property" targetNodeId="3v.1169194664001" resolveInfo="name" />
                 </node>
               </node>
             </node>
@@ -492,7 +493,7 @@
       <link role="concept" targetNodeId="1.2739617086186398163" resolveInfo="InterfaceProcedureImplementation" />
     </node>
   </node>
-  <visible index="3" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
+  <visible index="4" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
   <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="361440579109131626">
     <property name="name" value="typeof_InterfaceProcedure" />
     <property name="package" value="interface" />
@@ -505,7 +506,7 @@
                 <link role="applicableNode" targetNodeId="361440579109131628" resolveInfo="procedure" />
               </node>
               <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="361440579109131645">
-                <link role="link" targetNodeId="3v.306587673256793454" />
+                <link role="link" targetNodeId="4v.306587673256793454" />
               </node>
             </node>
           </node>

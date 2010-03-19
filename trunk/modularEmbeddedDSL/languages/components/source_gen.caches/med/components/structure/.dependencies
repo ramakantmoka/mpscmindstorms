@@ -8,7 +8,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
-    <classNode dependClassName="med.components.structure.ProceduralPort" />
+    <classNode dependClassName="med.components.structure.Port" />
     <classNode dependClassName="med.core.structure.IDocumentable" />
     <classNode dependClassName="med.core.structure.IExportableModuleContent" />
     <classNode dependClassName="med.core.structure.IHasIdentifierName" />
@@ -34,7 +34,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode dependClassName="med.components.structure.Component" />
-    <classNode dependClassName="med.components.structure.InterfaceProcedureImplementation" />
+    <classNode dependClassName="med.components.structure.IComponentImplContent" />
     <classNode dependClassName="med.core.structure.IDocumentable" />
     <classNode dependClassName="med.core.structure.IExportableModuleContent" />
     <classNode dependClassName="med.core.structure.IHasIdentifierName" />
@@ -54,6 +54,18 @@
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode dependClassName="med.components.structure.WiringScope" />
     <classNode extendsClassName="jetbrains.mps.lang.core.structure.BaseConcept" />
+  </dependency>
+  <dependency className="med.components.structure.IComponentImplContent">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="jetbrains.mps.smodel.INodeAdapter" />
+  </dependency>
+  <dependency className="med.components.structure.IProvided">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="jetbrains.mps.smodel.INodeAdapter" />
+  </dependency>
+  <dependency className="med.components.structure.IRequired">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="jetbrains.mps.smodel.INodeAdapter" />
   </dependency>
   <dependency className="med.components.structure.Interface">
     <classNode dependClassName="java.lang.String" />
@@ -108,6 +120,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="med.components.structure.IComponentImplContent" />
     <classNode dependClassName="med.components.structure.InterfaceProcedure" />
     <classNode dependClassName="med.core.structure.IReturnable" />
     <classNode dependClassName="med.core.structure.MedBase" />
@@ -122,6 +135,16 @@
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode dependClassName="med.components.structure.Interface" />
     <classNode dependClassName="med.core.structure.Type" />
+    <classNode extendsClassName="jetbrains.mps.lang.core.structure.BaseConcept" />
+  </dependency>
+  <dependency className="med.components.structure.Port">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.project.GlobalScope" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModel" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="med.core.structure.IHasIdentifierName" />
+    <classNode dependClassName="med.core.structure.MedBase" />
     <classNode extendsClassName="jetbrains.mps.lang.core.structure.BaseConcept" />
   </dependency>
   <dependency className="med.components.structure.PortAdapterExpression">
@@ -175,8 +198,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode dependClassName="med.components.structure.Interface" />
-    <classNode dependClassName="med.core.structure.IHasIdentifierName" />
-    <classNode dependClassName="med.core.structure.MedBase" />
+    <classNode dependClassName="med.components.structure.Port" />
     <classNode extendsClassName="jetbrains.mps.lang.core.structure.BaseConcept" />
   </dependency>
   <dependency className="med.components.structure.ProvidedPort">
@@ -185,6 +207,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="med.components.structure.IProvided" />
     <classNode dependClassName="med.components.structure.ProceduralPort" />
     <classNode extendsClassName="jetbrains.mps.lang.core.structure.BaseConcept" />
   </dependency>
@@ -194,6 +217,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.SModel" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="med.components.structure.IRequired" />
     <classNode dependClassName="med.components.structure.ProceduralPort" />
     <classNode extendsClassName="jetbrains.mps.lang.core.structure.BaseConcept" />
   </dependency>

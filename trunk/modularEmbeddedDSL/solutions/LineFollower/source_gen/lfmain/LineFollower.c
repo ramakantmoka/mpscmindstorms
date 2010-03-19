@@ -9,8 +9,8 @@
 #include "include/LineFollower.h"
 
 // used resources
-#include "ecrobot_interface.h"
 #include "bitdata.h"
+#include "ecrobot_interface.h"
 #include "kernel.h"
 
 // custom includes
@@ -43,6 +43,11 @@ void LineFollower_main_linefollower_execute(int event) {
 void ecrobot_device_initialize(){
     ecrobot_set_light_sensor_active (NXT_PORT_S1 );
     LineFollower_main_linefollower_execute (EVENT_INITIALIZED );
+
+}
+
+void ecrobot_device_terminate(){
+    ecrobot_set_light_sensor_inactive (NXT_PORT_S1 );
 
 }
 

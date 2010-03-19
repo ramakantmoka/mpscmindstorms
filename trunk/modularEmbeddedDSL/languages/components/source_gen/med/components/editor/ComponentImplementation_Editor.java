@@ -142,9 +142,9 @@ public class ComponentImplementation_Editor extends DefaultNodeEditor {
   }
 
   private EditorCell createRefNodeList_6387_0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new ComponentImplementation_Editor.procedureImplsListHandler_6387_0(node, "procedureImpls", editorContext);
+    AbstractCellListHandler handler = new ComponentImplementation_Editor.contentsListHandler_6387_0(node, "contents", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Vertical(), false);
-    editorCell.setCellId("refNodeList_procedureImpls");
+    editorCell.setCellId("refNodeList_contents");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
@@ -227,8 +227,8 @@ public class ComponentImplementation_Editor extends DefaultNodeEditor {
     }
   }
 
-  private static class procedureImplsListHandler_6387_0 extends RefNodeListHandler {
-    public procedureImplsListHandler_6387_0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class contentsListHandler_6387_0 extends RefNodeListHandler {
+    public contentsListHandler_6387_0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 

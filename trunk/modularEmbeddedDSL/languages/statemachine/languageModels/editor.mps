@@ -230,16 +230,10 @@
     <property name="package" value="machine" />
     <link role="conceptDeclaration" targetNodeId="1.6254144863182652344" resolveInfo="Transition" />
     <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="6254144863182652757">
-      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="6254144863182652760">
-        <link role="relationDeclaration" targetNodeId="1.6254144863182768326" />
-        <node role="editorComponent" type="jetbrains.mps.lang.editor.structure.InlineEditorComponent" id="6254144863182652761">
-          <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="6254144863182652763">
-            <property name="readOnly" value="true" />
-            <link role="relationDeclaration" targetNodeId="2v.1169194664001" resolveInfo="name" />
-          </node>
-        </node>
-      </node>
       <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="6254144863182652759" />
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="1265321504640783510">
+        <link role="relationDeclaration" targetNodeId="1.1265321504640783508" />
+      </node>
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Constant" id="6556431234482152820">
         <property name="text" value="[" />
         <node role="styleItem" type="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" id="6556431234482153142">
@@ -468,6 +462,19 @@
       <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent" id="5231257431511773230" />
       <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode" id="5231257431511773231">
         <link role="relationDeclaration" targetNodeId="1.6556431234483356434" />
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="1265321504640783490">
+    <property name="package" value="machine" />
+    <link role="conceptDeclaration" targetNodeId="1.1265321504640783488" resolveInfo="EventTrigger" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_RefCell" id="1265321504640783492">
+      <link role="relationDeclaration" targetNodeId="1.1265321504640783489" />
+      <node role="editorComponent" type="jetbrains.mps.lang.editor.structure.InlineEditorComponent" id="1265321504640783493">
+        <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="1265321504640783495">
+          <property name="readOnly" value="true" />
+          <link role="relationDeclaration" targetNodeId="2v.1169194664001" resolveInfo="name" />
+        </node>
       </node>
     </node>
   </node>

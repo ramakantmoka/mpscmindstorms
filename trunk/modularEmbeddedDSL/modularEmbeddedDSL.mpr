@@ -15,6 +15,7 @@
       <solutionPath path="${project}/solutions/tabletest/tabletest.msd" folder="util" />
       <solutionPath path="${project}/solutions/StructureFeatureTest/StructureFeatureTest.msd" folder="_samples" />
       <solutionPath path="${project}/solutions/Bluetooth/bluetooth.msd" folder="_samples" />
+      <solutionPath path="${project}/solutions/MessageComponents/MessageComponents.msd" folder="_samples" />
     </projectSolutions>
     <projectLanguages>
       <languagePath path="${project}/languages/bitdata/bitdata.mpl" folder="med" />
@@ -34,6 +35,7 @@
       <languagePath path="${project}/languages/components/components.mpl" folder="med" />
       <languagePath path="${project}/languages/editor/editor.mpl" folder="util" />
       <languagePath path="${project}/languages/editortest/editortest.mpl" folder="util" />
+      <languagePath path="${project}/languages/componentsevents/componentsevents.mpl" folder="med" />
     </projectLanguages>
     <projectDevkits>
       <devkitPath path="${project}/devkits/ModularEmbeddedDSL/ModularEmbeddedDSL.devkit" folder="med" />

@@ -9,7 +9,7 @@
   <language namespace="6f39da53-777c-4426-896e-bf1ddfbf16dc(med.requirements)" />
   <language namespace="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" />
   <language namespace="383209c5-49eb-4560-9027-f906632589d6(med.unittest)" />
-  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="1" />
+  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="2" />
   <languageAspect modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" version="9" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590571(jetbrains.mps.gtext.constraints)" version="8" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590575(jetbrains.mps.gtext.structure)" version="0" />
@@ -280,7 +280,7 @@
             </node>
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350458">
+        <node role="contents" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350458">
           <link role="procedure" targetNodeId="2739617086195939392" resolveInfo="setRightSpeed" />
           <node role="body" type="med.core.structure.StatementList" id="7678656588252350459">
             <node role="statements" type="med.core.structure.ExpressionStatement" id="7678656588252350460">
@@ -299,7 +299,7 @@
             </node>
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350465">
+        <node role="contents" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350465">
           <link role="procedure" targetNodeId="2739617086195939388" resolveInfo="setLeftSpeed" />
           <node role="body" type="med.core.structure.StatementList" id="7678656588252350466">
             <node role="statements" type="med.core.structure.ExpressionStatement" id="7678656588252350467">
@@ -318,7 +318,7 @@
             </node>
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350472">
+        <node role="contents" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350472">
           <link role="procedure" targetNodeId="2739617086195939386" resolveInfo="stop" />
           <node role="body" type="med.core.structure.StatementList" id="7678656588252350473">
             <node role="statements" type="med.core.structure.OneLineCommetStatement" id="8949829907855647610">
@@ -405,7 +405,7 @@
             <link role="feature" targetNodeId="8017499479424103542" resolveInfo="testing" />
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350423">
+        <node role="contents" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350423">
           <link role="procedure" targetNodeId="2739617086195939386" resolveInfo="stop" />
           <node role="body" type="med.core.structure.StatementList" id="7678656588252350424">
             <node role="statements" type="med.core.structure.AssignmentStatement" id="7678656588252350431">
@@ -426,7 +426,7 @@
             </node>
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350425">
+        <node role="contents" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350425">
           <link role="procedure" targetNodeId="2739617086195939388" resolveInfo="setLeftSpeed" />
           <node role="body" type="med.core.structure.StatementList" id="7678656588252350426">
             <node role="statements" type="med.core.structure.AssignmentStatement" id="7678656588252350446">
@@ -439,7 +439,7 @@
             </node>
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350427">
+        <node role="contents" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350427">
           <link role="procedure" targetNodeId="2739617086195939392" resolveInfo="setRightSpeed" />
           <node role="body" type="med.core.structure.StatementList" id="7678656588252350428">
             <node role="statements" type="med.core.structure.AssignmentStatement" id="7678656588252350453">
@@ -463,7 +463,7 @@
             <link role="feature" targetNodeId="8017499479424103542" resolveInfo="testing" />
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350415">
+        <node role="contents" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350415">
           <link role="procedure" targetNodeId="2739617086195939397" resolveInfo="leftSpeed" />
           <node role="body" type="med.core.structure.StatementList" id="7678656588252350416">
             <node role="statements" type="med.core.structure.ReturnStatement" id="7678656588252350419">
@@ -473,7 +473,7 @@
             </node>
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350417">
+        <node role="contents" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350417">
           <link role="procedure" targetNodeId="2739617086195939399" resolveInfo="rightSpeed" />
           <node role="body" type="med.core.structure.StatementList" id="7678656588252350418">
             <node role="statements" type="med.core.structure.ReturnStatement" id="7678656588252350421">
@@ -532,7 +532,7 @@
         <property name="name" value="LightSensorNXT" />
         <property name="export" value="true" />
         <link role="componentType" targetNodeId="8017499479427662363" resolveInfo="LightSensor" />
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350398">
+        <node role="contents" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350398">
           <link role="procedure" targetNodeId="8017499479427662359" resolveInfo="lightValue" />
           <node role="body" type="med.core.structure.StatementList" id="7678656588252350399">
             <node role="statements" type="med.core.structure.ReturnStatement" id="7678656588252350407">
@@ -545,7 +545,7 @@
             </node>
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350410">
+        <node role="contents" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350410">
           <link role="procedure" targetNodeId="8017499479427973200" resolveInfo="init" />
           <node role="body" type="med.core.structure.StatementList" id="7678656588252350411">
             <node role="statements" type="med.core.structure.ExpressionStatement" id="7678656588252350412">
@@ -570,7 +570,7 @@
         <property name="name" value="LightSensorMock" />
         <property name="export" value="true" />
         <link role="componentType" targetNodeId="8017499479427662386" resolveInfo="LightSensorMock" />
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350369">
+        <node role="contents" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350369">
           <link role="procedure" targetNodeId="8017499479427662381" resolveInfo="setLight" />
           <node role="body" type="med.core.structure.StatementList" id="7678656588252350370">
             <node role="statements" type="med.core.structure.AssignmentStatement" id="7678656588252350377">
@@ -583,7 +583,7 @@
             </node>
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350371">
+        <node role="contents" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350371">
           <link role="procedure" targetNodeId="8017499479427973200" resolveInfo="init" />
           <node role="body" type="med.core.structure.StatementList" id="7678656588252350372">
             <node role="statements" type="med.core.structure.AssignmentStatement" id="7678656588252350386">
@@ -596,7 +596,7 @@
             </node>
           </node>
         </node>
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350373">
+        <node role="contents" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588252350373">
           <link role="procedure" targetNodeId="8017499479427662359" resolveInfo="lightValue" />
           <node role="body" type="med.core.structure.StatementList" id="7678656588252350374">
             <node role="statements" type="med.core.structure.ReturnStatement" id="7678656588252350391">
@@ -633,7 +633,7 @@
       <node role="contents" type="med.components.structure.ComponentImplementation" id="7678656588251813736">
         <property name="name" value="LogTracer" />
         <link role="componentType" targetNodeId="7678656588251813733" resolveInfo="Tracer" />
-        <node role="procedureImpls" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588251813737">
+        <node role="contents" type="med.components.structure.InterfaceProcedureImplementation" id="7678656588251813737">
           <link role="procedure" targetNodeId="7678656588247982991" resolveInfo="motors" />
           <node role="body" type="med.core.structure.StatementList" id="7678656588251813738">
             <node role="statements" type="med.logging.structure.LogStatement" id="7678656588251813739">

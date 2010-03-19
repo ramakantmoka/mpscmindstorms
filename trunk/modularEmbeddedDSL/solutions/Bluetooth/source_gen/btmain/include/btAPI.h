@@ -9,6 +9,7 @@
 
 // custom includes for header
 #include "stdint.h"
+#include "stdint.h"
 
 
 void btAPI_api_BlueToothNXT_init(void);

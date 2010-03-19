@@ -691,6 +691,9 @@
                 </node>
               </node>
             </node>
+            <node role="trigger" type="med.statemachine.structure.EventTrigger" id="1265321504641200376">
+              <link role="event" targetNodeId="6556431234483256380" resolveInfo="timer" />
+            </node>
           </node>
           <node role="transitions" type="med.statemachine.structure.Transition" id="5231257431510517656">
             <link role="trigger" targetNodeId="6556431234483256380" resolveInfo="timer" />
@@ -760,6 +763,9 @@
                   </node>
                 </node>
               </node>
+            </node>
+            <node role="trigger" type="med.statemachine.structure.EventTrigger" id="1265321504641200377">
+              <link role="event" targetNodeId="6556431234483256380" resolveInfo="timer" />
             </node>
           </node>
           <node role="transitions" type="med.statemachine.structure.Transition" id="5231257431511342769">
@@ -852,6 +858,9 @@
                   </node>
                 </node>
               </node>
+            </node>
+            <node role="trigger" type="med.statemachine.structure.EventTrigger" id="1265321504641200378">
+              <link role="event" targetNodeId="6556431234483256380" resolveInfo="timer" />
             </node>
           </node>
           <node role="exit" type="med.statemachine.structure.ExitAction" id="5231257431512122738">
@@ -955,6 +964,9 @@
                   </node>
                 </node>
               </node>
+            </node>
+            <node role="trigger" type="med.statemachine.structure.EventTrigger" id="1265321504641200379">
+              <link role="event" targetNodeId="6556431234483256380" resolveInfo="timer" />
             </node>
           </node>
         </node>

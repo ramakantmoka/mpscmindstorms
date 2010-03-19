@@ -8,6 +8,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
 public class RequiredPortProcedureCall_Constraints {
   public static boolean canBeAChild(final IOperationContext operationContext, final CanBeAChildContext _context) {
-    return (SNodeOperations.getAncestor(_context.getParentNode(), "med.components.structure.InterfaceProcedureImplementation", true, false) != null);
+    return (SNodeOperations.getAncestor(_context.getParentNode(), "med.components.structure.ComponentImplementation", true, false) != null);
   }
 }

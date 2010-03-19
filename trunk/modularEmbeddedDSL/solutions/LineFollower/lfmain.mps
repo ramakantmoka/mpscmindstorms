@@ -119,6 +119,9 @@
             <link role="trigger" targetNodeId="6790227271038924454" resolveInfo="initialized" />
             <link role="target" targetNodeId="6790227271038924457" resolveInfo="running" />
             <node role="guard" type="med.core.structure.TrueLiteral" id="8017499479426260557" />
+            <node role="trigger" type="med.statemachine.structure.EventTrigger" id="1265321504640799746">
+              <link role="event" targetNodeId="6790227271038924454" resolveInfo="initialized" />
+            </node>
           </node>
         </node>
         <node role="states" type="med.statemachine.structure.State" id="6821937377367976832">
@@ -127,6 +130,9 @@
             <link role="trigger" targetNodeId="6821937377367976841" resolveInfo="unblocked" />
             <link role="target" targetNodeId="6790227271038924457" resolveInfo="running" />
             <node role="guard" type="med.core.structure.TrueLiteral" id="6821937377367976840" />
+            <node role="trigger" type="med.statemachine.structure.EventTrigger" id="1265321504640799747">
+              <link role="event" targetNodeId="6821937377367976841" resolveInfo="unblocked" />
+            </node>
           </node>
           <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="2644792117219870808">
             <property name="isNew" value="false" />
@@ -148,6 +154,9 @@
                 <link role="feature" targetNodeId="5296414764970271815" resolveInfo="sonar" />
               </node>
             </node>
+            <node role="trigger" type="med.statemachine.structure.EventTrigger" id="1265321504640799748">
+              <link role="event" targetNodeId="6821937377367976827" resolveInfo="blocked" />
+            </node>
           </node>
           <node role="transitions" type="med.statemachine.structure.Transition" id="5296414764970022304">
             <link role="trigger" targetNodeId="5296414764970022303" resolveInfo="bumped" />
@@ -158,6 +167,9 @@
               <node role="expression" type="med.features.structure.AtomicFE" id="4737589258920317591">
                 <link role="feature" targetNodeId="7680622939174614997" resolveInfo="bumper" />
               </node>
+            </node>
+            <node role="trigger" type="med.statemachine.structure.EventTrigger" id="1265321504640799749">
+              <link role="event" targetNodeId="5296414764970022303" resolveInfo="bumped" />
             </node>
           </node>
         </node>
