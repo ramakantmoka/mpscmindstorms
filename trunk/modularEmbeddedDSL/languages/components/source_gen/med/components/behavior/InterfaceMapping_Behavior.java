@@ -9,4 +9,11 @@ public class InterfaceMapping_Behavior {
   public static void init(SNode thisNode) {
     SLinkOperations.setNewChild(thisNode, "scope", "med.components.structure.GlobalWiringScope");
   }
+
+  public static boolean call_isApplicableFor_5224308508846650521(SNode thisNode, SNode impl, SNode intf) {
+    if (SLinkOperations.getTarget(thisNode, "interface", false) == intf) {
+      return true;
+    }
+    return false;
+  }
 }
