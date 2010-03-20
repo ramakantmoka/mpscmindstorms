@@ -4,6 +4,14 @@ package med.core.behavior;
 
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import java.util.List;
+import java.util.ArrayList;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.internal.collections.runtime.ISelector;
 
 public class System_Behavior {
   public static void init(SNode thisNode) {
@@ -11,5 +19,26 @@ public class System_Behavior {
 
   public static String call_mainFileName_949868933177289298(SNode thisNode) {
     return "system_main_" + SPropertyOperations.getString(thisNode, "name");
+  }
+
+  public static Iterable<SNode> call_allModules_5224308508845868067(SNode thisNode) {
+    List<SNode> res = new ArrayList<SNode>();
+    for (SNode rr : ListSequence.fromList(SLinkOperations.getTargets(thisNode, "resources", true))) {
+      SNode r = SLinkOperations.getTarget(rr, "resource", false);
+      ListSequence.fromList(res).addSequence(ListSequence.fromList(SLinkOperations.getTargets(r, "modules", true)));
+    }
+    return res;
+  }
+
+  public static Iterable<SNode> call_allImplementationModules_5224308508845870421(SNode thisNode) {
+    return Sequence.fromIterable(System_Behavior.call_allModules_5224308508845868067(thisNode)).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SNodeOperations.isInstanceOf(it, "med.core.structure.ImplementationModule");
+      }
+    }).select(new ISelector<SNode, SNode>() {
+      public SNode select(SNode it) {
+        return SNodeOperations.cast(it, "med.core.structure.ImplementationModule");
+      }
+    });
   }
 }

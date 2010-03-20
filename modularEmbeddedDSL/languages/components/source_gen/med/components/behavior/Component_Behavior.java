@@ -11,6 +11,9 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ISelector;
+import java.util.Set;
+import jetbrains.mps.internal.collections.runtime.SetSequence;
+import java.util.HashSet;
 
 public class Component_Behavior {
   public static void init(SNode thisNode) {
@@ -62,6 +65,14 @@ public class Component_Behavior {
         return SNodeOperations.cast(it, "med.components.structure.RequiredPort");
       }
     });
+  }
+
+  public static Iterable<SNode> call_requiredInterfaces_5224308508845871101(SNode thisNode) {
+    Set<SNode> res = SetSequence.fromSet(new HashSet<SNode>());
+    for (SNode p : Sequence.fromIterable(Component_Behavior.call_requiredPorts_1265321504642950406(thisNode))) {
+      SetSequence.fromSet(res).addElement(SLinkOperations.getTarget(p, "interface", false));
+    }
+    return res;
   }
 
   public static Iterable<SNode> call_providedPorts_1265321504642950652(SNode thisNode) {
