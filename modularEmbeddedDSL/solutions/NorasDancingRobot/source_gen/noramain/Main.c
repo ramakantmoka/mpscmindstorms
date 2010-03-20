@@ -22,7 +22,7 @@ void Main_robormain_steuerung_execute(int event) {
         
     if ( Main_robormain_steuerung_currentstate == STATE_INIT) {
                 
-      if ( event == EVENT_TIMEOUT) {
+      if ( event == ) {
                       
         if ( 1) {
                   Main_robormain_steuerung_currentstate = STATE_TURNINGLEFT;
@@ -39,7 +39,7 @@ void Main_robormain_steuerung_execute(int event) {
         
     if ( Main_robormain_steuerung_currentstate == STATE_TURNINGLEFT) {
                 
-      if ( event == EVENT_TIMEOUT) {
+      if ( event == ) {
                       
         if ( 1) {
                   Main_robormain_steuerung_currentstate = STATE_TURNINGRIGHT;
@@ -56,7 +56,7 @@ void Main_robormain_steuerung_execute(int event) {
         
     if ( Main_robormain_steuerung_currentstate == STATE_TURNINGRIGHT) {
                 
-      if ( event == EVENT_TIMEOUT) {
+      if ( event == ) {
                       
         if ( (Main_robormain_i < 3)) {
                   Main_robormain_steuerung_currentstate = STATE_TURNINGLEFT;
@@ -68,7 +68,7 @@ void Main_robormain_steuerung_execute(int event) {
       } // end if 
 
             
-      if ( event == EVENT_TIMEOUT) {
+      if ( event == ) {
                       
         if ( Main_robormain_i == 3) {
                   Main_robormain_steuerung_currentstate = STATE_END;

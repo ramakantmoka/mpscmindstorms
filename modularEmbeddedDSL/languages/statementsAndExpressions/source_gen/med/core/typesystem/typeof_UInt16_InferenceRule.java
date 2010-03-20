@@ -18,7 +18,7 @@ public class typeof_UInt16_InferenceRule extends AbstractInferenceRule_Runtime i
     {
       SNode _nodeToCheck_1029348928467 = uInt16;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "2420527669696024003", true), (SNode)SNodeOperations.copyNode(uInt16), _nodeToCheck_1029348928467, null, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "2420527669696024006", intentionProvider);
+      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "2420527669696024003", true), (SNode)SNodeOperations.copyNode(uInt16), _nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "2420527669696024006", intentionProvider);
     }
   }
 

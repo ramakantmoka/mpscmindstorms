@@ -62,6 +62,8 @@
     <classNode dependClassName="med.components.constraints.InterfaceProcedureImplementation_procedure_ReferentConstraint" />
     <classNode dependClassName="med.components.constraints.PortAdapterExpression_portAdaptor_ReferentConstraint" />
     <classNode dependClassName="med.components.constraints.PortAdaptor_interface_ReferentConstraint" />
+    <classNode dependClassName="med.components.constraints.PortForwarder_provided_ReferentConstraint" />
+    <classNode dependClassName="med.components.constraints.PortForwarder_required_ReferentConstraint" />
     <classNode dependClassName="med.components.constraints.PortProcedureCall_procedure_ReferentConstraint" />
     <classNode dependClassName="med.components.constraints.ProceduralPort_interface_ReferentConstraint" />
     <classNode dependClassName="med.components.constraints.RequiredPortExpression_port_ReferentConstraint" />
@@ -123,6 +125,31 @@
     <classNode dependClassName="jetbrains.mps.smodel.constraints.ModelConstraintsManager" />
     <classNode dependClassName="jetbrains.mps.smodel.constraints.ReferentConstraintContext" />
     <classNode dependClassName="med.core.behavior.ImplementationModule_Behavior" />
+    <classNode extendsClassName="jetbrains.mps.smodel.constraints.BaseNodeReferenceSearchScopeProvider" />
+    <classNode extendsClassName="jetbrains.mps.smodel.constraints.IModelConstraints" />
+  </dependency>
+  <dependency className="med.components.constraints.PortForwarder_provided_ReferentConstraint">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.smodel.constraints.ModelConstraintsManager" />
+    <classNode dependClassName="jetbrains.mps.smodel.constraints.ReferentConstraintContext" />
+    <classNode dependClassName="med.components.behavior.Component_Behavior" />
+    <classNode extendsClassName="jetbrains.mps.smodel.constraints.BaseNodeReferenceSearchScopeProvider" />
+    <classNode extendsClassName="jetbrains.mps.smodel.constraints.IModelConstraints" />
+  </dependency>
+  <dependency className="med.components.constraints.PortForwarder_required_ReferentConstraint">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNode" />
+    <classNode dependClassName="jetbrains.mps.smodel.constraints.ModelConstraintsManager" />
+    <classNode dependClassName="jetbrains.mps.smodel.constraints.ReferentConstraintContext" />
+    <classNode dependClassName="med.components.behavior.Component_Behavior" />
     <classNode extendsClassName="jetbrains.mps.smodel.constraints.BaseNodeReferenceSearchScopeProvider" />
     <classNode extendsClassName="jetbrains.mps.smodel.constraints.IModelConstraints" />
   </dependency>

@@ -15,6 +15,7 @@ public class ConstraintsDescriptor implements IModelConstraints {
     ListSequence.fromList(this.myConstraints).addElement(new MessageTrigger_message_ReferentConstraint());
     ListSequence.fromList(this.myConstraints).addElement(new SendMessage_message_ReferentConstraint());
     ListSequence.fromList(this.myConstraints).addElement(new SendMessage_port_ReferentConstraint());
+    ListSequence.fromList(this.myConstraints).addElement(new MessageHandler_message_ReferentConstraint());
   }
 
   public void unRegisterSelf(ModelConstraintsManager p0) {

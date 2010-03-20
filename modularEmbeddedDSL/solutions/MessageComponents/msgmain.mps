@@ -6,8 +6,8 @@
   <language namespace="3a8b8671-1532-4e8f-b780-594a27fa10c8(med.core)" />
   <language namespace="0b76d494-4082-4599-8da8-7c40cc7aa186(med.components)" />
   <language namespace="98178bb4-0742-4461-bea6-9fc251a502fa(med.statemachine)" />
-  <languageAspect modelUID="r:e7c729bb-8ece-4846-aa87-139f606992fb(med.messagecomponents.structure)" version="1" />
-  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="2" />
+  <languageAspect modelUID="r:e7c729bb-8ece-4846-aa87-139f606992fb(med.messagecomponents.structure)" version="3" />
+  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="3" />
   <languageAspect modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" version="9" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590571(jetbrains.mps.gtext.constraints)" version="8" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590575(jetbrains.mps.gtext.structure)" version="0" />
@@ -133,52 +133,27 @@
       <node role="contents" type="med.components.structure.ComponentImplementation" id="1265321504642280301">
         <property name="name" value="DisplayImpl" />
         <link role="componentType" targetNodeId="1265321504641738617" resolveInfo="Display" />
-        <node role="contents" type="med.messagecomponents.structure.StatemachineAdapter" id="1265321504642280302">
-          <node role="machine" type="med.statemachine.structure.Statemachine" id="1265321504642280303">
-            <property name="name" value="machine" />
-            <node role="states" type="med.statemachine.structure.State" id="1265321504642280304">
-              <property name="name" value="off" />
-              <property name="initial" value="true" />
-              <node role="transitions" type="med.statemachine.structure.Transition" id="1265321504642280306">
-                <link role="target" targetNodeId="1265321504642280305" resolveInfo="on" />
-                <node role="guard" type="med.core.structure.TrueLiteral" id="1265321504642280307" />
-                <node role="trigger" type="med.messagecomponents.structure.MessageTrigger" id="1265321504642280309">
-                  <link role="message" targetNodeId="1265321504641734918" resolveInfo="turnOnLight" />
-                </node>
-              </node>
-              <node role="entry" type="med.statemachine.structure.EntryAction" id="1265321504642280314">
-                <node role="body" type="med.core.structure.StatementList" id="1265321504642280315">
-                  <node role="statements" type="med.core.structure.ExpressionStatement" id="1265321504642280320">
-                    <node role="expression" type="med.components.structure.RequiredPortProcedureCall" id="1265321504642280322">
-                      <link role="procedure" targetNodeId="1265321504642186045" resolveInfo="turnOffLight" />
-                      <node role="portExpression" type="med.components.structure.RequiredPortExpression" id="1265321504642280321">
-                        <link role="port" targetNodeId="1265321504642280319" resolveInfo="hardware" />
-                      </node>
-                    </node>
-                  </node>
+        <node role="contents" type="med.messagecomponents.structure.MessageHandler" id="1265321504642657692">
+          <link role="message" targetNodeId="1265321504641734918" resolveInfo="turnOnLight" />
+          <node role="body" type="med.core.structure.StatementList" id="1265321504642657693">
+            <node role="statements" type="med.core.structure.ExpressionStatement" id="1265321504642945321">
+              <node role="expression" type="med.components.structure.RequiredPortProcedureCall" id="1265321504642945323">
+                <link role="procedure" targetNodeId="1265321504642186043" resolveInfo="turnOnLight" />
+                <node role="portExpression" type="med.components.structure.RequiredPortExpression" id="1265321504642945322">
+                  <link role="port" targetNodeId="1265321504642280319" resolveInfo="hardware" />
                 </node>
               </node>
             </node>
-            <node role="states" type="med.statemachine.structure.State" id="1265321504642280305">
-              <property name="name" value="on" />
-              <property name="initial" value="false" />
-              <node role="transitions" type="med.statemachine.structure.Transition" id="1265321504642280310">
-                <link role="target" targetNodeId="1265321504642280304" resolveInfo="off" />
-                <node role="guard" type="med.core.structure.TrueLiteral" id="1265321504642280311" />
-                <node role="trigger" type="med.messagecomponents.structure.MessageTrigger" id="1265321504642280313">
-                  <link role="message" targetNodeId="1265321504642160202" resolveInfo="turnOffLight" />
-                </node>
-              </node>
-              <node role="entry" type="med.statemachine.structure.EntryAction" id="1265321504642280324">
-                <node role="body" type="med.core.structure.StatementList" id="1265321504642280325">
-                  <node role="statements" type="med.core.structure.ExpressionStatement" id="1265321504642280326">
-                    <node role="expression" type="med.components.structure.RequiredPortProcedureCall" id="1265321504642280328">
-                      <link role="procedure" targetNodeId="1265321504642186043" resolveInfo="turnOnLight" />
-                      <node role="portExpression" type="med.components.structure.RequiredPortExpression" id="1265321504642280327">
-                        <link role="port" targetNodeId="1265321504642280319" resolveInfo="hardware" />
-                      </node>
-                    </node>
-                  </node>
+          </node>
+        </node>
+        <node role="contents" type="med.messagecomponents.structure.MessageHandler" id="1265321504642945326">
+          <link role="message" targetNodeId="1265321504642160202" resolveInfo="turnOffLight" />
+          <node role="body" type="med.core.structure.StatementList" id="1265321504642945327">
+            <node role="statements" type="med.core.structure.ExpressionStatement" id="1265321504642945328">
+              <node role="expression" type="med.components.structure.RequiredPortProcedureCall" id="1265321504642945330">
+                <link role="procedure" targetNodeId="1265321504642186045" resolveInfo="turnOffLight" />
+                <node role="portExpression" type="med.components.structure.RequiredPortExpression" id="1265321504642945329">
+                  <link role="port" targetNodeId="1265321504642280319" resolveInfo="hardware" />
                 </node>
               </node>
             </node>

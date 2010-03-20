@@ -705,7 +705,7 @@
   <visible index="5" modelUID="r:486732ea-fa25-442c-bcc8-e948ecd38d94(med.logging.structure)" />
   <node type="jetbrains.mps.lang.generator.structure.MappingConfiguration" id="3454436015655954072">
     <property name="name" value="highPriorityStuff" />
-    <property name="topPriorityGroup" value="true" />
+    <property name="topPriorityGroup" value="false" />
     <node role="rootMappingRule" type="jetbrains.mps.lang.generator.structure.Root_MappingRule" id="3577454086729987477">
       <property name="keepSourceRoot" value="true" />
       <link role="template" targetNodeId="3454436015655311639" resolveInfo="oilfile" />

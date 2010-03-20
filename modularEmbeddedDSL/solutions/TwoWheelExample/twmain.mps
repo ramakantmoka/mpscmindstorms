@@ -15,6 +15,8 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.lang.core.constraints)" version="2" />
   <languageAspect modelUID="r:348a1356-437b-49fe-80d1-3c4453a73611(ds.twowheel.structure)" version="1" />
   <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="4" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959028c(jetbrains.mps.lang.structure.constraints)" version="11" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" />
   <language-engaged-on-generation namespace="150e33c6-372a-4396-b4cc-1c334fb3f438(med.platform.nxtosek)" />
   <devkit namespace="a891e14a-a3d6-466e-8364-4e1b14cbaa06(ModularEmbeddedDSL)" />
   <maxImportIndex value="0" />
@@ -77,7 +79,14 @@
                 <property name="value" value="200" />
               </node>
             </node>
-            <node role="bumpReaction" type="ds.twowheel.structure.StopStatement" id="8949829907856211058" />
+            <node role="bumpReaction" type="ds.twowheel.structure.StopStatement" id="8949829907856211058">
+              <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="5224308508845794823">
+                <property name="isNew" value="true" />
+                <node role="expression" type="med.features.structure.AtomicFE" id="5224308508845794825">
+                  <link role="feature" targetNodeId="5296414764969462393" resolveInfo="reactOnBump" />
+                </node>
+              </node>
+            </node>
           </node>
           <node role="statements" type="ds.twowheel.structure.DriveOnStatement" id="8949829907856211040">
             <node role="time" type="med.core.structure.IntConstantExpression" id="8949829907856211041">
@@ -165,7 +174,7 @@
   <node type="med.features.structure.FeatureDependencyConfiguration" id="6177678091393977964">
     <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="6177678091393977967">
       <property name="name" value="long" />
-      <property name="selected" value="true" />
+      <property name="selected" value="false" />
     </node>
     <node role="features" type="med.features.structure.MacroFeatureDeclaration" id="6177678091393977969">
       <property name="name" value="short" />
@@ -177,7 +186,7 @@
     </node>
     <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="5296414764969462393">
       <property name="name" value="reactOnBump" />
-      <property name="selected" value="true" />
+      <property name="selected" value="false" />
     </node>
     <node role="backup" type="med.features.structure.VariantDisplayMode" id="8949829907856211046">
       <property name="removeNonSelectedStuffInEditor" value="true" />

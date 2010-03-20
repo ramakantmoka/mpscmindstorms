@@ -19,7 +19,72 @@
       <usedDevKits>
         <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
       </usedDevKits>
-      <mapping-priorities />
+      <mapping-priorities>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="5a9075dc-380e-41cb-a166-c29b1245e3c3(med.core#3747647978568410848)" />
+            <external-mapping>
+              <mapping-node modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeID="5196379128667344285" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="5a9075dc-380e-41cb-a166-c29b1245e3c3(med.core#3747647978568410848)" />
+            <external-mapping>
+              <mapping-node modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeID="7527099521004647964" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="5a9075dc-380e-41cb-a166-c29b1245e3c3(med.core#3747647978568410848)" />
+            <external-mapping>
+              <mapping-node modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeID="738757997634179630" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="5a9075dc-380e-41cb-a166-c29b1245e3c3(med.core#3747647978568410848)" />
+            <external-mapping>
+              <mapping-node modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeID="7527099521004647964" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="5a9075dc-380e-41cb-a166-c29b1245e3c3(med.core#3747647978568410848)" />
+            <external-mapping>
+              <mapping-node modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeID="7527099521004647964" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="5a9075dc-380e-41cb-a166-c29b1245e3c3(med.core#3747647978568410848)" />
+            <external-mapping>
+              <mapping-set>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeID="3747647978568410849" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeID="5670427403976777254" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeID="5670427403976779355" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeID="2005811434196937215" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeID="306587673255505661" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeID="3577454086729305706" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeID="6254144863184248664" />
+                </mapping-set-element>
+              </mapping-set>
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+      </mapping-priorities>
     </generator>
   </generators>
   <classPath />

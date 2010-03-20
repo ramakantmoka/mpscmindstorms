@@ -51,4 +51,28 @@ public class Component_Behavior {
       }
     });
   }
+
+  public static Iterable<SNode> call_requiredPorts_1265321504642950406(SNode thisNode) {
+    return Sequence.fromIterable(Component_Behavior.call_proceduralPorts_1265321504638808144(thisNode)).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SNodeOperations.isInstanceOf(it, "med.components.structure.RequiredPort");
+      }
+    }).select(new ISelector<SNode, SNode>() {
+      public SNode select(SNode it) {
+        return SNodeOperations.cast(it, "med.components.structure.RequiredPort");
+      }
+    });
+  }
+
+  public static Iterable<SNode> call_providedPorts_1265321504642950652(SNode thisNode) {
+    return Sequence.fromIterable(Component_Behavior.call_proceduralPorts_1265321504638808144(thisNode)).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SNodeOperations.isInstanceOf(it, "med.components.structure.ProvidedPort");
+      }
+    }).select(new ISelector<SNode, SNode>() {
+      public SNode select(SNode it) {
+        return SNodeOperations.cast(it, "med.components.structure.ProvidedPort");
+      }
+    });
+  }
 }

@@ -48,7 +48,7 @@
   <visible index="2" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
   <node type="jetbrains.mps.lang.generator.structure.MappingConfiguration" id="5580581899346360875">
     <property name="name" value="main" />
-    <property name="topPriorityGroup" value="true" />
+    <property name="topPriorityGroup" value="false" />
     <node role="mappingLabel" type="jetbrains.mps.lang.generator.structure.MappingLabelDeclaration" id="7530832320799568947">
       <property name="name" value="indexVar" />
       <link role="sourceConcept" targetNodeId="2v.6254144863184087909" resolveInfo="ModuleVariable" />

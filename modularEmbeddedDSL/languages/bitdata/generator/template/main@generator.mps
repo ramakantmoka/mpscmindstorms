@@ -42,7 +42,7 @@
   <visible index="2" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
   <node type="jetbrains.mps.lang.generator.structure.MappingConfiguration" id="9105096665975926410">
     <property name="name" value="main" />
-    <property name="topPriorityGroup" value="true" />
+    <property name="topPriorityGroup" value="false" />
     <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="9105096665975935035">
       <link role="applicableConcept" targetNodeId="1.9105096665975813156" resolveInfo="BitPatternType" />
       <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" id="9105096665975935037">

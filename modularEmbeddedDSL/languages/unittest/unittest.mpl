@@ -20,13 +20,13 @@
           <greater-priority-mapping>
             <generator generatorUID="3528d382-fbd5-4950-82fa-aee9c608584b(med.unittest#5174648333271512000)" />
             <external-mapping>
-              <mapping-node modelUID="r:069fb31e-3e9d-4964-8647-dc64108f7723(med.unittest.generator.template.main@generator)" nodeID="5174648333271512001" />
+              <all-local-mappings />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
             <generator generatorUID="5a9075dc-380e-41cb-a166-c29b1245e3c3(med.core#3747647978568410848)" />
             <external-mapping>
-              <mapping-node modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeID="2005811434196937215" />
+              <all-local-mappings />
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
