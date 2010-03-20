@@ -45,7 +45,7 @@
   <visible index="2" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
   <node type="jetbrains.mps.lang.generator.structure.MappingConfiguration" id="6254144863183949059">
     <property name="name" value="main" />
-    <property name="topPriorityGroup" value="true" />
+    <property name="topPriorityGroup" value="false" />
     <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="5231257431511888518">
       <property name="applyToConceptInheritors" value="true" />
       <link role="applicableConcept" targetNodeId="1.6556431234483356404" resolveInfo="Action" />

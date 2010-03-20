@@ -32,6 +32,157 @@
         </entry>
       </conceptFeatureMap>
     </refactoringContext>
+    <refactoringContext modelVersion="3">
+      <refactoring refactoringClass="jetbrains.mps.lang.structure.scripts.MoveConcepts" />
+      <moveMap>
+        <entry>
+          <key modelUID="r:a71fc41b-87c6-4f41-8984-8627e010209b(med.components.constraints)" nodeId="1265321504643101098" />
+          <value modelUID="r:6a19d643-6a1e-42fb-ab72-895847a6757a(med.messagecomponents.constraints)" nodeId="1265321504643161484" />
+        </entry>
+        <entry>
+          <key modelUID="r:a71fc41b-87c6-4f41-8984-8627e010209b(med.components.constraints)" nodeId="1265321504643101099" />
+          <value modelUID="r:6a19d643-6a1e-42fb-ab72-895847a6757a(med.messagecomponents.constraints)" nodeId="1265321504643161485" />
+        </entry>
+        <entry>
+          <key modelUID="r:a71fc41b-87c6-4f41-8984-8627e010209b(med.components.constraints)" nodeId="1265321504643101100" />
+          <value modelUID="r:6a19d643-6a1e-42fb-ab72-895847a6757a(med.messagecomponents.constraints)" nodeId="1265321504643161486" />
+        </entry>
+        <entry>
+          <key modelUID="r:a71fc41b-87c6-4f41-8984-8627e010209b(med.components.constraints)" nodeId="1265321504643101101" />
+          <value modelUID="r:6a19d643-6a1e-42fb-ab72-895847a6757a(med.messagecomponents.constraints)" nodeId="1265321504643161487" />
+        </entry>
+        <entry>
+          <key modelUID="r:a71fc41b-87c6-4f41-8984-8627e010209b(med.components.constraints)" nodeId="1265321504643101102" />
+          <value modelUID="r:6a19d643-6a1e-42fb-ab72-895847a6757a(med.messagecomponents.constraints)" nodeId="1265321504643161488" />
+        </entry>
+        <entry>
+          <key modelUID="r:a71fc41b-87c6-4f41-8984-8627e010209b(med.components.constraints)" nodeId="1265321504643101103" />
+          <value modelUID="r:6a19d643-6a1e-42fb-ab72-895847a6757a(med.messagecomponents.constraints)" nodeId="1265321504643161489" />
+        </entry>
+        <entry>
+          <key modelUID="r:a71fc41b-87c6-4f41-8984-8627e010209b(med.components.constraints)" nodeId="1265321504643101104" />
+          <value modelUID="r:6a19d643-6a1e-42fb-ab72-895847a6757a(med.messagecomponents.constraints)" nodeId="1265321504643161490" />
+        </entry>
+        <entry>
+          <key modelUID="r:a71fc41b-87c6-4f41-8984-8627e010209b(med.components.constraints)" nodeId="1265321504643101105" />
+          <value modelUID="r:6a19d643-6a1e-42fb-ab72-895847a6757a(med.messagecomponents.constraints)" nodeId="1265321504643161491" />
+        </entry>
+        <entry>
+          <key modelUID="r:a71fc41b-87c6-4f41-8984-8627e010209b(med.components.constraints)" nodeId="1265321504643101106" />
+          <value modelUID="r:6a19d643-6a1e-42fb-ab72-895847a6757a(med.messagecomponents.constraints)" nodeId="1265321504643161492" />
+        </entry>
+        <entry>
+          <key modelUID="r:a71fc41b-87c6-4f41-8984-8627e010209b(med.components.constraints)" nodeId="1265321504643101107" />
+          <value modelUID="r:6a19d643-6a1e-42fb-ab72-895847a6757a(med.messagecomponents.constraints)" nodeId="1265321504643161493" />
+        </entry>
+        <entry>
+          <key modelUID="r:a71fc41b-87c6-4f41-8984-8627e010209b(med.components.constraints)" nodeId="1265321504643101108" />
+          <value modelUID="r:6a19d643-6a1e-42fb-ab72-895847a6757a(med.messagecomponents.constraints)" nodeId="1265321504643161494" />
+        </entry>
+        <entry>
+          <key modelUID="r:a71fc41b-87c6-4f41-8984-8627e010209b(med.components.constraints)" nodeId="1265321504643101109" />
+          <value modelUID="r:6a19d643-6a1e-42fb-ab72-895847a6757a(med.messagecomponents.constraints)" nodeId="1265321504643161495" />
+        </entry>
+        <entry>
+          <key modelUID="r:a71fc41b-87c6-4f41-8984-8627e010209b(med.components.constraints)" nodeId="1265321504643101110" />
+          <value modelUID="r:6a19d643-6a1e-42fb-ab72-895847a6757a(med.messagecomponents.constraints)" nodeId="1265321504643161496" />
+        </entry>
+        <entry>
+          <key modelUID="r:a71fc41b-87c6-4f41-8984-8627e010209b(med.components.constraints)" nodeId="1265321504643101111" />
+          <value modelUID="r:6a19d643-6a1e-42fb-ab72-895847a6757a(med.messagecomponents.constraints)" nodeId="1265321504643161497" />
+        </entry>
+        <entry>
+          <key modelUID="r:1494f7f6-9337-4838-9a07-55683f827ab0(med.components.editor)" nodeId="1265321504643101082" />
+          <value modelUID="r:7645812a-9bf5-4312-a9f5-634374a8c2a4(med.messagecomponents.editor)" nodeId="1265321504643161468" />
+        </entry>
+        <entry>
+          <key modelUID="r:1494f7f6-9337-4838-9a07-55683f827ab0(med.components.editor)" nodeId="1265321504643101083" />
+          <value modelUID="r:7645812a-9bf5-4312-a9f5-634374a8c2a4(med.messagecomponents.editor)" nodeId="1265321504643161469" />
+        </entry>
+        <entry>
+          <key modelUID="r:1494f7f6-9337-4838-9a07-55683f827ab0(med.components.editor)" nodeId="1265321504643101084" />
+          <value modelUID="r:7645812a-9bf5-4312-a9f5-634374a8c2a4(med.messagecomponents.editor)" nodeId="1265321504643161470" />
+        </entry>
+        <entry>
+          <key modelUID="r:1494f7f6-9337-4838-9a07-55683f827ab0(med.components.editor)" nodeId="1265321504643101085" />
+          <value modelUID="r:7645812a-9bf5-4312-a9f5-634374a8c2a4(med.messagecomponents.editor)" nodeId="1265321504643161471" />
+        </entry>
+        <entry>
+          <key modelUID="r:1494f7f6-9337-4838-9a07-55683f827ab0(med.components.editor)" nodeId="1265321504643101086" />
+          <value modelUID="r:7645812a-9bf5-4312-a9f5-634374a8c2a4(med.messagecomponents.editor)" nodeId="1265321504643161472" />
+        </entry>
+        <entry>
+          <key modelUID="r:1494f7f6-9337-4838-9a07-55683f827ab0(med.components.editor)" nodeId="1265321504643101087" />
+          <value modelUID="r:7645812a-9bf5-4312-a9f5-634374a8c2a4(med.messagecomponents.editor)" nodeId="1265321504643161473" />
+        </entry>
+        <entry>
+          <key modelUID="r:1494f7f6-9337-4838-9a07-55683f827ab0(med.components.editor)" nodeId="1265321504643101088" />
+          <value modelUID="r:7645812a-9bf5-4312-a9f5-634374a8c2a4(med.messagecomponents.editor)" nodeId="1265321504643161474" />
+        </entry>
+        <entry>
+          <key modelUID="r:1494f7f6-9337-4838-9a07-55683f827ab0(med.components.editor)" nodeId="1265321504643101089" />
+          <value modelUID="r:7645812a-9bf5-4312-a9f5-634374a8c2a4(med.messagecomponents.editor)" nodeId="1265321504643161475" />
+        </entry>
+        <entry>
+          <key modelUID="r:1494f7f6-9337-4838-9a07-55683f827ab0(med.components.editor)" nodeId="1265321504643101090" />
+          <value modelUID="r:7645812a-9bf5-4312-a9f5-634374a8c2a4(med.messagecomponents.editor)" nodeId="1265321504643161476" />
+        </entry>
+        <entry>
+          <key modelUID="r:1494f7f6-9337-4838-9a07-55683f827ab0(med.components.editor)" nodeId="1265321504643101091" />
+          <value modelUID="r:7645812a-9bf5-4312-a9f5-634374a8c2a4(med.messagecomponents.editor)" nodeId="1265321504643161477" />
+        </entry>
+        <entry>
+          <key modelUID="r:1494f7f6-9337-4838-9a07-55683f827ab0(med.components.editor)" nodeId="1265321504643101092" />
+          <value modelUID="r:7645812a-9bf5-4312-a9f5-634374a8c2a4(med.messagecomponents.editor)" nodeId="1265321504643161478" />
+        </entry>
+        <entry>
+          <key modelUID="r:1494f7f6-9337-4838-9a07-55683f827ab0(med.components.editor)" nodeId="1265321504643101093" />
+          <value modelUID="r:7645812a-9bf5-4312-a9f5-634374a8c2a4(med.messagecomponents.editor)" nodeId="1265321504643161479" />
+        </entry>
+        <entry>
+          <key modelUID="r:1494f7f6-9337-4838-9a07-55683f827ab0(med.components.editor)" nodeId="1265321504643101094" />
+          <value modelUID="r:7645812a-9bf5-4312-a9f5-634374a8c2a4(med.messagecomponents.editor)" nodeId="1265321504643161480" />
+        </entry>
+        <entry>
+          <key modelUID="r:1494f7f6-9337-4838-9a07-55683f827ab0(med.components.editor)" nodeId="1265321504643101095" />
+          <value modelUID="r:7645812a-9bf5-4312-a9f5-634374a8c2a4(med.messagecomponents.editor)" nodeId="1265321504643161481" />
+        </entry>
+        <entry>
+          <key modelUID="r:1494f7f6-9337-4838-9a07-55683f827ab0(med.components.editor)" nodeId="1265321504643101096" />
+          <value modelUID="r:7645812a-9bf5-4312-a9f5-634374a8c2a4(med.messagecomponents.editor)" nodeId="1265321504643161482" />
+        </entry>
+        <entry>
+          <key modelUID="r:1494f7f6-9337-4838-9a07-55683f827ab0(med.components.editor)" nodeId="1265321504643101097" />
+          <value modelUID="r:7645812a-9bf5-4312-a9f5-634374a8c2a4(med.messagecomponents.editor)" nodeId="1265321504643161483" />
+        </entry>
+        <entry>
+          <key modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" nodeId="1265321504643101077" />
+          <value modelUID="r:e7c729bb-8ece-4846-aa87-139f606992fb(med.messagecomponents.structure)" nodeId="1265321504643161463" />
+        </entry>
+        <entry>
+          <key modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" nodeId="1265321504643101078" />
+          <value modelUID="r:e7c729bb-8ece-4846-aa87-139f606992fb(med.messagecomponents.structure)" nodeId="1265321504643161464" />
+        </entry>
+        <entry>
+          <key modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" nodeId="1265321504643101079" />
+          <value modelUID="r:e7c729bb-8ece-4846-aa87-139f606992fb(med.messagecomponents.structure)" nodeId="1265321504643161465" />
+        </entry>
+        <entry>
+          <key modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" nodeId="1265321504643101080" />
+          <value modelUID="r:e7c729bb-8ece-4846-aa87-139f606992fb(med.messagecomponents.structure)" nodeId="1265321504643161466" />
+        </entry>
+        <entry>
+          <key modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" nodeId="1265321504643101081" />
+          <value modelUID="r:e7c729bb-8ece-4846-aa87-139f606992fb(med.messagecomponents.structure)" nodeId="1265321504643161467" />
+        </entry>
+      </moveMap>
+      <conceptFeatureMap>
+        <entry>
+          <key featureName="MessageHandler" conceptFQName="med.components.structure.MessageHandler" featureKind="CONCEPT" />
+          <value featureName="MessageHandler" conceptFQName="med.messagecomponents.structure.MessageHandler" featureKind="CONCEPT" />
+        </entry>
+      </conceptFeatureMap>
+    </refactoringContext>
   </refactoringHistory>
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.lang.core.constraints)" version="2" />
@@ -54,10 +205,11 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590340(jetbrains.mps.lang.pattern.constraints)" version="2" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902db(jetbrains.mps.baseLanguage.blTypes.constraints)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590328(jetbrains.mps.baseLanguage.collections.constraints)" version="6" />
-  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="2" />
+  <languageAspect modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="3" />
+  <languageAspect modelUID="r:e7c729bb-8ece-4846-aa87-139f606992fb(med.messagecomponents.structure)" version="3" />
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
-  <maxImportIndex value="1" />
-  <import index="1" modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="2" />
+  <maxImportIndex value="2" />
+  <import index="1" modelUID="r:5de3a16f-d467-4884-b2c9-9c827817e8b5(med.components.structure)" version="3" />
   <visible index="2" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
   <visible index="3" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="2644792117221124041">
@@ -432,6 +584,30 @@
   <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="1265321504639458537">
     <property name="package" value="implementation" />
     <property name="name" value="IComponentImplContent" />
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="1265321504642945332">
+    <property name="package" value="implementation" />
+    <property name="name" value="PortForwarder" />
+    <link role="extends" targetNodeId="2v.3577454086729990666" resolveInfo="MedBase" />
+    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="1265321504642945333">
+      <link role="intfc" targetNodeId="1265321504639458537" resolveInfo="IComponentImplContent" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="1265321504642945335">
+      <property name="metaClass" value="reference" />
+      <property name="role" value="provided" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="2739617086185486247" resolveInfo="ProvidedPort" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="1265321504642945334">
+      <property name="metaClass" value="reference" />
+      <property name="role" value="required" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="2739617086185486248" resolveInfo="RequiredPort" />
+    </node>
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="1265321504642945336">
+      <property name="value" value="forward" />
+      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473891462" resolveInfo="alias" />
+    </node>
   </node>
 </model>
 

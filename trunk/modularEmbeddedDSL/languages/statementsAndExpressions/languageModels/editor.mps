@@ -1491,8 +1491,11 @@
         </node>
       </node>
     </node>
-    <node role="inspectedCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Component" id="6790227271037837018">
-      <link role="editorComponent" targetNodeId="5288422977873518304" resolveInfo="IDocumentable_EditorComponent" />
+    <node role="inspectedCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="6548416117421309535">
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Component" id="6548416117421309537">
+        <link role="editorComponent" targetNodeId="5288422977873518304" resolveInfo="IDocumentable_EditorComponent" />
+      </node>
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" id="6548416117421309536" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="306587673255505588">

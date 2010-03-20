@@ -10,9 +10,7 @@
         <modelRoot path="${language_descriptor}/generator/template" namespacePrefix="med.components.generator.template" />
       </models>
       <external-templates>
-        <generator generatorUID="c799c22a-0b61-4409-a17e-6e6bed16cd83(med.features#8261019787197339042)" />
         <generator generatorUID="5a9075dc-380e-41cb-a166-c29b1245e3c3(med.core#3747647978568410848)" />
-        <generator generatorUID="e6195d47-7615-4a79-9fe5-cbb950864e31(med.platform.nxtosek#3454436015655285766)" />
       </external-templates>
       <usedLanguages>
         <usedLanguage>50b44c57-34f1-428d-a7c3-d100606f8e2a(med.features)</usedLanguage>
@@ -25,13 +23,49 @@
           <greater-priority-mapping>
             <generator generatorUID="4d9d644f-88e3-4b1a-b868-fdcf4fc6cc0f(med.components#3113923837076787424)" />
             <external-mapping>
-              <all-local-mappings />
+              <mapping-node modelUID="r:cd686c3a-c8f5-4925-9a41-62e3d4c2c867(med.components.generator.template.main@generator)" nodeID="3113923837076787425" />
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
             <generator generatorUID="5a9075dc-380e-41cb-a166-c29b1245e3c3(med.core#3747647978568410848)" />
             <external-mapping>
-              <all-local-mappings />
+              <mapping-set>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeID="3747647978568410849" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeID="5670427403976777254" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeID="5670427403976779355" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeID="2005811434196937215" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeID="306587673255505661" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeID="3577454086729305706" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:92e37f99-c948-48ad-9927-69fc1c6323a4(med.core.generator.template.main@generator)" nodeID="6254144863184248664" />
+                </mapping-set-element>
+              </mapping-set>
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="4d9d644f-88e3-4b1a-b868-fdcf4fc6cc0f(med.components#3113923837076787424)" />
+            <external-mapping>
+              <mapping-node modelUID="r:cd686c3a-c8f5-4925-9a41-62e3d4c2c867(med.components.generator.template.main@generator)" nodeID="1265321504644085231" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="4d9d644f-88e3-4b1a-b868-fdcf4fc6cc0f(med.components#3113923837076787424)" />
+            <external-mapping>
+              <mapping-node modelUID="r:cd686c3a-c8f5-4925-9a41-62e3d4c2c867(med.components.generator.template.main@generator)" nodeID="3113923837076787425" />
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>

@@ -18,6 +18,30 @@
 
 int8_t lfcAPI_api_light = 0;
 
+void lfcAPI_api_ForwarderTestImpl_fd3(void) {
+    ecrobot_status_monitor ("fd3" );
+}
+
+void lfcAPI_api_ForwarderTestImpl_fd2(void) {
+    ecrobot_status_monitor ("fd2" );
+}
+
+void lfcAPI_api_ForwarderTestImpl_fd1(void) {
+    ecrobot_status_monitor ("fd1" );
+}
+
+void lfcAPI_api_MotorsNXT_fd3(void) {
+    lfcAPI_api_ForwarderTestImpl_fd3 ( );
+}
+
+void lfcAPI_api_MotorsNXT_fd2(void) {
+    lfcAPI_api_ForwarderTestImpl_fd2 ( );
+}
+
+void lfcAPI_api_MotorsNXT_fd1(void) {
+    lfcAPI_api_ForwarderTestImpl_fd1 ( );
+}
+
 void lfcAPI_api_MotorsNXT_setRightSpeed(int8_t speed) {
     nxt_motor_set_speed (NXT_PORT_B, speed, 1 );
 }
@@ -39,18 +63,6 @@ int8_t lfcAPI_api_LightSensorNXT_lightValue(void) {
 
 void lfcAPI_api_LightSensorNXT_init(void) {
     ecrobot_set_light_sensor_active (NXT_PORT_S1 );
-}
-
-void lfcAPI_api_LightSensorMock_setLight(int8_t value) {
-    lfcAPI_api_light = value;
-}
-
-void lfcAPI_api_LightSensorMock_init(void) {
-    lfcAPI_api_light = 0;
-}
-
-int8_t lfcAPI_api_LightSensorMock_lightValue(void) {
-    return lfcAPI_api_light;
 }
 
 void lfcAPI_api_LogTracer_motors(int8_t left, int8_t right) {

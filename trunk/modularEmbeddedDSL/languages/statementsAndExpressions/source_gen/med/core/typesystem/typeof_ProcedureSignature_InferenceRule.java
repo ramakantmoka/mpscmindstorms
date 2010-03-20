@@ -18,7 +18,7 @@ public class typeof_ProcedureSignature_InferenceRule extends AbstractInferenceRu
     {
       SNode _nodeToCheck_1029348928467 = procedureSignature;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "2005811434196936656", true), (SNode)typeCheckingContext.typeOf(SLinkOperations.getTarget(procedureSignature, "type", true), "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "2005811434196936651", true), _nodeToCheck_1029348928467, null, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "2005811434196936649", intentionProvider);
+      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "2005811434196936656", true), (SNode)typeCheckingContext.typeOf(SLinkOperations.getTarget(procedureSignature, "type", true), "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "2005811434196936651", true), _nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "2005811434196936649", intentionProvider);
     }
   }
 

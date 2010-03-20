@@ -9,7 +9,6 @@
 
 // custom includes for header
 #include "stdint.h"
-#include "stdint.h"
 
 
 void systick_wait_ms(int durationInMs);

@@ -34,7 +34,7 @@ public class ImplementationModule_Editor extends DefaultNodeEditor {
   }
 
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return this.createComponent_0418_0(editorContext, node);
+    return this.createCollection_0418_1(editorContext, node);
   }
 
   private EditorCell createCollection_0418_0(EditorContext editorContext, SNode node) {
@@ -53,6 +53,13 @@ public class ImplementationModule_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createRefNodeList_0418_1(editorContext, node));
     editorCell.addEditorCell(this.createConstant_0418_6(editorContext, node));
     editorCell.addEditorCell(this.createConstant_0418_7(editorContext, node));
+    return editorCell;
+  }
+
+  private EditorCell createCollection_0418_1(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
+    editorCell.setCellId("Collection_0418_1");
+    editorCell.addEditorCell(this.createComponent_0418_0(editorContext, node));
     return editorCell;
   }
 

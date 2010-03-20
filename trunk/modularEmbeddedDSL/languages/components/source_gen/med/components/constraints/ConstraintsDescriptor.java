@@ -12,6 +12,8 @@ public class ConstraintsDescriptor implements IModelConstraints {
   private List<IModelConstraints> myConstraints = ListSequence.fromList(new ArrayList<IModelConstraints>());
 
   public ConstraintsDescriptor() {
+    ListSequence.fromList(this.myConstraints).addElement(new PortForwarder_required_ReferentConstraint());
+    ListSequence.fromList(this.myConstraints).addElement(new PortForwarder_provided_ReferentConstraint());
     ListSequence.fromList(this.myConstraints).addElement(new ProceduralPort_interface_ReferentConstraint());
     ListSequence.fromList(this.myConstraints).addElement(new InterfaceProcedureImplementation_procedure_ReferentConstraint());
     ListSequence.fromList(this.myConstraints).addElement(new ComponentImplementation_componentType_ReferentConstraint());

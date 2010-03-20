@@ -45,8 +45,8 @@
   <visible index="3" modelUID="r:486732ea-fa25-442c-bcc8-e948ecd38d94(med.logging.structure)" />
   <visible index="4" modelUID="r:42b86333-3dc2-47b4-b56a-1f8218d3370b(med.tasks.structure)" />
   <node type="jetbrains.mps.lang.generator.structure.MappingConfiguration" id="6300047501518721740">
-    <property name="name" value="topPriorityStuff" />
-    <property name="topPriorityGroup" value="true" />
+    <property name="name" value="beforeMedCore" />
+    <property name="topPriorityGroup" value="false" />
     <node role="rootMappingRule" type="jetbrains.mps.lang.generator.structure.Root_MappingRule" id="5174648333269556314">
       <property name="keepSourceRoot" value="true" />
       <link role="template" targetNodeId="5174648333270259474" />

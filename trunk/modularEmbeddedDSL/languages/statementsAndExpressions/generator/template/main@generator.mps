@@ -4218,8 +4218,8 @@
     </node>
   </node>
   <node type="jetbrains.mps.lang.generator.structure.MappingConfiguration" id="7527099521004647964">
-    <property name="name" value="main" />
-    <property name="topPriorityGroup" value="true" />
+    <property name="name" value="createInternalStuff" />
+    <property name="topPriorityGroup" value="false" />
     <node role="preMappingScript" type="jetbrains.mps.lang.generator.structure.MappingScriptReference" id="7527099521004650143">
       <link role="mappingScript" targetNodeId="306587673256795692" resolveInfo="createPrototypes" />
     </node>
@@ -4523,7 +4523,7 @@
   </node>
   <node type="jetbrains.mps.lang.generator.structure.MappingConfiguration" id="5196379128667344285">
     <property name="name" value="highPriorityStuff" />
-    <property name="topPriorityGroup" value="true" />
+    <property name="topPriorityGroup" value="false" />
     <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="5196379128667344286">
       <link role="applicableConcept" targetNodeId="1.5196379128666429386" resolveInfo="TypeDefCastOperator" />
       <node role="ruleConsequence" type="jetbrains.mps.lang.generator.structure.InlineTemplate_RuleConsequence" id="5196379128667344288">
@@ -5191,7 +5191,7 @@
   <node type="jetbrains.mps.lang.generator.structure.MappingConfiguration" id="738757997634179630">
     <property name="package" value="statements" />
     <property name="name" value="statements_highPrio" />
-    <property name="topPriorityGroup" value="true" />
+    <property name="topPriorityGroup" value="false" />
     <node role="reductionMappingRule" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" id="738757997634179631">
       <link role="applicableConcept" targetNodeId="1.1881584577103641506" resolveInfo="AssignmentStatement" />
       <node role="conditionFunction" type="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" id="738757997634179632">

@@ -7,7 +7,6 @@
   <component name="MPSProject">
     <projectSolutions>
       <solutionPath path="${project}/solutions/LineFollower/LineFollower.msd" folder="_samples" />
-      <solutionPath path="${project}/solutions/NorasDancingRobot/NorasDancingRobot.msd" folder="_samples" />
       <solutionPath path="${project}/solutions/TwoWheelExample/TwoWheelExample.msd" folder="_samples" />
       <solutionPath path="${project}/solutions/modularEmbeddedDSL.sandbox/modularEmbeddedDSL.sandbox.msd" folder="_samples" />
       <solutionPath path="${project}/solutions/BlockExample/BlockExample.msd" folder="_samples" />

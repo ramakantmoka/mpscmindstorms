@@ -14,11 +14,16 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 
 public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_3113923837076889391(final IOperationContext operationContext, final PropertyMacroContext _context) {
     return InterfaceProcedureImplementation_Behavior.call_derivedProcedureName_3113923837076889399(_context.getNode());
+  }
+
+  public static Object referenceMacro_GetReferent_1265321504644187213(final IOperationContext operationContext, final ReferenceMacroContext _context) {
+    return _context.getNode();
   }
 
   public static Object referenceMacro_GetReferent_3113923837076900309(final IOperationContext operationContext, final ReferenceMacroContext _context) {
@@ -34,6 +39,10 @@ public class QueriesGenerated {
     System.err.println("\n\n---- " + procImpl);
     SNode reducedProc = _context.getOutputNodeByInputNodeAndMappingLabel(procImpl, "procedure");
     return reducedProc;
+  }
+
+  public static Object referenceMacro_GetReferent_6548416117420989489(final IOperationContext operationContext, final ReferenceMacroContext _context) {
+    return _context.getNode();
   }
 
   public static Object referenceMacro_GetReferent_8949829907855087109(final IOperationContext operationContext, final ReferenceMacroContext _context) {
@@ -55,6 +64,19 @@ public class QueriesGenerated {
 
   public static SNode sourceNodeQuery_3113923837076889466(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), "body", true);
+  }
+
+  public static SNode sourceNodeQuery_6548416117421195548(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    SNode rp = SLinkOperations.getTarget(((SNode)_context.getSessionObject("forwarder")), "required", false);
+    SNode rpcopy = _context.getCopiedOutputNodeForInputNode(rp);
+    SNode rpe = SConceptOperations.createNewNode("med.components.structure.RequiredPortExpression", null);
+    SLinkOperations.setTarget(rpe, "port", rpcopy, false);
+    return rpe;
+  }
+
+  public static Iterable sourceNodesQuery_1265321504644099372(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
+    _context.putStepObject("forwarder", _context.getNode());
+    return SLinkOperations.getTargets(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "provided", false), "interface", false), "procedures", true);
   }
 
   public static Iterable sourceNodesQuery_3113923837076889365(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {

@@ -11,6 +11,7 @@
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode dependClassName="med.components.behavior.Component_Behavior" />
+    <classNode dependClassName="med.components.behavior.InterfaceProcedure_Behavior" />
   </dependency>
   <dependency className="med.components.behavior.Component_Behavior">
     <classNode dependClassName="java.lang.Iterable" />
@@ -41,6 +42,7 @@
   </dependency>
   <dependency className="med.components.behavior.InterfaceProcedure_Behavior">
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
   </dependency>
   <dependency className="med.components.behavior.Interface_Behavior">

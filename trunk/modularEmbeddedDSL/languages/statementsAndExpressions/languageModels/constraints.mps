@@ -586,5 +586,9 @@
       </node>
     </node>
   </node>
+  <node type="jetbrains.mps.lang.constraints.structure.ConceptConstraints" id="6548416117421309543">
+    <property name="package" value="modules" />
+    <link role="concept" targetNodeId="1.306587673255505547" resolveInfo="ImplementationModule" />
+  </node>
 </model>
 

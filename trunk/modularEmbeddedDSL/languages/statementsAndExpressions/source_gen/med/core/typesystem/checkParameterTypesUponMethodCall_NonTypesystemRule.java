@@ -27,11 +27,11 @@ public class checkParameterTypesUponMethodCall_NonTypesystemRule extends Abstrac
             {
               SNode _nodeToCheck_1029348928467 = a;
               BaseIntentionProvider intentionProvider = null;
-              typeCheckingContext.createComparableEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "9024796767936657962", true), (SNode)typeCheckingContext.typeOf(p, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "9024796767936657965", true), _nodeToCheck_1029348928467, null, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "9024796767936657960", intentionProvider);
+              typeCheckingContext.createComparableEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "9024796767936657962", true), (SNode)typeCheckingContext.typeOf(p, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "9024796767936657965", true), _nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "9024796767936657960", intentionProvider);
             }
           }
         }
-      }, "r:c0f462b1-b0ad-4120-b681-5de91e1966da(med.core.typesystem@1_0)", "2005811434196936593", false, false);
+      }, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "2005811434196936593", false, false);
     }
   }
 
