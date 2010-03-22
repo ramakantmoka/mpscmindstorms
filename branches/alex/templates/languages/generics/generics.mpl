@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="Templates" uuid="6c17caf6-cfa9-4747-8eb3-4ebdfbfb51e4" java-stubs-enabled="false" compileInMPS="true">
+<language namespace="med.generics" uuid="78151a70-bd3f-4933-9451-9ebe544a98d2" java-stubs-enabled="false" compileInMPS="true">
   <models>
-    <modelRoot path="${language_descriptor}/languageModels" namespacePrefix="Templates" />
+    <modelRoot path="${language_descriptor}/languageModels" namespacePrefix="med.generics" />
   </models>
   <accessoryModels />
   <generators />
   <classPath />
   <languageRuntimeClassPath />
-  <sourcePath>
-    <source path="/home/alex/scm/mpscmindstorms/trunk/modularEmbeddedDSL/languages/statementsAndExpressions/languageModels" />
-  </sourcePath>
+  <sourcePath />
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
