@@ -5,7 +5,9 @@
   </component>
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
-    <projectSolutions />
+    <projectSolutions>
+      <solutionPath path="${project}/solutions/sandbox/sandbox.msd" folder="" />
+    </projectSolutions>
     <projectLanguages>
       <languagePath path="${project}/languages/generics/generics.mpl" />
       <languagePath path="/home/alex/scm/mpscmindstorms/trunk/modularEmbeddedDSL/languages/statementsAndExpressions/statementsAndExpressions.mpl" />
@@ -25,6 +27,7 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />
+    <mapping directory="$PROJECT_DIR$" vcs="svn" />
   </component>
 </project>
 
