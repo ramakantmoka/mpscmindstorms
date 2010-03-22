@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<debugInfo>
-  <nodeInfo nodeId="6254144863185032426" fileName="State_Behavior.java" startLine="12" startPosition="83" endLine="13" endPosition="84" />
-  <nodeInfo nodeId="6254144863185032537" fileName="Event_Behavior.java" startLine="12" startPosition="83" endLine="13" endPosition="84" />
-  <nodeInfo nodeId="6556431234482153150" fileName="Transition_Behavior.java" startLine="9" startPosition="43" endLine="10" endPosition="85" />
-</debugInfo>
-

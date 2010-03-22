@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<debugInfo>
-  <nodeInfo nodeId="5231257431511886261" fileName="addEntryAction_Intention.java" startLine="34" startPosition="76" endLine="35" endPosition="89" />
-  <nodeInfo nodeId="6254144863182975736" fileName="makeInitialState_Intention.java" startLine="40" startPosition="5" endLine="41" endPosition="56" />
-  <nodeInfo nodeId="6254144863183078630" fileName="makeInitialState_Intention.java" startLine="37" startPosition="76" endLine="40" endPosition="5" />
-  <nodeInfo nodeId="6254144863183078655" fileName="makeInitialState_Intention.java" startLine="38" startPosition="179" endLine="39" endPosition="56" />
-  <nodeInfo nodeId="6556431234483356443" fileName="addExitAction_Intention.java" startLine="34" startPosition="76" endLine="35" endPosition="87" />
-</debugInfo>
-
