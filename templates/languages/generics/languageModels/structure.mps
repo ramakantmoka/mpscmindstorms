@@ -183,6 +183,9 @@
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="4869583264375558095">
     <property name="name" value="GenericBoundTemplatedStructType" />
     <link role="extends" targetNodeId="2v.4641466063286591366" resolveInfo="Type" />
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.BooleanConceptProperty" id="3657879010847334094">
+      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473854053" resolveInfo="abstract" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="4869583264375661707">
     <property name="name" value="IBoundTemplatedElement" />
