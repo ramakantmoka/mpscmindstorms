@@ -6,7 +6,8 @@
   <classPath />
   <sourcePath />
   <usedLanguages>
-    <usedLanguage>78151a70-bd3f-4933-9451-9ebe544a98d2(med.generics)</usedLanguage>
+    <usedLanguage>3a8b8671-1532-4e8f-b780-594a27fa10c8(med.core)</usedLanguage>
+    <usedLanguage>75e893e3-3e58-42e4-8a1a-d4859d0a3495(med.templates)</usedLanguage>
   </usedLanguages>
 </solution>
 
