@@ -72,8 +72,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TemplateParameter" pinned="false" current="true" current-in-tab="true">
-        <entry file="mps://med.generics.structure/TemplateParameter">
+      <file leaf-file-name="Bound" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://med.stack.structure/Bound">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="1">
               <inner_tabs>
@@ -93,10 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParameterType" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://med.templates.structure/ParameterType">
+      <file leaf-file-name="Instantiation" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://med.stack.structure/Instantiation">
           <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="1">
+            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
               <inner_tabs>
                 <tab index="0" />
                 <tab index="0" />
@@ -114,10 +114,101 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Struct" pinned="false" current="false" current-in-tab="false">
-        <entry file="mps://med.templates.structure/Struct">
+      <file leaf-file-name="Test" pinned="false" current="true" current-in-tab="true">
+        <entry file="mps://stack/Test">
           <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="1">
+            <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StatementList" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://med.core.structure/StatementList">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+              <inner_tabs>
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+              </inner_tabs>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Statement" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://med.core.structure/Statement">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+              <inner_tabs>
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+              </inner_tabs>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AssignmentStatement" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://med.core.structure/AssignmentStatement">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+              <inner_tabs>
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+              </inner_tabs>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Push" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://med.stack.structure/Push">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+              <inner_tabs>
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+                <tab index="0" />
+              </inner_tabs>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MethodCall" pinned="false" current="false" current-in-tab="false">
+        <entry file="mps://med.stack.structure/MethodCall">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
               <inner_tabs>
                 <tab index="0" />
                 <tab index="0" />
@@ -330,6 +421,17 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="VCSRoots">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VCS Roots" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <selection />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -344,15 +446,131 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="med.stack" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="med.stack" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="editor" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Push_Editor" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cellModel : collection" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="med.stack" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="editor" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Instantiation_Editor" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cellModel : collection" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="med.stack" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="structure" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="med.core" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="med.core" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="structure" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="med.core" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="structure" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statements" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="sandbox" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Declare" />
+              <option name="myItemId" value="stack" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Declare" />
+              <option name="myItemId" value="sandbox" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -360,6 +578,18 @@
             <PATH>
               <PATH_ELEMENT>
                 <option name="myItemId" value="Project" />
+                <option name="myItemType" value="" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="med.stack" />
+                <option name="myItemType" value="" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="structure" />
+                <option name="myItemType" value="" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="Push" />
                 <option name="myItemType" value="" />
               </PATH_ELEMENT>
             </PATH>
@@ -371,17 +601,6 @@
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates.mpr" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <selection />
-        </subPane>
-      </pane>
-      <pane id="VCSRoots">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VCS Roots" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -447,31 +666,31 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-3" width="1928" height="1169" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
-      <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854405" sideWeight="0.49573106" order="7" side_tool="false" />
+      <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.4914621" order="7" side_tool="false" />
       <window_info id="Run Packaging Language Build Script" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Supertypes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
-      <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Model Repository Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Replacement" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Module Repository Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Build Custom MPS" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25724828" sideWeight="0.66412216" order="0" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2593569" sideWeight="0.66412216" order="0" side_tool="false" />
       <window_info id="Module Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24881391" sideWeight="0.66412216" order="2" side_tool="false" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24866596" sideWeight="0.6650763" order="2" side_tool="false" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
-      <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919848" sideWeight="0.49815497" order="7" side_tool="false" />
-      <window_info id="MPS Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919848" sideWeight="0.47496048" order="7" side_tool="false" />
+      <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919848" sideWeight="0.4960464" order="7" side_tool="false" />
+      <window_info id="MPS Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32919848" sideWeight="0.47285187" order="7" side_tool="false" />
       <window_info id="Concept Structure" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32919848" sideWeight="0.5050079" order="7" side_tool="true" />
-      <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32919848" sideWeight="0.49130204" order="7" side_tool="false" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5048026" order="7" side_tool="true" />
+      <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919848" sideWeight="0.4850587" order="7" side_tool="false" />
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Analyze Stacktrace" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
@@ -574,49 +793,76 @@
                           </data>
                           <children>
                             <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="med.core.actions" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:a0ed4500-2279-40d3-878f-97ab759d52ef(med.core.actions)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="makeStructPointerAccess" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                    <role name="root" />
+                                    <node>
+                                      <node model="r:a0ed4500-2279-40d3-878f-97ab759d52ef(med.core.actions)" id="6275945668714243462" />
+                                    </node>
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="IVariableReference" info="role: &lt;i&gt;actionsBuilder&lt;/i&gt;; in: &lt;i&gt;makeStructPointerAccess&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true">
+                                        <role name="target" />
+                                        <node>
+                                          <node model="r:a0ed4500-2279-40d3-878f-97ab759d52ef(med.core.actions)" id="6275945668714243463" />
+                                        </node>
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="makeStructAccess" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                    <role name="root" />
+                                    <node>
+                                      <node model="r:a0ed4500-2279-40d3-878f-97ab759d52ef(med.core.actions)" id="1583024025813302999" />
+                                    </node>
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="IVariableReference" info="role: &lt;i&gt;actionsBuilder&lt;/i&gt;; in: &lt;i&gt;makeStructAccess&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true">
+                                        <role name="target" />
+                                        <node>
+                                          <node model="r:a0ed4500-2279-40d3-878f-97ab759d52ef(med.core.actions)" id="1583024025813303000" />
+                                        </node>
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="BROKEN_dereferencePointer" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                    <role name="root" />
+                                    <node>
+                                      <node model="r:a0ed4500-2279-40d3-878f-97ab759d52ef(med.core.actions)" id="7127715617960421173" />
+                                    </node>
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="IVariableReference" info="role: &lt;i&gt;actionsBuilder&lt;/i&gt;; in: &lt;i&gt;BROKEN_dereferencePointer&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true">
+                                        <role name="target" />
+                                        <node>
+                                          <node model="r:a0ed4500-2279-40d3-878f-97ab759d52ef(med.core.actions)" id="7127715617960421174" />
+                                        </node>
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                              </children>
+                            </child>
+                            <child>
                               <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="med.core.structure" info="" excluded="false" expanded="true" isresult="false" results_section="true">
                                 <role name="model" />
                                 <model uid="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
                               </data>
                               <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ParameterReference" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                    <role name="root" />
-                                    <node>
-                                      <node model="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" id="2005811434196834510" />
-                                    </node>
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="IVariableReference" info="role: &lt;i&gt;implements&lt;/i&gt;; in: &lt;i&gt;ParameterReference&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true">
-                                        <role name="target" />
-                                        <node>
-                                          <node model="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" id="2005811434196834512" />
-                                        </node>
-                                      </data>
-                                      <children />
-                                    </child>
-                                  </children>
-                                </child>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="LocalVariableReference" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                    <role name="root" />
-                                    <node>
-                                      <node model="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" id="8371680262091060696" />
-                                    </node>
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="IVariableReference" info="role: &lt;i&gt;implements&lt;/i&gt;; in: &lt;i&gt;LocalVariableReference&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true">
-                                        <role name="target" />
-                                        <node>
-                                          <node model="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" id="5136468150843706454" />
-                                        </node>
-                                      </data>
-                                      <children />
-                                    </child>
-                                  </children>
-                                </child>
                                 <child>
                                   <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ModuleVariableRef" info="" excluded="false" expanded="false" isresult="false" results_section="true">
                                     <role name="root" />
@@ -674,6 +920,44 @@
                                     </child>
                                   </children>
                                 </child>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="LocalVariableReference" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                    <role name="root" />
+                                    <node>
+                                      <node model="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" id="8371680262091060696" />
+                                    </node>
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="IVariableReference" info="role: &lt;i&gt;implements&lt;/i&gt;; in: &lt;i&gt;LocalVariableReference&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true">
+                                        <role name="target" />
+                                        <node>
+                                          <node model="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" id="5136468150843706454" />
+                                        </node>
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ParameterReference" info="" excluded="false" expanded="true" isresult="false" results_section="true">
+                                    <role name="root" />
+                                    <node>
+                                      <node model="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" id="2005811434196834510" />
+                                    </node>
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="IVariableReference" info="role: &lt;i&gt;implements&lt;/i&gt;; in: &lt;i&gt;ParameterReference&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true">
+                                        <role name="target" />
+                                        <node>
+                                          <node model="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" id="2005811434196834512" />
+                                        </node>
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
                               </children>
                             </child>
                             <child>
@@ -690,71 +974,6 @@
                                     </node>
                                   </data>
                                   <children />
-                                </child>
-                              </children>
-                            </child>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="med.core.actions" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                <role name="model" />
-                                <model uid="r:a0ed4500-2279-40d3-878f-97ab759d52ef(med.core.actions)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="makeStructAccess" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                    <role name="root" />
-                                    <node>
-                                      <node model="r:a0ed4500-2279-40d3-878f-97ab759d52ef(med.core.actions)" id="1583024025813302999" />
-                                    </node>
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="IVariableReference" info="role: &lt;i&gt;actionsBuilder&lt;/i&gt;; in: &lt;i&gt;makeStructAccess&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true">
-                                        <role name="target" />
-                                        <node>
-                                          <node model="r:a0ed4500-2279-40d3-878f-97ab759d52ef(med.core.actions)" id="1583024025813303000" />
-                                        </node>
-                                      </data>
-                                      <children />
-                                    </child>
-                                  </children>
-                                </child>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="BROKEN_dereferencePointer" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                    <role name="root" />
-                                    <node>
-                                      <node model="r:a0ed4500-2279-40d3-878f-97ab759d52ef(med.core.actions)" id="7127715617960421173" />
-                                    </node>
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="IVariableReference" info="role: &lt;i&gt;actionsBuilder&lt;/i&gt;; in: &lt;i&gt;BROKEN_dereferencePointer&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true">
-                                        <role name="target" />
-                                        <node>
-                                          <node model="r:a0ed4500-2279-40d3-878f-97ab759d52ef(med.core.actions)" id="7127715617960421174" />
-                                        </node>
-                                      </data>
-                                      <children />
-                                    </child>
-                                  </children>
-                                </child>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="makeStructPointerAccess" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                    <role name="root" />
-                                    <node>
-                                      <node model="r:a0ed4500-2279-40d3-878f-97ab759d52ef(med.core.actions)" id="6275945668714243462" />
-                                    </node>
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="IVariableReference" info="role: &lt;i&gt;actionsBuilder&lt;/i&gt;; in: &lt;i&gt;makeStructPointerAccess&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true">
-                                        <role name="target" />
-                                        <node>
-                                          <node model="r:a0ed4500-2279-40d3-878f-97ab759d52ef(med.core.actions)" id="6275945668714243463" />
-                                        </node>
-                                      </data>
-                                      <children />
-                                    </child>
-                                  </children>
                                 </child>
                               </children>
                             </child>
@@ -868,7 +1087,7 @@
     </GetOptions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://med.core.structure/StructType">
+    <entry file="mps://med.core.structure/BinaryComparisonExpression">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
           <inner_tabs>
@@ -887,7 +1106,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://med.core.structure/GenericStructType">
+    <entry file="mps://med.templates.structure/ParameterType">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
           <inner_tabs>
@@ -906,7 +1125,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://med.templates.structure/ParameterList">
+    <entry file="mps://med.core.structure/NotEqualsExpression">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
           <inner_tabs>
@@ -925,7 +1144,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://med.core.structure/ImplementationModule">
+    <entry file="mps://med.core.structure/IVariableReference">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
           <inner_tabs>
@@ -944,7 +1163,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://med.generics.structure/TemplatedStructDeclaration">
+    <entry file="mps://med.core.structure/ParameterReference">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
           <inner_tabs>
@@ -963,104 +1182,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://med.core.structure/IModuleContent">
+    <entry file="mps://med.core.structure/LocalVariableReference">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
-          <inner_tabs>
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-          </inner_tabs>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://med.generics.structure/TemplateParameterType">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
-          <inner_tabs>
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-          </inner_tabs>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://med.templates.structure/IntParameter">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
-          <inner_tabs>
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-          </inner_tabs>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://med.templates.structure/TypeParameter">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
-          <inner_tabs>
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-          </inner_tabs>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://med.templates.structure/Parameter">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
-          <inner_tabs>
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-            <tab index="0" />
-          </inner_tabs>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://med.templates.structure/Struct">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="1">
           <inner_tabs>
             <tab index="0" />
             <tab index="0" />
@@ -1096,7 +1220,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://med.templates.structure/ParameterType">
+    <entry file="mps://med.stack.structure/Instantiation">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://med.stack.structure/Bound">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="1">
           <inner_tabs>
@@ -1115,9 +1258,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://med.generics.structure/TemplateParameter">
+    <entry file="mps://med.core.structure/StatementList">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="1">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
           <inner_tabs>
             <tab index="0" />
             <tab index="0" />
@@ -1134,12 +1277,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://med.generics.actions/makeTemplatedStructAccess">
+    <entry file="mps://med.core.structure/Statement">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
       </provider>
     </entry>
-    <entry file="mps://Declare/Declare">
+    <entry file="mps://med.core.structure/AssignmentStatement">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://med.stack.structure/MethodCall">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://med.stack.structure/Push">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://stack/Test">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.NodeEditor$MyFileEditorState" />
       </provider>

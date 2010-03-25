@@ -12,6 +12,7 @@
       <languagePath path="${project}/languages/generics/generics.mpl" />
       <languagePath path="/home/alex/scm/mpscmindstorms/trunk/modularEmbeddedDSL/languages/statementsAndExpressions/statementsAndExpressions.mpl" />
       <languagePath path="${project}/languages/templates/templates.mpl" />
+      <languagePath path="${project}/languages/stack/stack.mpl" folder="" />
     </projectLanguages>
     <projectDevkits />
     <genConfs />
