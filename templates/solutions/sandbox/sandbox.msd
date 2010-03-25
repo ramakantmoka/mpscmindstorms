@@ -8,6 +8,7 @@
   <usedLanguages>
     <usedLanguage>3a8b8671-1532-4e8f-b780-594a27fa10c8(med.core)</usedLanguage>
     <usedLanguage>75e893e3-3e58-42e4-8a1a-d4859d0a3495(med.templates)</usedLanguage>
+    <usedLanguage>91458e87-8631-47c2-a38d-1cbd38c0ddd5(med.stack)</usedLanguage>
   </usedLanguages>
 </solution>
 
