@@ -119,5 +119,17 @@
       </node>
     </node>
   </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" id="246791163857436302">
+    <link role="conceptDeclaration" targetNodeId="1.246791163857436300" resolveInfo="IntParameter" />
+    <node role="cellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Collection" id="8229040596002213101">
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_ConceptProperty" id="8229040596002213104">
+        <link role="relationDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+      </node>
+      <node role="childCellModel" type="jetbrains.mps.lang.editor.structure.CellModel_Property" id="8229040596002331362">
+        <link role="relationDeclaration" targetNodeId="2v.1169194664001" resolveInfo="name" />
+      </node>
+      <node role="cellLayout" type="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" id="8229040596002213103" />
+    </node>
+  </node>
 </model>
 
