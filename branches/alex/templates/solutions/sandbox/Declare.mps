@@ -24,6 +24,9 @@
           <node role="parameter" type="med.templates.structure.TypeParameter" id="5250078976300449026">
             <property name="name" value="T" />
           </node>
+          <node role="parameter" type="med.templates.structure.IntParameter" id="8229040596002441814">
+            <property name="name" value="CAPACITY" />
+          </node>
         </node>
         <node role="attributes" type="med.core.structure.StructAttribute" id="5250078976300564494">
           <property name="name" value="size" />

@@ -110,5 +110,13 @@
       <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
     </node>
   </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="246791163857436300">
+    <property name="name" value="IntParameter" />
+    <link role="extends" targetNodeId="6471952207871994832" resolveInfo="Parameter" />
+    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="246791163857436301">
+      <property name="value" value="int" />
+      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    </node>
+  </node>
 </model>
 
