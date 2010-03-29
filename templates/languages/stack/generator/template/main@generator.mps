@@ -60,7 +60,7 @@
       <node role="modules" type="med.core.structure.ImplementationModule" id="8244668416309471273">
         <property name="name" value="bar" />
         <node role="contents" type="med.core.structure.StructDeclaration" id="8244668416309471274">
-          <property name="name" value="MyStack" />
+          <property name="name" value="Stack" />
           <node role="attributes" type="med.core.structure.StructAttribute" id="8244668416309471275">
             <property name="name" value="size" />
             <node role="type" type="med.core.structure.GenericIntegerType" id="8244668416309566865" />
@@ -110,6 +110,134 @@
                     <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="8244668416309566859" />
                     <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="8244668416309566864">
                       <link role="property" targetNodeId="2v.1169194664001" resolveInfo="name" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="contents" type="med.core.structure.Procedure" id="8758076352519143861">
+          <property name="name" value="push" />
+          <node role="body" type="med.core.structure.StatementList" id="8758076352519143863">
+            <node role="statements" type="med.core.structure.IfStatement" id="8758076352519355383">
+              <node role="thenPart" type="med.core.structure.StatementList" id="8758076352519355384">
+                <node role="statements" type="med.core.structure.AssignmentStatement" id="8758076352519355421">
+                  <node role="lvalue" type="med.core.structure.ArrayAccessExpression" id="8758076352519355414">
+                    <node role="index" type="med.core.structure.StructPointerAttributeReference" id="8758076352519355418">
+                      <link role="attribute" targetNodeId="8244668416309471275" resolveInfo="size" />
+                      <node role="variable" type="med.core.structure.ParameterReference" id="8758076352519355417">
+                        <link role="parameter" targetNodeId="8758076352519146088" resolveInfo="this" />
+                      </node>
+                    </node>
+                    <node role="array" type="med.core.structure.StructPointerAttributeReference" id="8758076352519355412">
+                      <link role="attribute" targetNodeId="8244668416309566866" resolveInfo="buffer" />
+                      <node role="variable" type="med.core.structure.ParameterReference" id="8758076352519355411">
+                        <link role="parameter" targetNodeId="8758076352519146088" resolveInfo="this" />
+                      </node>
+                    </node>
+                  </node>
+                  <node role="rvalue" type="med.core.structure.ParameterReference" id="8758076352519355425">
+                    <link role="parameter" targetNodeId="8758076352519146092" resolveInfo="value" />
+                  </node>
+                </node>
+                <node role="statements" type="med.core.structure.AssignmentStatement" id="8758076352519355448">
+                  <node role="lvalue" type="med.core.structure.StructPointerAttributeReference" id="8758076352519355446">
+                    <link role="attribute" targetNodeId="8244668416309471275" resolveInfo="size" />
+                    <node role="variable" type="med.core.structure.ParameterReference" id="8758076352519355445">
+                      <link role="parameter" targetNodeId="8758076352519146088" resolveInfo="this" />
+                    </node>
+                  </node>
+                  <node role="rvalue" type="med.core.structure.PlusExpression" id="8758076352519355455">
+                    <node role="left" type="med.core.structure.StructPointerAttributeReference" id="8758076352519355453">
+                      <link role="attribute" targetNodeId="8244668416309471275" resolveInfo="size" />
+                      <node role="variable" type="med.core.structure.ParameterReference" id="8758076352519355452">
+                        <link role="parameter" targetNodeId="8758076352519146088" resolveInfo="this" />
+                      </node>
+                    </node>
+                    <node role="right" type="med.core.structure.IntConstantExpression" id="8758076352519355459">
+                      <property name="value" value="1" />
+                    </node>
+                  </node>
+                </node>
+                <node role="statements" type="med.core.structure.ReturnStatement" id="8758076352519355407">
+                  <node role="expr" type="med.core.structure.TrueLiteral" id="8758076352519355408" />
+                </node>
+              </node>
+              <node role="condition" type="med.core.structure.SmallerExpression" id="8758076352519355387">
+                <node role="right" type="med.core.structure.IntConstantExpression" id="8758076352519355391">
+                  <property name="value" value="20" />
+                  <node role="propertyMacro$property_attribute$value" type="jetbrains.mps.lang.generator.structure.PropertyMacro" id="8758076352519355392">
+                    <node role="propertyValueFunction" type="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" id="8758076352519355395">
+                      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8758076352519355396">
+                        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8758076352519355397">
+                          <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8758076352519355398">
+                            <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="8758076352519355399">
+                              <link role="property" targetNodeId="1.5620187508115593371" resolveInfo="capacity" />
+                            </node>
+                            <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="8758076352519355400" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node role="left" type="med.core.structure.StructPointerAttributeReference" id="8758076352519355402">
+                  <link role="attribute" targetNodeId="8244668416309471275" resolveInfo="size" />
+                  <node role="variable" type="med.core.structure.ParameterReference" id="8758076352519355401">
+                    <link role="parameter" targetNodeId="8758076352519146088" resolveInfo="this" />
+                  </node>
+                </node>
+              </node>
+              <node role="elsePart" type="med.core.structure.StatementList" id="8758076352519355404">
+                <node role="statements" type="med.core.structure.ReturnStatement" id="8758076352519355405">
+                  <node role="expr" type="med.core.structure.FalseLiteral" id="8758076352519355406" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="type" type="med.core.structure.BooleanType" id="8758076352519146057" />
+          <node role="templateFragment$attribute" type="jetbrains.mps.lang.generator.structure.TemplateFragment" id="8758076352519146058" />
+          <node role="propertyMacro$property_attribute$name" type="jetbrains.mps.lang.generator.structure.PropertyMacro" id="8758076352519146059">
+            <node role="propertyValueFunction" type="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" id="8758076352519146062">
+              <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8758076352519146075">
+                <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8758076352519146076">
+                  <node role="expression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="8758076352519146079">
+                    <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8758076352519146083">
+                      <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="8758076352519146082" />
+                      <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="8758076352519146087">
+                        <link role="property" targetNodeId="2v.1169194664001" resolveInfo="name" />
+                      </node>
+                    </node>
+                    <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="8758076352519146077">
+                      <property name="value" value="push" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="parameters" type="med.core.structure.ProcedureParameter" id="8758076352519146088">
+            <property name="name" value="this" />
+            <node role="type" type="med.core.structure.PointerType" id="8758076352519146089">
+              <node role="baseType" type="med.core.structure.StructType" id="8758076352519146091">
+                <link role="struct" targetNodeId="8244668416309471274" resolveInfo="MyStack" />
+              </node>
+            </node>
+          </node>
+          <node role="parameters" type="med.core.structure.ProcedureParameter" id="8758076352519146092">
+            <property name="name" value="value" />
+            <node role="type" type="med.core.structure.GenericIntegerType" id="8758076352519146094">
+              <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" id="8758076352519146096">
+                <node role="sourceNodeQuery" type="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" id="8758076352519146099">
+                  <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8758076352519146100">
+                    <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8758076352519146101">
+                      <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8758076352519146102">
+                        <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="8758076352519146103">
+                          <link role="link" targetNodeId="1.5620187508115593373" />
+                        </node>
+                        <node role="operand" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" id="8758076352519146104" />
+                      </node>
                     </node>
                   </node>
                 </node>
