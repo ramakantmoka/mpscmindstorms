@@ -25,26 +25,6 @@
         <property name="name" value="MyStack" />
         <node role="type" type="med.core.structure.GenericIntegerType" id="2685097742599722087" />
       </node>
-      <node role="contents" type="med.core.structure.Procedure" id="2685097742599722089">
-        <property name="name" value="test" />
-        <node role="type" type="med.core.structure.VoidType" id="2685097742599722090" />
-        <node role="body" type="med.core.structure.StatementList" id="2685097742599722091">
-          <node role="statements" type="med.core.structure.LocalVariableDeclaration" id="2685097742599827398">
-            <property name="name" value="stack" />
-            <node role="type" type="med.stack.structure.Bound" id="2685097742599827399">
-              <link role="instance" targetNodeId="2685097742599722085" resolveInfo="MyStack" />
-            </node>
-          </node>
-          <node role="statements" type="med.stack.structure.Push" id="2685097742600142293">
-            <node role="stack" type="med.core.structure.LocalVariableReference" id="2685097742600142296">
-              <link role="variable" targetNodeId="2685097742599827398" resolveInfo="stack" />
-            </node>
-            <node role="value" type="med.core.structure.IntConstantExpression" id="2685097742600142298">
-              <property name="value" value="12" />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </node>
 </model>
