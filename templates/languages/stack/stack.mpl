@@ -33,6 +33,20 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="824645c0-e155-468a-81d9-a6bfff2ff654(med.stack#8244668416309462459)" />
+            <external-mapping>
+              <mapping-node modelUID="r:41a53aec-e187-4c9a-8e23-64729dfb1db6(med.stack.generator.template.main@generator)" nodeID="8244668416309462460" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="824645c0-e155-468a-81d9-a6bfff2ff654(med.stack#8244668416309462459)" />
+            <external-mapping>
+              <mapping-node modelUID="r:41a53aec-e187-4c9a-8e23-64729dfb1db6(med.stack.generator.template.main@generator)" nodeID="5116667017002231505" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
       </mapping-priorities>
     </generator>
   </generators>
