@@ -93,7 +93,7 @@ public class StructDeclaration extends BaseConcept implements IHasIdentifierName
   }
 
   public static StructDeclaration newInstance(SModel sm, boolean init) {
-    return (StructDeclaration)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.StructDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (StructDeclaration) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.StructDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static StructDeclaration newInstance(SModel sm) {

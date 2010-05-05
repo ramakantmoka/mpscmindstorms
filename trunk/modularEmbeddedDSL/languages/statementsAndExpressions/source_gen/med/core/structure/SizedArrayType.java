@@ -24,7 +24,7 @@ public class SizedArrayType extends ArrayType {
   }
 
   public static SizedArrayType newInstance(SModel sm, boolean init) {
-    return (SizedArrayType)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.SizedArrayType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (SizedArrayType) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.SizedArrayType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static SizedArrayType newInstance(SModel sm) {

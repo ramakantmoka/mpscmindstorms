@@ -53,7 +53,7 @@ public class ProcedureParameter extends BaseConcept implements IVariableDeclarat
   }
 
   public Type getType() {
-    return (Type)this.getChild(Type.class, ProcedureParameter.TYPE);
+    return (Type) this.getChild(Type.class, ProcedureParameter.TYPE);
   }
 
   public void setType(Type node) {
@@ -61,7 +61,7 @@ public class ProcedureParameter extends BaseConcept implements IVariableDeclarat
   }
 
   public static ProcedureParameter newInstance(SModel sm, boolean init) {
-    return (ProcedureParameter)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ProcedureParameter", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ProcedureParameter) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ProcedureParameter", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ProcedureParameter newInstance(SModel sm) {

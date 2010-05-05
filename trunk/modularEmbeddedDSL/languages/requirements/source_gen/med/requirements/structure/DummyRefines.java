@@ -15,7 +15,7 @@ public class DummyRefines extends DummyDependency {
   }
 
   public static DummyRefines newInstance(SModel sm, boolean init) {
-    return (DummyRefines)SModelUtil_new.instantiateConceptDeclaration("med.requirements.structure.DummyRefines", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (DummyRefines) SModelUtil_new.instantiateConceptDeclaration("med.requirements.structure.DummyRefines", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static DummyRefines newInstance(SModel sm) {

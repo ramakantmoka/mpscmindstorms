@@ -10,12 +10,12 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
 public class TerminateTaskStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createConstant_5869_0(editorContext, node);
+    return this.createConstant_kh6m7l_a(editorContext, node);
   }
 
-  private EditorCell createConstant_5869_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_kh6m7l_a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "terminate;");
-    editorCell.setCellId("Constant_5869_0");
+    editorCell.setCellId("Constant_kh6m7l_a");
     editorCell.setDefaultText("");
     return editorCell;
   }

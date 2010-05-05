@@ -22,86 +22,86 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 
 public class Wiring_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_2650_0(editorContext, node);
+    return this.createCollection_bopo2t_a(editorContext, node);
   }
 
-  private EditorCell createCollection_2650_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_bopo2t_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
-    editorCell.setCellId("Collection_2650_0");
-    editorCell.addEditorCell(this.createCollection_2650_1(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_2650_2(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_2650_3(editorContext, node));
+    editorCell.setCellId("Collection_bopo2t_a");
+    editorCell.addEditorCell(this.createCollection_bopo2t_a0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_bopo2t_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_bopo2t_c0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createCollection_2650_1(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_bopo2t_a0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_2650_1");
+    editorCell.setCellId("Collection_bopo2t_a0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
     }
-    editorCell.addEditorCell(this.createConstant_2650_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_2650_1(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_2650_2(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_bopo2t_a0a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_bopo2t_b0a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_bopo2t_c0a(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createCollection_2650_2(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_bopo2t_b0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_2650_2");
+    editorCell.setCellId("Collection_bopo2t_b0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
     }
-    editorCell.addEditorCell(this.createIndentCell2650_0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_2650_0(editorContext, node));
+    editorCell.addEditorCell(this.createIndentCell_bopo2t_a1a(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_bopo2t_b1a(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_2650_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_bopo2t_a0a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "component");
-    editorCell.setCellId("Constant_2650_0");
+    editorCell.setCellId("Constant_bopo2t_a0a");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_2650_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_bopo2t_b0a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "wiring");
-    editorCell.setCellId("Constant_2650_1");
+    editorCell.setCellId("Constant_bopo2t_b0a");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_2650_2(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_bopo2t_c0a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "{");
-    editorCell.setCellId("Constant_2650_2");
+    editorCell.setCellId("Constant_bopo2t_c0a");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_2650_3(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_bopo2t_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");
-    editorCell.setCellId("Constant_2650_3");
+    editorCell.setCellId("Constant_bopo2t_c0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_2650_0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Wiring_Editor.mappingsListHandler_2650_0(node, "mappings", editorContext);
+  private EditorCell createRefNodeList_bopo2t_b1a(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new Wiring_Editor.mappingsListHandler_bopo2t_b1a(node, "mappings", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_mappings");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
 
-  private EditorCell createIndentCell2650_0(EditorContext editorContext, SNode node) {
+  private EditorCell createIndentCell_bopo2t_a1a(EditorContext editorContext, SNode node) {
     EditorCell_Indent result = new EditorCell_Indent(editorContext, node);
     return result;
   }
 
-  private static class mappingsListHandler_2650_0 extends RefNodeListHandler {
-    public mappingsListHandler_2650_0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class mappingsListHandler_bopo2t_b1a extends RefNodeListHandler {
+    public mappingsListHandler_bopo2t_b1a(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 

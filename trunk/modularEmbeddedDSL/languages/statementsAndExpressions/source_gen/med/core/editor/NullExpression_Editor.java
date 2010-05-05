@@ -10,12 +10,12 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
 public class NullExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createConstant_0797_0(editorContext, node);
+    return this.createConstant_fm8652_a(editorContext, node);
   }
 
-  private EditorCell createConstant_0797_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_fm8652_a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "NULL");
-    editorCell.setCellId("Constant_0797_0");
+    editorCell.setCellId("Constant_fm8652_a");
     editorCell.setDefaultText("");
     return editorCell;
   }

@@ -36,12 +36,12 @@ public class QueriesGenerated {
     return SPropertyOperations.getInteger(SLinkOperations.getTarget(_context.getNode(), "bits", false), "to");
   }
 
-  public static SNode sourceNodeQuery_7680622939171162182(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), "rvalue", true);
-  }
-
   public static SNode sourceNodeQuery_7680622939171202362(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(_context.getNode(), "lvalue", true), "med.bitdata.structure.BitAccessExpression"), "expression", true);
+  }
+
+  public static SNode sourceNodeQuery_7680622939171162182(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "rvalue", true);
   }
 
   public static SNode sourceNodeQuery_7680622939171433490(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {

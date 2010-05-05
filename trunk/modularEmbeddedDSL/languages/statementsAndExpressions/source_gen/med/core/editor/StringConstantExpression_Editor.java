@@ -17,21 +17,21 @@ import jetbrains.mps.nodeEditor.EditorManager;
 
 public class StringConstantExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_1777_0(editorContext, node);
+    return this.createCollection_r4ihjj_a(editorContext, node);
   }
 
-  private EditorCell createCollection_1777_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_r4ihjj_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_1777_0");
-    editorCell.addEditorCell(this.createConstant_1777_0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_1777_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_1777_1(editorContext, node));
+    editorCell.setCellId("Collection_r4ihjj_a");
+    editorCell.addEditorCell(this.createConstant_r4ihjj_a0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_r4ihjj_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_r4ihjj_c0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_1777_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_r4ihjj_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "\"");
-    editorCell.setCellId("Constant_1777_0");
+    editorCell.setCellId("Constant_r4ihjj_a0");
     coresyntax_styles_StyleSheet.getStringFormat(editorCell).apply(editorCell);
     {
       Style style = editorCell.getStyle();
@@ -41,9 +41,9 @@ public class StringConstantExpression_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_1777_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_r4ihjj_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "\"");
-    editorCell.setCellId("Constant_1777_1");
+    editorCell.setCellId("Constant_r4ihjj_c0");
     coresyntax_styles_StyleSheet.getStringFormat(editorCell).apply(editorCell);
     {
       Style style = editorCell.getStyle();
@@ -53,7 +53,7 @@ public class StringConstantExpression_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createProperty_1777_0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_r4ihjj_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("value");
     provider.setNoTargetText("<no value>");

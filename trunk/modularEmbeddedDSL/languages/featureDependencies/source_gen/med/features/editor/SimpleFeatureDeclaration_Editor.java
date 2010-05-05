@@ -21,35 +21,35 @@ import med.features.behavior.FeatureDeclaration_Behavior;
 
 public class SimpleFeatureDeclaration_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_1286_0(editorContext, node);
+    return this.createCollection_6lrd2j_a(editorContext, node);
   }
 
-  private EditorCell createCollection_1286_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_6lrd2j_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_1286_0");
+    editorCell.setCellId("Collection_6lrd2j_a");
     editorCell.addKeyMap(new enterToSwitch());
-    editorCell.addEditorCell(this.createConstant_1286_0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_1286_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_1286_1(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_1286_1(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_6lrd2j_a0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_6lrd2j_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_6lrd2j_c0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_6lrd2j_d0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_1286_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_6lrd2j_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "feature");
-    editorCell.setCellId("Constant_1286_0");
+    editorCell.setCellId("Constant_6lrd2j_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_1286_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_6lrd2j_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_1286_1");
+    editorCell.setCellId("Constant_6lrd2j_c0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createProperty_1286_0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_6lrd2j_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("name");
     provider.setNoTargetText("<no name>");
@@ -67,7 +67,7 @@ public class SimpleFeatureDeclaration_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createProperty_1286_1(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_6lrd2j_d0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("selected");
     provider.setNoTargetText("<no selected>");
@@ -79,7 +79,7 @@ public class SimpleFeatureDeclaration_Editor extends DefaultNodeEditor {
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
       style.set(StyleAttributes.TEXT_COLOR, new AttributeCalculator<Color>() {
         public Color calculate(EditorCell cell) {
-          return SimpleFeatureDeclaration_Editor._StyleParameter_QueryFunction_1286_0((cell == null ?
+          return SimpleFeatureDeclaration_Editor._StyleParameter_QueryFunction_6lrd2j_a1d0((cell == null ?
             null :
             cell.getSNode()
           ), (cell == null ?
@@ -100,7 +100,7 @@ public class SimpleFeatureDeclaration_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static Color _StyleParameter_QueryFunction_1286_0(SNode node, EditorContext editorContext) {
+  private static Color _StyleParameter_QueryFunction_6lrd2j_a1d0(SNode node, EditorContext editorContext) {
     if (FeatureDeclaration_Behavior.call_isSelected_7715189151798165434(node)) {
       return new Color(0, 160, 0);
     } else {

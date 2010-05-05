@@ -7,6 +7,7 @@ import jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.intentions.BaseIntentionProvider;
+import jetbrains.mps.typesystem.inference.EquationInfo;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.SModelUtil_new;
 
@@ -18,7 +19,8 @@ public class typeof_MarkAsPhysicalOperator_InferenceRule extends AbstractInferen
     {
       SNode _nodeToCheck_1029348928467 = operator;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:ae1999e2-f2a1-420d-a446-b43e895f34b9(med.quantities.typesystem)", "3456749490052512385", true), (SNode)typeCheckingContext.typeOf(SLinkOperations.getTarget(operator, "type", true), "r:ae1999e2-f2a1-420d-a446-b43e895f34b9(med.quantities.typesystem)", "3456749490053215204", true), _nodeToCheck_1029348928467, null, "r:ae1999e2-f2a1-420d-a446-b43e895f34b9(med.quantities.typesystem)", "3456749490052523305", intentionProvider);
+      EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:ae1999e2-f2a1-420d-a446-b43e895f34b9(med.quantities.typesystem)", "3456749490052523305", 0, intentionProvider);
+      typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:ae1999e2-f2a1-420d-a446-b43e895f34b9(med.quantities.typesystem)", "3456749490052512385", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(operator, "type", true), "r:ae1999e2-f2a1-420d-a446-b43e895f34b9(med.quantities.typesystem)", "3456749490053215204", true), _info_12389875345);
     }
   }
 

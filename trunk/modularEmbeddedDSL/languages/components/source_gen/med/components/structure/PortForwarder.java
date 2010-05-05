@@ -45,7 +45,7 @@ public class PortForwarder extends MedBase implements IComponentImplContent {
   }
 
   public ProvidedPort getProvided() {
-    return (ProvidedPort)this.getReferent(ProvidedPort.class, PortForwarder.PROVIDED);
+    return (ProvidedPort) this.getReferent(ProvidedPort.class, PortForwarder.PROVIDED);
   }
 
   public void setProvided(ProvidedPort node) {
@@ -53,7 +53,7 @@ public class PortForwarder extends MedBase implements IComponentImplContent {
   }
 
   public RequiredPort getRequired() {
-    return (RequiredPort)this.getReferent(RequiredPort.class, PortForwarder.REQUIRED);
+    return (RequiredPort) this.getReferent(RequiredPort.class, PortForwarder.REQUIRED);
   }
 
   public void setRequired(RequiredPort node) {
@@ -61,7 +61,7 @@ public class PortForwarder extends MedBase implements IComponentImplContent {
   }
 
   public static PortForwarder newInstance(SModel sm, boolean init) {
-    return (PortForwarder)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.PortForwarder", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (PortForwarder) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.PortForwarder", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static PortForwarder newInstance(SModel sm) {

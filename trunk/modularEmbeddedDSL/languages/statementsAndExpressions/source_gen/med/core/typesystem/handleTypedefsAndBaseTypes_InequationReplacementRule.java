@@ -19,13 +19,15 @@ public class handleTypedefsAndBaseTypes_InequationReplacementRule extends Abstra
     {
       SNode _nodeToCheck_1029348928467 = equationInfo.getNodeWithError();
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation((SNode)SLinkOperations.getTarget(SLinkOperations.getTarget(supertype, "typedef", false), "baseType", true), (SNode)subtype, _nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "5196379128665643396", intentionProvider);
+      EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "5196379128665643396", 0, intentionProvider);
+      _info_12389875345.getOuterRulesIdFromInfo(equationInfo);
+      typeCheckingContext.createEquation((SNode) SLinkOperations.getTarget(SLinkOperations.getTarget(supertype, "typedef", false), "baseType", true), (SNode) subtype, _info_12389875345);
     }
   }
 
   public boolean checkInequation(final SNode subtype, final SNode supertype, final EquationInfo equationInfo) {
     boolean result_14532009 = true;
-    result_14532009 = result_14532009 && MatchingUtil.matchNodes((SNode)SLinkOperations.getTarget(SLinkOperations.getTarget(supertype, "typedef", false), "baseType", true), (SNode)subtype);
+    result_14532009 = result_14532009 && MatchingUtil.matchNodes((SNode) SLinkOperations.getTarget(SLinkOperations.getTarget(supertype, "typedef", false), "baseType", true), (SNode) subtype);
     return result_14532009;
   }
 

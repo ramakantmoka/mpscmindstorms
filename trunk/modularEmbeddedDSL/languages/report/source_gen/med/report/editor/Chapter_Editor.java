@@ -26,54 +26,54 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 
 public class Chapter_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_0081_0(editorContext, node);
+    return this.createCollection_m7gelr_a(editorContext, node);
   }
 
-  private EditorCell createCollection_0081_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_m7gelr_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
-    editorCell.setCellId("Collection_0081_0");
-    editorCell.addEditorCell(this.createConstant_0081_1(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_0081_1(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_0081_0(editorContext, node));
+    editorCell.setCellId("Collection_m7gelr_a");
+    editorCell.addEditorCell(this.createConstant_m7gelr_a0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_m7gelr_b0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_m7gelr_c0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createCollection_0081_1(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_m7gelr_b0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
-    editorCell.setCellId("Collection_0081_1");
+    editorCell.setCellId("Collection_m7gelr_b0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
     }
-    editorCell.addEditorCell(this.createProperty_0081_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_0081_0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_0081_1(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_m7gelr_a1a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_m7gelr_b1a(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_m7gelr_c1a(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_0081_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_m7gelr_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "  ");
-    editorCell.setCellId("Constant_0081_0");
+    editorCell.setCellId("Constant_m7gelr_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_0081_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_m7gelr_b1a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "  ");
-    editorCell.setCellId("Constant_0081_1");
+    editorCell.setCellId("Constant_m7gelr_b1a");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_0081_0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Chapter_Editor.contentsListHandler_0081_0(node, "contents", editorContext);
+  private EditorCell createRefNodeList_m7gelr_c0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new Chapter_Editor.contentsListHandler_m7gelr_c0(node, "contents", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_contents");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
 
-  private EditorCell createProperty_0081_0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_m7gelr_a1a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("number");
     provider.setNoTargetText("<no number>");
@@ -95,7 +95,7 @@ public class Chapter_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createProperty_0081_1(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_m7gelr_c1a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("heading");
     provider.setNoTargetText("<no heading>");
@@ -117,8 +117,8 @@ public class Chapter_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static class contentsListHandler_0081_0 extends RefNodeListHandler {
-    public contentsListHandler_0081_0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class contentsListHandler_m7gelr_c0 extends RefNodeListHandler {
+    public contentsListHandler_m7gelr_c0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 

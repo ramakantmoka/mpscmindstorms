@@ -15,7 +15,7 @@ public class NotEqualsExpression extends BinaryComparisonExpression {
   }
 
   public static NotEqualsExpression newInstance(SModel sm, boolean init) {
-    return (NotEqualsExpression)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.NotEqualsExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (NotEqualsExpression) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.NotEqualsExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static NotEqualsExpression newInstance(SModel sm) {

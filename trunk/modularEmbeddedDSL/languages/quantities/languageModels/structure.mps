@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:c8eeaafc-b8ed-41eb-96aa-711dbd66c11c(med.quantities.structure)">
-  <persistence version="3" />
+  <persistence version="4" />
   <refactoringHistory>
     <refactoringContext modelVersion="0">
       <refactoring refactoringClass="jetbrains.mps.lang.structure.scripts.MoveLinkUp" />
@@ -10,6 +10,7 @@
           <value modelUID="r:c8eeaafc-b8ed-41eb-96aa-711dbd66c11c(med.quantities.structure)" nodeId="8017791897009273674" />
         </entry>
       </moveMap>
+      <sourceMap />
       <conceptFeatureMap>
         <entry>
           <key featureName="baseType" featureKind="CHILD" />
@@ -43,124 +44,124 @@
   <maxImportIndex value="1" />
   <visible index="2" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   <visible index="3" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
-  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="3456749490051670916">
-    <property name="name" value="QuantityDeclaration" />
-    <property name="package" value="quantities" />
-    <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
-    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="3456749490051670921">
-      <property name="name" value="minValue" />
-      <link role="dataType" targetNodeId="2v.1082983657062" resolveInfo="integer" />
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="3456749490051670916">
+    <property name="name:0" value="QuantityDeclaration" />
+    <property name="package:0" value="quantities" />
+    <link role="extends:0" targetNodeId="2v.1133920641626:0" resolveInfo="BaseConcept" />
+    <node role="propertyDeclaration:0" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration:0" id="3456749490051670921">
+      <property name="name:0" value="minValue" />
+      <link role="dataType:0" targetNodeId="2v.1082983657062:0" resolveInfo="integer" />
     </node>
-    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="3456749490051670922">
-      <property name="name" value="maxValue" />
-      <link role="dataType" targetNodeId="2v.1082983657062" resolveInfo="integer" />
+    <node role="propertyDeclaration:0" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration:0" id="3456749490051670922">
+      <property name="name:0" value="maxValue" />
+      <link role="dataType:0" targetNodeId="2v.1082983657062:0" resolveInfo="integer" />
     </node>
-    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="3456749490051670947">
-      <property name="name" value="unit" />
-      <link role="dataType" targetNodeId="2v.1082983041843" resolveInfo="string" />
+    <node role="propertyDeclaration:0" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration:0" id="3456749490051670947">
+      <property name="name:0" value="unit" />
+      <link role="dataType:0" targetNodeId="2v.1082983041843:0" resolveInfo="string" />
     </node>
-    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="3456749490051670917">
-      <link role="intfc" targetNodeId="3v.306587673255505535" resolveInfo="IExportableModuleContent" />
+    <node role="implements:0" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference:0" id="3456749490051670917">
+      <link role="intfc:0" targetNodeId="3v.306587673255505535:9" resolveInfo="IExportableModuleContent" />
     </node>
-    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="3456749490051670919">
-      <link role="intfc" targetNodeId="3v.343373828472902636" resolveInfo="IHasIdentifierName" />
+    <node role="implements:0" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference:0" id="3456749490051670919">
+      <link role="intfc:0" targetNodeId="3v.343373828472902636:9" resolveInfo="IHasIdentifierName" />
     </node>
-    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="738757997635612460">
-      <property name="value" value="quantity" />
-      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
-    </node>
-  </node>
-  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="3456749490051894748">
-    <property name="name" value="QuantityType" />
-    <property name="package" value="quantities" />
-    <link role="extends" targetNodeId="3456749490052706495" resolveInfo="GenericQuantityType" />
-    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="3456749490051894749">
-      <property name="metaClass" value="reference" />
-      <property name="role" value="quantity" />
-      <property name="sourceCardinality" value="1" />
-      <link role="target" targetNodeId="3456749490051670916" resolveInfo="QuantityDeclaration" />
+    <node role="conceptProperty:0" type="jetbrains.mps.lang.structure.structure.StringConceptProperty:0" id="738757997635612460">
+      <property name="value:0" value="quantity" />
+      <link role="conceptPropertyDeclaration:0" targetNodeId="2v.1137473891462:0" resolveInfo="alias" />
     </node>
   </node>
-  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="3456749490052512365">
-    <property name="name" value="MarkAsPhysicalOperator" />
-    <property name="package" value="quantities" />
-    <link role="extends" targetNodeId="3v.6441851857096548278" resolveInfo="Expression" />
-    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="3456749490053215199">
-      <property name="metaClass" value="aggregation" />
-      <property name="role" value="type" />
-      <property name="sourceCardinality" value="1" />
-      <link role="target" targetNodeId="3456749490051894748" resolveInfo="QuantityType" />
-    </node>
-    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="3456749490052512379">
-      <property name="name" value="value" />
-      <link role="dataType" targetNodeId="2v.1082983657062" resolveInfo="integer" />
-    </node>
-    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="3456749490052817062">
-      <property name="value" value="p&lt;..&gt;" />
-      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="3456749490051894748">
+    <property name="name:0" value="QuantityType" />
+    <property name="package:0" value="quantities" />
+    <link role="extends:0" targetNodeId="3456749490052706495:0" resolveInfo="GenericQuantityType" />
+    <node role="linkDeclaration:0" type="jetbrains.mps.lang.structure.structure.LinkDeclaration:0" id="3456749490051894749">
+      <property name="metaClass:0" value="reference" />
+      <property name="role:0" value="quantity" />
+      <property name="sourceCardinality:0" value="1" />
+      <link role="target:0" targetNodeId="3456749490051670916:0" resolveInfo="QuantityDeclaration" />
     </node>
   </node>
-  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="3456749490052706495">
-    <property name="name" value="GenericQuantityType" />
-    <property name="package" value="quantities" />
-    <link role="extends" targetNodeId="3v.4641466063286591366" resolveInfo="Type" />
-  </node>
-  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="3456749490052912788">
-    <property name="name" value="MarkAsInternalOperator" />
-    <property name="package" value="quantities" />
-    <link role="extends" targetNodeId="3v.6441851857096548278" resolveInfo="Expression" />
-    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="3456749490052912789">
-      <property name="name" value="value" />
-      <link role="dataType" targetNodeId="2v.1082983657062" resolveInfo="integer" />
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="3456749490052512365">
+    <property name="name:0" value="MarkAsPhysicalOperator" />
+    <property name="package:0" value="quantities" />
+    <link role="extends:0" targetNodeId="3v.6441851857096548278:9" resolveInfo="Expression" />
+    <node role="linkDeclaration:0" type="jetbrains.mps.lang.structure.structure.LinkDeclaration:0" id="3456749490053215199">
+      <property name="metaClass:0" value="aggregation" />
+      <property name="role:0" value="type" />
+      <property name="sourceCardinality:0" value="1" />
+      <link role="target:0" targetNodeId="3456749490051894748:0" resolveInfo="QuantityType" />
     </node>
-    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="3456749490052912790">
-      <property name="value" value="i&lt;..&gt;" />
-      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    <node role="propertyDeclaration:0" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration:0" id="3456749490052512379">
+      <property name="name:0" value="value" />
+      <link role="dataType:0" targetNodeId="2v.1082983657062:0" resolveInfo="integer" />
     </node>
-  </node>
-  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="8017791897008984431">
-    <property name="name" value="AveragingType" />
-    <property name="package" value="average" />
-    <link role="extends" targetNodeId="8017791897009273673" resolveInfo="GenericAveragingType" />
-    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="8017791897008984434">
-      <property name="name" value="size" />
-      <link role="dataType" targetNodeId="2v.1082983657062" resolveInfo="integer" />
-    </node>
-    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="8017791897008984454">
-      <property name="value" value="avg" />
-      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+    <node role="conceptProperty:0" type="jetbrains.mps.lang.structure.structure.StringConceptProperty:0" id="3456749490052817062">
+      <property name="value:0" value="p&lt;..&gt;" />
+      <link role="conceptPropertyDeclaration:0" targetNodeId="2v.1137473891462:0" resolveInfo="alias" />
     </node>
   </node>
-  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="8017791897009273673">
-    <property name="package" value="average" />
-    <property name="name" value="GenericAveragingType" />
-    <link role="extends" targetNodeId="3v.4641466063286591366" resolveInfo="Type" />
-    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="8017791897009273674">
-      <property name="metaClass" value="aggregation" />
-      <property name="role" value="baseType" />
-      <property name="sourceCardinality" value="1" />
-      <link role="target" targetNodeId="3v.4641466063286591366" resolveInfo="Type" />
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="3456749490052706495">
+    <property name="name:0" value="GenericQuantityType" />
+    <property name="package:0" value="quantities" />
+    <link role="extends:0" targetNodeId="3v.4641466063286591366:9" resolveInfo="Type" />
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="3456749490052912788">
+    <property name="name:0" value="MarkAsInternalOperator" />
+    <property name="package:0" value="quantities" />
+    <link role="extends:0" targetNodeId="3v.6441851857096548278:9" resolveInfo="Expression" />
+    <node role="propertyDeclaration:0" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration:0" id="3456749490052912789">
+      <property name="name:0" value="value" />
+      <link role="dataType:0" targetNodeId="2v.1082983657062:0" resolveInfo="integer" />
+    </node>
+    <node role="conceptProperty:0" type="jetbrains.mps.lang.structure.structure.StringConceptProperty:0" id="3456749490052912790">
+      <property name="value:0" value="i&lt;..&gt;" />
+      <link role="conceptPropertyDeclaration:0" targetNodeId="2v.1137473891462:0" resolveInfo="alias" />
     </node>
   </node>
-  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="8017791897009806155">
-    <property name="package" value="average" />
-    <property name="name" value="AveragingAssignmentStatement" />
-    <link role="extends" targetNodeId="3v.6520964804316559123" resolveInfo="Statement" />
-    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="8017791897009806157">
-      <property name="metaClass" value="aggregation" />
-      <property name="role" value="var" />
-      <property name="sourceCardinality" value="1" />
-      <link role="target" targetNodeId="3v.6254144863184158273" resolveInfo="ModuleVariableRef" />
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="8017791897008984431">
+    <property name="name:0" value="AveragingType" />
+    <property name="package:0" value="average" />
+    <link role="extends:0" targetNodeId="8017791897009273673:0" resolveInfo="GenericAveragingType" />
+    <node role="propertyDeclaration:0" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration:0" id="8017791897008984434">
+      <property name="name:0" value="size" />
+      <link role="dataType:0" targetNodeId="2v.1082983657062:0" resolveInfo="integer" />
     </node>
-    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="8017791897009806156">
-      <property name="metaClass" value="aggregation" />
-      <property name="role" value="rvalue" />
-      <property name="sourceCardinality" value="1" />
-      <link role="target" targetNodeId="3v.6441851857096548278" resolveInfo="Expression" />
+    <node role="conceptProperty:0" type="jetbrains.mps.lang.structure.structure.StringConceptProperty:0" id="8017791897008984454">
+      <property name="value:0" value="avg" />
+      <link role="conceptPropertyDeclaration:0" targetNodeId="2v.1137473891462:0" resolveInfo="alias" />
     </node>
-    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="8017791897009806158">
-      <property name="value" value="=/" />
-      <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="8017791897009273673">
+    <property name="package:0" value="average" />
+    <property name="name:0" value="GenericAveragingType" />
+    <link role="extends:0" targetNodeId="3v.4641466063286591366:9" resolveInfo="Type" />
+    <node role="linkDeclaration:0" type="jetbrains.mps.lang.structure.structure.LinkDeclaration:0" id="8017791897009273674">
+      <property name="metaClass:0" value="aggregation" />
+      <property name="role:0" value="baseType" />
+      <property name="sourceCardinality:0" value="1" />
+      <link role="target:0" targetNodeId="3v.4641466063286591366:9" resolveInfo="Type" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="8017791897009806155">
+    <property name="package:0" value="average" />
+    <property name="name:0" value="AveragingAssignmentStatement" />
+    <link role="extends:0" targetNodeId="3v.6520964804316559123:9" resolveInfo="Statement" />
+    <node role="linkDeclaration:0" type="jetbrains.mps.lang.structure.structure.LinkDeclaration:0" id="8017791897009806157">
+      <property name="metaClass:0" value="aggregation" />
+      <property name="role:0" value="var" />
+      <property name="sourceCardinality:0" value="1" />
+      <link role="target:0" targetNodeId="3v.6254144863184158273:9" resolveInfo="ModuleVariableRef" />
+    </node>
+    <node role="linkDeclaration:0" type="jetbrains.mps.lang.structure.structure.LinkDeclaration:0" id="8017791897009806156">
+      <property name="metaClass:0" value="aggregation" />
+      <property name="role:0" value="rvalue" />
+      <property name="sourceCardinality:0" value="1" />
+      <link role="target:0" targetNodeId="3v.6441851857096548278:9" resolveInfo="Expression" />
+    </node>
+    <node role="conceptProperty:0" type="jetbrains.mps.lang.structure.structure.StringConceptProperty:0" id="8017791897009806158">
+      <property name="value:0" value="=/" />
+      <link role="conceptPropertyDeclaration:0" targetNodeId="2v.1137473891462:0" resolveInfo="alias" />
     </node>
   </node>
 </model>

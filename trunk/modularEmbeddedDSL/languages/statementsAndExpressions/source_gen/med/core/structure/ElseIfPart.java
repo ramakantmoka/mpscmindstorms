@@ -17,7 +17,7 @@ public class ElseIfPart extends MedBase {
   }
 
   public Expression getCondition() {
-    return (Expression)this.getChild(Expression.class, ElseIfPart.CONDITION);
+    return (Expression) this.getChild(Expression.class, ElseIfPart.CONDITION);
   }
 
   public void setCondition(Expression node) {
@@ -25,7 +25,7 @@ public class ElseIfPart extends MedBase {
   }
 
   public StatementList getElseifPart() {
-    return (StatementList)this.getChild(StatementList.class, ElseIfPart.ELSEIF_PART);
+    return (StatementList) this.getChild(StatementList.class, ElseIfPart.ELSEIF_PART);
   }
 
   public void setElseifPart(StatementList node) {
@@ -33,7 +33,7 @@ public class ElseIfPart extends MedBase {
   }
 
   public static ElseIfPart newInstance(SModel sm, boolean init) {
-    return (ElseIfPart)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ElseIfPart", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ElseIfPart) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ElseIfPart", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ElseIfPart newInstance(SModel sm) {

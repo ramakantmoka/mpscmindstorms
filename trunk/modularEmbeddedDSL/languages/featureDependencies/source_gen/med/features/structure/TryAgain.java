@@ -15,7 +15,7 @@ public class TryAgain extends RetryStep {
   }
 
   public static TryAgain newInstance(SModel sm, boolean init) {
-    return (TryAgain)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.TryAgain", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (TryAgain) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.TryAgain", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static TryAgain newInstance(SModel sm) {

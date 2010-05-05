@@ -16,7 +16,7 @@ public class DummyRequirementsTraceLink extends TraceLink {
   }
 
   public DummyRequirement getRequirement() {
-    return (DummyRequirement)this.getReferent(DummyRequirement.class, DummyRequirementsTraceLink.REQUIREMENT);
+    return (DummyRequirement) this.getReferent(DummyRequirement.class, DummyRequirementsTraceLink.REQUIREMENT);
   }
 
   public void setRequirement(DummyRequirement node) {
@@ -24,7 +24,7 @@ public class DummyRequirementsTraceLink extends TraceLink {
   }
 
   public static DummyRequirementsTraceLink newInstance(SModel sm, boolean init) {
-    return (DummyRequirementsTraceLink)SModelUtil_new.instantiateConceptDeclaration("med.requirements.structure.DummyRequirementsTraceLink", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (DummyRequirementsTraceLink) SModelUtil_new.instantiateConceptDeclaration("med.requirements.structure.DummyRequirementsTraceLink", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static DummyRequirementsTraceLink newInstance(SModel sm) {

@@ -47,7 +47,7 @@ public class InterfaceProcedureImplementation extends MedBase implements IReturn
   }
 
   public InterfaceProcedure getProcedure() {
-    return (InterfaceProcedure)this.getReferent(InterfaceProcedure.class, InterfaceProcedureImplementation.PROCEDURE);
+    return (InterfaceProcedure) this.getReferent(InterfaceProcedure.class, InterfaceProcedureImplementation.PROCEDURE);
   }
 
   public void setProcedure(InterfaceProcedure node) {
@@ -55,7 +55,7 @@ public class InterfaceProcedureImplementation extends MedBase implements IReturn
   }
 
   public StatementList getBody() {
-    return (StatementList)this.getChild(StatementList.class, InterfaceProcedureImplementation.BODY);
+    return (StatementList) this.getChild(StatementList.class, InterfaceProcedureImplementation.BODY);
   }
 
   public void setBody(StatementList node) {
@@ -63,7 +63,7 @@ public class InterfaceProcedureImplementation extends MedBase implements IReturn
   }
 
   public static InterfaceProcedureImplementation newInstance(SModel sm, boolean init) {
-    return (InterfaceProcedureImplementation)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.InterfaceProcedureImplementation", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (InterfaceProcedureImplementation) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.InterfaceProcedureImplementation", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static InterfaceProcedureImplementation newInstance(SModel sm) {

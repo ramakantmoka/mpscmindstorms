@@ -15,7 +15,7 @@ public class TrueFE extends BaseFE {
   }
 
   public static TrueFE newInstance(SModel sm, boolean init) {
-    return (TrueFE)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.TrueFE", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (TrueFE) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.TrueFE", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static TrueFE newInstance(SModel sm) {

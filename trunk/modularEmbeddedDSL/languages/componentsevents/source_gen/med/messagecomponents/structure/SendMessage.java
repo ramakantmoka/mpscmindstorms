@@ -18,7 +18,7 @@ public class SendMessage extends Statement {
   }
 
   public ProvidedMessagePort getPort() {
-    return (ProvidedMessagePort)this.getReferent(ProvidedMessagePort.class, SendMessage.PORT);
+    return (ProvidedMessagePort) this.getReferent(ProvidedMessagePort.class, SendMessage.PORT);
   }
 
   public void setPort(ProvidedMessagePort node) {
@@ -26,7 +26,7 @@ public class SendMessage extends Statement {
   }
 
   public Message getMessage() {
-    return (Message)this.getReferent(Message.class, SendMessage.MESSAGE);
+    return (Message) this.getReferent(Message.class, SendMessage.MESSAGE);
   }
 
   public void setMessage(Message node) {
@@ -34,7 +34,7 @@ public class SendMessage extends Statement {
   }
 
   public static SendMessage newInstance(SModel sm, boolean init) {
-    return (SendMessage)SModelUtil_new.instantiateConceptDeclaration("med.messagecomponents.structure.SendMessage", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (SendMessage) SModelUtil_new.instantiateConceptDeclaration("med.messagecomponents.structure.SendMessage", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static SendMessage newInstance(SModel sm) {

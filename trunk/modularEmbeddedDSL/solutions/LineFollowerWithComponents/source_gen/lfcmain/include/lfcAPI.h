@@ -9,6 +9,7 @@
 
 // custom includes for header
 #include "stdint.h"
+#include "stdint.h"
 
 
 void lfcAPI_api_ForwarderTestImpl_fd3(void);

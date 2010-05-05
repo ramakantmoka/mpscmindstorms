@@ -15,7 +15,7 @@ public class PlusMinusPrioExpression extends BinaryArithmeticExpression {
   }
 
   public static PlusMinusPrioExpression newInstance(SModel sm, boolean init) {
-    return (PlusMinusPrioExpression)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.PlusMinusPrioExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (PlusMinusPrioExpression) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.PlusMinusPrioExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static PlusMinusPrioExpression newInstance(SModel sm) {

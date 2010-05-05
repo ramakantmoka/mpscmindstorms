@@ -17,7 +17,7 @@ public class ContinuousStatement extends RSStatement {
   }
 
   public Expression getTime() {
-    return (Expression)this.getChild(Expression.class, ContinuousStatement.TIME);
+    return (Expression) this.getChild(Expression.class, ContinuousStatement.TIME);
   }
 
   public void setTime(Expression node) {
@@ -25,7 +25,7 @@ public class ContinuousStatement extends RSStatement {
   }
 
   public static ContinuousStatement newInstance(SModel sm, boolean init) {
-    return (ContinuousStatement)SModelUtil_new.instantiateConceptDeclaration("ds.twowheel.structure.ContinuousStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ContinuousStatement) SModelUtil_new.instantiateConceptDeclaration("ds.twowheel.structure.ContinuousStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ContinuousStatement newInstance(SModel sm) {

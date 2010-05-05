@@ -42,7 +42,7 @@ public class UInt32 extends Type implements IStdInt {
   }
 
   public static UInt32 newInstance(SModel sm, boolean init) {
-    return (UInt32)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.UInt32", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (UInt32) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.UInt32", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static UInt32 newInstance(SModel sm) {

@@ -16,7 +16,7 @@ public class MedBase extends BaseConcept {
   }
 
   public static MedBase newInstance(SModel sm, boolean init) {
-    return (MedBase)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.MedBase", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (MedBase) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.MedBase", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static MedBase newInstance(SModel sm) {

@@ -24,7 +24,7 @@ public class Wait extends RetryStep {
   }
 
   public static Wait newInstance(SModel sm, boolean init) {
-    return (Wait)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.Wait", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Wait) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.Wait", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Wait newInstance(SModel sm) {

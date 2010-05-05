@@ -17,7 +17,7 @@ public class GenericAveragingType extends Type {
   }
 
   public Type getBaseType() {
-    return (Type)this.getChild(Type.class, GenericAveragingType.BASE_TYPE);
+    return (Type) this.getChild(Type.class, GenericAveragingType.BASE_TYPE);
   }
 
   public void setBaseType(Type node) {
@@ -25,7 +25,7 @@ public class GenericAveragingType extends Type {
   }
 
   public static GenericAveragingType newInstance(SModel sm, boolean init) {
-    return (GenericAveragingType)SModelUtil_new.instantiateConceptDeclaration("med.quantities.structure.GenericAveragingType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (GenericAveragingType) SModelUtil_new.instantiateConceptDeclaration("med.quantities.structure.GenericAveragingType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static GenericAveragingType newInstance(SModel sm) {

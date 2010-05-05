@@ -17,38 +17,45 @@ import jetbrains.mps.nodeEditor.EditorManager;
 
 public class SimpleIntConstant_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_7627_0(editorContext, node);
+    return this.createCollection_vqhhh_a(editorContext, node);
   }
 
-  private EditorCell createCollection_7627_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_vqhhh_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_7627_0");
-    editorCell.addEditorCell(this.createConstant_7627_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_7627_3(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_7627_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_7627_1(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_7627_1(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_7627_2(editorContext, node));
+    editorCell.setCellId("Collection_vqhhh_a");
+    editorCell.addEditorCell(this.createConstant_vqhhh_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_vqhhh_b0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_vqhhh_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_vqhhh_d0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_vqhhh_e0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_vqhhh_f0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_7627_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_vqhhh_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "constant");
-    editorCell.setCellId("Constant_7627_0");
+    editorCell.setCellId("Constant_vqhhh_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_7627_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_vqhhh_b0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "int");
+    editorCell.setCellId("Constant_vqhhh_b0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createConstant_vqhhh_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "=");
-    editorCell.setCellId("Constant_7627_1");
+    editorCell.setCellId("Constant_vqhhh_d0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_7627_2(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_vqhhh_f0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ";");
-    editorCell.setCellId("Constant_7627_2");
+    editorCell.setCellId("Constant_vqhhh_f0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -57,14 +64,7 @@ public class SimpleIntConstant_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_7627_3(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "int");
-    editorCell.setCellId("Constant_7627_3");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-
-  private EditorCell createProperty_7627_0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_vqhhh_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("name");
     provider.setNoTargetText("<no name>");
@@ -82,7 +82,7 @@ public class SimpleIntConstant_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createProperty_7627_1(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_vqhhh_e0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("value");
     provider.setNoTargetText("<no value>");

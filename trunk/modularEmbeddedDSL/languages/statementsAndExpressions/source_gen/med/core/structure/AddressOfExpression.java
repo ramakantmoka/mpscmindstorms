@@ -16,7 +16,7 @@ public class AddressOfExpression extends Expression {
   }
 
   public Expression getExpression() {
-    return (Expression)this.getChild(Expression.class, AddressOfExpression.EXPRESSION);
+    return (Expression) this.getChild(Expression.class, AddressOfExpression.EXPRESSION);
   }
 
   public void setExpression(Expression node) {
@@ -24,7 +24,7 @@ public class AddressOfExpression extends Expression {
   }
 
   public static AddressOfExpression newInstance(SModel sm, boolean init) {
-    return (AddressOfExpression)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.AddressOfExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (AddressOfExpression) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.AddressOfExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static AddressOfExpression newInstance(SModel sm) {

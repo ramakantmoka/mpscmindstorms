@@ -16,7 +16,7 @@ public class TerminateTaskStatement extends Statement {
   }
 
   public static TerminateTaskStatement newInstance(SModel sm, boolean init) {
-    return (TerminateTaskStatement)SModelUtil_new.instantiateConceptDeclaration("med.tasks.structure.TerminateTaskStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (TerminateTaskStatement) SModelUtil_new.instantiateConceptDeclaration("med.tasks.structure.TerminateTaskStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static TerminateTaskStatement newInstance(SModel sm) {

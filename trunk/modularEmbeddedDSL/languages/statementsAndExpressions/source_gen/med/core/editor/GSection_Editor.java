@@ -27,51 +27,51 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 
 public class GSection_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_4770_0(editorContext, node);
+    return this.createCollection_wwpycn_a(editorContext, node);
   }
 
-  private EditorCell createCollection_4770_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_wwpycn_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
-    editorCell.setCellId("Collection_4770_0");
-    editorCell.addEditorCell(this.createCollection_4770_1(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_4770_2(editorContext, node));
+    editorCell.setCellId("Collection_wwpycn_a");
+    editorCell.addEditorCell(this.createCollection_wwpycn_a0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_wwpycn_b0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createCollection_4770_1(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_wwpycn_a0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
-    editorCell.setCellId("Collection_4770_1");
+    editorCell.setCellId("Collection_wwpycn_a0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
       style.set(StyleAttributes.BACKGROUND_COLOR, MPSColors.gray);
     }
-    editorCell.addEditorCell(this.createConstant_4770_0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_4770_0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_wwpycn_a0a(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_wwpycn_b0a(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createCollection_4770_2(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_wwpycn_b0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
-    editorCell.setCellId("Collection_4770_2");
+    editorCell.setCellId("Collection_wwpycn_b0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
     }
-    editorCell.addEditorCell(this.createIndentCell4770_0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_4770_0(editorContext, node));
+    editorCell.addEditorCell(this.createIndentCell_wwpycn_a1a(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_wwpycn_b1a(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_4770_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_wwpycn_a0a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "section");
-    editorCell.setCellId("Constant_4770_0");
+    editorCell.setCellId("Constant_wwpycn_a0a");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_4770_0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new GSection_Editor.linesListHandler_4770_0(node, "lines", editorContext);
+  private EditorCell createRefNodeList_wwpycn_b1a(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new GSection_Editor.linesListHandler_wwpycn_b1a(node, "lines", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_lines");
     {
@@ -82,12 +82,12 @@ public class GSection_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createIndentCell4770_0(EditorContext editorContext, SNode node) {
+  private EditorCell createIndentCell_wwpycn_a1a(EditorContext editorContext, SNode node) {
     EditorCell_Indent result = new EditorCell_Indent(editorContext, node);
     return result;
   }
 
-  private EditorCell createProperty_4770_0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_wwpycn_b0a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("description");
     provider.setNoTargetText("<no description>");
@@ -105,8 +105,8 @@ public class GSection_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static class linesListHandler_4770_0 extends RefNodeListHandler {
-    public linesListHandler_4770_0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class linesListHandler_wwpycn_b1a extends RefNodeListHandler {
+    public linesListHandler_wwpycn_b1a(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 

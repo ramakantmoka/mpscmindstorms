@@ -15,7 +15,7 @@ public class GlobalWiringScope extends WiringScope {
   }
 
   public static GlobalWiringScope newInstance(SModel sm, boolean init) {
-    return (GlobalWiringScope)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.GlobalWiringScope", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (GlobalWiringScope) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.GlobalWiringScope", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static GlobalWiringScope newInstance(SModel sm) {

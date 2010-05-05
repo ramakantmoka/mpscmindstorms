@@ -26,7 +26,7 @@ public class MarkAsPhysicalOperator extends Expression {
   }
 
   public QuantityType getType() {
-    return (QuantityType)this.getChild(QuantityType.class, MarkAsPhysicalOperator.TYPE);
+    return (QuantityType) this.getChild(QuantityType.class, MarkAsPhysicalOperator.TYPE);
   }
 
   public void setType(QuantityType node) {
@@ -34,7 +34,7 @@ public class MarkAsPhysicalOperator extends Expression {
   }
 
   public static MarkAsPhysicalOperator newInstance(SModel sm, boolean init) {
-    return (MarkAsPhysicalOperator)SModelUtil_new.instantiateConceptDeclaration("med.quantities.structure.MarkAsPhysicalOperator", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (MarkAsPhysicalOperator) SModelUtil_new.instantiateConceptDeclaration("med.quantities.structure.MarkAsPhysicalOperator", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static MarkAsPhysicalOperator newInstance(SModel sm) {

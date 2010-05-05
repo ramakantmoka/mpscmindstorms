@@ -15,6 +15,7 @@
 #include "kernel.h"
 #include "kernel_id.h"
 #include "stdint.h"
+#include "stdint.h"
 
 int lfcmain_main_linefollower_currentstate = STATE_INITIALIZING;
 

@@ -15,7 +15,7 @@ public class ExitAction extends Action {
   }
 
   public static ExitAction newInstance(SModel sm, boolean init) {
-    return (ExitAction)SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.ExitAction", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ExitAction) SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.ExitAction", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ExitAction newInstance(SModel sm) {

@@ -16,7 +16,7 @@ public class ProceduralPort extends Port {
   }
 
   public Interface getInterface() {
-    return (Interface)this.getReferent(Interface.class, ProceduralPort.INTERFACE);
+    return (Interface) this.getReferent(Interface.class, ProceduralPort.INTERFACE);
   }
 
   public void setInterface(Interface node) {
@@ -24,7 +24,7 @@ public class ProceduralPort extends Port {
   }
 
   public static ProceduralPort newInstance(SModel sm, boolean init) {
-    return (ProceduralPort)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.ProceduralPort", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ProceduralPort) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.ProceduralPort", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ProceduralPort newInstance(SModel sm) {

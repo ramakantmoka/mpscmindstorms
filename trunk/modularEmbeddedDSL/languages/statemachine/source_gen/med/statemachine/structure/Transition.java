@@ -20,7 +20,7 @@ public class Transition extends MedBase {
   }
 
   public State getTarget() {
-    return (State)this.getReferent(State.class, Transition.TARGET);
+    return (State) this.getReferent(State.class, Transition.TARGET);
   }
 
   public void setTarget(State node) {
@@ -28,7 +28,7 @@ public class Transition extends MedBase {
   }
 
   public Trigger getTrigger() {
-    return (Trigger)this.getChild(Trigger.class, Transition.TRIGGER);
+    return (Trigger) this.getChild(Trigger.class, Transition.TRIGGER);
   }
 
   public void setTrigger(Trigger node) {
@@ -36,7 +36,7 @@ public class Transition extends MedBase {
   }
 
   public Expression getGuard() {
-    return (Expression)this.getChild(Expression.class, Transition.GUARD);
+    return (Expression) this.getChild(Expression.class, Transition.GUARD);
   }
 
   public void setGuard(Expression node) {
@@ -44,7 +44,7 @@ public class Transition extends MedBase {
   }
 
   public static Transition newInstance(SModel sm, boolean init) {
-    return (Transition)SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.Transition", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Transition) SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.Transition", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Transition newInstance(SModel sm) {

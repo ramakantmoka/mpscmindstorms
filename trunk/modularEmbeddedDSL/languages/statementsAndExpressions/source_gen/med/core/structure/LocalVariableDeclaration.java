@@ -62,7 +62,7 @@ public class LocalVariableDeclaration extends Statement implements IVariableDecl
   }
 
   public Expression getInit() {
-    return (Expression)this.getChild(Expression.class, LocalVariableDeclaration.INIT);
+    return (Expression) this.getChild(Expression.class, LocalVariableDeclaration.INIT);
   }
 
   public void setInit(Expression node) {
@@ -70,7 +70,7 @@ public class LocalVariableDeclaration extends Statement implements IVariableDecl
   }
 
   public Type getType() {
-    return (Type)this.getChild(Type.class, LocalVariableDeclaration.TYPE);
+    return (Type) this.getChild(Type.class, LocalVariableDeclaration.TYPE);
   }
 
   public void setType(Type node) {
@@ -78,7 +78,7 @@ public class LocalVariableDeclaration extends Statement implements IVariableDecl
   }
 
   public static LocalVariableDeclaration newInstance(SModel sm, boolean init) {
-    return (LocalVariableDeclaration)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.LocalVariableDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (LocalVariableDeclaration) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.LocalVariableDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static LocalVariableDeclaration newInstance(SModel sm) {

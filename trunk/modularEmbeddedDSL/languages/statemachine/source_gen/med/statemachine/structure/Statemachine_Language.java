@@ -10,6 +10,6 @@ public class Statemachine_Language {
   public static ModuleReference MODULE_REFERENCE = ModuleReference.fromString("98178bb4-0742-4461-bea6-9fc251a502fa(med.statemachine)");
 
   public static Language get() {
-    return (Language)MPSModuleRepository.getInstance().getModule(MODULE_REFERENCE);
+    return (Language) MPSModuleRepository.getInstance().getModule(MODULE_REFERENCE);
   }
 }

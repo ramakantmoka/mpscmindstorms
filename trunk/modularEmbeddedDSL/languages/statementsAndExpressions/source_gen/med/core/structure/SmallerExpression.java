@@ -15,7 +15,7 @@ public class SmallerExpression extends BinaryComparisonExpression {
   }
 
   public static SmallerExpression newInstance(SModel sm, boolean init) {
-    return (SmallerExpression)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.SmallerExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (SmallerExpression) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.SmallerExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static SmallerExpression newInstance(SModel sm) {

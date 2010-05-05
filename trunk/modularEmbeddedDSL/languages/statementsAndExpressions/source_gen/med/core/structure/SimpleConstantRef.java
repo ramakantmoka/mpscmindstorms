@@ -16,7 +16,7 @@ public class SimpleConstantRef extends Expression {
   }
 
   public SimpleConstant getConstant() {
-    return (SimpleConstant)this.getReferent(SimpleConstant.class, SimpleConstantRef.CONSTANT);
+    return (SimpleConstant) this.getReferent(SimpleConstant.class, SimpleConstantRef.CONSTANT);
   }
 
   public void setConstant(SimpleConstant node) {
@@ -24,7 +24,7 @@ public class SimpleConstantRef extends Expression {
   }
 
   public static SimpleConstantRef newInstance(SModel sm, boolean init) {
-    return (SimpleConstantRef)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.SimpleConstantRef", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (SimpleConstantRef) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.SimpleConstantRef", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static SimpleConstantRef newInstance(SModel sm) {

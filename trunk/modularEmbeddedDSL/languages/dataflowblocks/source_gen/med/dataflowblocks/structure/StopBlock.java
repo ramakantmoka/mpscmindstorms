@@ -15,7 +15,7 @@ public class StopBlock extends AbstractBlock {
   }
 
   public static StopBlock newInstance(SModel sm, boolean init) {
-    return (StopBlock)SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.StopBlock", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (StopBlock) SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.StopBlock", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static StopBlock newInstance(SModel sm) {

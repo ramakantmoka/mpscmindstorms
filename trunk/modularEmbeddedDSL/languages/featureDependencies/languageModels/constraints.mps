@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:d08003ac-9119-4cc0-8d43-f0e6a3b53fb9(med.features.constraints)">
-  <persistence version="3" />
+  <persistence version="4" />
   <refactoringHistory />
   <language namespace="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
@@ -33,20 +33,20 @@
   <import index="1" modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="4" />
   <import index="2" modelUID="f:java_stub#java.lang(java.lang@java_stub)" version="-1" />
   <visible index="2" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-  <node type="jetbrains.mps.lang.constraints.structure.ConceptConstraints" id="8261019787198024645">
-    <property name="package" value="config" />
-    <link role="concept" targetNodeId="1.8261019787198024643" resolveInfo="IFEValidIdentifier" />
-    <node role="property" type="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" id="8261019787198024646">
-      <link role="applicableProperty" targetNodeId="2v.1169194664001" resolveInfo="name" />
-      <node role="propertyValidator" type="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyValidator" id="8261019787198024647">
-        <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="8261019787198024648">
-          <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="8261019787198031092">
-            <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="8261019787198031093">
-              <node role="operand" type="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_propertyValue" id="8261019787198031094" />
-              <node role="operation" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" id="8261019787198031095">
-                <link role="baseMethodDeclaration" targetNodeId="2.~String.matches(java.lang.String):boolean" resolveInfo="matches" />
-                <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="8261019787198031096">
-                  <property name="value" value="[a-zA-Z[_]][a-zA-Z0-9[_]]*" />
+  <node type="jetbrains.mps.lang.constraints.structure.ConceptConstraints:8" id="8261019787198024645">
+    <property name="package:8" value="config" />
+    <link role="concept:8" targetNodeId="1.8261019787198024643:4" resolveInfo="IFEValidIdentifier" />
+    <node role="property:8" type="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint:8" id="8261019787198024646">
+      <link role="applicableProperty:8" targetNodeId="2v.1169194664001:0" resolveInfo="name" />
+      <node role="propertyValidator:8" type="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyValidator:8" id="8261019787198024647">
+        <node role="body:8" type="jetbrains.mps.baseLanguage.structure.StatementList:3" id="8261019787198024648">
+          <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement:3" id="8261019787198031092">
+            <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="8261019787198031093">
+              <node role="operand:3" type="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_propertyValue:8" id="8261019787198031094" />
+              <node role="operation:3" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation:3" id="8261019787198031095">
+                <link role="baseMethodDeclaration:3" targetNodeId="2.~String.matches(java.lang.String):boolean" resolveInfo="matches" />
+                <node role="actualArgument:3" type="jetbrains.mps.baseLanguage.structure.StringLiteral:3" id="8261019787198031096">
+                  <property name="value:3" value="[a-zA-Z[_]][a-zA-Z0-9[_]]*" />
                 </node>
               </node>
             </node>
@@ -55,13 +55,13 @@
       </node>
     </node>
   </node>
-  <node type="jetbrains.mps.lang.constraints.structure.ConceptConstraints" id="7715189151798118646">
-    <property name="package" value="config" />
-    <link role="concept" targetNodeId="1.7715189151798118636" resolveInfo="SimpleFeatureDeclaration" />
+  <node type="jetbrains.mps.lang.constraints.structure.ConceptConstraints:8" id="7715189151798118646">
+    <property name="package:8" value="config" />
+    <link role="concept:8" targetNodeId="1.7715189151798118636:4" resolveInfo="SimpleFeatureDeclaration" />
   </node>
-  <node type="jetbrains.mps.lang.constraints.structure.ConceptConstraints" id="5615815995169821966">
-    <property name="package" value="config.structured" />
-    <link role="concept" targetNodeId="1.5615815995169110396" resolveInfo="StructuredFeatureDeclaration" />
+  <node type="jetbrains.mps.lang.constraints.structure.ConceptConstraints:8" id="5615815995169821966">
+    <property name="package:8" value="config.structured" />
+    <link role="concept:8" targetNodeId="1.5615815995169110396:4" resolveInfo="StructuredFeatureDeclaration" />
   </node>
 </model>
 

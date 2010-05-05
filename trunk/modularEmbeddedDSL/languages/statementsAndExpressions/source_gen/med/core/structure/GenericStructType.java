@@ -15,7 +15,7 @@ public class GenericStructType extends Type {
   }
 
   public static GenericStructType newInstance(SModel sm, boolean init) {
-    return (GenericStructType)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.GenericStructType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (GenericStructType) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.GenericStructType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static GenericStructType newInstance(SModel sm) {

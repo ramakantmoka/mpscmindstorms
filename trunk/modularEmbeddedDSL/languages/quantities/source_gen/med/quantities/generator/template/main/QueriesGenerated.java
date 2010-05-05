@@ -20,11 +20,11 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.generator.template.WeavingMappingRuleContext;
 
 public class QueriesGenerated {
-  public static boolean baseMappingRule_Condition_7530832320799568835(final IOperationContext operationContext, final BaseMappingRuleContext _context) {
+  public static boolean baseMappingRule_Condition_8017791897009937025(final IOperationContext operationContext, final BaseMappingRuleContext _context) {
     return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), "type", true), "med.quantities.structure.AveragingType");
   }
 
-  public static boolean baseMappingRule_Condition_8017791897009937025(final IOperationContext operationContext, final BaseMappingRuleContext _context) {
+  public static boolean baseMappingRule_Condition_7530832320799568835(final IOperationContext operationContext, final BaseMappingRuleContext _context) {
     return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), "type", true), "med.quantities.structure.AveragingType");
   }
 
@@ -40,14 +40,6 @@ public class QueriesGenerated {
     return MarkAsPhysicalOperator_Behavior.call_scalingFactor_5580581899346605426(_context.getNode());
   }
 
-  public static Object propertyMacro_GetPropertyValue_7530832320799050358(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return SPropertyOperations.getInteger(SNodeOperations.cast(TypeChecker.getInstance().getTypeOf(SLinkOperations.getTarget(_context.getNode(), "var", true)), "med.quantities.structure.AveragingType"), "size");
-  }
-
-  public static Object propertyMacro_GetPropertyValue_7530832320799568949(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), "name") + "_index";
-  }
-
   public static Object propertyMacro_GetPropertyValue_8017791897010383479(final IOperationContext operationContext, final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(SNodeOperations.cast(SLinkOperations.getTarget(_context.getNode(), "type", true), "med.quantities.structure.AveragingType"), "size");
   }
@@ -56,12 +48,28 @@ public class QueriesGenerated {
     return SPropertyOperations.getString(_context.getNode(), "name") + "_history";
   }
 
+  public static Object propertyMacro_GetPropertyValue_7530832320799050358(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(SNodeOperations.cast(TypeChecker.getInstance().getTypeOf(SLinkOperations.getTarget(_context.getNode(), "var", true)), "med.quantities.structure.AveragingType"), "size");
+  }
+
+  public static Object propertyMacro_GetPropertyValue_7530832320799568949(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), "name") + "_index";
+  }
+
   public static Object referenceMacro_GetReferent_7530832320799018582(final IOperationContext operationContext, final ReferenceMacroContext _context) {
     return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "var", true), "variable", false), "historyVar");
   }
 
   public static Object referenceMacro_GetReferent_7530832320799674256(final IOperationContext operationContext, final ReferenceMacroContext _context) {
     return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "var", true), "variable", false), "indexVar");
+  }
+
+  public static SNode sourceNodeQuery_8017791897009599444(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "baseType", true);
+  }
+
+  public static SNode sourceNodeQuery_8017791897010383472(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "type", true);
   }
 
   public static SNode sourceNodeQuery_5019031344944456942(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
@@ -76,27 +84,19 @@ public class QueriesGenerated {
     return SLinkOperations.getTarget(_context.getNode(), "rvalue", true);
   }
 
-  public static SNode sourceNodeQuery_8017791897009599444(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), "baseType", true);
-  }
-
-  public static SNode sourceNodeQuery_8017791897010383472(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), "type", true);
-  }
-
   public static Iterable sourceNodesQuery_5019031344944456818(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
     List<SNode> ex = new ArrayList<SNode>();
-    for (int i = 0 ; i < SPropertyOperations.getInteger(SNodeOperations.cast(SLinkOperations.getTarget(_context.getNode(), "type", true), "med.quantities.structure.AveragingType"), "size") ; i++ ) {
+    for (int i = 0; i < SPropertyOperations.getInteger(SNodeOperations.cast(SLinkOperations.getTarget(_context.getNode(), "type", true), "med.quantities.structure.AveragingType"), "size"); i++) {
       ListSequence.fromList(ex).addElement(SNodeOperations.copyNode(SLinkOperations.getTarget(_context.getNode(), "init", true)));
     }
     return ex;
   }
 
-  public static SNode weaving_MappingRule_ContextNodeQuery_7530832320799568824(final IOperationContext opereationContext, final WeavingMappingRuleContext _context) {
+  public static SNode weaving_MappingRule_ContextNodeQuery_8017791897009937023(final IOperationContext opereationContext, final WeavingMappingRuleContext _context) {
     return _context.getCopiedOutputNodeForInputNode(SNodeOperations.getAncestor(_context.getNode(), "med.core.structure.ImplementationModule", false, false));
   }
 
-  public static SNode weaving_MappingRule_ContextNodeQuery_8017791897009937023(final IOperationContext opereationContext, final WeavingMappingRuleContext _context) {
+  public static SNode weaving_MappingRule_ContextNodeQuery_7530832320799568824(final IOperationContext opereationContext, final WeavingMappingRuleContext _context) {
     return _context.getCopiedOutputNodeForInputNode(SNodeOperations.getAncestor(_context.getNode(), "med.core.structure.ImplementationModule", false, false));
   }
 }

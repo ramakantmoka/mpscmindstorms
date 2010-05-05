@@ -15,7 +15,7 @@ public class EqualsExpression extends BinaryComparisonExpression {
   }
 
   public static EqualsExpression newInstance(SModel sm, boolean init) {
-    return (EqualsExpression)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.EqualsExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (EqualsExpression) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.EqualsExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static EqualsExpression newInstance(SModel sm) {

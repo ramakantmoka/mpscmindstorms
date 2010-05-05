@@ -23,18 +23,18 @@ public class BaseFE_Behavior {
   }
 
   public static boolean call_isTrue_8261019787198922983(SNode thisNode) {
-    return (Boolean)BehaviorManager.getInstance().invoke(Boolean.class, SNodeOperations.cast(thisNode, "med.features.structure.BaseFE"), "virtual_isTrue_8261019787198922983", PARAMETERS_8261019787198922983);
+    return (Boolean) BehaviorManager.getInstance().invoke(Boolean.class, SNodeOperations.cast(thisNode, "med.features.structure.BaseFE"), "virtual_isTrue_8261019787198922983", PARAMETERS_8261019787198922983);
   }
 
   public static boolean call_isTrue_1833385247967456436(SNode thisNode, List<SNode> selectionScenario) {
-    return (Boolean)BehaviorManager.getInstance().invoke(Boolean.class, SNodeOperations.cast(thisNode, "med.features.structure.BaseFE"), "virtual_isTrue_1833385247967456436", PARAMETERS_1833385247967456436, selectionScenario);
+    return (Boolean) BehaviorManager.getInstance().invoke(Boolean.class, SNodeOperations.cast(thisNode, "med.features.structure.BaseFE"), "virtual_isTrue_1833385247967456436", PARAMETERS_1833385247967456436, selectionScenario);
   }
 
   public static boolean callSuper_isTrue_8261019787198922983(SNode thisNode, String callerConceptFqName) {
-    return (Boolean)BehaviorManager.getInstance().invokeSuper(Boolean.class, SNodeOperations.cast(thisNode, "med.features.structure.BaseFE"), callerConceptFqName, "virtual_isTrue_8261019787198922983", PARAMETERS_8261019787198922983);
+    return (Boolean) BehaviorManager.getInstance().invokeSuper(Boolean.class, SNodeOperations.cast(thisNode, "med.features.structure.BaseFE"), callerConceptFqName, "virtual_isTrue_8261019787198922983", PARAMETERS_8261019787198922983);
   }
 
   public static boolean callSuper_isTrue_1833385247967456436(SNode thisNode, String callerConceptFqName, List<SNode> selectionScenario) {
-    return (Boolean)BehaviorManager.getInstance().invokeSuper(Boolean.class, SNodeOperations.cast(thisNode, "med.features.structure.BaseFE"), callerConceptFqName, "virtual_isTrue_1833385247967456436", PARAMETERS_1833385247967456436, selectionScenario);
+    return (Boolean) BehaviorManager.getInstance().invokeSuper(Boolean.class, SNodeOperations.cast(thisNode, "med.features.structure.BaseFE"), callerConceptFqName, "virtual_isTrue_1833385247967456436", PARAMETERS_1833385247967456436, selectionScenario);
   }
 }

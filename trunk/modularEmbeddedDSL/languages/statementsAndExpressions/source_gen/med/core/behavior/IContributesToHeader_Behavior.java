@@ -13,10 +13,10 @@ public class IContributesToHeader_Behavior {
   }
 
   public static SNode call_getHeaderContent_8772584333841904462(SNode thisNode) {
-    return (SNode)BehaviorManager.getInstance().invoke(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.IContributesToHeader"), "virtual_getHeaderContent_8772584333841904462", PARAMETERS_8772584333841904462);
+    return (SNode) BehaviorManager.getInstance().invoke(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.IContributesToHeader"), "virtual_getHeaderContent_8772584333841904462", PARAMETERS_8772584333841904462);
   }
 
   public static SNode callSuper_getHeaderContent_8772584333841904462(SNode thisNode, String callerConceptFqName) {
-    return (SNode)BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.IContributesToHeader"), callerConceptFqName, "virtual_getHeaderContent_8772584333841904462", PARAMETERS_8772584333841904462);
+    return (SNode) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.IContributesToHeader"), callerConceptFqName, "virtual_getHeaderContent_8772584333841904462", PARAMETERS_8772584333841904462);
   }
 }

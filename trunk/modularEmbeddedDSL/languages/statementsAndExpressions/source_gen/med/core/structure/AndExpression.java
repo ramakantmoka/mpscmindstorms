@@ -15,7 +15,7 @@ public class AndExpression extends BinaryOperation {
   }
 
   public static AndExpression newInstance(SModel sm, boolean init) {
-    return (AndExpression)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.AndExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (AndExpression) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.AndExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static AndExpression newInstance(SModel sm) {

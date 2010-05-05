@@ -43,7 +43,7 @@ public class Procedure extends ProcedureSignature implements IProjectionLevelAwa
   }
 
   public StatementList getBody() {
-    return (StatementList)this.getChild(StatementList.class, Procedure.BODY);
+    return (StatementList) this.getChild(StatementList.class, Procedure.BODY);
   }
 
   public void setBody(StatementList node) {
@@ -51,7 +51,7 @@ public class Procedure extends ProcedureSignature implements IProjectionLevelAwa
   }
 
   public static Procedure newInstance(SModel sm, boolean init) {
-    return (Procedure)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Procedure", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Procedure) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Procedure", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Procedure newInstance(SModel sm) {

@@ -12,6 +12,6 @@ public class FeatureDependencyAnnotation_AnnotationLink {
   }
 
   public static FeatureClause getFeatureDependencyAnnotation(BaseConcept source) {
-    return (FeatureClause)source.getAttribute(FeatureDependencyAnnotation_AnnotationLink.FEATURE_DEPENDENCY_ANNOTATION);
+    return (FeatureClause) source.getAttribute(FeatureDependencyAnnotation_AnnotationLink.FEATURE_DEPENDENCY_ANNOTATION);
   }
 }

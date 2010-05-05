@@ -17,7 +17,7 @@ public class SplitOut extends BaseConcept {
   }
 
   public AbstractBlock getBlock() {
-    return (AbstractBlock)this.getChild(AbstractBlock.class, SplitOut.BLOCK);
+    return (AbstractBlock) this.getChild(AbstractBlock.class, SplitOut.BLOCK);
   }
 
   public void setBlock(AbstractBlock node) {
@@ -25,7 +25,7 @@ public class SplitOut extends BaseConcept {
   }
 
   public static SplitOut newInstance(SModel sm, boolean init) {
-    return (SplitOut)SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.SplitOut", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (SplitOut) SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.SplitOut", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static SplitOut newInstance(SModel sm) {

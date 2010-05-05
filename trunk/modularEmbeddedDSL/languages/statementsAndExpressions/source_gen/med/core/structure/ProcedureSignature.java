@@ -82,7 +82,7 @@ public class ProcedureSignature extends MedBase implements IHasIdentifierName, I
   }
 
   public Type getType() {
-    return (Type)this.getChild(Type.class, ProcedureSignature.TYPE);
+    return (Type) this.getChild(Type.class, ProcedureSignature.TYPE);
   }
 
   public void setType(Type node) {
@@ -110,7 +110,7 @@ public class ProcedureSignature extends MedBase implements IHasIdentifierName, I
   }
 
   public static ProcedureSignature newInstance(SModel sm, boolean init) {
-    return (ProcedureSignature)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ProcedureSignature", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ProcedureSignature) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ProcedureSignature", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ProcedureSignature newInstance(SModel sm) {

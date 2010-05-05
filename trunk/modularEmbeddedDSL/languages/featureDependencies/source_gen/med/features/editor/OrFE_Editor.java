@@ -17,46 +17,46 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
 public class OrFE_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_5994_0(editorContext, node);
+    return this.createCollection_do999x_a(editorContext, node);
   }
 
-  private EditorCell createCollection_5994_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_do999x_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_5994_0");
-    if (renderingCondition5994_0(node, editorContext, editorContext.getOperationContext().getScope())) {
-      editorCell.addEditorCell(this.createConstant_5994_1(editorContext, node));
+    editorCell.setCellId("Collection_do999x_a");
+    if (renderingCondition_do999x_a0a(node, editorContext, editorContext.getOperationContext().getScope())) {
+      editorCell.addEditorCell(this.createConstant_do999x_a0(editorContext, node));
     }
-    editorCell.addEditorCell(this.createRefNode_5994_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_5994_0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_5994_1(editorContext, node));
-    if (renderingCondition5994_1(node, editorContext, editorContext.getOperationContext().getScope())) {
-      editorCell.addEditorCell(this.createConstant_5994_2(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_do999x_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_do999x_c0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_do999x_d0(editorContext, node));
+    if (renderingCondition_do999x_a4a(node, editorContext, editorContext.getOperationContext().getScope())) {
+      editorCell.addEditorCell(this.createConstant_do999x_e0(editorContext, node));
     }
     return editorCell;
   }
 
-  private EditorCell createConstant_5994_0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "||");
-    editorCell.setCellId("Constant_5994_0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-
-  private EditorCell createConstant_5994_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_do999x_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(");
-    editorCell.setCellId("Constant_5994_1");
+    editorCell.setCellId("Constant_do999x_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_5994_2(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_do999x_c0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "||");
+    editorCell.setCellId("Constant_do999x_c0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createConstant_do999x_e0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
-    editorCell.setCellId("Constant_5994_2");
+    editorCell.setCellId("Constant_do999x_e0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createRefNode_5994_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_do999x_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("left");
     provider.setNoTargetText("<no left>");
@@ -73,7 +73,7 @@ public class OrFE_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNode_5994_1(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_do999x_d0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("right");
     provider.setNoTargetText("<no right>");
@@ -90,11 +90,11 @@ public class OrFE_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static boolean renderingCondition5994_0(SNode node, EditorContext editorContext, IScope scope) {
+  private static boolean renderingCondition_do999x_a0a(SNode node, EditorContext editorContext, IScope scope) {
     return SNodeOperations.isInstanceOf(SNodeOperations.getParent(node), "med.features.structure.AndFE");
   }
 
-  private static boolean renderingCondition5994_1(SNode node, EditorContext editorContext, IScope scope) {
+  private static boolean renderingCondition_do999x_a4a(SNode node, EditorContext editorContext, IScope scope) {
     return SNodeOperations.isInstanceOf(SNodeOperations.getParent(node), "med.features.structure.AndFE");
   }
 }

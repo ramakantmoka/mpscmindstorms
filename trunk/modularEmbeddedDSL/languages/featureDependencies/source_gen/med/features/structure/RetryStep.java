@@ -16,7 +16,7 @@ public class RetryStep extends BaseConcept {
   }
 
   public static RetryStep newInstance(SModel sm, boolean init) {
-    return (RetryStep)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.RetryStep", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (RetryStep) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.RetryStep", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static RetryStep newInstance(SModel sm) {

@@ -22,7 +22,7 @@ public class FeatureDependencyConfiguration extends BaseConcept {
   }
 
   public DisplayMode getMode() {
-    return (DisplayMode)this.getChild(DisplayMode.class, FeatureDependencyConfiguration.MODE);
+    return (DisplayMode) this.getChild(DisplayMode.class, FeatureDependencyConfiguration.MODE);
   }
 
   public void setMode(DisplayMode node) {
@@ -30,7 +30,7 @@ public class FeatureDependencyConfiguration extends BaseConcept {
   }
 
   public DisplayMode getBackup() {
-    return (DisplayMode)this.getChild(DisplayMode.class, FeatureDependencyConfiguration.BACKUP);
+    return (DisplayMode) this.getChild(DisplayMode.class, FeatureDependencyConfiguration.BACKUP);
   }
 
   public void setBackup(DisplayMode node) {
@@ -78,7 +78,7 @@ public class FeatureDependencyConfiguration extends BaseConcept {
   }
 
   public static FeatureDependencyConfiguration newInstance(SModel sm, boolean init) {
-    return (FeatureDependencyConfiguration)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.FeatureDependencyConfiguration", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (FeatureDependencyConfiguration) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.FeatureDependencyConfiguration", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static FeatureDependencyConfiguration newInstance(SModel sm) {

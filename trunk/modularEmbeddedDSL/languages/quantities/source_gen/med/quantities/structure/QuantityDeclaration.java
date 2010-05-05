@@ -90,7 +90,7 @@ public class QuantityDeclaration extends BaseConcept implements IExportableModul
   }
 
   public static QuantityDeclaration newInstance(SModel sm, boolean init) {
-    return (QuantityDeclaration)SModelUtil_new.instantiateConceptDeclaration("med.quantities.structure.QuantityDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (QuantityDeclaration) SModelUtil_new.instantiateConceptDeclaration("med.quantities.structure.QuantityDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static QuantityDeclaration newInstance(SModel sm) {

@@ -52,7 +52,7 @@ public class ForVariableDeclarationReference extends Expression implements IVari
   }
 
   public ForVariableDeclaration getVariable() {
-    return (ForVariableDeclaration)this.getReferent(ForVariableDeclaration.class, ForVariableDeclarationReference.VARIABLE);
+    return (ForVariableDeclaration) this.getReferent(ForVariableDeclaration.class, ForVariableDeclarationReference.VARIABLE);
   }
 
   public void setVariable(ForVariableDeclaration node) {
@@ -60,7 +60,7 @@ public class ForVariableDeclarationReference extends Expression implements IVari
   }
 
   public static ForVariableDeclarationReference newInstance(SModel sm, boolean init) {
-    return (ForVariableDeclarationReference)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ForVariableDeclarationReference", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ForVariableDeclarationReference) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ForVariableDeclarationReference", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ForVariableDeclarationReference newInstance(SModel sm) {

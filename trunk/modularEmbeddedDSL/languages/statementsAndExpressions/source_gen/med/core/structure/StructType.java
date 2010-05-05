@@ -16,7 +16,7 @@ public class StructType extends GenericStructType {
   }
 
   public StructDeclaration getStruct() {
-    return (StructDeclaration)this.getReferent(StructDeclaration.class, StructType.STRUCT);
+    return (StructDeclaration) this.getReferent(StructDeclaration.class, StructType.STRUCT);
   }
 
   public void setStruct(StructDeclaration node) {
@@ -24,7 +24,7 @@ public class StructType extends GenericStructType {
   }
 
   public static StructType newInstance(SModel sm, boolean init) {
-    return (StructType)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.StructType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (StructType) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.StructType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static StructType newInstance(SModel sm) {

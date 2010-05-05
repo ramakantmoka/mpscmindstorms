@@ -12,6 +12,6 @@ public class TraceAnnotation_AnnotationLink {
   }
 
   public static RequirementsTrace getTraceAnnotation(BaseConcept source) {
-    return (RequirementsTrace)source.getAttribute(TraceAnnotation_AnnotationLink.TRACE_ANNOTATION);
+    return (RequirementsTrace) source.getAttribute(TraceAnnotation_AnnotationLink.TRACE_ANNOTATION);
   }
 }

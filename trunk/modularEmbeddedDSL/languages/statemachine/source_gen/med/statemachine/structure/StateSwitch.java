@@ -22,7 +22,7 @@ public class StateSwitch extends Statement {
   }
 
   public Statemachine getMachine() {
-    return (Statemachine)this.getReferent(Statemachine.class, StateSwitch.MACHINE);
+    return (Statemachine) this.getReferent(Statemachine.class, StateSwitch.MACHINE);
   }
 
   public void setMachine(Statemachine node) {
@@ -30,7 +30,7 @@ public class StateSwitch extends Statement {
   }
 
   public StatementList getDefault() {
-    return (StatementList)this.getChild(StatementList.class, StateSwitch.DEFAULT);
+    return (StatementList) this.getChild(StatementList.class, StateSwitch.DEFAULT);
   }
 
   public void setDefault(StatementList node) {
@@ -58,7 +58,7 @@ public class StateSwitch extends Statement {
   }
 
   public static StateSwitch newInstance(SModel sm, boolean init) {
-    return (StateSwitch)SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.StateSwitch", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (StateSwitch) SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.StateSwitch", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static StateSwitch newInstance(SModel sm) {

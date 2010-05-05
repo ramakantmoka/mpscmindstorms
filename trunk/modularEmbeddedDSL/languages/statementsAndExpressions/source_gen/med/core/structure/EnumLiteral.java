@@ -52,7 +52,7 @@ public class EnumLiteral extends BaseConcept implements IHasIdentifierName {
   }
 
   public static EnumLiteral newInstance(SModel sm, boolean init) {
-    return (EnumLiteral)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.EnumLiteral", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (EnumLiteral) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.EnumLiteral", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static EnumLiteral newInstance(SModel sm) {

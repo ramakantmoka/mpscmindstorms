@@ -24,7 +24,7 @@ public class SimpleIntConstant extends SimpleConstant {
   }
 
   public static SimpleIntConstant newInstance(SModel sm, boolean init) {
-    return (SimpleIntConstant)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.SimpleIntConstant", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (SimpleIntConstant) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.SimpleIntConstant", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static SimpleIntConstant newInstance(SModel sm) {

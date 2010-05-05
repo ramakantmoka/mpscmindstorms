@@ -13,6 +13,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.intentions.BaseIntentionProvider;
 import jetbrains.mps.typesystem.inference.IErrorTarget;
 import jetbrains.mps.typesystem.inference.NodeErrorTarget;
+import jetbrains.mps.nodeEditor.IErrorReporter;
 import jetbrains.mps.smodel.SModelUtil_new;
 
 public class mustHaveAnInitialState_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
@@ -28,7 +29,7 @@ public class mustHaveAnInitialState_NonTypesystemRule extends AbstractNonTypesys
       {
         BaseIntentionProvider intentionProvider = null;
         IErrorTarget errorTarget = new NodeErrorTarget();
-        typeCheckingContext.reportTypeError(statemachine, "statemachines must have exactly one initial state", "r:49a89a7a-d31e-4952-8a80-11c1002ab648(med.statemachine.typesystem)", "6254144863186252910", intentionProvider, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(statemachine, "statemachines must have exactly one initial state", "r:49a89a7a-d31e-4952-8a80-11c1002ab648(med.statemachine.typesystem)", "6254144863186252910", intentionProvider, errorTarget);
       }
     }
   }

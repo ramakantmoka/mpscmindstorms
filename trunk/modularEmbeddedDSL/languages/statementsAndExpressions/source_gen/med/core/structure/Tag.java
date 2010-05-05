@@ -24,7 +24,7 @@ public class Tag extends MedBase {
   }
 
   public static Tag newInstance(SModel sm, boolean init) {
-    return (Tag)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Tag", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Tag) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Tag", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Tag newInstance(SModel sm) {

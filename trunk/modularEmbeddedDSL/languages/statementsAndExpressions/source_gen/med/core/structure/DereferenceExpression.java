@@ -52,7 +52,7 @@ public class DereferenceExpression extends Expression implements ILValue, IVaria
   }
 
   public Expression getExpression() {
-    return (Expression)this.getChild(Expression.class, DereferenceExpression.EXPRESSION);
+    return (Expression) this.getChild(Expression.class, DereferenceExpression.EXPRESSION);
   }
 
   public void setExpression(Expression node) {
@@ -60,7 +60,7 @@ public class DereferenceExpression extends Expression implements ILValue, IVaria
   }
 
   public static DereferenceExpression newInstance(SModel sm, boolean init) {
-    return (DereferenceExpression)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.DereferenceExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (DereferenceExpression) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.DereferenceExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static DereferenceExpression newInstance(SModel sm) {

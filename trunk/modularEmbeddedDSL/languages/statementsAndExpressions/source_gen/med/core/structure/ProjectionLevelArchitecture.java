@@ -15,7 +15,7 @@ public class ProjectionLevelArchitecture extends ProjectionLevel {
   }
 
   public static ProjectionLevelArchitecture newInstance(SModel sm, boolean init) {
-    return (ProjectionLevelArchitecture)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ProjectionLevelArchitecture", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ProjectionLevelArchitecture) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ProjectionLevelArchitecture", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ProjectionLevelArchitecture newInstance(SModel sm) {

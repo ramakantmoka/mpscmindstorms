@@ -18,18 +18,18 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 
 public class StatementList_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_6577_0(editorContext, node);
+    return this.createCollection_u338ov_a(editorContext, node);
   }
 
-  private EditorCell createCollection_6577_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_u338ov_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_6577_0");
-    editorCell.addEditorCell(this.createRefNodeList_6577_0(editorContext, node));
+    editorCell.setCellId("Collection_u338ov_a");
+    editorCell.addEditorCell(this.createRefNodeList_u338ov_a0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_6577_0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new StatementList_Editor.statementsListHandler_6577_0(node, "statements", editorContext);
+  private EditorCell createRefNodeList_u338ov_a0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new StatementList_Editor.statementsListHandler_u338ov_a0(node, "statements", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_statements");
     editorCell.setCanBeFolded(true);
@@ -37,8 +37,8 @@ public class StatementList_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static class statementsListHandler_6577_0 extends RefNodeListHandler {
-    public statementsListHandler_6577_0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class statementsListHandler_u338ov_a0 extends RefNodeListHandler {
+    public statementsListHandler_u338ov_a0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 

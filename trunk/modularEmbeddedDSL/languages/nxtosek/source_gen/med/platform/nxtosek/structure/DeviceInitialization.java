@@ -46,7 +46,7 @@ public class DeviceInitialization extends MedBase implements IModuleContent {
   }
 
   public StatementList getBody() {
-    return (StatementList)this.getChild(StatementList.class, DeviceInitialization.BODY);
+    return (StatementList) this.getChild(StatementList.class, DeviceInitialization.BODY);
   }
 
   public void setBody(StatementList node) {
@@ -54,7 +54,7 @@ public class DeviceInitialization extends MedBase implements IModuleContent {
   }
 
   public static DeviceInitialization newInstance(SModel sm, boolean init) {
-    return (DeviceInitialization)SModelUtil_new.instantiateConceptDeclaration("med.platform.nxtosek.structure.DeviceInitialization", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (DeviceInitialization) SModelUtil_new.instantiateConceptDeclaration("med.platform.nxtosek.structure.DeviceInitialization", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static DeviceInitialization newInstance(SModel sm) {

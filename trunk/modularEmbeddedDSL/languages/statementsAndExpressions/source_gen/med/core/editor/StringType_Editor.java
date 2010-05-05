@@ -17,29 +17,29 @@ import jetbrains.mps.nodeEditor.EditorManager;
 
 public class StringType_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_3439_0(editorContext, node);
+    return this.createCollection_vcvxr4_a(editorContext, node);
   }
 
-  private EditorCell createCollection_3439_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_vcvxr4_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_3439_0");
-    editorCell.addEditorCell(this.createConstant_3439_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_3439_1(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_3439_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_3439_2(editorContext, node));
+    editorCell.setCellId("Collection_vcvxr4_a");
+    editorCell.addEditorCell(this.createConstant_vcvxr4_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_vcvxr4_b0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_vcvxr4_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_vcvxr4_d0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_3439_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_vcvxr4_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "string");
-    editorCell.setCellId("Constant_3439_0");
+    editorCell.setCellId("Constant_vcvxr4_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_3439_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_vcvxr4_b0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "[");
-    editorCell.setCellId("Constant_3439_1");
+    editorCell.setCellId("Constant_vcvxr4_b0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
@@ -49,9 +49,9 @@ public class StringType_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_3439_2(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_vcvxr4_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "]");
-    editorCell.setCellId("Constant_3439_2");
+    editorCell.setCellId("Constant_vcvxr4_d0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -60,7 +60,7 @@ public class StringType_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createProperty_3439_0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_vcvxr4_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("length");
     provider.setNoTargetText("<no length>");

@@ -8,6 +8,7 @@ import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.intentions.BaseIntentionProvider;
+import jetbrains.mps.typesystem.inference.EquationInfo;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.SModelUtil_new;
@@ -20,12 +21,14 @@ public class typeof_AveragingType_InferenceRule extends AbstractInferenceRule_Ru
     {
       SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(avg, "baseType", true);
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:ae1999e2-f2a1-420d-a446-b43e895f34b9(med.quantities.typesystem)", "8017791897008984459", true), (SNode)SConceptOperations.createNewNode("med.core.structure.GenericIntegerType", null), _nodeToCheck_1029348928467, null, "r:ae1999e2-f2a1-420d-a446-b43e895f34b9(med.quantities.typesystem)", "8017791897008984467", intentionProvider);
+      EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:ae1999e2-f2a1-420d-a446-b43e895f34b9(med.quantities.typesystem)", "8017791897008984467", 0, intentionProvider);
+      typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:ae1999e2-f2a1-420d-a446-b43e895f34b9(med.quantities.typesystem)", "8017791897008984459", true), (SNode) SConceptOperations.createNewNode("med.core.structure.GenericIntegerType", null), _info_12389875345);
     }
     {
       SNode _nodeToCheck_1029348928467 = avg;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:ae1999e2-f2a1-420d-a446-b43e895f34b9(med.quantities.typesystem)", "8017791897008984478", true), (SNode)SNodeOperations.copyNode(avg), _nodeToCheck_1029348928467, null, "r:ae1999e2-f2a1-420d-a446-b43e895f34b9(med.quantities.typesystem)", "8017791897008984481", intentionProvider);
+      EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:ae1999e2-f2a1-420d-a446-b43e895f34b9(med.quantities.typesystem)", "8017791897008984481", 0, intentionProvider);
+      typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:ae1999e2-f2a1-420d-a446-b43e895f34b9(med.quantities.typesystem)", "8017791897008984478", true), (SNode) SNodeOperations.copyNode(avg), _info_12389875345);
     }
   }
 

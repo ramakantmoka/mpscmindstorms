@@ -16,7 +16,7 @@ public class ModuleDependency extends Statement {
   }
 
   public ModuleImport getImport() {
-    return (ModuleImport)this.getChild(ModuleImport.class, ModuleDependency.IMPORT);
+    return (ModuleImport) this.getChild(ModuleImport.class, ModuleDependency.IMPORT);
   }
 
   public void setImport(ModuleImport node) {
@@ -24,7 +24,7 @@ public class ModuleDependency extends Statement {
   }
 
   public static ModuleDependency newInstance(SModel sm, boolean init) {
-    return (ModuleDependency)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ModuleDependency", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ModuleDependency) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ModuleDependency", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ModuleDependency newInstance(SModel sm) {

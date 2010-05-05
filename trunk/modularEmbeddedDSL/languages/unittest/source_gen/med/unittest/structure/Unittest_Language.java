@@ -10,6 +10,6 @@ public class Unittest_Language {
   public static ModuleReference MODULE_REFERENCE = ModuleReference.fromString("383209c5-49eb-4560-9027-f906632589d6(med.unittest)");
 
   public static Language get() {
-    return (Language)MPSModuleRepository.getInstance().getModule(MODULE_REFERENCE);
+    return (Language) MPSModuleRepository.getInstance().getModule(MODULE_REFERENCE);
   }
 }

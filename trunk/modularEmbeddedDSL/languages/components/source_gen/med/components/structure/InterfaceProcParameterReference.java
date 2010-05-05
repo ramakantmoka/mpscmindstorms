@@ -55,7 +55,7 @@ public class InterfaceProcParameterReference extends Expression implements IVari
   }
 
   public ProcedureParameter getParam() {
-    return (ProcedureParameter)this.getReferent(ProcedureParameter.class, InterfaceProcParameterReference.PARAM);
+    return (ProcedureParameter) this.getReferent(ProcedureParameter.class, InterfaceProcParameterReference.PARAM);
   }
 
   public void setParam(ProcedureParameter node) {
@@ -63,7 +63,7 @@ public class InterfaceProcParameterReference extends Expression implements IVari
   }
 
   public static InterfaceProcParameterReference newInstance(SModel sm, boolean init) {
-    return (InterfaceProcParameterReference)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.InterfaceProcParameterReference", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (InterfaceProcParameterReference) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.InterfaceProcParameterReference", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static InterfaceProcParameterReference newInstance(SModel sm) {

@@ -15,7 +15,7 @@ public class SchedulingPolicyKeepAliveInBackground extends SchedulingPolicy {
   }
 
   public static SchedulingPolicyKeepAliveInBackground newInstance(SModel sm, boolean init) {
-    return (SchedulingPolicyKeepAliveInBackground)SModelUtil_new.instantiateConceptDeclaration("med.tasks.structure.SchedulingPolicyKeepAliveInBackground", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (SchedulingPolicyKeepAliveInBackground) SModelUtil_new.instantiateConceptDeclaration("med.tasks.structure.SchedulingPolicyKeepAliveInBackground", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static SchedulingPolicyKeepAliveInBackground newInstance(SModel sm) {

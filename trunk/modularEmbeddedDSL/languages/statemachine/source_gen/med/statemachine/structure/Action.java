@@ -18,7 +18,7 @@ public class Action extends BaseConcept {
   }
 
   public StatementList getBody() {
-    return (StatementList)this.getChild(StatementList.class, Action.BODY);
+    return (StatementList) this.getChild(StatementList.class, Action.BODY);
   }
 
   public void setBody(StatementList node) {
@@ -26,7 +26,7 @@ public class Action extends BaseConcept {
   }
 
   public static Action newInstance(SModel sm, boolean init) {
-    return (Action)SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.Action", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Action) SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.Action", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Action newInstance(SModel sm) {

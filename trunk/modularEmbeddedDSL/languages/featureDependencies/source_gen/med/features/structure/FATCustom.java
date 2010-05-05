@@ -17,7 +17,7 @@ public class FATCustom extends FeatureAttributeType {
   }
 
   public BaseConcept getRoot() {
-    return (BaseConcept)this.getChild(BaseConcept.class, FATCustom.ROOT);
+    return (BaseConcept) this.getChild(BaseConcept.class, FATCustom.ROOT);
   }
 
   public void setRoot(BaseConcept node) {
@@ -25,7 +25,7 @@ public class FATCustom extends FeatureAttributeType {
   }
 
   public static FATCustom newInstance(SModel sm, boolean init) {
-    return (FATCustom)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.FATCustom", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (FATCustom) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.FATCustom", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static FATCustom newInstance(SModel sm) {

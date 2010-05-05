@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:fc6fdf36-7174-400d-936f-dbc299286fa3(ds.twowheel.typesystem)">
-  <persistence version="3" />
+  <persistence version="4" />
   <refactoringHistory />
   <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
   <language namespace="810301f2-7f68-47b8-9a00-f2bc361d82c4(ds.twowheel)" />

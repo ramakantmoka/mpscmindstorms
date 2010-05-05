@@ -15,7 +15,7 @@ public class FalseLiteral extends ConstantExpression {
   }
 
   public static FalseLiteral newInstance(SModel sm, boolean init) {
-    return (FalseLiteral)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.FalseLiteral", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (FalseLiteral) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.FalseLiteral", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static FalseLiteral newInstance(SModel sm) {

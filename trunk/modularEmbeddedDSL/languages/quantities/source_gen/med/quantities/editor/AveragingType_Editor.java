@@ -11,31 +11,31 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.style.Style;
 import jetbrains.mps.nodeEditor.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
-import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
+import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.nodeEditor.EditorManager;
-import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
 
 public class AveragingType_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_1896_0(editorContext, node);
+    return this.createCollection_7kcfu4_a(editorContext, node);
   }
 
-  private EditorCell createCollection_1896_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_7kcfu4_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_1896_0");
-    editorCell.addEditorCell(this.createConstant_1896_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_1896_1(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_1896_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_1896_3(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_1896_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_1896_2(editorContext, node));
+    editorCell.setCellId("Collection_7kcfu4_a");
+    editorCell.addEditorCell(this.createConstant_7kcfu4_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_7kcfu4_b0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_7kcfu4_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_7kcfu4_d0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_7kcfu4_e0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_7kcfu4_f0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_1896_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_7kcfu4_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "avg");
-    editorCell.setCellId("Constant_1896_0");
+    editorCell.setCellId("Constant_7kcfu4_a0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
@@ -44,9 +44,9 @@ public class AveragingType_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_1896_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_7kcfu4_b0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(");
-    editorCell.setCellId("Constant_1896_1");
+    editorCell.setCellId("Constant_7kcfu4_b0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -56,20 +56,9 @@ public class AveragingType_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_1896_2(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
-    editorCell.setCellId("Constant_1896_2");
-    {
-      Style style = editorCell.getStyle();
-      style.set(StyleAttributes.PUNCTUATION_LEFT, true);
-    }
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-
-  private EditorCell createConstant_1896_3(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_7kcfu4_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ",");
-    editorCell.setCellId("Constant_1896_3");
+    editorCell.setCellId("Constant_7kcfu4_d0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -78,12 +67,24 @@ public class AveragingType_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNode_1896_0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
-    provider.setRole("baseType");
-    provider.setNoTargetText("<no baseType>");
+  private EditorCell createConstant_7kcfu4_f0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
+    editorCell.setCellId("Constant_7kcfu4_f0");
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.PUNCTUATION_LEFT, true);
+    }
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createProperty_7kcfu4_e0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+    provider.setRole("size");
+    provider.setNoTargetText("<no size>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("property_size");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
@@ -95,13 +96,12 @@ public class AveragingType_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createProperty_1896_0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("size");
-    provider.setNoTargetText("<no size>");
+  private EditorCell createRefNode_7kcfu4_c0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
+    provider.setRole("baseType");
+    provider.setNoTargetText("<no baseType>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_size");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();

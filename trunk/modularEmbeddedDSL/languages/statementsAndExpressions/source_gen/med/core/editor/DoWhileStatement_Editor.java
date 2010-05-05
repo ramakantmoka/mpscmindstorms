@@ -17,41 +17,41 @@ import jetbrains.mps.nodeEditor.EditorManager;
 
 public class DoWhileStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_1261_0(editorContext, node);
+    return this.createCollection_q3zjs1_a(editorContext, node);
   }
 
-  private EditorCell createCollection_1261_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_q3zjs1_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_1261_0");
-    editorCell.addEditorCell(this.createConstant_1261_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_1261_1(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_1261_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_1261_2(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_1261_3(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_1261_4(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_1261_1(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_1261_5(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_1261_6(editorContext, node));
+    editorCell.setCellId("Collection_q3zjs1_a");
+    editorCell.addEditorCell(this.createConstant_q3zjs1_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_q3zjs1_b0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_q3zjs1_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_q3zjs1_d0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_q3zjs1_e0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_q3zjs1_f0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_q3zjs1_g0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_q3zjs1_h0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_q3zjs1_i0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_1261_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_q3zjs1_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "do");
-    editorCell.setCellId("Constant_1261_0");
+    editorCell.setCellId("Constant_q3zjs1_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_1261_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_q3zjs1_b0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "{");
-    editorCell.setCellId("Constant_1261_1");
+    editorCell.setCellId("Constant_q3zjs1_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_1261_2(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_q3zjs1_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");
-    editorCell.setCellId("Constant_1261_2");
+    editorCell.setCellId("Constant_q3zjs1_d0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
@@ -60,35 +60,35 @@ public class DoWhileStatement_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_1261_3(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_q3zjs1_e0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "while");
-    editorCell.setCellId("Constant_1261_3");
+    editorCell.setCellId("Constant_q3zjs1_e0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_1261_4(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_q3zjs1_f0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(");
-    editorCell.setCellId("Constant_1261_4");
+    editorCell.setCellId("Constant_q3zjs1_f0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_1261_5(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_q3zjs1_h0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
-    editorCell.setCellId("Constant_1261_5");
+    editorCell.setCellId("Constant_q3zjs1_h0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_1261_6(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_q3zjs1_i0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ";");
-    editorCell.setCellId("Constant_1261_6");
+    editorCell.setCellId("Constant_q3zjs1_i0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createRefNode_1261_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_q3zjs1_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("body");
     provider.setNoTargetText("<no body>");
@@ -110,7 +110,7 @@ public class DoWhileStatement_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNode_1261_1(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_q3zjs1_g0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("condition");
     provider.setNoTargetText("<no condition>");

@@ -42,7 +42,7 @@ public class Int16 extends Type implements IStdInt {
   }
 
   public static Int16 newInstance(SModel sm, boolean init) {
-    return (Int16)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Int16", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Int16) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Int16", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Int16 newInstance(SModel sm) {

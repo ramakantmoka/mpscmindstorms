@@ -96,7 +96,7 @@ public class Component extends MedBase implements IExportableModuleContent, IHas
   }
 
   public static Component newInstance(SModel sm, boolean init) {
-    return (Component)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.Component", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Component) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.Component", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Component newInstance(SModel sm) {

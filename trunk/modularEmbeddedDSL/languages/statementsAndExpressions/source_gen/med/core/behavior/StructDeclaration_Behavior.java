@@ -13,7 +13,7 @@ public class StructDeclaration_Behavior {
   public static SNode virtual_getHeaderContent_8772584333841904462(SNode thisNode) {
     SNode copy = SNodeOperations.copyNode(thisNode);
     SPropertyOperations.set(copy, "optionalLowLevelName", IHasIdentifierName_Behavior.call_qualifiedLowLevelName_1842244113830232336(thisNode));
-    return ((SNode)copy);
+    return ((SNode) copy);
   }
 
   public static String virtual_qualifiedLowLevelName_1842244113830232336(SNode thisNode) {

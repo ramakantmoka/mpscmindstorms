@@ -43,7 +43,7 @@ public class ProvidedMessagePort extends MessagePort implements IProvided {
   }
 
   public static ProvidedMessagePort newInstance(SModel sm, boolean init) {
-    return (ProvidedMessagePort)SModelUtil_new.instantiateConceptDeclaration("med.messagecomponents.structure.ProvidedMessagePort", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ProvidedMessagePort) SModelUtil_new.instantiateConceptDeclaration("med.messagecomponents.structure.ProvidedMessagePort", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ProvidedMessagePort newInstance(SModel sm) {

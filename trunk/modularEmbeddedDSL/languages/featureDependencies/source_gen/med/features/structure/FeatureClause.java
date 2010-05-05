@@ -15,7 +15,7 @@ public class FeatureClause extends AbstractFeatureClause {
   }
 
   public static FeatureClause newInstance(SModel sm, boolean init) {
-    return (FeatureClause)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.FeatureClause", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (FeatureClause) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.FeatureClause", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static FeatureClause newInstance(SModel sm) {

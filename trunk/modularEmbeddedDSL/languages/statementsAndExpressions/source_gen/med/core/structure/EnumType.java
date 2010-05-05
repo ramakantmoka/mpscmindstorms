@@ -16,7 +16,7 @@ public class EnumType extends Type {
   }
 
   public EnumDeclaration getEnum() {
-    return (EnumDeclaration)this.getReferent(EnumDeclaration.class, EnumType.ENUM);
+    return (EnumDeclaration) this.getReferent(EnumDeclaration.class, EnumType.ENUM);
   }
 
   public void setEnum(EnumDeclaration node) {
@@ -24,7 +24,7 @@ public class EnumType extends Type {
   }
 
   public static EnumType newInstance(SModel sm, boolean init) {
-    return (EnumType)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.EnumType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (EnumType) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.EnumType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static EnumType newInstance(SModel sm) {

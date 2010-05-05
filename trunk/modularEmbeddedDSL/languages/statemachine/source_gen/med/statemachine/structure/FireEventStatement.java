@@ -18,7 +18,7 @@ public class FireEventStatement extends Statement {
   }
 
   public Event getTrigger() {
-    return (Event)this.getReferent(Event.class, FireEventStatement.TRIGGER);
+    return (Event) this.getReferent(Event.class, FireEventStatement.TRIGGER);
   }
 
   public void setTrigger(Event node) {
@@ -26,7 +26,7 @@ public class FireEventStatement extends Statement {
   }
 
   public Statemachine getMachine() {
-    return (Statemachine)this.getReferent(Statemachine.class, FireEventStatement.MACHINE);
+    return (Statemachine) this.getReferent(Statemachine.class, FireEventStatement.MACHINE);
   }
 
   public void setMachine(Statemachine node) {
@@ -34,7 +34,7 @@ public class FireEventStatement extends Statement {
   }
 
   public static FireEventStatement newInstance(SModel sm, boolean init) {
-    return (FireEventStatement)SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.FireEventStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (FireEventStatement) SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.FireEventStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static FireEventStatement newInstance(SModel sm) {

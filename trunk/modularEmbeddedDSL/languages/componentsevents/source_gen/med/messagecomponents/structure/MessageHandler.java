@@ -47,7 +47,7 @@ public class MessageHandler extends MedBase implements IComponentImplContent {
   }
 
   public Message getMessage() {
-    return (Message)this.getReferent(Message.class, MessageHandler.MESSAGE);
+    return (Message) this.getReferent(Message.class, MessageHandler.MESSAGE);
   }
 
   public void setMessage(Message node) {
@@ -55,7 +55,7 @@ public class MessageHandler extends MedBase implements IComponentImplContent {
   }
 
   public StatementList getBody() {
-    return (StatementList)this.getChild(StatementList.class, MessageHandler.BODY);
+    return (StatementList) this.getChild(StatementList.class, MessageHandler.BODY);
   }
 
   public void setBody(StatementList node) {
@@ -63,7 +63,7 @@ public class MessageHandler extends MedBase implements IComponentImplContent {
   }
 
   public static MessageHandler newInstance(SModel sm, boolean init) {
-    return (MessageHandler)SModelUtil_new.instantiateConceptDeclaration("med.messagecomponents.structure.MessageHandler", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (MessageHandler) SModelUtil_new.instantiateConceptDeclaration("med.messagecomponents.structure.MessageHandler", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static MessageHandler newInstance(SModel sm) {

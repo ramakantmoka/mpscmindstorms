@@ -17,7 +17,7 @@ public class AccelerateStatement extends ContinuousStatement {
   }
 
   public Expression getSpeed() {
-    return (Expression)this.getChild(Expression.class, AccelerateStatement.SPEED);
+    return (Expression) this.getChild(Expression.class, AccelerateStatement.SPEED);
   }
 
   public void setSpeed(Expression node) {
@@ -25,7 +25,7 @@ public class AccelerateStatement extends ContinuousStatement {
   }
 
   public static AccelerateStatement newInstance(SModel sm, boolean init) {
-    return (AccelerateStatement)SModelUtil_new.instantiateConceptDeclaration("ds.twowheel.structure.AccelerateStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (AccelerateStatement) SModelUtil_new.instantiateConceptDeclaration("ds.twowheel.structure.AccelerateStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static AccelerateStatement newInstance(SModel sm) {

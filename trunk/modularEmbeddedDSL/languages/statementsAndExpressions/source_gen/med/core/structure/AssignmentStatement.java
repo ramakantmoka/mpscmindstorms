@@ -17,7 +17,7 @@ public class AssignmentStatement extends Statement {
   }
 
   public ILValue getLvalue() {
-    return (ILValue)this.getChild(ILValue.class, AssignmentStatement.LVALUE);
+    return (ILValue) this.getChild(ILValue.class, AssignmentStatement.LVALUE);
   }
 
   public void setLvalue(ILValue node) {
@@ -25,7 +25,7 @@ public class AssignmentStatement extends Statement {
   }
 
   public Expression getRvalue() {
-    return (Expression)this.getChild(Expression.class, AssignmentStatement.RVALUE);
+    return (Expression) this.getChild(Expression.class, AssignmentStatement.RVALUE);
   }
 
   public void setRvalue(Expression node) {
@@ -33,7 +33,7 @@ public class AssignmentStatement extends Statement {
   }
 
   public static AssignmentStatement newInstance(SModel sm, boolean init) {
-    return (AssignmentStatement)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.AssignmentStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (AssignmentStatement) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.AssignmentStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static AssignmentStatement newInstance(SModel sm) {

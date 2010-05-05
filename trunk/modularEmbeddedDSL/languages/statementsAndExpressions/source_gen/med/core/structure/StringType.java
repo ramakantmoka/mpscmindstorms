@@ -24,7 +24,7 @@ public class StringType extends GenericStringType {
   }
 
   public static StringType newInstance(SModel sm, boolean init) {
-    return (StringType)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.StringType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (StringType) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.StringType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static StringType newInstance(SModel sm) {

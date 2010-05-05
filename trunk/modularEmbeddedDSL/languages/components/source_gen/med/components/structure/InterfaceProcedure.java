@@ -16,7 +16,7 @@ public class InterfaceProcedure extends ProcedureSignature {
   }
 
   public static InterfaceProcedure newInstance(SModel sm, boolean init) {
-    return (InterfaceProcedure)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.InterfaceProcedure", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (InterfaceProcedure) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.InterfaceProcedure", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static InterfaceProcedure newInstance(SModel sm) {

@@ -15,7 +15,7 @@ public class PlusExpression extends PlusMinusPrioExpression {
   }
 
   public static PlusExpression newInstance(SModel sm, boolean init) {
-    return (PlusExpression)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.PlusExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (PlusExpression) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.PlusExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static PlusExpression newInstance(SModel sm) {

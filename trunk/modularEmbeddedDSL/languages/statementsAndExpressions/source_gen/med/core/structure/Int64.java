@@ -42,7 +42,7 @@ public class Int64 extends Type implements IStdInt {
   }
 
   public static Int64 newInstance(SModel sm, boolean init) {
-    return (Int64)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Int64", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Int64) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Int64", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Int64 newInstance(SModel sm) {

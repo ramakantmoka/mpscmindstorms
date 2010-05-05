@@ -56,7 +56,7 @@ public class BlockStatement extends RSStatement implements IHasIdentifierName {
   }
 
   public RSStatement getBumpReaction() {
-    return (RSStatement)this.getChild(RSStatement.class, BlockStatement.BUMP_REACTION);
+    return (RSStatement) this.getChild(RSStatement.class, BlockStatement.BUMP_REACTION);
   }
 
   public void setBumpReaction(RSStatement node) {
@@ -84,7 +84,7 @@ public class BlockStatement extends RSStatement implements IHasIdentifierName {
   }
 
   public static BlockStatement newInstance(SModel sm, boolean init) {
-    return (BlockStatement)SModelUtil_new.instantiateConceptDeclaration("ds.twowheel.structure.BlockStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (BlockStatement) SModelUtil_new.instantiateConceptDeclaration("ds.twowheel.structure.BlockStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static BlockStatement newInstance(SModel sm) {

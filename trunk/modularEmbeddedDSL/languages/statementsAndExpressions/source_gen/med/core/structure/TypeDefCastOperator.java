@@ -17,7 +17,7 @@ public class TypeDefCastOperator extends Expression {
   }
 
   public TypeDef getTypeDef() {
-    return (TypeDef)this.getReferent(TypeDef.class, TypeDefCastOperator.TYPE_DEF);
+    return (TypeDef) this.getReferent(TypeDef.class, TypeDefCastOperator.TYPE_DEF);
   }
 
   public void setTypeDef(TypeDef node) {
@@ -25,7 +25,7 @@ public class TypeDefCastOperator extends Expression {
   }
 
   public Expression getValue() {
-    return (Expression)this.getChild(Expression.class, TypeDefCastOperator.VALUE);
+    return (Expression) this.getChild(Expression.class, TypeDefCastOperator.VALUE);
   }
 
   public void setValue(Expression node) {
@@ -33,7 +33,7 @@ public class TypeDefCastOperator extends Expression {
   }
 
   public static TypeDefCastOperator newInstance(SModel sm, boolean init) {
-    return (TypeDefCastOperator)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.TypeDefCastOperator", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (TypeDefCastOperator) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.TypeDefCastOperator", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static TypeDefCastOperator newInstance(SModel sm) {

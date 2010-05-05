@@ -25,7 +25,7 @@ public class SleepStatement extends Statement {
   }
 
   public static SleepStatement newInstance(SModel sm, boolean init) {
-    return (SleepStatement)SModelUtil_new.instantiateConceptDeclaration("med.tasks.structure.SleepStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (SleepStatement) SModelUtil_new.instantiateConceptDeclaration("med.tasks.structure.SleepStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static SleepStatement newInstance(SModel sm) {

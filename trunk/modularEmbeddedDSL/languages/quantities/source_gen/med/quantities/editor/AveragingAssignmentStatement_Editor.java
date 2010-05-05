@@ -17,22 +17,29 @@ import jetbrains.mps.nodeEditor.EditorManager;
 
 public class AveragingAssignmentStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_8628_0(editorContext, node);
+    return this.createCollection_9qxauq_a(editorContext, node);
   }
 
-  private EditorCell createCollection_8628_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_9qxauq_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_8628_0");
-    editorCell.addEditorCell(this.createRefNode_8628_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_8628_1(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_8628_1(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_8628_0(editorContext, node));
+    editorCell.setCellId("Collection_9qxauq_a");
+    editorCell.addEditorCell(this.createRefNode_9qxauq_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_9qxauq_b0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_9qxauq_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_9qxauq_d0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_8628_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_9qxauq_b0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "=/");
+    editorCell.setCellId("Constant_9qxauq_b0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createConstant_9qxauq_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ";");
-    editorCell.setCellId("Constant_8628_0");
+    editorCell.setCellId("Constant_9qxauq_d0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -41,14 +48,7 @@ public class AveragingAssignmentStatement_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_8628_1(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "=/");
-    editorCell.setCellId("Constant_8628_1");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-
-  private EditorCell createRefNode_8628_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_9qxauq_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("var");
     provider.setNoTargetText("<no var>");
@@ -65,7 +65,7 @@ public class AveragingAssignmentStatement_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNode_8628_1(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_9qxauq_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("rvalue");
     provider.setNoTargetText("<no rvalue>");

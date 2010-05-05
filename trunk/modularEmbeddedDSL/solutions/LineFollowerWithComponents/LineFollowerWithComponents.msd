@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="LineFollowerWithComponents" uuid="df87ed30-0ed9-4c9e-a283-ae9eece1f08d" extenallyVisible="true" compileInMPS="true">
+<solution name="LineFollowerWithComponents" uuid="df87ed30-0ed9-4c9e-a283-ae9eece1f08d" extenallyVisible="true" compileInMPS="true" java-stubs-enabled="true">
   <models>
     <modelRoot path="${solution_descriptor}/" namespacePrefix="" />
   </models>
@@ -15,6 +15,7 @@
     <usedLanguage>6f39da53-777c-4426-896e-bf1ddfbf16dc(med.requirements)</usedLanguage>
     <usedLanguage>98178bb4-0742-4461-bea6-9fc251a502fa(med.statemachine)</usedLanguage>
     <usedLanguage>383209c5-49eb-4560-9027-f906632589d6(med.unittest)</usedLanguage>
+    <usedLanguage>fa27d492-bc16-4e00-86c3-966c2cebd871(med.quantities)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>a891e14a-a3d6-466e-8364-4e1b14cbaa06(ModularEmbeddedDSL)</usedDevKit>

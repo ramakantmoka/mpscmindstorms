@@ -25,7 +25,7 @@ public class MarkAsInternalOperator extends Expression {
   }
 
   public static MarkAsInternalOperator newInstance(SModel sm, boolean init) {
-    return (MarkAsInternalOperator)SModelUtil_new.instantiateConceptDeclaration("med.quantities.structure.MarkAsInternalOperator", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (MarkAsInternalOperator) SModelUtil_new.instantiateConceptDeclaration("med.quantities.structure.MarkAsInternalOperator", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static MarkAsInternalOperator newInstance(SModel sm) {

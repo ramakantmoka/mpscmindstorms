@@ -19,7 +19,7 @@ public class InterfaceMapping extends MedBase {
   }
 
   public Interface getInterface() {
-    return (Interface)this.getReferent(Interface.class, InterfaceMapping.INTERFACE);
+    return (Interface) this.getReferent(Interface.class, InterfaceMapping.INTERFACE);
   }
 
   public void setInterface(Interface node) {
@@ -27,7 +27,7 @@ public class InterfaceMapping extends MedBase {
   }
 
   public WiringScope getScope() {
-    return (WiringScope)this.getChild(WiringScope.class, InterfaceMapping.SCOPE);
+    return (WiringScope) this.getChild(WiringScope.class, InterfaceMapping.SCOPE);
   }
 
   public void setScope(WiringScope node) {
@@ -35,7 +35,7 @@ public class InterfaceMapping extends MedBase {
   }
 
   public ComponentDescriptor getDescriptor() {
-    return (ComponentDescriptor)this.getChild(ComponentDescriptor.class, InterfaceMapping.DESCRIPTOR);
+    return (ComponentDescriptor) this.getChild(ComponentDescriptor.class, InterfaceMapping.DESCRIPTOR);
   }
 
   public void setDescriptor(ComponentDescriptor node) {
@@ -43,7 +43,7 @@ public class InterfaceMapping extends MedBase {
   }
 
   public static InterfaceMapping newInstance(SModel sm, boolean init) {
-    return (InterfaceMapping)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.InterfaceMapping", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (InterfaceMapping) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.InterfaceMapping", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static InterfaceMapping newInstance(SModel sm) {

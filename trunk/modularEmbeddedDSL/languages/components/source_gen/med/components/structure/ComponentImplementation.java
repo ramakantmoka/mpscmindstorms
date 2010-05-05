@@ -77,7 +77,7 @@ public class ComponentImplementation extends MedBase implements IExportableModul
   }
 
   public Component getComponentType() {
-    return (Component)this.getReferent(Component.class, ComponentImplementation.COMPONENT_TYPE);
+    return (Component) this.getReferent(Component.class, ComponentImplementation.COMPONENT_TYPE);
   }
 
   public void setComponentType(Component node) {
@@ -105,7 +105,7 @@ public class ComponentImplementation extends MedBase implements IExportableModul
   }
 
   public static ComponentImplementation newInstance(SModel sm, boolean init) {
-    return (ComponentImplementation)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.ComponentImplementation", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ComponentImplementation) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.ComponentImplementation", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ComponentImplementation newInstance(SModel sm) {

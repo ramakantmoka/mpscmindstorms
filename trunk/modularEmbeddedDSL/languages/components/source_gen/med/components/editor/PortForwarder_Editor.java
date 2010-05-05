@@ -19,39 +19,39 @@ import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 
 public class PortForwarder_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_2955_0(editorContext, node);
+    return this.createCollection_8vzzi5_a(editorContext, node);
   }
 
-  private EditorCell createCollection_2955_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_8vzzi5_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_2955_0");
-    editorCell.addEditorCell(this.createConstant_2955_0(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_2955_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_2955_1(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_2955_1(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_2955_2(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_2955_2(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_2955_3(editorContext, node));
+    editorCell.setCellId("Collection_8vzzi5_a");
+    editorCell.addEditorCell(this.createConstant_8vzzi5_a0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_8vzzi5_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_8vzzi5_c0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_8vzzi5_d0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_8vzzi5_e0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_8vzzi5_f0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_8vzzi5_g0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_2955_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_8vzzi5_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "forward");
-    editorCell.setCellId("Constant_2955_0");
+    editorCell.setCellId("Constant_8vzzi5_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_2955_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_8vzzi5_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "->");
-    editorCell.setCellId("Constant_2955_1");
+    editorCell.setCellId("Constant_8vzzi5_c0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_2955_2(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_8vzzi5_e0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(");
-    editorCell.setCellId("Constant_2955_2");
+    editorCell.setCellId("Constant_8vzzi5_e0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
@@ -60,9 +60,9 @@ public class PortForwarder_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_2955_3(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_8vzzi5_g0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
-    editorCell.setCellId("Constant_2955_3");
+    editorCell.setCellId("Constant_8vzzi5_g0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -71,12 +71,12 @@ public class PortForwarder_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefCell_2955_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_8vzzi5_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("provided");
     provider.setNoTargetText("<no provided>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new PortForwarder_Editor._Inline2955_0());
+    provider.setAuxiliaryCellProvider(new PortForwarder_Editor._Inline_8vzzi5_a1a());
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -89,12 +89,12 @@ public class PortForwarder_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefCell_2955_1(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_8vzzi5_d0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("required");
     provider.setNoTargetText("<no required>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new PortForwarder_Editor._Inline2955_1());
+    provider.setAuxiliaryCellProvider(new PortForwarder_Editor._Inline_8vzzi5_a3a());
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -107,12 +107,12 @@ public class PortForwarder_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefCell_2955_2(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_8vzzi5_f0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("provided");
     provider.setNoTargetText("<no provided>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new PortForwarder_Editor._Inline2955_2());
+    provider.setAuxiliaryCellProvider(new PortForwarder_Editor._Inline_8vzzi5_a5a());
     editorCell = provider.createEditorCell(editorContext);
     {
       Style style = editorCell.getStyle();
@@ -129,8 +129,8 @@ public class PortForwarder_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  public static class _Inline2955_0 extends InlineCellProvider {
-    public _Inline2955_0() {
+  public static class _Inline_8vzzi5_a1a extends InlineCellProvider {
+    public _Inline_8vzzi5_a1a() {
       super();
     }
 
@@ -139,10 +139,10 @@ public class PortForwarder_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_2955_0(editorContext, node);
+      return this.createProperty_8vzzi5_a0b0(editorContext, node);
     }
 
-    private EditorCell createProperty_2955_0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_8vzzi5_a0b0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
@@ -162,8 +162,8 @@ public class PortForwarder_Editor extends DefaultNodeEditor {
     }
   }
 
-  public static class _Inline2955_1 extends InlineCellProvider {
-    public _Inline2955_1() {
+  public static class _Inline_8vzzi5_a3a extends InlineCellProvider {
+    public _Inline_8vzzi5_a3a() {
       super();
     }
 
@@ -172,10 +172,10 @@ public class PortForwarder_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_2955_1(editorContext, node);
+      return this.createProperty_8vzzi5_a0d0(editorContext, node);
     }
 
-    private EditorCell createProperty_2955_1(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_8vzzi5_a0d0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
@@ -195,8 +195,8 @@ public class PortForwarder_Editor extends DefaultNodeEditor {
     }
   }
 
-  public static class _Inline2955_2 extends InlineCellProvider {
-    public _Inline2955_2() {
+  public static class _Inline_8vzzi5_a5a extends InlineCellProvider {
+    public _Inline_8vzzi5_a5a() {
       super();
     }
 
@@ -205,22 +205,22 @@ public class PortForwarder_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createCollection_2955_1(editorContext, node);
+      return this.createCollection_8vzzi5_a0f0(editorContext, node);
     }
 
-    private EditorCell createCollection_2955_1(EditorContext editorContext, SNode node) {
+    private EditorCell createCollection_8vzzi5_a0f0(EditorContext editorContext, SNode node) {
       EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-      editorCell.setCellId("Collection_2955_1");
-      editorCell.addEditorCell(this.createRefCell_2955_3(editorContext, node));
+      editorCell.setCellId("Collection_8vzzi5_a0f0");
+      editorCell.addEditorCell(this.createRefCell_8vzzi5_a0a5a(editorContext, node));
       return editorCell;
     }
 
-    private EditorCell createRefCell_2955_3(EditorContext editorContext, SNode node) {
+    private EditorCell createRefCell_8vzzi5_a0a5a(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
       provider.setRole("interface");
       provider.setNoTargetText("<no interface>");
       EditorCell editorCell;
-      provider.setAuxiliaryCellProvider(new PortForwarder_Editor._Inline2955_3());
+      provider.setAuxiliaryCellProvider(new PortForwarder_Editor._Inline_8vzzi5_a0a0f0());
       editorCell = provider.createEditorCell(editorContext);
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
@@ -234,8 +234,8 @@ public class PortForwarder_Editor extends DefaultNodeEditor {
     }
   }
 
-  public static class _Inline2955_3 extends InlineCellProvider {
-    public _Inline2955_3() {
+  public static class _Inline_8vzzi5_a0a0f0 extends InlineCellProvider {
+    public _Inline_8vzzi5_a0a0f0() {
       super();
     }
 
@@ -244,10 +244,10 @@ public class PortForwarder_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_2955_2(editorContext, node);
+      return this.createProperty_8vzzi5_a0a0a5a(editorContext, node);
     }
 
-    private EditorCell createProperty_2955_2(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_8vzzi5_a0a0a5a(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");

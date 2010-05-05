@@ -15,7 +15,7 @@ public class MultiplicationExpression extends MulDivPrioExpression {
   }
 
   public static MultiplicationExpression newInstance(SModel sm, boolean init) {
-    return (MultiplicationExpression)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.MultiplicationExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (MultiplicationExpression) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.MultiplicationExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static MultiplicationExpression newInstance(SModel sm) {

@@ -31,50 +31,50 @@ public class IDocumentable_EditorComponent extends AbstractCellProvider {
   }
 
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_1759_0(editorContext, node);
+    return this.createCollection_igs07_a(editorContext, node);
   }
 
-  private EditorCell createCollection_1759_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_igs07_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
-    editorCell.setCellId("Collection_1759_0");
-    editorCell.addEditorCell(this.createConstant_1759_0(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_1759_1(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_1759_2(editorContext, node));
+    editorCell.setCellId("Collection_igs07_a");
+    editorCell.addEditorCell(this.createConstant_igs07_a0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_igs07_b0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_igs07_c0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createCollection_1759_1(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_igs07_b0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
-    editorCell.setCellId("Collection_1759_1");
+    editorCell.setCellId("Collection_igs07_b0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
     }
-    editorCell.addEditorCell(this.createIndentCell1759_0(editorContext, node));
-    editorCell.addEditorCell(this.createReadOnlyModelAccessor_1759_0(editorContext, node));
+    editorCell.addEditorCell(this.createIndentCell_igs07_a1a(editorContext, node));
+    editorCell.addEditorCell(this.createReadOnlyModelAccessor_igs07_b1a(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createCollection_1759_2(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_igs07_c0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
-    editorCell.setCellId("Collection_1759_2");
+    editorCell.setCellId("Collection_igs07_c0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
     }
-    editorCell.addEditorCell(this.createIndentCell1759_1(editorContext, node));
-    editorCell.addEditorCell(this.createJComponent_1759_0(editorContext, node));
+    editorCell.addEditorCell(this.createIndentCell_igs07_a2a(editorContext, node));
+    editorCell.addEditorCell(this.createJComponent_igs07_b2a(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_1759_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_igs07_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Documentation");
-    editorCell.setCellId("Constant_1759_0");
+    editorCell.setCellId("Constant_igs07_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createReadOnlyModelAccessor_1759_0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createReadOnlyModelAccessor_igs07_b1a(final EditorContext editorContext, final SNode node) {
     EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
       public String getText() {
         return IDocumentable_Behavior.call_previewText_6790227271037951885(node);
@@ -88,27 +88,27 @@ public class IDocumentable_EditorComponent extends AbstractCellProvider {
       }
     }, node);
     editorCell.setAction(CellActionType.DELETE, new CellAction_Empty());
-    editorCell.setCellId("ReadOnlyModelAccessor_1759_0");
+    editorCell.setCellId("ReadOnlyModelAccessor_igs07_b1a");
     return editorCell;
   }
 
-  private EditorCell createIndentCell1759_0(EditorContext editorContext, SNode node) {
+  private EditorCell createIndentCell_igs07_a1a(EditorContext editorContext, SNode node) {
     EditorCell_Indent result = new EditorCell_Indent(editorContext, node);
     return result;
   }
 
-  private EditorCell createIndentCell1759_1(EditorContext editorContext, SNode node) {
+  private EditorCell createIndentCell_igs07_a2a(EditorContext editorContext, SNode node) {
     EditorCell_Indent result = new EditorCell_Indent(editorContext, node);
     return result;
   }
 
-  private EditorCell createJComponent_1759_0(EditorContext editorContext, SNode node) {
-    EditorCell editorCell = EditorCell_Component.createComponentCell(editorContext, node, IDocumentable_EditorComponent._QueryFunction_JComponent_1759_0(node, editorContext), "_1759_0");
-    editorCell.setCellId("JComponent_1759_0");
+  private EditorCell createJComponent_igs07_b2a(EditorContext editorContext, SNode node) {
+    EditorCell editorCell = EditorCell_Component.createComponentCell(editorContext, node, IDocumentable_EditorComponent._QueryFunction_JComponent_igs07_a1c0(node, editorContext), "_igs07_b2a");
+    editorCell.setCellId("JComponent_igs07_b2a");
     return editorCell;
   }
 
-  private static JComponent _QueryFunction_JComponent_1759_0(SNode node, EditorContext editorContext) {
+  private static JComponent _QueryFunction_JComponent_igs07_a1c0(SNode node, EditorContext editorContext) {
     return SwingUtil.getComponent(editorContext, node);
   }
 }

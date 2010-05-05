@@ -16,7 +16,7 @@ public class WiringScope extends MedBase {
   }
 
   public static WiringScope newInstance(SModel sm, boolean init) {
-    return (WiringScope)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.WiringScope", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (WiringScope) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.WiringScope", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static WiringScope newInstance(SModel sm) {

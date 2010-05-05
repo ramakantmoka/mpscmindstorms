@@ -10,12 +10,12 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
 public class VoidType_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createConstant_8526_0(editorContext, node);
+    return this.createConstant_8drje7_a(editorContext, node);
   }
 
-  private EditorCell createConstant_8526_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_8drje7_a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "void");
-    editorCell.setCellId("Constant_8526_0");
+    editorCell.setCellId("Constant_8drje7_a");
     editorCell.setDefaultText("");
     return editorCell;
   }

@@ -20,26 +20,26 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
 public class NotFE_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_7834_0(editorContext, node);
+    return this.createCollection_8uw2cd_a(editorContext, node);
   }
 
-  private EditorCell createCollection_7834_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_8uw2cd_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_7834_0");
-    editorCell.addEditorCell(this.createConstant_7834_0(editorContext, node));
-    if (renderingCondition7834_0(node, editorContext, editorContext.getOperationContext().getScope())) {
-      editorCell.addEditorCell(this.createConstant_7834_1(editorContext, node));
+    editorCell.setCellId("Collection_8uw2cd_a");
+    editorCell.addEditorCell(this.createConstant_8uw2cd_a0(editorContext, node));
+    if (renderingCondition_8uw2cd_a1a(node, editorContext, editorContext.getOperationContext().getScope())) {
+      editorCell.addEditorCell(this.createConstant_8uw2cd_b0(editorContext, node));
     }
-    editorCell.addEditorCell(this.createRefNode_7834_0(editorContext, node));
-    if (renderingCondition7834_1(node, editorContext, editorContext.getOperationContext().getScope())) {
-      editorCell.addEditorCell(this.createConstant_7834_2(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_8uw2cd_c0(editorContext, node));
+    if (renderingCondition_8uw2cd_a3a(node, editorContext, editorContext.getOperationContext().getScope())) {
+      editorCell.addEditorCell(this.createConstant_8uw2cd_d0(editorContext, node));
     }
     return editorCell;
   }
 
-  private EditorCell createConstant_7834_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_8uw2cd_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "!");
-    editorCell.setCellId("Constant_7834_0");
+    editorCell.setCellId("Constant_8uw2cd_a0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -49,21 +49,21 @@ public class NotFE_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_7834_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_8uw2cd_b0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(");
-    editorCell.setCellId("Constant_7834_1");
+    editorCell.setCellId("Constant_8uw2cd_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_7834_2(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_8uw2cd_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
-    editorCell.setCellId("Constant_7834_2");
+    editorCell.setCellId("Constant_8uw2cd_d0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createRefNode_7834_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_8uw2cd_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("expr");
     provider.setNoTargetText("<no expr>");
@@ -80,11 +80,11 @@ public class NotFE_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static boolean renderingCondition7834_0(SNode node, EditorContext editorContext, IScope scope) {
+  private static boolean renderingCondition_8uw2cd_a1a(SNode node, EditorContext editorContext, IScope scope) {
     return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, "expr", true), "med.features.structure.BinaryFE");
   }
 
-  private static boolean renderingCondition7834_1(SNode node, EditorContext editorContext, IScope scope) {
+  private static boolean renderingCondition_8uw2cd_a3a(SNode node, EditorContext editorContext, IScope scope) {
     return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, "expr", true), "med.features.structure.BinaryFE");
   }
 }

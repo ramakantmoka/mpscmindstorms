@@ -14,6 +14,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.intentions.BaseIntentionProvider;
 import jetbrains.mps.typesystem.inference.IErrorTarget;
 import jetbrains.mps.typesystem.inference.NodeErrorTarget;
+import jetbrains.mps.nodeEditor.IErrorReporter;
 import jetbrains.mps.smodel.SModelUtil_new;
 
 public class stateUnreachable_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
@@ -29,7 +30,7 @@ public class stateUnreachable_NonTypesystemRule extends AbstractNonTypesystemRul
       {
         BaseIntentionProvider intentionProvider = null;
         IErrorTarget errorTarget = new NodeErrorTarget();
-        typeCheckingContext.reportTypeError(state, "orphan state - can never be reached", "r:49a89a7a-d31e-4952-8a80-11c1002ab648(med.statemachine.typesystem)", "7680622939174393122", intentionProvider, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(state, "orphan state - can never be reached", "r:49a89a7a-d31e-4952-8a80-11c1002ab648(med.statemachine.typesystem)", "7680622939174393122", intentionProvider, errorTarget);
       }
     }
   }

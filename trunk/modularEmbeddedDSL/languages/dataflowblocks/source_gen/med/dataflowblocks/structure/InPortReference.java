@@ -45,7 +45,7 @@ public class InPortReference extends Expression implements ISimpleExpression {
   }
 
   public PortType getPort() {
-    return (PortType)this.getReferent(PortType.class, InPortReference.PORT);
+    return (PortType) this.getReferent(PortType.class, InPortReference.PORT);
   }
 
   public void setPort(PortType node) {
@@ -53,7 +53,7 @@ public class InPortReference extends Expression implements ISimpleExpression {
   }
 
   public static InPortReference newInstance(SModel sm, boolean init) {
-    return (InPortReference)SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.InPortReference", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (InPortReference) SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.InPortReference", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static InPortReference newInstance(SModel sm) {

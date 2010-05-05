@@ -56,7 +56,7 @@ public class Chapter extends Content {
   }
 
   public static Chapter newInstance(SModel sm, boolean init) {
-    return (Chapter)SModelUtil_new.instantiateConceptDeclaration("med.report.structure.Chapter", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Chapter) SModelUtil_new.instantiateConceptDeclaration("med.report.structure.Chapter", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Chapter newInstance(SModel sm) {

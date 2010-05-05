@@ -28,23 +28,23 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 
 public class ProcedureCall_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_3253_0(editorContext, node);
+    return this.createCollection_yxyi25_a(editorContext, node);
   }
 
-  private EditorCell createCollection_3253_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_yxyi25_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_3253_0");
+    editorCell.setCellId("Collection_yxyi25_a");
     editorCell.addKeyMap(new pointerstuffKeymap());
-    editorCell.addEditorCell(this.createRefCell_3253_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_3253_0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_3253_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_3253_1(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_yxyi25_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_yxyi25_b0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_yxyi25_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_yxyi25_d0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_3253_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_yxyi25_b0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(");
-    editorCell.setCellId("Constant_3253_0");
+    editorCell.setCellId("Constant_yxyi25_b0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -54,9 +54,9 @@ public class ProcedureCall_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_3253_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_yxyi25_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
-    editorCell.setCellId("Constant_3253_1");
+    editorCell.setCellId("Constant_yxyi25_d0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -66,20 +66,20 @@ public class ProcedureCall_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_3253_0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new ProcedureCall_Editor.actualsListHandler_3253_0(node, "actuals", editorContext);
+  private EditorCell createRefNodeList_yxyi25_c0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new ProcedureCall_Editor.actualsListHandler_yxyi25_c0(node, "actuals", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_actuals");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
 
-  private EditorCell createRefCell_3253_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_yxyi25_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("procedure");
     provider.setNoTargetText("<no procedure>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new ProcedureCall_Editor._Inline3253_0());
+    provider.setAuxiliaryCellProvider(new ProcedureCall_Editor._Inline_yxyi25_a0a());
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -92,8 +92,8 @@ public class ProcedureCall_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  public static class _Inline3253_0 extends InlineCellProvider {
-    public _Inline3253_0() {
+  public static class _Inline_yxyi25_a0a extends InlineCellProvider {
+    public _Inline_yxyi25_a0a() {
       super();
     }
 
@@ -102,10 +102,10 @@ public class ProcedureCall_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_3253_0(editorContext, node);
+      return this.createProperty_yxyi25_a0a0(editorContext, node);
     }
 
-    private EditorCell createProperty_3253_0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_yxyi25_a0a0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
@@ -125,8 +125,8 @@ public class ProcedureCall_Editor extends DefaultNodeEditor {
     }
   }
 
-  private static class actualsListHandler_3253_0 extends RefNodeListHandler {
-    public actualsListHandler_3253_0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class actualsListHandler_yxyi25_c0 extends RefNodeListHandler {
+    public actualsListHandler_yxyi25_c0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 
@@ -149,7 +149,7 @@ public class ProcedureCall_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEmptyCell_internal(EditorContext editorContext, SNode node) {
-      return this.createConstant_3253_2(editorContext, node);
+      return this.createConstant_yxyi25_a2a(editorContext, node);
     }
 
     public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
@@ -177,9 +177,9 @@ public class ProcedureCall_Editor extends DefaultNodeEditor {
       }
     }
 
-    private EditorCell createConstant_3253_2(EditorContext editorContext, SNode node) {
+    private EditorCell createConstant_yxyi25_a2a(EditorContext editorContext, SNode node) {
       EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, " ");
-      editorCell.setCellId("Constant_3253_2");
+      editorCell.setCellId("Constant_yxyi25_a2a");
       editorCell.setDefaultText(" ");
       return editorCell;
     }

@@ -15,7 +15,7 @@ public class Type extends MedBase {
   }
 
   public static Type newInstance(SModel sm, boolean init) {
-    return (Type)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Type", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Type) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Type", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Type newInstance(SModel sm) {

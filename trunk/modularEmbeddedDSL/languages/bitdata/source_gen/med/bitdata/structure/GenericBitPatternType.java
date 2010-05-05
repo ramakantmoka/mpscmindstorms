@@ -16,7 +16,7 @@ public class GenericBitPatternType extends Type {
   }
 
   public static GenericBitPatternType newInstance(SModel sm, boolean init) {
-    return (GenericBitPatternType)SModelUtil_new.instantiateConceptDeclaration("med.bitdata.structure.GenericBitPatternType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (GenericBitPatternType) SModelUtil_new.instantiateConceptDeclaration("med.bitdata.structure.GenericBitPatternType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static GenericBitPatternType newInstance(SModel sm) {

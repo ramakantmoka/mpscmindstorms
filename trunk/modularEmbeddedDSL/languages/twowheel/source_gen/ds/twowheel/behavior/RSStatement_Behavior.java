@@ -50,26 +50,26 @@ public class RSStatement_Behavior {
   }
 
   public static SNode call_effectiveStep_5296414764969568700(SNode thisNode) {
-    return (SNode)BehaviorManager.getInstance().invoke(Object.class, SNodeOperations.cast(thisNode, "ds.twowheel.structure.RSStatement"), "virtual_effectiveStep_5296414764969568700", PARAMETERS_5296414764969568700);
+    return (SNode) BehaviorManager.getInstance().invoke(Object.class, SNodeOperations.cast(thisNode, "ds.twowheel.structure.RSStatement"), "virtual_effectiveStep_5296414764969568700", PARAMETERS_5296414764969568700);
   }
 
   public static List<SNode> call_linearizedStatements_6177678091394296758(SNode thisNode) {
-    return (List<SNode>)BehaviorManager.getInstance().invoke(Object.class, SNodeOperations.cast(thisNode, "ds.twowheel.structure.RSStatement"), "virtual_linearizedStatements_6177678091394296758", PARAMETERS_6177678091394296758);
+    return (List<SNode>) BehaviorManager.getInstance().invoke(Object.class, SNodeOperations.cast(thisNode, "ds.twowheel.structure.RSStatement"), "virtual_linearizedStatements_6177678091394296758", PARAMETERS_6177678091394296758);
   }
 
   public static SNode call_bumpReaction_6177678091395801141(SNode thisNode) {
-    return (SNode)BehaviorManager.getInstance().invoke(Object.class, SNodeOperations.cast(thisNode, "ds.twowheel.structure.RSStatement"), "virtual_bumpReaction_6177678091395801141", PARAMETERS_6177678091395801141);
+    return (SNode) BehaviorManager.getInstance().invoke(Object.class, SNodeOperations.cast(thisNode, "ds.twowheel.structure.RSStatement"), "virtual_bumpReaction_6177678091395801141", PARAMETERS_6177678091395801141);
   }
 
   public static SNode callSuper_effectiveStep_5296414764969568700(SNode thisNode, String callerConceptFqName) {
-    return (SNode)BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "ds.twowheel.structure.RSStatement"), callerConceptFqName, "virtual_effectiveStep_5296414764969568700", PARAMETERS_5296414764969568700);
+    return (SNode) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "ds.twowheel.structure.RSStatement"), callerConceptFqName, "virtual_effectiveStep_5296414764969568700", PARAMETERS_5296414764969568700);
   }
 
   public static List<SNode> callSuper_linearizedStatements_6177678091394296758(SNode thisNode, String callerConceptFqName) {
-    return (List<SNode>)BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "ds.twowheel.structure.RSStatement"), callerConceptFqName, "virtual_linearizedStatements_6177678091394296758", PARAMETERS_6177678091394296758);
+    return (List<SNode>) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "ds.twowheel.structure.RSStatement"), callerConceptFqName, "virtual_linearizedStatements_6177678091394296758", PARAMETERS_6177678091394296758);
   }
 
   public static SNode callSuper_bumpReaction_6177678091395801141(SNode thisNode, String callerConceptFqName) {
-    return (SNode)BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "ds.twowheel.structure.RSStatement"), callerConceptFqName, "virtual_bumpReaction_6177678091395801141", PARAMETERS_6177678091395801141);
+    return (SNode) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "ds.twowheel.structure.RSStatement"), callerConceptFqName, "virtual_bumpReaction_6177678091395801141", PARAMETERS_6177678091395801141);
   }
 }

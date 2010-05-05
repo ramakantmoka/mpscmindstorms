@@ -16,7 +16,7 @@ public class BitPatternType extends GenericBitPatternType {
   }
 
   public BitPatternDeclaration getPattern() {
-    return (BitPatternDeclaration)this.getReferent(BitPatternDeclaration.class, BitPatternType.PATTERN);
+    return (BitPatternDeclaration) this.getReferent(BitPatternDeclaration.class, BitPatternType.PATTERN);
   }
 
   public void setPattern(BitPatternDeclaration node) {
@@ -24,7 +24,7 @@ public class BitPatternType extends GenericBitPatternType {
   }
 
   public static BitPatternType newInstance(SModel sm, boolean init) {
-    return (BitPatternType)SModelUtil_new.instantiateConceptDeclaration("med.bitdata.structure.BitPatternType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (BitPatternType) SModelUtil_new.instantiateConceptDeclaration("med.bitdata.structure.BitPatternType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static BitPatternType newInstance(SModel sm) {

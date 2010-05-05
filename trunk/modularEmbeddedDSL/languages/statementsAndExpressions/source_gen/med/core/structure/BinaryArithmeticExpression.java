@@ -15,7 +15,7 @@ public class BinaryArithmeticExpression extends BinaryExpression {
   }
 
   public static BinaryArithmeticExpression newInstance(SModel sm, boolean init) {
-    return (BinaryArithmeticExpression)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.BinaryArithmeticExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (BinaryArithmeticExpression) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.BinaryArithmeticExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static BinaryArithmeticExpression newInstance(SModel sm) {

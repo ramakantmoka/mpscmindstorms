@@ -31,18 +31,18 @@ public class Module_Behavior {
   }
 
   public static List<SNode> call_exportedElements_7301321101283467875(SNode thisNode) {
-    return (List<SNode>)BehaviorManager.getInstance().invoke(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.Module"), "virtual_exportedElements_7301321101283467875", PARAMETERS_7301321101283467875);
+    return (List<SNode>) BehaviorManager.getInstance().invoke(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.Module"), "virtual_exportedElements_7301321101283467875", PARAMETERS_7301321101283467875);
   }
 
   public static boolean call_hasToBeGenerated_7647825645222142673(SNode thisNode) {
-    return (Boolean)BehaviorManager.getInstance().invoke(Boolean.class, SNodeOperations.cast(thisNode, "med.core.structure.Module"), "virtual_hasToBeGenerated_7647825645222142673", PARAMETERS_7647825645222142673);
+    return (Boolean) BehaviorManager.getInstance().invoke(Boolean.class, SNodeOperations.cast(thisNode, "med.core.structure.Module"), "virtual_hasToBeGenerated_7647825645222142673", PARAMETERS_7647825645222142673);
   }
 
   public static List<SNode> callSuper_exportedElements_7301321101283467875(SNode thisNode, String callerConceptFqName) {
-    return (List<SNode>)BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.Module"), callerConceptFqName, "virtual_exportedElements_7301321101283467875", PARAMETERS_7301321101283467875);
+    return (List<SNode>) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.Module"), callerConceptFqName, "virtual_exportedElements_7301321101283467875", PARAMETERS_7301321101283467875);
   }
 
   public static boolean callSuper_hasToBeGenerated_7647825645222142673(SNode thisNode, String callerConceptFqName) {
-    return (Boolean)BehaviorManager.getInstance().invokeSuper(Boolean.class, SNodeOperations.cast(thisNode, "med.core.structure.Module"), callerConceptFqName, "virtual_hasToBeGenerated_7647825645222142673", PARAMETERS_7647825645222142673);
+    return (Boolean) BehaviorManager.getInstance().invokeSuper(Boolean.class, SNodeOperations.cast(thisNode, "med.core.structure.Module"), callerConceptFqName, "virtual_hasToBeGenerated_7647825645222142673", PARAMETERS_7647825645222142673);
   }
 }

@@ -27,51 +27,51 @@ import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
 
 public class MacroFeatureDeclaration_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_4372_0(editorContext, node);
+    return this.createCollection_kpjk4e_a(editorContext, node);
   }
 
-  private EditorCell createCollection_4372_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_kpjk4e_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_4372_0");
-    editorCell.addEditorCell(this.createConstant_4372_1(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_4372_3(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_4372_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_4372_0(editorContext, node));
-    editorCell.addEditorCell(this.createReadOnlyModelAccessor_4372_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_4372_2(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_4372_0(editorContext, node));
+    editorCell.setCellId("Collection_kpjk4e_a");
+    editorCell.addEditorCell(this.createConstant_kpjk4e_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_kpjk4e_b0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_kpjk4e_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_kpjk4e_d0(editorContext, node));
+    editorCell.addEditorCell(this.createReadOnlyModelAccessor_kpjk4e_e0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_kpjk4e_f0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_kpjk4e_g0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_4372_0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_4372_0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-
-  private EditorCell createConstant_4372_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_kpjk4e_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "feature");
-    editorCell.setCellId("Constant_4372_1");
+    editorCell.setCellId("Constant_kpjk4e_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_4372_2(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "=");
-    editorCell.setCellId("Constant_4372_2");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-
-  private EditorCell createConstant_4372_3(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_kpjk4e_b0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "macro");
-    editorCell.setCellId("Constant_4372_3");
+    editorCell.setCellId("Constant_kpjk4e_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createReadOnlyModelAccessor_4372_0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createConstant_kpjk4e_d0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_kpjk4e_d0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createConstant_kpjk4e_f0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "=");
+    editorCell.setCellId("Constant_kpjk4e_f0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createReadOnlyModelAccessor_kpjk4e_e0(final EditorContext editorContext, final SNode node) {
     EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
       public String getText() {
         if (FeatureDeclaration_Behavior.call_isSelected_7715189151798165434(node)) {
@@ -89,13 +89,13 @@ public class MacroFeatureDeclaration_Editor extends DefaultNodeEditor {
       }
     }, node);
     editorCell.setAction(CellActionType.DELETE, new CellAction_Empty());
-    editorCell.setCellId("ReadOnlyModelAccessor_4372_0");
+    editorCell.setCellId("ReadOnlyModelAccessor_kpjk4e_e0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
       style.set(StyleAttributes.TEXT_COLOR, new AttributeCalculator<Color>() {
         public Color calculate(EditorCell cell) {
-          return MacroFeatureDeclaration_Editor._StyleParameter_QueryFunction_4372_0((cell == null ?
+          return MacroFeatureDeclaration_Editor._StyleParameter_QueryFunction_kpjk4e_a1e0((cell == null ?
             null :
             cell.getSNode()
           ), (cell == null ?
@@ -108,7 +108,7 @@ public class MacroFeatureDeclaration_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createProperty_4372_0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_kpjk4e_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("name");
     provider.setNoTargetText("<no name>");
@@ -126,7 +126,7 @@ public class MacroFeatureDeclaration_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNode_4372_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_kpjk4e_g0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("expression");
     provider.setNoTargetText("<no expression>");
@@ -143,7 +143,7 @@ public class MacroFeatureDeclaration_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static Color _StyleParameter_QueryFunction_4372_0(SNode node, EditorContext editorContext) {
+  private static Color _StyleParameter_QueryFunction_kpjk4e_a1e0(SNode node, EditorContext editorContext) {
     if (FeatureDeclaration_Behavior.call_isSelected_7715189151798165434(node)) {
       return new Color(0, 160, 0);
     } else {

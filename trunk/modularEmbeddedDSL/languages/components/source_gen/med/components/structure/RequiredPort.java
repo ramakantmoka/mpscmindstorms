@@ -42,7 +42,7 @@ public class RequiredPort extends ProceduralPort implements IRequired {
   }
 
   public static RequiredPort newInstance(SModel sm, boolean init) {
-    return (RequiredPort)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.RequiredPort", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (RequiredPort) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.RequiredPort", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static RequiredPort newInstance(SModel sm) {

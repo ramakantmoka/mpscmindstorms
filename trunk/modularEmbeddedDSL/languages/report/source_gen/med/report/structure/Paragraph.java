@@ -24,7 +24,7 @@ public class Paragraph extends Content {
   }
 
   public static Paragraph newInstance(SModel sm, boolean init) {
-    return (Paragraph)SModelUtil_new.instantiateConceptDeclaration("med.report.structure.Paragraph", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Paragraph) SModelUtil_new.instantiateConceptDeclaration("med.report.structure.Paragraph", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Paragraph newInstance(SModel sm) {

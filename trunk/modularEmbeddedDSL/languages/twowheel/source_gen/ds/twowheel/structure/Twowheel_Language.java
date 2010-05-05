@@ -10,6 +10,6 @@ public class Twowheel_Language {
   public static ModuleReference MODULE_REFERENCE = ModuleReference.fromString("810301f2-7f68-47b8-9a00-f2bc361d82c4(ds.twowheel)");
 
   public static Language get() {
-    return (Language)MPSModuleRepository.getInstance().getModule(MODULE_REFERENCE);
+    return (Language) MPSModuleRepository.getInstance().getModule(MODULE_REFERENCE);
   }
 }

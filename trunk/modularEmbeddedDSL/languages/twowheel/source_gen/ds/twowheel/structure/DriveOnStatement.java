@@ -15,7 +15,7 @@ public class DriveOnStatement extends ContinuousStatement {
   }
 
   public static DriveOnStatement newInstance(SModel sm, boolean init) {
-    return (DriveOnStatement)SModelUtil_new.instantiateConceptDeclaration("ds.twowheel.structure.DriveOnStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (DriveOnStatement) SModelUtil_new.instantiateConceptDeclaration("ds.twowheel.structure.DriveOnStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static DriveOnStatement newInstance(SModel sm) {

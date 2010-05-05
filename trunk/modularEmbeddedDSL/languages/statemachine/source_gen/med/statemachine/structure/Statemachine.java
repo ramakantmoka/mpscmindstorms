@@ -20,6 +20,7 @@ public class Statemachine extends MedBase implements IHasIdentifierName, IModule
   public static final String ALIAS = "alias";
   public static final String VIRTUAL_PACKAGE = "virtualPackage";
   public static final String TEXT = "text";
+  public static final String PROJ_MODE = "projMode";
   public static final String STATES = "states";
   public static final String EVENTS = "events";
 
@@ -67,6 +68,15 @@ public class Statemachine extends MedBase implements IHasIdentifierName, IModule
     this.setProperty(Statemachine.TEXT, value);
   }
 
+  public ProjMode getProjMode() {
+    String value = super.getProperty(Statemachine.PROJ_MODE);
+    return ProjMode.parseValue(value);
+  }
+
+  public void setProjMode(ProjMode value) {
+    super.setProperty(Statemachine.PROJ_MODE, value.getValueAsString());
+  }
+
   public int getStatesesCount() {
     return this.getChildCount(Statemachine.STATES);
   }
@@ -108,7 +118,7 @@ public class Statemachine extends MedBase implements IHasIdentifierName, IModule
   }
 
   public static Statemachine newInstance(SModel sm, boolean init) {
-    return (Statemachine)SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.Statemachine", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Statemachine) SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.Statemachine", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Statemachine newInstance(SModel sm) {

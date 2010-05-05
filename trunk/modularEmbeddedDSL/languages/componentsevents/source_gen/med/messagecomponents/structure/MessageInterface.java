@@ -86,7 +86,7 @@ public class MessageInterface extends BaseConcept implements IExportableModuleCo
   }
 
   public static MessageInterface newInstance(SModel sm, boolean init) {
-    return (MessageInterface)SModelUtil_new.instantiateConceptDeclaration("med.messagecomponents.structure.MessageInterface", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (MessageInterface) SModelUtil_new.instantiateConceptDeclaration("med.messagecomponents.structure.MessageInterface", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static MessageInterface newInstance(SModel sm) {

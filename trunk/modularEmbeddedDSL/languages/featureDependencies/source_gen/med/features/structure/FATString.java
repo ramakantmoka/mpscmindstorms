@@ -15,7 +15,7 @@ public class FATString extends FeatureAttributeType {
   }
 
   public static FATString newInstance(SModel sm, boolean init) {
-    return (FATString)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.FATString", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (FATString) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.FATString", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static FATString newInstance(SModel sm) {

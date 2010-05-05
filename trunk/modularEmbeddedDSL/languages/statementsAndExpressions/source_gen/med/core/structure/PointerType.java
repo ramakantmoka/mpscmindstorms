@@ -16,7 +16,7 @@ public class PointerType extends Type {
   }
 
   public Type getBaseType() {
-    return (Type)this.getChild(Type.class, PointerType.BASE_TYPE);
+    return (Type) this.getChild(Type.class, PointerType.BASE_TYPE);
   }
 
   public void setBaseType(Type node) {
@@ -24,7 +24,7 @@ public class PointerType extends Type {
   }
 
   public static PointerType newInstance(SModel sm, boolean init) {
-    return (PointerType)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.PointerType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (PointerType) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.PointerType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static PointerType newInstance(SModel sm) {

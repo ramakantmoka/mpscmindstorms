@@ -12,6 +12,6 @@ public class ReplacementFeatureDependencyAnnotation_AnnotationLink {
   }
 
   public static ReplacementFeatureClause getReplacementFeatureDependencyAnnotation(BaseConcept source) {
-    return (ReplacementFeatureClause)source.getAttribute(ReplacementFeatureDependencyAnnotation_AnnotationLink.REPLACEMENT_FEATURE_DEPENDENCY_ANNOTATION);
+    return (ReplacementFeatureClause) source.getAttribute(ReplacementFeatureDependencyAnnotation_AnnotationLink.REPLACEMENT_FEATURE_DEPENDENCY_ANNOTATION);
   }
 }

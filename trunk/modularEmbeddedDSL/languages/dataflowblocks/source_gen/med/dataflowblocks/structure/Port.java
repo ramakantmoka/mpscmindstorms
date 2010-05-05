@@ -55,7 +55,7 @@ public class Port extends BaseConcept implements INamedConcept {
   }
 
   public PortType getPorttype() {
-    return (PortType)this.getReferent(PortType.class, Port.PORTTYPE);
+    return (PortType) this.getReferent(PortType.class, Port.PORTTYPE);
   }
 
   public void setPorttype(PortType node) {
@@ -63,7 +63,7 @@ public class Port extends BaseConcept implements INamedConcept {
   }
 
   public AbstractBlock getTarget() {
-    return (AbstractBlock)this.getChild(AbstractBlock.class, Port.TARGET);
+    return (AbstractBlock) this.getChild(AbstractBlock.class, Port.TARGET);
   }
 
   public void setTarget(AbstractBlock node) {
@@ -71,7 +71,7 @@ public class Port extends BaseConcept implements INamedConcept {
   }
 
   public static Port newInstance(SModel sm, boolean init) {
-    return (Port)SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.Port", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Port) SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.Port", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Port newInstance(SModel sm) {

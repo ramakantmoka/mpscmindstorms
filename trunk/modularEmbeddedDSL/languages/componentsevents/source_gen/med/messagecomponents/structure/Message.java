@@ -53,7 +53,7 @@ public class Message extends MedBase implements IHasIdentifierName {
   }
 
   public static Message newInstance(SModel sm, boolean init) {
-    return (Message)SModelUtil_new.instantiateConceptDeclaration("med.messagecomponents.structure.Message", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Message) SModelUtil_new.instantiateConceptDeclaration("med.messagecomponents.structure.Message", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Message newInstance(SModel sm) {

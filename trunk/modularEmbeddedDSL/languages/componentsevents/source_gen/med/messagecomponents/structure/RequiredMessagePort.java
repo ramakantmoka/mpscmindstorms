@@ -15,7 +15,7 @@ public class RequiredMessagePort extends MessagePort {
   }
 
   public static RequiredMessagePort newInstance(SModel sm, boolean init) {
-    return (RequiredMessagePort)SModelUtil_new.instantiateConceptDeclaration("med.messagecomponents.structure.RequiredMessagePort", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (RequiredMessagePort) SModelUtil_new.instantiateConceptDeclaration("med.messagecomponents.structure.RequiredMessagePort", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static RequiredMessagePort newInstance(SModel sm) {

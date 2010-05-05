@@ -16,14 +16,14 @@ public class TypeDef_Behavior {
   public static SNode virtual_getHeaderContent_8772584333841904462(SNode thisNode) {
     SNode copy = SNodeOperations.copyNode(thisNode);
     SPropertyOperations.set(copy, "optionalLowLevelName", IHasIdentifierName_Behavior.call_qualifiedLowLevelName_1842244113830232336(thisNode));
-    return ((SNode)copy);
+    return ((SNode) copy);
   }
 
   public static SNode call_getHeaderContent_5196379128663393352(SNode thisNode) {
-    return (SNode)BehaviorManager.getInstance().invoke(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.TypeDef"), "virtual_getHeaderContent_8772584333841904462", PARAMETERS_5196379128663393352);
+    return (SNode) BehaviorManager.getInstance().invoke(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.TypeDef"), "virtual_getHeaderContent_8772584333841904462", PARAMETERS_5196379128663393352);
   }
 
   public static SNode callSuper_getHeaderContent_5196379128663393352(SNode thisNode, String callerConceptFqName) {
-    return (SNode)BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.TypeDef"), callerConceptFqName, "virtual_getHeaderContent_8772584333841904462", PARAMETERS_5196379128663393352);
+    return (SNode) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.TypeDef"), callerConceptFqName, "virtual_getHeaderContent_8772584333841904462", PARAMETERS_5196379128663393352);
   }
 }

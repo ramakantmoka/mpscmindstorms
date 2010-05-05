@@ -26,62 +26,62 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 
 public class RobotScript_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_0103_0(editorContext, node);
+    return this.createCollection_g2lsq3_a(editorContext, node);
   }
 
-  private EditorCell createCollection_0103_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_g2lsq3_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
-    editorCell.setCellId("Collection_0103_0");
-    editorCell.addEditorCell(this.createCollection_0103_1(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_0103_2(editorContext, node));
+    editorCell.setCellId("Collection_g2lsq3_a");
+    editorCell.addEditorCell(this.createCollection_g2lsq3_a0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_g2lsq3_b0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createCollection_0103_1(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_g2lsq3_a0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_0103_1");
+    editorCell.setCellId("Collection_g2lsq3_a0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
     }
-    editorCell.addEditorCell(this.createConstant_0103_0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_0103_0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_g2lsq3_a0a(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_g2lsq3_b0a(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createCollection_0103_2(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_g2lsq3_b0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_0103_2");
+    editorCell.setCellId("Collection_g2lsq3_b0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
     }
-    editorCell.addEditorCell(this.createIndentCell0103_0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_0103_0(editorContext, node));
+    editorCell.addEditorCell(this.createIndentCell_g2lsq3_a1a(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_g2lsq3_b1a(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_0103_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_g2lsq3_a0a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "robot script");
-    editorCell.setCellId("Constant_0103_0");
+    editorCell.setCellId("Constant_g2lsq3_a0a");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_0103_0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new RobotScript_Editor.statementsListHandler_0103_0(node, "statements", editorContext);
+  private EditorCell createRefNodeList_g2lsq3_b1a(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new RobotScript_Editor.statementsListHandler_g2lsq3_b1a(node, "statements", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_statements");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
 
-  private EditorCell createIndentCell0103_0(EditorContext editorContext, SNode node) {
+  private EditorCell createIndentCell_g2lsq3_a1a(EditorContext editorContext, SNode node) {
     EditorCell_Indent result = new EditorCell_Indent(editorContext, node);
     return result;
   }
 
-  private EditorCell createProperty_0103_0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_g2lsq3_b0a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("name");
     provider.setNoTargetText("<no name>");
@@ -99,8 +99,8 @@ public class RobotScript_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static class statementsListHandler_0103_0 extends RefNodeListHandler {
-    public statementsListHandler_0103_0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class statementsListHandler_g2lsq3_b1a extends RefNodeListHandler {
+    public statementsListHandler_g2lsq3_b1a(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 

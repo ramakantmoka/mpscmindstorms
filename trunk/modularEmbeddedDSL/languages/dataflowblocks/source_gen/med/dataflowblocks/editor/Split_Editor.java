@@ -18,26 +18,26 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 
 public class Split_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_8830_0(editorContext, node);
+    return this.createCollection_oi2uk9_a(editorContext, node);
   }
 
-  private EditorCell createCollection_8830_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_oi2uk9_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
-    editorCell.setCellId("Collection_8830_0");
-    editorCell.addEditorCell(this.createRefNodeList_8830_0(editorContext, node));
+    editorCell.setCellId("Collection_oi2uk9_a");
+    editorCell.addEditorCell(this.createRefNodeList_oi2uk9_a0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_8830_0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Split_Editor.outsListHandler_8830_0(node, "outs", editorContext);
+  private EditorCell createRefNodeList_oi2uk9_a0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new Split_Editor.outsListHandler_oi2uk9_a0(node, "outs", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_outs");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
 
-  private static class outsListHandler_8830_0 extends RefNodeListHandler {
-    public outsListHandler_8830_0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class outsListHandler_oi2uk9_a0 extends RefNodeListHandler {
+    public outsListHandler_oi2uk9_a0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 

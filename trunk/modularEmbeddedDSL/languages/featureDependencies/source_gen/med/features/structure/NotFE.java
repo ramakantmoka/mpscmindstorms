@@ -16,7 +16,7 @@ public class NotFE extends BaseFE {
   }
 
   public BaseFE getExpr() {
-    return (BaseFE)this.getChild(BaseFE.class, NotFE.EXPR);
+    return (BaseFE) this.getChild(BaseFE.class, NotFE.EXPR);
   }
 
   public void setExpr(BaseFE node) {
@@ -24,7 +24,7 @@ public class NotFE extends BaseFE {
   }
 
   public static NotFE newInstance(SModel sm, boolean init) {
-    return (NotFE)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.NotFE", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (NotFE) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.NotFE", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static NotFE newInstance(SModel sm) {

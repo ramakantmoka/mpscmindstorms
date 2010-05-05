@@ -19,7 +19,7 @@ public class introduceBlock_Target implements IRefactoringTarget {
   }
 
   public boolean isApplicableToEntityType(final Object entity) {
-    return SNodeOperations.isInstanceOf(((SNode)entity), "ds.twowheel.structure.RSStatement");
+    return SNodeOperations.isInstanceOf(((SNode) entity), "ds.twowheel.structure.RSStatement");
   }
 
   public boolean isApplicable(final Object entity) {

@@ -25,7 +25,7 @@ public class RequiredPortProcedureCall extends ProcedureCall {
   }
 
   public RequiredPortExpression getPortExpression() {
-    return (RequiredPortExpression)this.getChild(RequiredPortExpression.class, RequiredPortProcedureCall.PORT_EXPRESSION);
+    return (RequiredPortExpression) this.getChild(RequiredPortExpression.class, RequiredPortProcedureCall.PORT_EXPRESSION);
   }
 
   public void setPortExpression(RequiredPortExpression node) {
@@ -33,7 +33,7 @@ public class RequiredPortProcedureCall extends ProcedureCall {
   }
 
   public static RequiredPortProcedureCall newInstance(SModel sm, boolean init) {
-    return (RequiredPortProcedureCall)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.RequiredPortProcedureCall", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (RequiredPortProcedureCall) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.RequiredPortProcedureCall", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static RequiredPortProcedureCall newInstance(SModel sm) {

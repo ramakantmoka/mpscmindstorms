@@ -16,7 +16,7 @@ public class QuantityType extends GenericQuantityType {
   }
 
   public QuantityDeclaration getQuantity() {
-    return (QuantityDeclaration)this.getReferent(QuantityDeclaration.class, QuantityType.QUANTITY);
+    return (QuantityDeclaration) this.getReferent(QuantityDeclaration.class, QuantityType.QUANTITY);
   }
 
   public void setQuantity(QuantityDeclaration node) {
@@ -24,7 +24,7 @@ public class QuantityType extends GenericQuantityType {
   }
 
   public static QuantityType newInstance(SModel sm, boolean init) {
-    return (QuantityType)SModelUtil_new.instantiateConceptDeclaration("med.quantities.structure.QuantityType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (QuantityType) SModelUtil_new.instantiateConceptDeclaration("med.quantities.structure.QuantityType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static QuantityType newInstance(SModel sm) {

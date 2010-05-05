@@ -19,7 +19,7 @@ public class ForStatement extends Statement {
   }
 
   public ForVariableDeclaration getVar() {
-    return (ForVariableDeclaration)this.getChild(ForVariableDeclaration.class, ForStatement.VAR);
+    return (ForVariableDeclaration) this.getChild(ForVariableDeclaration.class, ForStatement.VAR);
   }
 
   public void setVar(ForVariableDeclaration node) {
@@ -27,7 +27,7 @@ public class ForStatement extends Statement {
   }
 
   public Expression getCondition() {
-    return (Expression)this.getChild(Expression.class, ForStatement.CONDITION);
+    return (Expression) this.getChild(Expression.class, ForStatement.CONDITION);
   }
 
   public void setCondition(Expression node) {
@@ -35,7 +35,7 @@ public class ForStatement extends Statement {
   }
 
   public Statement getIterationStatement() {
-    return (Statement)this.getChild(Statement.class, ForStatement.ITERATION_STATEMENT);
+    return (Statement) this.getChild(Statement.class, ForStatement.ITERATION_STATEMENT);
   }
 
   public void setIterationStatement(Statement node) {
@@ -43,7 +43,7 @@ public class ForStatement extends Statement {
   }
 
   public StatementList getBody() {
-    return (StatementList)this.getChild(StatementList.class, ForStatement.BODY);
+    return (StatementList) this.getChild(StatementList.class, ForStatement.BODY);
   }
 
   public void setBody(StatementList node) {
@@ -51,7 +51,7 @@ public class ForStatement extends Statement {
   }
 
   public static ForStatement newInstance(SModel sm, boolean init) {
-    return (ForStatement)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ForStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ForStatement) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ForStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ForStatement newInstance(SModel sm) {

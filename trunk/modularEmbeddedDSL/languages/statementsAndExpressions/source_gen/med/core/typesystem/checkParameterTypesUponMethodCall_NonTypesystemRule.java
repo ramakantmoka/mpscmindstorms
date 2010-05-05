@@ -9,6 +9,7 @@ import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.intentions.BaseIntentionProvider;
+import jetbrains.mps.typesystem.inference.EquationInfo;
 import jetbrains.mps.smodel.SModelUtil_new;
 
 public class checkParameterTypesUponMethodCall_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
@@ -17,8 +18,8 @@ public class checkParameterTypesUponMethodCall_NonTypesystemRule extends Abstrac
 
   public void applyRule(final SNode procedureCall, final TypeCheckingContext typeCheckingContext) {
     {
-      final SNode _representatorVar0 = procedureCall;
-      typeCheckingContext.whenConcrete(_representatorVar0, new Runnable() {
+      final SNode _representatorVar_bbdzgy_a0a = procedureCall;
+      typeCheckingContext.whenConcrete(_representatorVar_bbdzgy_a0a, new Runnable() {
         public void run() {
           SNode procedure = SLinkOperations.getTarget(procedureCall, "procedure", false);
           for (SNode a : ListSequence.fromList(SLinkOperations.getTargets(procedureCall, "actuals", true))) {
@@ -27,7 +28,8 @@ public class checkParameterTypesUponMethodCall_NonTypesystemRule extends Abstrac
             {
               SNode _nodeToCheck_1029348928467 = a;
               BaseIntentionProvider intentionProvider = null;
-              typeCheckingContext.createComparableEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "9024796767936657962", true), (SNode)typeCheckingContext.typeOf(p, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "9024796767936657965", true), _nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "9024796767936657960", intentionProvider);
+              EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "9024796767936657960", 0, intentionProvider);
+              typeCheckingContext.createComparableEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "9024796767936657962", true), (SNode) typeCheckingContext.typeOf(p, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "9024796767936657965", true), _info_12389875345);
             }
           }
         }

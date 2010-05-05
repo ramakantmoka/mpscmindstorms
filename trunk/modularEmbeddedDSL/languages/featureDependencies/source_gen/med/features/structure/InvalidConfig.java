@@ -25,7 +25,7 @@ public class InvalidConfig extends BaseConcept {
   }
 
   public static InvalidConfig newInstance(SModel sm, boolean init) {
-    return (InvalidConfig)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.InvalidConfig", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (InvalidConfig) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.InvalidConfig", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static InvalidConfig newInstance(SModel sm) {

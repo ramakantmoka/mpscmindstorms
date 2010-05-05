@@ -13,10 +13,10 @@ import jetbrains.mps.nodeEditor.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
-import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
+import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.nodeEditor.EditorManager;
-import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import jetbrains.mps.smodel.action.NodeFactoryManager;
 import jetbrains.mps.nodeEditor.CellActionType;
@@ -27,24 +27,24 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 
 public class InterfaceProcedure_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_7726_0(editorContext, node);
+    return this.createCollection_ywg4bd_a(editorContext, node);
   }
 
-  private EditorCell createCollection_7726_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_ywg4bd_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_7726_0");
-    editorCell.addEditorCell(this.createRefNode_7726_0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_7726_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_7726_0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_7726_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_7726_2(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_7726_3(editorContext, node));
+    editorCell.setCellId("Collection_ywg4bd_a");
+    editorCell.addEditorCell(this.createRefNode_ywg4bd_a0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_ywg4bd_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_ywg4bd_c0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_ywg4bd_d0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_ywg4bd_e0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_ywg4bd_f0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_7726_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_ywg4bd_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(");
-    editorCell.setCellId("Constant_7726_0");
+    editorCell.setCellId("Constant_ywg4bd_c0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -53,16 +53,16 @@ public class InterfaceProcedure_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_7726_2(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_ywg4bd_e0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
-    editorCell.setCellId("Constant_7726_2");
+    editorCell.setCellId("Constant_ywg4bd_e0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_7726_3(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_ywg4bd_f0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ";");
-    editorCell.setCellId("Constant_7726_3");
+    editorCell.setCellId("Constant_ywg4bd_f0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -71,32 +71,15 @@ public class InterfaceProcedure_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_7726_0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new InterfaceProcedure_Editor.parametersListHandler_7726_0(node, "parameters", editorContext);
+  private EditorCell createRefNodeList_ywg4bd_d0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new InterfaceProcedure_Editor.parametersListHandler_ywg4bd_d0(node, "parameters", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_parameters");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
 
-  private EditorCell createRefNode_7726_0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
-    provider.setRole("type");
-    provider.setNoTargetText("<no type>");
-    EditorCell editorCell;
-    editorCell = provider.createEditorCell(editorContext);
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    Class attributeKind = provider.getRoleAttributeClass();
-    if (attributeConcept != null) {
-      IOperationContext opContext = editorContext.getOperationContext();
-      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
-      return manager.createRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
-    } else
-    return editorCell;
-  }
-
-  private EditorCell createProperty_7726_0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_ywg4bd_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("name");
     provider.setNoTargetText("<no name>");
@@ -114,8 +97,25 @@ public class InterfaceProcedure_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static class parametersListHandler_7726_0 extends RefNodeListHandler {
-    public parametersListHandler_7726_0(SNode ownerNode, String childRole, EditorContext context) {
+  private EditorCell createRefNode_ywg4bd_a0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
+    provider.setRole("type");
+    provider.setNoTargetText("<no type>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      IOperationContext opContext = editorContext.getOperationContext();
+      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
+      return manager.createRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
+    return editorCell;
+  }
+
+  private static class parametersListHandler_ywg4bd_d0 extends RefNodeListHandler {
+    public parametersListHandler_ywg4bd_d0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 
@@ -138,7 +138,7 @@ public class InterfaceProcedure_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEmptyCell_internal(EditorContext editorContext, SNode node) {
-      return this.createConstant_7726_1(editorContext, node);
+      return this.createConstant_ywg4bd_a3a(editorContext, node);
     }
 
     public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
@@ -166,9 +166,9 @@ public class InterfaceProcedure_Editor extends DefaultNodeEditor {
       }
     }
 
-    private EditorCell createConstant_7726_1(EditorContext editorContext, SNode node) {
+    private EditorCell createConstant_ywg4bd_a3a(EditorContext editorContext, SNode node) {
       EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-      editorCell.setCellId("Constant_7726_1");
+      editorCell.setCellId("Constant_ywg4bd_a3a");
       {
         Style style = editorCell.getStyle();
         style.set(StyleAttributes.EDITABLE, false);

@@ -39,7 +39,7 @@ public class RequirementsTrace extends MedBase {
   }
 
   public static RequirementsTrace newInstance(SModel sm, boolean init) {
-    return (RequirementsTrace)SModelUtil_new.instantiateConceptDeclaration("med.requirements.structure.RequirementsTrace", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (RequirementsTrace) SModelUtil_new.instantiateConceptDeclaration("med.requirements.structure.RequirementsTrace", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static RequirementsTrace newInstance(SModel sm) {

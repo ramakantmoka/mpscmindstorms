@@ -15,7 +15,7 @@ public class AndFE extends BinaryFE {
   }
 
   public static AndFE newInstance(SModel sm, boolean init) {
-    return (AndFE)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.AndFE", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (AndFE) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.AndFE", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static AndFE newInstance(SModel sm) {

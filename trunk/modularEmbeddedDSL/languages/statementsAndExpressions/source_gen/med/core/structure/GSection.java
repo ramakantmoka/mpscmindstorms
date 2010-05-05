@@ -49,7 +49,7 @@ public class GSection extends GItem {
   }
 
   public static GSection newInstance(SModel sm, boolean init) {
-    return (GSection)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.GSection", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (GSection) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.GSection", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static GSection newInstance(SModel sm) {

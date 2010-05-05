@@ -69,7 +69,7 @@ public class BlockType extends BaseConcept implements IHasIdentifierName, IExpor
   }
 
   public StatementList getBody() {
-    return (StatementList)this.getChild(StatementList.class, BlockType.BODY);
+    return (StatementList) this.getChild(StatementList.class, BlockType.BODY);
   }
 
   public void setBody(StatementList node) {
@@ -117,7 +117,7 @@ public class BlockType extends BaseConcept implements IHasIdentifierName, IExpor
   }
 
   public static BlockType newInstance(SModel sm, boolean init) {
-    return (BlockType)SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.BlockType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (BlockType) SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.BlockType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static BlockType newInstance(SModel sm) {

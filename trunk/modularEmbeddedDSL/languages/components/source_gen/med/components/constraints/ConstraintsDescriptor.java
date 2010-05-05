@@ -12,8 +12,6 @@ public class ConstraintsDescriptor implements IModelConstraints {
   private List<IModelConstraints> myConstraints = ListSequence.fromList(new ArrayList<IModelConstraints>());
 
   public ConstraintsDescriptor() {
-    ListSequence.fromList(this.myConstraints).addElement(new PortForwarder_required_ReferentConstraint());
-    ListSequence.fromList(this.myConstraints).addElement(new PortForwarder_provided_ReferentConstraint());
     ListSequence.fromList(this.myConstraints).addElement(new ProceduralPort_interface_ReferentConstraint());
     ListSequence.fromList(this.myConstraints).addElement(new InterfaceProcedureImplementation_procedure_ReferentConstraint());
     ListSequence.fromList(this.myConstraints).addElement(new ComponentImplementation_componentType_ReferentConstraint());
@@ -21,10 +19,12 @@ public class ConstraintsDescriptor implements IModelConstraints {
     ListSequence.fromList(this.myConstraints).addElement(new PortAdapterExpression_portAdaptor_ReferentConstraint());
     ListSequence.fromList(this.myConstraints).addElement(new PortProcedureCall_procedure_ReferentConstraint());
     ListSequence.fromList(this.myConstraints).addElement(new PortAdaptor_interface_ReferentConstraint());
-    ListSequence.fromList(this.myConstraints).addElement(new RequiredPortProcedureCall_procedure_ReferentConstraint());
-    ListSequence.fromList(this.myConstraints).addElement(new RequiredPortExpression_port_ReferentConstraint());
     ListSequence.fromList(this.myConstraints).addElement(new ComponentDescriptor_component_ReferentConstraint());
     ListSequence.fromList(this.myConstraints).addElement(new ComponentDescriptor_implementation_ReferentConstraint());
+    ListSequence.fromList(this.myConstraints).addElement(new RequiredPortProcedureCall_procedure_ReferentConstraint());
+    ListSequence.fromList(this.myConstraints).addElement(new RequiredPortExpression_port_ReferentConstraint());
+    ListSequence.fromList(this.myConstraints).addElement(new PortForwarder_provided_ReferentConstraint());
+    ListSequence.fromList(this.myConstraints).addElement(new PortForwarder_required_ReferentConstraint());
   }
 
   public void unRegisterSelf(ModelConstraintsManager p0) {

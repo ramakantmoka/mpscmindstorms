@@ -19,22 +19,22 @@ import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 
 public class RequiredPortExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_5260_0(editorContext, node);
+    return this.createCollection_piz85m_a(editorContext, node);
   }
 
-  private EditorCell createCollection_5260_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_piz85m_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_5260_0");
-    editorCell.addEditorCell(this.createRefCell_5260_0(editorContext, node));
+    editorCell.setCellId("Collection_piz85m_a");
+    editorCell.addEditorCell(this.createRefCell_piz85m_a0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createRefCell_5260_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_piz85m_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("port");
     provider.setNoTargetText("<no port>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new RequiredPortExpression_Editor._Inline5260_0());
+    provider.setAuxiliaryCellProvider(new RequiredPortExpression_Editor._Inline_piz85m_a0a());
     editorCell = provider.createEditorCell(editorContext);
     {
       Style style = editorCell.getStyle();
@@ -51,8 +51,8 @@ public class RequiredPortExpression_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  public static class _Inline5260_0 extends InlineCellProvider {
-    public _Inline5260_0() {
+  public static class _Inline_piz85m_a0a extends InlineCellProvider {
+    public _Inline_piz85m_a0a() {
       super();
     }
 
@@ -61,10 +61,10 @@ public class RequiredPortExpression_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_5260_0(editorContext, node);
+      return this.createProperty_piz85m_a0a0(editorContext, node);
     }
 
-    private EditorCell createProperty_5260_0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_piz85m_a0a0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");

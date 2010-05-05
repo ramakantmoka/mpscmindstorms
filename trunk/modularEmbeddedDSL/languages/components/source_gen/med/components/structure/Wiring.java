@@ -39,7 +39,7 @@ public class Wiring extends MedBase {
   }
 
   public static Wiring newInstance(SModel sm, boolean init) {
-    return (Wiring)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.Wiring", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Wiring) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.Wiring", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Wiring newInstance(SModel sm) {

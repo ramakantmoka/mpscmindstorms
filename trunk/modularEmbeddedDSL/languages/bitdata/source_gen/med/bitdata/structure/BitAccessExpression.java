@@ -55,7 +55,7 @@ public class BitAccessExpression extends Expression implements ILValue {
   }
 
   public BitRange getBits() {
-    return (BitRange)this.getReferent(BitRange.class, BitAccessExpression.BITS);
+    return (BitRange) this.getReferent(BitRange.class, BitAccessExpression.BITS);
   }
 
   public void setBits(BitRange node) {
@@ -63,7 +63,7 @@ public class BitAccessExpression extends Expression implements ILValue {
   }
 
   public Expression getExpression() {
-    return (Expression)this.getChild(Expression.class, BitAccessExpression.EXPRESSION);
+    return (Expression) this.getChild(Expression.class, BitAccessExpression.EXPRESSION);
   }
 
   public void setExpression(Expression node) {
@@ -71,7 +71,7 @@ public class BitAccessExpression extends Expression implements ILValue {
   }
 
   public static BitAccessExpression newInstance(SModel sm, boolean init) {
-    return (BitAccessExpression)SModelUtil_new.instantiateConceptDeclaration("med.bitdata.structure.BitAccessExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (BitAccessExpression) SModelUtil_new.instantiateConceptDeclaration("med.bitdata.structure.BitAccessExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static BitAccessExpression newInstance(SModel sm) {

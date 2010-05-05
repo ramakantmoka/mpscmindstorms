@@ -23,59 +23,59 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 
 public class DataflowComposition_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_3366_1(editorContext, node);
+    return this.createCollection_j86lf1_a(editorContext, node);
   }
 
-  private EditorCell createCollection_3366_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_j86lf1_a(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
+    editorCell.setCellId("Collection_j86lf1_a");
+    editorCell.addEditorCell(this.createConstant_j86lf1_a0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_j86lf1_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_j86lf1_c0(editorContext, node));
+    return editorCell;
+  }
+
+  private EditorCell createCollection_j86lf1_b0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_3366_0");
+    editorCell.setCellId("Collection_j86lf1_b0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
     }
-    editorCell.addEditorCell(this.createIndentCell3366_0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_3366_0(editorContext, node));
+    editorCell.addEditorCell(this.createIndentCell_j86lf1_a1a(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_j86lf1_b1a(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createCollection_3366_1(EditorContext editorContext, SNode node) {
-    EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
-    editorCell.setCellId("Collection_3366_1");
-    editorCell.addEditorCell(this.createConstant_3366_1(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_3366_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_3366_0(editorContext, node));
-    return editorCell;
-  }
-
-  private EditorCell createConstant_3366_0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");
-    editorCell.setCellId("Constant_3366_0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-
-  private EditorCell createConstant_3366_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_j86lf1_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "data flow composition");
-    editorCell.setCellId("Constant_3366_1");
+    editorCell.setCellId("Constant_j86lf1_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_3366_0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new DataflowComposition_Editor.blocksListHandler_3366_0(node, "blocks", editorContext);
+  private EditorCell createConstant_j86lf1_c0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");
+    editorCell.setCellId("Constant_j86lf1_c0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createRefNodeList_j86lf1_b1a(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new DataflowComposition_Editor.blocksListHandler_j86lf1_b1a(node, "blocks", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_blocks");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
 
-  private EditorCell createIndentCell3366_0(EditorContext editorContext, SNode node) {
+  private EditorCell createIndentCell_j86lf1_a1a(EditorContext editorContext, SNode node) {
     EditorCell_Indent result = new EditorCell_Indent(editorContext, node);
     return result;
   }
 
-  private static class blocksListHandler_3366_0 extends RefNodeListHandler {
-    public blocksListHandler_3366_0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class blocksListHandler_j86lf1_b1a extends RefNodeListHandler {
+    public blocksListHandler_j86lf1_b1a(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 

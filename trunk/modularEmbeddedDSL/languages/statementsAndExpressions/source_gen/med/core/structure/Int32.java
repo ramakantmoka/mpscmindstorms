@@ -42,7 +42,7 @@ public class Int32 extends Type implements IStdInt {
   }
 
   public static Int32 newInstance(SModel sm, boolean init) {
-    return (Int32)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Int32", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Int32) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Int32", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Int32 newInstance(SModel sm) {

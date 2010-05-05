@@ -16,7 +16,7 @@ public class ExpressionStatement extends Statement {
   }
 
   public Expression getExpression() {
-    return (Expression)this.getChild(Expression.class, ExpressionStatement.EXPRESSION);
+    return (Expression) this.getChild(Expression.class, ExpressionStatement.EXPRESSION);
   }
 
   public void setExpression(Expression node) {
@@ -24,7 +24,7 @@ public class ExpressionStatement extends Statement {
   }
 
   public static ExpressionStatement newInstance(SModel sm, boolean init) {
-    return (ExpressionStatement)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ExpressionStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ExpressionStatement) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ExpressionStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ExpressionStatement newInstance(SModel sm) {

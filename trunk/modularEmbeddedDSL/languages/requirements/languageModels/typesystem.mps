@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:c1c884a3-b93b-47c5-b0f8-174a44cec6d0(med.requirements.typesystem)">
-  <persistence version="3" />
+  <persistence version="4" />
   <refactoringHistory />
   <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
   <language namespace="6f39da53-777c-4426-896e-bf1ddfbf16dc(med.requirements)" />

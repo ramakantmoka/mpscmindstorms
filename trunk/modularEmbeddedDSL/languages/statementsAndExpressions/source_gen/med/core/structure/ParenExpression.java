@@ -16,7 +16,7 @@ public class ParenExpression extends Expression {
   }
 
   public Expression getExpr() {
-    return (Expression)this.getChild(Expression.class, ParenExpression.EXPR);
+    return (Expression) this.getChild(Expression.class, ParenExpression.EXPR);
   }
 
   public void setExpr(Expression node) {
@@ -24,7 +24,7 @@ public class ParenExpression extends Expression {
   }
 
   public static ParenExpression newInstance(SModel sm, boolean init) {
-    return (ParenExpression)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ParenExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ParenExpression) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ParenExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ParenExpression newInstance(SModel sm) {

@@ -42,7 +42,7 @@ public class ProvidedPort extends ProceduralPort implements IProvided {
   }
 
   public static ProvidedPort newInstance(SModel sm, boolean init) {
-    return (ProvidedPort)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.ProvidedPort", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ProvidedPort) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.ProvidedPort", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ProvidedPort newInstance(SModel sm) {

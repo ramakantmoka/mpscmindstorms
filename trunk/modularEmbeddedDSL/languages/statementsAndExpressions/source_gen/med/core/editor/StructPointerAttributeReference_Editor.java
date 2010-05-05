@@ -23,40 +23,28 @@ import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 
 public class StructPointerAttributeReference_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_5829_0(editorContext, node);
+    return this.createCollection_gwfw22_a(editorContext, node);
   }
 
-  private EditorCell createCollection_5829_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_gwfw22_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_5829_0");
+    editorCell.setCellId("Collection_gwfw22_a");
     editorCell.addKeyMap(new pointerstuffKeymap());
-    if (renderingCondition5829_0(node, editorContext, editorContext.getOperationContext().getScope())) {
-      editorCell.addEditorCell(this.createConstant_5829_1(editorContext, node));
+    if (renderingCondition_gwfw22_a0a(node, editorContext, editorContext.getOperationContext().getScope())) {
+      editorCell.addEditorCell(this.createConstant_gwfw22_a0(editorContext, node));
     }
-    editorCell.addEditorCell(this.createRefNode_5829_0(editorContext, node));
-    if (renderingCondition5829_1(node, editorContext, editorContext.getOperationContext().getScope())) {
-      editorCell.addEditorCell(this.createConstant_5829_2(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_gwfw22_b0(editorContext, node));
+    if (renderingCondition_gwfw22_a2a(node, editorContext, editorContext.getOperationContext().getScope())) {
+      editorCell.addEditorCell(this.createConstant_gwfw22_c0(editorContext, node));
     }
-    editorCell.addEditorCell(this.createConstant_5829_0(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_5829_0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_gwfw22_d0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_gwfw22_e0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_5829_0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "->");
-    editorCell.setCellId("Constant_5829_0");
-    {
-      Style style = editorCell.getStyle();
-      style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
-      style.set(StyleAttributes.PUNCTUATION_LEFT, true);
-    }
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-
-  private EditorCell createConstant_5829_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_gwfw22_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(");
-    editorCell.setCellId("Constant_5829_1");
+    editorCell.setCellId("Constant_gwfw22_a0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -66,9 +54,9 @@ public class StructPointerAttributeReference_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_5829_2(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_gwfw22_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
-    editorCell.setCellId("Constant_5829_2");
+    editorCell.setCellId("Constant_gwfw22_c0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -78,7 +66,19 @@ public class StructPointerAttributeReference_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNode_5829_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_gwfw22_d0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "->");
+    editorCell.setCellId("Constant_gwfw22_d0");
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
+      style.set(StyleAttributes.PUNCTUATION_LEFT, true);
+    }
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createRefNode_gwfw22_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("variable");
     provider.setNoTargetText("<no variable>");
@@ -96,12 +96,12 @@ public class StructPointerAttributeReference_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefCell_5829_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_gwfw22_e0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("attribute");
     provider.setNoTargetText("<no attribute>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new StructPointerAttributeReference_Editor._Inline5829_0());
+    provider.setAuxiliaryCellProvider(new StructPointerAttributeReference_Editor._Inline_gwfw22_a4a());
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -114,16 +114,16 @@ public class StructPointerAttributeReference_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static boolean renderingCondition5829_0(SNode node, EditorContext editorContext, IScope scope) {
+  private static boolean renderingCondition_gwfw22_a0a(SNode node, EditorContext editorContext, IScope scope) {
     return !(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, "variable", true), "med.core.structure.ISimpleExpression"));
   }
 
-  private static boolean renderingCondition5829_1(SNode node, EditorContext editorContext, IScope scope) {
+  private static boolean renderingCondition_gwfw22_a2a(SNode node, EditorContext editorContext, IScope scope) {
     return !(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(node, "variable", true), "med.core.structure.ISimpleExpression"));
   }
 
-  public static class _Inline5829_0 extends InlineCellProvider {
-    public _Inline5829_0() {
+  public static class _Inline_gwfw22_a4a extends InlineCellProvider {
+    public _Inline_gwfw22_a4a() {
       super();
     }
 
@@ -132,10 +132,10 @@ public class StructPointerAttributeReference_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_5829_0(editorContext, node);
+      return this.createProperty_gwfw22_a0e0(editorContext, node);
     }
 
-    private EditorCell createProperty_5829_0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_gwfw22_a0e0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");

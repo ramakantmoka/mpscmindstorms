@@ -15,7 +15,7 @@ public class ShowClauseDisplayMode extends DisplayMode {
   }
 
   public static ShowClauseDisplayMode newInstance(SModel sm, boolean init) {
-    return (ShowClauseDisplayMode)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.ShowClauseDisplayMode", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ShowClauseDisplayMode) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.ShowClauseDisplayMode", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ShowClauseDisplayMode newInstance(SModel sm) {

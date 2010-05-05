@@ -28,45 +28,45 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 
 public class DummyRequirement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_3905_0(editorContext, node);
+    return this.createCollection_cy6cbc_a(editorContext, node);
   }
 
-  private EditorCell createCollection_3905_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_cy6cbc_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
-    editorCell.setCellId("Collection_3905_0");
+    editorCell.setCellId("Collection_cy6cbc_a");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.DRAW_BORDER, true);
     }
-    editorCell.addEditorCell(this.createProperty_3905_0(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_3905_1(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_cy6cbc_a0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_cy6cbc_b0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createCollection_3905_1(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_cy6cbc_b0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
-    editorCell.setCellId("Collection_3905_1");
+    editorCell.setCellId("Collection_cy6cbc_b0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
       style.set(StyleAttributes.DRAW_BORDER, true);
     }
-    editorCell.addEditorCell(this.createProperty_3905_1(editorContext, node));
-    if (renderingCondition3905_0(node, editorContext, editorContext.getOperationContext().getScope())) {
-      editorCell.addEditorCell(this.createRefNodeList_3905_0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_cy6cbc_a1a(editorContext, node));
+    if (renderingCondition_cy6cbc_a1b0(node, editorContext, editorContext.getOperationContext().getScope())) {
+      editorCell.addEditorCell(this.createRefNodeList_cy6cbc_b1a(editorContext, node));
     }
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_3905_0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new DummyRequirement_Editor.dependenciesListHandler_3905_0(node, "dependencies", editorContext);
+  private EditorCell createRefNodeList_cy6cbc_b1a(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new DummyRequirement_Editor.dependenciesListHandler_cy6cbc_b1a(node, "dependencies", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_dependencies");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
 
-  private EditorCell createProperty_3905_0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_cy6cbc_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("name");
     provider.setNoTargetText("<no name>");
@@ -88,7 +88,7 @@ public class DummyRequirement_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createProperty_3905_1(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_cy6cbc_a1a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("text");
     provider.setNoTargetText("<no text>");
@@ -106,12 +106,12 @@ public class DummyRequirement_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static boolean renderingCondition3905_0(SNode node, EditorContext editorContext, IScope scope) {
+  private static boolean renderingCondition_cy6cbc_a1b0(SNode node, EditorContext editorContext, IScope scope) {
     return ListSequence.fromList(SLinkOperations.getTargets(node, "dependencies", true)).isNotEmpty();
   }
 
-  private static class dependenciesListHandler_3905_0 extends RefNodeListHandler {
-    public dependenciesListHandler_3905_0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class dependenciesListHandler_cy6cbc_b1a extends RefNodeListHandler {
+    public dependenciesListHandler_cy6cbc_b1a(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 

@@ -42,7 +42,7 @@ public class Int8 extends Type implements IStdInt {
   }
 
   public static Int8 newInstance(SModel sm, boolean init) {
-    return (Int8)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Int8", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Int8) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Int8", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Int8 newInstance(SModel sm) {

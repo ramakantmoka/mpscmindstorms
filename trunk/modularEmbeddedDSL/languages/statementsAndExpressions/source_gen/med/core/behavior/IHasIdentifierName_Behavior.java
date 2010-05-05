@@ -18,10 +18,10 @@ public class IHasIdentifierName_Behavior {
   }
 
   public static String call_qualifiedLowLevelName_1842244113830232336(SNode thisNode) {
-    return (String)BehaviorManager.getInstance().invoke(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.IHasIdentifierName"), "virtual_qualifiedLowLevelName_1842244113830232336", PARAMETERS_1842244113830232336);
+    return (String) BehaviorManager.getInstance().invoke(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.IHasIdentifierName"), "virtual_qualifiedLowLevelName_1842244113830232336", PARAMETERS_1842244113830232336);
   }
 
   public static String callSuper_qualifiedLowLevelName_1842244113830232336(SNode thisNode, String callerConceptFqName) {
-    return (String)BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.IHasIdentifierName"), callerConceptFqName, "virtual_qualifiedLowLevelName_1842244113830232336", PARAMETERS_1842244113830232336);
+    return (String) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.IHasIdentifierName"), callerConceptFqName, "virtual_qualifiedLowLevelName_1842244113830232336", PARAMETERS_1842244113830232336);
   }
 }

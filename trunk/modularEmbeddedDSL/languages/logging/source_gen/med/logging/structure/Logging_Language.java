@@ -10,6 +10,6 @@ public class Logging_Language {
   public static ModuleReference MODULE_REFERENCE = ModuleReference.fromString("d1a10200-64d4-45ca-afd0-41b350f63b0d(med.logging)");
 
   public static Language get() {
-    return (Language)MPSModuleRepository.getInstance().getModule(MODULE_REFERENCE);
+    return (Language) MPSModuleRepository.getInstance().getModule(MODULE_REFERENCE);
   }
 }

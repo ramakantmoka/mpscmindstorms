@@ -65,7 +65,7 @@ public class StatementList extends MedBase implements IBlockScopeProvider {
   }
 
   public static StatementList newInstance(SModel sm, boolean init) {
-    return (StatementList)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.StatementList", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (StatementList) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.StatementList", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static StatementList newInstance(SModel sm) {

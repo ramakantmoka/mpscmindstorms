@@ -77,7 +77,7 @@ public class RobotScript extends BaseConcept implements IModuleContent, IHasIden
   }
 
   public static RobotScript newInstance(SModel sm, boolean init) {
-    return (RobotScript)SModelUtil_new.instantiateConceptDeclaration("ds.twowheel.structure.RobotScript", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (RobotScript) SModelUtil_new.instantiateConceptDeclaration("ds.twowheel.structure.RobotScript", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static RobotScript newInstance(SModel sm) {

@@ -24,7 +24,7 @@ void btmain_main_bluetoothListener_execute(int event) {
         
     if ( btmain_main_bluetoothListener_currentstate == STATE_INITIALIZING) {
                 
-      if ( event == ) {
+      if ( event == EVENT_INITIALIZED) {
                       
         if ( 1) {
                   btmain_main_bluetoothListener_currentstate = STATE_IDLE;
@@ -41,7 +41,7 @@ void btmain_main_bluetoothListener_execute(int event) {
         
     if ( btmain_main_bluetoothListener_currentstate == STATE_LISTEN) {
                 
-      if ( event == ) {
+      if ( event == EVENT_CONNECTED) {
                       
         if ( 1) {
                   btmain_main_bluetoothListener_currentstate = STATE_IDLE;
@@ -58,7 +58,7 @@ void btmain_main_bluetoothListener_execute(int event) {
         
     if ( btmain_main_bluetoothListener_currentstate == STATE_IDLE) {
                 
-      if ( event == ) {
+      if ( event == EVENT_DISCONNECTED) {
                       
         if ( 1) {
                   btmain_main_bluetoothListener_currentstate = STATE_LISTEN;

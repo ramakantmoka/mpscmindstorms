@@ -54,7 +54,7 @@ public class ForVariableDeclaration extends BaseConcept implements IVariableDecl
   }
 
   public Expression getInit() {
-    return (Expression)this.getChild(Expression.class, ForVariableDeclaration.INIT);
+    return (Expression) this.getChild(Expression.class, ForVariableDeclaration.INIT);
   }
 
   public void setInit(Expression node) {
@@ -62,7 +62,7 @@ public class ForVariableDeclaration extends BaseConcept implements IVariableDecl
   }
 
   public Type getType() {
-    return (Type)this.getChild(Type.class, ForVariableDeclaration.TYPE);
+    return (Type) this.getChild(Type.class, ForVariableDeclaration.TYPE);
   }
 
   public void setType(Type node) {
@@ -70,7 +70,7 @@ public class ForVariableDeclaration extends BaseConcept implements IVariableDecl
   }
 
   public static ForVariableDeclaration newInstance(SModel sm, boolean init) {
-    return (ForVariableDeclaration)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ForVariableDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ForVariableDeclaration) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ForVariableDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ForVariableDeclaration newInstance(SModel sm) {

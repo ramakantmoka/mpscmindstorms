@@ -15,7 +15,7 @@ public class TrueLiteral extends ConstantExpression {
   }
 
   public static TrueLiteral newInstance(SModel sm, boolean init) {
-    return (TrueLiteral)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.TrueLiteral", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (TrueLiteral) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.TrueLiteral", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static TrueLiteral newInstance(SModel sm) {

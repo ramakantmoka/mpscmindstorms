@@ -15,7 +15,7 @@ public class BinaryComparisonExpression extends BinaryExpression {
   }
 
   public static BinaryComparisonExpression newInstance(SModel sm, boolean init) {
-    return (BinaryComparisonExpression)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.BinaryComparisonExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (BinaryComparisonExpression) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.BinaryComparisonExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static BinaryComparisonExpression newInstance(SModel sm) {

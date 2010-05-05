@@ -14,6 +14,7 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.intentions.BaseIntentionProvider;
 import jetbrains.mps.typesystem.inference.IErrorTarget;
 import jetbrains.mps.typesystem.inference.NodeErrorTarget;
+import jetbrains.mps.nodeEditor.IErrorReporter;
 import jetbrains.mps.smodel.SModelUtil_new;
 
 public class uniqueCase_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
@@ -30,7 +31,7 @@ public class uniqueCase_NonTypesystemRule extends AbstractNonTypesystemRule_Runt
       {
         BaseIntentionProvider intentionProvider = null;
         IErrorTarget errorTarget = new NodeErrorTarget();
-        typeCheckingContext.reportTypeError(thisCase, "two cases for the same state", "r:49a89a7a-d31e-4952-8a80-11c1002ab648(med.statemachine.typesystem)", "8499595251260986455", intentionProvider, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(thisCase, "two cases for the same state", "r:49a89a7a-d31e-4952-8a80-11c1002ab648(med.statemachine.typesystem)", "8499595251260986455", intentionProvider, errorTarget);
       }
     }
   }

@@ -4,8 +4,8 @@ package med.platform.nxtosek.generator.template.main;
 
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.generator.template.PropertyMacroContext;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import med.core.behavior.IHasIdentifierName_Behavior;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.List;
@@ -21,38 +21,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 
 public class QueriesGenerated {
-  public static Object propertyMacro_GetPropertyValue_1467202028512538964(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), "name") + "_OSEK";
-  }
-
-  public static Object propertyMacro_GetPropertyValue_1467202028512539418(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), "name") + ".oil";
-  }
-
-  public static Object propertyMacro_GetPropertyValue_3454436015655311645(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), "name");
-  }
-
-  public static Object propertyMacro_GetPropertyValue_3577454086726235831(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), "message");
-  }
-
-  public static Object propertyMacro_GetPropertyValue_3577454086728543146(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return "TASK(" + IHasIdentifierName_Behavior.call_qualifiedLowLevelName_1842244113830232336(_context.getNode()) + ")";
-  }
-
-  public static Object propertyMacro_GetPropertyValue_3577454086729519196(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return IHasIdentifierName_Behavior.call_qualifiedLowLevelName_1842244113830232336(_context.getNode());
-  }
-
-  public static Object propertyMacro_GetPropertyValue_7301321101283838188(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return SPropertyOperations.getInteger(_context.getNode(), "numerOfMilliseconds");
-  }
-
-  public static Object propertyMacro_GetPropertyValue_8437501635617638829(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return "  PRIORITY = " + SPropertyOperations.getInteger(SLinkOperations.getTarget(_context.getNode(), "scheduling", true), "priority") + ";";
-  }
-
   public static Object propertyMacro_GetPropertyValue_8437501635617638954(final IOperationContext operationContext, final PropertyMacroContext _context) {
     return IHasIdentifierName_Behavior.call_qualifiedLowLevelName_1842244113830232336(_context.getNode());
   }
@@ -71,6 +39,34 @@ public class QueriesGenerated {
 
   public static Object propertyMacro_GetPropertyValue_8437501635617639060(final IOperationContext operationContext, final PropertyMacroContext _context) {
     return "" + (SPropertyOperations.getInteger(SNodeOperations.cast(SLinkOperations.getTarget(_context.getNode(), "scheduling", true), "med.tasks.structure.SchedulingPolicyCyclic"), "every"));
+  }
+
+  public static Object propertyMacro_GetPropertyValue_3577454086729519196(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return IHasIdentifierName_Behavior.call_qualifiedLowLevelName_1842244113830232336(_context.getNode());
+  }
+
+  public static Object propertyMacro_GetPropertyValue_8437501635617638829(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return "  PRIORITY = " + SPropertyOperations.getInteger(SLinkOperations.getTarget(_context.getNode(), "scheduling", true), "priority") + ";";
+  }
+
+  public static Object propertyMacro_GetPropertyValue_3454436015655311645(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), "name");
+  }
+
+  public static Object propertyMacro_GetPropertyValue_7301321101283838188(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), "numerOfMilliseconds");
+  }
+
+  public static Object propertyMacro_GetPropertyValue_3577454086726235831(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), "message");
+  }
+
+  public static Object propertyMacro_GetPropertyValue_3577454086728543146(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return "TASK(" + IHasIdentifierName_Behavior.call_qualifiedLowLevelName_1842244113830232336(_context.getNode()) + ")";
+  }
+
+  public static Object propertyMacro_GetPropertyValue_1467202028512538964(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), "name") + "_OSEK";
   }
 
   public static Object propertyMacro_GetPropertyValue_8609407923442631410(final IOperationContext operationContext, final PropertyMacroContext _context) {
@@ -106,8 +102,8 @@ public class QueriesGenerated {
     return res;
   }
 
-  public static SNode sourceNodeQuery_1265321504638466216(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), "body", true);
+  public static Object propertyMacro_GetPropertyValue_1467202028512539418(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), "name") + ".oil";
   }
 
   public static SNode sourceNodeQuery_3577454086728545345(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
@@ -118,16 +114,8 @@ public class QueriesGenerated {
     return SLinkOperations.getTarget(_context.getNode(), "body", true);
   }
 
-  public static Iterable sourceNodesQuery_3577454086729782874(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
-    List<SNode> tasks = new ArrayList<SNode>();
-    for (SNode r : SLinkOperations.getTargets(_context.getNode(), "resources", true)) {
-      ListSequence.fromList(tasks).addSequence(ListSequence.fromList(SNodeOperations.getDescendants(SLinkOperations.getTarget(r, "resource", false), "med.tasks.structure.Task", false, new String[]{})).where(new IWhereFilter<SNode>() {
-        public boolean accept(SNode it) {
-          return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, "scheduling", true), "med.tasks.structure.SchedulingPolicyOnceUponStartup");
-        }
-      }));
-    }
-    return tasks;
+  public static SNode sourceNodeQuery_1265321504638466216(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "body", true);
   }
 
   public static Iterable sourceNodesQuery_8437501635617638872(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
@@ -136,6 +124,18 @@ public class QueriesGenerated {
       ListSequence.fromList(tasks).addSequence(ListSequence.fromList(SNodeOperations.getDescendants(SLinkOperations.getTarget(r, "resource", false), "med.tasks.structure.Task", false, new String[]{})).where(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
           return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, "scheduling", true), "med.tasks.structure.SchedulingPolicyCyclic");
+        }
+      }));
+    }
+    return tasks;
+  }
+
+  public static Iterable sourceNodesQuery_3577454086729782874(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
+    List<SNode> tasks = new ArrayList<SNode>();
+    for (SNode r : SLinkOperations.getTargets(_context.getNode(), "resources", true)) {
+      ListSequence.fromList(tasks).addSequence(ListSequence.fromList(SNodeOperations.getDescendants(SLinkOperations.getTarget(r, "resource", false), "med.tasks.structure.Task", false, new String[]{})).where(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, "scheduling", true), "med.tasks.structure.SchedulingPolicyOnceUponStartup");
         }
       }));
     }
@@ -153,26 +153,6 @@ public class QueriesGenerated {
       SPropertyOperations.set(i2, "filename", "kernel_id.h");
       SLinkOperations.addChild(r, "includes", i2);
     }
-  }
-
-  public static void mappingScript_CodeBlock_6254144863182533036(final IOperationContext operationContext, final MappingScriptContext _context) {
-    List<SNode> resources = SModelOperations.getRoots(_context.getModel(), "med.core.structure.Resource");
-    List<SNode> modules = new ArrayList<SNode>();
-    for (SNode r : ListSequence.fromList(resources)) {
-      ListSequence.fromList(modules).addSequence(ListSequence.fromList(SLinkOperations.getTargets(r, "modules", true)).where(new IWhereFilter<SNode>() {
-        public boolean accept(SNode it) {
-          return SNodeOperations.isInstanceOf(it, "med.core.structure.ImplementationModule");
-        }
-      }));
-    }
-
-    SNode declareCounter = SConceptOperations.createNewNode("med.core.structure.TextBlock", null);
-    SPropertyOperations.set(declareCounter, "text", "DeclareCounter(SysTimerCnt); // added by platform.osek:addCounterTrigger");
-    SLinkOperations.addChild(SNodeOperations.cast(ListSequence.fromList(modules).first(), "med.core.structure.ImplementationModule"), "contents", declareCounter);
-
-    SNode counterTrigger = SConceptOperations.createNewNode("med.core.structure.TextBlock", null);
-    SPropertyOperations.set(counterTrigger, "text", "void user_1ms_isr_type2(void) { SignalCounter(SysTimerCnt); } // added by platform.osek:addCounterTrigger");
-    SLinkOperations.addChild(SNodeOperations.cast(ListSequence.fromList(modules).first(), "med.core.structure.ImplementationModule"), "contents", counterTrigger);
   }
 
   public static void mappingScript_CodeBlock_8437501635617944472(final IOperationContext operationContext, final MappingScriptContext _context) {
@@ -194,5 +174,25 @@ public class QueriesGenerated {
         }
       }
     }
+  }
+
+  public static void mappingScript_CodeBlock_6254144863182533036(final IOperationContext operationContext, final MappingScriptContext _context) {
+    List<SNode> resources = SModelOperations.getRoots(_context.getModel(), "med.core.structure.Resource");
+    List<SNode> modules = new ArrayList<SNode>();
+    for (SNode r : ListSequence.fromList(resources)) {
+      ListSequence.fromList(modules).addSequence(ListSequence.fromList(SLinkOperations.getTargets(r, "modules", true)).where(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return SNodeOperations.isInstanceOf(it, "med.core.structure.ImplementationModule");
+        }
+      }));
+    }
+
+    SNode declareCounter = SConceptOperations.createNewNode("med.core.structure.TextBlock", null);
+    SPropertyOperations.set(declareCounter, "text", "DeclareCounter(SysTimerCnt); // added by platform.osek:addCounterTrigger");
+    SLinkOperations.addChild(SNodeOperations.cast(ListSequence.fromList(modules).first(), "med.core.structure.ImplementationModule"), "contents", declareCounter);
+
+    SNode counterTrigger = SConceptOperations.createNewNode("med.core.structure.TextBlock", null);
+    SPropertyOperations.set(counterTrigger, "text", "void user_1ms_isr_type2(void) { SignalCounter(SysTimerCnt); } // added by platform.osek:addCounterTrigger");
+    SLinkOperations.addChild(SNodeOperations.cast(ListSequence.fromList(modules).first(), "med.core.structure.ImplementationModule"), "contents", counterTrigger);
   }
 }

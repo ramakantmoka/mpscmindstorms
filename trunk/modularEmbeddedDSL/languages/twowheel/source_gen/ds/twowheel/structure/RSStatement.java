@@ -16,7 +16,7 @@ public class RSStatement extends BaseConcept {
   }
 
   public static RSStatement newInstance(SModel sm, boolean init) {
-    return (RSStatement)SModelUtil_new.instantiateConceptDeclaration("ds.twowheel.structure.RSStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (RSStatement) SModelUtil_new.instantiateConceptDeclaration("ds.twowheel.structure.RSStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static RSStatement newInstance(SModel sm) {

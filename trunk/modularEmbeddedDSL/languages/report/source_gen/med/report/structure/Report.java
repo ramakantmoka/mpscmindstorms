@@ -103,7 +103,7 @@ public class Report extends BaseConcept implements INamedConcept {
   }
 
   public static Report newInstance(SModel sm, boolean init) {
-    return (Report)SModelUtil_new.instantiateConceptDeclaration("med.report.structure.Report", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Report) SModelUtil_new.instantiateConceptDeclaration("med.report.structure.Report", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Report newInstance(SModel sm) {

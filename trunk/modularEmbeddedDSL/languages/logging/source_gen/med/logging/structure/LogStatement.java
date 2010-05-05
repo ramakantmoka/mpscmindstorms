@@ -25,7 +25,7 @@ public class LogStatement extends Statement {
   }
 
   public static LogStatement newInstance(SModel sm, boolean init) {
-    return (LogStatement)SModelUtil_new.instantiateConceptDeclaration("med.logging.structure.LogStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (LogStatement) SModelUtil_new.instantiateConceptDeclaration("med.logging.structure.LogStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static LogStatement newInstance(SModel sm) {

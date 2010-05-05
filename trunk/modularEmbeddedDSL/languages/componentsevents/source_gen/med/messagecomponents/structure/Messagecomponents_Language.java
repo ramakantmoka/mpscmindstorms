@@ -10,6 +10,6 @@ public class Messagecomponents_Language {
   public static ModuleReference MODULE_REFERENCE = ModuleReference.fromString("9e6c81d8-26e0-4cc9-98c1-b724ce51d7bf(med.messagecomponents)");
 
   public static Language get() {
-    return (Language)MPSModuleRepository.getInstance().getModule(MODULE_REFERENCE);
+    return (Language) MPSModuleRepository.getInstance().getModule(MODULE_REFERENCE);
   }
 }

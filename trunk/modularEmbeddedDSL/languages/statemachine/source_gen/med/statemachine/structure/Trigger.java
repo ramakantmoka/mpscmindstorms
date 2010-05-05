@@ -16,7 +16,7 @@ public class Trigger extends MedBase {
   }
 
   public static Trigger newInstance(SModel sm, boolean init) {
-    return (Trigger)SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.Trigger", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Trigger) SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.Trigger", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Trigger newInstance(SModel sm) {

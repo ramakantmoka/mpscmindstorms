@@ -19,7 +19,7 @@ public class StateSwitchCase extends BaseConcept {
   }
 
   public State getState() {
-    return (State)this.getReferent(State.class, StateSwitchCase.STATE);
+    return (State) this.getReferent(State.class, StateSwitchCase.STATE);
   }
 
   public void setState(State node) {
@@ -27,7 +27,7 @@ public class StateSwitchCase extends BaseConcept {
   }
 
   public StatementList getBody() {
-    return (StatementList)this.getChild(StatementList.class, StateSwitchCase.BODY);
+    return (StatementList) this.getChild(StatementList.class, StateSwitchCase.BODY);
   }
 
   public void setBody(StatementList node) {
@@ -35,7 +35,7 @@ public class StateSwitchCase extends BaseConcept {
   }
 
   public static StateSwitchCase newInstance(SModel sm, boolean init) {
-    return (StateSwitchCase)SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.StateSwitchCase", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (StateSwitchCase) SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.StateSwitchCase", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static StateSwitchCase newInstance(SModel sm) {

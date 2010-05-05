@@ -15,7 +15,7 @@ public class Statement extends MedBase {
   }
 
   public static Statement newInstance(SModel sm, boolean init) {
-    return (Statement)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Statement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Statement) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Statement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Statement newInstance(SModel sm) {

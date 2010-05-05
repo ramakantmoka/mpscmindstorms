@@ -30,7 +30,7 @@ public class StructAttributeReference_attribute_ReferentConstraint extends BaseN
       varType = SLinkOperations.getTarget(SNodeOperations.cast(varType, "med.core.structure.PointerType"), "baseType", true);
     }
     if (SNodeOperations.isInstanceOf(varType, "med.core.structure.GenericStructType")) {
-      SNode struct = SLinkOperations.getTarget((SNode)varType, "struct", false);
+      SNode struct = SLinkOperations.getTarget((SNode) varType, "struct", false);
       return SLinkOperations.getTargets(struct, "attributes", true);
     } else {
       return null;

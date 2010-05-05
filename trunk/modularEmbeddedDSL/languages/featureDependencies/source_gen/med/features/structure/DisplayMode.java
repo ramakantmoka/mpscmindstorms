@@ -43,7 +43,7 @@ public class DisplayMode extends BaseConcept {
   }
 
   public static DisplayMode newInstance(SModel sm, boolean init) {
-    return (DisplayMode)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.DisplayMode", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (DisplayMode) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.DisplayMode", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static DisplayMode newInstance(SModel sm) {

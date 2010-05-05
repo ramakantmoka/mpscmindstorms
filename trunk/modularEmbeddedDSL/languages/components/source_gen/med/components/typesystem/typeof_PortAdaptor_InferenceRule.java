@@ -9,6 +9,7 @@ import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.intentions.BaseIntentionProvider;
+import jetbrains.mps.typesystem.inference.EquationInfo;
 import jetbrains.mps.smodel.SModelUtil_new;
 
 public class typeof_PortAdaptor_InferenceRule extends AbstractInferenceRule_Runtime implements InferenceRule_Runtime {
@@ -21,7 +22,8 @@ public class typeof_PortAdaptor_InferenceRule extends AbstractInferenceRule_Runt
     {
       SNode _nodeToCheck_1029348928467 = adaptor;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:a33671bf-8144-43f9-bd6e-c5adb345b856(med.components.typesystem)", "2739617086198022616", true), (SNode)t, _nodeToCheck_1029348928467, null, "r:a33671bf-8144-43f9-bd6e-c5adb345b856(med.components.typesystem)", "2739617086198022619", intentionProvider);
+      EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:a33671bf-8144-43f9-bd6e-c5adb345b856(med.components.typesystem)", "2739617086198022619", 0, intentionProvider);
+      typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:a33671bf-8144-43f9-bd6e-c5adb345b856(med.components.typesystem)", "2739617086198022616", true), (SNode) t, _info_12389875345);
     }
   }
 

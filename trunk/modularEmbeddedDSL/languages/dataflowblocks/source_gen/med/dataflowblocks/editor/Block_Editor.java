@@ -14,15 +14,15 @@ import java.awt.Color;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
-import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
-import jetbrains.mps.nodeEditor.MPSFonts;
+import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.nodeEditor.EditorManager;
-import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
+import jetbrains.mps.nodeEditor.MPSFonts;
 import jetbrains.mps.smodel.IScope;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
@@ -34,19 +34,19 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 
 public class Block_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_6369_0(editorContext, node);
+    return this.createCollection_kw2rpr_a(editorContext, node);
   }
 
-  private EditorCell createCollection_6369_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_kw2rpr_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
-    editorCell.setCellId("Collection_6369_0");
+    editorCell.setCellId("Collection_kw2rpr_a");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
       style.set(StyleAttributes.DRAW_BRACKETS, true);
       style.set(StyleAttributes.BACKGROUND_COLOR, new AttributeCalculator<Color>() {
         public Color calculate(EditorCell cell) {
-          return Block_Editor._StyleParameter_QueryFunction_6369_0((cell == null ?
+          return Block_Editor._StyleParameter_QueryFunction_kw2rpr_a2a((cell == null ?
             null :
             cell.getSNode()
           ), (cell == null ?
@@ -56,58 +56,36 @@ public class Block_Editor extends DefaultNodeEditor {
         }
       });
     }
-    editorCell.addEditorCell(this.createCollection_6369_1(editorContext, node));
-    if (renderingCondition6369_0(node, editorContext, editorContext.getOperationContext().getScope())) {
-      editorCell.addEditorCell(this.createRefNodeList_6369_0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_kw2rpr_a0(editorContext, node));
+    if (renderingCondition_kw2rpr_a1a(node, editorContext, editorContext.getOperationContext().getScope())) {
+      editorCell.addEditorCell(this.createRefNodeList_kw2rpr_b0(editorContext, node));
     }
     return editorCell;
   }
 
-  private EditorCell createCollection_6369_1(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_kw2rpr_a0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_6369_1");
+    editorCell.setCellId("Collection_kw2rpr_a0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
     }
-    editorCell.addEditorCell(this.createRefCell_6369_0(editorContext, node));
-    if (renderingCondition6369_1(node, editorContext, editorContext.getOperationContext().getScope())) {
-      editorCell.addEditorCell(this.createProperty_6369_1(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_kw2rpr_a0a(editorContext, node));
+    if (renderingCondition_kw2rpr_a1a0(node, editorContext, editorContext.getOperationContext().getScope())) {
+      editorCell.addEditorCell(this.createProperty_kw2rpr_b0a(editorContext, node));
     }
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_6369_0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Block_Editor.portsListHandler_6369_0(node, "ports", editorContext);
+  private EditorCell createRefNodeList_kw2rpr_b0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new Block_Editor.portsListHandler_kw2rpr_b0(node, "ports", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_ports");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
 
-  private EditorCell createRefCell_6369_0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("porttype");
-    provider.setNoTargetText("<no porttype>");
-    EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new Block_Editor._Inline6369_0());
-    editorCell = provider.createEditorCell(editorContext);
-    {
-      Style style = editorCell.getStyle();
-      style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
-    }
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    Class attributeKind = provider.getRoleAttributeClass();
-    if (attributeConcept != null) {
-      IOperationContext opContext = editorContext.getOperationContext();
-      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
-      return manager.createRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
-    } else
-    return editorCell;
-  }
-
-  private EditorCell createProperty_6369_1(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_kw2rpr_b0a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("name");
     provider.setNoTargetText("<no name>");
@@ -125,22 +103,44 @@ public class Block_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static boolean renderingCondition6369_0(SNode node, EditorContext editorContext, IScope scope) {
-    return ListSequence.fromList(SLinkOperations.getTargets(node, "ports", true)).count() > 0;
+  private EditorCell createRefCell_kw2rpr_a0a(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
+    provider.setRole("porttype");
+    provider.setNoTargetText("<no porttype>");
+    EditorCell editorCell;
+    provider.setAuxiliaryCellProvider(new Block_Editor._Inline_kw2rpr_a0a0());
+    editorCell = provider.createEditorCell(editorContext);
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
+    }
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      IOperationContext opContext = editorContext.getOperationContext();
+      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
+      return manager.createRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
+    return editorCell;
   }
 
-  private static boolean renderingCondition6369_1(SNode node, EditorContext editorContext, IScope scope) {
+  private static boolean renderingCondition_kw2rpr_a1a0(SNode node, EditorContext editorContext, IScope scope) {
     return SPropertyOperations.getString(node, "name") != null;
   }
 
-  private static Color _StyleParameter_QueryFunction_6369_0(SNode node, EditorContext editorContext) {
+  private static boolean renderingCondition_kw2rpr_a1a(SNode node, EditorContext editorContext, IScope scope) {
+    return ListSequence.fromList(SLinkOperations.getTargets(node, "ports", true)).count() > 0;
+  }
+
+  private static Color _StyleParameter_QueryFunction_kw2rpr_a2a(SNode node, EditorContext editorContext) {
     int g = ListSequence.fromList(SNodeOperations.getAncestors(node, null, false)).count() * 5;
     int gg = 255 - g;
     return new Color(gg, gg, gg);
   }
 
-  public static class _Inline6369_0 extends InlineCellProvider {
-    public _Inline6369_0() {
+  public static class _Inline_kw2rpr_a0a0 extends InlineCellProvider {
+    public _Inline_kw2rpr_a0a0() {
       super();
     }
 
@@ -149,10 +149,10 @@ public class Block_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_6369_0(editorContext, node);
+      return this.createProperty_kw2rpr_a0a0a(editorContext, node);
     }
 
-    private EditorCell createProperty_6369_0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_kw2rpr_a0a0a(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
@@ -172,8 +172,8 @@ public class Block_Editor extends DefaultNodeEditor {
     }
   }
 
-  private static class portsListHandler_6369_0 extends RefNodeListHandler {
-    public portsListHandler_6369_0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class portsListHandler_kw2rpr_b0 extends RefNodeListHandler {
+    public portsListHandler_kw2rpr_b0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 

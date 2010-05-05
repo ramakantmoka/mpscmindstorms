@@ -15,42 +15,42 @@ import jetbrains.mps.nodeEditor.EditorManager;
 
 public class AccelerateStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_0650_0(editorContext, node);
+    return this.createCollection_7trxkt_a(editorContext, node);
   }
 
-  private EditorCell createCollection_0650_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_7trxkt_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_0650_0");
-    editorCell.addEditorCell(this.createConstant_0650_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_0650_1(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_0650_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_0650_2(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_0650_1(editorContext, node));
+    editorCell.setCellId("Collection_7trxkt_a");
+    editorCell.addEditorCell(this.createConstant_7trxkt_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_7trxkt_b0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_7trxkt_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_7trxkt_d0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_7trxkt_e0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_0650_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_7trxkt_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "accelerate");
-    editorCell.setCellId("Constant_0650_0");
+    editorCell.setCellId("Constant_7trxkt_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_0650_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_7trxkt_b0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "to");
-    editorCell.setCellId("Constant_0650_1");
+    editorCell.setCellId("Constant_7trxkt_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_0650_2(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_7trxkt_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, " within");
-    editorCell.setCellId("Constant_0650_2");
+    editorCell.setCellId("Constant_7trxkt_d0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createRefNode_0650_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_7trxkt_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("speed");
     provider.setNoTargetText("<no speed>");
@@ -67,7 +67,7 @@ public class AccelerateStatement_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNode_0650_1(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_7trxkt_e0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("time");
     provider.setNoTargetText("<no time>");

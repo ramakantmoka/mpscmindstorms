@@ -16,7 +16,7 @@ public class DeleteStatement extends Statement {
   }
 
   public Expression getExpr() {
-    return (Expression)this.getChild(Expression.class, DeleteStatement.EXPR);
+    return (Expression) this.getChild(Expression.class, DeleteStatement.EXPR);
   }
 
   public void setExpr(Expression node) {
@@ -24,7 +24,7 @@ public class DeleteStatement extends Statement {
   }
 
   public static DeleteStatement newInstance(SModel sm, boolean init) {
-    return (DeleteStatement)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.DeleteStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (DeleteStatement) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.DeleteStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static DeleteStatement newInstance(SModel sm) {

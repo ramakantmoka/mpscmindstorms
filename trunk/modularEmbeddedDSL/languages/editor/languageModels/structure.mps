@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:0720ce8f-9390-4ba7-9402-c921cd03a2d9(util.editor.structure)">
-  <persistence version="3" />
+  <persistence version="4" />
   <refactoringHistory />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <language namespace="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" />
@@ -30,40 +30,40 @@
   <import index="1" modelUID="r:0720ce8f-9390-4ba7-9402-c921cd03a2d9(util.editor.structure)" version="-1" />
   <visible index="2" modelUID="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
   <visible index="3" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="7400233627843958275">
-    <property name="name" value="TableCellModel" />
-    <link role="extends" targetNodeId="2v.1073389214265" resolveInfo="EditorCellModel" />
-    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="3316363611019632922">
-      <property name="metaClass" value="aggregation" />
-      <property name="role" value="rowHeaderModel" />
-      <property name="sourceCardinality" value="1" />
-      <link role="target" targetNodeId="2v.1073389214265" resolveInfo="EditorCellModel" />
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="7400233627843958275">
+    <property name="name:0" value="TableCellModel" />
+    <link role="extends:0" targetNodeId="2v.1073389214265:32" resolveInfo="EditorCellModel" />
+    <node role="linkDeclaration:0" type="jetbrains.mps.lang.structure.structure.LinkDeclaration:0" id="3316363611019632922">
+      <property name="metaClass:0" value="aggregation" />
+      <property name="role:0" value="rowHeaderModel" />
+      <property name="sourceCardinality:0" value="1" />
+      <link role="target:0" targetNodeId="2v.1073389214265:32" resolveInfo="EditorCellModel" />
     </node>
-    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="7400233627846221356">
-      <property name="metaClass" value="aggregation" />
-      <property name="role" value="rowQuery" />
-      <property name="sourceCardinality" value="1" />
-      <link role="target" targetNodeId="7400233627846221349" resolveInfo="QueryFunction_HeaderNodes" />
+    <node role="linkDeclaration:0" type="jetbrains.mps.lang.structure.structure.LinkDeclaration:0" id="7400233627846221356">
+      <property name="metaClass:0" value="aggregation" />
+      <property name="role:0" value="rowQuery" />
+      <property name="sourceCardinality:0" value="1" />
+      <link role="target:0" targetNodeId="7400233627846221349" resolveInfo="QueryFunction_HeaderNodes" />
     </node>
-    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="7400233627844060402">
-      <property name="value" value="table" />
-      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473891462" resolveInfo="alias" />
+    <node role="conceptProperty:0" type="jetbrains.mps.lang.structure.structure.StringConceptProperty:0" id="7400233627844060402">
+      <property name="value:0" value="table" />
+      <link role="conceptPropertyDeclaration:0" targetNodeId="3v.1137473891462:0" resolveInfo="alias" />
     </node>
   </node>
-  <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" id="7400233627845195008">
-    <property name="name" value="ITableNature" />
+  <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration:0" id="7400233627845195008">
+    <property name="name:0" value="ITableNature" />
   </node>
   <visible index="4" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="7400233627846221349">
-    <property name="name" value="QueryFunction_HeaderNodes" />
-    <link role="extends" targetNodeId="4v.1137021947720" resolveInfo="ConceptFunction" />
-    <node role="conceptLink" type="jetbrains.mps.lang.structure.structure.AggregationConceptLink" id="7400233627846221351">
-      <link role="conceptLinkDeclaration" targetNodeId="4v.1137545148427" resolveInfo="conceptFunctionReturnType" />
-      <node role="target" type="jetbrains.mps.lang.smodel.structure.SNodeListType" id="7400233627846221353" />
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="7400233627846221349">
+    <property name="name:0" value="QueryFunction_HeaderNodes" />
+    <link role="extends:0" targetNodeId="4v.1137021947720:3" resolveInfo="ConceptFunction" />
+    <node role="conceptLink:0" type="jetbrains.mps.lang.structure.structure.AggregationConceptLink:0" id="7400233627846221351">
+      <link role="conceptLinkDeclaration:0" targetNodeId="4v.1137545148427:3" resolveInfo="conceptFunctionReturnType" />
+      <node role="target:0" type="jetbrains.mps.lang.smodel.structure.SNodeListType:16" id="7400233627846221353" />
     </node>
-    <node role="conceptLink" type="jetbrains.mps.lang.structure.structure.ReferenceConceptLink" id="7400233627846221355">
-      <link role="conceptLinkDeclaration" targetNodeId="4v.1161119487665" resolveInfo="applicableConceptFunctionParameter" />
-      <link role="target" targetNodeId="2v.1142886811589" resolveInfo="ConceptFunctionParameter_node" />
+    <node role="conceptLink:0" type="jetbrains.mps.lang.structure.structure.ReferenceConceptLink:0" id="7400233627846221355">
+      <link role="conceptLinkDeclaration:0" targetNodeId="4v.1161119487665:3" resolveInfo="applicableConceptFunctionParameter" />
+      <link role="target:0" targetNodeId="2v.1142886811589:32" resolveInfo="ConceptFunctionParameter_node" />
     </node>
   </node>
 </model>
