@@ -38,7 +38,7 @@ public class ListAndClause extends BaseFE {
   }
 
   public static ListAndClause newInstance(SModel sm, boolean init) {
-    return (ListAndClause)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.ListAndClause", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ListAndClause) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.ListAndClause", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ListAndClause newInstance(SModel sm) {

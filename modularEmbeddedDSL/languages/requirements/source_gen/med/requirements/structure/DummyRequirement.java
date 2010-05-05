@@ -57,7 +57,7 @@ public class DummyRequirement extends BaseConcept {
   }
 
   public static DummyRequirement newInstance(SModel sm, boolean init) {
-    return (DummyRequirement)SModelUtil_new.instantiateConceptDeclaration("med.requirements.structure.DummyRequirement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (DummyRequirement) SModelUtil_new.instantiateConceptDeclaration("med.requirements.structure.DummyRequirement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static DummyRequirement newInstance(SModel sm) {

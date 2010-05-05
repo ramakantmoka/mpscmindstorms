@@ -15,7 +15,7 @@ public class GreaterExpression extends BinaryComparisonExpression {
   }
 
   public static GreaterExpression newInstance(SModel sm, boolean init) {
-    return (GreaterExpression)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.GreaterExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (GreaterExpression) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.GreaterExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static GreaterExpression newInstance(SModel sm) {

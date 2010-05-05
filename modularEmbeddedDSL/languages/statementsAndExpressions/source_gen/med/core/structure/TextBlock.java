@@ -52,7 +52,7 @@ public class TextBlock extends BaseConcept implements IModuleContent, IReduceToI
   }
 
   public static TextBlock newInstance(SModel sm, boolean init) {
-    return (TextBlock)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.TextBlock", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (TextBlock) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.TextBlock", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static TextBlock newInstance(SModel sm) {

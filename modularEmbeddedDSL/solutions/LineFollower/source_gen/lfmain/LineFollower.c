@@ -10,12 +10,14 @@
 
 // used resources
 #include "bitdata.h"
-#include "ecrobot_interface.h"
 #include "kernel.h"
+#include "ecrobot_interface.h"
+#include "safeutil.h"
 
 // custom includes
 #include "kernel.h"
 #include "kernel_id.h"
+#include "stdint.h"
 #include "stdint.h"
 
 int LineFollower_main_linefollower_currentstate = STATE_INITIALIZING;
@@ -55,7 +57,7 @@ TASK(LineFollower_main_run){
                 
       if ( LineFollower_main_linefollower_currentstate == STATE_RUNNING) {
               int32_t light = 0;
-        light = ecrobot_get_light_sensor (NXT_PORT_S1 );
+        light = isValidInt32 (ecrobot_get_light_sensor (NXT_PORT_S1 ) );
                 
         if ( (light < (((500 + 700)) / (2)))) {
                   LineFollower_main_updateMotorSettings (20, 40 );

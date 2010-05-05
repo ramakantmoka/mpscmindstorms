@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:ecc62f88-da16-482e-ab34-4b847e7afc1e(med.unittest.behavior)">
-  <persistence version="3" />
+  <persistence version="4" />
   <refactoringHistory />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <language namespace="af65afd8-f0dd-4942-87d9-63a55f2a9db1(jetbrains.mps.lang.behavior)" />
@@ -36,27 +36,27 @@
   <node type="jetbrains.mps.lang.behavior.structure.ConceptBehavior" id="5174648333272880647">
     <link role="concept" targetNodeId="1.5174648333271280743" resolveInfo="Test" />
     <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="5174648333272880648">
-      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5174648333272880649" />
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList:3" id="5174648333272880649" />
     </node>
     <node role="method" type="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" id="5174648333272880650">
       <property name="name" value="procedureName" />
-      <node role="visibility" type="jetbrains.mps.baseLanguage.structure.PublicVisibility" id="5174648333272880651" />
-      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5174648333272880653">
-        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="5174648333272880655">
-          <node role="expression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="5174648333272880656">
-            <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="5174648333272880657">
-              <property name="value" value="testproc_" />
+      <node role="visibility" type="jetbrains.mps.baseLanguage.structure.PublicVisibility:3" id="5174648333272880651" />
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList:3" id="5174648333272880653">
+        <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement:3" id="5174648333272880655">
+          <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.PlusExpression:3" id="5174648333272880656">
+            <node role="leftExpression:3" type="jetbrains.mps.baseLanguage.structure.StringLiteral:3" id="5174648333272880657">
+              <property name="value:3" value="testproc_" />
             </node>
-            <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5174648333272880658">
-              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess" id="5174648333272880659">
-                <link role="property" targetNodeId="2v.1169194664001" resolveInfo="name" />
+            <node role="rightExpression:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="5174648333272880658">
+              <node role="operation:3" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess:16" id="5174648333272880659">
+                <link role="property:16" targetNodeId="2v.1169194664001:0" resolveInfo="name" />
               </node>
-              <node role="operand" type="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" id="5174648333272882839" />
+              <node role="operand:3" type="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" id="5174648333272882839" />
             </node>
           </node>
         </node>
       </node>
-      <node role="returnType" type="jetbrains.mps.baseLanguage.structure.StringType" id="5174648333272880654" />
+      <node role="returnType" type="jetbrains.mps.baseLanguage.structure.StringType:3" id="5174648333272880654" />
     </node>
   </node>
 </model>

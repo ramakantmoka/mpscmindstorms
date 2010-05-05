@@ -33,7 +33,7 @@ public class CustomInclude extends MedBase {
   }
 
   public static CustomInclude newInstance(SModel sm, boolean init) {
-    return (CustomInclude)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.CustomInclude", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (CustomInclude) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.CustomInclude", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static CustomInclude newInstance(SModel sm) {

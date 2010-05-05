@@ -16,7 +16,7 @@ public class BlockRef extends AbstractBlock {
   }
 
   public Block getBlock() {
-    return (Block)this.getReferent(Block.class, BlockRef.BLOCK);
+    return (Block) this.getReferent(Block.class, BlockRef.BLOCK);
   }
 
   public void setBlock(Block node) {
@@ -24,7 +24,7 @@ public class BlockRef extends AbstractBlock {
   }
 
   public static BlockRef newInstance(SModel sm, boolean init) {
-    return (BlockRef)SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.BlockRef", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (BlockRef) SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.BlockRef", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static BlockRef newInstance(SModel sm) {

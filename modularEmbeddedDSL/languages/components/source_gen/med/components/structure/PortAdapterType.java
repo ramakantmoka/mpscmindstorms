@@ -17,7 +17,7 @@ public class PortAdapterType extends Type {
   }
 
   public PortAdaptor getAdapter() {
-    return (PortAdaptor)this.getReferent(PortAdaptor.class, PortAdapterType.ADAPTER);
+    return (PortAdaptor) this.getReferent(PortAdaptor.class, PortAdapterType.ADAPTER);
   }
 
   public void setAdapter(PortAdaptor node) {
@@ -25,7 +25,7 @@ public class PortAdapterType extends Type {
   }
 
   public static PortAdapterType newInstance(SModel sm, boolean init) {
-    return (PortAdapterType)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.PortAdapterType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (PortAdapterType) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.PortAdapterType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static PortAdapterType newInstance(SModel sm) {

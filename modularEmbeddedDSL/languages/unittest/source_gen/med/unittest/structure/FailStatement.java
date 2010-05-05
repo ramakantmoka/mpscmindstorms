@@ -15,7 +15,7 @@ public class FailStatement extends AssertStatement {
   }
 
   public static FailStatement newInstance(SModel sm, boolean init) {
-    return (FailStatement)SModelUtil_new.instantiateConceptDeclaration("med.unittest.structure.FailStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (FailStatement) SModelUtil_new.instantiateConceptDeclaration("med.unittest.structure.FailStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static FailStatement newInstance(SModel sm) {

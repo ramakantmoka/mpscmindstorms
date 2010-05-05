@@ -9,6 +9,7 @@
 
 // custom includes for header
 #include "stdint.h"
+#include "stdint.h"
 
 
 void ArrayStuff_array_testproc_createArrays(void);

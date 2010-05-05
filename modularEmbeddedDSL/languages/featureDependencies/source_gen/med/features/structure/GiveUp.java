@@ -15,7 +15,7 @@ public class GiveUp extends RetryStep {
   }
 
   public static GiveUp newInstance(SModel sm, boolean init) {
-    return (GiveUp)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.GiveUp", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (GiveUp) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.GiveUp", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static GiveUp newInstance(SModel sm) {

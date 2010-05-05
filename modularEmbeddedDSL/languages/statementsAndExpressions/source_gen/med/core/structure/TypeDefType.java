@@ -16,7 +16,7 @@ public class TypeDefType extends Type {
   }
 
   public TypeDef getTypedef() {
-    return (TypeDef)this.getReferent(TypeDef.class, TypeDefType.TYPEDEF);
+    return (TypeDef) this.getReferent(TypeDef.class, TypeDefType.TYPEDEF);
   }
 
   public void setTypedef(TypeDef node) {
@@ -24,7 +24,7 @@ public class TypeDefType extends Type {
   }
 
   public static TypeDefType newInstance(SModel sm, boolean init) {
-    return (TypeDefType)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.TypeDefType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (TypeDefType) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.TypeDefType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static TypeDefType newInstance(SModel sm) {

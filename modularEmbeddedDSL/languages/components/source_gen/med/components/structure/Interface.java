@@ -96,7 +96,7 @@ public class Interface extends MedBase implements IHasIdentifierName, IExportabl
   }
 
   public static Interface newInstance(SModel sm, boolean init) {
-    return (Interface)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.Interface", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Interface) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.Interface", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Interface newInstance(SModel sm) {

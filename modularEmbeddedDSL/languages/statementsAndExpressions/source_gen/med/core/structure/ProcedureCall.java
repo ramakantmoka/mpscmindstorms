@@ -19,7 +19,7 @@ public class ProcedureCall extends Expression {
   }
 
   public ProcedureSignature getProcedure() {
-    return (ProcedureSignature)this.getReferent(ProcedureSignature.class, ProcedureCall.PROCEDURE);
+    return (ProcedureSignature) this.getReferent(ProcedureSignature.class, ProcedureCall.PROCEDURE);
   }
 
   public void setProcedure(ProcedureSignature node) {
@@ -47,7 +47,7 @@ public class ProcedureCall extends Expression {
   }
 
   public static ProcedureCall newInstance(SModel sm, boolean init) {
-    return (ProcedureCall)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ProcedureCall", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ProcedureCall) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ProcedureCall", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ProcedureCall newInstance(SModel sm) {

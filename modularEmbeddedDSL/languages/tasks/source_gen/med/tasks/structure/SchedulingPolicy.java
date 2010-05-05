@@ -25,7 +25,7 @@ public class SchedulingPolicy extends MedBase {
   }
 
   public static SchedulingPolicy newInstance(SModel sm, boolean init) {
-    return (SchedulingPolicy)SModelUtil_new.instantiateConceptDeclaration("med.tasks.structure.SchedulingPolicy", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (SchedulingPolicy) SModelUtil_new.instantiateConceptDeclaration("med.tasks.structure.SchedulingPolicy", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static SchedulingPolicy newInstance(SModel sm) {

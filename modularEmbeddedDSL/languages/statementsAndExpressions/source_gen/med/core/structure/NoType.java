@@ -15,7 +15,7 @@ public class NoType extends Type {
   }
 
   public static NoType newInstance(SModel sm, boolean init) {
-    return (NoType)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.NoType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (NoType) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.NoType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static NoType newInstance(SModel sm) {

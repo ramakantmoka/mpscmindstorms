@@ -74,7 +74,7 @@ public class System extends MedBase implements IHasIdentifierName {
   }
 
   public static System newInstance(SModel sm, boolean init) {
-    return (System)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.System", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (System) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.System", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static System newInstance(SModel sm) {

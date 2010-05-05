@@ -16,7 +16,7 @@ public class AtomicFE extends BaseFE {
   }
 
   public FeatureDeclaration getFeature() {
-    return (FeatureDeclaration)this.getReferent(FeatureDeclaration.class, AtomicFE.FEATURE);
+    return (FeatureDeclaration) this.getReferent(FeatureDeclaration.class, AtomicFE.FEATURE);
   }
 
   public void setFeature(FeatureDeclaration node) {
@@ -24,7 +24,7 @@ public class AtomicFE extends BaseFE {
   }
 
   public static AtomicFE newInstance(SModel sm, boolean init) {
-    return (AtomicFE)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.AtomicFE", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (AtomicFE) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.AtomicFE", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static AtomicFE newInstance(SModel sm) {

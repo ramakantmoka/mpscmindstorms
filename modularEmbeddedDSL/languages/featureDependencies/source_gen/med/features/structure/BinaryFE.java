@@ -17,7 +17,7 @@ public class BinaryFE extends BaseFE {
   }
 
   public BaseFE getRight() {
-    return (BaseFE)this.getChild(BaseFE.class, BinaryFE.RIGHT);
+    return (BaseFE) this.getChild(BaseFE.class, BinaryFE.RIGHT);
   }
 
   public void setRight(BaseFE node) {
@@ -25,7 +25,7 @@ public class BinaryFE extends BaseFE {
   }
 
   public BaseFE getLeft() {
-    return (BaseFE)this.getChild(BaseFE.class, BinaryFE.LEFT);
+    return (BaseFE) this.getChild(BaseFE.class, BinaryFE.LEFT);
   }
 
   public void setLeft(BaseFE node) {
@@ -33,7 +33,7 @@ public class BinaryFE extends BaseFE {
   }
 
   public static BinaryFE newInstance(SModel sm, boolean init) {
-    return (BinaryFE)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.BinaryFE", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (BinaryFE) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.BinaryFE", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static BinaryFE newInstance(SModel sm) {

@@ -19,29 +19,29 @@ import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 
 public class FireEventStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_6769_0(editorContext, node);
+    return this.createCollection_5b4ysw_a(editorContext, node);
   }
 
-  private EditorCell createCollection_6769_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_5b4ysw_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_6769_0");
-    editorCell.addEditorCell(this.createConstant_6769_0(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_6769_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_6769_1(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_6769_1(editorContext, node));
+    editorCell.setCellId("Collection_5b4ysw_a");
+    editorCell.addEditorCell(this.createConstant_5b4ysw_a0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_5b4ysw_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_5b4ysw_c0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_5b4ysw_d0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_6769_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_5b4ysw_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "event");
-    editorCell.setCellId("Constant_6769_0");
+    editorCell.setCellId("Constant_5b4ysw_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_6769_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_5b4ysw_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_6769_1");
+    editorCell.setCellId("Constant_5b4ysw_c0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -51,12 +51,12 @@ public class FireEventStatement_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefCell_6769_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_5b4ysw_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("machine");
     provider.setNoTargetText("<no machine>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new FireEventStatement_Editor._Inline6769_0());
+    provider.setAuxiliaryCellProvider(new FireEventStatement_Editor._Inline_5b4ysw_a1a());
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -69,12 +69,12 @@ public class FireEventStatement_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefCell_6769_1(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_5b4ysw_d0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("trigger");
     provider.setNoTargetText("<no trigger>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new FireEventStatement_Editor._Inline6769_1());
+    provider.setAuxiliaryCellProvider(new FireEventStatement_Editor._Inline_5b4ysw_a3a());
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -87,8 +87,8 @@ public class FireEventStatement_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  public static class _Inline6769_0 extends InlineCellProvider {
-    public _Inline6769_0() {
+  public static class _Inline_5b4ysw_a1a extends InlineCellProvider {
+    public _Inline_5b4ysw_a1a() {
       super();
     }
 
@@ -97,10 +97,10 @@ public class FireEventStatement_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_6769_0(editorContext, node);
+      return this.createProperty_5b4ysw_a0b0(editorContext, node);
     }
 
-    private EditorCell createProperty_6769_0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_5b4ysw_a0b0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
@@ -120,8 +120,8 @@ public class FireEventStatement_Editor extends DefaultNodeEditor {
     }
   }
 
-  public static class _Inline6769_1 extends InlineCellProvider {
-    public _Inline6769_1() {
+  public static class _Inline_5b4ysw_a3a extends InlineCellProvider {
+    public _Inline_5b4ysw_a3a() {
       super();
     }
 
@@ -130,10 +130,10 @@ public class FireEventStatement_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_6769_1(editorContext, node);
+      return this.createProperty_5b4ysw_a0d0(editorContext, node);
     }
 
-    private EditorCell createProperty_6769_1(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_5b4ysw_a0d0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");

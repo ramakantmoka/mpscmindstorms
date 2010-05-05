@@ -42,7 +42,7 @@ public class ExternalProcedure extends ProcedurePrototype implements IContribute
   }
 
   public static ExternalProcedure newInstance(SModel sm, boolean init) {
-    return (ExternalProcedure)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ExternalProcedure", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ExternalProcedure) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ExternalProcedure", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ExternalProcedure newInstance(SModel sm) {

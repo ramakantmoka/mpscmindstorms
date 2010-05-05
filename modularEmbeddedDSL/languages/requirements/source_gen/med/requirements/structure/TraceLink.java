@@ -16,7 +16,7 @@ public class TraceLink extends MedBase {
   }
 
   public static TraceLink newInstance(SModel sm, boolean init) {
-    return (TraceLink)SModelUtil_new.instantiateConceptDeclaration("med.requirements.structure.TraceLink", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (TraceLink) SModelUtil_new.instantiateConceptDeclaration("med.requirements.structure.TraceLink", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static TraceLink newInstance(SModel sm) {

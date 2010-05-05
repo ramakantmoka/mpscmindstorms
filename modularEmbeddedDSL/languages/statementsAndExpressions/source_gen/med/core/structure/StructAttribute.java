@@ -53,7 +53,7 @@ public class StructAttribute extends BaseConcept implements IHasIdentifierName, 
   }
 
   public Type getType() {
-    return (Type)this.getChild(Type.class, StructAttribute.TYPE);
+    return (Type) this.getChild(Type.class, StructAttribute.TYPE);
   }
 
   public void setType(Type node) {
@@ -61,7 +61,7 @@ public class StructAttribute extends BaseConcept implements IHasIdentifierName, 
   }
 
   public static StructAttribute newInstance(SModel sm, boolean init) {
-    return (StructAttribute)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.StructAttribute", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (StructAttribute) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.StructAttribute", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static StructAttribute newInstance(SModel sm) {

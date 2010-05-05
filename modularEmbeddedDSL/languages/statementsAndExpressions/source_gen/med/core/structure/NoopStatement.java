@@ -15,7 +15,7 @@ public class NoopStatement extends Statement {
   }
 
   public static NoopStatement newInstance(SModel sm, boolean init) {
-    return (NoopStatement)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.NoopStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (NoopStatement) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.NoopStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static NoopStatement newInstance(SModel sm) {

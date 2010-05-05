@@ -38,7 +38,7 @@ public class Split extends AbstractBlock {
   }
 
   public static Split newInstance(SModel sm, boolean init) {
-    return (Split)SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.Split", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Split) SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.Split", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Split newInstance(SModel sm) {

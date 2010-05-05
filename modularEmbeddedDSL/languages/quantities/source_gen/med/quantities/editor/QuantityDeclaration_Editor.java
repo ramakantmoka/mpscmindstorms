@@ -15,52 +15,52 @@ import jetbrains.mps.nodeEditor.EditorManager;
 
 public class QuantityDeclaration_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_2125_0(editorContext, node);
+    return this.createCollection_8nthby_a(editorContext, node);
   }
 
-  private EditorCell createCollection_2125_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_8nthby_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_2125_0");
-    editorCell.addEditorCell(this.createConstant_2125_0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_2125_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_2125_1(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_2125_2(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_2125_2(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_2125_1(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_2125_3(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_2125_3(editorContext, node));
+    editorCell.setCellId("Collection_8nthby_a");
+    editorCell.addEditorCell(this.createConstant_8nthby_a0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_8nthby_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_8nthby_c0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_8nthby_d0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_8nthby_e0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_8nthby_f0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_8nthby_g0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_8nthby_h0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_2125_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_8nthby_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "quantity");
-    editorCell.setCellId("Constant_2125_0");
+    editorCell.setCellId("Constant_8nthby_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_2125_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_8nthby_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "range");
-    editorCell.setCellId("Constant_2125_1");
+    editorCell.setCellId("Constant_8nthby_c0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_2125_2(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_8nthby_e0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "..");
-    editorCell.setCellId("Constant_2125_2");
+    editorCell.setCellId("Constant_8nthby_e0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_2125_3(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_8nthby_g0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "unit");
-    editorCell.setCellId("Constant_2125_3");
+    editorCell.setCellId("Constant_8nthby_g0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createProperty_2125_0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_8nthby_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("name");
     provider.setNoTargetText("<no name>");
@@ -78,25 +78,7 @@ public class QuantityDeclaration_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createProperty_2125_1(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("maxValue");
-    provider.setNoTargetText("<no maxValue>");
-    EditorCell editorCell;
-    editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_maxValue");
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    Class attributeKind = provider.getRoleAttributeClass();
-    if (attributeConcept != null) {
-      IOperationContext opContext = editorContext.getOperationContext();
-      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
-      return manager.createRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
-    } else
-    return editorCell;
-  }
-
-  private EditorCell createProperty_2125_2(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_8nthby_d0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("minValue");
     provider.setNoTargetText("<no minValue>");
@@ -114,7 +96,25 @@ public class QuantityDeclaration_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createProperty_2125_3(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_8nthby_f0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+    provider.setRole("maxValue");
+    provider.setNoTargetText("<no maxValue>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("property_maxValue");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      IOperationContext opContext = editorContext.getOperationContext();
+      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
+      return manager.createRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
+    return editorCell;
+  }
+
+  private EditorCell createProperty_8nthby_h0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("unit");
     provider.setNoTargetText("<no unit>");

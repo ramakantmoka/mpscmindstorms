@@ -16,22 +16,22 @@ import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 
 public class SimpleConstantRef_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_2431_0(editorContext, node);
+    return this.createCollection_8e6ovr_a(editorContext, node);
   }
 
-  private EditorCell createCollection_2431_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_8e6ovr_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_2431_0");
-    editorCell.addEditorCell(this.createRefCell_2431_0(editorContext, node));
+    editorCell.setCellId("Collection_8e6ovr_a");
+    editorCell.addEditorCell(this.createRefCell_8e6ovr_a0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createRefCell_2431_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_8e6ovr_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("constant");
     provider.setNoTargetText("<no constant>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new SimpleConstantRef_Editor._Inline2431_0());
+    provider.setAuxiliaryCellProvider(new SimpleConstantRef_Editor._Inline_8e6ovr_a0a());
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -44,8 +44,8 @@ public class SimpleConstantRef_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  public static class _Inline2431_0 extends InlineCellProvider {
-    public _Inline2431_0() {
+  public static class _Inline_8e6ovr_a0a extends InlineCellProvider {
+    public _Inline_8e6ovr_a0a() {
       super();
     }
 
@@ -54,10 +54,10 @@ public class SimpleConstantRef_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_2431_0(editorContext, node);
+      return this.createProperty_8e6ovr_a0a0(editorContext, node);
     }
 
-    private EditorCell createProperty_2431_0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_8e6ovr_a0a0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");

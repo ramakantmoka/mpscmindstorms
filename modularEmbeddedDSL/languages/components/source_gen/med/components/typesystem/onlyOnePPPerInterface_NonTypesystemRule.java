@@ -14,6 +14,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.intentions.BaseIntentionProvider;
 import jetbrains.mps.typesystem.inference.IErrorTarget;
 import jetbrains.mps.typesystem.inference.NodeErrorTarget;
+import jetbrains.mps.nodeEditor.IErrorReporter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.SModelUtil_new;
 
@@ -34,7 +35,7 @@ public class onlyOnePPPerInterface_NonTypesystemRule extends AbstractNonTypesyst
       {
         BaseIntentionProvider intentionProvider = null;
         IErrorTarget errorTarget = new NodeErrorTarget();
-        typeCheckingContext.reportTypeError(providedPort, "you can provide each interface only once: " + SPropertyOperations.getString(providedPort, "name"), "r:a33671bf-8144-43f9-bd6e-c5adb345b856(med.components.typesystem)", "2739617086194095584", intentionProvider, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(providedPort, "you can provide each interface only once: " + SPropertyOperations.getString(providedPort, "name"), "r:a33671bf-8144-43f9-bd6e-c5adb345b856(med.components.typesystem)", "2739617086194095584", intentionProvider, errorTarget);
       }
     }
   }

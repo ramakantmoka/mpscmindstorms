@@ -13,6 +13,10 @@ import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
 public class QueriesGenerated {
+  public static Object propertyMacro_GetPropertyValue_8017791897008229412(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), "text");
+  }
+
   public static Object propertyMacro_GetPropertyValue_8017791897008222170(final IOperationContext operationContext, final PropertyMacroContext _context) {
     return "Documentation for " + SPropertyOperations.getString(_context.getNode(), "name");
   }
@@ -27,10 +31,6 @@ public class QueriesGenerated {
         return SNodeOperations.isInstanceOf(it, "med.report.structure.Chapter");
       }
     }).count() + 1) + ">";
-  }
-
-  public static Object propertyMacro_GetPropertyValue_8017791897008229412(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), "text");
   }
 
   public static Iterable sourceNodesQuery_8017791897007929732(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {

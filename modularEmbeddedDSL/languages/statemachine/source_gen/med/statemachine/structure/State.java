@@ -127,7 +127,7 @@ public class State extends MedBase implements IHasIdentifierName {
   }
 
   public static State newInstance(SModel sm, boolean init) {
-    return (State)SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.State", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (State) SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.State", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static State newInstance(SModel sm) {

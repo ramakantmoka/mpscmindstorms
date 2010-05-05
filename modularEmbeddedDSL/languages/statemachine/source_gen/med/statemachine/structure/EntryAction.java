@@ -15,7 +15,7 @@ public class EntryAction extends Action {
   }
 
   public static EntryAction newInstance(SModel sm, boolean init) {
-    return (EntryAction)SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.EntryAction", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (EntryAction) SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.EntryAction", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static EntryAction newInstance(SModel sm) {

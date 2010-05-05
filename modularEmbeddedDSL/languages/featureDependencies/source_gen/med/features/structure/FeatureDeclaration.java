@@ -53,7 +53,7 @@ public class FeatureDeclaration extends BaseConcept implements INamedConcept, IF
   }
 
   public static FeatureDeclaration newInstance(SModel sm, boolean init) {
-    return (FeatureDeclaration)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.FeatureDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (FeatureDeclaration) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.FeatureDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static FeatureDeclaration newInstance(SModel sm) {

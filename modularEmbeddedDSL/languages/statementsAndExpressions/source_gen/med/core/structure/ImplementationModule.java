@@ -47,7 +47,7 @@ public class ImplementationModule extends Module {
   }
 
   public static ImplementationModule newInstance(SModel sm, boolean init) {
-    return (ImplementationModule)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ImplementationModule", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ImplementationModule) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ImplementationModule", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ImplementationModule newInstance(SModel sm) {

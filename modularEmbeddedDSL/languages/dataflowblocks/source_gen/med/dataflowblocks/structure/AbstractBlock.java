@@ -16,7 +16,7 @@ public class AbstractBlock extends BaseConcept {
   }
 
   public static AbstractBlock newInstance(SModel sm, boolean init) {
-    return (AbstractBlock)SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.AbstractBlock", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (AbstractBlock) SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.AbstractBlock", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static AbstractBlock newInstance(SModel sm) {

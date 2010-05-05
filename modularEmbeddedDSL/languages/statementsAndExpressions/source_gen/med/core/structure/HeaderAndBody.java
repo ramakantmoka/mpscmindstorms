@@ -61,7 +61,7 @@ public class HeaderAndBody extends MedBase implements IModuleContent, IReduceToI
   }
 
   public StatementList getBody() {
-    return (StatementList)this.getChild(StatementList.class, HeaderAndBody.BODY);
+    return (StatementList) this.getChild(StatementList.class, HeaderAndBody.BODY);
   }
 
   public void setBody(StatementList node) {
@@ -69,7 +69,7 @@ public class HeaderAndBody extends MedBase implements IModuleContent, IReduceToI
   }
 
   public static HeaderAndBody newInstance(SModel sm, boolean init) {
-    return (HeaderAndBody)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.HeaderAndBody", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (HeaderAndBody) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.HeaderAndBody", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static HeaderAndBody newInstance(SModel sm) {

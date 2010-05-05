@@ -16,7 +16,7 @@ public class EventTrigger extends Trigger {
   }
 
   public Event getEvent() {
-    return (Event)this.getReferent(Event.class, EventTrigger.EVENT);
+    return (Event) this.getReferent(Event.class, EventTrigger.EVENT);
   }
 
   public void setEvent(Event node) {
@@ -24,7 +24,7 @@ public class EventTrigger extends Trigger {
   }
 
   public static EventTrigger newInstance(SModel sm, boolean init) {
-    return (EventTrigger)SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.EventTrigger", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (EventTrigger) SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.EventTrigger", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static EventTrigger newInstance(SModel sm) {

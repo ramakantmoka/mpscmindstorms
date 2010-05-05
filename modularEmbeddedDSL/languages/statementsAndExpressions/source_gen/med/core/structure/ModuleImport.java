@@ -16,7 +16,7 @@ public class ModuleImport extends MedBase {
   }
 
   public Module getImportedModule() {
-    return (Module)this.getReferent(Module.class, ModuleImport.IMPORTED_MODULE);
+    return (Module) this.getReferent(Module.class, ModuleImport.IMPORTED_MODULE);
   }
 
   public void setImportedModule(Module node) {
@@ -24,7 +24,7 @@ public class ModuleImport extends MedBase {
   }
 
   public static ModuleImport newInstance(SModel sm, boolean init) {
-    return (ModuleImport)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ModuleImport", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ModuleImport) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ModuleImport", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ModuleImport newInstance(SModel sm) {

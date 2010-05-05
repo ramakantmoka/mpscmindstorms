@@ -46,7 +46,7 @@ public class StatemachineAdapter extends MedBase implements IComponentImplConten
   }
 
   public Statemachine getMachine() {
-    return (Statemachine)this.getChild(Statemachine.class, StatemachineAdapter.MACHINE);
+    return (Statemachine) this.getChild(Statemachine.class, StatemachineAdapter.MACHINE);
   }
 
   public void setMachine(Statemachine node) {
@@ -54,7 +54,7 @@ public class StatemachineAdapter extends MedBase implements IComponentImplConten
   }
 
   public static StatemachineAdapter newInstance(SModel sm, boolean init) {
-    return (StatemachineAdapter)SModelUtil_new.instantiateConceptDeclaration("med.messagecomponents.structure.StatemachineAdapter", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (StatemachineAdapter) SModelUtil_new.instantiateConceptDeclaration("med.messagecomponents.structure.StatemachineAdapter", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static StatemachineAdapter newInstance(SModel sm) {

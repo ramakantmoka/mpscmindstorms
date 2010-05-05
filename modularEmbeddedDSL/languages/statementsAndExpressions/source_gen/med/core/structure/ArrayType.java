@@ -16,7 +16,7 @@ public class ArrayType extends GenericArrayType {
   }
 
   public Type getElementType() {
-    return (Type)this.getChild(Type.class, ArrayType.ELEMENT_TYPE);
+    return (Type) this.getChild(Type.class, ArrayType.ELEMENT_TYPE);
   }
 
   public void setElementType(Type node) {
@@ -24,7 +24,7 @@ public class ArrayType extends GenericArrayType {
   }
 
   public static ArrayType newInstance(SModel sm, boolean init) {
-    return (ArrayType)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ArrayType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ArrayType) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ArrayType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ArrayType newInstance(SModel sm) {

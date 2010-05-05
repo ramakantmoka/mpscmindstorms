@@ -19,7 +19,7 @@ public class OutputSendStatement extends Statement {
   }
 
   public PortType getOutport() {
-    return (PortType)this.getReferent(PortType.class, OutputSendStatement.OUTPORT);
+    return (PortType) this.getReferent(PortType.class, OutputSendStatement.OUTPORT);
   }
 
   public void setOutport(PortType node) {
@@ -27,7 +27,7 @@ public class OutputSendStatement extends Statement {
   }
 
   public Expression getExpr() {
-    return (Expression)this.getChild(Expression.class, OutputSendStatement.EXPR);
+    return (Expression) this.getChild(Expression.class, OutputSendStatement.EXPR);
   }
 
   public void setExpr(Expression node) {
@@ -35,7 +35,7 @@ public class OutputSendStatement extends Statement {
   }
 
   public static OutputSendStatement newInstance(SModel sm, boolean init) {
-    return (OutputSendStatement)SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.OutputSendStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (OutputSendStatement) SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.OutputSendStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static OutputSendStatement newInstance(SModel sm) {

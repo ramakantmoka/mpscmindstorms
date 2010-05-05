@@ -15,7 +15,7 @@ public class VariantDisplayMode extends DisplayMode {
   }
 
   public static VariantDisplayMode newInstance(SModel sm, boolean init) {
-    return (VariantDisplayMode)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.VariantDisplayMode", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (VariantDisplayMode) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.VariantDisplayMode", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static VariantDisplayMode newInstance(SModel sm) {

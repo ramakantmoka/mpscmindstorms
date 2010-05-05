@@ -17,7 +17,7 @@ public class RunTestStatement extends Statement {
   }
 
   public Test getTest() {
-    return (Test)this.getReferent(Test.class, RunTestStatement.TEST);
+    return (Test) this.getReferent(Test.class, RunTestStatement.TEST);
   }
 
   public void setTest(Test node) {
@@ -25,7 +25,7 @@ public class RunTestStatement extends Statement {
   }
 
   public static RunTestStatement newInstance(SModel sm, boolean init) {
-    return (RunTestStatement)SModelUtil_new.instantiateConceptDeclaration("med.unittest.structure.RunTestStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (RunTestStatement) SModelUtil_new.instantiateConceptDeclaration("med.unittest.structure.RunTestStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static RunTestStatement newInstance(SModel sm) {

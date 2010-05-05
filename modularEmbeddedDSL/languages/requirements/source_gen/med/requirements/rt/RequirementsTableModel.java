@@ -67,10 +67,10 @@ public class RequirementsTableModel extends AbstractTableModel {
       public void run() {
         SNode r = ListSequence.fromList(RequirementsTableModel.this.requirements).getElement(row);
         if (col == 0) {
-          SPropertyOperations.set(r, "name", (String)text);
+          SPropertyOperations.set(r, "name", (String) text);
         }
         if (col == 1) {
-          SPropertyOperations.set(r, "text", (String)text);
+          SPropertyOperations.set(r, "text", (String) text);
         }
       }
     });

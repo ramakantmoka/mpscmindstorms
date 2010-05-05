@@ -16,7 +16,7 @@ public class NewExpression extends Expression {
   }
 
   public Type getType() {
-    return (Type)this.getChild(Type.class, NewExpression.TYPE);
+    return (Type) this.getChild(Type.class, NewExpression.TYPE);
   }
 
   public void setType(Type node) {
@@ -24,7 +24,7 @@ public class NewExpression extends Expression {
   }
 
   public static NewExpression newInstance(SModel sm, boolean init) {
-    return (NewExpression)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.NewExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (NewExpression) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.NewExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static NewExpression newInstance(SModel sm) {

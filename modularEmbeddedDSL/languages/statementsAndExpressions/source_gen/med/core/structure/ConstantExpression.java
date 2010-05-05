@@ -42,7 +42,7 @@ public class ConstantExpression extends Expression implements ISimpleExpression 
   }
 
   public static ConstantExpression newInstance(SModel sm, boolean init) {
-    return (ConstantExpression)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ConstantExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ConstantExpression) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ConstantExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ConstantExpression newInstance(SModel sm) {

@@ -15,7 +15,7 @@ public class ProjectionLevel extends MedBase {
   }
 
   public static ProjectionLevel newInstance(SModel sm, boolean init) {
-    return (ProjectionLevel)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ProjectionLevel", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ProjectionLevel) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ProjectionLevel", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ProjectionLevel newInstance(SModel sm) {

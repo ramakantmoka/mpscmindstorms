@@ -10,12 +10,12 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
 public class FATString_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createConstant_8494_0(editorContext, node);
+    return this.createConstant_j66uf5_a(editorContext, node);
   }
 
-  private EditorCell createConstant_8494_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_j66uf5_a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "string");
-    editorCell.setCellId("Constant_8494_0");
+    editorCell.setCellId("Constant_j66uf5_a");
     editorCell.setDefaultText("");
     return editorCell;
   }

@@ -36,7 +36,7 @@ public class introduceBlock extends BaseRefactoring {
 
   public void refactor(final RefactoringContext refactoringContext) {
     SNode newblock = SConceptOperations.createNewNode("ds.twowheel.structure.BlockStatement", null);
-    SPropertyOperations.set(newblock, "name", ((String)refactoringContext.getParameter("blockName")));
+    SPropertyOperations.set(newblock, "name", ((String) refactoringContext.getParameter("blockName")));
     SNodeOperations.replaceWithAnother(ListSequence.fromList(refactoringContext.getSelectedNodes()).first(), newblock);
     SLinkOperations.addAll(newblock, "statements", refactoringContext.getSelectedNodes());
   }

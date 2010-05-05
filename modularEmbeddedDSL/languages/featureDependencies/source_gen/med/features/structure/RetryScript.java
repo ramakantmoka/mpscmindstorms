@@ -39,7 +39,7 @@ public class RetryScript extends BaseConcept {
   }
 
   public static RetryScript newInstance(SModel sm, boolean init) {
-    return (RetryScript)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.RetryScript", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (RetryScript) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.RetryScript", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static RetryScript newInstance(SModel sm) {

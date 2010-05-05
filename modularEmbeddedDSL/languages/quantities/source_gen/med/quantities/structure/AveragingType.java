@@ -24,7 +24,7 @@ public class AveragingType extends GenericAveragingType {
   }
 
   public static AveragingType newInstance(SModel sm, boolean init) {
-    return (AveragingType)SModelUtil_new.instantiateConceptDeclaration("med.quantities.structure.AveragingType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (AveragingType) SModelUtil_new.instantiateConceptDeclaration("med.quantities.structure.AveragingType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static AveragingType newInstance(SModel sm) {

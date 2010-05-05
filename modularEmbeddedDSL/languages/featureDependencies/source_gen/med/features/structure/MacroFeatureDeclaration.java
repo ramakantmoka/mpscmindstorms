@@ -16,7 +16,7 @@ public class MacroFeatureDeclaration extends FeatureDeclaration {
   }
 
   public BaseFE getExpression() {
-    return (BaseFE)this.getChild(BaseFE.class, MacroFeatureDeclaration.EXPRESSION);
+    return (BaseFE) this.getChild(BaseFE.class, MacroFeatureDeclaration.EXPRESSION);
   }
 
   public void setExpression(BaseFE node) {
@@ -24,7 +24,7 @@ public class MacroFeatureDeclaration extends FeatureDeclaration {
   }
 
   public static MacroFeatureDeclaration newInstance(SModel sm, boolean init) {
-    return (MacroFeatureDeclaration)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.MacroFeatureDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (MacroFeatureDeclaration) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.MacroFeatureDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static MacroFeatureDeclaration newInstance(SModel sm) {

@@ -17,53 +17,53 @@ import jetbrains.mps.nodeEditor.EditorManager;
 
 public class ElseIfPart_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_3645_0(editorContext, node);
+    return this.createCollection_qxz8gh_a(editorContext, node);
   }
 
-  private EditorCell createCollection_3645_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_qxz8gh_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_3645_0");
-    editorCell.addEditorCell(this.createConstant_3645_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_3645_1(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_3645_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_3645_2(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_3645_3(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_3645_1(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_3645_4(editorContext, node));
+    editorCell.setCellId("Collection_qxz8gh_a");
+    editorCell.addEditorCell(this.createConstant_qxz8gh_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_qxz8gh_b0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_qxz8gh_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_qxz8gh_d0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_qxz8gh_e0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_qxz8gh_f0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_qxz8gh_g0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_3645_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_qxz8gh_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "else if");
-    editorCell.setCellId("Constant_3645_0");
+    editorCell.setCellId("Constant_qxz8gh_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_3645_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_qxz8gh_b0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(");
-    editorCell.setCellId("Constant_3645_1");
+    editorCell.setCellId("Constant_qxz8gh_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_3645_2(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_qxz8gh_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
-    editorCell.setCellId("Constant_3645_2");
+    editorCell.setCellId("Constant_qxz8gh_d0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_3645_3(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_qxz8gh_e0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "{");
-    editorCell.setCellId("Constant_3645_3");
+    editorCell.setCellId("Constant_qxz8gh_e0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_3645_4(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_qxz8gh_g0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");
-    editorCell.setCellId("Constant_3645_4");
+    editorCell.setCellId("Constant_qxz8gh_g0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
@@ -72,7 +72,7 @@ public class ElseIfPart_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNode_3645_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_qxz8gh_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("condition");
     provider.setNoTargetText("<no condition>");
@@ -89,7 +89,7 @@ public class ElseIfPart_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNode_3645_1(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_qxz8gh_f0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("elseifPart");
     provider.setNoTargetText("<no elseifPart>");

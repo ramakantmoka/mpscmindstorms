@@ -15,7 +15,7 @@ public class SchedulingPolicyOnceUponStartup extends SchedulingPolicy {
   }
 
   public static SchedulingPolicyOnceUponStartup newInstance(SModel sm, boolean init) {
-    return (SchedulingPolicyOnceUponStartup)SModelUtil_new.instantiateConceptDeclaration("med.tasks.structure.SchedulingPolicyOnceUponStartup", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (SchedulingPolicyOnceUponStartup) SModelUtil_new.instantiateConceptDeclaration("med.tasks.structure.SchedulingPolicyOnceUponStartup", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static SchedulingPolicyOnceUponStartup newInstance(SModel sm) {

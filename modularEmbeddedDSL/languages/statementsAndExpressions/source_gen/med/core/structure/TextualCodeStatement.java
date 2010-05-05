@@ -33,7 +33,7 @@ public class TextualCodeStatement extends Statement {
   }
 
   public static TextualCodeStatement newInstance(SModel sm, boolean init) {
-    return (TextualCodeStatement)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.TextualCodeStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (TextualCodeStatement) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.TextualCodeStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static TextualCodeStatement newInstance(SModel sm) {

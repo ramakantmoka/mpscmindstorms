@@ -18,54 +18,31 @@ import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
 
 public class MarkAsPhysicalOperator_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_2510_0(editorContext, node);
+    return this.createCollection_iij909_a(editorContext, node);
   }
 
-  private EditorCell createCollection_2510_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_iij909_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_2510_0");
-    editorCell.addEditorCell(this.createConstant_2510_2(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_2510_0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_2510_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_2510_3(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_2510_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_2510_1(editorContext, node));
+    editorCell.setCellId("Collection_iij909_a");
+    editorCell.addEditorCell(this.createConstant_iij909_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_iij909_b0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_iij909_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_iij909_d0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_iij909_e0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_iij909_f0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_2510_0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "<");
-    editorCell.setCellId("Constant_2510_0");
-    {
-      Style style = editorCell.getStyle();
-      style.set(StyleAttributes.PUNCTUATION_LEFT, true);
-      style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
-    }
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-
-  private EditorCell createConstant_2510_1(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ">");
-    editorCell.setCellId("Constant_2510_1");
-    {
-      Style style = editorCell.getStyle();
-      style.set(StyleAttributes.PUNCTUATION_LEFT, true);
-    }
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-
-  private EditorCell createConstant_2510_2(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_iij909_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "p");
-    editorCell.setCellId("Constant_2510_2");
+    editorCell.setCellId("Constant_iij909_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_2510_3(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_2510_3");
+  private EditorCell createConstant_iij909_b0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "<");
+    editorCell.setCellId("Constant_iij909_b0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -75,7 +52,30 @@ public class MarkAsPhysicalOperator_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createProperty_2510_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_iij909_d0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
+    editorCell.setCellId("Constant_iij909_d0");
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.PUNCTUATION_LEFT, true);
+      style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
+    }
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createConstant_iij909_f0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ">");
+    editorCell.setCellId("Constant_iij909_f0");
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.PUNCTUATION_LEFT, true);
+    }
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createProperty_iij909_e0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("value");
     provider.setNoTargetText("<no value>");
@@ -93,7 +93,7 @@ public class MarkAsPhysicalOperator_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNode_2510_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_iij909_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("type");
     provider.setNoTargetText("<no type>");

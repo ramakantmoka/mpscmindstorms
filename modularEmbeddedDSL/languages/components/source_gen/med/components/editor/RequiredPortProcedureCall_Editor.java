@@ -13,10 +13,10 @@ import jetbrains.mps.nodeEditor.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
-import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
+import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.nodeEditor.EditorManager;
-import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
+import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
@@ -29,24 +29,24 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 
 public class RequiredPortProcedureCall_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_5227_0(editorContext, node);
+    return this.createCollection_87nlgd_a(editorContext, node);
   }
 
-  private EditorCell createCollection_5227_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_87nlgd_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_5227_0");
-    editorCell.addEditorCell(this.createRefNode_5227_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_5227_0(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_5227_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_5227_1(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_5227_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_5227_2(editorContext, node));
+    editorCell.setCellId("Collection_87nlgd_a");
+    editorCell.addEditorCell(this.createRefNode_87nlgd_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_87nlgd_b0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_87nlgd_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_87nlgd_d0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_87nlgd_e0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_87nlgd_f0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_5227_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_87nlgd_b0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ".");
-    editorCell.setCellId("Constant_5227_0");
+    editorCell.setCellId("Constant_87nlgd_b0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -56,9 +56,9 @@ public class RequiredPortProcedureCall_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_5227_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_87nlgd_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(");
-    editorCell.setCellId("Constant_5227_1");
+    editorCell.setCellId("Constant_87nlgd_d0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -68,9 +68,9 @@ public class RequiredPortProcedureCall_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_5227_2(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_87nlgd_f0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
-    editorCell.setCellId("Constant_5227_2");
+    editorCell.setCellId("Constant_87nlgd_f0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -79,33 +79,15 @@ public class RequiredPortProcedureCall_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_5227_0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new RequiredPortProcedureCall_Editor.actualsListHandler_5227_0(node, "actuals", editorContext);
+  private EditorCell createRefNodeList_87nlgd_e0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new RequiredPortProcedureCall_Editor.actualsListHandler_87nlgd_e0(node, "actuals", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_actuals");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
 
-  private EditorCell createRefCell_5227_0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("procedure");
-    provider.setNoTargetText("<no procedure>");
-    EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new RequiredPortProcedureCall_Editor._Inline5227_0());
-    editorCell = provider.createEditorCell(editorContext);
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    Class attributeKind = provider.getRoleAttributeClass();
-    if (attributeConcept != null) {
-      IOperationContext opContext = editorContext.getOperationContext();
-      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
-      return manager.createRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
-    } else
-    return editorCell;
-  }
-
-  private EditorCell createRefNode_5227_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_87nlgd_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("portExpression");
     provider.setNoTargetText("<no portExpression>");
@@ -122,8 +104,26 @@ public class RequiredPortProcedureCall_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  public static class _Inline5227_0 extends InlineCellProvider {
-    public _Inline5227_0() {
+  private EditorCell createRefCell_87nlgd_c0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
+    provider.setRole("procedure");
+    provider.setNoTargetText("<no procedure>");
+    EditorCell editorCell;
+    provider.setAuxiliaryCellProvider(new RequiredPortProcedureCall_Editor._Inline_87nlgd_a2a());
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      IOperationContext opContext = editorContext.getOperationContext();
+      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
+      return manager.createRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
+    return editorCell;
+  }
+
+  public static class _Inline_87nlgd_a2a extends InlineCellProvider {
+    public _Inline_87nlgd_a2a() {
       super();
     }
 
@@ -132,10 +132,10 @@ public class RequiredPortProcedureCall_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_5227_0(editorContext, node);
+      return this.createProperty_87nlgd_a0c0(editorContext, node);
     }
 
-    private EditorCell createProperty_5227_0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_87nlgd_a0c0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
@@ -155,8 +155,8 @@ public class RequiredPortProcedureCall_Editor extends DefaultNodeEditor {
     }
   }
 
-  private static class actualsListHandler_5227_0 extends RefNodeListHandler {
-    public actualsListHandler_5227_0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class actualsListHandler_87nlgd_e0 extends RefNodeListHandler {
+    public actualsListHandler_87nlgd_e0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 

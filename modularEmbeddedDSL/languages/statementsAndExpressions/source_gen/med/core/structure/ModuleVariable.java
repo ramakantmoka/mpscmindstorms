@@ -53,7 +53,7 @@ public class ModuleVariable extends MedBase implements IModuleContent, IHasIdent
   }
 
   public Expression getInit() {
-    return (Expression)this.getChild(Expression.class, ModuleVariable.INIT);
+    return (Expression) this.getChild(Expression.class, ModuleVariable.INIT);
   }
 
   public void setInit(Expression node) {
@@ -61,7 +61,7 @@ public class ModuleVariable extends MedBase implements IModuleContent, IHasIdent
   }
 
   public Type getType() {
-    return (Type)this.getChild(Type.class, ModuleVariable.TYPE);
+    return (Type) this.getChild(Type.class, ModuleVariable.TYPE);
   }
 
   public void setType(Type node) {
@@ -69,7 +69,7 @@ public class ModuleVariable extends MedBase implements IModuleContent, IHasIdent
   }
 
   public static ModuleVariable newInstance(SModel sm, boolean init) {
-    return (ModuleVariable)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ModuleVariable", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ModuleVariable) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ModuleVariable", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ModuleVariable newInstance(SModel sm) {

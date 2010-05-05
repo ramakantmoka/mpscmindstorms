@@ -14,10 +14,10 @@ import jetbrains.mps.nodeEditor.MPSColors;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
-import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
+import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.nodeEditor.EditorManager;
-import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
 import jetbrains.mps.smodel.IScope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
@@ -30,27 +30,27 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 
 public class ExternalProcedure_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_6180_0(editorContext, node);
+    return this.createCollection_ap90si_a(editorContext, node);
   }
 
-  private EditorCell createCollection_6180_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_ap90si_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_6180_0");
-    if (renderingCondition6180_0(node, editorContext, editorContext.getOperationContext().getScope())) {
-      editorCell.addEditorCell(this.createConstant_6180_0(editorContext, node));
+    editorCell.setCellId("Collection_ap90si_a");
+    if (renderingCondition_ap90si_a0a(node, editorContext, editorContext.getOperationContext().getScope())) {
+      editorCell.addEditorCell(this.createConstant_ap90si_a0(editorContext, node));
     }
-    editorCell.addEditorCell(this.createRefNode_6180_0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_6180_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_6180_1(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_6180_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_6180_3(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_6180_4(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_ap90si_b0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_ap90si_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_ap90si_d0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_ap90si_e0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_ap90si_f0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_ap90si_g0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_6180_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_ap90si_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "exported");
-    editorCell.setCellId("Constant_6180_0");
+    editorCell.setCellId("Constant_ap90si_a0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.TEXT_COLOR, MPSColors.DARK_GREEN);
@@ -59,9 +59,9 @@ public class ExternalProcedure_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_6180_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_ap90si_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "(");
-    editorCell.setCellId("Constant_6180_1");
+    editorCell.setCellId("Constant_ap90si_d0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -70,16 +70,16 @@ public class ExternalProcedure_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_6180_3(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_ap90si_f0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ")");
-    editorCell.setCellId("Constant_6180_3");
+    editorCell.setCellId("Constant_ap90si_f0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_6180_4(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_ap90si_g0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ";");
-    editorCell.setCellId("Constant_6180_4");
+    editorCell.setCellId("Constant_ap90si_g0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -88,32 +88,15 @@ public class ExternalProcedure_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_6180_0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new ExternalProcedure_Editor.parametersListHandler_6180_0(node, "parameters", editorContext);
+  private EditorCell createRefNodeList_ap90si_e0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new ExternalProcedure_Editor.parametersListHandler_ap90si_e0(node, "parameters", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_parameters");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
 
-  private EditorCell createRefNode_6180_0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
-    provider.setRole("type");
-    provider.setNoTargetText("<no type>");
-    EditorCell editorCell;
-    editorCell = provider.createEditorCell(editorContext);
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    Class attributeKind = provider.getRoleAttributeClass();
-    if (attributeConcept != null) {
-      IOperationContext opContext = editorContext.getOperationContext();
-      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
-      return manager.createRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
-    } else
-    return editorCell;
-  }
-
-  private EditorCell createProperty_6180_0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_ap90si_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("name");
     provider.setNoTargetText("<no name>");
@@ -131,12 +114,29 @@ public class ExternalProcedure_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static boolean renderingCondition6180_0(SNode node, EditorContext editorContext, IScope scope) {
+  private EditorCell createRefNode_ap90si_b0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
+    provider.setRole("type");
+    provider.setNoTargetText("<no type>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      IOperationContext opContext = editorContext.getOperationContext();
+      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
+      return manager.createRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
+    return editorCell;
+  }
+
+  private static boolean renderingCondition_ap90si_a0a(SNode node, EditorContext editorContext, IScope scope) {
     return SPropertyOperations.getBoolean(node, "export");
   }
 
-  private static class parametersListHandler_6180_0 extends RefNodeListHandler {
-    public parametersListHandler_6180_0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class parametersListHandler_ap90si_e0 extends RefNodeListHandler {
+    public parametersListHandler_ap90si_e0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 
@@ -159,7 +159,7 @@ public class ExternalProcedure_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEmptyCell_internal(EditorContext editorContext, SNode node) {
-      return this.createConstant_6180_2(editorContext, node);
+      return this.createConstant_ap90si_a4a(editorContext, node);
     }
 
     public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
@@ -187,9 +187,9 @@ public class ExternalProcedure_Editor extends DefaultNodeEditor {
       }
     }
 
-    private EditorCell createConstant_6180_2(EditorContext editorContext, SNode node) {
+    private EditorCell createConstant_ap90si_a4a(EditorContext editorContext, SNode node) {
       EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-      editorCell.setCellId("Constant_6180_2");
+      editorCell.setCellId("Constant_ap90si_a4a");
       {
         Style style = editorCell.getStyle();
         style.set(StyleAttributes.EDITABLE, false);

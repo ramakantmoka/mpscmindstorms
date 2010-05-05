@@ -24,7 +24,7 @@ public class OneLineCommetStatement extends Statement {
   }
 
   public static OneLineCommetStatement newInstance(SModel sm, boolean init) {
-    return (OneLineCommetStatement)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.OneLineCommetStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (OneLineCommetStatement) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.OneLineCommetStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static OneLineCommetStatement newInstance(SModel sm) {

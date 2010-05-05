@@ -15,7 +15,7 @@ public class FATInt extends FeatureAttributeType {
   }
 
   public static FATInt newInstance(SModel sm, boolean init) {
-    return (FATInt)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.FATInt", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (FATInt) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.FATInt", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static FATInt newInstance(SModel sm) {

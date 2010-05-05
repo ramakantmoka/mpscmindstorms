@@ -16,7 +16,7 @@ public class BlockStatement extends Statement {
   }
 
   public StatementList getBody() {
-    return (StatementList)this.getChild(StatementList.class, BlockStatement.BODY);
+    return (StatementList) this.getChild(StatementList.class, BlockStatement.BODY);
   }
 
   public void setBody(StatementList node) {
@@ -24,7 +24,7 @@ public class BlockStatement extends Statement {
   }
 
   public static BlockStatement newInstance(SModel sm, boolean init) {
-    return (BlockStatement)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.BlockStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (BlockStatement) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.BlockStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static BlockStatement newInstance(SModel sm) {

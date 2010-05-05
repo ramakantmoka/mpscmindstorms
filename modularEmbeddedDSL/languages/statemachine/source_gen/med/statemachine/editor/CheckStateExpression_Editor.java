@@ -19,29 +19,29 @@ import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 
 public class CheckStateExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_0395_0(editorContext, node);
+    return this.createCollection_8wqn5x_a(editorContext, node);
   }
 
-  private EditorCell createCollection_0395_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_8wqn5x_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_0395_0");
-    editorCell.addEditorCell(this.createConstant_0395_0(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_0395_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_0395_1(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_0395_1(editorContext, node));
+    editorCell.setCellId("Collection_8wqn5x_a");
+    editorCell.addEditorCell(this.createConstant_8wqn5x_a0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_8wqn5x_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_8wqn5x_c0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_8wqn5x_d0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_0395_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_8wqn5x_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "is in state");
-    editorCell.setCellId("Constant_0395_0");
+    editorCell.setCellId("Constant_8wqn5x_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_0395_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_8wqn5x_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "/");
-    editorCell.setCellId("Constant_0395_1");
+    editorCell.setCellId("Constant_8wqn5x_c0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -51,12 +51,12 @@ public class CheckStateExpression_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefCell_0395_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_8wqn5x_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("machine");
     provider.setNoTargetText("<no machine>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new CheckStateExpression_Editor._Inline0395_0());
+    provider.setAuxiliaryCellProvider(new CheckStateExpression_Editor._Inline_8wqn5x_a1a());
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -69,12 +69,12 @@ public class CheckStateExpression_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefCell_0395_1(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_8wqn5x_d0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("state");
     provider.setNoTargetText("<no state>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new CheckStateExpression_Editor._Inline0395_1());
+    provider.setAuxiliaryCellProvider(new CheckStateExpression_Editor._Inline_8wqn5x_a3a());
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -87,8 +87,8 @@ public class CheckStateExpression_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  public static class _Inline0395_0 extends InlineCellProvider {
-    public _Inline0395_0() {
+  public static class _Inline_8wqn5x_a1a extends InlineCellProvider {
+    public _Inline_8wqn5x_a1a() {
       super();
     }
 
@@ -97,10 +97,10 @@ public class CheckStateExpression_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_0395_0(editorContext, node);
+      return this.createProperty_8wqn5x_a0b0(editorContext, node);
     }
 
-    private EditorCell createProperty_0395_0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_8wqn5x_a0b0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
@@ -120,8 +120,8 @@ public class CheckStateExpression_Editor extends DefaultNodeEditor {
     }
   }
 
-  public static class _Inline0395_1 extends InlineCellProvider {
-    public _Inline0395_1() {
+  public static class _Inline_8wqn5x_a3a extends InlineCellProvider {
+    public _Inline_8wqn5x_a3a() {
       super();
     }
 
@@ -130,10 +130,10 @@ public class CheckStateExpression_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_0395_1(editorContext, node);
+      return this.createProperty_8wqn5x_a0d0(editorContext, node);
     }
 
-    private EditorCell createProperty_0395_1(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_8wqn5x_a0d0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");

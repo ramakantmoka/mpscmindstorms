@@ -8,6 +8,7 @@ import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.intentions.BaseIntentionProvider;
+import jetbrains.mps.typesystem.inference.EquationInfo;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.SModelUtil_new;
 
@@ -19,7 +20,9 @@ public class typeof_BitAccessExpression_InferenceRule extends AbstractInferenceR
     {
       SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(expression, "expression", true);
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createLessThanInequation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:ad1d9d12-2533-40af-bfd7-93b69d4bcc90(med.bitdata.typesystem)", "9105096665975960685", true), (SNode)SConceptOperations.createNewNode("med.bitdata.structure.GenericBitPatternType", null), _nodeToCheck_1029348928467, null, "r:ad1d9d12-2533-40af-bfd7-93b69d4bcc90(med.bitdata.typesystem)", "9105096665975960694", false, 0, intentionProvider);
+      EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:ad1d9d12-2533-40af-bfd7-93b69d4bcc90(med.bitdata.typesystem)", "9105096665975960694", 0, intentionProvider);
+      _info_12389875345.setInequationGroup("");
+      typeCheckingContext.createLessThanInequation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:ad1d9d12-2533-40af-bfd7-93b69d4bcc90(med.bitdata.typesystem)", "9105096665975960685", true), (SNode) SConceptOperations.createNewNode("med.bitdata.structure.GenericBitPatternType", null), false, _info_12389875345);
     }
   }
 

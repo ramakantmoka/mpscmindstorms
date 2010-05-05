@@ -18,7 +18,7 @@ public class AssertEquals extends AssertStatement {
   }
 
   public Expression getActual() {
-    return (Expression)this.getChild(Expression.class, AssertEquals.ACTUAL);
+    return (Expression) this.getChild(Expression.class, AssertEquals.ACTUAL);
   }
 
   public void setActual(Expression node) {
@@ -26,7 +26,7 @@ public class AssertEquals extends AssertStatement {
   }
 
   public Expression getExpected() {
-    return (Expression)this.getChild(Expression.class, AssertEquals.EXPECTED);
+    return (Expression) this.getChild(Expression.class, AssertEquals.EXPECTED);
   }
 
   public void setExpected(Expression node) {
@@ -34,7 +34,7 @@ public class AssertEquals extends AssertStatement {
   }
 
   public static AssertEquals newInstance(SModel sm, boolean init) {
-    return (AssertEquals)SModelUtil_new.instantiateConceptDeclaration("med.unittest.structure.AssertEquals", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (AssertEquals) SModelUtil_new.instantiateConceptDeclaration("med.unittest.structure.AssertEquals", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static AssertEquals newInstance(SModel sm) {

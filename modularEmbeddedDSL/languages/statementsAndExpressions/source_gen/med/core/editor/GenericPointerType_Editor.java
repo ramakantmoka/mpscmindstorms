@@ -10,12 +10,12 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
 public class GenericPointerType_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createConstant_4356_0(editorContext, node);
+    return this.createConstant_v5d812_a(editorContext, node);
   }
 
-  private EditorCell createConstant_4356_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_v5d812_a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "generic*");
-    editorCell.setCellId("Constant_4356_0");
+    editorCell.setCellId("Constant_v5d812_a");
     editorCell.setDefaultText("");
     return editorCell;
   }

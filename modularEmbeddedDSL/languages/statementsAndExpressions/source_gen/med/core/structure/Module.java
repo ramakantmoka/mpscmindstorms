@@ -83,7 +83,7 @@ public class Module extends MedBase implements IHasIdentifierName, IDocumentable
   }
 
   public static Module newInstance(SModel sm, boolean init) {
-    return (Module)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Module", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Module) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Module", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Module newInstance(SModel sm) {

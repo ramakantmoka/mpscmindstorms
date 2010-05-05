@@ -15,7 +15,7 @@ public class OrFE extends BinaryFE {
   }
 
   public static OrFE newInstance(SModel sm, boolean init) {
-    return (OrFE)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.OrFE", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (OrFE) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.OrFE", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static OrFE newInstance(SModel sm) {

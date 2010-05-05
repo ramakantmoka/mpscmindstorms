@@ -11,6 +11,6 @@ public class ModuleDependencyAnnotation_AnnotationLink {
   }
 
   public static ModuleDependency getModuleDependencyAnnotation(MedBase source) {
-    return (ModuleDependency)source.getAttribute(ModuleDependencyAnnotation_AnnotationLink.MODULE_DEPENDENCY_ANNOTATION);
+    return (ModuleDependency) source.getAttribute(ModuleDependencyAnnotation_AnnotationLink.MODULE_DEPENDENCY_ANNOTATION);
   }
 }

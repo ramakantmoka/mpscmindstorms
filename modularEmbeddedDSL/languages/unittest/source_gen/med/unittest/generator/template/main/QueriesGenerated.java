@@ -13,16 +13,16 @@ import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 
 public class QueriesGenerated {
+  public static Object propertyMacro_GetPropertyValue_2170653993872624338(final IOperationContext operationContext, final PropertyMacroContext _context) {
+    return "  FAILED: " + SPropertyOperations.getString(_context.getNode(), "errorMessage");
+  }
+
   public static Object propertyMacro_GetPropertyValue_306587673258456140(final IOperationContext operationContext, final PropertyMacroContext _context) {
     return "running test: " + SPropertyOperations.getString(_context.getNode(), "name");
   }
 
   public static Object propertyMacro_GetPropertyValue_2005811434197919005(final IOperationContext operationContext, final PropertyMacroContext _context) {
     return Test_Behavior.call_procedureName_5174648333272880650(_context.getNode());
-  }
-
-  public static Object propertyMacro_GetPropertyValue_2170653993872624338(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return "  FAILED: " + SPropertyOperations.getString(_context.getNode(), "errorMessage");
   }
 
   public static Object propertyMacro_GetPropertyValue_5174648333271792774(final IOperationContext operationContext, final PropertyMacroContext _context) {

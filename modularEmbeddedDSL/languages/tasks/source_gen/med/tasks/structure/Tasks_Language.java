@@ -10,6 +10,6 @@ public class Tasks_Language {
   public static ModuleReference MODULE_REFERENCE = ModuleReference.fromString("690fcffe-d4e9-47ba-96cd-723f8e365186(med.tasks)");
 
   public static Language get() {
-    return (Language)MPSModuleRepository.getInstance().getModule(MODULE_REFERENCE);
+    return (Language) MPSModuleRepository.getInstance().getModule(MODULE_REFERENCE);
   }
 }

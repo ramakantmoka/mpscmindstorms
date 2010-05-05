@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:d9a70a06-03b1-45c6-a24b-4c6123a7d823(med.tasks.constraints)">
-  <persistence version="3" />
+  <persistence version="4" />
   <refactoringHistory />
   <language namespace="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1(jetbrains.mps.lang.constraints)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
@@ -31,11 +31,11 @@
   <languageAspect modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" version="9" />
   <maxImportIndex value="1" />
   <visible index="2" modelUID="r:42b86333-3dc2-47b4-b56a-1f8218d3370b(med.tasks.structure)" />
-  <node type="jetbrains.mps.lang.constraints.structure.ConceptConstraints" id="5296414764970026996">
-    <link role="concept" targetNodeId="2v.3454436015655736227" resolveInfo="SleepStatement" />
+  <node type="jetbrains.mps.lang.constraints.structure.ConceptConstraints:8" id="5296414764970026996">
+    <link role="concept:8" targetNodeId="2v.3454436015655736227" resolveInfo="SleepStatement" />
   </node>
-  <node type="jetbrains.mps.lang.constraints.structure.ConceptConstraints" id="7678656588247986075">
-    <link role="concept" targetNodeId="2v.5296414764970022347" resolveInfo="TerminateTaskStatement" />
+  <node type="jetbrains.mps.lang.constraints.structure.ConceptConstraints:8" id="7678656588247986075">
+    <link role="concept:8" targetNodeId="2v.5296414764970022347" resolveInfo="TerminateTaskStatement" />
   </node>
 </model>
 

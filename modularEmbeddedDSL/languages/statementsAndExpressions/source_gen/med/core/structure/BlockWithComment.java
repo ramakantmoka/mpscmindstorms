@@ -25,7 +25,7 @@ public class BlockWithComment extends Statement {
   }
 
   public StatementList getBody() {
-    return (StatementList)this.getChild(StatementList.class, BlockWithComment.BODY);
+    return (StatementList) this.getChild(StatementList.class, BlockWithComment.BODY);
   }
 
   public void setBody(StatementList node) {
@@ -33,7 +33,7 @@ public class BlockWithComment extends Statement {
   }
 
   public static BlockWithComment newInstance(SModel sm, boolean init) {
-    return (BlockWithComment)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.BlockWithComment", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (BlockWithComment) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.BlockWithComment", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static BlockWithComment newInstance(SModel sm) {

@@ -52,7 +52,7 @@ public class ModuleVariableRef extends Expression implements IVariableReference 
   }
 
   public ModuleVariable getVariable() {
-    return (ModuleVariable)this.getReferent(ModuleVariable.class, ModuleVariableRef.VARIABLE);
+    return (ModuleVariable) this.getReferent(ModuleVariable.class, ModuleVariableRef.VARIABLE);
   }
 
   public void setVariable(ModuleVariable node) {
@@ -60,7 +60,7 @@ public class ModuleVariableRef extends Expression implements IVariableReference 
   }
 
   public static ModuleVariableRef newInstance(SModel sm, boolean init) {
-    return (ModuleVariableRef)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ModuleVariableRef", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ModuleVariableRef) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ModuleVariableRef", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ModuleVariableRef newInstance(SModel sm) {

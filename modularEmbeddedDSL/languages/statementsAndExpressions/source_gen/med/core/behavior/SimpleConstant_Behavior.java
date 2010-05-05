@@ -13,10 +13,10 @@ public class SimpleConstant_Behavior {
   }
 
   public static String call_textValue_5196379128666316773(SNode thisNode) {
-    return (String)BehaviorManager.getInstance().invoke(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.SimpleConstant"), "virtual_textValue_5196379128666316773", PARAMETERS_5196379128666316773);
+    return (String) BehaviorManager.getInstance().invoke(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.SimpleConstant"), "virtual_textValue_5196379128666316773", PARAMETERS_5196379128666316773);
   }
 
   public static String callSuper_textValue_5196379128666316773(SNode thisNode, String callerConceptFqName) {
-    return (String)BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.SimpleConstant"), callerConceptFqName, "virtual_textValue_5196379128666316773", PARAMETERS_5196379128666316773);
+    return (String) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.SimpleConstant"), callerConceptFqName, "virtual_textValue_5196379128666316773", PARAMETERS_5196379128666316773);
   }
 }

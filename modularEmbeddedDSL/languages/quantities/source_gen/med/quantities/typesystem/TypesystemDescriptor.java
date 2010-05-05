@@ -11,19 +11,7 @@ import jetbrains.mps.lang.typesystem.runtime.ComparisonRule_Runtime;
 public class TypesystemDescriptor extends BaseHelginsDescriptor {
   public TypesystemDescriptor() {
     {
-      InferenceRule_Runtime inferenceRule = new typeof_QuantityType_InferenceRule();
-      this.myInferenceRules.add(inferenceRule);
-    }
-    {
-      InferenceRule_Runtime inferenceRule = new typeof_MarkAsPhysicalOperator_InferenceRule();
-      this.myInferenceRules.add(inferenceRule);
-    }
-    {
-      InferenceRule_Runtime inferenceRule = new typeof_MarkAsInternalOperator_InferenceRule();
-      this.myInferenceRules.add(inferenceRule);
-    }
-    {
-      InferenceRule_Runtime inferenceRule = new typeof_MarkAsInternalOperator_InferenceRule();
+      InferenceRule_Runtime inferenceRule = new typeof_AveragingAssignmentStatement_InferenceRule();
       this.myInferenceRules.add(inferenceRule);
     }
     {
@@ -31,7 +19,19 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       this.myInferenceRules.add(inferenceRule);
     }
     {
-      InferenceRule_Runtime inferenceRule = new typeof_AveragingAssignmentStatement_InferenceRule();
+      InferenceRule_Runtime inferenceRule = new typeof_MarkAsInternalOperator_InferenceRule();
+      this.myInferenceRules.add(inferenceRule);
+    }
+    {
+      InferenceRule_Runtime inferenceRule = new typeof_MarkAsInternalOperator_InferenceRule();
+      this.myInferenceRules.add(inferenceRule);
+    }
+    {
+      InferenceRule_Runtime inferenceRule = new typeof_MarkAsPhysicalOperator_InferenceRule();
+      this.myInferenceRules.add(inferenceRule);
+    }
+    {
+      InferenceRule_Runtime inferenceRule = new typeof_QuantityType_InferenceRule();
       this.myInferenceRules.add(inferenceRule);
     }
     {
@@ -55,11 +55,11 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       this.mySubtypingRules.add(subtypingRule);
     }
     {
-      ComparisonRule_Runtime comparisonRule = new compareIntAndAvg_ComparisonRule();
+      ComparisonRule_Runtime comparisonRule = new compareAvgAndGenericAvg_ComparisonRule();
       this.myComparisonRules.add(comparisonRule);
     }
     {
-      ComparisonRule_Runtime comparisonRule = new compareAvgAndGenericAvg_ComparisonRule();
+      ComparisonRule_Runtime comparisonRule = new compareIntAndAvg_ComparisonRule();
       this.myComparisonRules.add(comparisonRule);
     }
   }

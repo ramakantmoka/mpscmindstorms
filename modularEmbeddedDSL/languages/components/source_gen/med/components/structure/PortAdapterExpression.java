@@ -17,7 +17,7 @@ public class PortAdapterExpression extends Expression {
   }
 
   public PortAdaptor getPortAdaptor() {
-    return (PortAdaptor)this.getReferent(PortAdaptor.class, PortAdapterExpression.PORT_ADAPTOR);
+    return (PortAdaptor) this.getReferent(PortAdaptor.class, PortAdapterExpression.PORT_ADAPTOR);
   }
 
   public void setPortAdaptor(PortAdaptor node) {
@@ -25,7 +25,7 @@ public class PortAdapterExpression extends Expression {
   }
 
   public static PortAdapterExpression newInstance(SModel sm, boolean init) {
-    return (PortAdapterExpression)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.PortAdapterExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (PortAdapterExpression) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.PortAdapterExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static PortAdapterExpression newInstance(SModel sm) {

@@ -42,7 +42,7 @@ public class UInt64 extends Type implements IStdInt {
   }
 
   public static UInt64 newInstance(SModel sm, boolean init) {
-    return (UInt64)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.UInt64", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (UInt64) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.UInt64", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static UInt64 newInstance(SModel sm) {

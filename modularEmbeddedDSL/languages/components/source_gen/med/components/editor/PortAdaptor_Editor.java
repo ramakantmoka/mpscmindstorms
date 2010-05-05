@@ -12,52 +12,52 @@ import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
 import jetbrains.mps.nodeEditor.style.Style;
 import jetbrains.mps.nodeEditor.style.StyleAttributes;
 import java.awt.Color;
-import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
 
 public class PortAdaptor_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_1816_0(editorContext, node);
+    return this.createCollection_hk7op0_a(editorContext, node);
   }
 
-  private EditorCell createCollection_1816_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_hk7op0_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_1816_0");
-    editorCell.addEditorCell(this.createConstant_1816_0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_1816_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_1816_1(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_1816_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_1816_2(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_1816_0(editorContext, node));
+    editorCell.setCellId("Collection_hk7op0_a");
+    editorCell.addEditorCell(this.createConstant_hk7op0_a0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_hk7op0_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_hk7op0_c0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_hk7op0_d0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_hk7op0_e0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_hk7op0_f0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_1816_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_hk7op0_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "port adaptor");
-    editorCell.setCellId("Constant_1816_0");
+    editorCell.setCellId("Constant_hk7op0_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_1816_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_hk7op0_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_1816_1");
+    editorCell.setCellId("Constant_hk7op0_c0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_1816_2(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_hk7op0_e0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_1816_2");
+    editorCell.setCellId("Constant_hk7op0_e0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createProperty_1816_0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_hk7op0_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("name");
     provider.setNoTargetText("<no name>");
@@ -75,29 +75,7 @@ public class PortAdaptor_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefCell_1816_0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("interface");
-    provider.setNoTargetText("<no interface>");
-    EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new PortAdaptor_Editor._Inline1816_0());
-    editorCell = provider.createEditorCell(editorContext);
-    {
-      Style style = editorCell.getStyle();
-      style.set(StyleAttributes.BACKGROUND_COLOR, new Color(16777143));
-    }
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    Class attributeKind = provider.getRoleAttributeClass();
-    if (attributeConcept != null) {
-      IOperationContext opContext = editorContext.getOperationContext();
-      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
-      return manager.createRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
-    } else
-    return editorCell;
-  }
-
-  private EditorCell createRefNode_1816_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_hk7op0_f0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("descriptor");
     provider.setNoTargetText("<no descriptor>");
@@ -114,8 +92,30 @@ public class PortAdaptor_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  public static class _Inline1816_0 extends InlineCellProvider {
-    public _Inline1816_0() {
+  private EditorCell createRefCell_hk7op0_d0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
+    provider.setRole("interface");
+    provider.setNoTargetText("<no interface>");
+    EditorCell editorCell;
+    provider.setAuxiliaryCellProvider(new PortAdaptor_Editor._Inline_hk7op0_a3a());
+    editorCell = provider.createEditorCell(editorContext);
+    {
+      Style style = editorCell.getStyle();
+      style.set(StyleAttributes.BACKGROUND_COLOR, new Color(16777143));
+    }
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      IOperationContext opContext = editorContext.getOperationContext();
+      EditorManager manager = EditorManager.getInstanceFromContext(opContext);
+      return manager.createRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
+    return editorCell;
+  }
+
+  public static class _Inline_hk7op0_a3a extends InlineCellProvider {
+    public _Inline_hk7op0_a3a() {
       super();
     }
 
@@ -124,10 +124,10 @@ public class PortAdaptor_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_1816_1(editorContext, node);
+      return this.createProperty_hk7op0_a0d0(editorContext, node);
     }
 
-    private EditorCell createProperty_1816_1(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_hk7op0_a0d0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");

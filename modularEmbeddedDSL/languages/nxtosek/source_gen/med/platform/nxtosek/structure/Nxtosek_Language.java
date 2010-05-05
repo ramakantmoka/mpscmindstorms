@@ -10,6 +10,6 @@ public class Nxtosek_Language {
   public static ModuleReference MODULE_REFERENCE = ModuleReference.fromString("150e33c6-372a-4396-b4cc-1c334fb3f438(med.platform.nxtosek)");
 
   public static Language get() {
-    return (Language)MPSModuleRepository.getInstance().getModule(MODULE_REFERENCE);
+    return (Language) MPSModuleRepository.getInstance().getModule(MODULE_REFERENCE);
   }
 }

@@ -60,7 +60,7 @@ public class SimpleConstant extends MedBase implements IHasIdentifierName, IExpo
   }
 
   public static SimpleConstant newInstance(SModel sm, boolean init) {
-    return (SimpleConstant)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.SimpleConstant", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (SimpleConstant) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.SimpleConstant", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static SimpleConstant newInstance(SModel sm) {

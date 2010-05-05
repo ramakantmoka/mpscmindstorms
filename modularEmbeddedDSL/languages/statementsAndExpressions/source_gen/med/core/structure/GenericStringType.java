@@ -15,7 +15,7 @@ public class GenericStringType extends Type {
   }
 
   public static GenericStringType newInstance(SModel sm, boolean init) {
-    return (GenericStringType)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.GenericStringType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (GenericStringType) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.GenericStringType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static GenericStringType newInstance(SModel sm) {

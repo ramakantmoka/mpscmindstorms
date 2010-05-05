@@ -17,7 +17,7 @@ public class RequiredPortExpression extends Expression {
   }
 
   public RequiredPort getPort() {
-    return (RequiredPort)this.getReferent(RequiredPort.class, RequiredPortExpression.PORT);
+    return (RequiredPort) this.getReferent(RequiredPort.class, RequiredPortExpression.PORT);
   }
 
   public void setPort(RequiredPort node) {
@@ -25,7 +25,7 @@ public class RequiredPortExpression extends Expression {
   }
 
   public static RequiredPortExpression newInstance(SModel sm, boolean init) {
-    return (RequiredPortExpression)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.RequiredPortExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (RequiredPortExpression) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.RequiredPortExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static RequiredPortExpression newInstance(SModel sm) {

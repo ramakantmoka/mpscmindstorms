@@ -17,7 +17,7 @@ public class MessageTrigger extends Trigger {
   }
 
   public Message getMessage() {
-    return (Message)this.getReferent(Message.class, MessageTrigger.MESSAGE);
+    return (Message) this.getReferent(Message.class, MessageTrigger.MESSAGE);
   }
 
   public void setMessage(Message node) {
@@ -25,7 +25,7 @@ public class MessageTrigger extends Trigger {
   }
 
   public static MessageTrigger newInstance(SModel sm, boolean init) {
-    return (MessageTrigger)SModelUtil_new.instantiateConceptDeclaration("med.messagecomponents.structure.MessageTrigger", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (MessageTrigger) SModelUtil_new.instantiateConceptDeclaration("med.messagecomponents.structure.MessageTrigger", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static MessageTrigger newInstance(SModel sm) {

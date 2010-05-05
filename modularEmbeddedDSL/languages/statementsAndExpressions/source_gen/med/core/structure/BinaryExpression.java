@@ -17,7 +17,7 @@ public class BinaryExpression extends Expression {
   }
 
   public Expression getLeft() {
-    return (Expression)this.getChild(Expression.class, BinaryExpression.LEFT);
+    return (Expression) this.getChild(Expression.class, BinaryExpression.LEFT);
   }
 
   public void setLeft(Expression node) {
@@ -25,7 +25,7 @@ public class BinaryExpression extends Expression {
   }
 
   public Expression getRight() {
-    return (Expression)this.getChild(Expression.class, BinaryExpression.RIGHT);
+    return (Expression) this.getChild(Expression.class, BinaryExpression.RIGHT);
   }
 
   public void setRight(Expression node) {
@@ -33,7 +33,7 @@ public class BinaryExpression extends Expression {
   }
 
   public static BinaryExpression newInstance(SModel sm, boolean init) {
-    return (BinaryExpression)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.BinaryExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (BinaryExpression) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.BinaryExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static BinaryExpression newInstance(SModel sm) {

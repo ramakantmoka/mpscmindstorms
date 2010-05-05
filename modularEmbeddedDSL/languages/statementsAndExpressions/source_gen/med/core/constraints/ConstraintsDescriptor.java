@@ -13,12 +13,12 @@ public class ConstraintsDescriptor implements IModelConstraints {
 
   public ConstraintsDescriptor() {
     ListSequence.fromList(this.myConstraints).addElement(new IHasIdentifierName_name_PropertyConstraint());
-    ListSequence.fromList(this.myConstraints).addElement(new ProcedureCall_procedure_ReferentConstraint());
-    ListSequence.fromList(this.myConstraints).addElement(new StructType_struct_ReferentConstraint());
-    ListSequence.fromList(this.myConstraints).addElement(new ParameterReference_parameter_ReferentConstraint());
-    ListSequence.fromList(this.myConstraints).addElement(new ModuleImport_importedModule_ReferentConstraint());
     ListSequence.fromList(this.myConstraints).addElement(new LocalVariableReference_variable_ReferentConstraint());
     ListSequence.fromList(this.myConstraints).addElement(new StructAttributeReference_attribute_ReferentConstraint());
+    ListSequence.fromList(this.myConstraints).addElement(new StructType_struct_ReferentConstraint());
+    ListSequence.fromList(this.myConstraints).addElement(new ParameterReference_parameter_ReferentConstraint());
+    ListSequence.fromList(this.myConstraints).addElement(new ProcedureCall_procedure_ReferentConstraint());
+    ListSequence.fromList(this.myConstraints).addElement(new ModuleImport_importedModule_ReferentConstraint());
     ListSequence.fromList(this.myConstraints).addElement(new EnumLiteralRef_literal_ReferentConstraint());
   }
 

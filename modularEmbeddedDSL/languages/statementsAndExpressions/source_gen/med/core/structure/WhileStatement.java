@@ -17,7 +17,7 @@ public class WhileStatement extends Statement {
   }
 
   public Expression getCondition() {
-    return (Expression)this.getChild(Expression.class, WhileStatement.CONDITION);
+    return (Expression) this.getChild(Expression.class, WhileStatement.CONDITION);
   }
 
   public void setCondition(Expression node) {
@@ -25,7 +25,7 @@ public class WhileStatement extends Statement {
   }
 
   public StatementList getBody() {
-    return (StatementList)this.getChild(StatementList.class, WhileStatement.BODY);
+    return (StatementList) this.getChild(StatementList.class, WhileStatement.BODY);
   }
 
   public void setBody(StatementList node) {
@@ -33,7 +33,7 @@ public class WhileStatement extends Statement {
   }
 
   public static WhileStatement newInstance(SModel sm, boolean init) {
-    return (WhileStatement)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.WhileStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (WhileStatement) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.WhileStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static WhileStatement newInstance(SModel sm) {

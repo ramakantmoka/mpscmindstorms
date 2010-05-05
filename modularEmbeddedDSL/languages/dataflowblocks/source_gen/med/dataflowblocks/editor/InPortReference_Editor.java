@@ -16,22 +16,22 @@ import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 
 public class InPortReference_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_4009_0(editorContext, node);
+    return this.createCollection_rz7scj_a(editorContext, node);
   }
 
-  private EditorCell createCollection_4009_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_rz7scj_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_4009_0");
-    editorCell.addEditorCell(this.createRefCell_4009_0(editorContext, node));
+    editorCell.setCellId("Collection_rz7scj_a");
+    editorCell.addEditorCell(this.createRefCell_rz7scj_a0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createRefCell_4009_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_rz7scj_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("port");
     provider.setNoTargetText("<no port>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new InPortReference_Editor._Inline4009_0());
+    provider.setAuxiliaryCellProvider(new InPortReference_Editor._Inline_rz7scj_a0a());
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -44,8 +44,8 @@ public class InPortReference_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  public static class _Inline4009_0 extends InlineCellProvider {
-    public _Inline4009_0() {
+  public static class _Inline_rz7scj_a0a extends InlineCellProvider {
+    public _Inline_rz7scj_a0a() {
       super();
     }
 
@@ -54,10 +54,10 @@ public class InPortReference_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_4009_0(editorContext, node);
+      return this.createProperty_rz7scj_a0a0(editorContext, node);
     }
 
-    private EditorCell createProperty_4009_0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_rz7scj_a0a0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");

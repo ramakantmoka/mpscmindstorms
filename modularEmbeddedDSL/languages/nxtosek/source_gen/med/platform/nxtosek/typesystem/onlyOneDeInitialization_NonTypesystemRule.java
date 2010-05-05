@@ -13,6 +13,7 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.intentions.BaseIntentionProvider;
 import jetbrains.mps.typesystem.inference.IErrorTarget;
 import jetbrains.mps.typesystem.inference.NodeErrorTarget;
+import jetbrains.mps.nodeEditor.IErrorReporter;
 import jetbrains.mps.smodel.SModelUtil_new;
 
 public class onlyOneDeInitialization_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
@@ -28,7 +29,7 @@ public class onlyOneDeInitialization_NonTypesystemRule extends AbstractNonTypesy
       {
         BaseIntentionProvider intentionProvider = null;
         IErrorTarget errorTarget = new NodeErrorTarget();
-        typeCheckingContext.reportTypeError(deviceDeInitialization, "you can only have one device de-init block", "r:c64ff1ad-ad70-4867-aac9-5f684394a1b1(med.platform.nxtosek.typesystem)", "1265321504638418346", intentionProvider, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(deviceDeInitialization, "you can only have one device de-init block", "r:c64ff1ad-ad70-4867-aac9-5f684394a1b1(med.platform.nxtosek.typesystem)", "1265321504638418346", intentionProvider, errorTarget);
       }
     }
   }

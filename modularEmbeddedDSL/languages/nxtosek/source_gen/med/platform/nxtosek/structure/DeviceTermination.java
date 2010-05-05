@@ -46,7 +46,7 @@ public class DeviceTermination extends MedBase implements IModuleContent {
   }
 
   public StatementList getBody() {
-    return (StatementList)this.getChild(StatementList.class, DeviceTermination.BODY);
+    return (StatementList) this.getChild(StatementList.class, DeviceTermination.BODY);
   }
 
   public void setBody(StatementList node) {
@@ -54,7 +54,7 @@ public class DeviceTermination extends MedBase implements IModuleContent {
   }
 
   public static DeviceTermination newInstance(SModel sm, boolean init) {
-    return (DeviceTermination)SModelUtil_new.instantiateConceptDeclaration("med.platform.nxtosek.structure.DeviceTermination", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (DeviceTermination) SModelUtil_new.instantiateConceptDeclaration("med.platform.nxtosek.structure.DeviceTermination", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static DeviceTermination newInstance(SModel sm) {

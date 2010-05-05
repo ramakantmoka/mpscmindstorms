@@ -16,7 +16,7 @@ public class ReturnStatement extends Statement {
   }
 
   public Expression getExpr() {
-    return (Expression)this.getChild(Expression.class, ReturnStatement.EXPR);
+    return (Expression) this.getChild(Expression.class, ReturnStatement.EXPR);
   }
 
   public void setExpr(Expression node) {
@@ -24,7 +24,7 @@ public class ReturnStatement extends Statement {
   }
 
   public static ReturnStatement newInstance(SModel sm, boolean init) {
-    return (ReturnStatement)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ReturnStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ReturnStatement) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ReturnStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ReturnStatement newInstance(SModel sm) {

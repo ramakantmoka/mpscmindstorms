@@ -15,33 +15,33 @@ import jetbrains.mps.nodeEditor.EditorManager;
 
 public class SchedulingPolicyKeepAliveInBackground_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_7767_0(editorContext, node);
+    return this.createCollection_2puvzf_a(editorContext, node);
   }
 
-  private EditorCell createCollection_7767_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_2puvzf_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_7767_0");
-    editorCell.addEditorCell(this.createConstant_7767_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_7767_1(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_7767_0(editorContext, node));
+    editorCell.setCellId("Collection_2puvzf_a");
+    editorCell.addEditorCell(this.createConstant_2puvzf_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_2puvzf_b0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_2puvzf_c0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_7767_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_2puvzf_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "background");
-    editorCell.setCellId("Constant_7767_0");
+    editorCell.setCellId("Constant_2puvzf_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_7767_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_2puvzf_b0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "prio =");
-    editorCell.setCellId("Constant_7767_1");
+    editorCell.setCellId("Constant_2puvzf_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createProperty_7767_0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_2puvzf_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("priority");
     provider.setNoTargetText("<no priority>");

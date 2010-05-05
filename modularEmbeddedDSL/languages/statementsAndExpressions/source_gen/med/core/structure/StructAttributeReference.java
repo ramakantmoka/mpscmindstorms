@@ -53,7 +53,7 @@ public class StructAttributeReference extends Expression implements ILValue {
   }
 
   public StructAttribute getAttribute() {
-    return (StructAttribute)this.getReferent(StructAttribute.class, StructAttributeReference.ATTRIBUTE);
+    return (StructAttribute) this.getReferent(StructAttribute.class, StructAttributeReference.ATTRIBUTE);
   }
 
   public void setAttribute(StructAttribute node) {
@@ -61,7 +61,7 @@ public class StructAttributeReference extends Expression implements ILValue {
   }
 
   public Expression getVariable() {
-    return (Expression)this.getChild(Expression.class, StructAttributeReference.VARIABLE);
+    return (Expression) this.getChild(Expression.class, StructAttributeReference.VARIABLE);
   }
 
   public void setVariable(Expression node) {
@@ -69,7 +69,7 @@ public class StructAttributeReference extends Expression implements ILValue {
   }
 
   public static StructAttributeReference newInstance(SModel sm, boolean init) {
-    return (StructAttributeReference)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.StructAttributeReference", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (StructAttributeReference) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.StructAttributeReference", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static StructAttributeReference newInstance(SModel sm) {

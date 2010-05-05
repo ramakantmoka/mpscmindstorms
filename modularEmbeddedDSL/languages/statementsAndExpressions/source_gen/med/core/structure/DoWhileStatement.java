@@ -17,7 +17,7 @@ public class DoWhileStatement extends Statement {
   }
 
   public Expression getCondition() {
-    return (Expression)this.getChild(Expression.class, DoWhileStatement.CONDITION);
+    return (Expression) this.getChild(Expression.class, DoWhileStatement.CONDITION);
   }
 
   public void setCondition(Expression node) {
@@ -25,7 +25,7 @@ public class DoWhileStatement extends Statement {
   }
 
   public StatementList getBody() {
-    return (StatementList)this.getChild(StatementList.class, DoWhileStatement.BODY);
+    return (StatementList) this.getChild(StatementList.class, DoWhileStatement.BODY);
   }
 
   public void setBody(StatementList node) {
@@ -33,7 +33,7 @@ public class DoWhileStatement extends Statement {
   }
 
   public static DoWhileStatement newInstance(SModel sm, boolean init) {
-    return (DoWhileStatement)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.DoWhileStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (DoWhileStatement) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.DoWhileStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static DoWhileStatement newInstance(SModel sm) {

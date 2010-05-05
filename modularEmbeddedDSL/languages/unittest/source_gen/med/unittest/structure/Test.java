@@ -75,7 +75,7 @@ public class Test extends MedBase implements IExportableModuleContent, IHasIdent
   }
 
   public StatementList getBody() {
-    return (StatementList)this.getChild(StatementList.class, Test.BODY);
+    return (StatementList) this.getChild(StatementList.class, Test.BODY);
   }
 
   public void setBody(StatementList node) {
@@ -83,7 +83,7 @@ public class Test extends MedBase implements IExportableModuleContent, IHasIdent
   }
 
   public static Test newInstance(SModel sm, boolean init) {
-    return (Test)SModelUtil_new.instantiateConceptDeclaration("med.unittest.structure.Test", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Test) SModelUtil_new.instantiateConceptDeclaration("med.unittest.structure.Test", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Test newInstance(SModel sm) {

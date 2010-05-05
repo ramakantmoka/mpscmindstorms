@@ -8,6 +8,7 @@ import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.intentions.BaseIntentionProvider;
+import jetbrains.mps.typesystem.inference.EquationInfo;
 import jetbrains.mps.smodel.SModelUtil_new;
 
 public class typeof_OutputSendStatement_InferenceRule extends AbstractInferenceRule_Runtime implements InferenceRule_Runtime {
@@ -18,7 +19,8 @@ public class typeof_OutputSendStatement_InferenceRule extends AbstractInferenceR
     {
       SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(statement, "outport", false);
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createComparableEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:aa7dbd35-4c4a-4916-a7ca-d4a2b8dcbf31(med.dataflowblocks.typesystem)", "5223430962848467517", true), (SNode)typeCheckingContext.typeOf(SLinkOperations.getTarget(statement, "expr", true), "r:aa7dbd35-4c4a-4916-a7ca-d4a2b8dcbf31(med.dataflowblocks.typesystem)", "5223430962848467530", true), _nodeToCheck_1029348928467, null, "r:aa7dbd35-4c4a-4916-a7ca-d4a2b8dcbf31(med.dataflowblocks.typesystem)", "5223430962848467525", intentionProvider);
+      EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:aa7dbd35-4c4a-4916-a7ca-d4a2b8dcbf31(med.dataflowblocks.typesystem)", "5223430962848467525", 0, intentionProvider);
+      typeCheckingContext.createComparableEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:aa7dbd35-4c4a-4916-a7ca-d4a2b8dcbf31(med.dataflowblocks.typesystem)", "5223430962848467517", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(statement, "expr", true), "r:aa7dbd35-4c4a-4916-a7ca-d4a2b8dcbf31(med.dataflowblocks.typesystem)", "5223430962848467530", true), _info_12389875345);
     }
   }
 

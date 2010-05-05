@@ -56,7 +56,7 @@ public class Block extends AbstractBlock implements INamedConcept {
   }
 
   public BlockType getPorttype() {
-    return (BlockType)this.getReferent(BlockType.class, Block.PORTTYPE);
+    return (BlockType) this.getReferent(BlockType.class, Block.PORTTYPE);
   }
 
   public void setPorttype(BlockType node) {
@@ -84,7 +84,7 @@ public class Block extends AbstractBlock implements INamedConcept {
   }
 
   public static Block newInstance(SModel sm, boolean init) {
-    return (Block)SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.Block", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Block) SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.Block", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Block newInstance(SModel sm) {

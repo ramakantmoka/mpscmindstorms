@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:b1d22bba-9010-4bcc-a352-840128e2ba1b(twmain)">
-  <persistence version="3" />
+  <persistence version="4" />
   <refactoringHistory />
   <language namespace="810301f2-7f68-47b8-9a00-f2bc361d82c4(ds.twowheel)" />
   <language namespace="50b44c57-34f1-428d-a7c3-d100606f8e2a(med.features)" />
@@ -14,150 +14,143 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.lang.core.constraints)" version="2" />
   <languageAspect modelUID="r:348a1356-437b-49fe-80d1-3c4453a73611(ds.twowheel.structure)" version="1" />
-  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="4" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959028c(jetbrains.mps.lang.structure.constraints)" version="11" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" />
+  <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="4" />
   <language-engaged-on-generation namespace="150e33c6-372a-4396-b4cc-1c334fb3f438(med.platform.nxtosek)" />
   <devkit namespace="a891e14a-a3d6-466e-8364-4e1b14cbaa06(ModularEmbeddedDSL)" />
   <maxImportIndex value="0" />
-  <node type="med.core.structure.Resource" id="6556431234482938465">
-    <property name="name" value="twmain" />
-    <node role="projectionLevels" type="med.core.structure.ProjectionLevelAll" id="6556431234482938466" />
-    <node role="projectionLevels" type="med.core.structure.ProjectionLevelOutline" id="6556431234482938467" />
-    <node role="projectionLevels" type="med.core.structure.ProjectionLevelArchitecture" id="6556431234482938468" />
-    <node role="modules" type="med.core.structure.ImplementationModule" id="6556431234482938469">
-      <property name="name" value="impl" />
-      <node role="contents" type="med.core.structure.Procedure" id="5231257431512335630">
-        <property name="name" value="speed" />
-        <node role="parameters" type="med.core.structure.ProcedureParameter" id="5231257431512335635">
-          <property name="name" value="val" />
-          <node role="type" type="med.core.structure.GenericIntegerType" id="5231257431512335637" />
+  <node type="med.core.structure.Resource:9" id="6556431234482938465">
+    <property name="name:9" value="twmain" />
+    <node role="projectionLevels:9" type="med.core.structure.ProjectionLevelAll:9" id="6556431234482938466" />
+    <node role="projectionLevels:9" type="med.core.structure.ProjectionLevelOutline:9" id="6556431234482938467" />
+    <node role="projectionLevels:9" type="med.core.structure.ProjectionLevelArchitecture:9" id="6556431234482938468" />
+    <node role="modules:9" type="med.core.structure.ImplementationModule:9" id="6556431234482938469">
+      <property name="name:9" value="impl" />
+      <node role="contents:9" type="med.core.structure.Procedure:9" id="5231257431512335630">
+        <property name="name:9" value="speed" />
+        <node role="parameters:9" type="med.core.structure.ProcedureParameter:9" id="5231257431512335635">
+          <property name="name:9" value="val" />
+          <node role="type:9" type="med.core.structure.GenericIntegerType:9" id="5231257431512335637" />
         </node>
-        <node role="body" type="med.core.structure.StatementList" id="5231257431512335631">
-          <node role="statements" type="med.core.structure.ReturnStatement" id="5231257431512335634">
-            <node role="expr" type="med.core.structure.MultiplicationExpression" id="5231257431512335639">
-              <node role="left" type="med.core.structure.IntConstantExpression" id="5231257431512335638">
-                <property name="value" value="2" />
+        <node role="body:9" type="med.core.structure.StatementList:9" id="5231257431512335631">
+          <node role="statements:9" type="med.core.structure.ReturnStatement:9" id="5231257431512335634">
+            <node role="expr:9" type="med.core.structure.MultiplicationExpression:9" id="5231257431512335639">
+              <node role="left:9" type="med.core.structure.IntConstantExpression:9" id="5231257431512335638">
+                <property name="value:9" value="2" />
               </node>
-              <node role="right" type="med.core.structure.ParameterReference" id="5231257431512335643">
-                <link role="parameter" targetNodeId="5231257431512335635" resolveInfo="val" />
+              <node role="right:9" type="med.core.structure.ParameterReference:9" id="5231257431512335643">
+                <link role="parameter:9" targetNodeId="5231257431512335635" resolveInfo="val" />
               </node>
             </node>
           </node>
         </node>
-        <node role="type" type="med.core.structure.GenericIntegerType" id="5231257431512335633" />
+        <node role="type:9" type="med.core.structure.GenericIntegerType:9" id="5231257431512335633" />
       </node>
-      <node role="contents" type="ds.twowheel.structure.RobotScript" id="6556431234482938470">
-        <property name="name" value="stopAndGo" />
-        <node role="statements" type="ds.twowheel.structure.BlockStatement" id="6177678091395694216">
-          <property name="name" value="main" />
-          <node role="statements" type="ds.twowheel.structure.AccelerateStatement" id="6177678091395694217">
-            <node role="time" type="med.core.structure.IntConstantExpression" id="6177678091395694218">
-              <property name="value" value="3000" />
+      <node role="contents:9" type="ds.twowheel.structure.RobotScript:1" id="6556431234482938470">
+        <property name="name:1" value="stopAndGo" />
+        <node role="statements:1" type="ds.twowheel.structure.BlockStatement:1" id="6177678091395694216">
+          <property name="name:1" value="main" />
+          <node role="statements:1" type="ds.twowheel.structure.AccelerateStatement:1" id="6177678091395694217">
+            <node role="time:1" type="med.core.structure.IntConstantExpression:9" id="6177678091395694218">
+              <property name="value:9" value="3000" />
             </node>
-            <node role="speed" type="med.core.structure.PlusExpression" id="715248129724948012">
-              <node role="left" type="med.core.structure.IntConstantExpression" id="715248129724948011">
-                <property name="value" value="1" />
+            <node role="speed:1" type="med.core.structure.PlusExpression:9" id="684445375798122724">
+              <node role="left:9" type="med.core.structure.IntConstantExpression:9" id="684445375798122723">
+                <property name="value:9" value="12" />
               </node>
-              <node role="right" type="med.core.structure.ProcedureCall" id="715248129724948017">
-                <link role="procedure" targetNodeId="5231257431512335630" resolveInfo="speed" />
-                <node role="actuals" type="med.core.structure.IntConstantExpression" id="715248129724948019">
-                  <property name="value" value="24" />
+              <node role="right:9" type="med.core.structure.ProcedureCall:9" id="684445375798122728">
+                <link role="procedure:9" targetNodeId="5231257431512335630" resolveInfo="speed" />
+                <node role="actuals:9" type="med.core.structure.IntConstantExpression:9" id="684445375798122730">
+                  <property name="value:9" value="12" />
                 </node>
               </node>
             </node>
           </node>
-          <node role="statements" type="ds.twowheel.structure.BlockStatement" id="8949829907856211053">
-            <property name="name" value="newBlock" />
-            <node role="statements" type="ds.twowheel.structure.TurnAround" id="8949829907856211038">
-              <node role="time" type="med.core.structure.IntConstantExpression" id="8949829907856211039">
-                <property name="value" value="2000" />
+          <node role="statements:1" type="ds.twowheel.structure.TurnAround:1" id="684445375798122731">
+            <node role="time:1" type="med.core.structure.IntConstantExpression:9" id="684445375798122732">
+              <property name="value:9" value="2000" />
+            </node>
+          </node>
+          <node role="statements:1" type="ds.twowheel.structure.BlockStatement:1" id="3919193983092765009">
+            <property name="name:1" value="newBlock" />
+            <node role="statements:1" type="ds.twowheel.structure.DriveOnStatement:1" id="3919193983092765005">
+              <node role="time:1" type="med.core.structure.IntConstantExpression:9" id="3919193983092765006">
+                <property name="value:9" value="2000" />
               </node>
             </node>
-            <node role="statements" type="ds.twowheel.structure.TurnLeftStatement" id="8949829907856211036">
-              <node role="time" type="med.core.structure.IntConstantExpression" id="8949829907856211037">
-                <property name="value" value="200" />
+            <node role="statements:1" type="ds.twowheel.structure.TurnLeftStatement:1" id="3919193983092765007">
+              <node role="time:1" type="med.core.structure.IntConstantExpression:9" id="3919193983092765008">
+                <property name="value:9" value="200" />
               </node>
             </node>
-            <node role="bumpReaction" type="ds.twowheel.structure.StopStatement" id="8949829907856211058">
-              <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="5224308508845794823">
-                <property name="isNew" value="true" />
-                <node role="expression" type="med.features.structure.AtomicFE" id="5224308508845794825">
-                  <link role="feature" targetNodeId="5296414764969462393" resolveInfo="reactOnBump" />
+            <node role="bumpReaction:1" type="ds.twowheel.structure.StopStatement:1" id="3919193983092765011" />
+          </node>
+          <node role="statements:1" type="ds.twowheel.structure.BlockStatement:1" id="6177678091395694225">
+            <property name="name:1" value="driveMore" />
+            <node role="statements:1" type="ds.twowheel.structure.AccelerateStatement:1" id="6177678091395694226">
+              <node role="speed:1" type="med.core.structure.IntConstantExpression:9" id="6177678091395694227">
+                <property name="value:9" value="80" />
+              </node>
+              <node role="time:1" type="med.core.structure.IntConstantExpression:9" id="6177678091395694228">
+                <property name="value:9" value="2000" />
+              </node>
+            </node>
+            <node role="statements:1" type="ds.twowheel.structure.TurnRightStatement:1" id="6177678091395694229">
+              <node role="time:1" type="med.core.structure.IntConstantExpression:9" id="6177678091395694230">
+                <property name="value:9" value="3000" />
+              </node>
+            </node>
+            <node role="featureDependencyAnnotation$attribute:1" type="med.features.structure.FeatureClause:4" id="6177678091395694231">
+              <property name="isNew:4" value="false" />
+              <node role="expression:4" type="med.features.structure.AtomicFE:4" id="6177678091395694232">
+                <link role="feature:4" targetNodeId="6177678091393977967" resolveInfo="long" />
+              </node>
+            </node>
+          </node>
+          <node role="statements:1" type="ds.twowheel.structure.DecelerateStatement:1" id="6177678091395694233">
+            <node role="time:1" type="med.core.structure.IntConstantExpression:9" id="6177678091395694234">
+              <property name="value:9" value="3000" />
+            </node>
+            <node role="speed:1" type="med.core.structure.IntConstantExpression:9" id="6177678091395694235">
+              <property name="value:9" value="0" />
+            </node>
+          </node>
+          <node role="statements:1" type="ds.twowheel.structure.StopStatement:1" id="6177678091395694236" />
+          <node role="bumpReaction:1" type="ds.twowheel.structure.BlockStatement:1" id="5296414764969458060">
+            <property name="name:1" value="retreat" />
+            <node role="statements:1" type="ds.twowheel.structure.StopStatement:1" id="5296414764969782429" />
+            <node role="statements:1" type="ds.twowheel.structure.AccelerateStatement:1" id="5296414764969458061">
+              <node role="speed:1" type="med.core.structure.MinusExpression:9" id="5296414764969458062">
+                <node role="left:9" type="med.core.structure.IntConstantExpression:9" id="5296414764969458063">
+                  <property name="value:9" value="0" />
+                </node>
+                <node role="right:9" type="med.core.structure.IntConstantExpression:9" id="5296414764969458064">
+                  <property name="value:9" value="30" />
                 </node>
               </node>
-            </node>
-          </node>
-          <node role="statements" type="ds.twowheel.structure.DriveOnStatement" id="8949829907856211040">
-            <node role="time" type="med.core.structure.IntConstantExpression" id="8949829907856211041">
-              <property name="value" value="2000" />
-            </node>
-          </node>
-          <node role="statements" type="ds.twowheel.structure.BlockStatement" id="6177678091395694225">
-            <property name="name" value="driveMore" />
-            <node role="statements" type="ds.twowheel.structure.AccelerateStatement" id="6177678091395694226">
-              <node role="speed" type="med.core.structure.IntConstantExpression" id="6177678091395694227">
-                <property name="value" value="80" />
-              </node>
-              <node role="time" type="med.core.structure.IntConstantExpression" id="6177678091395694228">
-                <property name="value" value="2000" />
+              <node role="time:1" type="med.core.structure.IntConstantExpression:9" id="5296414764969458065">
+                <property name="value:9" value="2000" />
               </node>
             </node>
-            <node role="statements" type="ds.twowheel.structure.TurnRightStatement" id="6177678091395694229">
-              <node role="time" type="med.core.structure.IntConstantExpression" id="6177678091395694230">
-                <property name="value" value="3000" />
+            <node role="statements:1" type="ds.twowheel.structure.DriveOnStatement:1" id="5296414764969458070">
+              <node role="time:1" type="med.core.structure.IntConstantExpression:9" id="5296414764969458072">
+                <property name="value:9" value="2000" />
               </node>
             </node>
-            <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="6177678091395694231">
-              <property name="isNew" value="false" />
-              <node role="expression" type="med.features.structure.AtomicFE" id="6177678091395694232">
-                <link role="feature" targetNodeId="6177678091393977967" resolveInfo="long" />
+            <node role="statements:1" type="ds.twowheel.structure.DecelerateStatement:1" id="5296414764969458076">
+              <node role="speed:1" type="med.core.structure.IntConstantExpression:9" id="5296414764969458079">
+                <property name="value:9" value="0" />
+              </node>
+              <node role="time:1" type="med.core.structure.IntConstantExpression:9" id="5296414764969458080">
+                <property name="value:9" value="1000" />
               </node>
             </node>
-          </node>
-          <node role="statements" type="ds.twowheel.structure.DecelerateStatement" id="6177678091395694233">
-            <node role="time" type="med.core.structure.IntConstantExpression" id="6177678091395694234">
-              <property name="value" value="3000" />
-            </node>
-            <node role="speed" type="med.core.structure.IntConstantExpression" id="6177678091395694235">
-              <property name="value" value="0" />
-            </node>
-          </node>
-          <node role="statements" type="ds.twowheel.structure.StopStatement" id="6177678091395694236" />
-          <node role="bumpReaction" type="ds.twowheel.structure.BlockStatement" id="5296414764969458060">
-            <property name="name" value="retreat" />
-            <node role="statements" type="ds.twowheel.structure.StopStatement" id="5296414764969782429" />
-            <node role="statements" type="ds.twowheel.structure.AccelerateStatement" id="5296414764969458061">
-              <node role="speed" type="med.core.structure.MinusExpression" id="5296414764969458062">
-                <node role="left" type="med.core.structure.IntConstantExpression" id="5296414764969458063">
-                  <property name="value" value="0" />
-                </node>
-                <node role="right" type="med.core.structure.IntConstantExpression" id="5296414764969458064">
-                  <property name="value" value="30" />
-                </node>
-              </node>
-              <node role="time" type="med.core.structure.IntConstantExpression" id="5296414764969458065">
-                <property name="value" value="2000" />
-              </node>
-            </node>
-            <node role="statements" type="ds.twowheel.structure.DriveOnStatement" id="5296414764969458070">
-              <node role="time" type="med.core.structure.IntConstantExpression" id="5296414764969458072">
-                <property name="value" value="2000" />
-              </node>
-            </node>
-            <node role="statements" type="ds.twowheel.structure.DecelerateStatement" id="5296414764969458076">
-              <node role="speed" type="med.core.structure.IntConstantExpression" id="5296414764969458079">
-                <property name="value" value="0" />
-              </node>
-              <node role="time" type="med.core.structure.IntConstantExpression" id="5296414764969458080">
-                <property name="value" value="1000" />
-              </node>
-            </node>
-            <node role="statements" type="ds.twowheel.structure.StopStatement" id="5296414764969458074" />
-            <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause" id="5296414764969462394">
-              <property name="isNew" value="false" />
-              <node role="expression" type="med.features.structure.AtomicFE" id="5296414764969462396">
-                <link role="feature" targetNodeId="5296414764969462393" resolveInfo="reactOnBump" />
+            <node role="statements:1" type="ds.twowheel.structure.StopStatement:1" id="5296414764969458074" />
+            <node role="featureDependencyAnnotation$attribute:1" type="med.features.structure.FeatureClause:4" id="5296414764969462394">
+              <property name="isNew:4" value="false" />
+              <node role="expression:4" type="med.features.structure.AtomicFE:4" id="5296414764969462396">
+                <link role="feature:4" targetNodeId="5296414764969462393" resolveInfo="reactOnBump" />
               </node>
             </node>
           </node>
@@ -165,35 +158,35 @@
       </node>
     </node>
   </node>
-  <node type="med.core.structure.System" id="5231257431510625541">
-    <property name="name" value="TwoWheel" />
-    <node role="resources" type="med.core.structure.ResourceReference" id="5231257431510625542">
-      <link role="resource" targetNodeId="6556431234482938465" resolveInfo="twmain" />
+  <node type="med.core.structure.System:9" id="5231257431510625541">
+    <property name="name:9" value="TwoWheel" />
+    <node role="resources:9" type="med.core.structure.ResourceReference:9" id="5231257431510625542">
+      <link role="resource:9" targetNodeId="6556431234482938465" resolveInfo="twmain" />
     </node>
   </node>
-  <node type="med.features.structure.FeatureDependencyConfiguration" id="6177678091393977964">
-    <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="6177678091393977967">
-      <property name="name" value="long" />
-      <property name="selected" value="false" />
+  <node type="med.features.structure.FeatureDependencyConfiguration:4" id="6177678091393977964">
+    <node role="features:4" type="med.features.structure.SimpleFeatureDeclaration:4" id="6177678091393977967">
+      <property name="name:4" value="long" />
+      <property name="selected:4" value="false" />
     </node>
-    <node role="features" type="med.features.structure.MacroFeatureDeclaration" id="6177678091393977969">
-      <property name="name" value="short" />
-      <node role="expression" type="med.features.structure.NotFE" id="6177678091393977971">
-        <node role="expr" type="med.features.structure.AtomicFE" id="6177678091393977973">
-          <link role="feature" targetNodeId="6177678091393977967" resolveInfo="long" />
+    <node role="features:4" type="med.features.structure.MacroFeatureDeclaration:4" id="6177678091393977969">
+      <property name="name:4" value="short" />
+      <node role="expression:4" type="med.features.structure.NotFE:4" id="6177678091393977971">
+        <node role="expr:4" type="med.features.structure.AtomicFE:4" id="6177678091393977973">
+          <link role="feature:4" targetNodeId="6177678091393977967" resolveInfo="long" />
         </node>
       </node>
     </node>
-    <node role="features" type="med.features.structure.SimpleFeatureDeclaration" id="5296414764969462393">
-      <property name="name" value="reactOnBump" />
-      <property name="selected" value="false" />
+    <node role="features:4" type="med.features.structure.SimpleFeatureDeclaration:4" id="5296414764969462393">
+      <property name="name:4" value="reactOnBump" />
+      <property name="selected:4" value="false" />
     </node>
-    <node role="backup" type="med.features.structure.VariantDisplayMode" id="8949829907856211046">
-      <property name="removeNonSelectedStuffInEditor" value="true" />
+    <node role="backup:4" type="med.features.structure.VariantDisplayMode:4" id="8949829907856211046">
+      <property name="removeNonSelectedStuffInEditor:4" value="true" />
     </node>
-    <node role="mode" type="med.features.structure.ShowClauseDisplayMode" id="8949829907856211047">
-      <property name="showFeatureClause" value="true" />
-      <property name="highlightFeatureDependentNodes" value="true" />
+    <node role="mode:4" type="med.features.structure.ShowClauseDisplayMode:4" id="8949829907856211047">
+      <property name="showFeatureClause:4" value="true" />
+      <property name="highlightFeatureDependentNodes:4" value="true" />
     </node>
   </node>
 </model>

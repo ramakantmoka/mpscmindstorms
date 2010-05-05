@@ -15,7 +15,7 @@ public class NullExpression extends Expression {
   }
 
   public static NullExpression newInstance(SModel sm, boolean init) {
-    return (NullExpression)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.NullExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (NullExpression) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.NullExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static NullExpression newInstance(SModel sm) {

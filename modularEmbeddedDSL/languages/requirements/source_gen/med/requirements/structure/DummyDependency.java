@@ -17,7 +17,7 @@ public class DummyDependency extends MedBase {
   }
 
   public DummyRequirement getTarget() {
-    return (DummyRequirement)this.getReferent(DummyRequirement.class, DummyDependency.TARGET);
+    return (DummyRequirement) this.getReferent(DummyRequirement.class, DummyDependency.TARGET);
   }
 
   public void setTarget(DummyRequirement node) {
@@ -25,7 +25,7 @@ public class DummyDependency extends MedBase {
   }
 
   public static DummyDependency newInstance(SModel sm, boolean init) {
-    return (DummyDependency)SModelUtil_new.instantiateConceptDeclaration("med.requirements.structure.DummyDependency", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (DummyDependency) SModelUtil_new.instantiateConceptDeclaration("med.requirements.structure.DummyDependency", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static DummyDependency newInstance(SModel sm) {

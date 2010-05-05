@@ -17,7 +17,7 @@ public class RequiredPortType extends Type {
   }
 
   public RequiredPort getPort() {
-    return (RequiredPort)this.getReferent(RequiredPort.class, RequiredPortType.PORT);
+    return (RequiredPort) this.getReferent(RequiredPort.class, RequiredPortType.PORT);
   }
 
   public void setPort(RequiredPort node) {
@@ -25,7 +25,7 @@ public class RequiredPortType extends Type {
   }
 
   public static RequiredPortType newInstance(SModel sm, boolean init) {
-    return (RequiredPortType)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.RequiredPortType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (RequiredPortType) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.RequiredPortType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static RequiredPortType newInstance(SModel sm) {

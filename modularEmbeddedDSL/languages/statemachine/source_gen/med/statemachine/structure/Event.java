@@ -53,7 +53,7 @@ public class Event extends MedBase implements IHasIdentifierName {
   }
 
   public static Event newInstance(SModel sm, boolean init) {
-    return (Event)SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.Event", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Event) SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.Event", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Event newInstance(SModel sm) {

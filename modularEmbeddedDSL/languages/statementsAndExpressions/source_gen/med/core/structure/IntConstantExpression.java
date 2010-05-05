@@ -24,7 +24,7 @@ public class IntConstantExpression extends ConstantExpression {
   }
 
   public static IntConstantExpression newInstance(SModel sm, boolean init) {
-    return (IntConstantExpression)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.IntConstantExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (IntConstantExpression) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.IntConstantExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static IntConstantExpression newInstance(SModel sm) {

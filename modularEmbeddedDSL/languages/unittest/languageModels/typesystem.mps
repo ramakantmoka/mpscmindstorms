@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:0c333457-e43b-4bb7-b0f8-d83406dad1d0(med.unittest.typesystem)">
-  <persistence version="3" />
+  <persistence version="4" />
   <refactoringHistory />
   <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
@@ -29,39 +29,39 @@
   <devkit namespace="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   <maxImportIndex value="1" />
   <import index="1" modelUID="r:bcdfdee6-1ad3-40b7-ba99-27ec6f82380f(med.unittest.structure)" version="-1" />
-  <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule" id="5174648333271380334">
-    <property name="name" value="typeof_AssertEquals" />
-    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="5174648333271380335">
-      <node role="statement" type="jetbrains.mps.lang.typesystem.structure.CreateStrongLessThanInequationStatement" id="5174648333271380347">
-        <node role="rightExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="5174648333271380351">
-          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="5174648333271380352">
-            <node role="term" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5174648333271380355">
-              <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="5174648333271380354">
-                <link role="applicableNode" targetNodeId="5174648333271380336" resolveInfo="equals" />
+  <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule:3" id="5174648333271380334">
+    <property name="name:3" value="typeof_AssertEquals" />
+    <node role="body:3" type="jetbrains.mps.baseLanguage.structure.StatementList:3" id="5174648333271380335">
+      <node role="statement:3" type="jetbrains.mps.lang.typesystem.structure.CreateStrongLessThanInequationStatement:3" id="5174648333271380347">
+        <node role="rightExpression:3" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause:3" id="5174648333271380351">
+          <node role="normalType:3" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression:3" id="5174648333271380352">
+            <node role="term:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="5174648333271380355">
+              <node role="operand:3" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference:3" id="5174648333271380354">
+                <link role="applicableNode:3" targetNodeId="5174648333271380336" resolveInfo="equals" />
               </node>
-              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="5174648333271380359">
-                <link role="link" targetNodeId="1.5174648333271380333" />
+              <node role="operation:3" type="jetbrains.mps.lang.smodel.structure.SLinkAccess:16" id="5174648333271380359">
+                <link role="link:16" targetNodeId="1.5174648333271380333" />
               </node>
             </node>
           </node>
         </node>
-        <node role="leftExpression" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" id="5174648333271380350">
-          <node role="normalType" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression" id="5174648333271380338">
-            <node role="term" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="5174648333271380341">
-              <node role="operand" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" id="5174648333271380340">
-                <link role="applicableNode" targetNodeId="5174648333271380336" resolveInfo="equals" />
+        <node role="leftExpression:3" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause:3" id="5174648333271380350">
+          <node role="normalType:3" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression:3" id="5174648333271380338">
+            <node role="term:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="5174648333271380341">
+              <node role="operand:3" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference:3" id="5174648333271380340">
+                <link role="applicableNode:3" targetNodeId="5174648333271380336" resolveInfo="equals" />
               </node>
-              <node role="operation" type="jetbrains.mps.lang.smodel.structure.SLinkAccess" id="5174648333271380346">
-                <link role="link" targetNodeId="1.5174648333271380332" />
+              <node role="operation:3" type="jetbrains.mps.lang.smodel.structure.SLinkAccess:16" id="5174648333271380346">
+                <link role="link:16" targetNodeId="1.5174648333271380332" />
               </node>
             </node>
           </node>
         </node>
       </node>
     </node>
-    <node role="applicableNode" type="jetbrains.mps.lang.typesystem.structure.ConceptReference" id="5174648333271380336">
-      <property name="name" value="equals" />
-      <link role="concept" targetNodeId="1.5174648333271380331" resolveInfo="AssertEquals" />
+    <node role="applicableNode:3" type="jetbrains.mps.lang.typesystem.structure.ConceptReference:3" id="5174648333271380336">
+      <property name="name:3" value="equals" />
+      <link role="concept:3" targetNodeId="1.5174648333271380331" resolveInfo="AssertEquals" />
     </node>
   </node>
 </model>

@@ -24,7 +24,7 @@ public class TurnAround extends ContinuousStatement {
   }
 
   public static TurnAround newInstance(SModel sm, boolean init) {
-    return (TurnAround)SModelUtil_new.instantiateConceptDeclaration("ds.twowheel.structure.TurnAround", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (TurnAround) SModelUtil_new.instantiateConceptDeclaration("ds.twowheel.structure.TurnAround", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static TurnAround newInstance(SModel sm) {

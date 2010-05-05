@@ -17,7 +17,7 @@ public class InterfaceType extends Type {
   }
 
   public Interface getInterface() {
-    return (Interface)this.getReferent(Interface.class, InterfaceType.INTERFACE);
+    return (Interface) this.getReferent(Interface.class, InterfaceType.INTERFACE);
   }
 
   public void setInterface(Interface node) {
@@ -25,7 +25,7 @@ public class InterfaceType extends Type {
   }
 
   public static InterfaceType newInstance(SModel sm, boolean init) {
-    return (InterfaceType)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.InterfaceType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (InterfaceType) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.InterfaceType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static InterfaceType newInstance(SModel sm) {

@@ -26,7 +26,7 @@ public class AbstractFeatureClause extends BaseConcept {
   }
 
   public BaseFE getExpression() {
-    return (BaseFE)this.getChild(BaseFE.class, AbstractFeatureClause.EXPRESSION);
+    return (BaseFE) this.getChild(BaseFE.class, AbstractFeatureClause.EXPRESSION);
   }
 
   public void setExpression(BaseFE node) {
@@ -34,7 +34,7 @@ public class AbstractFeatureClause extends BaseConcept {
   }
 
   public static AbstractFeatureClause newInstance(SModel sm, boolean init) {
-    return (AbstractFeatureClause)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.AbstractFeatureClause", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (AbstractFeatureClause) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.AbstractFeatureClause", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static AbstractFeatureClause newInstance(SModel sm) {

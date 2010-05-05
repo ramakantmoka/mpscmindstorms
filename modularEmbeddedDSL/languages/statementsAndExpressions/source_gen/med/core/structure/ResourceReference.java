@@ -16,7 +16,7 @@ public class ResourceReference extends MedBase {
   }
 
   public Resource getResource() {
-    return (Resource)this.getReferent(Resource.class, ResourceReference.RESOURCE);
+    return (Resource) this.getReferent(Resource.class, ResourceReference.RESOURCE);
   }
 
   public void setResource(Resource node) {
@@ -24,7 +24,7 @@ public class ResourceReference extends MedBase {
   }
 
   public static ResourceReference newInstance(SModel sm, boolean init) {
-    return (ResourceReference)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ResourceReference", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ResourceReference) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ResourceReference", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ResourceReference newInstance(SModel sm) {

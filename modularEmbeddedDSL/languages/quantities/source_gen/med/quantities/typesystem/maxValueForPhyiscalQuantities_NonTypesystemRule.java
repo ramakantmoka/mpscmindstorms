@@ -11,6 +11,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.intentions.BaseIntentionProvider;
 import jetbrains.mps.typesystem.inference.IErrorTarget;
 import jetbrains.mps.typesystem.inference.NodeErrorTarget;
+import jetbrains.mps.nodeEditor.IErrorReporter;
 import jetbrains.mps.smodel.SModelUtil_new;
 
 public class maxValueForPhyiscalQuantities_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
@@ -24,14 +25,14 @@ public class maxValueForPhyiscalQuantities_NonTypesystemRule extends AbstractNon
       {
         BaseIntentionProvider intentionProvider = null;
         IErrorTarget errorTarget = new NodeErrorTarget();
-        typeCheckingContext.reportTypeError(markAsPhysicalOperator, "value cannot be smaller than " + min, "r:ae1999e2-f2a1-420d-a446-b43e895f34b9(med.quantities.typesystem)", "3456749490053321147", intentionProvider, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(markAsPhysicalOperator, "value cannot be smaller than " + min, "r:ae1999e2-f2a1-420d-a446-b43e895f34b9(med.quantities.typesystem)", "3456749490053321147", intentionProvider, errorTarget);
       }
     }
     if (SPropertyOperations.getInteger(markAsPhysicalOperator, "value") > max) {
       {
         BaseIntentionProvider intentionProvider = null;
         IErrorTarget errorTarget = new NodeErrorTarget();
-        typeCheckingContext.reportTypeError(markAsPhysicalOperator, "value cannot be greater than " + max, "r:ae1999e2-f2a1-420d-a446-b43e895f34b9(med.quantities.typesystem)", "3456749490053321213", intentionProvider, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(markAsPhysicalOperator, "value cannot be greater than " + max, "r:ae1999e2-f2a1-420d-a446-b43e895f34b9(med.quantities.typesystem)", "3456749490053321213", intentionProvider, errorTarget);
       }
     }
   }

@@ -25,7 +25,7 @@ public class CompositeFeatureDeclaration extends StructuredFeatureDeclaration {
   }
 
   public static CompositeFeatureDeclaration newInstance(SModel sm, boolean init) {
-    return (CompositeFeatureDeclaration)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.CompositeFeatureDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (CompositeFeatureDeclaration) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.CompositeFeatureDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static CompositeFeatureDeclaration newInstance(SModel sm) {

@@ -15,7 +15,7 @@ public class TurnRightStatement extends ContinuousStatement {
   }
 
   public static TurnRightStatement newInstance(SModel sm, boolean init) {
-    return (TurnRightStatement)SModelUtil_new.instantiateConceptDeclaration("ds.twowheel.structure.TurnRightStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (TurnRightStatement) SModelUtil_new.instantiateConceptDeclaration("ds.twowheel.structure.TurnRightStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static TurnRightStatement newInstance(SModel sm) {

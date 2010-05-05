@@ -52,7 +52,7 @@ public class ParameterReference extends Expression implements IVariableReference
   }
 
   public ProcedureParameter getParameter() {
-    return (ProcedureParameter)this.getReferent(ProcedureParameter.class, ParameterReference.PARAMETER);
+    return (ProcedureParameter) this.getReferent(ProcedureParameter.class, ParameterReference.PARAMETER);
   }
 
   public void setParameter(ProcedureParameter node) {
@@ -60,7 +60,7 @@ public class ParameterReference extends Expression implements IVariableReference
   }
 
   public static ParameterReference newInstance(SModel sm, boolean init) {
-    return (ParameterReference)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ParameterReference", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ParameterReference) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ParameterReference", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ParameterReference newInstance(SModel sm) {

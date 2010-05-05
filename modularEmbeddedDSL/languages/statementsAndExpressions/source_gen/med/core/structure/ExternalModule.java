@@ -131,7 +131,7 @@ public class ExternalModule extends Module {
   }
 
   public static ExternalModule newInstance(SModel sm, boolean init) {
-    return (ExternalModule)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ExternalModule", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ExternalModule) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ExternalModule", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ExternalModule newInstance(SModel sm) {

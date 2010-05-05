@@ -71,7 +71,7 @@ public class BitRange extends MedBase implements IHasIdentifierName {
   }
 
   public static BitRange newInstance(SModel sm, boolean init) {
-    return (BitRange)SModelUtil_new.instantiateConceptDeclaration("med.bitdata.structure.BitRange", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (BitRange) SModelUtil_new.instantiateConceptDeclaration("med.bitdata.structure.BitRange", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static BitRange newInstance(SModel sm) {

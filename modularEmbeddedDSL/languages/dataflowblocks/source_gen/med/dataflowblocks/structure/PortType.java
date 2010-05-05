@@ -56,7 +56,7 @@ public class PortType extends BaseConcept implements INamedConcept, IVariableDec
   }
 
   public Type getType() {
-    return (Type)this.getChild(Type.class, PortType.TYPE);
+    return (Type) this.getChild(Type.class, PortType.TYPE);
   }
 
   public void setType(Type node) {
@@ -64,7 +64,7 @@ public class PortType extends BaseConcept implements INamedConcept, IVariableDec
   }
 
   public static PortType newInstance(SModel sm, boolean init) {
-    return (PortType)SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.PortType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (PortType) SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.PortType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static PortType newInstance(SModel sm) {

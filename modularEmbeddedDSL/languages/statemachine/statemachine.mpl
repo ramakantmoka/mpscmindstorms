@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="med.statemachine" uuid="98178bb4-0742-4461-bea6-9fc251a502fa" java-stubs-enabled="false" compileInMPS="true">
+<language namespace="med.statemachine" uuid="98178bb4-0742-4461-bea6-9fc251a502fa" java-stubs-enabled="false" compileInMPS="true" doNotGenerateAdapters="false">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" namespacePrefix="med.statemachine" />
   </models>
@@ -36,6 +36,9 @@
   <classPath />
   <languageRuntimeClassPath />
   <sourcePath />
+  <usedLanguages>
+    <usedLanguage>132aa4d8-a3f7-441c-a7eb-3fce23492c6a(jetbrains.mps.baseLanguage.builders)</usedLanguage>
+  </usedLanguages>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>

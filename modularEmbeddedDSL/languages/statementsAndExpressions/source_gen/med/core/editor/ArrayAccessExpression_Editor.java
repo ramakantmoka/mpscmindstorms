@@ -17,23 +17,23 @@ import jetbrains.mps.nodeEditor.EditorManager;
 
 public class ArrayAccessExpression_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_2233_0(editorContext, node);
+    return this.createCollection_jeymkr_a(editorContext, node);
   }
 
-  private EditorCell createCollection_2233_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_jeymkr_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_2233_0");
+    editorCell.setCellId("Collection_jeymkr_a");
     editorCell.addKeyMap(new pointerstuffKeymap());
-    editorCell.addEditorCell(this.createRefNode_2233_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_2233_0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNode_2233_1(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_2233_1(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_jeymkr_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_jeymkr_b0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_jeymkr_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_jeymkr_d0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_2233_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_jeymkr_b0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "[");
-    editorCell.setCellId("Constant_2233_0");
+    editorCell.setCellId("Constant_jeymkr_b0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -43,9 +43,9 @@ public class ArrayAccessExpression_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_2233_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_jeymkr_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "]");
-    editorCell.setCellId("Constant_2233_1");
+    editorCell.setCellId("Constant_jeymkr_d0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -54,7 +54,7 @@ public class ArrayAccessExpression_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNode_2233_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_jeymkr_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("array");
     provider.setNoTargetText("<no array>");
@@ -71,7 +71,7 @@ public class ArrayAccessExpression_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNode_2233_1(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_jeymkr_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("index");
     provider.setNoTargetText("<no index>");

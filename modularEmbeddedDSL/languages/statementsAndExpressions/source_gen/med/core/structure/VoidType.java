@@ -15,7 +15,7 @@ public class VoidType extends Type {
   }
 
   public static VoidType newInstance(SModel sm, boolean init) {
-    return (VoidType)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.VoidType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (VoidType) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.VoidType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static VoidType newInstance(SModel sm) {

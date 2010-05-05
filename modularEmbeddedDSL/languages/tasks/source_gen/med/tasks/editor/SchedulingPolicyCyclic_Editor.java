@@ -15,48 +15,48 @@ import jetbrains.mps.nodeEditor.EditorManager;
 
 public class SchedulingPolicyCyclic_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_0467_0(editorContext, node);
+    return this.createCollection_rvsh4m_a(editorContext, node);
   }
 
-  private EditorCell createCollection_0467_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_rvsh4m_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_0467_0");
-    editorCell.addEditorCell(this.createConstant_0467_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_0467_1(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_0467_1(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_0467_2(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_0467_0(editorContext, node));
+    editorCell.setCellId("Collection_rvsh4m_a");
+    editorCell.addEditorCell(this.createConstant_rvsh4m_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_rvsh4m_b0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_rvsh4m_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_rvsh4m_d0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_rvsh4m_e0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_0467_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_rvsh4m_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "cyclic");
-    editorCell.setCellId("Constant_0467_0");
+    editorCell.setCellId("Constant_rvsh4m_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_0467_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_rvsh4m_b0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "prio =");
-    editorCell.setCellId("Constant_0467_1");
+    editorCell.setCellId("Constant_rvsh4m_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_0467_2(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_rvsh4m_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "every =");
-    editorCell.setCellId("Constant_0467_2");
+    editorCell.setCellId("Constant_rvsh4m_d0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createProperty_0467_0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_rvsh4m_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("every");
-    provider.setNoTargetText("<no every>");
+    provider.setRole("priority");
+    provider.setNoTargetText("<no priority>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_every");
+    editorCell.setCellId("property_priority");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
@@ -68,13 +68,13 @@ public class SchedulingPolicyCyclic_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createProperty_0467_1(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_rvsh4m_e0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("priority");
-    provider.setNoTargetText("<no priority>");
+    provider.setRole("every");
+    provider.setNoTargetText("<no every>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_priority");
+    editorCell.setCellId("property_every");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();

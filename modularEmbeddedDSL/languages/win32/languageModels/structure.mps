@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:a5ceebe2-23fc-4558-a076-f58d4c11c2bd(med.platform.win32.structure)">
-  <persistence version="3" />
+  <persistence version="4" />
   <refactoringHistory />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959028c(jetbrains.mps.lang.structure.constraints)" version="11" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" />

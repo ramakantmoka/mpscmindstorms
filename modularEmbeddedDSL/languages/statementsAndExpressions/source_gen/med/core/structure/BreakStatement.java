@@ -15,7 +15,7 @@ public class BreakStatement extends Statement {
   }
 
   public static BreakStatement newInstance(SModel sm, boolean init) {
-    return (BreakStatement)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.BreakStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (BreakStatement) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.BreakStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static BreakStatement newInstance(SModel sm) {

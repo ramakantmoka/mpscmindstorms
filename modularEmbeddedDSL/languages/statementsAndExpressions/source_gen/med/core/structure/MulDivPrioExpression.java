@@ -15,7 +15,7 @@ public class MulDivPrioExpression extends BinaryArithmeticExpression {
   }
 
   public static MulDivPrioExpression newInstance(SModel sm, boolean init) {
-    return (MulDivPrioExpression)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.MulDivPrioExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (MulDivPrioExpression) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.MulDivPrioExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static MulDivPrioExpression newInstance(SModel sm) {

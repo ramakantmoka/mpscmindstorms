@@ -29,47 +29,26 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 
 public class EnumDeclaration_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_0701_0(editorContext, node);
+    return this.createCollection_oivnnd_a(editorContext, node);
   }
 
-  private EditorCell createCollection_0701_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_oivnnd_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_0701_0");
-    if (renderingCondition0701_0(node, editorContext, editorContext.getOperationContext().getScope())) {
-      editorCell.addEditorCell(this.createConstant_0701_3(editorContext, node));
+    editorCell.setCellId("Collection_oivnnd_a");
+    if (renderingCondition_oivnnd_a0a(node, editorContext, editorContext.getOperationContext().getScope())) {
+      editorCell.addEditorCell(this.createConstant_oivnnd_a0(editorContext, node));
     }
-    editorCell.addEditorCell(this.createConstant_0701_0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_0701_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_0701_1(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_0701_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_0701_2(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_oivnnd_b0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_oivnnd_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_oivnnd_d0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_oivnnd_e0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_oivnnd_f0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_0701_0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "enum");
-    editorCell.setCellId("Constant_0701_0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-
-  private EditorCell createConstant_0701_1(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "{");
-    editorCell.setCellId("Constant_0701_1");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-
-  private EditorCell createConstant_0701_2(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");
-    editorCell.setCellId("Constant_0701_2");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-
-  private EditorCell createConstant_0701_3(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_oivnnd_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "exported");
-    editorCell.setCellId("Constant_0701_3");
+    editorCell.setCellId("Constant_oivnnd_a0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.TEXT_COLOR, MPSColors.DARK_GREEN);
@@ -78,15 +57,36 @@ public class EnumDeclaration_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_0701_0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new EnumDeclaration_Editor.literalsListHandler_0701_0(node, "literals", editorContext);
+  private EditorCell createConstant_oivnnd_b0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "enum");
+    editorCell.setCellId("Constant_oivnnd_b0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createConstant_oivnnd_d0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "{");
+    editorCell.setCellId("Constant_oivnnd_d0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createConstant_oivnnd_f0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");
+    editorCell.setCellId("Constant_oivnnd_f0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+
+  private EditorCell createRefNodeList_oivnnd_e0(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new EnumDeclaration_Editor.literalsListHandler_oivnnd_e0(node, "literals", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_literals");
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
 
-  private EditorCell createProperty_0701_0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_oivnnd_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("name");
     provider.setNoTargetText("<no name>");
@@ -104,12 +104,12 @@ public class EnumDeclaration_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static boolean renderingCondition0701_0(SNode node, EditorContext editorContext, IScope scope) {
+  private static boolean renderingCondition_oivnnd_a0a(SNode node, EditorContext editorContext, IScope scope) {
     return SPropertyOperations.getBoolean(node, "export");
   }
 
-  private static class literalsListHandler_0701_0 extends RefNodeListHandler {
-    public literalsListHandler_0701_0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class literalsListHandler_oivnnd_e0 extends RefNodeListHandler {
+    public literalsListHandler_oivnnd_e0(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 

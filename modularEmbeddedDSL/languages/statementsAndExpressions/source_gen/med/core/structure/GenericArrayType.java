@@ -15,7 +15,7 @@ public class GenericArrayType extends Type {
   }
 
   public static GenericArrayType newInstance(SModel sm, boolean init) {
-    return (GenericArrayType)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.GenericArrayType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (GenericArrayType) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.GenericArrayType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static GenericArrayType newInstance(SModel sm) {

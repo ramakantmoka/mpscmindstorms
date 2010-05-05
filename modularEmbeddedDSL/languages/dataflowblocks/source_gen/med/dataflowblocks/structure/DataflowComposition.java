@@ -67,7 +67,7 @@ public class DataflowComposition extends BaseConcept implements IModuleContent {
   }
 
   public static DataflowComposition newInstance(SModel sm, boolean init) {
-    return (DataflowComposition)SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.DataflowComposition", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (DataflowComposition) SModelUtil_new.instantiateConceptDeclaration("med.dataflowblocks.structure.DataflowComposition", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static DataflowComposition newInstance(SModel sm) {

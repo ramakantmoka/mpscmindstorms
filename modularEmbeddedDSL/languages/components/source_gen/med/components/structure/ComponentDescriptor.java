@@ -18,7 +18,7 @@ public class ComponentDescriptor extends BaseConcept {
   }
 
   public ComponentImplementation getImplementation() {
-    return (ComponentImplementation)this.getReferent(ComponentImplementation.class, ComponentDescriptor.IMPLEMENTATION);
+    return (ComponentImplementation) this.getReferent(ComponentImplementation.class, ComponentDescriptor.IMPLEMENTATION);
   }
 
   public void setImplementation(ComponentImplementation node) {
@@ -26,7 +26,7 @@ public class ComponentDescriptor extends BaseConcept {
   }
 
   public Component getComponent() {
-    return (Component)this.getReferent(Component.class, ComponentDescriptor.COMPONENT);
+    return (Component) this.getReferent(Component.class, ComponentDescriptor.COMPONENT);
   }
 
   public void setComponent(Component node) {
@@ -34,7 +34,7 @@ public class ComponentDescriptor extends BaseConcept {
   }
 
   public static ComponentDescriptor newInstance(SModel sm, boolean init) {
-    return (ComponentDescriptor)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.ComponentDescriptor", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ComponentDescriptor) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.ComponentDescriptor", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ComponentDescriptor newInstance(SModel sm) {

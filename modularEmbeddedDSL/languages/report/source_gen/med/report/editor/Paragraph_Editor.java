@@ -14,17 +14,17 @@ import jetbrains.mps.nodeEditor.EditorManager;
 
 public class Paragraph_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_5602_0(editorContext, node);
+    return this.createCollection_mjy4lr_a(editorContext, node);
   }
 
-  private EditorCell createCollection_5602_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_mjy4lr_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_5602_0");
-    editorCell.addEditorCell(this.createProperty_5602_0(editorContext, node));
+    editorCell.setCellId("Collection_mjy4lr_a");
+    editorCell.addEditorCell(this.createProperty_mjy4lr_a0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createProperty_5602_0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_mjy4lr_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("text");
     provider.setNoTargetText("<no text>");

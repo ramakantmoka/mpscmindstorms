@@ -10,6 +10,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.intentions.BaseIntentionProvider;
 import jetbrains.mps.typesystem.inference.IErrorTarget;
 import jetbrains.mps.typesystem.inference.NodeErrorTarget;
+import jetbrains.mps.nodeEditor.IErrorReporter;
 import jetbrains.mps.smodel.SModelUtil_new;
 
 public class maxValueForInternals_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
@@ -21,7 +22,7 @@ public class maxValueForInternals_NonTypesystemRule extends AbstractNonTypesyste
       {
         BaseIntentionProvider intentionProvider = null;
         IErrorTarget errorTarget = new NodeErrorTarget();
-        typeCheckingContext.reportTypeError(markAsInternalOperator, "maximum of 65536 is allowed", "r:ae1999e2-f2a1-420d-a446-b43e895f34b9(med.quantities.typesystem)", "3456749490053215194", intentionProvider, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(markAsInternalOperator, "maximum of 65536 is allowed", "r:ae1999e2-f2a1-420d-a446-b43e895f34b9(med.quantities.typesystem)", "3456749490053215194", intentionProvider, errorTarget);
       }
     }
   }

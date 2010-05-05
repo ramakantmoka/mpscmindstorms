@@ -8,6 +8,7 @@ import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.intentions.BaseIntentionProvider;
+import jetbrains.mps.typesystem.inference.EquationInfo;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.SModelUtil_new;
 
@@ -19,12 +20,15 @@ public class typeof_StructByValueAttributeReference_InferenceRule extends Abstra
     {
       SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(reference, "variable", true);
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createLessThanInequationStrong((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "165111250876711950", true), (SNode)SConceptOperations.createNewNode("med.core.structure.GenericStructType", null), _nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "165111250876711948", false, 0, intentionProvider);
+      EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "165111250876711948", 0, intentionProvider);
+      _info_12389875345.setInequationGroup("");
+      typeCheckingContext.createLessThanInequationStrong((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "165111250876711950", true), (SNode) SConceptOperations.createNewNode("med.core.structure.GenericStructType", null), false, _info_12389875345);
     }
     {
       SNode _nodeToCheck_1029348928467 = reference;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "165111250876711965", true), (SNode)typeCheckingContext.typeOf(SLinkOperations.getTarget(reference, "attribute", false), "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "165111250876711960", true), _nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "165111250876711958", intentionProvider);
+      EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "165111250876711958", 0, intentionProvider);
+      typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "165111250876711965", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(reference, "attribute", false), "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "165111250876711960", true), _info_12389875345);
     }
   }
 

@@ -137,7 +137,7 @@ public class Resource extends MedBase implements IHasIdentifierName, IProjection
   }
 
   public static Resource newInstance(SModel sm, boolean init) {
-    return (Resource)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Resource", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Resource) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Resource", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Resource newInstance(SModel sm) {

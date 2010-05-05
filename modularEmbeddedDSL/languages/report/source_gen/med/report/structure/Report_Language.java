@@ -10,6 +10,6 @@ public class Report_Language {
   public static ModuleReference MODULE_REFERENCE = ModuleReference.fromString("1bb5dc60-7d19-43d0-af9b-30fe5c9f3271(med.report)");
 
   public static Language get() {
-    return (Language)MPSModuleRepository.getInstance().getModule(MODULE_REFERENCE);
+    return (Language) MPSModuleRepository.getInstance().getModule(MODULE_REFERENCE);
   }
 }

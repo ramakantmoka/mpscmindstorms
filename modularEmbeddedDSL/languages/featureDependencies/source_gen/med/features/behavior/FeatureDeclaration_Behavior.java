@@ -17,10 +17,10 @@ public class FeatureDeclaration_Behavior {
   }
 
   public static boolean call_isSelected_7715189151798165434(SNode thisNode) {
-    return (Boolean)BehaviorManager.getInstance().invoke(Boolean.class, SNodeOperations.cast(thisNode, "med.features.structure.FeatureDeclaration"), "virtual_isSelected_7715189151798165434", PARAMETERS_7715189151798165434);
+    return (Boolean) BehaviorManager.getInstance().invoke(Boolean.class, SNodeOperations.cast(thisNode, "med.features.structure.FeatureDeclaration"), "virtual_isSelected_7715189151798165434", PARAMETERS_7715189151798165434);
   }
 
   public static boolean callSuper_isSelected_7715189151798165434(SNode thisNode, String callerConceptFqName) {
-    return (Boolean)BehaviorManager.getInstance().invokeSuper(Boolean.class, SNodeOperations.cast(thisNode, "med.features.structure.FeatureDeclaration"), callerConceptFqName, "virtual_isSelected_7715189151798165434", PARAMETERS_7715189151798165434);
+    return (Boolean) BehaviorManager.getInstance().invokeSuper(Boolean.class, SNodeOperations.cast(thisNode, "med.features.structure.FeatureDeclaration"), callerConceptFqName, "virtual_isSelected_7715189151798165434", PARAMETERS_7715189151798165434);
   }
 }

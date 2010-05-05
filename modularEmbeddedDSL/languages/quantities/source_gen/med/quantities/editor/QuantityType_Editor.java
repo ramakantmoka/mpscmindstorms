@@ -20,22 +20,22 @@ import jetbrains.mps.nodeEditor.MPSFonts;
 
 public class QuantityType_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_5001_0(editorContext, node);
+    return this.createCollection_qqq1xf_a(editorContext, node);
   }
 
-  private EditorCell createCollection_5001_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_qqq1xf_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_5001_0");
-    editorCell.addEditorCell(this.createRefCell_5001_0(editorContext, node));
+    editorCell.setCellId("Collection_qqq1xf_a");
+    editorCell.addEditorCell(this.createRefCell_qqq1xf_a0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createRefCell_5001_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_qqq1xf_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("quantity");
     provider.setNoTargetText("<no quantity>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new QuantityType_Editor._Inline5001_0());
+    provider.setAuxiliaryCellProvider(new QuantityType_Editor._Inline_qqq1xf_a0a());
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -48,8 +48,8 @@ public class QuantityType_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  public static class _Inline5001_0 extends InlineCellProvider {
-    public _Inline5001_0() {
+  public static class _Inline_qqq1xf_a0a extends InlineCellProvider {
+    public _Inline_qqq1xf_a0a() {
       super();
     }
 
@@ -58,10 +58,10 @@ public class QuantityType_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_5001_0(editorContext, node);
+      return this.createProperty_qqq1xf_a0a0(editorContext, node);
     }
 
-    private EditorCell createProperty_5001_0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_qqq1xf_a0a0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");

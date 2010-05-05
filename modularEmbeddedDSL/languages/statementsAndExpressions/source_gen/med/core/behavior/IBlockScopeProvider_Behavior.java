@@ -14,10 +14,10 @@ public class IBlockScopeProvider_Behavior {
   }
 
   public static List<SNode> call_elementsOfType_5196379128662741737(SNode thisNode, SNode c) {
-    return (List<SNode>)BehaviorManager.getInstance().invoke(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.IBlockScopeProvider"), "virtual_elementsOfType_5196379128662741737", PARAMETERS_5196379128662741737, c);
+    return (List<SNode>) BehaviorManager.getInstance().invoke(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.IBlockScopeProvider"), "virtual_elementsOfType_5196379128662741737", PARAMETERS_5196379128662741737, c);
   }
 
   public static List<SNode> callSuper_elementsOfType_5196379128662741737(SNode thisNode, String callerConceptFqName, SNode c) {
-    return (List<SNode>)BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.IBlockScopeProvider"), callerConceptFqName, "virtual_elementsOfType_5196379128662741737", PARAMETERS_5196379128662741737, c);
+    return (List<SNode>) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.IBlockScopeProvider"), callerConceptFqName, "virtual_elementsOfType_5196379128662741737", PARAMETERS_5196379128662741737, c);
   }
 }

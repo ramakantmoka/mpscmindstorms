@@ -51,7 +51,7 @@ public class ProcedurePrototype extends ProcedureSignature implements IInternalM
   }
 
   public static ProcedurePrototype newInstance(SModel sm, boolean init) {
-    return (ProcedurePrototype)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ProcedurePrototype", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ProcedurePrototype) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ProcedurePrototype", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ProcedurePrototype newInstance(SModel sm) {

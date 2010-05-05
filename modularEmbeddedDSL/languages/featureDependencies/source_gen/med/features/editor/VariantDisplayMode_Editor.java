@@ -17,84 +17,84 @@ import jetbrains.mps.nodeEditor.EditorManager;
 
 public class VariantDisplayMode_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_8500_0(editorContext, node);
+    return this.createCollection_jxh17q_a(editorContext, node);
   }
 
-  private EditorCell createCollection_8500_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_jxh17q_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
-    editorCell.setCellId("Collection_8500_0");
-    editorCell.addEditorCell(this.createConstant_8500_0(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_8500_1(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_8500_2(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_8500_3(editorContext, node));
+    editorCell.setCellId("Collection_jxh17q_a");
+    editorCell.addEditorCell(this.createConstant_jxh17q_a0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_jxh17q_b0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_jxh17q_c0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_jxh17q_d0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createCollection_8500_1(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_jxh17q_b0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
-    editorCell.setCellId("Collection_8500_1");
+    editorCell.setCellId("Collection_jxh17q_b0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
     }
-    editorCell.addEditorCell(this.createConstant_8500_1(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_8500_0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_jxh17q_a1a(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_jxh17q_b1a(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createCollection_8500_2(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_jxh17q_c0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
-    editorCell.setCellId("Collection_8500_2");
+    editorCell.setCellId("Collection_jxh17q_c0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
     }
-    editorCell.addEditorCell(this.createConstant_8500_2(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_8500_1(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_jxh17q_a2a(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_jxh17q_b2a(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createCollection_8500_3(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_jxh17q_d0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
-    editorCell.setCellId("Collection_8500_3");
+    editorCell.setCellId("Collection_jxh17q_d0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
     }
-    editorCell.addEditorCell(this.createConstant_8500_3(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_8500_2(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_jxh17q_a3a(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_jxh17q_b3a(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_8500_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_jxh17q_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Variant Mode");
-    editorCell.setCellId("Constant_8500_0");
+    editorCell.setCellId("Constant_jxh17q_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_8500_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_jxh17q_a1a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "show feature clause");
-    editorCell.setCellId("Constant_8500_1");
+    editorCell.setCellId("Constant_jxh17q_a1a");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_8500_2(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_jxh17q_a2a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "highlight elements");
-    editorCell.setCellId("Constant_8500_2");
+    editorCell.setCellId("Constant_jxh17q_a2a");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_8500_3(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_jxh17q_a3a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "remote non-selected stuff");
-    editorCell.setCellId("Constant_8500_3");
+    editorCell.setCellId("Constant_jxh17q_a3a");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createProperty_8500_0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_jxh17q_b1a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("showFeatureClause");
     provider.setNoTargetText("<no showFeatureClause>");
@@ -112,7 +112,7 @@ public class VariantDisplayMode_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createProperty_8500_1(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_jxh17q_b2a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("highlightFeatureDependentNodes");
     provider.setNoTargetText("<no highlightFeatureDependentNodes>");
@@ -130,7 +130,7 @@ public class VariantDisplayMode_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createProperty_8500_2(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_jxh17q_b3a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("removeNonSelectedStuffInEditor");
     provider.setNoTargetText("<no removeNonSelectedStuffInEditor>");

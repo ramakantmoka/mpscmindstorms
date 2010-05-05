@@ -17,7 +17,7 @@ public class MessagePort extends Port {
   }
 
   public MessageInterface getMsginterface() {
-    return (MessageInterface)this.getReferent(MessageInterface.class, MessagePort.MSGINTERFACE);
+    return (MessageInterface) this.getReferent(MessageInterface.class, MessagePort.MSGINTERFACE);
   }
 
   public void setMsginterface(MessageInterface node) {
@@ -25,7 +25,7 @@ public class MessagePort extends Port {
   }
 
   public static MessagePort newInstance(SModel sm, boolean init) {
-    return (MessagePort)SModelUtil_new.instantiateConceptDeclaration("med.messagecomponents.structure.MessagePort", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (MessagePort) SModelUtil_new.instantiateConceptDeclaration("med.messagecomponents.structure.MessagePort", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static MessagePort newInstance(SModel sm) {

@@ -56,7 +56,7 @@ public class PortAdaptor extends MedBase implements IModuleContent, IHasIdentifi
   }
 
   public Interface getInterface() {
-    return (Interface)this.getReferent(Interface.class, PortAdaptor.INTERFACE);
+    return (Interface) this.getReferent(Interface.class, PortAdaptor.INTERFACE);
   }
 
   public void setInterface(Interface node) {
@@ -64,7 +64,7 @@ public class PortAdaptor extends MedBase implements IModuleContent, IHasIdentifi
   }
 
   public ComponentDescriptor getDescriptor() {
-    return (ComponentDescriptor)this.getChild(ComponentDescriptor.class, PortAdaptor.DESCRIPTOR);
+    return (ComponentDescriptor) this.getChild(ComponentDescriptor.class, PortAdaptor.DESCRIPTOR);
   }
 
   public void setDescriptor(ComponentDescriptor node) {
@@ -72,7 +72,7 @@ public class PortAdaptor extends MedBase implements IModuleContent, IHasIdentifi
   }
 
   public static PortAdaptor newInstance(SModel sm, boolean init) {
-    return (PortAdaptor)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.PortAdaptor", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (PortAdaptor) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.PortAdaptor", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static PortAdaptor newInstance(SModel sm) {

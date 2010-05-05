@@ -30,10 +30,10 @@ public class Type_Behavior {
   }
 
   public static String call_typename_5223430962849766361(SNode thisNode) {
-    return (String)BehaviorManager.getInstance().invoke(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.Type"), "virtual_typename_5223430962849766361", PARAMETERS_5223430962849766361);
+    return (String) BehaviorManager.getInstance().invoke(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.Type"), "virtual_typename_5223430962849766361", PARAMETERS_5223430962849766361);
   }
 
   public static String callSuper_typename_5223430962849766361(SNode thisNode, String callerConceptFqName) {
-    return (String)BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.Type"), callerConceptFqName, "virtual_typename_5223430962849766361", PARAMETERS_5223430962849766361);
+    return (String) BehaviorManager.getInstance().invokeSuper(Object.class, SNodeOperations.cast(thisNode, "med.core.structure.Type"), callerConceptFqName, "virtual_typename_5223430962849766361", PARAMETERS_5223430962849766361);
   }
 }

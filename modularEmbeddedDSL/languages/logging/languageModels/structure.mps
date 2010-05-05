@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:486732ea-fa25-442c-bcc8-e948ecd38d94(med.logging.structure)">
-  <persistence version="3" />
+  <persistence version="4" />
   <refactoringHistory />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959028c(jetbrains.mps.lang.structure.constraints)" version="11" />
@@ -26,16 +26,16 @@
   <maxImportIndex value="1" />
   <visible index="2" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
   <visible index="3" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="6300047501518607793">
-    <property name="name" value="LogStatement" />
-    <link role="extends" targetNodeId="2v.6520964804316559123" resolveInfo="Statement" />
-    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="6300047501518608828">
-      <property name="value" value="log" />
-      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473891462" resolveInfo="alias" />
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="6300047501518607793">
+    <property name="name:0" value="LogStatement" />
+    <link role="extends:0" targetNodeId="2v.6520964804316559123:9" resolveInfo="Statement" />
+    <node role="conceptProperty:0" type="jetbrains.mps.lang.structure.structure.StringConceptProperty:0" id="6300047501518608828">
+      <property name="value:0" value="log" />
+      <link role="conceptPropertyDeclaration:0" targetNodeId="3v.1137473891462:0" resolveInfo="alias" />
     </node>
-    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="6300047501518608829">
-      <property name="name" value="message" />
-      <link role="dataType" targetNodeId="3v.1082983041843" resolveInfo="string" />
+    <node role="propertyDeclaration:0" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration:0" id="6300047501518608829">
+      <property name="name:0" value="message" />
+      <link role="dataType:0" targetNodeId="3v.1082983041843:0" resolveInfo="string" />
     </node>
   </node>
 </model>

@@ -24,7 +24,7 @@ public class LinkedResource extends MedBase {
   }
 
   public static LinkedResource newInstance(SModel sm, boolean init) {
-    return (LinkedResource)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.LinkedResource", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (LinkedResource) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.LinkedResource", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static LinkedResource newInstance(SModel sm) {

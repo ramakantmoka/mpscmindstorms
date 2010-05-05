@@ -15,7 +15,7 @@ public class StructPointerAttributeReference extends StructAttributeReference {
   }
 
   public static StructPointerAttributeReference newInstance(SModel sm, boolean init) {
-    return (StructPointerAttributeReference)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.StructPointerAttributeReference", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (StructPointerAttributeReference) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.StructPointerAttributeReference", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static StructPointerAttributeReference newInstance(SModel sm) {

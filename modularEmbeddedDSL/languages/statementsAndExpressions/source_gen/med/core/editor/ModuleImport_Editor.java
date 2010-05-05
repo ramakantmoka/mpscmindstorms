@@ -16,22 +16,22 @@ import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 
 public class ModuleImport_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_5435_0(editorContext, node);
+    return this.createCollection_9ozi1p_a(editorContext, node);
   }
 
-  private EditorCell createCollection_5435_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_9ozi1p_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_5435_0");
-    editorCell.addEditorCell(this.createRefCell_5435_0(editorContext, node));
+    editorCell.setCellId("Collection_9ozi1p_a");
+    editorCell.addEditorCell(this.createRefCell_9ozi1p_a0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createRefCell_5435_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_9ozi1p_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("importedModule");
     provider.setNoTargetText("<no importedModule>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new ModuleImport_Editor._Inline5435_0());
+    provider.setAuxiliaryCellProvider(new ModuleImport_Editor._Inline_9ozi1p_a0a());
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -44,8 +44,8 @@ public class ModuleImport_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  public static class _Inline5435_0 extends InlineCellProvider {
-    public _Inline5435_0() {
+  public static class _Inline_9ozi1p_a0a extends InlineCellProvider {
+    public _Inline_9ozi1p_a0a() {
       super();
     }
 
@@ -54,10 +54,10 @@ public class ModuleImport_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_5435_0(editorContext, node);
+      return this.createProperty_9ozi1p_a0a0(editorContext, node);
     }
 
-    private EditorCell createProperty_5435_0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_9ozi1p_a0a0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");

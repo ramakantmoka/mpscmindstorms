@@ -15,7 +15,7 @@ public class GenericIntegerType extends PrimitiveType {
   }
 
   public static GenericIntegerType newInstance(SModel sm, boolean init) {
-    return (GenericIntegerType)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.GenericIntegerType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (GenericIntegerType) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.GenericIntegerType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static GenericIntegerType newInstance(SModel sm) {

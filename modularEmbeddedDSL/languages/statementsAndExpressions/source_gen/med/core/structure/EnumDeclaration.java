@@ -93,7 +93,7 @@ public class EnumDeclaration extends BaseConcept implements IHasIdentifierName, 
   }
 
   public static EnumDeclaration newInstance(SModel sm, boolean init) {
-    return (EnumDeclaration)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.EnumDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (EnumDeclaration) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.EnumDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static EnumDeclaration newInstance(SModel sm) {

@@ -15,7 +15,7 @@ public class ProjectionLevelAll extends ProjectionLevel {
   }
 
   public static ProjectionLevelAll newInstance(SModel sm, boolean init) {
-    return (ProjectionLevelAll)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ProjectionLevelAll", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ProjectionLevelAll) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.ProjectionLevelAll", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ProjectionLevelAll newInstance(SModel sm) {

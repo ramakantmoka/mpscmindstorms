@@ -24,7 +24,7 @@ public class SchedulingPolicyCyclic extends SchedulingPolicy {
   }
 
   public static SchedulingPolicyCyclic newInstance(SModel sm, boolean init) {
-    return (SchedulingPolicyCyclic)SModelUtil_new.instantiateConceptDeclaration("med.tasks.structure.SchedulingPolicyCyclic", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (SchedulingPolicyCyclic) SModelUtil_new.instantiateConceptDeclaration("med.tasks.structure.SchedulingPolicyCyclic", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static SchedulingPolicyCyclic newInstance(SModel sm) {

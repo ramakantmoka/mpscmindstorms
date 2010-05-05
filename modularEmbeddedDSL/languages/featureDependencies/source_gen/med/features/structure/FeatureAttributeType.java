@@ -53,7 +53,7 @@ public class FeatureAttributeType extends BaseConcept implements INamedConcept {
   }
 
   public static FeatureAttributeType newInstance(SModel sm, boolean init) {
-    return (FeatureAttributeType)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.FeatureAttributeType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (FeatureAttributeType) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.FeatureAttributeType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static FeatureAttributeType newInstance(SModel sm) {

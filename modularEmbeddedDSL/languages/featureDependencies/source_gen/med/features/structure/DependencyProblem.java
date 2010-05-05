@@ -23,7 +23,7 @@ public class DependencyProblem extends BaseConcept {
   }
 
   public BaseConcept getTarget() {
-    return (BaseConcept)this.getReferent(BaseConcept.class, DependencyProblem.TARGET);
+    return (BaseConcept) this.getReferent(BaseConcept.class, DependencyProblem.TARGET);
   }
 
   public void setTarget(BaseConcept node) {
@@ -31,7 +31,7 @@ public class DependencyProblem extends BaseConcept {
   }
 
   public BaseConcept getSource() {
-    return (BaseConcept)this.getReferent(BaseConcept.class, DependencyProblem.SOURCE);
+    return (BaseConcept) this.getReferent(BaseConcept.class, DependencyProblem.SOURCE);
   }
 
   public void setSource(BaseConcept node) {
@@ -39,7 +39,7 @@ public class DependencyProblem extends BaseConcept {
   }
 
   public BaseFE getSourceExpression() {
-    return (BaseFE)this.getChild(BaseFE.class, DependencyProblem.SOURCE_EXPRESSION);
+    return (BaseFE) this.getChild(BaseFE.class, DependencyProblem.SOURCE_EXPRESSION);
   }
 
   public void setSourceExpression(BaseFE node) {
@@ -47,7 +47,7 @@ public class DependencyProblem extends BaseConcept {
   }
 
   public BaseFE getTargetExpression() {
-    return (BaseFE)this.getChild(BaseFE.class, DependencyProblem.TARGET_EXPRESSION);
+    return (BaseFE) this.getChild(BaseFE.class, DependencyProblem.TARGET_EXPRESSION);
   }
 
   public void setTargetExpression(BaseFE node) {
@@ -75,7 +75,7 @@ public class DependencyProblem extends BaseConcept {
   }
 
   public static DependencyProblem newInstance(SModel sm, boolean init) {
-    return (DependencyProblem)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.DependencyProblem", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (DependencyProblem) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.DependencyProblem", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static DependencyProblem newInstance(SModel sm) {

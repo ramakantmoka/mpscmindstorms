@@ -52,7 +52,7 @@ public class LocalVariableReference extends Expression implements IVariableRefer
   }
 
   public LocalVariableDeclaration getVariable() {
-    return (LocalVariableDeclaration)this.getReferent(LocalVariableDeclaration.class, LocalVariableReference.VARIABLE);
+    return (LocalVariableDeclaration) this.getReferent(LocalVariableDeclaration.class, LocalVariableReference.VARIABLE);
   }
 
   public void setVariable(LocalVariableDeclaration node) {
@@ -60,7 +60,7 @@ public class LocalVariableReference extends Expression implements IVariableRefer
   }
 
   public static LocalVariableReference newInstance(SModel sm, boolean init) {
-    return (LocalVariableReference)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.LocalVariableReference", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (LocalVariableReference) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.LocalVariableReference", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static LocalVariableReference newInstance(SModel sm) {

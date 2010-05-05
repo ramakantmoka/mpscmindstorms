@@ -54,7 +54,7 @@ public class FeatureAttribute extends BaseConcept implements INamedConcept {
   }
 
   public FeatureAttributeType getType() {
-    return (FeatureAttributeType)this.getChild(FeatureAttributeType.class, FeatureAttribute.TYPE);
+    return (FeatureAttributeType) this.getChild(FeatureAttributeType.class, FeatureAttribute.TYPE);
   }
 
   public void setType(FeatureAttributeType node) {
@@ -62,7 +62,7 @@ public class FeatureAttribute extends BaseConcept implements INamedConcept {
   }
 
   public static FeatureAttribute newInstance(SModel sm, boolean init) {
-    return (FeatureAttribute)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.FeatureAttribute", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (FeatureAttribute) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.FeatureAttribute", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static FeatureAttribute newInstance(SModel sm) {

@@ -10,12 +10,12 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
 public class UInt32_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createConstant_5085_0(editorContext, node);
+    return this.createConstant_zek9ex_a(editorContext, node);
   }
 
-  private EditorCell createConstant_5085_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_zek9ex_a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "uint32");
-    editorCell.setCellId("Constant_5085_0");
+    editorCell.setCellId("Constant_zek9ex_a");
     editorCell.setDefaultText("");
     return editorCell;
   }

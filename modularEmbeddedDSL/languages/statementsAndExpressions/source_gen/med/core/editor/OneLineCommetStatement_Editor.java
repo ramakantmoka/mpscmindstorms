@@ -18,20 +18,20 @@ import jetbrains.mps.nodeEditor.EditorManager;
 
 public class OneLineCommetStatement_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_5026_0(editorContext, node);
+    return this.createCollection_byi9w9_a(editorContext, node);
   }
 
-  private EditorCell createCollection_5026_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_byi9w9_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_5026_0");
-    editorCell.addEditorCell(this.createConstant_5026_0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_5026_0(editorContext, node));
+    editorCell.setCellId("Collection_byi9w9_a");
+    editorCell.addEditorCell(this.createConstant_byi9w9_a0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_byi9w9_b0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_5026_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_byi9w9_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "//");
-    editorCell.setCellId("Constant_5026_0");
+    editorCell.setCellId("Constant_byi9w9_a0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.TEXT_COLOR, MPSColors.blue);
@@ -40,7 +40,7 @@ public class OneLineCommetStatement_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createProperty_5026_0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_byi9w9_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("comment");
     provider.setNoTargetText("<no comment>");

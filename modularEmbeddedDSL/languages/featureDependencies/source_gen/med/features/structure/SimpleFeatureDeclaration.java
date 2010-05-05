@@ -24,7 +24,7 @@ public class SimpleFeatureDeclaration extends FeatureDeclaration {
   }
 
   public static SimpleFeatureDeclaration newInstance(SModel sm, boolean init) {
-    return (SimpleFeatureDeclaration)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.SimpleFeatureDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (SimpleFeatureDeclaration) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.SimpleFeatureDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static SimpleFeatureDeclaration newInstance(SModel sm) {

@@ -16,7 +16,7 @@ public class BaseFE extends BaseConcept {
   }
 
   public static BaseFE newInstance(SModel sm, boolean init) {
-    return (BaseFE)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.BaseFE", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (BaseFE) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.BaseFE", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static BaseFE newInstance(SModel sm) {

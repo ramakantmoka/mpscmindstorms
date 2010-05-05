@@ -17,7 +17,7 @@ public class ReplacementFeatureClause extends AbstractFeatureClause {
   }
 
   public BaseConcept getReplacementNode() {
-    return (BaseConcept)this.getChild(BaseConcept.class, ReplacementFeatureClause.REPLACEMENT_NODE);
+    return (BaseConcept) this.getChild(BaseConcept.class, ReplacementFeatureClause.REPLACEMENT_NODE);
   }
 
   public void setReplacementNode(BaseConcept node) {
@@ -25,7 +25,7 @@ public class ReplacementFeatureClause extends AbstractFeatureClause {
   }
 
   public static ReplacementFeatureClause newInstance(SModel sm, boolean init) {
-    return (ReplacementFeatureClause)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.ReplacementFeatureClause", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (ReplacementFeatureClause) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.ReplacementFeatureClause", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static ReplacementFeatureClause newInstance(SModel sm) {

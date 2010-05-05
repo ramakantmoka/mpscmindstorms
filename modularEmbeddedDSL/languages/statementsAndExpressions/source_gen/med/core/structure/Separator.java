@@ -60,7 +60,7 @@ public class Separator extends MedBase implements IModuleContent, IDocumentable 
   }
 
   public static Separator newInstance(SModel sm, boolean init) {
-    return (Separator)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Separator", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Separator) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.Separator", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Separator newInstance(SModel sm) {

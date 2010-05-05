@@ -11,6 +11,6 @@ public class MarkAsPhysicalOperator_Behavior {
   }
 
   public static int call_scalingFactor_5580581899346605426(SNode thisNode) {
-    return ((int)(65536.0 / SPropertyOperations.getInteger(SLinkOperations.getTarget(SLinkOperations.getTarget(thisNode, "type", true), "quantity", false), "maxValue")));
+    return ((int) (65536.0 / SPropertyOperations.getInteger(SLinkOperations.getTarget(SLinkOperations.getTarget(thisNode, "type", true), "quantity", false), "maxValue")));
   }
 }

@@ -12,6 +12,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.intentions.BaseIntentionProvider;
 import jetbrains.mps.typesystem.inference.IErrorTarget;
 import jetbrains.mps.typesystem.inference.NodeErrorTarget;
+import jetbrains.mps.nodeEditor.IErrorReporter;
 import med.core.behavior.Type_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.SModelUtil_new;
@@ -32,7 +33,7 @@ public class typecheckForPorts_NonTypesystemRule extends AbstractNonTypesystemRu
         {
           BaseIntentionProvider intentionProvider = null;
           IErrorTarget errorTarget = new NodeErrorTarget();
-          typeCheckingContext.reportTypeError(port, "no inport of type " + Type_Behavior.call_typename_5223430962849766361(SLinkOperations.getTarget(SLinkOperations.getTarget(port, "porttype", false), "type", true)) + " found in target " + SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(port, "target", true), "med.dataflowblocks.structure.Block"), "porttype", false), "name"), "r:aa7dbd35-4c4a-4916-a7ca-d4a2b8dcbf31(med.dataflowblocks.typesystem)", "5223430962849328629", intentionProvider, errorTarget);
+          IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(port, "no inport of type " + Type_Behavior.call_typename_5223430962849766361(SLinkOperations.getTarget(SLinkOperations.getTarget(port, "porttype", false), "type", true)) + " found in target " + SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(port, "target", true), "med.dataflowblocks.structure.Block"), "porttype", false), "name"), "r:aa7dbd35-4c4a-4916-a7ca-d4a2b8dcbf31(med.dataflowblocks.typesystem)", "5223430962849328629", intentionProvider, errorTarget);
         }
       }
     }

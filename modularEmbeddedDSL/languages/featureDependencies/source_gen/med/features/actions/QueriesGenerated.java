@@ -15,30 +15,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
 public class QueriesGenerated {
-  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_AtomicFE_5047504493555896630(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
-    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
-    {
-      SNode concept = SConceptOperations.findConceptDeclaration("med.features.structure.OrFE");
-      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
-        public SNode doSubstitute(String pattern) {
-          SNode newNode = SConceptOperations.createNewNode("med.features.structure.NotFE", null);
-          SNodeOperations.replaceWithAnother(_context.getSourceNode(), newNode);
-          SLinkOperations.setTarget(newNode, "expr", _context.getSourceNode(), true);
-          return SLinkOperations.getTarget(newNode, "expr", true);
-        }
-
-        public String getMatchingText(String pattern) {
-          return "!";
-        }
-
-        public String getVisibleMatchingText(String pattern) {
-          return this.getMatchingText(pattern);
-        }
-      });
-    }
-    return result;
-  }
-
   public static List<INodeSubstituteAction> sideTransform_ActionsFactory_AtomicFE_8261019787198123100(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
     List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
     {
@@ -77,6 +53,30 @@ public class QueriesGenerated {
 
         public String getMatchingText(String pattern) {
           return "||";
+        }
+
+        public String getVisibleMatchingText(String pattern) {
+          return this.getMatchingText(pattern);
+        }
+      });
+    }
+    return result;
+  }
+
+  public static List<INodeSubstituteAction> sideTransform_ActionsFactory_AtomicFE_5047504493555896630(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
+    List<INodeSubstituteAction> result = ListSequence.fromList(new ArrayList<INodeSubstituteAction>());
+    {
+      SNode concept = SConceptOperations.findConceptDeclaration("med.features.structure.OrFE");
+      ListSequence.fromList(result).addElement(new AbstractSideTransformHintSubstituteAction(concept, _context.getSourceNode()) {
+        public SNode doSubstitute(String pattern) {
+          SNode newNode = SConceptOperations.createNewNode("med.features.structure.NotFE", null);
+          SNodeOperations.replaceWithAnother(_context.getSourceNode(), newNode);
+          SLinkOperations.setTarget(newNode, "expr", _context.getSourceNode(), true);
+          return SLinkOperations.getTarget(newNode, "expr", true);
+        }
+
+        public String getMatchingText(String pattern) {
+          return "!";
         }
 
         public String getVisibleMatchingText(String pattern) {

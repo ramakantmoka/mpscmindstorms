@@ -22,22 +22,22 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_Empty;
 
 public class EnumLiteralRef_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_1239_0(editorContext, node);
+    return this.createCollection_3htvbn_a(editorContext, node);
   }
 
-  private EditorCell createCollection_1239_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_3htvbn_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_1239_0");
-    editorCell.addEditorCell(this.createRefCell_1239_0(editorContext, node));
+    editorCell.setCellId("Collection_3htvbn_a");
+    editorCell.addEditorCell(this.createRefCell_3htvbn_a0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createRefCell_1239_0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_3htvbn_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("literal");
     provider.setNoTargetText("<no literal>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new EnumLiteralRef_Editor._Inline1239_0());
+    provider.setAuxiliaryCellProvider(new EnumLiteralRef_Editor._Inline_3htvbn_a0a());
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -50,8 +50,8 @@ public class EnumLiteralRef_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  public static class _Inline1239_0 extends InlineCellProvider {
-    public _Inline1239_0() {
+  public static class _Inline_3htvbn_a0a extends InlineCellProvider {
+    public _Inline_3htvbn_a0a() {
       super();
     }
 
@@ -60,10 +60,10 @@ public class EnumLiteralRef_Editor extends DefaultNodeEditor {
     }
 
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createReadOnlyModelAccessor_1239_0(editorContext, node);
+      return this.createReadOnlyModelAccessor_3htvbn_a0a0(editorContext, node);
     }
 
-    private EditorCell createReadOnlyModelAccessor_1239_0(final EditorContext editorContext, final SNode node) {
+    private EditorCell createReadOnlyModelAccessor_3htvbn_a0a0(final EditorContext editorContext, final SNode node) {
       EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
         public String getText() {
           return SPropertyOperations.getString(SNodeOperations.getAncestor(node, "med.core.structure.EnumDeclaration", false, false), "name") + "::" + SPropertyOperations.getString(node, "name");
@@ -77,7 +77,7 @@ public class EnumLiteralRef_Editor extends DefaultNodeEditor {
         }
       }, node);
       editorCell.setAction(CellActionType.DELETE, new CellAction_Empty());
-      editorCell.setCellId("ReadOnlyModelAccessor_1239_0");
+      editorCell.setCellId("ReadOnlyModelAccessor_3htvbn_a0a0");
       return editorCell;
     }
   }

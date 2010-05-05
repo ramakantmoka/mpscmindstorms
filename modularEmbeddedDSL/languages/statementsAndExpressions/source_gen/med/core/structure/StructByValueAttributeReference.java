@@ -15,7 +15,7 @@ public class StructByValueAttributeReference extends StructAttributeReference {
   }
 
   public static StructByValueAttributeReference newInstance(SModel sm, boolean init) {
-    return (StructByValueAttributeReference)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.StructByValueAttributeReference", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (StructByValueAttributeReference) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.StructByValueAttributeReference", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static StructByValueAttributeReference newInstance(SModel sm) {

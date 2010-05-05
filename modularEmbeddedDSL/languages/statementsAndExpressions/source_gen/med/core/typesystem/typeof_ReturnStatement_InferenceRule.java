@@ -7,6 +7,7 @@ import jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.intentions.BaseIntentionProvider;
+import jetbrains.mps.typesystem.inference.EquationInfo;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.SModelUtil_new;
@@ -19,12 +20,14 @@ public class typeof_ReturnStatement_InferenceRule extends AbstractInferenceRule_
     {
       SNode _nodeToCheck_1029348928467 = statement;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "2005811434196936680", true), (SNode)typeCheckingContext.typeOf(SLinkOperations.getTarget(statement, "expr", true), "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "2005811434196936675", true), _nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "2005811434196936673", intentionProvider);
+      EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "2005811434196936673", 0, intentionProvider);
+      typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "2005811434196936680", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(statement, "expr", true), "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "2005811434196936675", true), _info_12389875345);
     }
     {
       SNode _nodeToCheck_1029348928467 = statement;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createComparableEquation((SNode)typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "7678656588250278507", true), (SNode)typeCheckingContext.typeOf(SNodeOperations.getAncestor(statement, "med.core.structure.IReturnable", true, false), "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "7678656588250278511", true), _nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "7678656588250278505", intentionProvider);
+      EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "7678656588250278505", 0, intentionProvider);
+      typeCheckingContext.createComparableEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "7678656588250278507", true), (SNode) typeCheckingContext.typeOf(SNodeOperations.getAncestor(statement, "med.core.structure.IReturnable", true, false), "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "7678656588250278511", true), _info_12389875345);
     }
   }
 

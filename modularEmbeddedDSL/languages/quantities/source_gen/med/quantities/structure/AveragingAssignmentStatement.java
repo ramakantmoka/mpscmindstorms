@@ -20,7 +20,7 @@ public class AveragingAssignmentStatement extends Statement {
   }
 
   public ModuleVariableRef getVar() {
-    return (ModuleVariableRef)this.getChild(ModuleVariableRef.class, AveragingAssignmentStatement.VAR);
+    return (ModuleVariableRef) this.getChild(ModuleVariableRef.class, AveragingAssignmentStatement.VAR);
   }
 
   public void setVar(ModuleVariableRef node) {
@@ -28,7 +28,7 @@ public class AveragingAssignmentStatement extends Statement {
   }
 
   public Expression getRvalue() {
-    return (Expression)this.getChild(Expression.class, AveragingAssignmentStatement.RVALUE);
+    return (Expression) this.getChild(Expression.class, AveragingAssignmentStatement.RVALUE);
   }
 
   public void setRvalue(Expression node) {
@@ -36,7 +36,7 @@ public class AveragingAssignmentStatement extends Statement {
   }
 
   public static AveragingAssignmentStatement newInstance(SModel sm, boolean init) {
-    return (AveragingAssignmentStatement)SModelUtil_new.instantiateConceptDeclaration("med.quantities.structure.AveragingAssignmentStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (AveragingAssignmentStatement) SModelUtil_new.instantiateConceptDeclaration("med.quantities.structure.AveragingAssignmentStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static AveragingAssignmentStatement newInstance(SModel sm) {

@@ -53,7 +53,7 @@ public class Port extends MedBase implements IHasIdentifierName {
   }
 
   public static Port newInstance(SModel sm, boolean init) {
-    return (Port)SModelUtil_new.instantiateConceptDeclaration("med.components.structure.Port", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Port) SModelUtil_new.instantiateConceptDeclaration("med.components.structure.Port", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Port newInstance(SModel sm) {

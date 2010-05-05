@@ -16,7 +16,7 @@ public class EnumLiteralRef extends Expression {
   }
 
   public EnumLiteral getLiteral() {
-    return (EnumLiteral)this.getReferent(EnumLiteral.class, EnumLiteralRef.LITERAL);
+    return (EnumLiteral) this.getReferent(EnumLiteral.class, EnumLiteralRef.LITERAL);
   }
 
   public void setLiteral(EnumLiteral node) {
@@ -24,7 +24,7 @@ public class EnumLiteralRef extends Expression {
   }
 
   public static EnumLiteralRef newInstance(SModel sm, boolean init) {
-    return (EnumLiteralRef)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.EnumLiteralRef", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (EnumLiteralRef) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.EnumLiteralRef", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static EnumLiteralRef newInstance(SModel sm) {

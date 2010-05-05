@@ -15,7 +15,7 @@ public class GenericPointerType extends Type {
   }
 
   public static GenericPointerType newInstance(SModel sm, boolean init) {
-    return (GenericPointerType)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.GenericPointerType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (GenericPointerType) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.GenericPointerType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static GenericPointerType newInstance(SModel sm) {

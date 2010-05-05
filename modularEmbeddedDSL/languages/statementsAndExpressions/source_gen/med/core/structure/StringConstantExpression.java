@@ -24,7 +24,7 @@ public class StringConstantExpression extends ConstantExpression {
   }
 
   public static StringConstantExpression newInstance(SModel sm, boolean init) {
-    return (StringConstantExpression)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.StringConstantExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (StringConstantExpression) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.StringConstantExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static StringConstantExpression newInstance(SModel sm) {

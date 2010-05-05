@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model modelUID="r:bcdfdee6-1ad3-40b7-ba99-27ec6f82380f(med.unittest.structure)">
-  <persistence version="3" />
+  <persistence version="4" />
   <refactoringHistory />
   <language namespace="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959028c(jetbrains.mps.lang.structure.constraints)" version="11" />
@@ -26,68 +26,68 @@
   <maxImportIndex value="1" />
   <visible index="2" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
   <visible index="3" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5174648333271280743">
-    <property name="name" value="Test" />
-    <link role="extends" targetNodeId="2v.3577454086729990666" resolveInfo="MedBase" />
-    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="5174648333271280744">
-      <link role="intfc" targetNodeId="2v.306587673255505535" resolveInfo="IExportableModuleContent" />
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="5174648333271280743">
+    <property name="name:0" value="Test" />
+    <link role="extends:0" targetNodeId="2v.3577454086729990666:9" resolveInfo="MedBase" />
+    <node role="implements:0" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference:0" id="5174648333271280744">
+      <link role="intfc:0" targetNodeId="2v.306587673255505535:9" resolveInfo="IExportableModuleContent" />
     </node>
-    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="5174648333272652845">
-      <link role="intfc" targetNodeId="2v.343373828472902636" resolveInfo="IHasIdentifierName" />
+    <node role="implements:0" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference:0" id="5174648333272652845">
+      <link role="intfc:0" targetNodeId="2v.343373828472902636:9" resolveInfo="IHasIdentifierName" />
     </node>
-    <node role="implements" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" id="3106315015966031645">
-      <link role="intfc" targetNodeId="2v.343373828473056886" resolveInfo="IProjectionLevelAware" />
+    <node role="implements:0" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference:0" id="3106315015966031645">
+      <link role="intfc:0" targetNodeId="2v.343373828473056886:9" resolveInfo="IProjectionLevelAware" />
     </node>
-    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="5174648333271280745">
-      <property name="metaClass" value="aggregation" />
-      <property name="role" value="body" />
-      <property name="sourceCardinality" value="1" />
-      <link role="target" targetNodeId="2v.6520964804316559124" resolveInfo="StatementList" />
+    <node role="linkDeclaration:0" type="jetbrains.mps.lang.structure.structure.LinkDeclaration:0" id="5174648333271280745">
+      <property name="metaClass:0" value="aggregation" />
+      <property name="role:0" value="body" />
+      <property name="sourceCardinality:0" value="1" />
+      <link role="target:0" targetNodeId="2v.6520964804316559124:9" resolveInfo="StatementList" />
     </node>
-    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="5174648333272424948">
-      <property name="name" value="description" />
-      <link role="dataType" targetNodeId="3v.1082983041843" resolveInfo="string" />
-    </node>
-  </node>
-  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5174648333271281091">
-    <property name="name" value="AssertStatement" />
-    <link role="extends" targetNodeId="2v.6520964804316559123" resolveInfo="Statement" />
-    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="5174648333271281092">
-      <property name="name" value="errorMessage" />
-      <link role="dataType" targetNodeId="3v.1082983041843" resolveInfo="string" />
-    </node>
-    <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.BooleanConceptProperty" id="5174648333271380330">
-      <link role="conceptPropertyDeclaration" targetNodeId="3v.1137473854053" resolveInfo="abstract" />
+    <node role="propertyDeclaration:0" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration:0" id="5174648333272424948">
+      <property name="name:0" value="description" />
+      <link role="dataType:0" targetNodeId="3v.1082983041843:0" resolveInfo="string" />
     </node>
   </node>
-  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5174648333271380331">
-    <property name="name" value="AssertEquals" />
-    <link role="extends" targetNodeId="5174648333271281091" resolveInfo="AssertStatement" />
-    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="5174648333271380333">
-      <property name="metaClass" value="aggregation" />
-      <property name="role" value="actual" />
-      <property name="sourceCardinality" value="1" />
-      <link role="target" targetNodeId="2v.6441851857096548278" resolveInfo="Expression" />
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="5174648333271281091">
+    <property name="name:0" value="AssertStatement" />
+    <link role="extends:0" targetNodeId="2v.6520964804316559123:9" resolveInfo="Statement" />
+    <node role="propertyDeclaration:0" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration:0" id="5174648333271281092">
+      <property name="name:0" value="errorMessage" />
+      <link role="dataType:0" targetNodeId="3v.1082983041843:0" resolveInfo="string" />
     </node>
-    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="5174648333271380332">
-      <property name="metaClass" value="aggregation" />
-      <property name="role" value="expected" />
-      <property name="sourceCardinality" value="1" />
-      <link role="target" targetNodeId="2v.6441851857096548278" resolveInfo="Expression" />
+    <node role="conceptProperty:0" type="jetbrains.mps.lang.structure.structure.BooleanConceptProperty:0" id="5174648333271380330">
+      <link role="conceptPropertyDeclaration:0" targetNodeId="3v.1137473854053:0" resolveInfo="abstract" />
     </node>
   </node>
-  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5174648333271380380">
-    <property name="name" value="FailStatement" />
-    <link role="extends" targetNodeId="5174648333271281091" resolveInfo="AssertStatement" />
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="5174648333271380331">
+    <property name="name:0" value="AssertEquals" />
+    <link role="extends:0" targetNodeId="5174648333271281091" resolveInfo="AssertStatement" />
+    <node role="linkDeclaration:0" type="jetbrains.mps.lang.structure.structure.LinkDeclaration:0" id="5174648333271380333">
+      <property name="metaClass:0" value="aggregation" />
+      <property name="role:0" value="actual" />
+      <property name="sourceCardinality:0" value="1" />
+      <link role="target:0" targetNodeId="2v.6441851857096548278:9" resolveInfo="Expression" />
+    </node>
+    <node role="linkDeclaration:0" type="jetbrains.mps.lang.structure.structure.LinkDeclaration:0" id="5174648333271380332">
+      <property name="metaClass:0" value="aggregation" />
+      <property name="role:0" value="expected" />
+      <property name="sourceCardinality:0" value="1" />
+      <link role="target:0" targetNodeId="2v.6441851857096548278:9" resolveInfo="Expression" />
+    </node>
   </node>
-  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="5174648333272424953">
-    <property name="name" value="RunTestStatement" />
-    <link role="extends" targetNodeId="2v.6520964804316559123" resolveInfo="Statement" />
-    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="5174648333272424954">
-      <property name="metaClass" value="reference" />
-      <property name="role" value="test" />
-      <property name="sourceCardinality" value="1" />
-      <link role="target" targetNodeId="5174648333271280743" resolveInfo="Test" />
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="5174648333271380380">
+    <property name="name:0" value="FailStatement" />
+    <link role="extends:0" targetNodeId="5174648333271281091" resolveInfo="AssertStatement" />
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="5174648333272424953">
+    <property name="name:0" value="RunTestStatement" />
+    <link role="extends:0" targetNodeId="2v.6520964804316559123:9" resolveInfo="Statement" />
+    <node role="linkDeclaration:0" type="jetbrains.mps.lang.structure.structure.LinkDeclaration:0" id="5174648333272424954">
+      <property name="metaClass:0" value="reference" />
+      <property name="role:0" value="test" />
+      <property name="sourceCardinality:0" value="1" />
+      <link role="target:0" targetNodeId="5174648333271280743" resolveInfo="Test" />
     </node>
   </node>
 </model>

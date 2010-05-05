@@ -15,7 +15,7 @@ public class DivisionExpression extends MulDivPrioExpression {
   }
 
   public static DivisionExpression newInstance(SModel sm, boolean init) {
-    return (DivisionExpression)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.DivisionExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (DivisionExpression) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.DivisionExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static DivisionExpression newInstance(SModel sm) {

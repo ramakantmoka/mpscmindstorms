@@ -31,35 +31,35 @@ import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 
 public class RequirementsTrace_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_8473_0(editorContext, node);
+    return this.createCollection_j2jo7f_a(editorContext, node);
   }
 
-  private EditorCell createCollection_8473_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_j2jo7f_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
-    editorCell.setCellId("Collection_8473_0");
-    if (renderingCondition8473_0(node, editorContext, editorContext.getOperationContext().getScope())) {
-      editorCell.addEditorCell(this.createCollection_8473_1(editorContext, node));
+    editorCell.setCellId("Collection_j2jo7f_a");
+    if (renderingCondition_j2jo7f_a0a(node, editorContext, editorContext.getOperationContext().getScope())) {
+      editorCell.addEditorCell(this.createCollection_j2jo7f_a0(editorContext, node));
     }
-    editorCell.addEditorCell(this.createAttributedNodeCell_8473_0(editorContext, node));
+    editorCell.addEditorCell(this.createAttributedNodeCell_j2jo7f_b0(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createCollection_8473_1(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_j2jo7f_a0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_8473_1");
+    editorCell.setCellId("Collection_j2jo7f_a0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.SELECTABLE, false);
       style.set(StyleAttributes.BACKGROUND_COLOR, new Color(14548957));
     }
-    editorCell.addEditorCell(this.createConstant_8473_0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_8473_0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_j2jo7f_a0a(editorContext, node));
+    editorCell.addEditorCell(this.createRefNodeList_j2jo7f_b0a(editorContext, node));
     return editorCell;
   }
 
-  private EditorCell createConstant_8473_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_j2jo7f_a0a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "trace");
-    editorCell.setCellId("Constant_8473_0");
+    editorCell.setCellId("Constant_j2jo7f_a0a");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.BACKGROUND_COLOR, new Color(14548957));
@@ -69,15 +69,15 @@ public class RequirementsTrace_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createAttributedNodeCell_8473_0(EditorContext editorContext, SNode node) {
+  private EditorCell createAttributedNodeCell_j2jo7f_b0(EditorContext editorContext, SNode node) {
     IOperationContext opContext = editorContext.getOperationContext();
     EditorManager manager = EditorManager.getInstanceFromContext(opContext);
     EditorCell editorCell = manager.getCurrentAttributedNodeCell();
     return editorCell;
   }
 
-  private EditorCell createRefNodeList_8473_0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new RequirementsTrace_Editor.linksListHandler_8473_0(node, "links", editorContext);
+  private EditorCell createRefNodeList_j2jo7f_b0a(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new RequirementsTrace_Editor.linksListHandler_j2jo7f_b0a(node, "links", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Horizontal(), false);
     editorCell.setCellId("refNodeList_links");
     {
@@ -88,12 +88,12 @@ public class RequirementsTrace_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static boolean renderingCondition8473_0(SNode node, EditorContext editorContext, IScope scope) {
+  private static boolean renderingCondition_j2jo7f_a0a(SNode node, EditorContext editorContext, IScope scope) {
     return SPropertyOperations.getBoolean(ListSequence.fromList(SModelOperations.getRoots(SNodeOperations.getModel(node), "med.requirements.structure.DummyRequirementsCollection")).first(), "showRequirementsInModel");
   }
 
-  private static class linksListHandler_8473_0 extends RefNodeListHandler {
-    public linksListHandler_8473_0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class linksListHandler_j2jo7f_b0a extends RefNodeListHandler {
+    public linksListHandler_j2jo7f_b0a(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
 

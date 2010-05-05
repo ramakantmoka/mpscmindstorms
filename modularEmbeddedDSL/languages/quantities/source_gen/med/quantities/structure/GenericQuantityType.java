@@ -16,7 +16,7 @@ public class GenericQuantityType extends Type {
   }
 
   public static GenericQuantityType newInstance(SModel sm, boolean init) {
-    return (GenericQuantityType)SModelUtil_new.instantiateConceptDeclaration("med.quantities.structure.GenericQuantityType", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (GenericQuantityType) SModelUtil_new.instantiateConceptDeclaration("med.quantities.structure.GenericQuantityType", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static GenericQuantityType newInstance(SModel sm) {

@@ -48,7 +48,7 @@ public class DummyRequirementsCollection extends MedBase {
   }
 
   public static DummyRequirementsCollection newInstance(SModel sm, boolean init) {
-    return (DummyRequirementsCollection)SModelUtil_new.instantiateConceptDeclaration("med.requirements.structure.DummyRequirementsCollection", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (DummyRequirementsCollection) SModelUtil_new.instantiateConceptDeclaration("med.requirements.structure.DummyRequirementsCollection", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static DummyRequirementsCollection newInstance(SModel sm) {

@@ -10,6 +10,6 @@ public class Quantities_Language {
   public static ModuleReference MODULE_REFERENCE = ModuleReference.fromString("fa27d492-bc16-4e00-86c3-966c2cebd871(med.quantities)");
 
   public static Language get() {
-    return (Language)MPSModuleRepository.getInstance().getModule(MODULE_REFERENCE);
+    return (Language) MPSModuleRepository.getInstance().getModule(MODULE_REFERENCE);
   }
 }

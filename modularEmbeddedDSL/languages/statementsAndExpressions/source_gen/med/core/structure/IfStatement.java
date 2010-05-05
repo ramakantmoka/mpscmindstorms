@@ -21,7 +21,7 @@ public class IfStatement extends Statement {
   }
 
   public StatementList getThenPart() {
-    return (StatementList)this.getChild(StatementList.class, IfStatement.THEN_PART);
+    return (StatementList) this.getChild(StatementList.class, IfStatement.THEN_PART);
   }
 
   public void setThenPart(StatementList node) {
@@ -29,7 +29,7 @@ public class IfStatement extends Statement {
   }
 
   public Expression getCondition() {
-    return (Expression)this.getChild(Expression.class, IfStatement.CONDITION);
+    return (Expression) this.getChild(Expression.class, IfStatement.CONDITION);
   }
 
   public void setCondition(Expression node) {
@@ -37,7 +37,7 @@ public class IfStatement extends Statement {
   }
 
   public StatementList getElsePart() {
-    return (StatementList)this.getChild(StatementList.class, IfStatement.ELSE_PART);
+    return (StatementList) this.getChild(StatementList.class, IfStatement.ELSE_PART);
   }
 
   public void setElsePart(StatementList node) {
@@ -65,7 +65,7 @@ public class IfStatement extends Statement {
   }
 
   public static IfStatement newInstance(SModel sm, boolean init) {
-    return (IfStatement)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.IfStatement", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (IfStatement) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.IfStatement", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static IfStatement newInstance(SModel sm) {

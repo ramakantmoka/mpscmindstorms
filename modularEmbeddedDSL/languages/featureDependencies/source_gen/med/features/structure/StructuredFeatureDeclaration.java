@@ -59,7 +59,7 @@ public class StructuredFeatureDeclaration extends FeatureDeclaration {
   }
 
   public static StructuredFeatureDeclaration newInstance(SModel sm, boolean init) {
-    return (StructuredFeatureDeclaration)SModelUtil_new.instantiateConceptDeclaration("med.features.structure.StructuredFeatureDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (StructuredFeatureDeclaration) SModelUtil_new.instantiateConceptDeclaration("med.features.structure.StructuredFeatureDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static StructuredFeatureDeclaration newInstance(SModel sm) {

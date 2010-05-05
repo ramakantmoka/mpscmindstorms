@@ -19,32 +19,32 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class CustomInclude_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_3883_0(editorContext, node);
+    return this.createCollection_v8fi4a_a(editorContext, node);
   }
 
-  private EditorCell createCollection_3883_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_v8fi4a_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_3883_0");
-    editorCell.addEditorCell(this.createConstant_3883_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_3883_1(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_3883_0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_3883_2(editorContext, node));
-    if (renderingCondition3883_0(node, editorContext, editorContext.getOperationContext().getScope())) {
-      editorCell.addEditorCell(this.createConstant_3883_3(editorContext, node));
+    editorCell.setCellId("Collection_v8fi4a_a");
+    editorCell.addEditorCell(this.createConstant_v8fi4a_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_v8fi4a_b0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_v8fi4a_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_v8fi4a_d0(editorContext, node));
+    if (renderingCondition_v8fi4a_a4a(node, editorContext, editorContext.getOperationContext().getScope())) {
+      editorCell.addEditorCell(this.createConstant_v8fi4a_e0(editorContext, node));
     }
     return editorCell;
   }
 
-  private EditorCell createConstant_3883_0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_v8fi4a_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "#include");
-    editorCell.setCellId("Constant_3883_0");
+    editorCell.setCellId("Constant_v8fi4a_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createConstant_3883_1(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_v8fi4a_b0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "<");
-    editorCell.setCellId("Constant_3883_1");
+    editorCell.setCellId("Constant_v8fi4a_b0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
@@ -53,9 +53,9 @@ public class CustomInclude_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_3883_2(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_v8fi4a_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ">");
-    editorCell.setCellId("Constant_3883_2");
+    editorCell.setCellId("Constant_v8fi4a_d0");
     {
       Style style = editorCell.getStyle();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
@@ -64,14 +64,14 @@ public class CustomInclude_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private EditorCell createConstant_3883_3(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_v8fi4a_e0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "needed in header");
-    editorCell.setCellId("Constant_3883_3");
+    editorCell.setCellId("Constant_v8fi4a_e0");
     editorCell.setDefaultText("");
     return editorCell;
   }
 
-  private EditorCell createProperty_3883_0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_v8fi4a_c0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("filename");
     provider.setNoTargetText("<no filename>");
@@ -89,7 +89,7 @@ public class CustomInclude_Editor extends DefaultNodeEditor {
     return editorCell;
   }
 
-  private static boolean renderingCondition3883_0(SNode node, EditorContext editorContext, IScope scope) {
+  private static boolean renderingCondition_v8fi4a_a4a(SNode node, EditorContext editorContext, IScope scope) {
     return SPropertyOperations.getBoolean(node, "neededInHeader");
   }
 }

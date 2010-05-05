@@ -12,6 +12,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.intentions.BaseIntentionProvider;
 import jetbrains.mps.typesystem.inference.IErrorTarget;
 import jetbrains.mps.typesystem.inference.NodeErrorTarget;
+import jetbrains.mps.nodeEditor.IErrorReporter;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import med.core.behavior.System_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
@@ -33,7 +34,7 @@ public class systemAllInterfacesAreImplemented_NonTypesystemRule extends Abstrac
       {
         BaseIntentionProvider intentionProvider = null;
         IErrorTarget errorTarget = new NodeErrorTarget();
-        typeCheckingContext.reportTypeError(system, "no wiring specified", "r:a33671bf-8144-43f9-bd6e-c5adb345b856(med.components.typesystem)", "5224308508845870397", intentionProvider, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(system, "no wiring specified", "r:a33671bf-8144-43f9-bd6e-c5adb345b856(med.components.typesystem)", "5224308508845870397", intentionProvider, errorTarget);
       }
       return;
     }
@@ -56,7 +57,7 @@ public class systemAllInterfacesAreImplemented_NonTypesystemRule extends Abstrac
               BaseIntentionProvider intentionProvider = null;
               IErrorTarget errorTarget = new NodeErrorTarget();
               errorTarget = new PropertyErrorTarget("name");
-              typeCheckingContext.reportTypeError(system, "no interface mapping found for interface " + SPropertyOperations.getString(i, "name") + " for component implementation " + SPropertyOperations.getString(impl, "name"), "r:a33671bf-8144-43f9-bd6e-c5adb345b856(med.components.typesystem)", "5224308508845871318", intentionProvider, errorTarget);
+              IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(system, "no interface mapping found for interface " + SPropertyOperations.getString(i, "name") + " for component implementation " + SPropertyOperations.getString(impl, "name"), "r:a33671bf-8144-43f9-bd6e-c5adb345b856(med.components.typesystem)", "5224308508845871318", intentionProvider, errorTarget);
             }
           }
         }

@@ -86,7 +86,7 @@ public class BitPatternDeclaration extends MedBase implements IExportableModuleC
   }
 
   public static BitPatternDeclaration newInstance(SModel sm, boolean init) {
-    return (BitPatternDeclaration)SModelUtil_new.instantiateConceptDeclaration("med.bitdata.structure.BitPatternDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (BitPatternDeclaration) SModelUtil_new.instantiateConceptDeclaration("med.bitdata.structure.BitPatternDeclaration", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static BitPatternDeclaration newInstance(SModel sm) {

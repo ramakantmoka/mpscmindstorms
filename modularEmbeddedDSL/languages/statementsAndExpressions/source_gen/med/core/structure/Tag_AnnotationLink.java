@@ -11,6 +11,6 @@ public class Tag_AnnotationLink {
   }
 
   public static Tag getTag(MedBase source) {
-    return (Tag)source.getAttribute(Tag_AnnotationLink.TAG);
+    return (Tag) source.getAttribute(Tag_AnnotationLink.TAG);
   }
 }

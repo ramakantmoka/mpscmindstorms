@@ -18,7 +18,7 @@ public class CheckStateExpression extends Expression {
   }
 
   public State getState() {
-    return (State)this.getReferent(State.class, CheckStateExpression.STATE);
+    return (State) this.getReferent(State.class, CheckStateExpression.STATE);
   }
 
   public void setState(State node) {
@@ -26,7 +26,7 @@ public class CheckStateExpression extends Expression {
   }
 
   public Statemachine getMachine() {
-    return (Statemachine)this.getReferent(Statemachine.class, CheckStateExpression.MACHINE);
+    return (Statemachine) this.getReferent(Statemachine.class, CheckStateExpression.MACHINE);
   }
 
   public void setMachine(Statemachine node) {
@@ -34,7 +34,7 @@ public class CheckStateExpression extends Expression {
   }
 
   public static CheckStateExpression newInstance(SModel sm, boolean init) {
-    return (CheckStateExpression)SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.CheckStateExpression", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (CheckStateExpression) SModelUtil_new.instantiateConceptDeclaration("med.statemachine.structure.CheckStateExpression", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static CheckStateExpression newInstance(SModel sm) {

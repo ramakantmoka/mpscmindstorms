@@ -76,7 +76,7 @@ public class Task extends MedBase implements IExportableModuleContent, IHasIdent
   }
 
   public SchedulingPolicy getScheduling() {
-    return (SchedulingPolicy)this.getChild(SchedulingPolicy.class, Task.SCHEDULING);
+    return (SchedulingPolicy) this.getChild(SchedulingPolicy.class, Task.SCHEDULING);
   }
 
   public void setScheduling(SchedulingPolicy node) {
@@ -84,7 +84,7 @@ public class Task extends MedBase implements IExportableModuleContent, IHasIdent
   }
 
   public StatementList getBody() {
-    return (StatementList)this.getChild(StatementList.class, Task.BODY);
+    return (StatementList) this.getChild(StatementList.class, Task.BODY);
   }
 
   public void setBody(StatementList node) {
@@ -92,7 +92,7 @@ public class Task extends MedBase implements IExportableModuleContent, IHasIdent
   }
 
   public static Task newInstance(SModel sm, boolean init) {
-    return (Task)SModelUtil_new.instantiateConceptDeclaration("med.tasks.structure.Task", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (Task) SModelUtil_new.instantiateConceptDeclaration("med.tasks.structure.Task", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static Task newInstance(SModel sm) {

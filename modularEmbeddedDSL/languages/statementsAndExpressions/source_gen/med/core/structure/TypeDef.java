@@ -71,7 +71,7 @@ public class TypeDef extends BaseConcept implements IHasIdentifierName, IExporta
   }
 
   public Type getBaseType() {
-    return (Type)this.getChild(Type.class, TypeDef.BASE_TYPE);
+    return (Type) this.getChild(Type.class, TypeDef.BASE_TYPE);
   }
 
   public void setBaseType(Type node) {
@@ -79,7 +79,7 @@ public class TypeDef extends BaseConcept implements IHasIdentifierName, IExporta
   }
 
   public static TypeDef newInstance(SModel sm, boolean init) {
-    return (TypeDef)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.TypeDef", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (TypeDef) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.TypeDef", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static TypeDef newInstance(SModel sm) {

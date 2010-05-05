@@ -42,7 +42,7 @@ public class UInt16 extends Type implements IStdInt {
   }
 
   public static UInt16 newInstance(SModel sm, boolean init) {
-    return (UInt16)SModelUtil_new.instantiateConceptDeclaration("med.core.structure.UInt16", sm, GlobalScope.getInstance(), init).getAdapter();
+    return (UInt16) SModelUtil_new.instantiateConceptDeclaration("med.core.structure.UInt16", sm, GlobalScope.getInstance(), init).getAdapter();
   }
 
   public static UInt16 newInstance(SModel sm) {

@@ -13,6 +13,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.intentions.BaseIntentionProvider;
 import jetbrains.mps.typesystem.inference.IErrorTarget;
 import jetbrains.mps.typesystem.inference.NodeErrorTarget;
+import jetbrains.mps.nodeEditor.IErrorReporter;
 import jetbrains.mps.smodel.SModelUtil_new;
 
 public class structAttributesUniqueNames_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
@@ -29,7 +30,7 @@ public class structAttributesUniqueNames_NonTypesystemRule extends AbstractNonTy
         {
           BaseIntentionProvider intentionProvider = null;
           IErrorTarget errorTarget = new NodeErrorTarget();
-          typeCheckingContext.reportTypeError(attr, "duplicate name", "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "5136468150843055520", intentionProvider, errorTarget);
+          IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(attr, "duplicate name", "r:2722db94-1dcc-4cd4-9566-13f53f67069f(med.core.typesystem)", "5136468150843055520", intentionProvider, errorTarget);
         }
       }
     }
