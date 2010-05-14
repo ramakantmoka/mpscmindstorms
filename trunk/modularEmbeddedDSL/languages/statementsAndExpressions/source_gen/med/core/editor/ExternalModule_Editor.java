@@ -338,10 +338,6 @@ public class ExternalModule_Editor extends DefaultNodeEditor {
         }
       }
     }
-
-    public EditorCell createSeparatorCell(EditorContext editorContext) {
-      return super.createSeparatorCell(editorContext);
-    }
   }
 
   private static class typedefsListHandler_f8dgei_k0 extends RefNodeListHandler {
@@ -383,10 +379,6 @@ public class ExternalModule_Editor extends DefaultNodeEditor {
           elementCell.setSubstituteInfo(new DefaultChildSubstituteInfo(listOwner, elementNode, super.getLinkDeclaration(), editorContext));
         }
       }
-    }
-
-    public EditorCell createSeparatorCell(EditorContext editorContext) {
-      return super.createSeparatorCell(editorContext);
     }
 
     private EditorCell createConstant_f8dgei_a01a(EditorContext editorContext, SNode node) {
@@ -438,10 +430,6 @@ public class ExternalModule_Editor extends DefaultNodeEditor {
       }
     }
 
-    public EditorCell createSeparatorCell(EditorContext editorContext) {
-      return super.createSeparatorCell(editorContext);
-    }
-
     private EditorCell createConstant_f8dgei_a21a(EditorContext editorContext, SNode node) {
       EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
       editorCell.setCellId("Constant_f8dgei_a21a");
@@ -489,10 +477,6 @@ public class ExternalModule_Editor extends DefaultNodeEditor {
           elementCell.setSubstituteInfo(new DefaultChildSubstituteInfo(listOwner, elementNode, super.getLinkDeclaration(), editorContext));
         }
       }
-    }
-
-    public EditorCell createSeparatorCell(EditorContext editorContext) {
-      return super.createSeparatorCell(editorContext);
     }
 
     private EditorCell createConstant_f8dgei_a41a(EditorContext editorContext, SNode node) {
@@ -544,10 +528,6 @@ public class ExternalModule_Editor extends DefaultNodeEditor {
       }
     }
 
-    public EditorCell createSeparatorCell(EditorContext editorContext) {
-      return super.createSeparatorCell(editorContext);
-    }
-
     private EditorCell createConstant_f8dgei_a61a(EditorContext editorContext, SNode node) {
       EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
       editorCell.setCellId("Constant_f8dgei_a61a");
@@ -595,10 +575,6 @@ public class ExternalModule_Editor extends DefaultNodeEditor {
           elementCell.setSubstituteInfo(new DefaultChildSubstituteInfo(listOwner, elementNode, super.getLinkDeclaration(), editorContext));
         }
       }
-    }
-
-    public EditorCell createSeparatorCell(EditorContext editorContext) {
-      return super.createSeparatorCell(editorContext);
     }
 
     private EditorCell createConstant_f8dgei_a81a(EditorContext editorContext, SNode node) {

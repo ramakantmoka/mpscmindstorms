@@ -6,6 +6,7 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
   <dependency className="med.core.intentions.addElsePart_Intention">
     <classNode dependClassName="java.lang.String" />
@@ -13,6 +14,7 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
   <dependency className="med.core.intentions.addIncludeFile_Intention">
     <classNode dependClassName="java.lang.String" />
@@ -20,14 +22,17 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
   <dependency className="med.core.intentions.addModuleDependencyAnnotation_Intention">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.smodel.AttributesRolesUtil" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
   <dependency className="med.core.intentions.addTag_Intention">
     <classNode dependClassName="java.lang.String" />
@@ -36,6 +41,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.AttributesRolesUtil" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
   <dependency className="med.core.intentions.lockName_Intention">
     <classNode dependClassName="java.lang.String" />
@@ -43,6 +49,7 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
   <dependency className="med.core.intentions.makeModuleSafe_Intention">
     <classNode dependClassName="java.lang.String" />
@@ -50,6 +57,7 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
   <dependency className="med.core.intentions.makeSized_Intention">
     <classNode dependClassName="java.lang.String" />
@@ -59,6 +67,7 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
   <dependency className="med.core.intentions.makeUnsized_Intention">
     <classNode dependClassName="java.lang.String" />
@@ -68,6 +77,7 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
   <dependency className="med.core.intentions.toggleExported_Intention">
     <classNode dependClassName="java.lang.String" />
@@ -75,6 +85,7 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
   <dependency className="med.core.intentions.toggleStatic_Intention">
     <classNode dependClassName="java.lang.String" />
@@ -82,6 +93,7 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
 </dependenciesRoot>
 
