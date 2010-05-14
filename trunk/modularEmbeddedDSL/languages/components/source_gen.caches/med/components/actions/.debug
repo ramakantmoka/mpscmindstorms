@@ -8,5 +8,13 @@
   <nodeInfo nodeId="7678656588248900095" fileName="QueriesGenerated.java" startLine="58" startPosition="115" endLine="59" endPosition="76" />
   <nodeInfo nodeId="7678656588248900100" fileName="QueriesGenerated.java" startLine="59" startPosition="76" endLine="60" endPosition="91" />
   <nodeInfo nodeId="7678656588248900106" fileName="QueriesGenerated.java" startLine="60" startPosition="91" endLine="61" endPosition="68" />
+  <scopeInfo nodeId="2739617086197148684" fileName="QueriesGenerated.java" startLine="20" startPosition="202" endLine="21" endPosition="147" />
+  <scopeInfo nodeId="7678656588248900112" fileName="QueriesGenerated.java" startLine="24" startPosition="214" endLine="25" endPosition="117" />
+  <scopeInfo nodeId="2739617086197153672" fileName="QueriesGenerated.java" startLine="33" startPosition="51" endLine="37" endPosition="68">
+    <varInfo nodeId="2739617086197153675" varName="ppc" />
+  </scopeInfo>
+  <scopeInfo nodeId="7678656588248900088" fileName="QueriesGenerated.java" startLine="57" startPosition="51" endLine="61" endPosition="68">
+    <varInfo nodeId="7678656588248900090" varName="ppc" />
+  </scopeInfo>
 </debugInfo>
 

@@ -7,6 +7,7 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
   <dependency className="med.dataflowblocks.intentions.SetName_Intention">
     <classNode dependClassName="java.lang.String" />
@@ -14,6 +15,7 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
   <dependency className="med.dataflowblocks.intentions.UpdatePorts_Intention">
     <classNode dependClassName="java.lang.String" />
@@ -24,6 +26,7 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
 </dependenciesRoot>
 

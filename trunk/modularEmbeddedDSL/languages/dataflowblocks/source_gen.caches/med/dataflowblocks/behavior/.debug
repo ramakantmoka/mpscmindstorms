@@ -2,13 +2,24 @@
 <debugInfo>
   <nodeInfo nodeId="5223430962843659486" fileName="Split_Behavior.java" startLine="9" startPosition="43" endLine="10" endPosition="91" />
   <nodeInfo nodeId="5223430962843753744" fileName="Split_Behavior.java" startLine="10" startPosition="91" endLine="11" endPosition="91" />
-  <nodeInfo nodeId="5223430962846758645" fileName="BlockType_Behavior.java" startLine="14" startPosition="61" endLine="15" endPosition="86" />
   <nodeInfo nodeId="5223430962846758657" fileName="BlockType_Behavior.java" startLine="12" startPosition="43" endLine="13" endPosition="100" />
-  <nodeInfo nodeId="5223430962846758666" fileName="BlockType_Behavior.java" startLine="13" startPosition="100" endLine="14" endPosition="61" />
-  <nodeInfo nodeId="5223430962846758680" fileName="BlockType_Behavior.java" startLine="15" startPosition="86" endLine="16" endPosition="99" />
-  <nodeInfo nodeId="6310580604567730576" fileName="Block_Behavior.java" startLine="11" startPosition="43" endLine="16" endPosition="5" />
   <nodeInfo nodeId="6310580604567730584" fileName="Block_Behavior.java" startLine="12" startPosition="146" endLine="13" endPosition="92" />
   <nodeInfo nodeId="6310580604567730590" fileName="Block_Behavior.java" startLine="13" startPosition="92" endLine="14" endPosition="58" />
+  <nodeInfo nodeId="5223430962846758666" fileName="BlockType_Behavior.java" startLine="13" startPosition="100" endLine="14" endPosition="61" />
   <nodeInfo nodeId="6310580604567730596" fileName="Block_Behavior.java" startLine="14" startPosition="58" endLine="15" endPosition="53" />
+  <nodeInfo nodeId="5223430962846758645" fileName="BlockType_Behavior.java" startLine="14" startPosition="61" endLine="15" endPosition="86" />
+  <nodeInfo nodeId="5223430962846758680" fileName="BlockType_Behavior.java" startLine="15" startPosition="86" endLine="16" endPosition="99" />
+  <nodeInfo nodeId="6310580604567730576" fileName="Block_Behavior.java" startLine="11" startPosition="43" endLine="16" endPosition="5" />
+  <scopeInfo nodeId="5223430962848792583" fileName="BlockType_Behavior.java" startLine="19" startPosition="75" endLine="20" endPosition="98" />
+  <scopeInfo nodeId="5223430962848792600" fileName="BlockType_Behavior.java" startLine="23" startPosition="73" endLine="24" endPosition="99" />
+  <scopeInfo nodeId="5223430962843659485" fileName="Split_Behavior.java" startLine="9" startPosition="43" endLine="11" endPosition="91" />
+  <scopeInfo nodeId="6310580604567730583" fileName="Block_Behavior.java" startLine="12" startPosition="146" endLine="15" endPosition="53">
+    <varInfo nodeId="6310580604567730585" varName="p" />
+  </scopeInfo>
+  <scopeInfo nodeId="5223430962846758644" fileName="BlockType_Behavior.java" startLine="12" startPosition="43" endLine="16" endPosition="99">
+    <varInfo nodeId="5223430962846758658" varName="cmt" />
+  </scopeInfo>
+  <scopeInfo nodeId="6310580604567730575" fileName="Block_Behavior.java" startLine="11" startPosition="43" endLine="16" endPosition="5" />
+  <scopeInfo nodeId="6310580604567730576" fileName="Block_Behavior.java" startLine="11" startPosition="43" endLine="16" endPosition="5" />
 </debugInfo>
 

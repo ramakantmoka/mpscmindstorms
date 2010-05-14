@@ -3,5 +3,8 @@
   <nodeInfo nodeId="1265321504639917320" fileName="StatemachineAdapter_Behavior.java" startLine="12" startPosition="43" endLine="13" endPosition="102" />
   <nodeInfo nodeId="1265321504639917331" fileName="StatemachineAdapter_Behavior.java" startLine="13" startPosition="102" endLine="14" endPosition="188" />
   <nodeInfo nodeId="1265321504640016580" fileName="StatemachineAdapter_Behavior.java" startLine="14" startPosition="188" endLine="15" endPosition="66" />
+  <scopeInfo nodeId="1265321504639903500" fileName="StatemachineAdapter_Behavior.java" startLine="12" startPosition="43" endLine="15" endPosition="66">
+    <varInfo nodeId="1265321504639917321" varName="machine" />
+  </scopeInfo>
 </debugInfo>
 

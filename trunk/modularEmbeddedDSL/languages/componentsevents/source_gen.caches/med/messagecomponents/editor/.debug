@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debugInfo />
+<debugInfo>
+  <scopeInfo nodeId="1265321504640041076" fileName="MessageTrigger_Editor.java" startLine="67" startPosition="33" endLine="68" endPosition="61" />
+</debugInfo>
 

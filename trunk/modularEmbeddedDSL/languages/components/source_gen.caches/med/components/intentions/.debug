@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <nodeInfo nodeId="2739617086187351857" fileName="updateProcedureImplementations_Intention.java" startLine="35" startPosition="76" endLine="36" endPosition="142" />
+  <nodeInfo nodeId="2739617086187351857" fileName="updateProcedureImplementations_Intention.java" startLine="36" startPosition="76" endLine="37" endPosition="142" />
+  <scopeInfo nodeId="2739617086187249549" fileName="updateProcedureImplementations_Intention.java" startLine="32" startPosition="85" endLine="33" endPosition="43" />
+  <scopeInfo nodeId="2739617086187249551" fileName="updateProcedureImplementations_Intention.java" startLine="36" startPosition="76" endLine="37" endPosition="142" />
 </debugInfo>
 
