@@ -2,8 +2,13 @@
 <debugInfo>
   <nodeInfo nodeId="2644792117220217120" fileName="introduceBlock.java" startLine="33" startPosition="68" endLine="34" endPosition="186" />
   <nodeInfo nodeId="2644792117220318662" fileName="introduceBlock.java" startLine="37" startPosition="69" endLine="38" endPosition="100" />
-  <nodeInfo nodeId="2644792117220318670" fileName="introduceBlock.java" startLine="38" startPosition="100" endLine="39" endPosition="102" />
+  <nodeInfo nodeId="2644792117220318670" fileName="introduceBlock.java" startLine="38" startPosition="100" endLine="39" endPosition="103" />
+  <nodeInfo nodeId="2644792117220421191" fileName="introduceBlock.java" startLine="39" startPosition="103" endLine="40" endPosition="119" />
   <nodeInfo nodeId="2644792117220319903" fileName="introduceBlock.java" startLine="40" startPosition="119" endLine="41" endPosition="90" />
-  <nodeInfo nodeId="2644792117220421191" fileName="introduceBlock.java" startLine="39" startPosition="102" endLine="40" endPosition="119" />
+  <scopeInfo nodeId="2644792117220217425" fileName="introduceBlock_blockName_Settings.java" startLine="16" startPosition="35" endLine="17" endPosition="22" />
+  <scopeInfo nodeId="2644792117220215888" fileName="introduceBlock.java" startLine="33" startPosition="68" endLine="34" endPosition="186" />
+  <scopeInfo nodeId="2644792117220088077" fileName="introduceBlock.java" startLine="37" startPosition="69" endLine="41" endPosition="90">
+    <varInfo nodeId="2644792117220318663" varName="newblock" />
+  </scopeInfo>
 </debugInfo>
 

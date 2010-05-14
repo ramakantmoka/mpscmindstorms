@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debugInfo />
+<debugInfo>
+  <scopeInfo nodeId="2644792117219870826" fileName="BlockStatement_Editor.java" startLine="131" startPosition="112" endLine="132" endPosition="73" />
+  <scopeInfo nodeId="2644792117219870839" fileName="BlockStatement_Editor.java" startLine="135" startPosition="112" endLine="136" endPosition="73" />
+</debugInfo>
 
