@@ -69,6 +69,19 @@
     <classNode dependClassName="med.statemachine.structure.Statemachine" />
     <classNode extendsClassName="jetbrains.mps.lang.core.structure.BaseConcept" />
   </dependency>
+  <dependency className="med.statemachine.structure.ProjMode">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.backports.LinkedList" />
+  </dependency>
+  <dependency className="med.statemachine.structure.ProjMode_PropertySupport">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Iterator" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="med.statemachine.structure.ProjMode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.PropertySupport" />
+  </dependency>
   <dependency className="med.statemachine.structure.State">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Iterator" />
@@ -121,6 +134,7 @@
     <classNode dependClassName="med.core.structure.IModuleContent" />
     <classNode dependClassName="med.core.structure.MedBase" />
     <classNode dependClassName="med.statemachine.structure.Event" />
+    <classNode dependClassName="med.statemachine.structure.ProjMode" />
     <classNode dependClassName="med.statemachine.structure.State" />
     <classNode extendsClassName="jetbrains.mps.lang.core.structure.BaseConcept" />
   </dependency>

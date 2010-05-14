@@ -1,3 +1,252 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debugInfo />
+<debugInfo>
+  <nodeInfo nodeId="4954657687991681692" fileName="DiagramCellCollection.java" startLine="11" startPosition="66" endLine="12" endPosition="63" />
+  <nodeInfo nodeId="7348149346523985010" fileName="DiagramLayout.java" startLine="14" startPosition="58" endLine="15" endPosition="37" />
+  <nodeInfo nodeId="4954657687991664284" fileName="DiagramCellCollection.java" startLine="14" startPosition="117" endLine="15" endPosition="48" />
+  <nodeInfo nodeId="7348149346523985020" fileName="DiagramLayout.java" startLine="15" startPosition="37" endLine="16" endPosition="37" />
+  <nodeInfo nodeId="4954657687991681698" fileName="DiagramCellCollection.java" startLine="15" startPosition="48" endLine="16" endPosition="27" />
+  <nodeInfo nodeId="7348149346523985033" fileName="DiagramLayout.java" startLine="16" startPosition="37" endLine="17" endPosition="29" />
+  <nodeInfo nodeId="7348149346523985042" fileName="DiagramLayout.java" startLine="17" startPosition="29" endLine="18" endPosition="30" />
+  <nodeInfo nodeId="7348149346523985051" fileName="DiagramLayout.java" startLine="18" startPosition="30" endLine="19" endPosition="49" />
+  <nodeInfo nodeId="4954657687992398431" fileName="DiagramLayout.java" startLine="19" startPosition="49" endLine="20" endPosition="42" />
+  <nodeInfo nodeId="4954657687992398456" fileName="DiagramLayout.java" startLine="20" startPosition="42" endLine="21" endPosition="21" />
+  <nodeInfo nodeId="4954657687991664446" fileName="DiagramCellCollection.java" startLine="20" startPosition="47" endLine="21" endPosition="33" />
+  <nodeInfo nodeId="4954657687991681710" fileName="DiagramCellCollection.java" startLine="21" startPosition="33" endLine="22" endPosition="34" />
+  <nodeInfo nodeId="7348149346523985071" fileName="DiagramLayout.java" startLine="22" startPosition="40" endLine="23" endPosition="52" />
+  <nodeInfo nodeId="7348149346523985267" fileName="DiagramCellProvider.java" startLine="22" startPosition="63" endLine="23" endPosition="29" />
+  <nodeInfo nodeId="4954657687991684623" fileName="DiagramCellProvider.java" startLine="23" startPosition="29" endLine="24" endPosition="32" />
+  <nodeInfo nodeId="4954657687992398517" fileName="DiagramLayout.java" startLine="23" startPosition="52" endLine="24" endPosition="52" />
+  <nodeInfo nodeId="4954657687992242389" fileName="DiagramCellProvider.java" startLine="24" startPosition="32" endLine="25" endPosition="80" />
+  <nodeInfo nodeId="4954657687992398462" fileName="DiagramLayout.java" startLine="24" startPosition="52" endLine="25" endPosition="18" />
+  <nodeInfo nodeId="7348149346523985272" fileName="DiagramCellProvider.java" startLine="27" startPosition="54" endLine="28" endPosition="106" />
+  <nodeInfo nodeId="3919193983094019110" fileName="TableCellProvider.java" startLine="31" startPosition="40" endLine="32" endPosition="16" />
+  <nodeInfo nodeId="4954657687991684633" fileName="DiagramCellProvider.java" startLine="31" startPosition="67" endLine="32" endPosition="27" />
+  <nodeInfo nodeId="7348149346523985286" fileName="DiagramCellProvider.java" startLine="32" startPosition="27" endLine="33" endPosition="93" />
+  <nodeInfo nodeId="4954657687991681783" fileName="DiagramCellProvider.java" startLine="35" startPosition="38" endLine="36" endPosition="48" />
+  <nodeInfo nodeId="3919193983093426092" fileName="TableCellProvider.java" startLine="35" startPosition="67" endLine="36" endPosition="156" />
+  <nodeInfo nodeId="3919193983093433132" fileName="TableCellProvider.java" startLine="36" startPosition="156" endLine="37" endPosition="67" />
+  <nodeInfo nodeId="3919193983093433162" fileName="TableCellProvider.java" startLine="37" startPosition="67" endLine="38" endPosition="156" />
+  <nodeInfo nodeId="3919193983093433171" fileName="TableCellProvider.java" startLine="38" startPosition="156" endLine="39" endPosition="66" />
+  <nodeInfo nodeId="4954657687992774122" fileName="DiagramCellProvider.java" startLine="43" startPosition="135" endLine="44" endPosition="85" />
+  <nodeInfo nodeId="4954657687992774130" fileName="DiagramCellProvider.java" startLine="44" startPosition="85" endLine="45" endPosition="46" />
+  <nodeInfo nodeId="4954657687992774134" fileName="DiagramCellProvider.java" startLine="45" startPosition="46" endLine="46" endPosition="80" />
+  <nodeInfo nodeId="2896354780542288378" fileName="TableCellProvider.java" startLine="52" startPosition="22" endLine="53" endPosition="38" />
+  <nodeInfo nodeId="2910374376006117472" fileName="DiagramCellProvider.java" startLine="54" startPosition="45" endLine="55" endPosition="43" />
+  <nodeInfo nodeId="2896354780540141206" fileName="TableCellProvider.java" startLine="54" startPosition="230" endLine="55" endPosition="100" />
+  <nodeInfo nodeId="7348149346523690335" fileName="TableCellProvider.java" startLine="55" startPosition="100" endLine="56" endPosition="115" />
+  <nodeInfo nodeId="4954657687992066685" fileName="DiagramCellProvider.java" startLine="58" startPosition="135" endLine="59" endPosition="83" />
+  <nodeInfo nodeId="2896354780542288426" fileName="TableCellProvider.java" startLine="60" startPosition="29" endLine="61" endPosition="39" />
+  <nodeInfo nodeId="4954657687992066702" fileName="DiagramCellProvider.java" startLine="60" startPosition="106" endLine="61" endPosition="73" />
+  <nodeInfo nodeId="4954657687992066708" fileName="DiagramCellProvider.java" startLine="61" startPosition="73" endLine="62" endPosition="85" />
+  <nodeInfo nodeId="2910374376006117466" fileName="DiagramCellProvider.java" startLine="62" startPosition="85" endLine="63" endPosition="42" />
+  <nodeInfo nodeId="2896354780540141117" fileName="TableCellProvider.java" startLine="62" startPosition="238" endLine="63" endPosition="102" />
+  <nodeInfo nodeId="4954657687992066719" fileName="DiagramCellProvider.java" startLine="63" startPosition="42" endLine="64" endPosition="99" />
+  <nodeInfo nodeId="7348149346523690345" fileName="TableCellProvider.java" startLine="63" startPosition="102" endLine="64" endPosition="117" />
+  <nodeInfo nodeId="2896354780542324927" fileName="TableCellProvider.java" startLine="72" startPosition="156" endLine="73" endPosition="125" />
+  <nodeInfo nodeId="2896354780542324939" fileName="TableCellProvider.java" startLine="73" startPosition="125" endLine="74" endPosition="131" />
+  <nodeInfo nodeId="7348149346523396072" fileName="TableCellProvider.java" startLine="80" startPosition="169" endLine="81" endPosition="125" />
+  <nodeInfo nodeId="7348149346523396081" fileName="TableCellProvider.java" startLine="81" startPosition="125" endLine="82" endPosition="126" />
+  <nodeInfo nodeId="2896354780541067257" fileName="TableCellProvider.java" startLine="85" startPosition="17" endLine="86" endPosition="101" />
+  <nodeInfo nodeId="2896354780541067402" fileName="TableCellProvider.java" startLine="98" startPosition="75" endLine="99" endPosition="74" />
+  <nodeInfo nodeId="2896354780541067933" fileName="TableCellProvider.java" startLine="99" startPosition="74" endLine="100" endPosition="23" />
+  <nodeInfo nodeId="2896354780541355299" fileName="TableCellProvider.java" startLine="100" startPosition="23" endLine="101" endPosition="35" />
+  <nodeInfo nodeId="2896354780541488162" fileName="TableCellProvider.java" startLine="101" startPosition="35" endLine="102" endPosition="46" />
+  <nodeInfo nodeId="2896354780541488175" fileName="TableCellProvider.java" startLine="102" startPosition="46" endLine="103" endPosition="60" />
+  <nodeInfo nodeId="7348149346522995771" fileName="TableCellProvider.java" startLine="107" startPosition="76" endLine="108" endPosition="74" />
+  <nodeInfo nodeId="7348149346522995782" fileName="TableCellProvider.java" startLine="108" startPosition="74" endLine="109" endPosition="24" />
+  <nodeInfo nodeId="7348149346522995791" fileName="TableCellProvider.java" startLine="109" startPosition="24" endLine="110" endPosition="37" />
+  <nodeInfo nodeId="7348149346522995807" fileName="TableCellProvider.java" startLine="110" startPosition="37" endLine="111" endPosition="71" />
+  <nodeInfo nodeId="7348149346522995802" fileName="TableCellProvider.java" startLine="111" startPosition="71" endLine="112" endPosition="46" />
+  <nodeInfo nodeId="7348149346522996634" fileName="TableCellProvider.java" startLine="112" startPosition="46" endLine="113" endPosition="60" />
+  <nodeInfo nodeId="2896354780540112380" fileName="TableCellProvider.java" startLine="117" startPosition="61" endLine="118" endPosition="23" />
+  <nodeInfo nodeId="2896354780540112384" fileName="TableCellProvider.java" startLine="120" startPosition="37" endLine="121" endPosition="23" />
+  <nodeInfo nodeId="2896354780540141082" fileName="TableCellProvider.java" startLine="128" startPosition="35" endLine="129" endPosition="27" />
+  <nodeInfo nodeId="7348149346522988678" fileName="TableCellProvider.java" startLine="141" startPosition="59" endLine="142" endPosition="57" />
+  <nodeInfo nodeId="7348149346522995500" fileName="TableCellProvider.java" startLine="145" startPosition="71" endLine="146" endPosition="67" />
+  <nodeInfo nodeId="7348149346522995623" fileName="TableCellProvider.java" startLine="146" startPosition="67" endLine="147" endPosition="24" />
+  <nodeInfo nodeId="7348149346522995632" fileName="TableCellProvider.java" startLine="147" startPosition="24" endLine="148" endPosition="26" />
+  <nodeInfo nodeId="7348149346522995643" fileName="TableCellProvider.java" startLine="148" startPosition="26" endLine="149" endPosition="48" />
+  <nodeInfo nodeId="7348149346522995658" fileName="TableCellProvider.java" startLine="149" startPosition="48" endLine="150" endPosition="62" />
+  <nodeInfo nodeId="7348149346523956524" fileName="DiagramLayout.java" startLine="10" startPosition="55" endLine="12" endPosition="3" />
+  <nodeInfo nodeId="7348149346522967328" fileName="TableCellProvider.java" startLine="137" startPosition="65" endLine="139" endPosition="5" />
+  <nodeInfo nodeId="7348149346523985111" fileName="DiagramCellProvider.java" startLine="26" startPosition="0" endLine="29" endPosition="3" />
+  <nodeInfo nodeId="3919193983092944103" fileName="TableCellProvider.java" startLine="30" startPosition="61" endLine="33" endPosition="3" />
+  <nodeInfo nodeId="2896354780540112350" fileName="TableCellProvider.java" startLine="119" startPosition="0" endLine="122" endPosition="5" />
+  <nodeInfo nodeId="4954657687991664273" fileName="DiagramCellCollection.java" startLine="13" startPosition="0" endLine="17" endPosition="3" />
+  <nodeInfo nodeId="7348149346523982022" fileName="DiagramLayout.java" startLine="28" startPosition="0" endLine="32" endPosition="0" />
+  <nodeInfo nodeId="2896354780540112358" fileName="TableCellProvider.java" startLine="123" startPosition="0" endLine="127" endPosition="0" />
+  <nodeInfo nodeId="2896354780540112364" fileName="TableCellProvider.java" startLine="127" startPosition="0" endLine="131" endPosition="0" />
+  <nodeInfo nodeId="2896354780540112370" fileName="TableCellProvider.java" startLine="131" startPosition="0" endLine="135" endPosition="0" />
+  <nodeInfo nodeId="7348149346522967341" fileName="TableCellProvider.java" startLine="140" startPosition="0" endLine="144" endPosition="0" />
+  <nodeInfo nodeId="7348149346523982037" fileName="DiagramLayout.java" startLine="21" startPosition="21" endLine="26" endPosition="5" />
+  <nodeInfo nodeId="4954657687991681751" fileName="DiagramCellProvider.java" startLine="33" startPosition="93" endLine="38" endPosition="6" />
+  <nodeInfo nodeId="3919193983094990113" fileName="TableCellProvider.java" startLine="66" startPosition="22" endLine="71" endPosition="19" />
+  <nodeInfo nodeId="4954657687991664439" fileName="DiagramCellCollection.java" startLine="18" startPosition="0" endLine="24" endPosition="0" />
+  <nodeInfo nodeId="3919193983093433241" fileName="TableCellProvider.java" startLine="52" startPosition="20" endLine="58" endPosition="15" />
+  <nodeInfo nodeId="4954657687992066696" fileName="DiagramCellProvider.java" startLine="59" startPosition="83" endLine="65" endPosition="11" />
+  <nodeInfo nodeId="3919193983094990156" fileName="TableCellProvider.java" startLine="78" startPosition="24" endLine="84" endPosition="19" />
+  <nodeInfo nodeId="7348149346523995421" fileName="DiagramCellProvider.java" startLine="41" startPosition="136" endLine="48" endPosition="9" />
+  <nodeInfo nodeId="2896354780542019910" fileName="TableCellProvider.java" startLine="78" startPosition="22" endLine="85" endPosition="17" />
+  <nodeInfo nodeId="4954657687992066677" fileName="DiagramCellProvider.java" startLine="57" startPosition="25" endLine="66" endPosition="9" />
+  <nodeInfo nodeId="2896354780541067268" fileName="TableCellProvider.java" startLine="97" startPosition="0" endLine="106" endPosition="0" />
+  <nodeInfo nodeId="7348149346522995487" fileName="TableCellProvider.java" startLine="144" startPosition="0" endLine="153" endPosition="0" />
+  <nodeInfo nodeId="3919193983093433210" fileName="TableCellProvider.java" startLine="48" startPosition="33" endLine="58" endPosition="15" />
+  <nodeInfo nodeId="7348149346522995727" fileName="TableCellProvider.java" startLine="106" startPosition="0" endLine="116" endPosition="0" />
+  <nodeInfo nodeId="2896354780542019810" fileName="TableCellProvider.java" startLine="74" startPosition="131" endLine="85" endPosition="17" />
+  <nodeInfo nodeId="4954657687992066642" fileName="DiagramCellProvider.java" startLine="55" startPosition="43" endLine="68" endPosition="7" />
+  <nodeInfo nodeId="7348149346523982016" fileName="DiagramLayout.java" startLine="13" startPosition="0" endLine="28" endPosition="0" />
+  <nodeInfo nodeId="4954657687991681772" fileName="DiagramCellProvider.java" startLine="53" startPosition="0" endLine="70" endPosition="0" />
+  <nodeInfo nodeId="3919193983094305851" fileName="TableCellProvider.java" startLine="66" startPosition="20" endLine="88" endPosition="15" />
+  <nodeInfo nodeId="7348149346523985118" fileName="DiagramCellProvider.java" startLine="30" startPosition="0" endLine="53" endPosition="0" />
+  <nodeInfo nodeId="3919193983094149840" fileName="TableCellProvider.java" startLine="59" startPosition="20" endLine="88" endPosition="15" />
+  <nodeInfo nodeId="3919193983094149838" fileName="TableCellProvider.java" startLine="59" startPosition="18" endLine="89" endPosition="13" />
+  <nodeInfo nodeId="3919193983093433200" fileName="TableCellProvider.java" startLine="47" startPosition="52" endLine="89" endPosition="13" />
+  <nodeInfo nodeId="3919193983093108277" fileName="TableCellProvider.java" startLine="46" startPosition="142" endLine="90" endPosition="11" />
+  <nodeInfo nodeId="3919193983093108249" fileName="TableCellProvider.java" startLine="44" startPosition="67" endLine="92" endPosition="9" />
+  <nodeInfo nodeId="3919193983092947427" fileName="TableCellProvider.java" startLine="34" startPosition="0" endLine="97" endPosition="0" />
+  <scopeInfo nodeId="7348149346523956527" fileName="DiagramLayout.java" startLine="11" startPosition="26" endLine="11" endPosition="26" />
+  <scopeInfo nodeId="7348149346522967331" fileName="TableCellProvider.java" startLine="138" startPosition="29" endLine="138" endPosition="29" />
+  <scopeInfo nodeId="7348149346523985114" fileName="DiagramCellProvider.java" startLine="27" startPosition="54" endLine="28" endPosition="106" />
+  <scopeInfo nodeId="7348149346523982028" fileName="DiagramLayout.java" startLine="29" startPosition="66" endLine="30" endPosition="16" />
+  <scopeInfo nodeId="3919193983092944106" fileName="TableCellProvider.java" startLine="31" startPosition="40" endLine="32" endPosition="16" />
+  <scopeInfo nodeId="4954657687991681765" fileName="DiagramCellProvider.java" startLine="35" startPosition="38" endLine="36" endPosition="48" />
+  <scopeInfo nodeId="3919193983094990123" fileName="TableCellProvider.java" startLine="68" startPosition="51" endLine="69" endPosition="241" />
+  <scopeInfo nodeId="2896354780540112353" fileName="TableCellProvider.java" startLine="120" startPosition="37" endLine="121" endPosition="23" />
+  <scopeInfo nodeId="2896354780540112361" fileName="TableCellProvider.java" startLine="124" startPosition="29" endLine="125" endPosition="33" />
+  <scopeInfo nodeId="2896354780540112369" fileName="TableCellProvider.java" startLine="128" startPosition="35" endLine="129" endPosition="27" />
+  <scopeInfo nodeId="2896354780540112375" fileName="TableCellProvider.java" startLine="132" startPosition="47" endLine="133" endPosition="18" />
+  <scopeInfo nodeId="7348149346522967344" fileName="TableCellProvider.java" startLine="141" startPosition="59" endLine="142" endPosition="57" />
+  <scopeInfo nodeId="2896354780540612056" fileName="Statemachine_Editor.java" startLine="163" startPosition="41" endLine="164" endPosition="43" />
+  <scopeInfo nodeId="4954657687992567001" fileName="Statemachine_Editor.java" startLine="174" startPosition="43" endLine="175" endPosition="45" />
+  <scopeInfo nodeId="6254144863183078614" fileName="State_Editor.java" startLine="188" startPosition="112" endLine="189" endPosition="59" />
+  <scopeInfo nodeId="6556431234483356422" fileName="State_Editor.java" startLine="192" startPosition="111" endLine="193" endPosition="95" />
+  <scopeInfo nodeId="5231257431511886234" fileName="State_Editor.java" startLine="196" startPosition="111" endLine="197" endPosition="94" />
+  <scopeInfo nodeId="2896354780540612069" fileName="Statemachine_Editor.java" startLine="227" startPosition="111" endLine="228" endPosition="74" />
+  <scopeInfo nodeId="2896354780540612063" fileName="Statemachine_Editor.java" startLine="231" startPosition="111" endLine="232" endPosition="75" />
+  <scopeInfo nodeId="4954657687992567008" fileName="Statemachine_Editor.java" startLine="235" startPosition="111" endLine="236" endPosition="77" />
+  <scopeInfo nodeId="7348149346523956524" fileName="DiagramLayout.java" startLine="10" startPosition="55" endLine="12" endPosition="3" />
+  <scopeInfo nodeId="4954657687991664276" fileName="DiagramCellCollection.java" startLine="14" startPosition="117" endLine="16" endPosition="27" />
+  <scopeInfo nodeId="4954657687991664444" fileName="DiagramCellCollection.java" startLine="20" startPosition="47" endLine="22" endPosition="34" />
+  <scopeInfo nodeId="3919193983093433211" fileName="TableCellProvider.java" startLine="49" startPosition="29" endLine="51" endPosition="89" />
+  <scopeInfo nodeId="2896354780542019811" fileName="TableCellProvider.java" startLine="75" startPosition="67" endLine="77" endPosition="107" />
+  <scopeInfo nodeId="7348149346522967328" fileName="TableCellProvider.java" startLine="137" startPosition="65" endLine="139" endPosition="5" />
+  <scopeInfo nodeId="7348149346523982041" fileName="DiagramLayout.java" startLine="22" startPosition="40" endLine="25" endPosition="18" />
+  <scopeInfo nodeId="7348149346523985111" fileName="DiagramCellProvider.java" startLine="26" startPosition="0" endLine="29" endPosition="3">
+    <varInfo nodeId="7348149346523985265" varName="statemachineNode" />
+  </scopeInfo>
+  <scopeInfo nodeId="3919193983092944103" fileName="TableCellProvider.java" startLine="30" startPosition="61" endLine="33" endPosition="3">
+    <varInfo nodeId="3919193983094019108" varName="node" />
+  </scopeInfo>
+  <scopeInfo nodeId="2896354780540112350" fileName="TableCellProvider.java" startLine="119" startPosition="0" endLine="122" endPosition="5">
+    <varInfo nodeId="2896354780540112378" varName="node" />
+  </scopeInfo>
+  <scopeInfo nodeId="4954657687991664273" fileName="DiagramCellCollection.java" startLine="13" startPosition="0" endLine="17" endPosition="3">
+    <varInfo nodeId="4954657687991664279" varName="node" />
+    <varInfo nodeId="4954657687991664277" varName="ctx" />
+    <varInfo nodeId="4954657687991664549" varName="painter" />
+  </scopeInfo>
+  <scopeInfo nodeId="7348149346523982022" fileName="DiagramLayout.java" startLine="28" startPosition="0" endLine="32" endPosition="0">
+    <varInfo nodeId="7348149346523982025" varName="iterable" />
+  </scopeInfo>
+  <scopeInfo nodeId="4954657687992066701" fileName="DiagramCellProvider.java" startLine="60" startPosition="106" endLine="64" endPosition="99">
+    <varInfo nodeId="4954657687992066709" varName="targetCell" />
+    <varInfo nodeId="4954657687992066703" varName="target" />
+  </scopeInfo>
+  <scopeInfo nodeId="3919193983094990159" fileName="TableCellProvider.java" startLine="79" startPosition="70" endLine="83" endPosition="112" />
+  <scopeInfo nodeId="2896354780540112358" fileName="TableCellProvider.java" startLine="123" startPosition="0" endLine="127" endPosition="0" />
+  <scopeInfo nodeId="2896354780540112364" fileName="TableCellProvider.java" startLine="127" startPosition="0" endLine="131" endPosition="0">
+    <varInfo nodeId="2896354780540112367" varName="n" />
+  </scopeInfo>
+  <scopeInfo nodeId="2896354780540112370" fileName="TableCellProvider.java" startLine="131" startPosition="0" endLine="135" endPosition="0">
+    <varInfo nodeId="2896354780540112373" varName="string" />
+  </scopeInfo>
+  <scopeInfo nodeId="7348149346522967341" fileName="TableCellProvider.java" startLine="140" startPosition="0" endLine="144" endPosition="0">
+    <varInfo nodeId="7348149346522988676" varName="ctx" />
+  </scopeInfo>
+  <scopeInfo nodeId="7348149346523982037" fileName="DiagramLayout.java" startLine="21" startPosition="21" endLine="26" endPosition="5">
+    <varInfo nodeId="7348149346523982039" varName="cell" />
+  </scopeInfo>
+  <scopeInfo nodeId="7348149346523995424" fileName="DiagramCellProvider.java" startLine="42" startPosition="55" endLine="47" endPosition="71" />
+  <scopeInfo nodeId="3919193983093433242" fileName="TableCellProvider.java" startLine="52" startPosition="22" endLine="57" endPosition="90" />
+  <scopeInfo nodeId="3919193983094149842" fileName="TableCellProvider.java" startLine="60" startPosition="29" endLine="65" endPosition="92" />
+  <scopeInfo nodeId="4954657687991664439" fileName="DiagramCellCollection.java" startLine="18" startPosition="0" endLine="24" endPosition="0">
+    <varInfo nodeId="4954657687991664442" varName="graphics" />
+  </scopeInfo>
+  <scopeInfo nodeId="4954657687992066696" fileName="DiagramCellProvider.java" startLine="59" startPosition="83" endLine="65" endPosition="11" />
+  <scopeInfo nodeId="2896354780542019911" fileName="TableCellProvider.java" startLine="78" startPosition="24" endLine="84" endPosition="19" />
+  <scopeInfo nodeId="3919193983094990156" fileName="TableCellProvider.java" startLine="78" startPosition="24" endLine="84" endPosition="19" />
+  <scopeInfo nodeId="2896354780541067271" fileName="TableCellProvider.java" startLine="98" startPosition="75" endLine="104" endPosition="16">
+    <varInfo nodeId="2896354780541488163" varName="cell" />
+    <varInfo nodeId="2896354780541067403" varName="p" />
+  </scopeInfo>
+  <scopeInfo nodeId="7348149346522995490" fileName="TableCellProvider.java" startLine="145" startPosition="71" endLine="151" endPosition="18">
+    <varInfo nodeId="7348149346522995644" varName="cell" />
+    <varInfo nodeId="7348149346522995501" varName="p" />
+  </scopeInfo>
+  <scopeInfo nodeId="7348149346523995421" fileName="DiagramCellProvider.java" startLine="41" startPosition="136" endLine="48" endPosition="9" />
+  <scopeInfo nodeId="4954657687992066684" fileName="DiagramCellProvider.java" startLine="58" startPosition="135" endLine="65" endPosition="11">
+    <varInfo nodeId="4954657687992066686" varName="sourceCell" />
+  </scopeInfo>
+  <scopeInfo nodeId="7348149346522995730" fileName="TableCellProvider.java" startLine="107" startPosition="76" endLine="114" endPosition="16">
+    <varInfo nodeId="7348149346522995803" varName="cell" />
+    <varInfo nodeId="7348149346522995772" varName="p" />
+  </scopeInfo>
+  <scopeInfo nodeId="4954657687992066644" fileName="DiagramCellProvider.java" startLine="57" startPosition="25" endLine="66" endPosition="9" />
+  <scopeInfo nodeId="4954657687992066677" fileName="DiagramCellProvider.java" startLine="57" startPosition="25" endLine="66" endPosition="9" />
+  <scopeInfo nodeId="2896354780541067268" fileName="TableCellProvider.java" startLine="97" startPosition="0" endLine="106" endPosition="0">
+    <varInfo nodeId="2896354780541067281" varName="transitionNode" />
+    <varInfo nodeId="2896354780541067278" varName="ctx" />
+  </scopeInfo>
+  <scopeInfo nodeId="7348149346522995487" fileName="TableCellProvider.java" startLine="144" startPosition="0" endLine="153" endPosition="0">
+    <varInfo nodeId="7348149346522995493" varName="node" />
+    <varInfo nodeId="7348149346522995491" varName="ctx" />
+  </scopeInfo>
+  <scopeInfo nodeId="3919193983093433201" fileName="TableCellProvider.java" startLine="48" startPosition="33" endLine="58" endPosition="15" />
+  <scopeInfo nodeId="7348149346522995727" fileName="TableCellProvider.java" startLine="106" startPosition="0" endLine="116" endPosition="0">
+    <varInfo nodeId="7348149346522995740" varName="transitionNode" />
+    <varInfo nodeId="7348149346522995742" varName="ctx" />
+  </scopeInfo>
+  <scopeInfo nodeId="7348149346523982021" fileName="DiagramLayout.java" startLine="14" startPosition="58" endLine="26" endPosition="5">
+    <varInfo nodeId="4954657687992398432" varName="da" />
+    <varInfo nodeId="7348149346523985052" varName="noOfChilren" />
+    <varInfo nodeId="7348149346523985011" varName="ox" />
+    <varInfo nodeId="4954657687992398457" varName="angle" />
+    <varInfo nodeId="7348149346523985021" varName="oy" />
+  </scopeInfo>
+  <scopeInfo nodeId="4954657687991681775" fileName="DiagramCellProvider.java" startLine="54" startPosition="45" endLine="68" endPosition="7" />
+  <scopeInfo nodeId="7348149346523982016" fileName="DiagramLayout.java" startLine="13" startPosition="0" endLine="28" endPosition="0">
+    <varInfo nodeId="7348149346523982019" varName="collection" />
+  </scopeInfo>
+  <scopeInfo nodeId="4954657687991681772" fileName="DiagramCellProvider.java" startLine="53" startPosition="0" endLine="70" endPosition="0">
+    <varInfo nodeId="4954657687991681781" varName="g" />
+  </scopeInfo>
+  <scopeInfo nodeId="7348149346523985123" fileName="DiagramCellProvider.java" startLine="31" startPosition="67" endLine="51" endPosition="15">
+    <varInfo nodeId="7348149346523985287" varName="states" />
+    <varInfo nodeId="4954657687991681752" varName="painter" />
+  </scopeInfo>
+  <scopeInfo nodeId="3919193983094305852" fileName="TableCellProvider.java" startLine="66" startPosition="22" endLine="87" endPosition="91">
+    <varInfo nodeId="3919193983094990114" varName="transitions" />
+  </scopeInfo>
+  <scopeInfo nodeId="7348149346523985118" fileName="DiagramCellProvider.java" startLine="30" startPosition="0" endLine="53" endPosition="0">
+    <varInfo nodeId="7348149346523985121" varName="context" />
+  </scopeInfo>
+  <scopeInfo nodeId="3919193983094149839" fileName="TableCellProvider.java" startLine="59" startPosition="20" endLine="88" endPosition="15" />
+  <scopeInfo nodeId="3919193983093108280" fileName="TableCellProvider.java" startLine="47" startPosition="52" endLine="89" endPosition="13" />
+  <scopeInfo nodeId="3919193983093108277" fileName="TableCellProvider.java" startLine="46" startPosition="142" endLine="90" endPosition="11">
+    <varInfo nodeId="3919193983093108278" varName="col" />
+  </scopeInfo>
+  <scopeInfo nodeId="3919193983093108252" fileName="TableCellProvider.java" startLine="45" startPosition="96" endLine="91" endPosition="71" />
+  <scopeInfo nodeId="3919193983093108249" fileName="TableCellProvider.java" startLine="44" startPosition="67" endLine="92" endPosition="9">
+    <varInfo nodeId="3919193983093108250" varName="row" />
+  </scopeInfo>
+  <scopeInfo nodeId="3919193983092947432" fileName="TableCellProvider.java" startLine="35" startPosition="67" endLine="95" endPosition="15">
+    <varInfo nodeId="3919193983093433172" varName="noOfRow" />
+    <varInfo nodeId="3919193983093433163" varName="events" />
+    <varInfo nodeId="3919193983093433133" varName="noOfCols" />
+    <varInfo nodeId="3919193983093426093" varName="states" />
+  </scopeInfo>
+  <scopeInfo nodeId="3919193983092947427" fileName="TableCellProvider.java" startLine="34" startPosition="0" endLine="97" endPosition="0">
+    <varInfo nodeId="3919193983092947430" varName="context" />
+  </scopeInfo>
+</debugInfo>
 

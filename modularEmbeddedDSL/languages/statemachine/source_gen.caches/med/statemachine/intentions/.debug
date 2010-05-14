@@ -1,9 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <nodeInfo nodeId="5231257431511886261" fileName="addEntryAction_Intention.java" startLine="34" startPosition="76" endLine="35" endPosition="89" />
-  <nodeInfo nodeId="6254144863182975736" fileName="makeInitialState_Intention.java" startLine="40" startPosition="5" endLine="41" endPosition="56" />
-  <nodeInfo nodeId="6254144863183078630" fileName="makeInitialState_Intention.java" startLine="37" startPosition="76" endLine="40" endPosition="5" />
-  <nodeInfo nodeId="6254144863183078655" fileName="makeInitialState_Intention.java" startLine="38" startPosition="179" endLine="39" endPosition="56" />
-  <nodeInfo nodeId="6556431234483356443" fileName="addExitAction_Intention.java" startLine="34" startPosition="76" endLine="35" endPosition="87" />
+  <nodeInfo nodeId="4954657687992536551" fileName="makeDiagram_Intention.java" startLine="35" startPosition="76" endLine="36" endPosition="57" />
+  <nodeInfo nodeId="4954657687992566958" fileName="makeTable_Intention.java" startLine="35" startPosition="76" endLine="36" endPosition="55" />
+  <nodeInfo nodeId="4954657687992566972" fileName="makeText_Intention.java" startLine="35" startPosition="76" endLine="36" endPosition="54" />
+  <nodeInfo nodeId="5231257431511886261" fileName="addEntryAction_Intention.java" startLine="35" startPosition="76" endLine="36" endPosition="89" />
+  <nodeInfo nodeId="6556431234483356443" fileName="addExitAction_Intention.java" startLine="35" startPosition="76" endLine="36" endPosition="87" />
+  <nodeInfo nodeId="2896354780542143913" fileName="addEvent_Intention.java" startLine="38" startPosition="76" endLine="39" endPosition="89" />
+  <nodeInfo nodeId="2896354780542165276" fileName="addState_Intention.java" startLine="38" startPosition="76" endLine="39" endPosition="93" />
+  <nodeInfo nodeId="2896354780542329436" fileName="addTransition_Intention.java" startLine="38" startPosition="76" endLine="39" endPosition="51" />
+  <nodeInfo nodeId="2896354780542329511" fileName="addTransition_Intention.java" startLine="39" startPosition="51" endLine="40" endPosition="24" />
+  <nodeInfo nodeId="2896354780542143921" fileName="addEvent_Intention.java" startLine="39" startPosition="89" endLine="40" endPosition="51" />
+  <nodeInfo nodeId="2896354780542165284" fileName="addState_Intention.java" startLine="39" startPosition="93" endLine="40" endPosition="55" />
+  <nodeInfo nodeId="6254144863183078655" fileName="makeInitialState_Intention.java" startLine="39" startPosition="179" endLine="40" endPosition="56" />
+  <nodeInfo nodeId="7348149346522371017" fileName="addTransition_Intention.java" startLine="40" startPosition="24" endLine="41" endPosition="24" />
+  <nodeInfo nodeId="2896354780539639378" fileName="addEvent_Intention.java" startLine="40" startPosition="51" endLine="41" endPosition="90" />
+  <nodeInfo nodeId="2896354780539639358" fileName="addState_Intention.java" startLine="40" startPosition="55" endLine="41" endPosition="94" />
+  <nodeInfo nodeId="6254144863182975736" fileName="makeInitialState_Intention.java" startLine="41" startPosition="5" endLine="42" endPosition="56" />
+  <nodeInfo nodeId="2896354780542329517" fileName="addTransition_Intention.java" startLine="42" startPosition="23" endLine="43" endPosition="39" />
+  <nodeInfo nodeId="7348149346522371022" fileName="addTransition_Intention.java" startLine="43" startPosition="39" endLine="44" endPosition="39" />
+  <nodeInfo nodeId="2896354780542329494" fileName="addTransition_Intention.java" startLine="45" startPosition="43" endLine="46" endPosition="26" />
+  <nodeInfo nodeId="7348149346522401437" fileName="addTransition_Intention.java" startLine="47" startPosition="14" endLine="48" endPosition="32" />
+  <nodeInfo nodeId="7348149346522401447" fileName="addTransition_Intention.java" startLine="48" startPosition="32" endLine="49" endPosition="32" />
+  <nodeInfo nodeId="7348149346522401461" fileName="addTransition_Intention.java" startLine="49" startPosition="32" endLine="50" endPosition="98" />
+  <nodeInfo nodeId="7348149346522401496" fileName="addTransition_Intention.java" startLine="50" startPosition="98" endLine="51" endPosition="103" />
+  <nodeInfo nodeId="7348149346522401504" fileName="addTransition_Intention.java" startLine="51" startPosition="103" endLine="52" endPosition="59" />
+  <nodeInfo nodeId="7348149346522401488" fileName="addTransition_Intention.java" startLine="52" startPosition="59" endLine="53" endPosition="60" />
+  <nodeInfo nodeId="7348149346522401469" fileName="addTransition_Intention.java" startLine="53" startPosition="60" endLine="54" endPosition="96" />
+  <nodeInfo nodeId="7348149346522238139" fileName="addTransition_Intention.java" startLine="54" startPosition="96" endLine="55" endPosition="14" />
+  <nodeInfo nodeId="6254144863183078630" fileName="makeInitialState_Intention.java" startLine="38" startPosition="76" endLine="41" endPosition="5" />
+  <nodeInfo nodeId="7348149346522228390" fileName="addTransition_Intention.java" startLine="47" startPosition="12" endLine="56" endPosition="7" />
+  <nodeInfo nodeId="2896354780542329485" fileName="addTransition_Intention.java" startLine="44" startPosition="39" endLine="56" endPosition="7" />
+  <nodeInfo nodeId="2896354780542329447" fileName="addTransition_Intention.java" startLine="41" startPosition="24" endLine="57" endPosition="5" />
+  <scopeInfo nodeId="2896354780540464684" fileName="makeDiagram_Intention.java" startLine="31" startPosition="85" endLine="32" endPosition="37" />
+  <scopeInfo nodeId="4954657687992566953" fileName="makeTable_Intention.java" startLine="31" startPosition="85" endLine="32" endPosition="35" />
+  <scopeInfo nodeId="4954657687992566967" fileName="makeText_Intention.java" startLine="31" startPosition="85" endLine="32" endPosition="34" />
+  <scopeInfo nodeId="5231257431511886256" fileName="addEntryAction_Intention.java" startLine="31" startPosition="85" endLine="32" endPosition="44" />
+  <scopeInfo nodeId="6556431234483356438" fileName="addExitAction_Intention.java" startLine="31" startPosition="85" endLine="32" endPosition="43" />
+  <scopeInfo nodeId="2896354780539585909" fileName="addState_Intention.java" startLine="34" startPosition="85" endLine="35" endPosition="37" />
+  <scopeInfo nodeId="2896354780539639373" fileName="addEvent_Intention.java" startLine="34" startPosition="85" endLine="35" endPosition="37" />
+  <scopeInfo nodeId="2896354780542316571" fileName="addTransition_Intention.java" startLine="34" startPosition="85" endLine="35" endPosition="42" />
+  <scopeInfo nodeId="6254144863182876415" fileName="makeInitialState_Intention.java" startLine="34" startPosition="85" endLine="35" endPosition="40" />
+  <scopeInfo nodeId="2896354780540464686" fileName="makeDiagram_Intention.java" startLine="35" startPosition="76" endLine="36" endPosition="57" />
+  <scopeInfo nodeId="4954657687992566957" fileName="makeTable_Intention.java" startLine="35" startPosition="76" endLine="36" endPosition="55" />
+  <scopeInfo nodeId="4954657687992566971" fileName="makeText_Intention.java" startLine="35" startPosition="76" endLine="36" endPosition="54" />
+  <scopeInfo nodeId="5231257431511886260" fileName="addEntryAction_Intention.java" startLine="35" startPosition="76" endLine="36" endPosition="89" />
+  <scopeInfo nodeId="6556431234483356440" fileName="addExitAction_Intention.java" startLine="35" startPosition="76" endLine="36" endPosition="87" />
+  <scopeInfo nodeId="6254144863183078633" fileName="makeInitialState_Intention.java" startLine="39" startPosition="179" endLine="40" endPosition="56" />
+  <scopeInfo nodeId="2896354780542329486" fileName="addTransition_Intention.java" startLine="45" startPosition="43" endLine="46" endPosition="26" />
+  <scopeInfo nodeId="2896354780539585911" fileName="addState_Intention.java" startLine="38" startPosition="76" endLine="41" endPosition="94">
+    <varInfo nodeId="2896354780542165277" varName="state" />
+  </scopeInfo>
+  <scopeInfo nodeId="2896354780539639375" fileName="addEvent_Intention.java" startLine="38" startPosition="76" endLine="41" endPosition="90">
+    <varInfo nodeId="2896354780542143914" varName="e" />
+  </scopeInfo>
+  <scopeInfo nodeId="6254144863183078630" fileName="makeInitialState_Intention.java" startLine="38" startPosition="76" endLine="41" endPosition="5" />
+  <scopeInfo nodeId="6254144863182876417" fileName="makeInitialState_Intention.java" startLine="38" startPosition="76" endLine="42" endPosition="56" />
+  <scopeInfo nodeId="7348149346522228391" fileName="addTransition_Intention.java" startLine="47" startPosition="14" endLine="55" endPosition="14">
+    <varInfo nodeId="7348149346522401497" varName="trig" />
+    <varInfo nodeId="7348149346522401462" varName="t" />
+    <varInfo nodeId="7348149346522401448" varName="e" />
+    <varInfo nodeId="7348149346522401438" varName="s" />
+  </scopeInfo>
+  <scopeInfo nodeId="2896354780542329449" fileName="addTransition_Intention.java" startLine="42" startPosition="23" endLine="56" endPosition="7" />
+  <scopeInfo nodeId="2896354780542316573" fileName="addTransition_Intention.java" startLine="38" startPosition="76" endLine="57" endPosition="5">
+    <varInfo nodeId="2896354780542329437" varName="c" />
+    <varInfo nodeId="7348149346522371018" varName="event" />
+    <varInfo nodeId="2896354780542329512" varName="state" />
+  </scopeInfo>
 </debugInfo>
 
