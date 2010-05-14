@@ -1,29 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <nodeInfo nodeId="2739617086185276730" fileName="Interface_Behavior.java" startLine="9" startPosition="43" endLine="10" endPosition="59" />
+  <nodeInfo nodeId="7678656588250671836" fileName="InterfaceMapping_Behavior.java" startLine="9" startPosition="43" endLine="10" endPosition="97" />
+  <nodeInfo nodeId="8017499479427462449" fileName="PortAdaptor_Behavior.java" startLine="9" startPosition="43" endLine="10" endPosition="104" />
   <nodeInfo nodeId="2739617086185276744" fileName="InterfaceProcedure_Behavior.java" startLine="10" startPosition="43" endLine="11" endPosition="81" />
+  <nodeInfo nodeId="2739617086189061058" fileName="InterfaceProcParameterReference_Behavior.java" startLine="12" startPosition="86" endLine="13" endPosition="63" />
+  <nodeInfo nodeId="5224308508846650547" fileName="InterfaceMapping_Behavior.java" startLine="14" startPosition="74" endLine="15" endPosition="18" />
+  <nodeInfo nodeId="5224308508846655535" fileName="Wiring_Behavior.java" startLine="15" startPosition="94" endLine="16" endPosition="17" />
+  <nodeInfo nodeId="5224308508846650551" fileName="InterfaceMapping_Behavior.java" startLine="16" startPosition="5" endLine="17" endPosition="17" />
+  <nodeInfo nodeId="5224308508846312550" fileName="Wiring_Behavior.java" startLine="18" startPosition="5" endLine="19" endPosition="16" />
   <nodeInfo nodeId="2739617086186422658" fileName="Component_Behavior.java" startLine="22" startPosition="84" endLine="23" endPosition="45" />
-  <nodeInfo nodeId="2739617086186422667" fileName="Component_Behavior.java" startLine="30" startPosition="5" endLine="31" endPosition="15" />
-  <nodeInfo nodeId="2739617086186422670" fileName="Component_Behavior.java" startLine="23" startPosition="45" endLine="30" endPosition="5" />
-  <nodeInfo nodeId="2739617086186498037" fileName="Component_Behavior.java" startLine="28" startPosition="9" endLine="29" endPosition="166" />
-  <nodeInfo nodeId="2739617086187249568" fileName="ComponentImplementation_Behavior.java" startLine="18" startPosition="97" endLine="29" endPosition="5" />
-  <nodeInfo nodeId="2739617086187249602" fileName="ComponentImplementation_Behavior.java" startLine="19" startPosition="155" endLine="28" endPosition="7" />
   <nodeInfo nodeId="2739617086187249725" fileName="ComponentImplementation_Behavior.java" startLine="24" startPosition="21" endLine="25" endPosition="121" />
   <nodeInfo nodeId="2739617086187249731" fileName="ComponentImplementation_Behavior.java" startLine="25" startPosition="121" endLine="26" endPosition="64" />
   <nodeInfo nodeId="2739617086187249737" fileName="ComponentImplementation_Behavior.java" startLine="26" startPosition="64" endLine="27" endPosition="61" />
-  <nodeInfo nodeId="2739617086189061058" fileName="InterfaceProcParameterReference_Behavior.java" startLine="12" startPosition="86" endLine="13" endPosition="63" />
-  <nodeInfo nodeId="2739617086196425905" fileName="Component_Behavior.java" startLine="34" startPosition="99" endLine="43" endPosition="57" />
+  <nodeInfo nodeId="2739617086186498037" fileName="Component_Behavior.java" startLine="28" startPosition="9" endLine="29" endPosition="166" />
+  <nodeInfo nodeId="2739617086186422667" fileName="Component_Behavior.java" startLine="30" startPosition="5" endLine="31" endPosition="15" />
   <nodeInfo nodeId="5224308508845871171" fileName="Component_Behavior.java" startLine="70" startPosition="93" endLine="71" endPosition="63" />
-  <nodeInfo nodeId="5224308508845871186" fileName="Component_Behavior.java" startLine="71" startPosition="63" endLine="74" endPosition="5" />
   <nodeInfo nodeId="5224308508845871195" fileName="Component_Behavior.java" startLine="72" startPosition="112" endLine="73" endPosition="92" />
-  <nodeInfo nodeId="5224308508846312550" fileName="Wiring_Behavior.java" startLine="18" startPosition="5" endLine="19" endPosition="16" />
-  <nodeInfo nodeId="5224308508846650503" fileName="Wiring_Behavior.java" startLine="13" startPosition="102" endLine="18" endPosition="5" />
-  <nodeInfo nodeId="5224308508846650517" fileName="Wiring_Behavior.java" startLine="14" startPosition="99" endLine="17" endPosition="7" />
   <nodeInfo nodeId="5224308508846650534" fileName="InterfaceMapping_Behavior.java" startLine="13" startPosition="106" endLine="16" endPosition="5" />
-  <nodeInfo nodeId="5224308508846650547" fileName="InterfaceMapping_Behavior.java" startLine="14" startPosition="74" endLine="15" endPosition="18" />
-  <nodeInfo nodeId="5224308508846650551" fileName="InterfaceMapping_Behavior.java" startLine="16" startPosition="5" endLine="17" endPosition="17" />
-  <nodeInfo nodeId="5224308508846655535" fileName="Wiring_Behavior.java" startLine="15" startPosition="94" endLine="16" endPosition="17" />
-  <nodeInfo nodeId="7678656588250671836" fileName="InterfaceMapping_Behavior.java" startLine="9" startPosition="43" endLine="10" endPosition="97" />
-  <nodeInfo nodeId="8017499479427462449" fileName="PortAdaptor_Behavior.java" startLine="9" startPosition="43" endLine="10" endPosition="104" />
+  <nodeInfo nodeId="5224308508846650517" fileName="Wiring_Behavior.java" startLine="14" startPosition="99" endLine="17" endPosition="7" />
+  <nodeInfo nodeId="5224308508845871186" fileName="Component_Behavior.java" startLine="71" startPosition="63" endLine="74" endPosition="5" />
+  <nodeInfo nodeId="5224308508846650503" fileName="Wiring_Behavior.java" startLine="13" startPosition="102" endLine="18" endPosition="5" />
+  <nodeInfo nodeId="2739617086186422670" fileName="Component_Behavior.java" startLine="23" startPosition="45" endLine="30" endPosition="5" />
+  <nodeInfo nodeId="2739617086187249602" fileName="ComponentImplementation_Behavior.java" startLine="19" startPosition="155" endLine="28" endPosition="7" />
+  <nodeInfo nodeId="2739617086196425905" fileName="Component_Behavior.java" startLine="34" startPosition="99" endLine="43" endPosition="57" />
+  <nodeInfo nodeId="2739617086187249568" fileName="ComponentImplementation_Behavior.java" startLine="18" startPosition="97" endLine="29" endPosition="5" />
+  <scopeInfo nodeId="2739617086188321189" fileName="InterfaceProcParameterReference_Behavior.java" startLine="9" startPosition="43" endLine="9" endPosition="43" />
+  <scopeInfo nodeId="7678656588250647923" fileName="Wiring_Behavior.java" startLine="10" startPosition="43" endLine="10" endPosition="43" />
+  <scopeInfo nodeId="3113923837076889398" fileName="InterfaceProcedureImplementation_Behavior.java" startLine="11" startPosition="43" endLine="11" endPosition="43" />
+  <scopeInfo nodeId="2739617086187249560" fileName="ComponentImplementation_Behavior.java" startLine="15" startPosition="43" endLine="15" endPosition="43" />
+  <scopeInfo nodeId="2739617086186422652" fileName="Component_Behavior.java" startLine="19" startPosition="43" endLine="19" endPosition="43" />
+  <scopeInfo nodeId="2739617086185276729" fileName="Interface_Behavior.java" startLine="9" startPosition="43" endLine="10" endPosition="59" />
+  <scopeInfo nodeId="7678656588250671835" fileName="InterfaceMapping_Behavior.java" startLine="9" startPosition="43" endLine="10" endPosition="97" />
+  <scopeInfo nodeId="8017499479427462448" fileName="PortAdaptor_Behavior.java" startLine="9" startPosition="43" endLine="10" endPosition="104" />
+  <scopeInfo nodeId="2739617086185276743" fileName="InterfaceProcedure_Behavior.java" startLine="10" startPosition="43" endLine="11" endPosition="81" />
+  <scopeInfo nodeId="2739617086189061055" fileName="InterfaceProcParameterReference_Behavior.java" startLine="12" startPosition="86" endLine="13" endPosition="63" />
+  <scopeInfo nodeId="5224308508846650536" fileName="InterfaceMapping_Behavior.java" startLine="14" startPosition="74" endLine="15" endPosition="18" />
+  <scopeInfo nodeId="1265321504643777619" fileName="InterfaceProcedure_Behavior.java" startLine="14" startPosition="80" endLine="15" endPosition="100" />
+  <scopeInfo nodeId="3113923837076889402" fileName="InterfaceProcedureImplementation_Behavior.java" startLine="14" startPosition="86" endLine="15" endPosition="256" />
+  <scopeInfo nodeId="5224308508846650519" fileName="Wiring_Behavior.java" startLine="15" startPosition="94" endLine="16" endPosition="17" />
+  <scopeInfo nodeId="2739617086187249626" fileName="ComponentImplementation_Behavior.java" startLine="21" startPosition="41" endLine="22" endPosition="73" />
+  <scopeInfo nodeId="2739617086186493033" fileName="Component_Behavior.java" startLine="25" startPosition="39" endLine="26" endPosition="89" />
+  <scopeInfo nodeId="2739617086186422673" fileName="Component_Behavior.java" startLine="28" startPosition="9" endLine="29" endPosition="166" />
+  <scopeInfo nodeId="1265321504643778340" fileName="ComponentImplementation_Behavior.java" startLine="34" startPosition="39" endLine="35" endPosition="180" />
+  <scopeInfo nodeId="2739617086196425919" fileName="Component_Behavior.java" startLine="36" startPosition="39" endLine="37" endPosition="89" />
+  <scopeInfo nodeId="2739617086196426028" fileName="Component_Behavior.java" startLine="40" startPosition="39" endLine="41" endPosition="73" />
+  <scopeInfo nodeId="1265321504643777989" fileName="ComponentImplementation_Behavior.java" startLine="42" startPosition="39" endLine="43" endPosition="90" />
+  <scopeInfo nodeId="1265321504643778039" fileName="ComponentImplementation_Behavior.java" startLine="46" startPosition="39" endLine="47" endPosition="180" />
+  <scopeInfo nodeId="1265321504638878504" fileName="Component_Behavior.java" startLine="48" startPosition="39" endLine="49" endPosition="91" />
+  <scopeInfo nodeId="1265321504638883594" fileName="Component_Behavior.java" startLine="52" startPosition="37" endLine="53" endPosition="83" />
+  <scopeInfo nodeId="1265321504639707404" fileName="ComponentImplementation_Behavior.java" startLine="54" startPosition="39" endLine="55" endPosition="109" />
+  <scopeInfo nodeId="1265321504639712444" fileName="ComponentImplementation_Behavior.java" startLine="58" startPosition="37" endLine="59" endPosition="101" />
+  <scopeInfo nodeId="1265321504642950460" fileName="Component_Behavior.java" startLine="60" startPosition="39" endLine="61" endPosition="89" />
+  <scopeInfo nodeId="1265321504642950544" fileName="Component_Behavior.java" startLine="64" startPosition="37" endLine="65" endPosition="81" />
+  <scopeInfo nodeId="3113923837077903689" fileName="ComponentImplementation_Behavior.java" startLine="66" startPosition="39" endLine="67" endPosition="72" />
+  <scopeInfo nodeId="5224308508845871189" fileName="Component_Behavior.java" startLine="72" startPosition="112" endLine="73" endPosition="92" />
+  <scopeInfo nodeId="1265321504642950663" fileName="Component_Behavior.java" startLine="80" startPosition="39" endLine="81" endPosition="89" />
+  <scopeInfo nodeId="1265321504642950673" fileName="Component_Behavior.java" startLine="84" startPosition="37" endLine="85" endPosition="81" />
+  <scopeInfo nodeId="5224308508846650506" fileName="Wiring_Behavior.java" startLine="14" startPosition="99" endLine="17" endPosition="7" />
+  <scopeInfo nodeId="2739617086187249603" fileName="ComponentImplementation_Behavior.java" startLine="24" startPosition="21" endLine="27" endPosition="61">
+    <varInfo nodeId="2739617086187249726" varName="impl" />
+  </scopeInfo>
+  <scopeInfo nodeId="5224308508845871186" fileName="Component_Behavior.java" startLine="71" startPosition="63" endLine="74" endPosition="5" />
+  <scopeInfo nodeId="5224308508846650524" fileName="InterfaceMapping_Behavior.java" startLine="13" startPosition="106" endLine="17" endPosition="17" />
+  <scopeInfo nodeId="5224308508846650503" fileName="Wiring_Behavior.java" startLine="13" startPosition="102" endLine="18" endPosition="5" />
+  <scopeInfo nodeId="1265321504643777740" fileName="ComponentImplementation_Behavior.java" startLine="32" startPosition="116" endLine="37" endPosition="7" />
+  <scopeInfo nodeId="3113923837077903672" fileName="ComponentImplementation_Behavior.java" startLine="64" startPosition="104" endLine="69" endPosition="15" />
+  <scopeInfo nodeId="5224308508845871104" fileName="Component_Behavior.java" startLine="70" startPosition="93" endLine="75" endPosition="15">
+    <varInfo nodeId="5224308508845871172" varName="res" />
+  </scopeInfo>
+  <scopeInfo nodeId="5224308508846312546" fileName="Wiring_Behavior.java" startLine="13" startPosition="102" endLine="19" endPosition="16" />
+  <scopeInfo nodeId="2739617086186422670" fileName="Component_Behavior.java" startLine="23" startPosition="45" endLine="30" endPosition="5" />
+  <scopeInfo nodeId="2739617086187249573" fileName="ComponentImplementation_Behavior.java" startLine="19" startPosition="155" endLine="28" endPosition="7" />
+  <scopeInfo nodeId="2739617086186422656" fileName="Component_Behavior.java" startLine="22" startPosition="84" endLine="31" endPosition="15">
+    <varInfo nodeId="2739617086186422659" varName="res" />
+  </scopeInfo>
+  <scopeInfo nodeId="2739617086196425900" fileName="Component_Behavior.java" startLine="34" startPosition="99" endLine="43" endPosition="57" />
+  <scopeInfo nodeId="1265321504643777859" fileName="ComponentImplementation_Behavior.java" startLine="40" startPosition="101" endLine="49" endPosition="20" />
+  <scopeInfo nodeId="1265321504638808147" fileName="Component_Behavior.java" startLine="46" startPosition="90" endLine="55" endPosition="7" />
+  <scopeInfo nodeId="1265321504639707381" fileName="ComponentImplementation_Behavior.java" startLine="52" startPosition="99" endLine="61" endPosition="7" />
+  <scopeInfo nodeId="1265321504642950409" fileName="Component_Behavior.java" startLine="58" startPosition="88" endLine="67" endPosition="7" />
+  <scopeInfo nodeId="1265321504642950654" fileName="Component_Behavior.java" startLine="78" startPosition="88" endLine="87" endPosition="7" />
+  <scopeInfo nodeId="2739617086187249564" fileName="ComponentImplementation_Behavior.java" startLine="18" startPosition="97" endLine="29" endPosition="5" />
+  <scopeInfo nodeId="2739617086187249568" fileName="ComponentImplementation_Behavior.java" startLine="18" startPosition="97" endLine="29" endPosition="5" />
 </debugInfo>
 

@@ -1,3 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debugInfo />
+<debugInfo>
+  <scopeInfo nodeId="7680622939171046607" fileName="QueriesGenerated.java" startLine="15" startPosition="152" endLine="16" endPosition="148" />
+  <scopeInfo nodeId="7680622939171433442" fileName="QueriesGenerated.java" startLine="19" startPosition="152" endLine="20" endPosition="125" />
+  <scopeInfo nodeId="7680622939171317852" fileName="QueriesGenerated.java" startLine="23" startPosition="154" endLine="24" endPosition="222" />
+  <scopeInfo nodeId="7680622939171317864" fileName="QueriesGenerated.java" startLine="27" startPosition="154" endLine="28" endPosition="220" />
+  <scopeInfo nodeId="7680622939171433502" fileName="QueriesGenerated.java" startLine="31" startPosition="154" endLine="32" endPosition="112" />
+  <scopeInfo nodeId="7680622939171433517" fileName="QueriesGenerated.java" startLine="35" startPosition="154" endLine="36" endPosition="110" />
+  <scopeInfo nodeId="7680622939171202363" fileName="QueriesGenerated.java" startLine="39" startPosition="150" endLine="40" endPosition="187" />
+  <scopeInfo nodeId="7680622939171162183" fileName="QueriesGenerated.java" startLine="43" startPosition="150" endLine="44" endPosition="73" />
+  <scopeInfo nodeId="7680622939171433491" fileName="QueriesGenerated.java" startLine="47" startPosition="150" endLine="48" endPosition="77" />
+</debugInfo>
 

@@ -7,6 +7,7 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
   <dependency className="med.features.intentions.addChildFeature_Intention">
     <classNode dependClassName="java.lang.String" />
@@ -15,6 +16,7 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
   <dependency className="med.features.intentions.addFeatureDependencyAnnotation_Intention">
     <classNode dependClassName="java.lang.String" />
@@ -24,6 +26,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.AttributesRolesUtil" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
   <dependency className="med.features.intentions.addReplacementFeatureDependencyAnnotation_Intention">
     <classNode dependClassName="java.lang.String" />
@@ -34,6 +37,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.AttributesRolesUtil" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
   <dependency className="med.features.intentions.checkModel_Intention">
     <classNode dependClassName="java.lang.String" />
@@ -42,6 +46,7 @@
     <classNode dependClassName="med.features.rt.FeatureDependencyChecker" />
     <classNode dependClassName="med.features.rt.ValidationBaseBuilder" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
   <dependency className="med.features.intentions.removeFeatureDependencyAnnotationOnElement_Intention">
     <classNode dependClassName="java.lang.String" />
@@ -50,6 +55,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.AttributesRolesUtil" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
   <dependency className="med.features.intentions.removeFeatureDependencyAnnotation_Intention">
     <classNode dependClassName="java.lang.String" />
@@ -59,6 +65,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.AttributesRolesUtil" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
   <dependency className="med.features.intentions.switchMode_Intention">
     <classNode dependClassName="java.lang.String" />
@@ -66,6 +73,7 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
   <dependency className="med.features.intentions.updateValidationBase_Intention">
     <classNode dependClassName="java.lang.Runnable" />
@@ -75,6 +83,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.SNode" />
     <classNode dependClassName="med.features.rt.ValidationBaseBuilder" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntention" />
+    <classNode extendsClassName="jetbrains.mps.intentions.Intention" />
   </dependency>
 </dependenciesRoot>
 

@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <nodeInfo nodeId="4423275912138814387" fileName="SchedulingPolicy_Behavior.java" startLine="9" startPosition="43" endLine="10" endPosition="58" />
-  <nodeInfo nodeId="6254144863184057937" fileName="Task_Behavior.java" startLine="20" startPosition="90" endLine="21" endPosition="224" />
-  <nodeInfo nodeId="6255891014080456082" fileName="Task_Behavior.java" startLine="16" startPosition="79" endLine="17" endPosition="69" />
   <nodeInfo nodeId="6520964804316772360" fileName="Task_Behavior.java" startLine="12" startPosition="43" endLine="13" endPosition="86" />
+  <nodeInfo nodeId="6255891014080456082" fileName="Task_Behavior.java" startLine="16" startPosition="79" endLine="17" endPosition="69" />
+  <nodeInfo nodeId="6254144863184057937" fileName="Task_Behavior.java" startLine="20" startPosition="90" endLine="21" endPosition="224" />
+  <scopeInfo nodeId="5196379128667768645" fileName="SchedulingPolicy_Behavior.java" startLine="9" startPosition="43" endLine="10" endPosition="58" />
+  <scopeInfo nodeId="6520964804316765916" fileName="Task_Behavior.java" startLine="12" startPosition="43" endLine="13" endPosition="86" />
+  <scopeInfo nodeId="6255891014080456080" fileName="Task_Behavior.java" startLine="16" startPosition="79" endLine="17" endPosition="69" />
+  <scopeInfo nodeId="6254144863184057930" fileName="Task_Behavior.java" startLine="20" startPosition="90" endLine="21" endPosition="224" />
 </debugInfo>
 

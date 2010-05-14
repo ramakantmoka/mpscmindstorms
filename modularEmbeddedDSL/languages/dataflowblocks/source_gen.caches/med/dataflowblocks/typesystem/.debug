@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <nodeInfo nodeId="5223430962847737440" fileName="typeof_InPortReference_InferenceRule.java" startLine="17" startPosition="95" endLine="22" endPosition="5" />
-  <nodeInfo nodeId="5223430962848467525" fileName="typeof_OutputSendStatement_InferenceRule.java" startLine="17" startPosition="95" endLine="22" endPosition="5" />
-  <nodeInfo nodeId="5223430962848492527" fileName="typeof_PortType_InferenceRule.java" startLine="17" startPosition="90" endLine="22" endPosition="5" />
-  <nodeInfo nodeId="5223430962849292568" fileName="typecheckForPorts_NonTypesystemRule.java" startLine="25" startPosition="126" endLine="30" endPosition="7" />
-  <nodeInfo nodeId="5223430962849292588" fileName="typecheckForPorts_NonTypesystemRule.java" startLine="24" startPosition="27" endLine="38" endPosition="5" />
-  <nodeInfo nodeId="5223430962849328592" fileName="typecheckForPorts_NonTypesystemRule.java" startLine="26" startPosition="250" endLine="29" endPosition="9" />
-  <nodeInfo nodeId="5223430962849328629" fileName="typecheckForPorts_NonTypesystemRule.java" startLine="31" startPosition="20" endLine="36" endPosition="9" />
-  <nodeInfo nodeId="5223430962849829910" fileName="typecheckForPorts_NonTypesystemRule.java" startLine="23" startPosition="90" endLine="24" endPosition="27" />
-  <nodeInfo nodeId="5223430962849829917" fileName="typecheckForPorts_NonTypesystemRule.java" startLine="27" startPosition="116" endLine="28" endPosition="26" />
-  <nodeInfo nodeId="5223430962849829925" fileName="typecheckForPorts_NonTypesystemRule.java" startLine="30" startPosition="7" endLine="37" endPosition="7" />
+  <nodeInfo nodeId="5223430962849829910" fileName="typecheckForPorts_NonTypesystemRule.java" startLine="24" startPosition="90" endLine="25" endPosition="27" />
+  <nodeInfo nodeId="5223430962849829917" fileName="typecheckForPorts_NonTypesystemRule.java" startLine="28" startPosition="116" endLine="29" endPosition="26" />
+  <nodeInfo nodeId="5223430962849328592" fileName="typecheckForPorts_NonTypesystemRule.java" startLine="27" startPosition="250" endLine="30" endPosition="9" />
+  <nodeInfo nodeId="5223430962849292568" fileName="typecheckForPorts_NonTypesystemRule.java" startLine="26" startPosition="126" endLine="31" endPosition="7" />
+  <nodeInfo nodeId="5223430962849328629" fileName="typecheckForPorts_NonTypesystemRule.java" startLine="32" startPosition="20" endLine="37" endPosition="9" />
+  <nodeInfo nodeId="5223430962848492527" fileName="typeof_PortType_InferenceRule.java" startLine="18" startPosition="90" endLine="24" endPosition="5" />
+  <nodeInfo nodeId="5223430962847737440" fileName="typeof_InPortReference_InferenceRule.java" startLine="18" startPosition="95" endLine="24" endPosition="5" />
+  <nodeInfo nodeId="5223430962848467525" fileName="typeof_OutputSendStatement_InferenceRule.java" startLine="18" startPosition="95" endLine="24" endPosition="5" />
+  <nodeInfo nodeId="5223430962849829925" fileName="typecheckForPorts_NonTypesystemRule.java" startLine="31" startPosition="7" endLine="38" endPosition="7" />
+  <nodeInfo nodeId="5223430962849292588" fileName="typecheckForPorts_NonTypesystemRule.java" startLine="25" startPosition="27" endLine="39" endPosition="5" />
+  <scopeInfo nodeId="5223430962849328594" fileName="typecheckForPorts_NonTypesystemRule.java" startLine="28" startPosition="116" endLine="29" endPosition="26" />
+  <scopeInfo nodeId="5223430962849292571" fileName="typecheckForPorts_NonTypesystemRule.java" startLine="27" startPosition="250" endLine="30" endPosition="9" />
+  <scopeInfo nodeId="5223430962849292568" fileName="typecheckForPorts_NonTypesystemRule.java" startLine="26" startPosition="126" endLine="31" endPosition="7" />
+  <scopeInfo nodeId="5223430962849829926" fileName="typecheckForPorts_NonTypesystemRule.java" startLine="32" startPosition="20" endLine="37" endPosition="9" />
+  <scopeInfo nodeId="5223430962848474510" fileName="typeof_PortType_InferenceRule.java" startLine="18" startPosition="90" endLine="24" endPosition="5" />
+  <scopeInfo nodeId="5223430962847737434" fileName="typeof_InPortReference_InferenceRule.java" startLine="18" startPosition="95" endLine="24" endPosition="5" />
+  <scopeInfo nodeId="5223430962848467514" fileName="typeof_OutputSendStatement_InferenceRule.java" startLine="18" startPosition="95" endLine="24" endPosition="5" />
+  <scopeInfo nodeId="5223430962849292589" fileName="typecheckForPorts_NonTypesystemRule.java" startLine="26" startPosition="126" endLine="38" endPosition="7" />
+  <scopeInfo nodeId="5223430962849292565" fileName="typecheckForPorts_NonTypesystemRule.java" startLine="24" startPosition="90" endLine="39" endPosition="5">
+    <varInfo nodeId="5223430962849829911" varName="anError" />
+  </scopeInfo>
 </debugInfo>
 

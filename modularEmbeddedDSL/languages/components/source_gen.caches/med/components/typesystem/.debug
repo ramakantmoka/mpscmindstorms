@@ -1,35 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <nodeInfo nodeId="2739617086189122559" fileName="typeof_InterfaceProcParameterReference_InferenceRule.java" startLine="17" startPosition="95" endLine="22" endPosition="5" />
-  <nodeInfo nodeId="2739617086193995929" fileName="onlyOnePPPerInterface_NonTypesystemRule.java" startLine="24" startPosition="98" endLine="39" endPosition="5" />
-  <nodeInfo nodeId="2739617086194095584" fileName="onlyOnePPPerInterface_NonTypesystemRule.java" startLine="33" startPosition="21" endLine="38" endPosition="7" />
-  <nodeInfo nodeId="2739617086196008847" fileName="typeof_Interface_InferenceRule.java" startLine="18" startPosition="90" endLine="19" endPosition="95" />
-  <nodeInfo nodeId="2739617086196008855" fileName="typeof_Interface_InferenceRule.java" startLine="19" startPosition="95" endLine="20" endPosition="59" />
-  <nodeInfo nodeId="2739617086196008871" fileName="typeof_Interface_InferenceRule.java" startLine="20" startPosition="59" endLine="25" endPosition="5" />
-  <nodeInfo nodeId="2739617086197006495" fileName="typeof_PortAdapterExpression_InferenceRule.java" startLine="17" startPosition="96" endLine="22" endPosition="5" />
-  <nodeInfo nodeId="2739617086198022619" fileName="typeof_PortAdaptor_InferenceRule.java" startLine="20" startPosition="60" endLine="25" endPosition="5" />
-  <nodeInfo nodeId="3113923837077903612" fileName="typeof_PortAdaptor_InferenceRule.java" startLine="18" startPosition="93" endLine="19" endPosition="97" />
-  <nodeInfo nodeId="3113923837077903620" fileName="typeof_PortAdaptor_InferenceRule.java" startLine="19" startPosition="97" endLine="20" endPosition="60" />
-  <nodeInfo nodeId="361440579109131633" fileName="typeof_InterfaceProcedure_InferenceRule.java" startLine="17" startPosition="95" endLine="22" endPosition="5" />
-  <nodeInfo nodeId="5224308508845797713" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="39" startPosition="5" endLine="64" endPosition="5" />
-  <nodeInfo nodeId="5224308508845870363" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="30" startPosition="92" endLine="31" endPosition="140" />
-  <nodeInfo nodeId="5224308508845870386" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="31" startPosition="140" endLine="39" endPosition="5" />
-  <nodeInfo nodeId="5224308508845870397" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="32" startPosition="20" endLine="37" endPosition="7" />
-  <nodeInfo nodeId="5224308508845870403" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="37" startPosition="7" endLine="38" endPosition="13" />
-  <nodeInfo nodeId="5224308508845870822" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="40" startPosition="118" endLine="49" endPosition="9" />
-  <nodeInfo nodeId="5224308508845870864" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="49" startPosition="9" endLine="63" endPosition="7" />
-  <nodeInfo nodeId="5224308508845870959" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="50" startPosition="55" endLine="51" endPosition="77" />
-  <nodeInfo nodeId="5224308508845871217" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="51" startPosition="77" endLine="62" endPosition="9" />
-  <nodeInfo nodeId="5224308508845871242" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="52" startPosition="117" endLine="53" endPosition="93" />
-  <nodeInfo nodeId="5224308508845871277" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="53" startPosition="93" endLine="61" endPosition="11" />
-  <nodeInfo nodeId="5224308508845871318" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="54" startPosition="32" endLine="60" endPosition="13" />
-  <nodeInfo nodeId="7678656588248296309" fileName="typeof_RequiredPort_InferenceRule.java" startLine="20" startPosition="54" endLine="25" endPosition="5" />
-  <nodeInfo nodeId="7678656588248296314" fileName="typeof_RequiredPort_InferenceRule.java" startLine="18" startPosition="90" endLine="19" endPosition="98" />
-  <nodeInfo nodeId="7678656588248296322" fileName="typeof_RequiredPort_InferenceRule.java" startLine="19" startPosition="98" endLine="20" endPosition="54" />
-  <nodeInfo nodeId="7678656588248296345" fileName="typeof_RequiredPortProcedureCall_InferenceRule.java" startLine="17" startPosition="90" endLine="22" endPosition="5" />
-  <nodeInfo nodeId="7678656588248720513" fileName="typeof_RequiredPortExpression_InferenceRule.java" startLine="20" startPosition="102" endLine="25" endPosition="5" />
-  <nodeInfo nodeId="7678656588248720518" fileName="typeof_RequiredPortExpression_InferenceRule.java" startLine="18" startPosition="96" endLine="19" endPosition="98" />
-  <nodeInfo nodeId="7678656588248720527" fileName="typeof_RequiredPortExpression_InferenceRule.java" startLine="19" startPosition="98" endLine="20" endPosition="102" />
-  <nodeInfo nodeId="7678656588249412765" fileName="typeof_InterfaceProcedureImplementation_InferenceRule.java" startLine="17" startPosition="100" endLine="22" endPosition="5" />
+  <nodeInfo nodeId="2739617086196008847" fileName="typeof_Interface_InferenceRule.java" startLine="19" startPosition="90" endLine="20" endPosition="95" />
+  <nodeInfo nodeId="7678656588248296314" fileName="typeof_RequiredPort_InferenceRule.java" startLine="19" startPosition="90" endLine="20" endPosition="98" />
+  <nodeInfo nodeId="3113923837077903612" fileName="typeof_PortAdaptor_InferenceRule.java" startLine="19" startPosition="93" endLine="20" endPosition="97" />
+  <nodeInfo nodeId="7678656588248720518" fileName="typeof_RequiredPortExpression_InferenceRule.java" startLine="19" startPosition="96" endLine="20" endPosition="98" />
+  <nodeInfo nodeId="2739617086196008855" fileName="typeof_Interface_InferenceRule.java" startLine="20" startPosition="95" endLine="21" endPosition="59" />
+  <nodeInfo nodeId="3113923837077903620" fileName="typeof_PortAdaptor_InferenceRule.java" startLine="20" startPosition="97" endLine="21" endPosition="60" />
+  <nodeInfo nodeId="7678656588248296322" fileName="typeof_RequiredPort_InferenceRule.java" startLine="20" startPosition="98" endLine="21" endPosition="54" />
+  <nodeInfo nodeId="7678656588248720527" fileName="typeof_RequiredPortExpression_InferenceRule.java" startLine="20" startPosition="98" endLine="21" endPosition="102" />
+  <nodeInfo nodeId="5224308508845870363" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="31" startPosition="92" endLine="32" endPosition="140" />
+  <nodeInfo nodeId="5224308508845870403" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="38" startPosition="7" endLine="39" endPosition="13" />
+  <nodeInfo nodeId="5224308508845870959" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="51" startPosition="55" endLine="52" endPosition="77" />
+  <nodeInfo nodeId="5224308508845871242" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="53" startPosition="117" endLine="54" endPosition="93" />
+  <nodeInfo nodeId="5224308508845870397" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="33" startPosition="20" endLine="38" endPosition="7" />
+  <nodeInfo nodeId="2739617086194095584" fileName="onlyOnePPPerInterface_NonTypesystemRule.java" startLine="34" startPosition="21" endLine="39" endPosition="7" />
+  <nodeInfo nodeId="7678656588248296345" fileName="typeof_RequiredPortProcedureCall_InferenceRule.java" startLine="18" startPosition="90" endLine="24" endPosition="5" />
+  <nodeInfo nodeId="2739617086189122559" fileName="typeof_InterfaceProcParameterReference_InferenceRule.java" startLine="18" startPosition="95" endLine="24" endPosition="5" />
+  <nodeInfo nodeId="361440579109131633" fileName="typeof_InterfaceProcedure_InferenceRule.java" startLine="18" startPosition="95" endLine="24" endPosition="5" />
+  <nodeInfo nodeId="2739617086197006495" fileName="typeof_PortAdapterExpression_InferenceRule.java" startLine="18" startPosition="96" endLine="24" endPosition="5" />
+  <nodeInfo nodeId="7678656588249412765" fileName="typeof_InterfaceProcedureImplementation_InferenceRule.java" startLine="18" startPosition="100" endLine="24" endPosition="5" />
+  <nodeInfo nodeId="7678656588248296309" fileName="typeof_RequiredPort_InferenceRule.java" startLine="21" startPosition="54" endLine="27" endPosition="5" />
+  <nodeInfo nodeId="2739617086196008871" fileName="typeof_Interface_InferenceRule.java" startLine="21" startPosition="59" endLine="27" endPosition="5" />
+  <nodeInfo nodeId="2739617086198022619" fileName="typeof_PortAdaptor_InferenceRule.java" startLine="21" startPosition="60" endLine="27" endPosition="5" />
+  <nodeInfo nodeId="7678656588248720513" fileName="typeof_RequiredPortExpression_InferenceRule.java" startLine="21" startPosition="102" endLine="27" endPosition="5" />
+  <nodeInfo nodeId="5224308508845871318" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="55" startPosition="32" endLine="61" endPosition="13" />
+  <nodeInfo nodeId="5224308508845870386" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="32" startPosition="140" endLine="40" endPosition="5" />
+  <nodeInfo nodeId="5224308508845871277" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="54" startPosition="93" endLine="62" endPosition="11" />
+  <nodeInfo nodeId="5224308508845870822" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="41" startPosition="118" endLine="50" endPosition="9" />
+  <nodeInfo nodeId="5224308508845871217" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="52" startPosition="77" endLine="63" endPosition="9" />
+  <nodeInfo nodeId="5224308508845870864" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="50" startPosition="9" endLine="64" endPosition="7" />
+  <nodeInfo nodeId="2739617086193995929" fileName="onlyOnePPPerInterface_NonTypesystemRule.java" startLine="25" startPosition="98" endLine="40" endPosition="5" />
+  <nodeInfo nodeId="5224308508845797713" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="40" startPosition="5" endLine="65" endPosition="5" />
+  <scopeInfo nodeId="2739617086194090198" fileName="onlyOnePPPerInterface_NonTypesystemRule.java" startLine="27" startPosition="39" endLine="28" endPosition="89" />
+  <scopeInfo nodeId="2739617086194095238" fileName="onlyOnePPPerInterface_NonTypesystemRule.java" startLine="31" startPosition="39" endLine="32" endPosition="128" />
+  <scopeInfo nodeId="5224308508845870833" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="43" startPosition="41" endLine="44" endPosition="102" />
+  <scopeInfo nodeId="5224308508845870843" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="47" startPosition="39" endLine="48" endPosition="94" />
+  <scopeInfo nodeId="2739617086193995931" fileName="onlyOnePPPerInterface_NonTypesystemRule.java" startLine="34" startPosition="21" endLine="39" endPosition="7" />
+  <scopeInfo nodeId="7678656588248296339" fileName="typeof_RequiredPortProcedureCall_InferenceRule.java" startLine="18" startPosition="90" endLine="24" endPosition="5" />
+  <scopeInfo nodeId="2739617086189104542" fileName="typeof_InterfaceProcParameterReference_InferenceRule.java" startLine="18" startPosition="95" endLine="24" endPosition="5" />
+  <scopeInfo nodeId="361440579109131627" fileName="typeof_InterfaceProcedure_InferenceRule.java" startLine="18" startPosition="95" endLine="24" endPosition="5" />
+  <scopeInfo nodeId="2739617086197006489" fileName="typeof_PortAdapterExpression_InferenceRule.java" startLine="18" startPosition="96" endLine="24" endPosition="5" />
+  <scopeInfo nodeId="7678656588249394748" fileName="typeof_InterfaceProcedureImplementation_InferenceRule.java" startLine="18" startPosition="100" endLine="24" endPosition="5" />
+  <scopeInfo nodeId="5224308508845870387" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="33" startPosition="20" endLine="39" endPosition="13" />
+  <scopeInfo nodeId="5224308508845871278" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="55" startPosition="32" endLine="61" endPosition="13" />
+  <scopeInfo nodeId="2739617086196008845" fileName="typeof_Interface_InferenceRule.java" startLine="19" startPosition="90" endLine="27" endPosition="5">
+    <varInfo nodeId="2739617086196008848" varName="t" />
+  </scopeInfo>
+  <scopeInfo nodeId="7678656588248296303" fileName="typeof_RequiredPort_InferenceRule.java" startLine="19" startPosition="90" endLine="27" endPosition="5">
+    <varInfo nodeId="7678656588248296315" varName="t" />
+  </scopeInfo>
+  <scopeInfo nodeId="2739617086198022613" fileName="typeof_PortAdaptor_InferenceRule.java" startLine="19" startPosition="93" endLine="27" endPosition="5">
+    <varInfo nodeId="3113923837077903613" varName="t" />
+  </scopeInfo>
+  <scopeInfo nodeId="7678656588248720507" fileName="typeof_RequiredPortExpression_InferenceRule.java" startLine="19" startPosition="96" endLine="27" endPosition="5">
+    <varInfo nodeId="7678656588248720519" varName="t" />
+  </scopeInfo>
+  <scopeInfo nodeId="5224308508845871220" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="53" startPosition="117" endLine="62" endPosition="11">
+    <varInfo nodeId="5224308508845871243" varName="mapping" />
+  </scopeInfo>
+  <scopeInfo nodeId="5224308508845871217" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="52" startPosition="77" endLine="63" endPosition="9" />
+  <scopeInfo nodeId="5224308508845870867" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="51" startPosition="55" endLine="63" endPosition="9">
+    <varInfo nodeId="5224308508845870960" varName="comp" />
+  </scopeInfo>
+  <scopeInfo nodeId="5224308508845870864" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="50" startPosition="9" endLine="64" endPosition="7" />
+  <scopeInfo nodeId="2739617086193995926" fileName="onlyOnePPPerInterface_NonTypesystemRule.java" startLine="25" startPosition="98" endLine="40" endPosition="5" />
+  <scopeInfo nodeId="5224308508845797716" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="41" startPosition="118" endLine="64" endPosition="7">
+    <varInfo nodeId="5224308508845870823" varName="impls" />
+  </scopeInfo>
+  <scopeInfo nodeId="5224308508845797713" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="40" startPosition="5" endLine="65" endPosition="5" />
+  <scopeInfo nodeId="5224308508845797710" fileName="systemAllInterfacesAreImplemented_NonTypesystemRule.java" startLine="31" startPosition="92" endLine="65" endPosition="5">
+    <varInfo nodeId="5224308508845870364" varName="w" />
+  </scopeInfo>
 </debugInfo>
 

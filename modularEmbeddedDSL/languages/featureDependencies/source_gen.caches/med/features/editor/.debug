@@ -1,48 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <nodeInfo nodeId="1281592426318053761" fileName="enterToSwitch.java" startLine="51" startPosition="146" endLine="52" endPosition="106" />
-  <nodeInfo nodeId="1766304526709699004" fileName="DependencyProblem_Editor.java" startLine="251" startPosition="33" endLine="260" endPosition="11" />
-  <nodeInfo nodeId="1766304526709699010" fileName="DependencyProblem_Editor.java" startLine="256" startPosition="13" endLine="257" endPosition="102" />
-  <nodeInfo nodeId="1766304526709699023" fileName="DependencyProblem_Editor.java" startLine="258" startPosition="16" endLine="260" endPosition="11" />
-  <nodeInfo nodeId="1766304526709699025" fileName="DependencyProblem_Editor.java" startLine="258" startPosition="18" endLine="259" endPosition="102" />
-  <nodeInfo nodeId="1833385247969181022" fileName="SimpleFeatureDeclaration_Editor.java" startLine="103" startPosition="102" endLine="108" endPosition="5" />
-  <nodeInfo nodeId="1833385247969181027" fileName="SimpleFeatureDeclaration_Editor.java" startLine="104" startPosition="80" endLine="105" endPosition="34" />
-  <nodeInfo nodeId="1833385247969181029" fileName="SimpleFeatureDeclaration_Editor.java" startLine="106" startPosition="10" endLine="108" endPosition="5" />
-  <nodeInfo nodeId="1833385247969181031" fileName="SimpleFeatureDeclaration_Editor.java" startLine="106" startPosition="12" endLine="107" endPosition="23" />
-  <nodeInfo nodeId="1833385247969181036" fileName="MacroFeatureDeclaration_Editor.java" startLine="146" startPosition="102" endLine="151" endPosition="5" />
-  <nodeInfo nodeId="1833385247969181041" fileName="MacroFeatureDeclaration_Editor.java" startLine="147" startPosition="80" endLine="148" endPosition="34" />
-  <nodeInfo nodeId="1833385247969181043" fileName="MacroFeatureDeclaration_Editor.java" startLine="149" startPosition="10" endLine="151" endPosition="5" />
-  <nodeInfo nodeId="1833385247969181045" fileName="MacroFeatureDeclaration_Editor.java" startLine="149" startPosition="12" endLine="150" endPosition="23" />
-  <nodeInfo nodeId="3454409893515401583" fileName="FeatureClause_Editor.java" startLine="227" startPosition="114" endLine="230" endPosition="7" />
-  <nodeInfo nodeId="3454409893515401585" fileName="FeatureClause_Editor.java" startLine="228" startPosition="58" endLine="229" endPosition="40" />
-  <nodeInfo nodeId="3525105684383973725" fileName="DependencyProblem_Editor.java" startLine="253" startPosition="143" endLine="256" endPosition="13" />
-  <nodeInfo nodeId="3525105684383973729" fileName="DependencyProblem_Editor.java" startLine="252" startPosition="102" endLine="253" endPosition="143" />
-  <nodeInfo nodeId="3525105684383973741" fileName="DependencyProblem_Editor.java" startLine="254" startPosition="31" endLine="255" endPosition="117" />
-  <nodeInfo nodeId="3525105684384129063" fileName="DependencyProblem_Editor.java" startLine="291" startPosition="33" endLine="300" endPosition="11" />
-  <nodeInfo nodeId="3525105684384129069" fileName="DependencyProblem_Editor.java" startLine="292" startPosition="102" endLine="293" endPosition="143" />
-  <nodeInfo nodeId="3525105684384129076" fileName="DependencyProblem_Editor.java" startLine="293" startPosition="143" endLine="296" endPosition="13" />
-  <nodeInfo nodeId="3525105684384129078" fileName="DependencyProblem_Editor.java" startLine="294" startPosition="31" endLine="295" endPosition="117" />
-  <nodeInfo nodeId="3525105684384129091" fileName="DependencyProblem_Editor.java" startLine="296" startPosition="13" endLine="297" endPosition="102" />
-  <nodeInfo nodeId="3525105684384129097" fileName="DependencyProblem_Editor.java" startLine="298" startPosition="16" endLine="300" endPosition="11" />
-  <nodeInfo nodeId="3525105684384129099" fileName="DependencyProblem_Editor.java" startLine="298" startPosition="18" endLine="299" endPosition="102" />
-  <nodeInfo nodeId="4595014168072116035" fileName="FeatureClause_Editor.java" startLine="226" startPosition="102" endLine="232" endPosition="5" />
-  <nodeInfo nodeId="4595014168072116041" fileName="FeatureClause_Editor.java" startLine="230" startPosition="7" endLine="231" endPosition="38" />
-  <nodeInfo nodeId="4595014168072116043" fileName="FeatureClause_Editor.java" startLine="232" startPosition="5" endLine="233" endPosition="23" />
-  <nodeInfo nodeId="4595014168072289609" fileName="MacroFeatureDeclaration_Editor.java" startLine="76" startPosition="31" endLine="81" endPosition="9" />
-  <nodeInfo nodeId="4595014168072289618" fileName="MacroFeatureDeclaration_Editor.java" startLine="77" startPosition="84" endLine="78" endPosition="24" />
-  <nodeInfo nodeId="4595014168072289621" fileName="MacroFeatureDeclaration_Editor.java" startLine="79" startPosition="14" endLine="81" endPosition="9" />
-  <nodeInfo nodeId="4595014168072289623" fileName="MacroFeatureDeclaration_Editor.java" startLine="79" startPosition="16" endLine="80" endPosition="25" />
-  <nodeInfo nodeId="5047504493556893898" fileName="FeatureClause_Editor.java" startLine="219" startPosition="106" endLine="222" endPosition="5" />
-  <nodeInfo nodeId="5047504493556915039" fileName="ConigurationAccessHelper.java" startLine="15" startPosition="197" endLine="16" endPosition="16" />
   <nodeInfo nodeId="5047504493556915043" fileName="ConigurationAccessHelper.java" startLine="11" startPosition="39" endLine="12" endPosition="35" />
   <nodeInfo nodeId="7715189151798992927" fileName="ConigurationAccessHelper.java" startLine="14" startPosition="41" endLine="15" endPosition="197" />
-  <nodeInfo nodeId="7715189151799407920" fileName="FeatureClause_Editor.java" startLine="220" startPosition="114" endLine="221" endPosition="88" />
-  <nodeInfo nodeId="8017499479424738862" fileName="ReplacementFeatureClause_Editor.java" startLine="181" startPosition="106" endLine="184" endPosition="5" />
+  <nodeInfo nodeId="5047504493556915039" fileName="ConigurationAccessHelper.java" startLine="15" startPosition="197" endLine="16" endPosition="16" />
+  <nodeInfo nodeId="1281592426318053761" fileName="enterToSwitch.java" startLine="51" startPosition="146" endLine="52" endPosition="106" />
+  <nodeInfo nodeId="4595014168072289618" fileName="MacroFeatureDeclaration_Editor.java" startLine="77" startPosition="84" endLine="78" endPosition="24" />
+  <nodeInfo nodeId="4595014168072289623" fileName="MacroFeatureDeclaration_Editor.java" startLine="79" startPosition="16" endLine="80" endPosition="25" />
+  <nodeInfo nodeId="1833385247969181027" fileName="SimpleFeatureDeclaration_Editor.java" startLine="104" startPosition="80" endLine="105" endPosition="34" />
+  <nodeInfo nodeId="1833385247969181031" fileName="SimpleFeatureDeclaration_Editor.java" startLine="106" startPosition="12" endLine="107" endPosition="23" />
+  <nodeInfo nodeId="1833385247969181041" fileName="MacroFeatureDeclaration_Editor.java" startLine="147" startPosition="80" endLine="148" endPosition="34" />
+  <nodeInfo nodeId="1833385247969181045" fileName="MacroFeatureDeclaration_Editor.java" startLine="149" startPosition="12" endLine="150" endPosition="23" />
   <nodeInfo nodeId="8017499479424738864" fileName="ReplacementFeatureClause_Editor.java" startLine="182" startPosition="114" endLine="183" endPosition="88" />
-  <nodeInfo nodeId="8017499479424738879" fileName="ReplacementFeatureClause_Editor.java" startLine="192" startPosition="102" endLine="198" endPosition="5" />
-  <nodeInfo nodeId="8017499479424738885" fileName="ReplacementFeatureClause_Editor.java" startLine="193" startPosition="114" endLine="196" endPosition="7" />
   <nodeInfo nodeId="8017499479424738887" fileName="ReplacementFeatureClause_Editor.java" startLine="194" startPosition="58" endLine="195" endPosition="40" />
   <nodeInfo nodeId="8017499479424738896" fileName="ReplacementFeatureClause_Editor.java" startLine="196" startPosition="7" endLine="197" endPosition="38" />
   <nodeInfo nodeId="8017499479424738902" fileName="ReplacementFeatureClause_Editor.java" startLine="198" startPosition="5" endLine="199" endPosition="23" />
+  <nodeInfo nodeId="7715189151799407920" fileName="FeatureClause_Editor.java" startLine="220" startPosition="114" endLine="221" endPosition="88" />
+  <nodeInfo nodeId="3454409893515401585" fileName="FeatureClause_Editor.java" startLine="228" startPosition="58" endLine="229" endPosition="40" />
+  <nodeInfo nodeId="4595014168072116041" fileName="FeatureClause_Editor.java" startLine="230" startPosition="7" endLine="231" endPosition="38" />
+  <nodeInfo nodeId="4595014168072116043" fileName="FeatureClause_Editor.java" startLine="232" startPosition="5" endLine="233" endPosition="23" />
+  <nodeInfo nodeId="3525105684383973729" fileName="DependencyProblem_Editor.java" startLine="252" startPosition="102" endLine="253" endPosition="143" />
+  <nodeInfo nodeId="3525105684383973741" fileName="DependencyProblem_Editor.java" startLine="254" startPosition="31" endLine="255" endPosition="117" />
+  <nodeInfo nodeId="1766304526709699010" fileName="DependencyProblem_Editor.java" startLine="256" startPosition="13" endLine="257" endPosition="102" />
+  <nodeInfo nodeId="1766304526709699025" fileName="DependencyProblem_Editor.java" startLine="258" startPosition="18" endLine="259" endPosition="102" />
+  <nodeInfo nodeId="3525105684384129069" fileName="DependencyProblem_Editor.java" startLine="292" startPosition="102" endLine="293" endPosition="143" />
+  <nodeInfo nodeId="3525105684384129078" fileName="DependencyProblem_Editor.java" startLine="294" startPosition="31" endLine="295" endPosition="117" />
+  <nodeInfo nodeId="3525105684384129091" fileName="DependencyProblem_Editor.java" startLine="296" startPosition="13" endLine="297" endPosition="102" />
+  <nodeInfo nodeId="3525105684384129099" fileName="DependencyProblem_Editor.java" startLine="298" startPosition="18" endLine="299" endPosition="102" />
+  <nodeInfo nodeId="4595014168072289621" fileName="MacroFeatureDeclaration_Editor.java" startLine="79" startPosition="14" endLine="81" endPosition="9" />
+  <nodeInfo nodeId="1833385247969181029" fileName="SimpleFeatureDeclaration_Editor.java" startLine="106" startPosition="10" endLine="108" endPosition="5" />
+  <nodeInfo nodeId="1833385247969181043" fileName="MacroFeatureDeclaration_Editor.java" startLine="149" startPosition="10" endLine="151" endPosition="5" />
+  <nodeInfo nodeId="1766304526709699023" fileName="DependencyProblem_Editor.java" startLine="258" startPosition="16" endLine="260" endPosition="11" />
+  <nodeInfo nodeId="3525105684384129097" fileName="DependencyProblem_Editor.java" startLine="298" startPosition="16" endLine="300" endPosition="11" />
+  <nodeInfo nodeId="8017499479424738862" fileName="ReplacementFeatureClause_Editor.java" startLine="181" startPosition="111" endLine="184" endPosition="5" />
+  <nodeInfo nodeId="8017499479424738885" fileName="ReplacementFeatureClause_Editor.java" startLine="193" startPosition="114" endLine="196" endPosition="7" />
+  <nodeInfo nodeId="5047504493556893898" fileName="FeatureClause_Editor.java" startLine="219" startPosition="111" endLine="222" endPosition="5" />
+  <nodeInfo nodeId="3454409893515401583" fileName="FeatureClause_Editor.java" startLine="227" startPosition="114" endLine="230" endPosition="7" />
+  <nodeInfo nodeId="3525105684383973725" fileName="DependencyProblem_Editor.java" startLine="253" startPosition="143" endLine="256" endPosition="13" />
+  <nodeInfo nodeId="3525105684384129076" fileName="DependencyProblem_Editor.java" startLine="293" startPosition="143" endLine="296" endPosition="13" />
+  <nodeInfo nodeId="5047504493556915020" fileName="ConigurationAccessHelper.java" startLine="13" startPosition="0" endLine="18" endPosition="0" />
+  <nodeInfo nodeId="4595014168072289609" fileName="MacroFeatureDeclaration_Editor.java" startLine="76" startPosition="31" endLine="81" endPosition="9" />
+  <nodeInfo nodeId="1833385247969181022" fileName="SimpleFeatureDeclaration_Editor.java" startLine="103" startPosition="107" endLine="108" endPosition="5" />
+  <nodeInfo nodeId="1833385247969181036" fileName="MacroFeatureDeclaration_Editor.java" startLine="146" startPosition="107" endLine="151" endPosition="5" />
+  <nodeInfo nodeId="8017499479424738879" fileName="ReplacementFeatureClause_Editor.java" startLine="192" startPosition="107" endLine="198" endPosition="5" />
+  <nodeInfo nodeId="4595014168072116035" fileName="FeatureClause_Editor.java" startLine="226" startPosition="107" endLine="232" endPosition="5" />
+  <nodeInfo nodeId="1766304526709699004" fileName="DependencyProblem_Editor.java" startLine="251" startPosition="33" endLine="260" endPosition="11" />
+  <nodeInfo nodeId="3525105684384129063" fileName="DependencyProblem_Editor.java" startLine="291" startPosition="33" endLine="300" endPosition="11" />
+  <scopeInfo nodeId="1281592426318053760" fileName="enterToSwitch.java" startLine="51" startPosition="146" endLine="52" endPosition="106" />
+  <scopeInfo nodeId="3525105684383687465" fileName="ListAndClause_Editor.java" startLine="71" startPosition="111" endLine="72" endPosition="98" />
+  <scopeInfo nodeId="4595014168072289611" fileName="MacroFeatureDeclaration_Editor.java" startLine="77" startPosition="84" endLine="78" endPosition="24" />
+  <scopeInfo nodeId="4595014168072289622" fileName="MacroFeatureDeclaration_Editor.java" startLine="79" startPosition="16" endLine="80" endPosition="25" />
+  <scopeInfo nodeId="5047504493555896604" fileName="NotFE_Editor.java" startLine="83" startPosition="111" endLine="84" endPosition="122" />
+  <scopeInfo nodeId="5047504493555896620" fileName="NotFE_Editor.java" startLine="87" startPosition="111" endLine="88" endPosition="122" />
+  <scopeInfo nodeId="8261019787198716088" fileName="OrFE_Editor.java" startLine="93" startPosition="111" endLine="94" endPosition="105" />
+  <scopeInfo nodeId="8261019787198808105" fileName="OrFE_Editor.java" startLine="97" startPosition="111" endLine="98" endPosition="105" />
+  <scopeInfo nodeId="1833385247969181026" fileName="SimpleFeatureDeclaration_Editor.java" startLine="104" startPosition="80" endLine="105" endPosition="34" />
+  <scopeInfo nodeId="1833385247969181030" fileName="SimpleFeatureDeclaration_Editor.java" startLine="106" startPosition="12" endLine="107" endPosition="23" />
+  <scopeInfo nodeId="5615815995171493275" fileName="CompositeFeatureDeclaration_Editor.java" startLine="141" startPosition="112" endLine="142" endPosition="100" />
+  <scopeInfo nodeId="5615815995169928270" fileName="CompositeFeatureDeclaration_Editor.java" startLine="145" startPosition="111" endLine="146" endPosition="98" />
+  <scopeInfo nodeId="1833385247969181040" fileName="MacroFeatureDeclaration_Editor.java" startLine="147" startPosition="80" endLine="148" endPosition="34" />
+  <scopeInfo nodeId="1833385247969181044" fileName="MacroFeatureDeclaration_Editor.java" startLine="149" startPosition="12" endLine="150" endPosition="23" />
+  <scopeInfo nodeId="8017499479424738863" fileName="ReplacementFeatureClause_Editor.java" startLine="182" startPosition="114" endLine="183" endPosition="88" />
+  <scopeInfo nodeId="8017499479424738951" fileName="ReplacementFeatureClause_Editor.java" startLine="188" startPosition="112" endLine="189" endPosition="102" />
+  <scopeInfo nodeId="8017499479424738886" fileName="ReplacementFeatureClause_Editor.java" startLine="194" startPosition="58" endLine="195" endPosition="40" />
+  <scopeInfo nodeId="2063344986612529238" fileName="FeatureClause_Editor.java" startLine="215" startPosition="113" endLine="216" endPosition="102" />
+  <scopeInfo nodeId="4093046831255680539" fileName="FeatureDependencyConfiguration_Editor.java" startLine="220" startPosition="31" endLine="221" endPosition="77" />
+  <scopeInfo nodeId="5047504493556893899" fileName="FeatureClause_Editor.java" startLine="220" startPosition="114" endLine="221" endPosition="88" />
+  <scopeInfo nodeId="3454409893515401584" fileName="FeatureClause_Editor.java" startLine="228" startPosition="58" endLine="229" endPosition="40" />
+  <scopeInfo nodeId="3525105684383806306" fileName="DependencyProblem_Editor.java" startLine="232" startPosition="111" endLine="233" endPosition="17" />
+  <scopeInfo nodeId="5296414764970851242" fileName="FeatureClause_Editor.java" startLine="236" startPosition="107" endLine="237" endPosition="36" />
+  <scopeInfo nodeId="3525105684383973726" fileName="DependencyProblem_Editor.java" startLine="254" startPosition="31" endLine="255" endPosition="117" />
+  <scopeInfo nodeId="1766304526709699024" fileName="DependencyProblem_Editor.java" startLine="258" startPosition="18" endLine="259" endPosition="102" />
+  <scopeInfo nodeId="3525105684384129077" fileName="DependencyProblem_Editor.java" startLine="294" startPosition="31" endLine="295" endPosition="117" />
+  <scopeInfo nodeId="3525105684384129098" fileName="DependencyProblem_Editor.java" startLine="298" startPosition="18" endLine="299" endPosition="102" />
+  <scopeInfo nodeId="1766304526709142940" fileName="FeatureDependencyConfiguration_Editor.java" startLine="308" startPosition="111" endLine="309" endPosition="98" />
+  <scopeInfo nodeId="1766304526709009204" fileName="FeatureDependencyConfiguration_Editor.java" startLine="312" startPosition="112" endLine="313" endPosition="98" />
+  <scopeInfo nodeId="5783202554013517811" fileName="FeatureDependencyConfiguration_Editor.java" startLine="316" startPosition="109" endLine="317" endPosition="43" />
+  <scopeInfo nodeId="3525105684383016450" fileName="FeatureDependencyConfiguration_Editor.java" startLine="320" startPosition="107" endLine="321" endPosition="49" />
+  <scopeInfo nodeId="5047504493556915023" fileName="ConigurationAccessHelper.java" startLine="14" startPosition="41" endLine="16" endPosition="16" />
+  <scopeInfo nodeId="8017499479424738861" fileName="ReplacementFeatureClause_Editor.java" startLine="181" startPosition="111" endLine="185" endPosition="16" />
+  <scopeInfo nodeId="8017499479424738884" fileName="ReplacementFeatureClause_Editor.java" startLine="193" startPosition="114" endLine="197" endPosition="38" />
+  <scopeInfo nodeId="2063344986612529269" fileName="FeatureClause_Editor.java" startLine="219" startPosition="111" endLine="223" endPosition="16" />
+  <scopeInfo nodeId="4595014168072116040" fileName="FeatureClause_Editor.java" startLine="227" startPosition="114" endLine="231" endPosition="38" />
+  <scopeInfo nodeId="5047504493556915020" fileName="ConigurationAccessHelper.java" startLine="13" startPosition="0" endLine="18" endPosition="0">
+    <varInfo nodeId="5047504493556915041" varName="ctx" />
+  </scopeInfo>
+  <scopeInfo nodeId="4595014168072261151" fileName="MacroFeatureDeclaration_Editor.java" startLine="76" startPosition="31" endLine="81" endPosition="9" />
+  <scopeInfo nodeId="1833385247969181021" fileName="SimpleFeatureDeclaration_Editor.java" startLine="103" startPosition="107" endLine="108" endPosition="5" />
+  <scopeInfo nodeId="1833385247969181035" fileName="MacroFeatureDeclaration_Editor.java" startLine="146" startPosition="107" endLine="151" endPosition="5" />
+  <scopeInfo nodeId="1766304526709699009" fileName="DependencyProblem_Editor.java" startLine="252" startPosition="102" endLine="257" endPosition="102">
+    <varInfo nodeId="3525105684383973730" varName="name" />
+  </scopeInfo>
+  <scopeInfo nodeId="3525105684384129068" fileName="DependencyProblem_Editor.java" startLine="292" startPosition="102" endLine="297" endPosition="102">
+    <varInfo nodeId="3525105684384129070" varName="name" />
+  </scopeInfo>
+  <scopeInfo nodeId="8017499479424738878" fileName="ReplacementFeatureClause_Editor.java" startLine="192" startPosition="107" endLine="199" endPosition="23" />
+  <scopeInfo nodeId="4595014168072116034" fileName="FeatureClause_Editor.java" startLine="226" startPosition="107" endLine="233" endPosition="23" />
+  <scopeInfo nodeId="1766304526709699003" fileName="DependencyProblem_Editor.java" startLine="251" startPosition="33" endLine="260" endPosition="11" />
+  <scopeInfo nodeId="1766304526709699049" fileName="DependencyProblem_Editor.java" startLine="291" startPosition="33" endLine="300" endPosition="11" />
 </debugInfo>
 

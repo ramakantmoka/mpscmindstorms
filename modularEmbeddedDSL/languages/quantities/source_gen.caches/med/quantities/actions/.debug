@@ -6,5 +6,10 @@
   <nodeInfo nodeId="738757997636264919" fileName="QueriesGenerated.java" startLine="32" startPosition="60" endLine="33" endPosition="80" />
   <nodeInfo nodeId="738757997636264926" fileName="QueriesGenerated.java" startLine="33" startPosition="80" endLine="34" endPosition="86" />
   <nodeInfo nodeId="738757997636264932" fileName="QueriesGenerated.java" startLine="34" startPosition="86" endLine="35" endPosition="64" />
+  <scopeInfo nodeId="738757997636264938" fileName="QueriesGenerated.java" startLine="20" startPosition="208" endLine="21" endPosition="311" />
+  <scopeInfo nodeId="738757997636264898" fileName="QueriesGenerated.java" startLine="29" startPosition="51" endLine="35" endPosition="64">
+    <varInfo nodeId="738757997636264906" varName="exprStmt" />
+    <varInfo nodeId="738757997636264900" varName="ass" />
+  </scopeInfo>
 </debugInfo>
 

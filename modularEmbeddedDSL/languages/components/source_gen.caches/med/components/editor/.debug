@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
   <nodeInfo nodeId="2739617086190613119" fileName="InterfaceProcedureImplementation_Editor.java" startLine="149" startPosition="31" endLine="150" endPosition="183" />
-  <nodeInfo nodeId="2739617086190613137" fileName="InterfaceProcedureImplementation_Editor.java" startLine="157" startPosition="11" endLine="162" endPosition="19" />
-  <nodeInfo nodeId="2739617086190613175" fileName="InterfaceProcedureImplementation_Editor.java" startLine="162" startPosition="19" endLine="163" endPosition="77" />
   <nodeInfo nodeId="2739617086190877516" fileName="InterfaceProcedureImplementation_Editor.java" startLine="150" startPosition="183" endLine="151" endPosition="136" />
   <nodeInfo nodeId="2739617086190877526" fileName="InterfaceProcedureImplementation_Editor.java" startLine="151" startPosition="136" endLine="152" endPosition="91" />
+  <nodeInfo nodeId="2739617086190613175" fileName="InterfaceProcedureImplementation_Editor.java" startLine="162" startPosition="19" endLine="163" endPosition="77" />
   <nodeInfo nodeId="2739617086191009713" fileName="InterfaceProcedureImplementation_Editor.java" startLine="152" startPosition="91" endLine="157" endPosition="11" />
+  <nodeInfo nodeId="2739617086190613137" fileName="InterfaceProcedureImplementation_Editor.java" startLine="157" startPosition="11" endLine="162" endPosition="19" />
+  <scopeInfo nodeId="2739617086191009723" fileName="InterfaceProcedureImplementation_Editor.java" startLine="154" startPosition="43" endLine="155" endPosition="93" />
+  <scopeInfo nodeId="2739617086190613164" fileName="InterfaceProcedureImplementation_Editor.java" startLine="159" startPosition="43" endLine="160" endPosition="101" />
+  <scopeInfo nodeId="2739617086195009274" fileName="Component_Editor.java" startLine="172" startPosition="112" endLine="173" endPosition="58" />
+  <scopeInfo nodeId="2739617086195097088" fileName="ComponentImplementation_Editor.java" startLine="201" startPosition="112" endLine="202" endPosition="58" />
+  <scopeInfo nodeId="2739617086194330231" fileName="InterfaceProcedureImplementation_Editor.java" startLine="258" startPosition="112" endLine="259" endPosition="147" />
+  <scopeInfo nodeId="2739617086190613118" fileName="InterfaceProcedureImplementation_Editor.java" startLine="149" startPosition="31" endLine="163" endPosition="77">
+    <varInfo nodeId="2739617086190613120" varName="interfaceContainingOperation" />
+    <varInfo nodeId="2739617086190613138" varName="thePortWeAreLookingFor" />
+    <varInfo nodeId="2739617086191009714" varName="allProvidedPortsOfComponent" />
+    <varInfo nodeId="2739617086190877517" varName="currentComponentImpl" />
+    <varInfo nodeId="2739617086190877527" varName="ct" />
+  </scopeInfo>
 </debugInfo>
 

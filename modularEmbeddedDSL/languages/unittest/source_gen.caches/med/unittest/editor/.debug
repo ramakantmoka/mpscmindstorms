@@ -1,3 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debugInfo />
+<debugInfo>
+  <scopeInfo nodeId="7974571013345854925" fileName="Test_Editor.java" startLine="179" startPosition="110" endLine="180" endPosition="58" />
+  <scopeInfo nodeId="3106315015965881015" fileName="Test_Editor.java" startLine="183" startPosition="111" endLine="184" endPosition="175" />
+  <scopeInfo nodeId="3106315015965881024" fileName="Test_Editor.java" startLine="187" startPosition="111" endLine="188" endPosition="178" />
+</debugInfo>
 

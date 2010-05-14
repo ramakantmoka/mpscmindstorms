@@ -1,28 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <nodeInfo nodeId="1833385247966410520" fileName="checkModel_Intention.java" startLine="36" startPosition="42" endLine="37" endPosition="46" />
-  <nodeInfo nodeId="2644792117219768213" fileName="switchMode_Intention.java" startLine="34" startPosition="76" endLine="39" endPosition="5" />
-  <nodeInfo nodeId="2644792117219770556" fileName="switchMode_Intention.java" startLine="35" startPosition="93" endLine="36" endPosition="93" />
-  <nodeInfo nodeId="2644792117219770563" fileName="switchMode_Intention.java" startLine="37" startPosition="10" endLine="39" endPosition="5" />
-  <nodeInfo nodeId="2644792117219770565" fileName="switchMode_Intention.java" startLine="37" startPosition="12" endLine="38" endPosition="96" />
-  <nodeInfo nodeId="3455492224010754427" fileName="updateValidationBase_Intention.java" startLine="35" startPosition="76" endLine="40" endPosition="7" />
-  <nodeInfo nodeId="3525105684383056807" fileName="checkModel_Intention.java" startLine="35" startPosition="76" endLine="36" endPosition="42" />
-  <nodeInfo nodeId="4093046831255898027" fileName="updateValidationBase_Intention.java" startLine="37" startPosition="25" endLine="38" endPosition="58" />
-  <nodeInfo nodeId="5615815995170042637" fileName="addAttribute_Intention.java" startLine="37" startPosition="76" endLine="38" endPosition="52" />
-  <nodeInfo nodeId="5615815995170471866" fileName="addAttribute_Intention.java" startLine="35" startPosition="76" endLine="36" endPosition="96" />
-  <nodeInfo nodeId="5615815995170674553" fileName="addAttribute_Intention.java" startLine="38" startPosition="52" endLine="39" endPosition="28" />
-  <nodeInfo nodeId="5615815995171493297" fileName="addChildFeature_Intention.java" startLine="35" startPosition="76" endLine="36" endPosition="110" />
-  <nodeInfo nodeId="5615815995171493303" fileName="addChildFeature_Intention.java" startLine="36" startPosition="110" endLine="37" endPosition="53" />
-  <nodeInfo nodeId="5615815995171493310" fileName="addChildFeature_Intention.java" startLine="37" startPosition="53" endLine="38" endPosition="31" />
-  <nodeInfo nodeId="5615815995171495036" fileName="addAttribute_Intention.java" startLine="36" startPosition="96" endLine="37" endPosition="76" />
-  <nodeInfo nodeId="8017499479423988131" fileName="addReplacementFeatureDependencyAnnotation_Intention.java" startLine="48" startPosition="76" endLine="49" endPosition="109" />
-  <nodeInfo nodeId="8017499479423988140" fileName="addReplacementFeatureDependencyAnnotation_Intention.java" startLine="50" startPosition="140" endLine="51" endPosition="86" />
-  <nodeInfo nodeId="8017499479423988170" fileName="addReplacementFeatureDependencyAnnotation_Intention.java" startLine="49" startPosition="109" endLine="50" endPosition="140" />
-  <nodeInfo nodeId="8017499479424575989" fileName="removeFeatureDependencyAnnotationOnElement_Intention.java" startLine="47" startPosition="127" endLine="48" endPosition="138" />
-  <nodeInfo nodeId="8017499479425117001" fileName="removeFeatureDependencyAnnotation_Intention.java" startLine="36" startPosition="76" endLine="37" endPosition="154" />
-  <nodeInfo nodeId="8017499479425117010" fileName="removeFeatureDependencyAnnotation_Intention.java" startLine="37" startPosition="154" endLine="38" endPosition="165" />
-  <nodeInfo nodeId="8261019787196946461" fileName="removeFeatureDependencyAnnotationOnElement_Intention.java" startLine="46" startPosition="76" endLine="47" endPosition="127" />
-  <nodeInfo nodeId="8261019787199026060" fileName="addFeatureDependencyAnnotation_Intention.java" startLine="48" startPosition="172" endLine="49" endPosition="86" />
-  <nodeInfo nodeId="8261019787199028630" fileName="addFeatureDependencyAnnotation_Intention.java" startLine="47" startPosition="76" endLine="48" endPosition="172" />
+  <nodeInfo nodeId="3525105684383056807" fileName="checkModel_Intention.java" startLine="36" startPosition="76" endLine="37" endPosition="42" />
+  <nodeInfo nodeId="5615815995170471866" fileName="addAttribute_Intention.java" startLine="36" startPosition="76" endLine="37" endPosition="96" />
+  <nodeInfo nodeId="5615815995171493297" fileName="addChildFeature_Intention.java" startLine="36" startPosition="76" endLine="37" endPosition="110" />
+  <nodeInfo nodeId="2644792117219770556" fileName="switchMode_Intention.java" startLine="36" startPosition="93" endLine="37" endPosition="93" />
+  <nodeInfo nodeId="1833385247966410520" fileName="checkModel_Intention.java" startLine="37" startPosition="42" endLine="38" endPosition="46" />
+  <nodeInfo nodeId="8017499479425117001" fileName="removeFeatureDependencyAnnotation_Intention.java" startLine="37" startPosition="76" endLine="38" endPosition="154" />
+  <nodeInfo nodeId="5615815995171495036" fileName="addAttribute_Intention.java" startLine="37" startPosition="96" endLine="38" endPosition="76" />
+  <nodeInfo nodeId="5615815995171493303" fileName="addChildFeature_Intention.java" startLine="37" startPosition="110" endLine="38" endPosition="53" />
+  <nodeInfo nodeId="2644792117219770565" fileName="switchMode_Intention.java" startLine="38" startPosition="12" endLine="39" endPosition="96" />
+  <nodeInfo nodeId="4093046831255898027" fileName="updateValidationBase_Intention.java" startLine="38" startPosition="25" endLine="39" endPosition="58" />
+  <nodeInfo nodeId="5615815995171493310" fileName="addChildFeature_Intention.java" startLine="38" startPosition="53" endLine="39" endPosition="31" />
+  <nodeInfo nodeId="5615815995170042637" fileName="addAttribute_Intention.java" startLine="38" startPosition="76" endLine="39" endPosition="52" />
+  <nodeInfo nodeId="8017499479425117010" fileName="removeFeatureDependencyAnnotation_Intention.java" startLine="38" startPosition="154" endLine="39" endPosition="165" />
+  <nodeInfo nodeId="5615815995170674553" fileName="addAttribute_Intention.java" startLine="39" startPosition="52" endLine="40" endPosition="28" />
+  <nodeInfo nodeId="8261019787196946461" fileName="removeFeatureDependencyAnnotationOnElement_Intention.java" startLine="47" startPosition="76" endLine="48" endPosition="127" />
+  <nodeInfo nodeId="8261019787199028630" fileName="addFeatureDependencyAnnotation_Intention.java" startLine="48" startPosition="76" endLine="49" endPosition="172" />
+  <nodeInfo nodeId="8017499479424575989" fileName="removeFeatureDependencyAnnotationOnElement_Intention.java" startLine="48" startPosition="127" endLine="49" endPosition="138" />
+  <nodeInfo nodeId="8017499479423988131" fileName="addReplacementFeatureDependencyAnnotation_Intention.java" startLine="49" startPosition="76" endLine="50" endPosition="109" />
+  <nodeInfo nodeId="8261019787199026060" fileName="addFeatureDependencyAnnotation_Intention.java" startLine="49" startPosition="172" endLine="50" endPosition="86" />
+  <nodeInfo nodeId="8017499479423988170" fileName="addReplacementFeatureDependencyAnnotation_Intention.java" startLine="50" startPosition="109" endLine="51" endPosition="140" />
+  <nodeInfo nodeId="8017499479423988140" fileName="addReplacementFeatureDependencyAnnotation_Intention.java" startLine="51" startPosition="140" endLine="52" endPosition="86" />
+  <nodeInfo nodeId="2644792117219770563" fileName="switchMode_Intention.java" startLine="38" startPosition="10" endLine="40" endPosition="5" />
+  <nodeInfo nodeId="2644792117219768213" fileName="switchMode_Intention.java" startLine="35" startPosition="76" endLine="40" endPosition="5" />
+  <nodeInfo nodeId="3455492224010754427" fileName="updateValidationBase_Intention.java" startLine="36" startPosition="76" endLine="41" endPosition="7" />
+  <scopeInfo nodeId="2644792117219665539" fileName="switchMode_Intention.java" startLine="31" startPosition="85" endLine="32" endPosition="35" />
+  <scopeInfo nodeId="3455492224010161464" fileName="updateValidationBase_Intention.java" startLine="32" startPosition="85" endLine="33" endPosition="45" />
+  <scopeInfo nodeId="3455492224010922365" fileName="checkModel_Intention.java" startLine="32" startPosition="85" endLine="33" endPosition="35" />
+  <scopeInfo nodeId="5615815995170039689" fileName="addAttribute_Intention.java" startLine="32" startPosition="85" endLine="33" endPosition="27" />
+  <scopeInfo nodeId="5615815995171493292" fileName="addChildFeature_Intention.java" startLine="32" startPosition="85" endLine="33" endPosition="23" />
+  <scopeInfo nodeId="8261019787194891526" fileName="removeFeatureDependencyAnnotationOnElement_Intention.java" startLine="32" startPosition="85" endLine="33" endPosition="37" />
+  <scopeInfo nodeId="8017499479425116996" fileName="removeFeatureDependencyAnnotation_Intention.java" startLine="33" startPosition="85" endLine="34" endPosition="37" />
+  <scopeInfo nodeId="8261019787194263251" fileName="addFeatureDependencyAnnotation_Intention.java" startLine="33" startPosition="85" endLine="34" endPosition="34" />
+  <scopeInfo nodeId="8017499479423988126" fileName="addReplacementFeatureDependencyAnnotation_Intention.java" startLine="34" startPosition="85" endLine="35" endPosition="39" />
+  <scopeInfo nodeId="2644792117219768215" fileName="switchMode_Intention.java" startLine="36" startPosition="93" endLine="37" endPosition="93" />
+  <scopeInfo nodeId="2644792117219770564" fileName="switchMode_Intention.java" startLine="38" startPosition="12" endLine="39" endPosition="96" />
+  <scopeInfo nodeId="3455492224010754429" fileName="updateValidationBase_Intention.java" startLine="38" startPosition="25" endLine="39" endPosition="58" />
+  <scopeInfo nodeId="8017499479425117020" fileName="removeFeatureDependencyAnnotationOnElement_Intention.java" startLine="43" startPosition="90" endLine="44" endPosition="275" />
+  <scopeInfo nodeId="5047504493556421717" fileName="addFeatureDependencyAnnotation_Intention.java" startLine="44" startPosition="90" endLine="45" endPosition="217" />
+  <scopeInfo nodeId="8017499479423988148" fileName="addReplacementFeatureDependencyAnnotation_Intention.java" startLine="45" startPosition="90" endLine="46" endPosition="228" />
+  <scopeInfo nodeId="3455492224010922367" fileName="checkModel_Intention.java" startLine="36" startPosition="76" endLine="38" endPosition="46" />
+  <scopeInfo nodeId="8017499479425117000" fileName="removeFeatureDependencyAnnotation_Intention.java" startLine="37" startPosition="76" endLine="39" endPosition="165" />
+  <scopeInfo nodeId="8261019787194891528" fileName="removeFeatureDependencyAnnotationOnElement_Intention.java" startLine="47" startPosition="76" endLine="49" endPosition="138" />
+  <scopeInfo nodeId="8261019787194263253" fileName="addFeatureDependencyAnnotation_Intention.java" startLine="48" startPosition="76" endLine="50" endPosition="86">
+    <varInfo nodeId="8261019787199028631" varName="clause" />
+  </scopeInfo>
+  <scopeInfo nodeId="5615815995171493296" fileName="addChildFeature_Intention.java" startLine="36" startPosition="76" endLine="39" endPosition="31">
+    <varInfo nodeId="5615815995171493298" varName="comp" />
+  </scopeInfo>
+  <scopeInfo nodeId="8017499479423988130" fileName="addReplacementFeatureDependencyAnnotation_Intention.java" startLine="49" startPosition="76" endLine="52" endPosition="86">
+    <varInfo nodeId="8017499479423988132" varName="clause" />
+  </scopeInfo>
+  <scopeInfo nodeId="5615815995170039691" fileName="addAttribute_Intention.java" startLine="36" startPosition="76" endLine="40" endPosition="28">
+    <varInfo nodeId="5615815995170471867" varName="a" />
+  </scopeInfo>
+  <scopeInfo nodeId="2644792117219665541" fileName="switchMode_Intention.java" startLine="35" startPosition="76" endLine="40" endPosition="5" />
+  <scopeInfo nodeId="3455492224010161466" fileName="updateValidationBase_Intention.java" startLine="36" startPosition="76" endLine="41" endPosition="7" />
 </debugInfo>
 

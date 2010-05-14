@@ -2,5 +2,12 @@
 <debugInfo>
   <nodeInfo nodeId="1265321504640226786" fileName="MessageTrigger_message_ReferentConstraint.java" startLine="27" startPosition="132" endLine="28" endPosition="139" />
   <nodeInfo nodeId="1265321504640226803" fileName="MessageTrigger_message_ReferentConstraint.java" startLine="28" startPosition="139" endLine="29" endPosition="73" />
+  <scopeInfo nodeId="1265321504641838005" fileName="SendMessage_message_ReferentConstraint.java" startLine="24" startPosition="132" endLine="25" endPosition="177" />
+  <scopeInfo nodeId="1265321504642048144" fileName="SendMessage_port_ReferentConstraint.java" startLine="26" startPosition="132" endLine="27" endPosition="216" />
+  <scopeInfo nodeId="1265321504643161487" fileName="MessageHandler_message_ReferentConstraint.java" startLine="26" startPosition="132" endLine="27" endPosition="211" />
+  <scopeInfo nodeId="1265321504640226785" fileName="MessageTrigger_message_ReferentConstraint.java" startLine="27" startPosition="132" endLine="30" endPosition="43">
+    <varInfo nodeId="1265321504640226804" varName="comp" />
+    <varInfo nodeId="1265321504640226787" varName="impl" />
+  </scopeInfo>
 </debugInfo>
 
