@@ -28,7 +28,7 @@ import jetbrains.mps.smodel.action.SideTransformActionsBuilderContext;
 import jetbrains.mps.smodel.action.AbstractSideTransformHintSubstituteAction;
 
 public class QueriesGenerated {
-  private static Pattern REGEXP_a0a0a2a0a0a0a2a0a1a4 = Pattern.compile("-?\\d+", 0);
+  private static Pattern REGEXP_x583g4_a0a0a2a0a0a0a2a0a1a4 = Pattern.compile("-?\\d+", 0);
 
   public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_BaseConcept_165111250875410634(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
     return SNodeOperations.getAncestor(_context.getSourceNode(), "med.core.structure.ExpressionStatement", true, false) != null;
@@ -118,7 +118,7 @@ public class QueriesGenerated {
           }
 
           public boolean canSubstitute_internal(String pattern, boolean strictly) {
-            return REGEXP_a0a0a2a0a0a0a2a0a1a4.matcher(pattern).matches();
+            return REGEXP_x583g4_a0a0a2a0a0a0a2a0a1a4.matcher(pattern).matches();
           }
 
           public String getMatchingText(String pattern) {

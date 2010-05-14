@@ -1,60 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debugInfo>
-  <nodeInfo nodeId="3454436015648845894" fileName="AddressOfExpressionDelete.java" startLine="29" startPosition="75" endLine="32" endPosition="7" />
   <nodeInfo nodeId="3454436015648845907" fileName="AddressOfExpressionDelete.java" startLine="30" startPosition="72" endLine="31" endPosition="102" />
   <nodeInfo nodeId="3454436015648919585" fileName="AddressOfExpressionDelete.java" startLine="32" startPosition="7" endLine="33" endPosition="39" />
+  <nodeInfo nodeId="4621601338807060020" fileName="NotExpression_Parens_Actions.java" startLine="33" startPosition="75" endLine="34" endPosition="100" />
   <nodeInfo nodeId="4621601338806433042" fileName="BinaryOperation_LeftArgument_Actions.java" startLine="36" startPosition="75" endLine="37" endPosition="87" />
+  <nodeInfo nodeId="4621601338806433103" fileName="BinaryOperation_RightArgument_Actions.java" startLine="36" startPosition="75" endLine="37" endPosition="85" />
+  <nodeInfo nodeId="4621601338806433164" fileName="BinaryOperation_Symbol_Actions.java" startLine="36" startPosition="75" endLine="37" endPosition="85" />
+  <nodeInfo nodeId="4621601338806433109" fileName="BinaryOperation_RightArgument_Actions.java" startLine="37" startPosition="85" endLine="38" endPosition="63" />
   <nodeInfo nodeId="4621601338806433048" fileName="BinaryOperation_LeftArgument_Actions.java" startLine="37" startPosition="87" endLine="38" endPosition="64" />
+  <nodeInfo nodeId="4621601338806433172" fileName="BinaryOperation_Symbol_Actions.java" startLine="38" startPosition="34" endLine="39" endPosition="80" />
+  <nodeInfo nodeId="4621601338806433114" fileName="BinaryOperation_RightArgument_Actions.java" startLine="38" startPosition="63" endLine="39" endPosition="34" />
   <nodeInfo nodeId="4621601338806433053" fileName="BinaryOperation_LeftArgument_Actions.java" startLine="38" startPosition="64" endLine="39" endPosition="34" />
   <nodeInfo nodeId="4621601338806433057" fileName="BinaryOperation_LeftArgument_Actions.java" startLine="39" startPosition="34" endLine="40" endPosition="70" />
-  <nodeInfo nodeId="4621601338806433063" fileName="BinaryOperation_LeftArgument_Actions.java" startLine="40" startPosition="70" endLine="41" endPosition="61" />
-  <nodeInfo nodeId="4621601338806433070" fileName="BinaryOperation_LeftArgument_Actions.java" startLine="41" startPosition="61" endLine="48" endPosition="7" />
-  <nodeInfo nodeId="4621601338806433072" fileName="BinaryOperation_LeftArgument_Actions.java" startLine="42" startPosition="25" endLine="43" endPosition="76" />
-  <nodeInfo nodeId="4621601338806433079" fileName="BinaryOperation_LeftArgument_Actions.java" startLine="43" startPosition="76" endLine="44" endPosition="42" />
-  <nodeInfo nodeId="4621601338806433084" fileName="BinaryOperation_LeftArgument_Actions.java" startLine="44" startPosition="42" endLine="47" endPosition="9" />
-  <nodeInfo nodeId="4621601338806433086" fileName="BinaryOperation_LeftArgument_Actions.java" startLine="45" startPosition="52" endLine="46" endPosition="47" />
-  <nodeInfo nodeId="4621601338806433103" fileName="BinaryOperation_RightArgument_Actions.java" startLine="36" startPosition="75" endLine="37" endPosition="85" />
-  <nodeInfo nodeId="4621601338806433109" fileName="BinaryOperation_RightArgument_Actions.java" startLine="37" startPosition="85" endLine="38" endPosition="63" />
-  <nodeInfo nodeId="4621601338806433114" fileName="BinaryOperation_RightArgument_Actions.java" startLine="38" startPosition="63" endLine="39" endPosition="34" />
   <nodeInfo nodeId="4621601338806433118" fileName="BinaryOperation_RightArgument_Actions.java" startLine="39" startPosition="34" endLine="40" endPosition="70" />
-  <nodeInfo nodeId="4621601338806433124" fileName="BinaryOperation_RightArgument_Actions.java" startLine="40" startPosition="70" endLine="41" endPosition="60" />
-  <nodeInfo nodeId="4621601338806433131" fileName="BinaryOperation_RightArgument_Actions.java" startLine="41" startPosition="60" endLine="48" endPosition="7" />
-  <nodeInfo nodeId="4621601338806433136" fileName="BinaryOperation_RightArgument_Actions.java" startLine="42" startPosition="25" endLine="43" endPosition="74" />
-  <nodeInfo nodeId="4621601338806433143" fileName="BinaryOperation_RightArgument_Actions.java" startLine="43" startPosition="74" endLine="44" endPosition="41" />
-  <nodeInfo nodeId="4621601338806433148" fileName="BinaryOperation_RightArgument_Actions.java" startLine="44" startPosition="41" endLine="47" endPosition="9" />
-  <nodeInfo nodeId="4621601338806433150" fileName="BinaryOperation_RightArgument_Actions.java" startLine="45" startPosition="51" endLine="46" endPosition="45" />
-  <nodeInfo nodeId="4621601338806433164" fileName="BinaryOperation_Symbol_Actions.java" startLine="36" startPosition="75" endLine="37" endPosition="85" />
-  <nodeInfo nodeId="4621601338806433170" fileName="BinaryOperation_Symbol_Actions.java" startLine="37" startPosition="85" endLine="40" endPosition="7" />
-  <nodeInfo nodeId="4621601338806433172" fileName="BinaryOperation_Symbol_Actions.java" startLine="38" startPosition="34" endLine="39" endPosition="80" />
   <nodeInfo nodeId="4621601338806433181" fileName="BinaryOperation_Symbol_Actions.java" startLine="40" startPosition="7" endLine="41" endPosition="62" />
+  <nodeInfo nodeId="4621601338806433063" fileName="BinaryOperation_LeftArgument_Actions.java" startLine="40" startPosition="70" endLine="41" endPosition="61" />
+  <nodeInfo nodeId="4621601338806433124" fileName="BinaryOperation_RightArgument_Actions.java" startLine="40" startPosition="70" endLine="41" endPosition="60" />
   <nodeInfo nodeId="4621601338806433186" fileName="BinaryOperation_Symbol_Actions.java" startLine="41" startPosition="62" endLine="42" endPosition="34" />
+  <nodeInfo nodeId="4621601338806433072" fileName="BinaryOperation_LeftArgument_Actions.java" startLine="42" startPosition="25" endLine="43" endPosition="76" />
+  <nodeInfo nodeId="4621601338806433136" fileName="BinaryOperation_RightArgument_Actions.java" startLine="42" startPosition="25" endLine="43" endPosition="74" />
   <nodeInfo nodeId="4621601338806433190" fileName="BinaryOperation_Symbol_Actions.java" startLine="42" startPosition="34" endLine="43" endPosition="70" />
   <nodeInfo nodeId="4621601338806433196" fileName="BinaryOperation_Symbol_Actions.java" startLine="43" startPosition="70" endLine="44" endPosition="59" />
-  <nodeInfo nodeId="4621601338806433203" fileName="BinaryOperation_Symbol_Actions.java" startLine="44" startPosition="59" endLine="51" endPosition="7" />
+  <nodeInfo nodeId="4621601338806433143" fileName="BinaryOperation_RightArgument_Actions.java" startLine="43" startPosition="74" endLine="44" endPosition="41" />
+  <nodeInfo nodeId="4621601338806433079" fileName="BinaryOperation_LeftArgument_Actions.java" startLine="43" startPosition="76" endLine="44" endPosition="42" />
   <nodeInfo nodeId="4621601338806433205" fileName="BinaryOperation_Symbol_Actions.java" startLine="45" startPosition="25" endLine="46" endPosition="76" />
+  <nodeInfo nodeId="4621601338806433150" fileName="BinaryOperation_RightArgument_Actions.java" startLine="45" startPosition="51" endLine="46" endPosition="46" />
+  <nodeInfo nodeId="4621601338806433086" fileName="BinaryOperation_LeftArgument_Actions.java" startLine="45" startPosition="52" endLine="46" endPosition="48" />
   <nodeInfo nodeId="4621601338806433212" fileName="BinaryOperation_Symbol_Actions.java" startLine="46" startPosition="76" endLine="47" endPosition="42" />
-  <nodeInfo nodeId="4621601338806433217" fileName="BinaryOperation_Symbol_Actions.java" startLine="47" startPosition="42" endLine="50" endPosition="9" />
-  <nodeInfo nodeId="4621601338806433219" fileName="BinaryOperation_Symbol_Actions.java" startLine="48" startPosition="52" endLine="49" endPosition="47" />
-  <nodeInfo nodeId="4621601338807060020" fileName="NotExpression_Parens_Actions.java" startLine="33" startPosition="75" endLine="34" endPosition="100" />
-  <nodeInfo nodeId="6790227271038052442" fileName="IDocumentable_PreviewEditor.java" startLine="73" startPosition="31" endLine="74" endPosition="81" />
-  <nodeInfo nodeId="6790227271039618021" fileName="IDocumentable_EditorComponent.java" startLine="111" startPosition="103" endLine="112" endPosition="55" />
-  <nodeInfo nodeId="7329889898788938823" fileName="pointerstuffKeymap.java" startLine="120" startPosition="117" endLine="129" endPosition="7" />
-  <nodeInfo nodeId="7329889898788938845" fileName="pointerstuffKeymap.java" startLine="119" startPosition="146" endLine="120" endPosition="117" />
-  <nodeInfo nodeId="7329889898788938855" fileName="pointerstuffKeymap.java" startLine="121" startPosition="32" endLine="122" endPosition="80" />
-  <nodeInfo nodeId="7329889898788938866" fileName="pointerstuffKeymap.java" startLine="122" startPosition="80" endLine="123" endPosition="62" />
-  <nodeInfo nodeId="7329889898788938875" fileName="pointerstuffKeymap.java" startLine="124" startPosition="12" endLine="129" endPosition="7" />
-  <nodeInfo nodeId="7329889898788938878" fileName="pointerstuffKeymap.java" startLine="124" startPosition="14" endLine="125" endPosition="105" />
-  <nodeInfo nodeId="7329889898788938884" fileName="pointerstuffKeymap.java" startLine="125" startPosition="105" endLine="126" endPosition="56" />
-  <nodeInfo nodeId="7329889898788938889" fileName="pointerstuffKeymap.java" startLine="126" startPosition="56" endLine="127" endPosition="67" />
-  <nodeInfo nodeId="7329889898788938895" fileName="pointerstuffKeymap.java" startLine="127" startPosition="67" endLine="128" endPosition="61" />
+  <nodeInfo nodeId="4621601338806433219" fileName="BinaryOperation_Symbol_Actions.java" startLine="48" startPosition="52" endLine="49" endPosition="48" />
   <nodeInfo nodeId="7329889898789109811" fileName="pointerstuffKeymap.java" startLine="64" startPosition="146" endLine="65" endPosition="116" />
-  <nodeInfo nodeId="7329889898789109820" fileName="pointerstuffKeymap.java" startLine="65" startPosition="116" endLine="74" endPosition="7" />
   <nodeInfo nodeId="7329889898789109822" fileName="pointerstuffKeymap.java" startLine="66" startPosition="33" endLine="67" endPosition="81" />
   <nodeInfo nodeId="7329889898789109828" fileName="pointerstuffKeymap.java" startLine="67" startPosition="81" endLine="68" endPosition="63" />
-  <nodeInfo nodeId="7329889898789109836" fileName="pointerstuffKeymap.java" startLine="69" startPosition="12" endLine="74" endPosition="7" />
   <nodeInfo nodeId="7329889898789109838" fileName="pointerstuffKeymap.java" startLine="69" startPosition="14" endLine="70" endPosition="104" />
   <nodeInfo nodeId="7329889898789109844" fileName="pointerstuffKeymap.java" startLine="70" startPosition="104" endLine="71" endPosition="57" />
   <nodeInfo nodeId="7329889898789109849" fileName="pointerstuffKeymap.java" startLine="71" startPosition="57" endLine="72" endPosition="68" />
   <nodeInfo nodeId="7329889898789109855" fileName="pointerstuffKeymap.java" startLine="72" startPosition="68" endLine="73" endPosition="62" />
+  <nodeInfo nodeId="6790227271038052442" fileName="IDocumentable_PreviewEditor.java" startLine="73" startPosition="31" endLine="74" endPosition="81" />
+  <nodeInfo nodeId="6790227271039618021" fileName="IDocumentable_EditorComponent.java" startLine="111" startPosition="107" endLine="112" endPosition="55" />
+  <nodeInfo nodeId="7329889898788938845" fileName="pointerstuffKeymap.java" startLine="119" startPosition="146" endLine="120" endPosition="117" />
+  <nodeInfo nodeId="7329889898788938855" fileName="pointerstuffKeymap.java" startLine="121" startPosition="32" endLine="122" endPosition="80" />
+  <nodeInfo nodeId="7329889898788938866" fileName="pointerstuffKeymap.java" startLine="122" startPosition="80" endLine="123" endPosition="62" />
+  <nodeInfo nodeId="7329889898788938878" fileName="pointerstuffKeymap.java" startLine="124" startPosition="14" endLine="125" endPosition="105" />
+  <nodeInfo nodeId="7329889898788938884" fileName="pointerstuffKeymap.java" startLine="125" startPosition="105" endLine="126" endPosition="56" />
+  <nodeInfo nodeId="7329889898788938889" fileName="pointerstuffKeymap.java" startLine="126" startPosition="56" endLine="127" endPosition="67" />
+  <nodeInfo nodeId="7329889898788938895" fileName="pointerstuffKeymap.java" startLine="127" startPosition="67" endLine="128" endPosition="61" />
+  <nodeInfo nodeId="3454436015648845894" fileName="AddressOfExpressionDelete.java" startLine="29" startPosition="75" endLine="32" endPosition="7" />
+  <nodeInfo nodeId="4621601338806433170" fileName="BinaryOperation_Symbol_Actions.java" startLine="37" startPosition="85" endLine="40" endPosition="7" />
+  <nodeInfo nodeId="4621601338806433148" fileName="BinaryOperation_RightArgument_Actions.java" startLine="44" startPosition="41" endLine="47" endPosition="9" />
+  <nodeInfo nodeId="4621601338806433084" fileName="BinaryOperation_LeftArgument_Actions.java" startLine="44" startPosition="42" endLine="47" endPosition="9" />
+  <nodeInfo nodeId="4621601338806433217" fileName="BinaryOperation_Symbol_Actions.java" startLine="47" startPosition="42" endLine="50" endPosition="9" />
+  <nodeInfo nodeId="7329889898789109836" fileName="pointerstuffKeymap.java" startLine="69" startPosition="12" endLine="74" endPosition="7" />
+  <nodeInfo nodeId="7329889898788938875" fileName="pointerstuffKeymap.java" startLine="124" startPosition="12" endLine="129" endPosition="7" />
+  <nodeInfo nodeId="4621601338806433131" fileName="BinaryOperation_RightArgument_Actions.java" startLine="41" startPosition="60" endLine="48" endPosition="7" />
+  <nodeInfo nodeId="4621601338806433070" fileName="BinaryOperation_LeftArgument_Actions.java" startLine="41" startPosition="61" endLine="48" endPosition="7" />
+  <nodeInfo nodeId="4621601338806433203" fileName="BinaryOperation_Symbol_Actions.java" startLine="44" startPosition="59" endLine="51" endPosition="7" />
+  <nodeInfo nodeId="7329889898789109820" fileName="pointerstuffKeymap.java" startLine="65" startPosition="116" endLine="74" endPosition="7" />
+  <nodeInfo nodeId="7329889898788938823" fileName="pointerstuffKeymap.java" startLine="120" startPosition="117" endLine="129" endPosition="7" />
+  <scopeInfo nodeId="3454436015648845896" fileName="AddressOfExpressionDelete.java" startLine="30" startPosition="72" endLine="31" endPosition="102" />
+  <scopeInfo nodeId="4621601338807060019" fileName="NotExpression_Parens_Actions.java" startLine="33" startPosition="75" endLine="34" endPosition="100" />
+  <scopeInfo nodeId="4621601338806433171" fileName="BinaryOperation_Symbol_Actions.java" startLine="38" startPosition="34" endLine="39" endPosition="80" />
+  <scopeInfo nodeId="4621601338806433149" fileName="BinaryOperation_RightArgument_Actions.java" startLine="45" startPosition="51" endLine="46" endPosition="46" />
+  <scopeInfo nodeId="4621601338806433085" fileName="BinaryOperation_LeftArgument_Actions.java" startLine="45" startPosition="52" endLine="46" endPosition="48" />
+  <scopeInfo nodeId="4621601338806433218" fileName="BinaryOperation_Symbol_Actions.java" startLine="48" startPosition="52" endLine="49" endPosition="48" />
+  <scopeInfo nodeId="7329889898789109793" fileName="pointerstuffKeymap.java" startLine="60" startPosition="152" endLine="61" endPosition="122" />
+  <scopeInfo nodeId="5196379128661697805" fileName="EnumLiteralRef_Editor.java" startLine="68" startPosition="33" endLine="69" endPosition="195" />
+  <scopeInfo nodeId="6790227271038052441" fileName="IDocumentable_PreviewEditor.java" startLine="73" startPosition="31" endLine="74" endPosition="81" />
+  <scopeInfo nodeId="2005811434196936543" fileName="ReturnStatement_Editor.java" startLine="73" startPosition="111" endLine="74" endPosition="196" />
+  <scopeInfo nodeId="6790227271037301515" fileName="IDocumentable_EditorComponent.java" startLine="79" startPosition="31" endLine="80" endPosition="81" />
+  <scopeInfo nodeId="3454436015653310350" fileName="CustomInclude_Editor.java" startLine="92" startPosition="111" endLine="93" endPosition="66" />
+  <scopeInfo nodeId="6790227271038052451" fileName="IDocumentable_PreviewEditor.java" startLine="93" startPosition="111" endLine="94" endPosition="63" />
+  <scopeInfo nodeId="7329889898788344802" fileName="DereferenceExpression_Editor.java" startLine="93" startPosition="111" endLine="94" endPosition="136" />
+  <scopeInfo nodeId="7329889898787397973" fileName="DereferenceExpression_Editor.java" startLine="97" startPosition="111" endLine="98" endPosition="136" />
+  <scopeInfo nodeId="5196379128662973888" fileName="TypeDef_Editor.java" startLine="100" startPosition="111" endLine="101" endPosition="58" />
+  <scopeInfo nodeId="2170653993872232370" fileName="PlusExpression_Editor.java" startLine="103" startPosition="109" endLine="104" endPosition="116" />
+  <scopeInfo nodeId="2170653993872314317" fileName="MinusExpression_Editor.java" startLine="103" startPosition="111" endLine="104" endPosition="116" />
+  <scopeInfo nodeId="2170653993872314305" fileName="PlusExpression_Editor.java" startLine="107" startPosition="109" endLine="108" endPosition="116" />
+  <scopeInfo nodeId="2170653993872314331" fileName="MinusExpression_Editor.java" startLine="107" startPosition="111" endLine="108" endPosition="116" />
+  <scopeInfo nodeId="5196379128661268515" fileName="EnumDeclaration_Editor.java" startLine="107" startPosition="111" endLine="108" endPosition="58" />
+  <scopeInfo nodeId="5288422977873699294" fileName="IDocumentable_EditorComponent.java" startLine="111" startPosition="107" endLine="112" endPosition="55" />
+  <scopeInfo nodeId="7329889898787296679" fileName="pointerstuffKeymap.java" startLine="115" startPosition="152" endLine="116" endPosition="119" />
+  <scopeInfo nodeId="5196379128663728400" fileName="StructDeclaration_Editor.java" startLine="116" startPosition="111" endLine="117" endPosition="58" />
+  <scopeInfo nodeId="7331281408474520587" fileName="StructPointerAttributeReference_Editor.java" startLine="117" startPosition="111" endLine="118" endPosition="134" />
+  <scopeInfo nodeId="7331281408474619817" fileName="StructPointerAttributeReference_Editor.java" startLine="121" startPosition="111" endLine="122" endPosition="134" />
+  <scopeInfo nodeId="6254144863185758132" fileName="LocalVariableDeclaration_Editor.java" startLine="122" startPosition="111" endLine="123" endPosition="58" />
+  <scopeInfo nodeId="1583024025812959769" fileName="LocalVariableDeclaration_Editor.java" startLine="126" startPosition="111" endLine="127" endPosition="65" />
+  <scopeInfo nodeId="1583024025813058988" fileName="LocalVariableDeclaration_Editor.java" startLine="130" startPosition="111" endLine="131" endPosition="65" />
+  <scopeInfo nodeId="6300047501519549227" fileName="TextualCodeStatement_Editor.java" startLine="131" startPosition="111" endLine="132" endPosition="70" />
+  <scopeInfo nodeId="7647825645222801546" fileName="ExternalProcedure_Editor.java" startLine="134" startPosition="111" endLine="135" endPosition="58" />
+  <scopeInfo nodeId="738757997633263483" fileName="ImplementationModule_Editor.java" startLine="187" startPosition="111" endLine="188" endPosition="56" />
+  <scopeInfo nodeId="2522599413188081478" fileName="IfStatement_Editor.java" startLine="200" startPosition="111" endLine="201" endPosition="96" />
+  <scopeInfo nodeId="2522599413187767215" fileName="IfStatement_Editor.java" startLine="204" startPosition="111" endLine="205" endPosition="69" />
+  <scopeInfo nodeId="6790227271038924580" fileName="Procedure_Editor.java" startLine="239" startPosition="112" endLine="240" endPosition="58" />
+  <scopeInfo nodeId="6790227271038924589" fileName="Procedure_Editor.java" startLine="243" startPosition="112" endLine="244" endPosition="66" />
+  <scopeInfo nodeId="6790227271038924610" fileName="Procedure_Editor.java" startLine="247" startPosition="113" endLine="248" endPosition="175" />
+  <scopeInfo nodeId="6790227271038924619" fileName="Procedure_Editor.java" startLine="251" startPosition="113" endLine="252" endPosition="178" />
+  <scopeInfo nodeId="7329889898789109821" fileName="pointerstuffKeymap.java" startLine="66" startPosition="33" endLine="68" endPosition="63">
+    <varInfo nodeId="7329889898789109823" varName="expr" />
+  </scopeInfo>
+  <scopeInfo nodeId="7329889898788938824" fileName="pointerstuffKeymap.java" startLine="121" startPosition="32" endLine="123" endPosition="62">
+    <varInfo nodeId="7329889898788938856" varName="expr" />
+  </scopeInfo>
+  <scopeInfo nodeId="3454436015648845893" fileName="AddressOfExpressionDelete.java" startLine="29" startPosition="75" endLine="33" endPosition="39" />
+  <scopeInfo nodeId="7329889898789109837" fileName="pointerstuffKeymap.java" startLine="69" startPosition="14" endLine="73" endPosition="62">
+    <varInfo nodeId="7329889898789109839" varName="addrOf" />
+  </scopeInfo>
+  <scopeInfo nodeId="7329889898788938876" fileName="pointerstuffKeymap.java" startLine="124" startPosition="14" endLine="128" endPosition="61">
+    <varInfo nodeId="7329889898788938879" varName="deref" />
+  </scopeInfo>
+  <scopeInfo nodeId="4621601338806433071" fileName="BinaryOperation_LeftArgument_Actions.java" startLine="42" startPosition="25" endLine="47" endPosition="9">
+    <varInfo nodeId="4621601338806433073" varName="firstLeaf" />
+  </scopeInfo>
+  <scopeInfo nodeId="4621601338806433135" fileName="BinaryOperation_RightArgument_Actions.java" startLine="42" startPosition="25" endLine="47" endPosition="9">
+    <varInfo nodeId="4621601338806433137" varName="lastLeaf" />
+  </scopeInfo>
+  <scopeInfo nodeId="4621601338806433204" fileName="BinaryOperation_Symbol_Actions.java" startLine="45" startPosition="25" endLine="50" endPosition="9">
+    <varInfo nodeId="4621601338806433206" varName="firstLeaf" />
+  </scopeInfo>
+  <scopeInfo nodeId="7329889898789109791" fileName="pointerstuffKeymap.java" startLine="64" startPosition="146" endLine="74" endPosition="7">
+    <varInfo nodeId="7329889898789109812" varName="addrOfParent" />
+  </scopeInfo>
+  <scopeInfo nodeId="7329889898787296677" fileName="pointerstuffKeymap.java" startLine="119" startPosition="146" endLine="129" endPosition="7">
+    <varInfo nodeId="7329889898788938846" varName="derefparent" />
+  </scopeInfo>
+  <scopeInfo nodeId="4621601338806433041" fileName="BinaryOperation_LeftArgument_Actions.java" startLine="36" startPosition="75" endLine="48" endPosition="7">
+    <varInfo nodeId="4621601338806433058" varName="editor" />
+    <varInfo nodeId="4621601338806433043" varName="rightExpression" />
+    <varInfo nodeId="4621601338806433064" varName="cell" />
+  </scopeInfo>
+  <scopeInfo nodeId="4621601338806433102" fileName="BinaryOperation_RightArgument_Actions.java" startLine="36" startPosition="75" endLine="48" endPosition="7">
+    <varInfo nodeId="4621601338806433119" varName="editor" />
+    <varInfo nodeId="4621601338806433104" varName="leftExpression" />
+    <varInfo nodeId="4621601338806433125" varName="cell" />
+  </scopeInfo>
+  <scopeInfo nodeId="4621601338806433163" fileName="BinaryOperation_Symbol_Actions.java" startLine="36" startPosition="75" endLine="51" endPosition="7">
+    <varInfo nodeId="4621601338806433191" varName="editor" />
+    <varInfo nodeId="4621601338806433197" varName="cell" />
+    <varInfo nodeId="4621601338806433165" varName="newExpression" />
+  </scopeInfo>
 </debugInfo>
 
