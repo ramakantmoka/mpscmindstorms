@@ -1058,10 +1058,10 @@
       <property name="selected:4" value="false" />
     </node>
     <node role="moduleDependencyAnnotation$attribute:4" type="med.core.structure.ModuleDependency:9" id="7400233627844407295" />
-    <node role="mode:4" type="med.features.structure.VariantDisplayMode:4" id="2910374376006187237">
+    <node role="mode:4" type="med.features.structure.VariantDisplayMode:4" id="5039982647059147251">
       <property name="removeNonSelectedStuffInEditor:4" value="true" />
     </node>
-    <node role="backup:4" type="med.features.structure.ShowClauseDisplayMode:4" id="2910374376006187238">
+    <node role="backup:4" type="med.features.structure.ShowClauseDisplayMode:4" id="5039982647059147252">
       <property name="removeNonSelectedStuffInEditor:4" value="false" />
       <property name="showFeatureClause:4" value="true" />
       <property name="highlightFeatureDependentNodes:4" value="true" />
