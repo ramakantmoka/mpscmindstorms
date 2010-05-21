@@ -600,11 +600,11 @@
             </node>
           </node>
           <node role="statements:9" type="med.unittest.structure.AssertEquals" id="6275945668714478242">
-            <property name="errorMessage" value="access via -&gt; does not work" />
+            <property name="errorMessage" value="MSG" />
             <node role="actual" type="med.core.structure.StructByValueAttributeReference:9" id="8328996737396118259">
               <link role="attribute:9" targetNodeId="8937796720370468504" resolveInfo="a" />
               <node role="variable:9" type="med.core.structure.DereferenceExpression:9" id="8328996737396118257">
-                <node role="expression:9" type="med.core.structure.LocalVariableReference:9" id="8328996737396118256">
+                <node role="expression:9" type="med.core.structure.LocalVariableReference:9" id="3064584267684559511">
                   <link role="variable:9" targetNodeId="6275945668714243447" resolveInfo="structptr" />
                 </node>
               </node>

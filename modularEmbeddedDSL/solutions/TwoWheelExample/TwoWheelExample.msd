@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="TwoWheelExample" uuid="0529ab16-d09d-4799-ae4b-e58727ce774f" extenallyVisible="true" compileInMPS="true">
+<solution name="TwoWheelExample" uuid="0529ab16-d09d-4799-ae4b-e58727ce774f" extenallyVisible="true" compileInMPS="true" java-stubs-enabled="true">
   <models>
     <modelRoot path="${solution_descriptor}/" namespacePrefix="" />
   </models>
