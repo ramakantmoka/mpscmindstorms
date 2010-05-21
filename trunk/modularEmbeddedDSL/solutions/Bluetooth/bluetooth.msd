@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="bluetooth" uuid="11913e32-70b2-45b1-b5a0-4bc048c46e4e" extenallyVisible="true" compileInMPS="true">
+<solution name="bluetooth" uuid="11913e32-70b2-45b1-b5a0-4bc048c46e4e" extenallyVisible="true" compileInMPS="true" java-stubs-enabled="true">
   <models>
     <modelRoot path="${solution_descriptor}/" namespacePrefix="" />
   </models>

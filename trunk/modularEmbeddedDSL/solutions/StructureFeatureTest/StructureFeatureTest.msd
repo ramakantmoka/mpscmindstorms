@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="StructureFeatureTest" uuid="3b2b7d7e-cec4-426b-b414-04a7e1519cbd" extenallyVisible="true" compileInMPS="true">
+<solution name="StructureFeatureTest" uuid="3b2b7d7e-cec4-426b-b414-04a7e1519cbd" extenallyVisible="true" compileInMPS="true" java-stubs-enabled="true">
   <models>
     <modelRoot path="${solution_descriptor}/" namespacePrefix="" />
   </models>

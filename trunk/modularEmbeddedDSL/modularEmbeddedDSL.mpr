@@ -6,17 +6,20 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="MPSProject">
     <projectSolutions>
+      <solutionPath path="${project}/solutions/BlockExample/BlockExample.msd" folder="_samples" />
+      <solutionPath path="${project}/solutions/Bluetooth/bluetooth.msd" folder="_samples" />
+      <solutionPath path="${project}/solutions/LineFollowerWithComponents/LineFollowerWithComponents.msd" folder="_samples" />
       <solutionPath path="${project}/solutions/LineFollower/LineFollower.msd" folder="_samples" />
+      <solutionPath path="${project}/solutions/MessageComponents/MessageComponents.msd" folder="_samples" />
+      <solutionPath path="${project}/solutions/StructureFeatureTest/StructureFeatureTest.msd" folder="_samples" />
       <solutionPath path="${project}/solutions/TwoWheelExample/TwoWheelExample.msd" folder="_samples" />
       <solutionPath path="${project}/solutions/modularEmbeddedDSL.sandbox/modularEmbeddedDSL.sandbox.msd" folder="_samples" />
-      <solutionPath path="${project}/solutions/BlockExample/BlockExample.msd" folder="_samples" />
-      <solutionPath path="${project}/solutions/LineFollowerWithComponents/LineFollowerWithComponents.msd" folder="_samples" />
-      <solutionPath path="${project}/solutions/StructureFeatureTest/StructureFeatureTest.msd" folder="_samples" />
-      <solutionPath path="${project}/solutions/Bluetooth/bluetooth.msd" folder="_samples" />
-      <solutionPath path="${project}/solutions/MessageComponents/MessageComponents.msd" folder="_samples" />
     </projectSolutions>
     <projectLanguages>
       <languagePath path="${project}/languages/bitdata/bitdata.mpl" folder="med" />
+      <languagePath path="${project}/languages/components/components.mpl" folder="med" />
+      <languagePath path="${project}/languages/componentsevents/componentsevents.mpl" folder="med" />
+      <languagePath path="${project}/languages/dataflowblocks/dataflowblocks.mpl" folder="med" />
       <languagePath path="${project}/languages/featureDependencies/featureDependencies.mpl" folder="med" />
       <languagePath path="${project}/languages/logging/logging.mpl" folder="med" />
       <languagePath path="${project}/languages/nxtosek/nxtosek.mpl" folder="med" />
@@ -29,9 +32,6 @@
       <languagePath path="${project}/languages/twowheel/twowheel.mpl" folder="ds" />
       <languagePath path="${project}/languages/unittest/unittest.mpl" folder="med" />
       <languagePath path="${project}/languages/win32/win32.mpl" folder="med" />
-      <languagePath path="${project}/languages/dataflowblocks/dataflowblocks.mpl" folder="med" />
-      <languagePath path="${project}/languages/components/components.mpl" folder="med" />
-      <languagePath path="${project}/languages/componentsevents/componentsevents.mpl" folder="med" />
     </projectLanguages>
     <projectDevkits>
       <devkitPath path="${project}/devkits/ModularEmbeddedDSL/ModularEmbeddedDSL.devkit" folder="med" />
@@ -67,7 +67,7 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />
-    <mapping directory="$PROJECT_DIR$" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
   </component>
 </project>
 

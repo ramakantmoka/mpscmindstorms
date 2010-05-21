@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<debugInfo>
-  <scopeInfo nodeId="3525105684385524364" fileName="DummyDependency_target_ReferentConstraint.java" startLine="28" startPosition="132" endLine="29" endPosition="189" />
-  <scopeInfo nodeId="7680622939172884753" fileName="DummyRequirementsTraceLink_requirement_ReferentConstraint.java" startLine="28" startPosition="132" endLine="29" endPosition="197" />
-  <scopeInfo nodeId="7680622939172484716" fileName="DummyRequirementsTraceLink_requirement_ReferentConstraint.java" startLine="36" startPosition="129" endLine="37" endPosition="171" />
-  <scopeInfo nodeId="7680622939172784167" fileName="DummyDependency_target_ReferentConstraint.java" startLine="36" startPosition="129" endLine="37" endPosition="178" />
-</debugInfo>
-

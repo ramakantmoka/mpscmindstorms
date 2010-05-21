@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<dependenciesRoot>
-  <dependency className="main.helloworld" />
-  <dependency className="main.include/helloworld" />
-  <dependency className="main.makefile" />
-</dependenciesRoot>
-

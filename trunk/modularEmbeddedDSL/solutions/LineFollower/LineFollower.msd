@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="LineFollower" uuid="6d19f522-3cb5-4a9a-8a8f-cb3148150c0b" extenallyVisible="true" compileInMPS="true">
+<solution name="LineFollower" uuid="6d19f522-3cb5-4a9a-8a8f-cb3148150c0b" extenallyVisible="true" compileInMPS="true" java-stubs-enabled="true">
   <models>
     <modelRoot path="${solution_descriptor}/" namespacePrefix="" />
   </models>

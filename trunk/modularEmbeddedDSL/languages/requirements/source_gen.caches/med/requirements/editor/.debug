@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<debugInfo>
-  <scopeInfo nodeId="7680622939173089605" fileName="RequirementsTrace_Editor.java" startLine="91" startPosition="111" endLine="92" endPosition="217" />
-  <scopeInfo nodeId="3525105684384742211" fileName="DummyRequirement_Editor.java" startLine="109" startPosition="112" endLine="110" endPosition="102" />
-  <scopeInfo nodeId="3525105684384311910" fileName="DummyRequirementsCollection_Editor.java" startLine="125" startPosition="111" endLine="126" endPosition="17" />
-  <scopeInfo nodeId="3525105684384311904" fileName="DummyRequirementsCollection_Editor.java" startLine="129" startPosition="108" endLine="130" endPosition="53" />
-</debugInfo>
-
