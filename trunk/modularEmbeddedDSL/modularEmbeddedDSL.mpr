@@ -20,7 +20,6 @@
       <languagePath path="${project}/languages/components/components.mpl" folder="med" />
       <languagePath path="${project}/languages/componentsevents/componentsevents.mpl" folder="med" />
       <languagePath path="${project}/languages/dataflowblocks/dataflowblocks.mpl" folder="med" />
-      <languagePath path="${project}/languages/dbc/dbc.mpl" folder="med" />
       <languagePath path="${project}/languages/featureDependencies/featureDependencies.mpl" folder="med" />
       <languagePath path="${project}/languages/logging/logging.mpl" folder="med" />
       <languagePath path="${project}/languages/nxtosek/nxtosek.mpl" folder="med" />
