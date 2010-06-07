@@ -67,24 +67,18 @@
               </node>
             </node>
           </node>
-          <node role="statements:1" type="ds.twowheel.structure.TurnAround:1" id="684445375798122731">
-            <node role="time:1" type="med.core.structure.IntConstantExpression:9" id="684445375798122732">
-              <property name="value:9" value="2000" />
-            </node>
-          </node>
-          <node role="statements:1" type="ds.twowheel.structure.BlockStatement:1" id="3919193983092765009">
+          <node role="statements:1" type="ds.twowheel.structure.BlockStatement:1" id="5593445361839988635">
             <property name="name:1" value="newBlock" />
-            <node role="statements:1" type="ds.twowheel.structure.DriveOnStatement:1" id="3919193983092765005">
-              <node role="time:1" type="med.core.structure.IntConstantExpression:9" id="3919193983092765006">
-                <property name="value:9" value="2000" />
-              </node>
-            </node>
-            <node role="statements:1" type="ds.twowheel.structure.TurnLeftStatement:1" id="3919193983092765007">
-              <node role="time:1" type="med.core.structure.IntConstantExpression:9" id="3919193983092765008">
+            <node role="statements:1" type="ds.twowheel.structure.TurnLeftStatement:1" id="5593445361839988633">
+              <node role="time:1" type="med.core.structure.IntConstantExpression:9" id="5593445361839988634">
                 <property name="value:9" value="200" />
               </node>
             </node>
-            <node role="bumpReaction:1" type="ds.twowheel.structure.StopStatement:1" id="3919193983092765011" />
+            <node role="statements:1" type="ds.twowheel.structure.DriveOnStatement:1" id="5593445361839988631">
+              <node role="time:1" type="med.core.structure.IntConstantExpression:9" id="5593445361839988632">
+                <property name="value:9" value="2000" />
+              </node>
+            </node>
           </node>
           <node role="statements:1" type="ds.twowheel.structure.BlockStatement:1" id="6177678091395694225">
             <property name="name:1" value="driveMore" />

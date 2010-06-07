@@ -1008,7 +1008,91 @@
                                 <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.IfStatement:3" id="3919193983093433210">
                                   <node role="ifTrue:3" type="jetbrains.mps.baseLanguage.structure.StatementList:3" id="3919193983093433211">
                                     <node role="statement:3" type="jetbrains.mps.baseLanguage.builders.structure.BuilderStatement:0" id="2896354780540773257">
-                                      <node role="body:0" type="jetbrains.mps.baseLanguage.structure.StatementList:3" id="2896354780540773258" />
+                                      <node role="body:0" type="jetbrains.mps.baseLanguage.structure.StatementList:3" id="2896354780540773258">
+                                        <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement:3" id="4420803179351937258">
+                                          <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="4420803179351937259">
+                                            <node role="operand:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="4420803179351937260">
+                                              <node role="operand:3" type="jetbrains.mps.baseLanguage.builders.structure.ResultExpression:0" id="4420803179351937261" />
+                                              <node role="operation:3" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation:3" id="4420803179351937262">
+                                                <link role="baseMethodDeclaration:3" targetNodeId="4.~EditorCell_Basic.getStyle():jetbrains.mps.nodeEditor.style.Style" resolveInfo="getStyle" />
+                                              </node>
+                                            </node>
+                                            <node role="operation:3" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation:3" id="4420803179351937263">
+                                              <link role="baseMethodDeclaration:3" targetNodeId="6.~Style.set(jetbrains.mps.nodeEditor.style.StyleAttribute,java.lang.Object):void" resolveInfo="set" />
+                                              <node role="actualArgument:3" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference:3" id="4420803179351937264">
+                                                <link role="classifier:3" targetNodeId="6.~StyleAttributes" resolveInfo="StyleAttributes" />
+                                                <link role="variableDeclaration:3" targetNodeId="6.~StyleAttributes.DRAW_BORDER" resolveInfo="DRAW_BORDER" />
+                                              </node>
+                                              <node role="actualArgument:3" type="jetbrains.mps.baseLanguage.structure.BooleanConstant:3" id="4420803179351937265">
+                                                <property name="value:3" value="true" />
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                        <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement:3" id="4420803179351937266">
+                                          <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="4420803179351937267">
+                                            <node role="operand:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="4420803179351937268">
+                                              <node role="operand:3" type="jetbrains.mps.baseLanguage.builders.structure.ResultExpression:0" id="4420803179351937269" />
+                                              <node role="operation:3" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation:3" id="4420803179351937270">
+                                                <link role="baseMethodDeclaration:3" targetNodeId="4.~EditorCell_Basic.getStyle():jetbrains.mps.nodeEditor.style.Style" resolveInfo="getStyle" />
+                                              </node>
+                                            </node>
+                                            <node role="operation:3" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation:3" id="4420803179351937271">
+                                              <link role="baseMethodDeclaration:3" targetNodeId="6.~Style.set(jetbrains.mps.nodeEditor.style.StyleAttribute,java.lang.Object):void" resolveInfo="set" />
+                                              <node role="actualArgument:3" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference:3" id="4420803179351937272">
+                                                <link role="classifier:3" targetNodeId="6.~StyleAttributes" resolveInfo="StyleAttributes" />
+                                                <link role="variableDeclaration:3" targetNodeId="6.~StyleAttributes.FONT_STYLE" resolveInfo="FONT_STYLE" />
+                                              </node>
+                                              <node role="actualArgument:3" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference:3" id="4420803179351937273">
+                                                <link role="classifier:3" targetNodeId="3.~MPSFonts" resolveInfo="MPSFonts" />
+                                                <link role="variableDeclaration:3" targetNodeId="3.~MPSFonts.BOLD" resolveInfo="BOLD" />
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                        <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement:3" id="4420803179351937274">
+                                          <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="4420803179351937275">
+                                            <node role="operand:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="4420803179351937276">
+                                              <node role="operand:3" type="jetbrains.mps.baseLanguage.builders.structure.ResultExpression:0" id="4420803179351937277" />
+                                              <node role="operation:3" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation:3" id="4420803179351937278">
+                                                <link role="baseMethodDeclaration:3" targetNodeId="4.~EditorCell_Basic.getStyle():jetbrains.mps.nodeEditor.style.Style" resolveInfo="getStyle" />
+                                              </node>
+                                            </node>
+                                            <node role="operation:3" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation:3" id="4420803179351937279">
+                                              <link role="baseMethodDeclaration:3" targetNodeId="6.~Style.set(jetbrains.mps.nodeEditor.style.StyleAttribute,java.lang.Object):void" resolveInfo="set" />
+                                              <node role="actualArgument:3" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference:3" id="4420803179351937280">
+                                                <link role="classifier:3" targetNodeId="6.~StyleAttributes" resolveInfo="StyleAttributes" />
+                                                <link role="variableDeclaration:3" targetNodeId="6.~StyleAttributes.BACKGROUND_COLOR" resolveInfo="BACKGROUND_COLOR" />
+                                              </node>
+                                              <node role="actualArgument:3" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference:3" id="4420803179351937281">
+                                                <link role="classifier:3" targetNodeId="3.~MPSColors" resolveInfo="MPSColors" />
+                                                <link role="variableDeclaration:3" targetNodeId="12.~Color.BLACK" resolveInfo="BLACK" />
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                        <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement:3" id="4420803179351937283">
+                                          <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="4420803179351937284">
+                                            <node role="operand:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="4420803179351937285">
+                                              <node role="operand:3" type="jetbrains.mps.baseLanguage.builders.structure.ResultExpression:0" id="4420803179351937286" />
+                                              <node role="operation:3" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation:3" id="4420803179351937287">
+                                                <link role="baseMethodDeclaration:3" targetNodeId="4.~EditorCell_Basic.getStyle():jetbrains.mps.nodeEditor.style.Style" resolveInfo="getStyle" />
+                                              </node>
+                                            </node>
+                                            <node role="operation:3" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation:3" id="4420803179351937288">
+                                              <link role="baseMethodDeclaration:3" targetNodeId="6.~Style.set(jetbrains.mps.nodeEditor.style.StyleAttribute,java.lang.Object):void" resolveInfo="set" />
+                                              <node role="actualArgument:3" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference:3" id="4420803179351937289">
+                                                <link role="classifier:3" targetNodeId="6.~StyleAttributes" resolveInfo="StyleAttributes" />
+                                                <link role="variableDeclaration:3" targetNodeId="6.~StyleAttributes.TEXT_COLOR" resolveInfo="TEXT_COLOR" />
+                                              </node>
+                                              <node role="actualArgument:3" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference:3" id="4420803179351937290">
+                                                <link role="classifier:3" targetNodeId="3.~MPSColors" resolveInfo="MPSColors" />
+                                                <link role="variableDeclaration:3" targetNodeId="12.~Color.WHITE" resolveInfo="WHITE" />
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
                                       <node role="builder:0" type="jetbrains.mps.baseLanguage.builders.structure.SimpleBuilder:0" id="2896354780540773259">
                                         <link role="declaration:0" targetNodeId="2896354780539783572" resolveInfo="name" />
                                         <node role="argument:0" type="jetbrains.mps.baseLanguage.structure.ParameterReference:3" id="2896354780540773262">
@@ -1088,6 +1172,27 @@
                                                 <node role="actualArgument:3" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference:3" id="7348149346523690342">
                                                   <link role="classifier:3" targetNodeId="3.~MPSFonts" resolveInfo="MPSFonts" />
                                                   <link role="variableDeclaration:3" targetNodeId="3.~MPSFonts.BOLD_ITALIC" resolveInfo="BOLD_ITALIC" />
+                                                </node>
+                                              </node>
+                                            </node>
+                                          </node>
+                                          <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement:3" id="4420803179351929167">
+                                            <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="4420803179351929168">
+                                              <node role="operand:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="4420803179351929169">
+                                                <node role="operand:3" type="jetbrains.mps.baseLanguage.builders.structure.ResultExpression:0" id="4420803179351929170" />
+                                                <node role="operation:3" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation:3" id="4420803179351929171">
+                                                  <link role="baseMethodDeclaration:3" targetNodeId="4.~EditorCell_Basic.getStyle():jetbrains.mps.nodeEditor.style.Style" resolveInfo="getStyle" />
+                                                </node>
+                                              </node>
+                                              <node role="operation:3" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation:3" id="4420803179351929172">
+                                                <link role="baseMethodDeclaration:3" targetNodeId="6.~Style.set(jetbrains.mps.nodeEditor.style.StyleAttribute,java.lang.Object):void" resolveInfo="set" />
+                                                <node role="actualArgument:3" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference:3" id="4420803179351929173">
+                                                  <link role="classifier:3" targetNodeId="6.~StyleAttributes" resolveInfo="StyleAttributes" />
+                                                  <link role="variableDeclaration:3" targetNodeId="6.~StyleAttributes.BACKGROUND_COLOR" resolveInfo="BACKGROUND_COLOR" />
+                                                </node>
+                                                <node role="actualArgument:3" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference:3" id="4420803179351929174">
+                                                  <link role="classifier:3" targetNodeId="3.~MPSColors" resolveInfo="MPSColors" />
+                                                  <link role="variableDeclaration:3" targetNodeId="12.~Color.LIGHT_GRAY" resolveInfo="LIGHT_GRAY" />
                                                 </node>
                                               </node>
                                             </node>
@@ -1192,6 +1297,27 @@
                                                 <node role="actualArgument:3" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference:3" id="7348149346523690352">
                                                   <link role="classifier:3" targetNodeId="3.~MPSFonts" resolveInfo="MPSFonts" />
                                                   <link role="variableDeclaration:3" targetNodeId="3.~MPSFonts.BOLD_ITALIC" resolveInfo="BOLD_ITALIC" />
+                                                </node>
+                                              </node>
+                                            </node>
+                                          </node>
+                                          <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement:3" id="4420803179351929184">
+                                            <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="4420803179351929185">
+                                              <node role="operand:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="4420803179351929186">
+                                                <node role="operand:3" type="jetbrains.mps.baseLanguage.builders.structure.ResultExpression:0" id="4420803179351929187" />
+                                                <node role="operation:3" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation:3" id="4420803179351929188">
+                                                  <link role="baseMethodDeclaration:3" targetNodeId="4.~EditorCell_Basic.getStyle():jetbrains.mps.nodeEditor.style.Style" resolveInfo="getStyle" />
+                                                </node>
+                                              </node>
+                                              <node role="operation:3" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation:3" id="4420803179351929189">
+                                                <link role="baseMethodDeclaration:3" targetNodeId="6.~Style.set(jetbrains.mps.nodeEditor.style.StyleAttribute,java.lang.Object):void" resolveInfo="set" />
+                                                <node role="actualArgument:3" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference:3" id="4420803179351929190">
+                                                  <link role="classifier:3" targetNodeId="6.~StyleAttributes" resolveInfo="StyleAttributes" />
+                                                  <link role="variableDeclaration:3" targetNodeId="6.~StyleAttributes.BACKGROUND_COLOR" resolveInfo="BACKGROUND_COLOR" />
+                                                </node>
+                                                <node role="actualArgument:3" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference:3" id="4420803179351929191">
+                                                  <link role="classifier:3" targetNodeId="3.~MPSColors" resolveInfo="MPSColors" />
+                                                  <link role="variableDeclaration:3" targetNodeId="12.~Color.LIGHT_GRAY" resolveInfo="LIGHT_GRAY" />
                                                 </node>
                                               </node>
                                             </node>
@@ -2506,6 +2632,20 @@
         <node role="statement:3" type="jetbrains.mps.lang.plugin.structure.ExecuteLightweightCommandStatement:23" id="4954657687992066642">
           <node role="commandClosureLiteral:23" type="jetbrains.mps.lang.plugin.structure.CommandClosureLiteral:23" id="4954657687992066643">
             <node role="body:23" type="jetbrains.mps.baseLanguage.structure.StatementList:3" id="4954657687992066644">
+              <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement:3" id="2910374376006195819">
+                <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="2910374376006195821">
+                  <node role="operand:3" type="jetbrains.mps.baseLanguage.structure.ParameterReference:3" id="2910374376006195820">
+                    <link role="variableDeclaration:3" targetNodeId="4954657687991681781" resolveInfo="g" />
+                  </node>
+                  <node role="operation:3" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation:3" id="2910374376006198467">
+                    <link role="baseMethodDeclaration:3" targetNodeId="12.~Graphics.setColor(java.awt.Color):void" resolveInfo="setColor" />
+                    <node role="actualArgument:3" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference:3" id="2910374376006198578">
+                      <link role="classifier:3" targetNodeId="12.~Color" resolveInfo="Color" />
+                      <link role="variableDeclaration:3" targetNodeId="12.~Color.BLACK" resolveInfo="BLACK" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node role="statement:3" type="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement:7" id="4954657687992066677">
                 <node role="variable:7" type="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable:7" id="4954657687992066678">
                   <property name="name:7" value="source" />

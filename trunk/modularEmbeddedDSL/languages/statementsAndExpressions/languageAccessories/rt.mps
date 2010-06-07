@@ -524,7 +524,7 @@
                                               <link role="variableDeclaration:3" targetNodeId="5288422977872873734" resolveInfo="f" />
                                             </node>
                                             <node role="operation:3" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation:3" id="5288422977873369454">
-                                              <link role="baseMethodDeclaration:3" targetNodeId="3.~Component.setVisible(boolean):void" resolveInfo="setVisible" />
+                                              <link role="baseMethodDeclaration:3" targetNodeId="3.~Window.setVisible(boolean):void" resolveInfo="setVisible" />
                                               <node role="actualArgument:3" type="jetbrains.mps.baseLanguage.structure.BooleanConstant:3" id="5288422977873369455">
                                                 <property name="value:3" value="false" />
                                               </node>
@@ -582,7 +582,7 @@
                                               <link role="variableDeclaration:3" targetNodeId="5288422977872873734" resolveInfo="f" />
                                             </node>
                                             <node role="operation:3" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation:3" id="5288422977873369481">
-                                              <link role="baseMethodDeclaration:3" targetNodeId="3.~Component.setVisible(boolean):void" resolveInfo="setVisible" />
+                                              <link role="baseMethodDeclaration:3" targetNodeId="3.~Window.setVisible(boolean):void" resolveInfo="setVisible" />
                                               <node role="actualArgument:3" type="jetbrains.mps.baseLanguage.structure.BooleanConstant:3" id="5288422977873369482">
                                                 <property name="value:3" value="false" />
                                               </node>
@@ -614,7 +614,7 @@
                               <link role="variableDeclaration:3" targetNodeId="5288422977872873734" resolveInfo="frame" />
                             </node>
                             <node role="operation:3" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation:3" id="3426893568457130938">
-                              <link role="baseMethodDeclaration:3" targetNodeId="3.~Component.setVisible(boolean):void" resolveInfo="setVisible" />
+                              <link role="baseMethodDeclaration:3" targetNodeId="3.~Window.setVisible(boolean):void" resolveInfo="setVisible" />
                               <node role="actualArgument:3" type="jetbrains.mps.baseLanguage.structure.BooleanConstant:3" id="3426893568457130939">
                                 <property name="value:3" value="true" />
                               </node>
@@ -692,7 +692,7 @@
               <link role="variableDeclaration:3" targetNodeId="3426893568457111295" resolveInfo="f" />
             </node>
             <node role="operation:3" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation:3" id="3426893568457111278">
-              <link role="baseMethodDeclaration:3" targetNodeId="3.~Component.setSize(int,int):void" resolveInfo="setSize" />
+              <link role="baseMethodDeclaration:3" targetNodeId="3.~Window.setSize(int,int):void" resolveInfo="setSize" />
               <node role="actualArgument:3" type="jetbrains.mps.baseLanguage.structure.IntegerConstant:3" id="3426893568457111279">
                 <property name="value:3" value="600" />
               </node>

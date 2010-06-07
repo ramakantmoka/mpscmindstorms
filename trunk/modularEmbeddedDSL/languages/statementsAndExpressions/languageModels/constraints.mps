@@ -172,17 +172,15 @@
                   <node role="type:3" type="jetbrains.mps.lang.smodel.structure.SNodeType:16" id="8937796720373789638">
                     <link role="concept:16" targetNodeId="1.5136468150843378445:9" resolveInfo="StructDeclaration" />
                   </node>
-                  <node role="initializer:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="8937796720373789639">
-                    <node role="operation:3" type="jetbrains.mps.lang.smodel.structure.SLinkAccess:16" id="8937796720373789644">
-                      <link role="link:16" targetNodeId="1.5136468150843378474:9" />
-                    </node>
-                    <node role="operand:3" type="jetbrains.mps.baseLanguage.structure.CastExpression:3" id="8937796720373993658">
-                      <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference:3" id="8937796720373993659">
+                  <node role="initializer:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="8109089010149636114">
+                    <node role="operand:3" type="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression:16" id="8109089010149636112">
+                      <link role="concept:16" targetNodeId="1.5136468150842817351:9" resolveInfo="StructType" />
+                      <node role="leftExpression:16" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference:3" id="8937796720373993659">
                         <link role="variableDeclaration:3" targetNodeId="8937796720372932657" resolveInfo="varType" />
                       </node>
-                      <node role="type:3" type="jetbrains.mps.lang.smodel.structure.SNodeType:16" id="8937796720373993660">
-                        <link role="concept:16" targetNodeId="1.5136468150842817351:9" resolveInfo="StructType" />
-                      </node>
+                    </node>
+                    <node role="operation:3" type="jetbrains.mps.lang.smodel.structure.SLinkAccess:16" id="8109089010149657449">
+                      <link role="link:16" targetNodeId="1.5136468150843378474:9" />
                     </node>
                   </node>
                 </node>

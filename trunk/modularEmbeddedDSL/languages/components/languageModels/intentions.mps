@@ -68,5 +68,65 @@
       </node>
     </node>
   </node>
+  <node type="jetbrains.mps.lang.intentions.structure.IntentionDeclaration:8" id="6453446790701387960">
+    <property name="name:8" value="addPrecondition" />
+    <link role="forConcept:8" targetNodeId="1.2739617086185148564:3" resolveInfo="InterfaceProcedure" />
+    <node role="descriptionFunction:8" type="jetbrains.mps.lang.intentions.structure.DescriptionBlock:8" id="6453446790701387961">
+      <node role="body:8" type="jetbrains.mps.baseLanguage.structure.StatementList:3" id="6453446790701387962">
+        <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement:3" id="6453446790701402397">
+          <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.StringLiteral:3" id="6453446790701402398">
+            <property name="value:3" value="add precondition" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="executeFunction:8" type="jetbrains.mps.lang.intentions.structure.ExecuteBlock:8" id="6453446790701387963">
+      <node role="body:8" type="jetbrains.mps.baseLanguage.structure.StatementList:3" id="6453446790701387964">
+        <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement:3" id="6453446790701402399">
+          <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="6453446790701402858">
+            <node role="operand:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="6453446790701402401">
+              <node role="operand:3" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node:8" id="6453446790701402400" />
+              <node role="operation:3" type="jetbrains.mps.lang.smodel.structure.SLinkListAccess:16" id="6453446790701402857">
+                <link role="link:16" targetNodeId="1.6453446790701387908:3" />
+              </node>
+            </node>
+            <node role="operation:3" type="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation:16" id="6453446790701402862">
+              <link role="concept:16" targetNodeId="1.6453446790701225452:3" resolveInfo="PreCondition" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.intentions.structure.IntentionDeclaration:8" id="6453446790701402865">
+    <property name="name:8" value="addPostcondition" />
+    <link role="forConcept:8" targetNodeId="1.2739617086185148564:3" resolveInfo="InterfaceProcedure" />
+    <node role="descriptionFunction:8" type="jetbrains.mps.lang.intentions.structure.DescriptionBlock:8" id="6453446790701402866">
+      <node role="body:8" type="jetbrains.mps.baseLanguage.structure.StatementList:3" id="6453446790701402867">
+        <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement:3" id="6453446790701402868">
+          <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.StringLiteral:3" id="6453446790701402869">
+            <property name="value:3" value="add postcondition" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="executeFunction:8" type="jetbrains.mps.lang.intentions.structure.ExecuteBlock:8" id="6453446790701402870">
+      <node role="body:8" type="jetbrains.mps.baseLanguage.structure.StatementList:3" id="6453446790701402871">
+        <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement:3" id="6453446790701402872">
+          <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="6453446790701402873">
+            <node role="operand:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="6453446790701402874">
+              <node role="operand:3" type="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node:8" id="6453446790701402875" />
+              <node role="operation:3" type="jetbrains.mps.lang.smodel.structure.SLinkListAccess:16" id="6453446790701402876">
+                <link role="link:16" targetNodeId="1.6453446790701387908:3" />
+              </node>
+            </node>
+            <node role="operation:3" type="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation:16" id="6453446790701402877">
+              <link role="concept:16" targetNodeId="1.6453446790701225453:3" resolveInfo="PostCondition" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

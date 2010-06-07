@@ -248,6 +248,12 @@
       <property name="value:0" value="procedure" />
       <link role="conceptPropertyDeclaration:0" targetNodeId="3v.1137473891462:0" resolveInfo="alias" />
     </node>
+    <node role="linkDeclaration:0" type="jetbrains.mps.lang.structure.structure.LinkDeclaration:0" id="6453446790701387908">
+      <property name="metaClass:0" value="aggregation" />
+      <property name="role:0" value="constraints" />
+      <property name="sourceCardinality:0" value="0..n" />
+      <link role="target:0" targetNodeId="6453446790701225450:3" resolveInfo="PreOrPostCondition" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="2739617086185486240">
     <property name="name:0" value="Component" />
@@ -610,6 +616,56 @@
     </node>
     <node role="conceptProperty:0" type="jetbrains.mps.lang.structure.structure.StringConceptProperty:0" id="1265321504642945336">
       <property name="value:0" value="forward" />
+      <link role="conceptPropertyDeclaration:0" targetNodeId="3v.1137473891462:0" resolveInfo="alias" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="6453446790701225450">
+    <property name="package:0" value="interface.dbc" />
+    <property name="name:0" value="PreOrPostCondition" />
+    <link role="extends:0" targetNodeId="3v.1133920641626:0" resolveInfo="BaseConcept" />
+    <node role="conceptProperty:0" type="jetbrains.mps.lang.structure.structure.BooleanConceptProperty:0" id="6453446790701225451">
+      <link role="conceptPropertyDeclaration:0" targetNodeId="3v.1137473854053:0" resolveInfo="abstract" />
+    </node>
+    <node role="linkDeclaration:0" type="jetbrains.mps.lang.structure.structure.LinkDeclaration:0" id="6453446790701266820">
+      <property name="metaClass:0" value="aggregation" />
+      <property name="role:0" value="errormessage" />
+      <property name="sourceCardinality:0" value="1" />
+      <link role="target:0" targetNodeId="2v.6441851857096548278:9" resolveInfo="Expression" />
+    </node>
+    <node role="linkDeclaration:0" type="jetbrains.mps.lang.structure.structure.LinkDeclaration:0" id="6453446790701225454">
+      <property name="metaClass:0" value="aggregation" />
+      <property name="role:0" value="expression" />
+      <property name="sourceCardinality:0" value="1" />
+      <link role="target:0" targetNodeId="2v.6441851857096548278:9" resolveInfo="Expression" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="6453446790701225452">
+    <property name="package:0" value="interface.dbc" />
+    <property name="name:0" value="PreCondition" />
+    <link role="extends:0" targetNodeId="6453446790701225450:3" resolveInfo="PreOrPostCondition" />
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="6453446790701225453">
+    <property name="package:0" value="interface.dbc" />
+    <property name="name:0" value="PostCondition" />
+    <link role="extends:0" targetNodeId="6453446790701225450:3" resolveInfo="PreOrPostCondition" />
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="6453446790701275017">
+    <property name="package:0" value="interface.dbc" />
+    <property name="name:0" value="PPCParameterRef" />
+    <link role="extends:0" targetNodeId="2v.6441851857096548278:9" resolveInfo="Expression" />
+    <node role="linkDeclaration:0" type="jetbrains.mps.lang.structure.structure.LinkDeclaration:0" id="6453446790701275018">
+      <property name="metaClass:0" value="reference" />
+      <property name="role:0" value="param" />
+      <property name="sourceCardinality:0" value="1" />
+      <link role="target:0" targetNodeId="2v.2005811434196936527:9" resolveInfo="ProcedureParameter" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="6453446790701338086">
+    <property name="package:0" value="interface.dbc" />
+    <property name="name:0" value="ResultExpression" />
+    <link role="extends:0" targetNodeId="2v.6441851857096548278:9" resolveInfo="Expression" />
+    <node role="conceptProperty:0" type="jetbrains.mps.lang.structure.structure.StringConceptProperty:0" id="6453446790701438947">
+      <property name="value:0" value="result" />
       <link role="conceptPropertyDeclaration:0" targetNodeId="3v.1137473891462:0" resolveInfo="alias" />
     </node>
   </node>

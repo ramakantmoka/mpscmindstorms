@@ -171,6 +171,7 @@
   <node type="jetbrains.mps.lang.intentions.structure.IntentionDeclaration:8" id="2896354780539585907">
     <property name="package:8" value="machine" />
     <property name="name:8" value="addState" />
+    <property name="isAvailableInChildNodes:8" value="true" />
     <link role="forConcept:8" targetNodeId="1.6254144863182652341" resolveInfo="Statemachine" />
     <node role="descriptionFunction:8" type="jetbrains.mps.lang.intentions.structure.DescriptionBlock:8" id="2896354780539585908">
       <node role="body:8" type="jetbrains.mps.baseLanguage.structure.StatementList:3" id="2896354780539585909">
@@ -234,6 +235,7 @@
   <node type="jetbrains.mps.lang.intentions.structure.IntentionDeclaration:8" id="2896354780539639371">
     <property name="package:8" value="machine" />
     <property name="name:8" value="addEvent" />
+    <property name="isAvailableInChildNodes:8" value="true" />
     <link role="forConcept:8" targetNodeId="1.6254144863182652341" resolveInfo="Statemachine" />
     <node role="descriptionFunction:8" type="jetbrains.mps.lang.intentions.structure.DescriptionBlock:8" id="2896354780539639372">
       <node role="body:8" type="jetbrains.mps.baseLanguage.structure.StatementList:3" id="2896354780539639373">

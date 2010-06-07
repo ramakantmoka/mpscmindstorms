@@ -22,8 +22,8 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" version="0" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959028c(jetbrains.mps.lang.structure.constraints)" version="11" />
   <languageAspect modelUID="r:5e9df045-8930-4ba7-8720-4642d630b9ff(med.platform.nxtosek.structure)" version="0" />
-  <languageAspect modelUID="r:c8eeaafc-b8ed-41eb-96aa-711dbd66c11c(med.quantities.structure)" version="0" />
   <languageAspect modelUID="r:14985df1-5baf-4f0a-a3f3-f8ff0129730a(med.features.structure)" version="4" />
+  <languageAspect modelUID="r:c8eeaafc-b8ed-41eb-96aa-711dbd66c11c(med.quantities.structure)" version="0" />
   <devkit namespace="a891e14a-a3d6-466e-8364-4e1b14cbaa06(ModularEmbeddedDSL)" />
   <maxImportIndex value="2" />
   <import index="1" modelUID="r:87349ab3-9b12-4481-9a60-1d03a1d1532e(lfmain)" version="-1" />
@@ -68,11 +68,10 @@
         <node role="states" type="med.statemachine.structure.State" id="8017499479423272684">
           <property name="name" value="initializing" />
           <property name="initial" value="true" />
-          <node role="transitions" type="med.statemachine.structure.Transition" id="8017499479423272685">
-            <link role="trigger" targetNodeId="8017499479423272674" resolveInfo="initialized" />
+          <node role="transitions" type="med.statemachine.structure.Transition" id="8957458869106497345">
             <link role="target" targetNodeId="8017499479423272694" resolveInfo="running" />
-            <node role="guard" type="med.core.structure.TrueLiteral:9" id="8017499479423272686" />
-            <node role="trigger" type="med.statemachine.structure.EventTrigger" id="1265321504643101073">
+            <node role="guard" type="med.core.structure.TrueLiteral:9" id="8957458869106497346" />
+            <node role="trigger" type="med.statemachine.structure.EventTrigger" id="8957458869106497348">
               <link role="event" targetNodeId="8017499479423272674" resolveInfo="initialized" />
             </node>
           </node>
@@ -225,6 +224,19 @@
             <node role="type:9" type="med.core.structure.Int8:9" id="6548416117422469516" />
           </node>
           <node role="type:3" type="med.core.structure.VoidType:9" id="6548416117422469517" />
+          <node role="constraints:3" type="med.components.structure.PreCondition:3" id="6453446790701435514">
+            <node role="errormessage:3" type="med.core.structure.StringConstantExpression:9" id="6453446790701437223">
+              <property name="value:9" value="speed must be greater zero: " />
+            </node>
+            <node role="expression:3" type="med.core.structure.GreaterExpression:9" id="6453446790701435518">
+              <node role="right:9" type="med.core.structure.IntConstantExpression:9" id="7081237961799683215">
+                <property name="value:9" value="0" />
+              </node>
+              <node role="left:9" type="med.components.structure.PPCParameterRef:3" id="7081237961799683217">
+                <link role="param:3" targetNodeId="6548416117422469515" resolveInfo="speed" />
+              </node>
+            </node>
+          </node>
         </node>
         <node role="procedures:3" type="med.components.structure.InterfaceProcedure:3" id="6548416117422469518">
           <property name="name:3" value="setRightSpeed" />
@@ -233,22 +245,19 @@
             <node role="type:9" type="med.core.structure.Int8:9" id="6548416117422469520" />
           </node>
           <node role="type:3" type="med.core.structure.VoidType:9" id="6548416117422469521" />
-        </node>
-      </node>
-      <node role="contents:9" type="med.components.structure.Interface:3" id="6548416117422469522">
-        <property name="export:3" value="true" />
-        <property name="name:3" value="ForwardingDemo" />
-        <node role="procedures:3" type="med.components.structure.InterfaceProcedure:3" id="6548416117422469523">
-          <property name="name:3" value="fd3" />
-          <node role="type:3" type="med.core.structure.VoidType:9" id="6548416117422469524" />
-        </node>
-        <node role="procedures:3" type="med.components.structure.InterfaceProcedure:3" id="6548416117422469525">
-          <property name="name:3" value="fd2" />
-          <node role="type:3" type="med.core.structure.VoidType:9" id="6548416117422469526" />
-        </node>
-        <node role="procedures:3" type="med.components.structure.InterfaceProcedure:3" id="6548416117422469527">
-          <property name="name:3" value="fd1" />
-          <node role="type:3" type="med.core.structure.VoidType:9" id="6548416117422469528" />
+          <node role="constraints:3" type="med.components.structure.PreCondition:3" id="775441678878431990">
+            <node role="expression:3" type="med.core.structure.GreaterExpression:9" id="775441678878431994">
+              <node role="right:9" type="med.core.structure.IntConstantExpression:9" id="775441678878431998">
+                <property name="value:9" value="0" />
+              </node>
+              <node role="left:9" type="med.components.structure.PPCParameterRef:3" id="775441678878446203">
+                <link role="param:3" targetNodeId="6548416117422469519" resolveInfo="speed" />
+              </node>
+            </node>
+            <node role="errormessage:3" type="med.core.structure.StringConstantExpression:9" id="775441678878431999">
+              <property name="value:9" value="speed must be greater zero: " />
+            </node>
+          </node>
         </node>
       </node>
       <node role="contents:9" type="med.components.structure.Interface:3" id="6548416117422469529">
@@ -257,23 +266,37 @@
         <node role="procedures:3" type="med.components.structure.InterfaceProcedure:3" id="6548416117422469530">
           <property name="name:3" value="leftSpeed" />
           <node role="type:3" type="med.core.structure.Int8:9" id="6548416117422469531" />
+          <node role="constraints:3" type="med.components.structure.PostCondition:3" id="775441678878431969">
+            <node role="expression:3" type="med.core.structure.GreaterExpression:9" id="775441678878431973">
+              <node role="left:9" type="med.components.structure.ResultExpression:3" id="775441678878431972" />
+              <node role="right:9" type="med.core.structure.IntConstantExpression:9" id="775441678878431977">
+                <property name="value:9" value="0" />
+              </node>
+            </node>
+            <node role="errormessage:3" type="med.core.structure.StringConstantExpression:9" id="775441678878431979">
+              <property name="value:9" value="result must be greater 0" />
+            </node>
+          </node>
         </node>
         <node role="procedures:3" type="med.components.structure.InterfaceProcedure:3" id="6548416117422469532">
           <property name="name:3" value="rightSpeed" />
           <node role="type:3" type="med.core.structure.Int8:9" id="6548416117422469533" />
+          <node role="constraints:3" type="med.components.structure.PostCondition:3" id="775441678878431980">
+            <node role="errormessage:3" type="med.core.structure.StringConstantExpression:9" id="775441678878431989">
+              <property name="value:9" value="result must be greater 0" />
+            </node>
+            <node role="expression:3" type="med.core.structure.GreaterExpression:9" id="775441678878431984">
+              <node role="left:9" type="med.components.structure.ResultExpression:3" id="775441678878431983" />
+              <node role="right:9" type="med.core.structure.IntConstantExpression:9" id="775441678878431988">
+                <property name="value:9" value="0" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node role="contents:9" type="med.components.structure.Component:3" id="6548416117422469534">
         <property name="name:3" value="Motors" />
         <property name="export:3" value="true" />
-        <node role="ports:3" type="med.components.structure.ProvidedPort:3" id="6548416117422469535">
-          <property name="name:3" value="pp" />
-          <link role="interface:3" targetNodeId="6548416117422469522" resolveInfo="ForwardingDemo" />
-        </node>
-        <node role="ports:3" type="med.components.structure.RequiredPort:3" id="6548416117422469536">
-          <property name="name:3" value="pr" />
-          <link role="interface:3" targetNodeId="6548416117422469522" resolveInfo="ForwardingDemo" />
-        </node>
         <node role="ports:3" type="med.components.structure.ProvidedPort:3" id="6548416117422469537">
           <property name="name:3" value="motorControl" />
           <link role="interface:3" targetNodeId="6548416117422469511" resolveInfo="MotorControl" />
@@ -281,41 +304,6 @@
         <node role="ports:3" type="med.components.structure.RequiredPort:3" id="6548416117422469538">
           <property name="name:3" value="tracing" />
           <link role="interface:3" targetNodeId="6548416117422469678" resolveInfo="RtTrace" />
-        </node>
-      </node>
-      <node role="contents:9" type="med.components.structure.Component:3" id="6548416117422469539">
-        <property name="name:3" value="ForwarderTest" />
-        <node role="ports:3" type="med.components.structure.ProvidedPort:3" id="6548416117422469540">
-          <property name="name:3" value="dem" />
-          <link role="interface:3" targetNodeId="6548416117422469522" resolveInfo="ForwardingDemo" />
-        </node>
-      </node>
-      <node role="contents:9" type="med.components.structure.ComponentImplementation:3" id="6548416117422469541">
-        <property name="name:3" value="ForwarderTestImpl" />
-        <link role="componentType:3" targetNodeId="6548416117422469539" resolveInfo="ForwarderTest" />
-        <node role="contents:3" type="med.components.structure.InterfaceProcedureImplementation:3" id="6548416117422469542">
-          <link role="procedure:3" targetNodeId="6548416117422469523" resolveInfo="fd3" />
-          <node role="body:3" type="med.core.structure.StatementList:9" id="6548416117422469543">
-            <node role="statements:9" type="med.logging.structure.LogStatement" id="6548416117422469544">
-              <property name="message" value="fd3" />
-            </node>
-          </node>
-        </node>
-        <node role="contents:3" type="med.components.structure.InterfaceProcedureImplementation:3" id="6548416117422469545">
-          <link role="procedure:3" targetNodeId="6548416117422469525" resolveInfo="fd2" />
-          <node role="body:3" type="med.core.structure.StatementList:9" id="6548416117422469546">
-            <node role="statements:9" type="med.logging.structure.LogStatement" id="6548416117422469547">
-              <property name="message" value="fd2" />
-            </node>
-          </node>
-        </node>
-        <node role="contents:3" type="med.components.structure.InterfaceProcedureImplementation:3" id="6548416117422469548">
-          <link role="procedure:3" targetNodeId="6548416117422469527" resolveInfo="fd1" />
-          <node role="body:3" type="med.core.structure.StatementList:9" id="6548416117422469549">
-            <node role="statements:9" type="med.logging.structure.LogStatement" id="6548416117422469550">
-              <property name="message" value="fd1" />
-            </node>
-          </node>
         </node>
       </node>
       <node role="contents:9" type="med.components.structure.Component:3" id="6548416117422469551">
@@ -343,10 +331,6 @@
               <link role="feature:4" targetNodeId="8017499479424103542" resolveInfo="testing" />
             </node>
           </node>
-        </node>
-        <node role="contents:3" type="med.components.structure.PortForwarder:3" id="6548416117422469559">
-          <link role="provided:3" targetNodeId="6548416117422469535" resolveInfo="pp" />
-          <link role="required:3" targetNodeId="6548416117422469536" resolveInfo="pr" />
         </node>
         <node role="contents:3" type="med.components.structure.InterfaceProcedureImplementation:3" id="6548416117422469560">
           <link role="procedure:3" targetNodeId="6548416117422469518" resolveInfo="setRightSpeed" />
@@ -731,7 +715,7 @@
     </node>
   </node>
   <node type="med.features.structure.FeatureDependencyConfiguration:4" id="8017499479424103537">
-    <property name="numberOfValidConfigurations:4" value="2" />
+    <property name="numberOfValidConfigurations:4" value="" />
     <node role="features:4" type="med.features.structure.SimpleFeatureDeclaration:4" id="8017499479424103542">
       <property name="selected:4" value="false" />
       <property name="name:4" value="testing" />
@@ -741,6 +725,10 @@
       <property name="highlightFeatureDependentNodes:4" value="true" />
       <property name="removeNonSelectedStuffInEditor:4" value="true" />
     </node>
+    <node role="backup:4" type="med.features.structure.ShowClauseDisplayMode:4" id="775441678878448867">
+      <property name="showFeatureClause:4" value="true" />
+      <property name="highlightFeatureDependentNodes:4" value="true" />
+    </node>
   </node>
   <node type="med.components.structure.Wiring:3" id="7678656588251004375">
     <node role="mappings:3" type="med.components.structure.InterfaceMapping:3" id="7678656588251004376">
@@ -749,14 +737,6 @@
       <node role="descriptor:3" type="med.components.structure.ComponentDescriptor:3" id="7678656588251004378">
         <link role="component:3" targetNodeId="6548416117422469685" resolveInfo="Tracer" />
         <link role="implementation:3" targetNodeId="6548416117422469687" resolveInfo="LogTracer" />
-      </node>
-    </node>
-    <node role="mappings:3" type="med.components.structure.InterfaceMapping:3" id="6548416117421302643">
-      <link role="interface:3" targetNodeId="6548416117422469522" resolveInfo="ForwardingDemo" />
-      <node role="scope:3" type="med.components.structure.GlobalWiringScope:3" id="6548416117421302644" />
-      <node role="descriptor:3" type="med.components.structure.ComponentDescriptor:3" id="6548416117421302645">
-        <link role="component:3" targetNodeId="6548416117422469539" resolveInfo="ForwarderTest" />
-        <link role="implementation:3" targetNodeId="6548416117422469541" resolveInfo="ForwarderTestImpl" />
       </node>
     </node>
   </node>

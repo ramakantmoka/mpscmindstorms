@@ -52,7 +52,6 @@
   </node>
   <visible index="2" modelUID="r:09d01149-7031-4616-b1e9-9d38ffcdfe9d(med.core.editor)" />
   <visible index="3" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-  <visible index="4" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
   <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration:32" id="186582152001074907">
     <link role="conceptDeclaration:32" targetNodeId="1.6520964804315849113" resolveInfo="Task" />
     <node role="cellModel:32" type="jetbrains.mps.lang.editor.structure.CellModel_Collection:32" id="6790227271039455861">
@@ -88,42 +87,10 @@
           </node>
           <node role="childCellModel:32" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode:32" id="6790227271039455877">
             <link role="relationDeclaration:32" targetNodeId="1.6520964804316662875" />
-            <node role="renderingCondition:32" type="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition:32" id="6790227271039455878">
-              <node role="body:32" type="jetbrains.mps.baseLanguage.structure.StatementList:3" id="6790227271039455879">
-                <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement:3" id="6790227271039455880">
-                  <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="6790227271039455881">
-                    <node role="operand:3" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node:32" id="6790227271039455882" />
-                    <node role="operation:3" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall:16" id="6790227271039455883">
-                      <link role="baseMethodDeclaration:16" targetNodeId="3.343373828473056899" resolveInfo="hasProjectionLevel" />
-                      <node role="actualArgument:16" type="jetbrains.mps.lang.smodel.structure.ConceptRefExpression:16" id="6790227271039455884">
-                        <link role="conceptDeclaration:16" targetNodeId="4v.343373828473056880:9" resolveInfo="ProjectionLevelAll" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
           <node role="cellLayout:32" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent:32" id="6790227271039455885" />
           <node role="childCellModel:32" type="jetbrains.mps.lang.editor.structure.CellModel_Constant:32" id="6790227271039455886">
             <property name="text:32" value="&lt;&lt;hidden, only visible in projection level 'all'&gt;&gt;" />
-            <node role="renderingCondition:32" type="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition:32" id="6790227271039455887">
-              <node role="body:32" type="jetbrains.mps.baseLanguage.structure.StatementList:3" id="6790227271039455888">
-                <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement:3" id="6790227271039455889">
-                  <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.NotExpression:3" id="6790227271039455890">
-                    <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="6790227271039455891">
-                      <node role="operand:3" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node:32" id="6790227271039455892" />
-                      <node role="operation:3" type="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall:16" id="6790227271039455893">
-                        <link role="baseMethodDeclaration:16" targetNodeId="3.343373828473056899" resolveInfo="hasProjectionLevel" />
-                        <node role="actualArgument:16" type="jetbrains.mps.lang.smodel.structure.ConceptRefExpression:16" id="6790227271039455894">
-                          <link role="conceptDeclaration:16" targetNodeId="4v.343373828473056880:9" resolveInfo="ProjectionLevelAll" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node role="styleItem:32" type="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem:32" id="6790227271039455895">
               <property name="color:32" value="gray" />
             </node>

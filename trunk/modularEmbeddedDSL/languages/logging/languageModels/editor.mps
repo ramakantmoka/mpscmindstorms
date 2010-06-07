@@ -43,5 +43,23 @@
       </node>
     </node>
   </node>
+  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration:32" id="8957458869106414175">
+    <link role="conceptDeclaration:32" targetNodeId="1.8957458869106414173" resolveInfo="LogExprStatement" />
+    <node role="cellModel:32" type="jetbrains.mps.lang.editor.structure.CellModel_Collection:32" id="8957458869106414177">
+      <node role="childCellModel:32" type="jetbrains.mps.lang.editor.structure.CellModel_Constant:32" id="8957458869106414180">
+        <property name="text:32" value="log expr" />
+      </node>
+      <node role="cellLayout:32" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent:32" id="8957458869106414179" />
+      <node role="childCellModel:32" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode:32" id="8957458869106414182">
+        <link role="relationDeclaration:32" targetNodeId="1.8957458869106414174" />
+      </node>
+      <node role="childCellModel:32" type="jetbrains.mps.lang.editor.structure.CellModel_Constant:32" id="8957458869106414184">
+        <property name="text:32" value=";" />
+        <node role="styleItem:32" type="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem:32" id="8957458869106414524">
+          <property name="flag:32" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

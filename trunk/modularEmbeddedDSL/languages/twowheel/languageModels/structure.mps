@@ -968,17 +968,5 @@
       <link role="target:0" targetNodeId="6556431234482831738:1" resolveInfo="RSStatement" />
     </node>
   </node>
-  <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="8949829907855207219">
-    <property name="name:0" value="TurnAround" />
-    <link role="extends:0" targetNodeId="5231257431510415618:1" resolveInfo="ContinuousStatement" />
-    <node role="propertyDeclaration:0" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration:0" id="8949829907855207220">
-      <property name="name:0" value="left" />
-      <link role="dataType:0" targetNodeId="2v.1082983657063:0" resolveInfo="boolean" />
-    </node>
-    <node role="conceptProperty:0" type="jetbrains.mps.lang.structure.structure.StringConceptProperty:0" id="8949829907855222467">
-      <property name="value:0" value="kreis" />
-      <link role="conceptPropertyDeclaration:0" targetNodeId="2v.1137473891462:0" resolveInfo="alias" />
-    </node>
-  </node>
 </model>
 

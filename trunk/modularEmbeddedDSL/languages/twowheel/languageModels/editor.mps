@@ -96,7 +96,7 @@
         <property name="text:32" value="to" />
       </node>
       <node role="childCellModel:32" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode:32" id="6556431234482831792">
-        <link role="relationDeclaration:32" targetNodeId="1.6556431234482831766:1" />
+        <link role="relationDeclaration:32" targetNodeId="1.6556431234482831783:1" />
       </node>
       <node role="childCellModel:32" type="jetbrains.mps.lang.editor.structure.CellModel_Constant:32" id="6556431234482831793">
         <property name="text:32" value=" within" />
@@ -222,18 +222,6 @@
           <link role="relationDeclaration:32" targetNodeId="1.6177678091394830700:1" />
           <node role="cellLayout:32" type="jetbrains.mps.lang.editor.structure.CellLayout_Vertical:32" id="6177678091394092415" />
         </node>
-      </node>
-    </node>
-  </node>
-  <node type="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration:32" id="8949829907855207221">
-    <link role="conceptDeclaration:32" targetNodeId="1.8949829907855207219:1" resolveInfo="TurnAround" />
-    <node role="cellModel:32" type="jetbrains.mps.lang.editor.structure.CellModel_Collection:32" id="8949829907855207223">
-      <node role="childCellModel:32" type="jetbrains.mps.lang.editor.structure.CellModel_Constant:32" id="8949829907855207226">
-        <property name="text:32" value="fahrimkreis" />
-      </node>
-      <node role="cellLayout:32" type="jetbrains.mps.lang.editor.structure.CellLayout_Indent:32" id="8949829907855207225" />
-      <node role="childCellModel:32" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode:32" id="8949829907855207228">
-        <link role="relationDeclaration:32" targetNodeId="1.5231257431510415620:1" />
       </node>
     </node>
   </node>
