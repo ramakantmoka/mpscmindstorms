@@ -57,6 +57,7 @@
             </node>
           </node>
         </node>
+        <node role="inequationGroup:3" type="jetbrains.mps.lang.typesystem.structure.DefaultGroupReference:3" id="6469849855460544048" />
       </node>
     </node>
     <node role="applicableNode:3" type="jetbrains.mps.lang.typesystem.structure.ConceptReference:3" id="5174648333271380336">

@@ -29,5 +29,40 @@
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590571(jetbrains.mps.gtext.constraints)" version="8" />
   <languageAspect modelUID="r:9f9959ae-ed4b-4339-a71e-62a180fa22ec(med.base.structure)" version="2" />
   <maxImportIndex value="1" />
+  <visible index="2" modelUID="r:486732ea-fa25-442c-bcc8-e948ecd38d94(med.logging.structure)" />
+  <visible index="3" modelUID="r:ec9ea141-672c-4923-8a2a-dd6bf5b26fa2(med.core.structure)" />
+  <node type="jetbrains.mps.lang.typesystem.structure.InferenceRule:3" id="8957458869106414525">
+    <property name="name:3" value="typeof_LogExprStatement" />
+    <node role="body:3" type="jetbrains.mps.baseLanguage.structure.StatementList:3" id="8957458869106414526">
+      <node role="statement:3" type="jetbrains.mps.lang.typesystem.structure.CreateLessThanInequationStatement:3" id="8957458869106414537">
+        <node role="inequationGroup:3" type="jetbrains.mps.lang.typesystem.structure.DefaultGroupReference:3" id="8957458869106414538" />
+        <node role="leftExpression:3" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause:3" id="8957458869106414541">
+          <node role="normalType:3" type="jetbrains.mps.lang.typesystem.structure.TypeOfExpression:3" id="8957458869106414529">
+            <node role="term:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="8957458869106414532">
+              <node role="operand:3" type="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference:3" id="8957458869106414531">
+                <link role="applicableNode:3" targetNodeId="8957458869106414527" resolveInfo="logExprStatement" />
+              </node>
+              <node role="operation:3" type="jetbrains.mps.lang.smodel.structure.SLinkAccess:16" id="8957458869106414536">
+                <link role="link:16" targetNodeId="2v.8957458869106414174" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="rightExpression:3" type="jetbrains.mps.lang.typesystem.structure.NormalTypeClause:3" id="8957458869106414542">
+          <node role="normalType:3" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression:3" id="8957458869106414543">
+            <node role="creator:3" type="jetbrains.mps.lang.smodel.structure.SNodeCreator:16" id="8957458869106418803">
+              <node role="createdType:16" type="jetbrains.mps.lang.smodel.structure.SNodeType:16" id="8957458869106418804">
+                <link role="concept:16" targetNodeId="3v.4641466063285997897:9" resolveInfo="GenericStringType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="applicableNode:3" type="jetbrains.mps.lang.typesystem.structure.ConceptReference:3" id="8957458869106414527">
+      <property name="name:3" value="logExprStatement" />
+      <link role="concept:3" targetNodeId="2v.8957458869106414173" resolveInfo="LogExprStatement" />
+    </node>
+  </node>
 </model>
 

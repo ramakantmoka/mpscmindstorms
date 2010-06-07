@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="ds.twowheel" uuid="810301f2-7f68-47b8-9a00-f2bc361d82c4" java-stubs-enabled="false" compileInMPS="true" doNotGenerateAdapters="false">
+<language namespace="ds.twowheel" uuid="810301f2-7f68-47b8-9a00-f2bc361d82c4" java-stubs-enabled="false" compileInMPS="true">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" namespacePrefix="ds.twowheel" />
   </models>

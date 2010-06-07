@@ -64,21 +64,6 @@
     <property name="package:32" value="statements" />
     <link role="conceptDeclaration:32" targetNodeId="1.124896375630675529:9" resolveInfo="LocalVariableDeclaration" />
     <node role="cellModel:32" type="jetbrains.mps.lang.editor.structure.CellModel_Collection:32" id="124896375630675534">
-      <node role="childCellModel:32" type="jetbrains.mps.lang.editor.structure.CellModel_Constant:32" id="6254144863185758130">
-        <property name="text:32" value="static" />
-        <node role="renderingCondition:32" type="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition:32" id="6254144863185758131">
-          <node role="body:32" type="jetbrains.mps.baseLanguage.structure.StatementList:3" id="6254144863185758132">
-            <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement:3" id="6254144863185758133">
-              <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="6254144863185758135">
-                <node role="operand:3" type="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node:32" id="6254144863185758134" />
-                <node role="operation:3" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess:16" id="6254144863185758139">
-                  <link role="property:16" targetNodeId="1.6254144863185758128:9" resolveInfo="static" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node role="childCellModel:32" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode:32" id="124896375630675537">
         <link role="relationDeclaration:32" targetNodeId="1.4271434180064590876:9" />
       </node>
@@ -2051,8 +2036,8 @@
                       <node role="operand:3" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference:3" id="7329889898789109853">
                         <link role="variableDeclaration:3" targetNodeId="7329889898789109839" resolveInfo="deref" />
                       </node>
-                      <node role="operation:3" type="jetbrains.mps.lang.smodel.structure.SLinkAccess:16" id="7329889898789109854">
-                        <link role="link:16" targetNodeId="1.8937796720371339320:9" />
+                      <node role="operation:3" type="jetbrains.mps.lang.smodel.structure.SLinkAccess:16" id="6469849855460544403">
+                        <link role="link:16" targetNodeId="1.8470053389337679989:9" />
                       </node>
                     </node>
                   </node>
@@ -2062,8 +2047,8 @@
                     <node role="operand:3" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference:3" id="7329889898789109857">
                       <link role="variableDeclaration:3" targetNodeId="7329889898789109839" resolveInfo="deref" />
                     </node>
-                    <node role="operation:3" type="jetbrains.mps.lang.smodel.structure.SLinkAccess:16" id="7329889898789109858">
-                      <link role="link:16" targetNodeId="1.8937796720371339320:9" />
+                    <node role="operation:3" type="jetbrains.mps.lang.smodel.structure.SLinkAccess:16" id="6469849855460544404">
+                      <link role="link:16" targetNodeId="1.8470053389337679989:9" />
                     </node>
                   </node>
                 </node>
@@ -3672,7 +3657,7 @@
         <link role="styleClass:32" targetNodeId="4621601338807060072" resolveInfo="LeftParen" />
       </node>
       <node role="childCellModel:32" type="jetbrains.mps.lang.editor.structure.CellModel_RefNode:32" id="4621601338807035369">
-        <link role="relationDeclaration:32" targetNodeId="8.1081516765348:3" />
+        <link role="relationDeclaration:32" targetNodeId="1.4621601338807035359:9" />
       </node>
       <node role="childCellModel:32" type="jetbrains.mps.lang.editor.structure.CellModel_Constant:32" id="4621601338807035370">
         <property name="text:32" value=")" />

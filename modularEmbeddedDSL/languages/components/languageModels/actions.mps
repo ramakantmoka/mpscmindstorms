@@ -70,7 +70,7 @@
               </node>
               <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement:3" id="2739617086197153692">
                 <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.AssignmentExpression:3" id="2739617086197153700">
-                  <node role="rValue:3" type="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression:16" id="3719922995712914960">
+                  <node role="rValue:3" type="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression:16" id="6469849855460540158">
                     <link role="concept:16" targetNodeId="1.2739617086196771952:3" resolveInfo="PortAdapterExpression" />
                     <node role="leftExpression:16" type="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_sourceNode:23" id="2739617086197153703" />
                   </node>

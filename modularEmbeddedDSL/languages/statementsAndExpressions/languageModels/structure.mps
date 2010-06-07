@@ -344,6 +344,9 @@
       <property name="name:0" value="value" />
       <link role="dataType:0" targetNodeId="2v.1082983657062:0" resolveInfo="integer" />
     </node>
+    <node role="implements:0" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference:0" id="7081237961799487574">
+      <link role="intfc:0" targetNodeId="7081237961799487571:9" resolveInfo="IBuiltIn" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="6441851857096655027">
     <property name="name:0" value="StringConstantExpression" />
@@ -356,6 +359,9 @@
     <node role="conceptProperty:0" type="jetbrains.mps.lang.structure.structure.StringConceptProperty:0" id="5580581899347726724">
       <property name="value:0" value="&quot;&quot;" />
       <link role="conceptPropertyDeclaration:0" targetNodeId="2v.1137473891462:0" resolveInfo="alias" />
+    </node>
+    <node role="implements:0" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference:0" id="7081237961799487575">
+      <link role="intfc:0" targetNodeId="7081237961799487571:9" resolveInfo="IBuiltIn" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="1881584577102679540">
@@ -384,6 +390,9 @@
     <link role="extends:0" targetNodeId="1881584577102679540:9" resolveInfo="BinaryExpression" />
     <node role="conceptProperty:0" type="jetbrains.mps.lang.structure.structure.BooleanConceptProperty:0" id="1881584577102787789">
       <link role="conceptPropertyDeclaration:0" targetNodeId="2v.1137473854053:0" resolveInfo="abstract" />
+    </node>
+    <node role="implements:0" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference:0" id="7081237961799487581">
+      <link role="intfc:0" targetNodeId="7081237961799487571:9" resolveInfo="IBuiltIn" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="1881584577102679545">
@@ -503,6 +512,9 @@
       <property name="value:0" value="true" />
       <link role="conceptPropertyDeclaration:0" targetNodeId="2v.1137473891462:0" resolveInfo="alias" />
     </node>
+    <node role="implements:0" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference:0" id="7081237961799487576">
+      <link role="intfc:0" targetNodeId="7081237961799487571:9" resolveInfo="IBuiltIn" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="2522599413187727537">
     <property name="name:0" value="FalseLiteral" />
@@ -511,6 +523,9 @@
     <node role="conceptProperty:0" type="jetbrains.mps.lang.structure.structure.StringConceptProperty:0" id="6556431234482276382">
       <property name="value:0" value="false" />
       <link role="conceptPropertyDeclaration:0" targetNodeId="2v.1137473891462:0" resolveInfo="alias" />
+    </node>
+    <node role="implements:0" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference:0" id="7081237961799487573">
+      <link role="intfc:0" targetNodeId="7081237961799487571:9" resolveInfo="IBuiltIn" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="2522599413187982982">
@@ -543,6 +558,9 @@
     <node role="conceptProperty:0" type="jetbrains.mps.lang.structure.structure.StringConceptProperty:0" id="1532320234891075006">
       <property name="value:0" value="{.,.,}" />
       <link role="conceptPropertyDeclaration:0" targetNodeId="2v.1137473891462:0" resolveInfo="alias" />
+    </node>
+    <node role="implements:0" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference:0" id="7081237961799487572">
+      <link role="intfc:0" targetNodeId="7081237961799487571:9" resolveInfo="IBuiltIn" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="4641466063285423949">
@@ -696,6 +714,9 @@
     <link role="extends:0" targetNodeId="1881584577102679540:9" resolveInfo="BinaryExpression" />
     <node role="conceptProperty:0" type="jetbrains.mps.lang.structure.structure.BooleanConceptProperty:0" id="4739672646790499455">
       <link role="conceptPropertyDeclaration:0" targetNodeId="2v.1137473854053:0" resolveInfo="abstract" />
+    </node>
+    <node role="implements:0" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference:0" id="7081237961799487582">
+      <link role="intfc:0" targetNodeId="7081237961799487571:9" resolveInfo="IBuiltIn" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="4739672646790374708">
@@ -1360,8 +1381,11 @@
       <property name="sourceCardinality:0" value="1" />
       <link role="target:0" targetNodeId="6441851857096548278:9" resolveInfo="Expression" />
     </node>
-    <node role="implements:0" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference:0" id="4946775246121425140">
+    <node role="implements:0" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference:0" id="7081237961799487577">
       <link role="intfc:0" targetNodeId="1881584577103641504:9" resolveInfo="ILValue" />
+    </node>
+    <node role="implements:0" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference:0" id="7081237961799487579">
+      <link role="intfc:0" targetNodeId="7081237961799487571:9" resolveInfo="IBuiltIn" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="1532320234891416938">
@@ -1383,6 +1407,9 @@
       <property name="value:0" value="&amp;" />
       <link role="conceptPropertyDeclaration:0" targetNodeId="2v.1137473891462:0" resolveInfo="alias" />
     </node>
+    <node role="implements:0" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference:0" id="7081237961799487580">
+      <link role="intfc:0" targetNodeId="7081237961799487571:9" resolveInfo="IBuiltIn" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="4946775246121511096">
     <property name="package:0" value="statements" />
@@ -1398,6 +1425,9 @@
   <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration:0" id="165111250876601395">
     <property name="package:0" value="expressions" />
     <property name="name:0" value="ISimpleExpression" />
+    <node role="extends:0" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference:0" id="7081237961799487583">
+      <link role="intfc:0" targetNodeId="7081237961799487571:9" resolveInfo="IBuiltIn" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="165111250876711933">
     <property name="package:0" value="expressions" />
@@ -1656,6 +1686,9 @@
     <node role="conceptProperty:0" type="jetbrains.mps.lang.structure.structure.StringConceptProperty:0" id="7974571013346136518">
       <property name="value:0" value="(" />
       <link role="conceptPropertyDeclaration:0" targetNodeId="2v.1137473891462:0" resolveInfo="alias" />
+    </node>
+    <node role="implements:0" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference:0" id="7081237961799487585">
+      <link role="intfc:0" targetNodeId="7081237961799487571:9" resolveInfo="IBuiltIn" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="5196379128660651525">
@@ -1993,6 +2026,12 @@
       <property name="sourceCardinality:0" value="1" />
       <link role="target:0" targetNodeId="6441851857096548278:9" resolveInfo="Expression" />
     </node>
+    <node role="implements:0" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference:0" id="7081237961799487584">
+      <link role="intfc:0" targetNodeId="7081237961799487571:9" resolveInfo="IBuiltIn" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration:0" id="7081237961799487571">
+    <property name="name:0" value="IBuiltIn" />
   </node>
 </model>
 

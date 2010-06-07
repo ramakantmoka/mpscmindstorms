@@ -359,6 +359,15 @@
               </node>
             </node>
           </node>
+          <node role="statements:9" type="med.core.structure.OneLineCommetStatement:9" id="8109089010149707069">
+            <property name="comment:9" value="hier" />
+          </node>
+          <node role="statements:9" type="med.core.structure.LocalVariableDeclaration:9" id="8109089010149707071">
+            <property name="name:9" value="stest" />
+            <node role="type:9" type="med.core.structure.StructType:9" id="8109089010149707072">
+              <link role="struct:9" targetNodeId="8937796720370468503" resolveInfo="aStruct" />
+            </node>
+          </node>
           <node role="statements:9" type="med.core.structure.LocalVariableDeclaration:9" id="8937796720370693949">
             <property name="name:9" value="structptr" />
             <node role="type:9" type="med.core.structure.PointerType:9" id="8937796720370693952">
@@ -600,11 +609,11 @@
             </node>
           </node>
           <node role="statements:9" type="med.unittest.structure.AssertEquals" id="6275945668714478242">
-            <property name="errorMessage" value="MSG" />
+            <property name="errorMessage" value="access via -&gt; does not work" />
             <node role="actual" type="med.core.structure.StructByValueAttributeReference:9" id="8328996737396118259">
               <link role="attribute:9" targetNodeId="8937796720370468504" resolveInfo="a" />
               <node role="variable:9" type="med.core.structure.DereferenceExpression:9" id="8328996737396118257">
-                <node role="expression:9" type="med.core.structure.LocalVariableReference:9" id="3064584267684559511">
+                <node role="expression:9" type="med.core.structure.LocalVariableReference:9" id="8328996737396118256">
                   <link role="variable:9" targetNodeId="6275945668714243447" resolveInfo="structptr" />
                 </node>
               </node>

@@ -2007,9 +2007,7 @@
                       <node role="ifTrue:3" type="jetbrains.mps.baseLanguage.structure.StringLiteral:3" id="6254144863185758182">
                         <property name="value:3" value="static " />
                       </node>
-                      <node role="ifFalse:3" type="jetbrains.mps.baseLanguage.structure.StringLiteral:3" id="6254144863185758183">
-                        <property name="value:3" value="" />
-                      </node>
+                      <node role="ifFalse:3" type="jetbrains.mps.baseLanguage.structure.StringLiteral:3" id="6254144863185758183" />
                       <node role="condition:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="6254144863185758173">
                         <node role="operand:3" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode:2" id="6254144863185758172" />
                         <node role="operation:3" type="jetbrains.mps.lang.smodel.structure.SPropertyAccess:16" id="6254144863185758177">
@@ -3363,7 +3361,6 @@
       <link role="applicableConcept:2" targetNodeId="1.306587673255505538:9" resolveInfo="Resource" />
     </node>
     <node role="reductionMappingRule:2" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule:2" id="8017791897007712657">
-      <property name="package:2" value="system" />
       <link role="applicableConcept:2" targetNodeId="1.3553474829273041289:9" resolveInfo="System" />
       <node role="ruleConsequence:2" type="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference:2" id="8017791897007712659">
         <link role="template:2" targetNodeId="8017791897007712660:1" resolveInfo="reduce_System" />

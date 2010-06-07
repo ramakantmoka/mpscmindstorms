@@ -96,7 +96,6 @@
         <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression:3" id="3456749490052706504">
           <node role="creator:3" type="jetbrains.mps.lang.smodel.structure.SNodeCreator:16" id="3456749490052706506">
             <node role="createdType:16" type="jetbrains.mps.lang.smodel.structure.SNodeType:16" id="3456749490052706507">
-              <property name="right_transfrom_hint:16" value="true" />
               <link role="concept:16" targetNodeId="1.3456749490052706495:0" resolveInfo="GenericQuantityType" />
             </node>
           </node>

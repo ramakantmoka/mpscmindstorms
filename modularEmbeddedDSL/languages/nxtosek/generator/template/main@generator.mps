@@ -743,6 +743,12 @@
         <link role="template:2" targetNodeId="3577454086726136599" resolveInfo="reduce_LogStatement" />
       </node>
     </node>
+    <node role="reductionMappingRule:2" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule:2" id="8957458869106440635">
+      <link role="applicableConcept:2" targetNodeId="5v.8957458869106414173" resolveInfo="LogExprStatement" />
+      <node role="ruleConsequence:2" type="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference:2" id="8957458869106440639">
+        <link role="template:2" targetNodeId="8957458869106440637" resolveInfo="reduce_LogExprStatement" />
+      </node>
+    </node>
     <node role="reductionMappingRule:2" type="jetbrains.mps.lang.generator.structure.Reduction_MappingRule:2" id="3577454086728644842">
       <link role="applicableConcept:2" targetNodeId="2v.6520964804315849113" resolveInfo="Task" />
       <node role="ruleConsequence:2" type="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference:2" id="3577454086728644843">
@@ -1822,6 +1828,50 @@
         </node>
       </node>
       <node role="templateFragment$attribute:9" type="jetbrains.mps.lang.generator.structure.TemplateFragment:2" id="1265321504638466222" />
+    </node>
+  </node>
+  <node type="jetbrains.mps.lang.generator.structure.TemplateDeclaration:2" id="8957458869106440637">
+    <property name="name:2" value="reduce_LogExprStatement" />
+    <link role="applicableConcept:2" targetNodeId="5v.8957458869106414173" resolveInfo="LogExprStatement" />
+    <node role="contentNode:2" type="med.core.structure.ImplementationModule:9" id="8957458869106440640">
+      <property name="name:9" value="dummy" />
+      <node role="imports:9" type="med.core.structure.ModuleImport:9" id="8957458869106440641">
+        <link role="importedModule:9" targetNodeId="3.3454436015656157027" resolveInfo="EcAPI" />
+      </node>
+      <node role="contents:9" type="med.core.structure.Procedure:9" id="8957458869106440642">
+        <property name="name:9" value="caller" />
+        <node role="body:9" type="med.core.structure.StatementList:9" id="8957458869106440643">
+          <node role="statements:9" type="med.core.structure.ExpressionStatement:9" id="8957458869106440644">
+            <node role="templateFragment$attribute:9" type="jetbrains.mps.lang.generator.structure.TemplateFragment:2" id="8957458869106440645" />
+            <node role="expression:9" type="med.core.structure.ProcedureCall:9" id="8957458869106440646">
+              <link role="procedure:9" targetNodeId="3.7301321101284341497" resolveInfo="ecrobot_status_monitor" />
+              <node role="actuals:9" type="med.core.structure.StringConstantExpression:9" id="8957458869106440658">
+                <property name="value:9" value="something" />
+                <node role="nodeMacro$attribute:9" type="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro:2" id="8957458869106440660">
+                  <node role="sourceNodeQuery:2" type="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery:2" id="8957458869106440663">
+                    <node role="body:2" type="jetbrains.mps.baseLanguage.structure.StatementList:3" id="8957458869106440664">
+                      <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement:3" id="8957458869106440665">
+                        <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="8957458869106440666">
+                          <node role="operation:3" type="jetbrains.mps.lang.smodel.structure.SLinkAccess:16" id="8957458869106440667">
+                            <link role="link:16" targetNodeId="5v.8957458869106414174" />
+                          </node>
+                          <node role="operand:3" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode:2" id="8957458869106440668" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="moduleDependencyAnnotation$attribute:9" type="med.core.structure.ModuleDependency:9" id="8957458869106440655">
+              <node role="import:9" type="med.core.structure.ModuleImport:9" id="8957458869106440656">
+                <link role="importedModule:9" targetNodeId="3.3454436015656157027" resolveInfo="EcAPI" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="type:9" type="med.core.structure.Type:9" id="8957458869106440657" />
+      </node>
     </node>
   </node>
 </model>

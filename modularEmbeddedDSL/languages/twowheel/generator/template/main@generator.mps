@@ -263,42 +263,6 @@
               </node>
             </node>
           </node>
-          <node role="entry" type="med.statemachine.structure.EntryAction" id="8949829907855424211">
-            <node role="body" type="med.core.structure.StatementList:9" id="8949829907855424212">
-              <node role="statements:9" type="med.core.structure.AssignmentStatement:9" id="8949829907855426393">
-                <node role="lvalue:9" type="med.core.structure.ModuleVariableRef:9" id="8949829907855426392">
-                  <link role="variable:9" targetNodeId="5231257431510833005" resolveInfo="currentLeftDelta" />
-                </node>
-                <node role="rvalue:9" type="med.core.structure.IntConstantExpression:9" id="8949829907855426397">
-                  <property name="value:9" value="0" />
-                </node>
-              </node>
-              <node role="statements:9" type="med.core.structure.AssignmentStatement:9" id="8949829907855426401">
-                <node role="lvalue:9" type="med.core.structure.ModuleVariableRef:9" id="8949829907855426400">
-                  <link role="variable:9" targetNodeId="5231257431510833013" resolveInfo="currentLeftSpeed" />
-                </node>
-                <node role="rvalue:9" type="med.core.structure.IntConstantExpression:9" id="8949829907855426405">
-                  <property name="value:9" value="0" />
-                </node>
-              </node>
-            </node>
-            <node role="nodeMacro$attribute" type="jetbrains.mps.lang.generator.structure.IfMacro:2" id="8949829907855426407">
-              <node role="conditionFunction:2" type="jetbrains.mps.lang.generator.structure.IfMacro_Condition:2" id="8949829907855426408">
-                <node role="body:2" type="jetbrains.mps.baseLanguage.structure.StatementList:3" id="8949829907855426409">
-                  <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement:3" id="8949829907855426410">
-                    <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="8949829907855426414">
-                      <node role="operand:3" type="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode:2" id="8949829907855426411" />
-                      <node role="operation:3" type="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation:16" id="8949829907855426421">
-                        <node role="conceptArgument:16" type="jetbrains.mps.lang.smodel.structure.RefConcept_Reference:16" id="8949829907855426423">
-                          <link role="conceptDeclaration:16" targetNodeId="1.8949829907855207219:1" resolveInfo="TurnAround" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node role="entry" type="med.statemachine.structure.EntryAction" id="5231257431512122514">
             <node role="body" type="med.core.structure.StatementList:9" id="5231257431512122515">
               <node role="statements:9" type="med.core.structure.AssignmentStatement:9" id="5231257431512122589">

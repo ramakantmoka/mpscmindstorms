@@ -11,7 +11,11 @@
       </models>
       <external-templates>
         <generator generatorUID="5a9075dc-380e-41cb-a166-c29b1245e3c3(med.core#3747647978568410848)" />
+        <generator generatorUID="e6195d47-7615-4a79-9fe5-cbb950864e31(med.platform.nxtosek#3454436015655285766)" />
       </external-templates>
+      <usedLanguages>
+        <usedLanguage>50b44c57-34f1-428d-a7c3-d100606f8e2a(med.features)</usedLanguage>
+      </usedLanguages>
       <usedDevKits>
         <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
       </usedDevKits>
@@ -20,7 +24,14 @@
           <greater-priority-mapping>
             <generator generatorUID="4d9d644f-88e3-4b1a-b868-fdcf4fc6cc0f(med.components#3113923837076787424)" />
             <external-mapping>
-              <mapping-node modelUID="r:cd686c3a-c8f5-4925-9a41-62e3d4c2c867(med.components.generator.template.main@generator)" nodeID="3113923837076787425" />
+              <mapping-set>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:cd686c3a-c8f5-4925-9a41-62e3d4c2c867(med.components.generator.template.main@generator)" nodeID="3113923837076787425" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:cd686c3a-c8f5-4925-9a41-62e3d4c2c867(med.components.generator.template.main@generator)" nodeID="775441678878448203" />
+                </mapping-set-element>
+              </mapping-set>
             </external-mapping>
           </greater-priority-mapping>
           <lesser-priority-mapping>
@@ -66,6 +77,41 @@
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="4d9d644f-88e3-4b1a-b868-fdcf4fc6cc0f(med.components#3113923837076787424)" />
+            <external-mapping>
+              <mapping-node modelUID="r:cd686c3a-c8f5-4925-9a41-62e3d4c2c867(med.components.generator.template.main@generator)" nodeID="775441678878448203" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="e6195d47-7615-4a79-9fe5-cbb950864e31(med.platform.nxtosek#3454436015655285766)" />
+            <external-mapping>
+              <all-local-mappings />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="4d9d644f-88e3-4b1a-b868-fdcf4fc6cc0f(med.components#3113923837076787424)" />
+            <external-mapping>
+              <mapping-set>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:cd686c3a-c8f5-4925-9a41-62e3d4c2c867(med.components.generator.template.main@generator)" nodeID="3113923837076787425" />
+                </mapping-set-element>
+                <mapping-set-element>
+                  <mapping-node modelUID="r:cd686c3a-c8f5-4925-9a41-62e3d4c2c867(med.components.generator.template.main@generator)" nodeID="1265321504644085231" />
+                </mapping-set-element>
+              </mapping-set>
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="4d9d644f-88e3-4b1a-b868-fdcf4fc6cc0f(med.components#3113923837076787424)" />
+            <external-mapping>
+              <mapping-node modelUID="r:cd686c3a-c8f5-4925-9a41-62e3d4c2c867(med.components.generator.template.main@generator)" nodeID="775441678878448203" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
       </mapping-priorities>
     </generator>
   </generators>
@@ -77,6 +123,7 @@
   </usedDevKits>
   <extendedLanguages>
     <extendedLanguage>3a8b8671-1532-4e8f-b780-594a27fa10c8(med.core)</extendedLanguage>
+    <extendedLanguage>d1a10200-64d4-45ca-afd0-41b350f63b0d(med.logging)</extendedLanguage>
   </extendedLanguages>
 </language>
 
