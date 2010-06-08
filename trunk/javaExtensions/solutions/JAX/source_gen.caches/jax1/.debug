@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debugInfo>
+  <nodeInfo nodeId="3919193983091717024" fileName="HalloLock.java" startLine="8" startPosition="22" endLine="9" endPosition="18" />
+  <nodeInfo nodeId="3919193983091717030" fileName="HalloLock.java" startLine="9" startPosition="18" endLine="10" endPosition="18" />
+  <nodeInfo nodeId="3919193983092170579" fileName="HalloLock.java" startLine="12" startPosition="37" endLine="13" endPosition="16" />
+  <nodeInfo nodeId="3919193983092170585" fileName="HalloLock.java" startLine="13" startPosition="16" endLine="14" endPosition="10" />
+  <nodeInfo nodeId="3919193983092302043" fileName="HalloLock.java" startLine="20" startPosition="36" endLine="21" endPosition="16" />
+  <nodeInfo nodeId="3919193983092299080" fileName="HalloLock.java" startLine="19" startPosition="0" endLine="23" endPosition="0" />
+  <nodeInfo nodeId="3919193983092170575" fileName="HalloLock.java" startLine="10" startPosition="18" endLine="17" endPosition="5" />
+  <nodeInfo nodeId="3919193983091713279" fileName="HalloLock.java" startLine="7" startPosition="24" endLine="18" endPosition="3" />
+  <scopeInfo nodeId="3919193983092299083" fileName="HalloLock.java" startLine="20" startPosition="36" endLine="21" endPosition="16" />
+  <scopeInfo nodeId="3919193983092299080" fileName="HalloLock.java" startLine="19" startPosition="0" endLine="23" endPosition="0">
+    <varInfo nodeId="3919193983092302041" varName="i" />
+  </scopeInfo>
+  <scopeInfo nodeId="3919193983091713282" fileName="HalloLock.java" startLine="8" startPosition="22" endLine="17" endPosition="5">
+    <varInfo nodeId="3919193983091717025" varName="l" />
+    <varInfo nodeId="3919193983091717031" varName="i" />
+  </scopeInfo>
+  <scopeInfo nodeId="3919193983091713279" fileName="HalloLock.java" startLine="7" startPosition="24" endLine="18" endPosition="3" />
+</debugInfo>
+
