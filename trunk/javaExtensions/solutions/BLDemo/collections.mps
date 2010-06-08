@@ -68,14 +68,6 @@
               <node role="operation:3" type="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation:7" id="6248476625560598717" />
             </node>
           </node>
-          <node role="statement:3" type="jetbrains.mps.baseLanguage.unitTest.structure.AssertEquals" id="8703602315421476909">
-            <node role="expected" type="jetbrains.mps.baseLanguage.structure.IntegerConstant:3" id="8703602315421476912">
-              <property name="value:3" value="1" />
-            </node>
-            <node role="actual" type="jetbrains.mps.baseLanguage.structure.IntegerConstant:3" id="8703602315421476913">
-              <property name="value:3" value="2" />
-            </node>
-          </node>
           <node role="statement:3" type="jetbrains.mps.baseLanguage.unitTest.structure.AssertSame" id="6248476625560599657">
             <node role="expected" type="jetbrains.mps.baseLanguage.structure.IntegerConstant:3" id="6248476625560599660">
               <property name="value:3" value="5" />
