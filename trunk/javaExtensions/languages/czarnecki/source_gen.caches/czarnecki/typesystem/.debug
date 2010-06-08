@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<debugInfo>
-  <nodeInfo nodeId="1343754860562657553" fileName="typeof_LockStatement_InferenceRule.java" startLine="25" startPosition="88" endLine="32" endPosition="5" />
-  <scopeInfo nodeId="1343754860562633421" fileName="typeof_LockStatement_InferenceRule.java" startLine="25" startPosition="88" endLine="32" endPosition="5" />
-</debugInfo>
-
