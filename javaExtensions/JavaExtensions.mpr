@@ -9,6 +9,8 @@
       <solutionPath path="${project}/solutions/BLDemo/BLDemo.msd" folder="bl" />
       <solutionPath path="${project}/solutions/aws.runtime/aws.runtime.msd" folder="aws" />
       <solutionPath path="${project}/solutions/aws.test/aws.test.msd" folder="aws" />
+      <solutionPath path="${project}/solutions/NewSolution/NewSolution.msd" folder="aws" />
+      <solutionPath path="${project}/solutions/RestDemo/RestDemo.msd" folder="rest" />
     </projectSolutions>
     <projectLanguages>
       <languagePath path="${project}/languages/SimpleSQLBaseLanguageAdapter/SimpleSQLBaseLanguageAdapter.mpl" folder="rest" />

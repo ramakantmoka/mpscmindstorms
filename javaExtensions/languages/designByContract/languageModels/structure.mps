@@ -52,6 +52,9 @@
       <property name="sourceCardinality:0" value="1" />
       <link role="target:0" targetNodeId="3v.1068431790191:3" resolveInfo="Expression" />
     </node>
+    <node role="conceptProperty:0" type="jetbrains.mps.lang.structure.structure.BooleanConceptProperty:0" id="2780846211648199307">
+      <link role="conceptPropertyDeclaration:0" targetNodeId="2v.1137473854053:0" resolveInfo="abstract" />
+    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="4572017563079817441">
     <property name="name:0" value="PreCondition" />

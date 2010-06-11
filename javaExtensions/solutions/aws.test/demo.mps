@@ -93,27 +93,15 @@
                   <property name="value:3" value="0815/123456" />
                 </node>
               </node>
+              <node role="values:2" type="aws.simpledb.structure.FieldValue:2" id="2780846211648199284">
+                <link role="field:2" targetNodeId="2780846211648198334" resolveInfo="alter" />
+                <node role="value:2" type="jetbrains.mps.baseLanguage.structure.StringLiteral:3" id="2780846211648199286">
+                  <property name="value:3" value="10" />
+                </node>
+              </node>
               <node role="nameExpr:2" type="jetbrains.mps.baseLanguage.structure.StringLiteral:3" id="8681672409478245155">
                 <property name="value:3" value="c0" />
               </node>
-            </node>
-          </node>
-        </node>
-        <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement:3" id="3147422627037095285">
-          <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="3147422627037095287">
-            <node role="operand:3" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference:3" id="3147422627037095286">
-              <link role="variableDeclaration:3" targetNodeId="8681672409476895952" resolveInfo="c" />
-            </node>
-            <node role="operation:3" type="jetbrains.mps.baseLanguage.extensionMethods.structure.ExtensionMethodCall:0" id="3147422627037095291">
-              <link role="baseMethodDeclaration:0" targetNodeId="3147422627037091466" resolveInfo="doSomething" />
-            </node>
-          </node>
-        </node>
-        <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement:3" id="3147422627037095423">
-          <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="3147422627037095425">
-            <node role="operand:3" type="jetbrains.mps.baseLanguage.structure.ThisExpression:3" id="3147422627037095424" />
-            <node role="operation:3" type="jetbrains.mps.baseLanguage.extensionMethods.structure.ExtensionMethodCall:0" id="3147422627037095429">
-              <link role="baseMethodDeclaration:0" targetNodeId="3147422627037095292" resolveInfo="test" />
             </node>
           </node>
         </node>
@@ -334,7 +322,7 @@
         <node role="type:2" type="jetbrains.mps.baseLanguage.structure.StringType:3" id="8681672409479175948" />
       </node>
       <node role="fields:2" type="aws.simpledb.structure.FieldDefinition:2" id="2780846211648198334">
-        <property name="name:2" value="age" />
+        <property name="name:2" value="alter" />
         <node role="type:2" type="jetbrains.mps.baseLanguage.structure.StringType:3" id="2780846211648198335" />
       </node>
     </node>
