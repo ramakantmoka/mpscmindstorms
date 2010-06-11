@@ -333,6 +333,10 @@
         <property name="name:2" value="tel" />
         <node role="type:2" type="jetbrains.mps.baseLanguage.structure.StringType:3" id="8681672409479175948" />
       </node>
+      <node role="fields:2" type="aws.simpledb.structure.FieldDefinition:2" id="2780846211648198334">
+        <property name="name:2" value="age" />
+        <node role="type:2" type="jetbrains.mps.baseLanguage.structure.StringType:3" id="2780846211648198335" />
+      </node>
     </node>
     <node role="domains:2" type="aws.simpledb.structure.Domain:2" id="5224308508850177197">
       <property name="name:2" value="Address" />
