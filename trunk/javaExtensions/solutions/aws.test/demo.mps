@@ -322,7 +322,7 @@
         <node role="type:2" type="jetbrains.mps.baseLanguage.structure.StringType:3" id="8681672409479175948" />
       </node>
       <node role="fields:2" type="aws.simpledb.structure.FieldDefinition:2" id="2780846211648198334">
-        <property name="name:2" value="alter" />
+        <property name="name:2" value="age" />
         <node role="type:2" type="jetbrains.mps.baseLanguage.structure.StringType:3" id="2780846211648198335" />
       </node>
     </node>
