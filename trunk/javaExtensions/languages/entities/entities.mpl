@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="entities" uuid="09777fca-df65-49be-9ca8-b400d7d3749a" java-stubs-enabled="false" compileInMPS="true">
+<language namespace="entities" uuid="09777fca-df65-49be-9ca8-b400d7d3749a" java-stubs-enabled="false" compileInMPS="true" doNotGenerateAdapters="false">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" namespacePrefix="entities" />
   </models>
@@ -16,8 +16,6 @@
       <mapping-priorities />
     </generator>
   </generators>
-  <classPath />
-  <languageRuntimeClassPath />
   <sourcePath />
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>

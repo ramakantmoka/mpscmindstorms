@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="SimpleSQLBaseLanguageAdapter" uuid="3c873a47-9041-4321-aa41-269f66d298b0" java-stubs-enabled="false" compileInMPS="true">
+<language namespace="SimpleSQLBaseLanguageAdapter" uuid="3c873a47-9041-4321-aa41-269f66d298b0" java-stubs-enabled="false" compileInMPS="true" doNotGenerateAdapters="false">
   <models>
     <modelRoot path="${language_descriptor}/languageModels" namespacePrefix="SimpleSQLBaseLanguageAdapter" />
   </models>
@@ -16,8 +16,6 @@
       <mapping-priorities />
     </generator>
   </generators>
-  <classPath />
-  <languageRuntimeClassPath />
   <sourcePath />
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>

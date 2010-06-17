@@ -19,7 +19,6 @@
   <maxImportIndex value="5" />
   <import index="1" modelUID="f:java_stub#javax.swing(javax.swing@java_stub)" version="-1" />
   <import index="3" modelUID="f:java_stub#java.awt(java.awt@java_stub)" version="-1" />
-  <import index="4" modelUID="f:java_stub#java.io(java.io@java_stub)" version="-1" />
   <import index="5" modelUID="f:java_stub#java.awt.event(java.awt.event@java_stub)" version="-1" />
   <visible index="2" modelUID="f:java_stub#java.lang(java.lang@java_stub)" />
   <node type="jetbrains.mps.baseLanguage.builders.structure.SimpleBuilders:0" id="6248476625560477742">
