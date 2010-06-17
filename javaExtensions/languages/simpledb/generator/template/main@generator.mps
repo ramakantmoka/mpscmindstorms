@@ -40,11 +40,7 @@
   <maxImportIndex value="7" />
   <import index="1" modelUID="r:c84c95c8-074e-4cc6-b1a8-d47ff33ed792(aws.simpledb.structure)" version="2" />
   <import index="2" modelUID="f:java_stub#java.lang(java.lang@java_stub)" version="-1" />
-  <import index="3" modelUID="f:java_stub#com.amazonaws.sdb(com.amazonaws.sdb@java_stub)" version="-1" />
-  <import index="4" modelUID="f:java_stub#com.amazonaws.sdb.model(com.amazonaws.sdb.model@java_stub)" version="-1" />
-  <import index="5" modelUID="f:java_stub#java.io(java.io@java_stub)" version="-1" />
   <import index="6" modelUID="r:739e78c6-e6dd-497e-b589-5d8b75a848af(rt)" version="-1" />
-  <import index="7" modelUID="r:fcc505f2-8816-4c4c-b515-27d192f40ba9(aws.simpledb.behavior)" version="-1" />
   <visible index="2" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
   <node type="jetbrains.mps.lang.generator.structure.MappingConfiguration:2" id="2914105281614423086">
     <property name="name:2" value="step2" />

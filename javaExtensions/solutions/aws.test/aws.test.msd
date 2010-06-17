@@ -3,7 +3,6 @@
   <models>
     <modelRoot path="${solution_descriptor}/" namespacePrefix="" />
   </models>
-  <classPath />
   <sourcePath />
   <dependencies>
     <dependency reexport="false">b349faa5-ea56-4efb-8b0b-c88cfb3832cb(aws.runtime)</dependency>

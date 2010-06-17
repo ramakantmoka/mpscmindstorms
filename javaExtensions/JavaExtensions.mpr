@@ -9,7 +9,6 @@
       <solutionPath path="${project}/solutions/BLDemo/BLDemo.msd" folder="bl" />
       <solutionPath path="${project}/solutions/aws.runtime/aws.runtime.msd" folder="aws" />
       <solutionPath path="${project}/solutions/aws.test/aws.test.msd" folder="aws" />
-      <solutionPath path="${project}/solutions/NewSolution/NewSolution.msd" folder="aws" />
       <solutionPath path="${project}/solutions/RestDemo/RestDemo.msd" folder="rest" />
     </projectSolutions>
     <projectLanguages>
@@ -24,6 +23,20 @@
   </component>
   <component name="ProjectDetails">
     <option name="projectName" value="JavaExtensions" />
+  </component>
+  <component name="ProjectLibraryManager">
+    <option name="libraries">
+      <map>
+        <entry key="amazonSimpleDB">
+          <value>
+            <Library>
+              <option name="name" value="amazonSimpleDB" />
+              <option name="path" value="$PROJECT_DIR$/../AmazonSimpleDB-2009-04-15-java-library/AmazonSimpleDB-2009-04-15-java-library" />
+            </Library>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="ProjectModuleManager">
     <modules />

@@ -17,8 +17,6 @@
   <maxImportIndex value="4" />
   <import index="1" modelUID="f:java_stub#java.lang(java.lang@java_stub)" version="-1" />
   <import index="2" modelUID="f:java_stub#java.io(java.io@java_stub)" version="-1" />
-  <import index="3" modelUID="f:java_stub#org.junit(org.junit@java_stub)" version="-1" />
-  <import index="4" modelUID="f:java_stub#junit.framework(junit.framework@java_stub)" version="-1" />
   <node type="jetbrains.mps.baseLanguage.structure.ClassConcept:3" id="5224308508847178667">
     <property name="name:3" value="SimpleDBDemo" />
     <node role="staticMethod:3" type="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration:3" id="5224308508848712830">
