@@ -840,7 +840,7 @@
           <property name="flag:32" value="false" />
         </node>
         <node role="childCellModel:32" type="jetbrains.mps.lang.editor.structure.CellModel_Constant:32" id="7715189151798804073">
-          <property name="text:32" value="remote non-selected stuff" />
+          <property name="text:32" value="remove non-selected stuff" />
         </node>
         <node role="cellLayout:32" type="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal:32" id="7715189151798804074" />
         <node role="childCellModel:32" type="jetbrains.mps.lang.editor.structure.CellModel_Property:32" id="7715189151798804075">
@@ -886,7 +886,7 @@
           <property name="flag:32" value="false" />
         </node>
         <node role="childCellModel:32" type="jetbrains.mps.lang.editor.structure.CellModel_Constant:32" id="7715189151798804093">
-          <property name="text:32" value="remote non-selected stuff" />
+          <property name="text:32" value="remove non-selected stuff" />
         </node>
         <node role="cellLayout:32" type="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal:32" id="7715189151798804094" />
         <node role="childCellModel:32" type="jetbrains.mps.lang.editor.structure.CellModel_Property:32" id="7715189151798804095">
