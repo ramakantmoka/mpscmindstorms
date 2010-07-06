@@ -108,7 +108,7 @@
           <property name="name" value="unblocked" />
           <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause:4" id="6821937377367976842">
             <property name="isNew:4" value="false" />
-            <node role="expression:4" type="med.features.structure.AtomicFE:4" id="8949829907856211080">
+            <node role="expression:4" type="med.features.structure.AtomicFE:4" id="1447542311759633008">
               <link role="feature:4" targetNodeId="5296414764970271815" resolveInfo="sonar" />
             </node>
           </node>
@@ -117,7 +117,6 @@
           <property name="name" value="initializing" />
           <property name="initial" value="true" />
           <node role="transitions" type="med.statemachine.structure.Transition" id="6790227271038924458">
-            <link role="trigger" targetNodeId="6790227271038924454" resolveInfo="initialized" />
             <link role="target" targetNodeId="6790227271038924457" resolveInfo="running" />
             <node role="trigger" type="med.statemachine.structure.EventTrigger" id="1265321504640799746">
               <link role="event" targetNodeId="6790227271038924454" resolveInfo="initialized" />
@@ -128,7 +127,6 @@
         <node role="states" type="med.statemachine.structure.State" id="6821937377367976832">
           <property name="name" value="paused" />
           <node role="transitions" type="med.statemachine.structure.Transition" id="6821937377367976839">
-            <link role="trigger" targetNodeId="6821937377367976841" resolveInfo="unblocked" />
             <link role="target" targetNodeId="6790227271038924457" resolveInfo="running" />
             <node role="guard" type="med.core.structure.TrueLiteral:9" id="6821937377367976840" />
             <node role="trigger" type="med.statemachine.structure.EventTrigger" id="1265321504640799747">
@@ -157,7 +155,6 @@
           <property name="name" value="running" />
           <property name="initial" value="false" />
           <node role="transitions" type="med.statemachine.structure.Transition" id="6821937377367976830">
-            <link role="trigger" targetNodeId="6821937377367976827" resolveInfo="blocked" />
             <link role="target" targetNodeId="6821937377367976832" resolveInfo="paused" />
             <node role="guard" type="med.core.structure.TrueLiteral:9" id="6821937377367976831" />
             <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause:4" id="6821937377367976836">
@@ -176,7 +173,6 @@
             </node>
           </node>
           <node role="transitions" type="med.statemachine.structure.Transition" id="5296414764970022304">
-            <link role="trigger" targetNodeId="5296414764970022303" resolveInfo="bumped" />
             <link role="target" targetNodeId="5296414764970022306" resolveInfo="crash" />
             <node role="featureDependencyAnnotation$attribute" type="med.features.structure.FeatureClause:4" id="5296414764970153973">
               <property name="isNew:4" value="false" />
@@ -316,6 +312,19 @@
               <link role="procedure:9" targetNodeId="2v.5196379128660651519" resolveInfo="ecrobot_set_light_sensor_inactive" />
               <node role="actuals:9" type="med.core.structure.EnumLiteralRef:9" id="1265321504638678765">
                 <link role="literal:9" targetNodeId="2v.5196379128661020615" resolveInfo="NXT_PORT_S1" />
+              </node>
+            </node>
+            <node role="featureDependencyAnnotation$attribute:9" type="med.features.structure.FeatureClause:4" id="4337244299121482231">
+              <property name="isNew:4" value="true" />
+              <node role="expression:4" type="med.features.structure.AndFE:4" id="4337244299121482234">
+                <node role="right:4" type="med.features.structure.NotFE:4" id="4337244299121482237">
+                  <node role="expr:4" type="med.features.structure.AtomicFE:4" id="4337244299121482239">
+                    <link role="feature:4" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
+                  </node>
+                </node>
+                <node role="left:4" type="med.features.structure.AtomicFE:4" id="4337244299121482233">
+                  <link role="feature:4" targetNodeId="7680622939174614997" resolveInfo="bumper" />
+                </node>
               </node>
             </node>
           </node>
@@ -681,8 +690,11 @@
           </node>
         </node>
         <node role="traceAnnotation$attribute" type="med.requirements.structure.RequirementsTrace" id="7680622939173716752">
-          <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="7680622939173716755">
+          <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="1447542311759633029">
             <link role="requirement" targetNodeId="7680622939173623953" resolveInfo="Cyclic" />
+          </node>
+          <node role="links" type="med.requirements.structure.DummyRequirementsTraceLink" id="1447542311759633031">
+            <link role="requirement" targetNodeId="7680622939173623949" resolveInfo="Efficient" />
           </node>
         </node>
         <node role="scheduling" type="med.tasks.structure.SchedulingPolicyCyclic" id="775441678878451750">
@@ -827,7 +839,6 @@
           </node>
         </node>
       </node>
-      <node role="contents:9" type="med.core.structure.IModuleContent:9" id="1343754860562666320" />
       <node role="contents:9" type="med.core.structure.Procedure:9" id="5196379128662886748">
         <property name="name:9" value="updateMotorSettings" />
         <property name="text:9" value="This procedure actually configures the motors based on the speed values passed into the procedure." />
@@ -1013,7 +1024,6 @@
     <node role="projectionLevels:9" type="med.core.structure.ProjectionLevelOutline:9" id="7530832320798597060" />
   </node>
   <node type="med.features.structure.FeatureDependencyConfiguration:4" id="5196379128662641904">
-    <property name="numberOfValidConfigurations:4" value="16" />
     <node role="features:4" type="med.features.structure.SimpleFeatureDeclaration:4" id="7680622939174614995">
       <property name="name:4" value="runtimeCalibration" />
       <property name="selected:4" value="false" />
@@ -1030,12 +1040,12 @@
       <property name="name:4" value="debugOutput" />
       <property name="selected:4" value="false" />
     </node>
-    <node role="mode:4" type="med.features.structure.ShowClauseDisplayMode:4" id="6919011782213868287">
+    <node role="mode:4" type="med.features.structure.ShowClauseDisplayMode:4" id="1447542311759632988">
       <property name="removeNonSelectedStuffInEditor:4" value="false" />
       <property name="showFeatureClause:4" value="true" />
       <property name="highlightFeatureDependentNodes:4" value="true" />
     </node>
-    <node role="backup:4" type="med.features.structure.VariantDisplayMode:4" id="6919011782213868288">
+    <node role="backup:4" type="med.features.structure.VariantDisplayMode:4" id="1447542311759632989">
       <property name="removeNonSelectedStuffInEditor:4" value="true" />
       <property name="showFeatureClause:4" value="true" />
     </node>
