@@ -8,11 +8,11 @@
     <projectSolutions>
       <solutionPath path="${project}/solutions/BlockExample/BlockExample.msd" folder="_samples" />
       <solutionPath path="${project}/solutions/Bluetooth/bluetooth.msd" folder="_samples" />
-      <solutionPath path="${project}/solutions/LineFollowerWithComponents/LineFollowerWithComponents.msd" folder="_samples" />
-      <solutionPath path="${project}/solutions/LineFollower/LineFollower.msd" folder="_samples" />
+      <solutionPath path="${project}/solutions/LineFollowerWithComponents/LineFollowerWithComponents.msd" folder="_demos" />
+      <solutionPath path="${project}/solutions/LineFollower/LineFollower.msd" folder="_demos" />
       <solutionPath path="${project}/solutions/MessageComponents/MessageComponents.msd" folder="_samples" />
       <solutionPath path="${project}/solutions/StructureFeatureTest/StructureFeatureTest.msd" folder="_samples" />
-      <solutionPath path="${project}/solutions/TwoWheelExample/TwoWheelExample.msd" folder="_samples" />
+      <solutionPath path="${project}/solutions/TwoWheelExample/TwoWheelExample.msd" folder="_demos" />
       <solutionPath path="${project}/solutions/modularEmbeddedDSL.sandbox/modularEmbeddedDSL.sandbox.msd" folder="_samples" />
     </projectSolutions>
     <projectLanguages>
