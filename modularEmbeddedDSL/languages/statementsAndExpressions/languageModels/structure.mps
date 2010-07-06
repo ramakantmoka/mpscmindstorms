@@ -436,9 +436,6 @@
   <node type="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration:0" id="1881584577103641504">
     <property name="name:0" value="ILValue" />
     <property name="package:0" value="statements" />
-    <node role="extends:0" type="jetbrains.mps.lang.structure.structure.InterfaceConceptReference:0" id="4739672646791827709">
-      <link role="intfc:0" targetNodeId="343373828472902636:9" resolveInfo="IHasIdentifierName" />
-    </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration:0" id="1881584577103641506">
     <property name="name:0" value="AssignmentStatement" />
