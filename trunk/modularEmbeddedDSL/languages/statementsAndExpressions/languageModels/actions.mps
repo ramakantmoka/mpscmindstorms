@@ -987,6 +987,7 @@
                   <node role="operation:3" type="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation:16" id="7127715617960762689" />
                 </node>
               </node>
+              <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.Statement:3" id="5114901099236997635" />
               <node role="statement:3" type="jetbrains.mps.baseLanguage.structure.ReturnStatement:3" id="7530832320797871584">
                 <node role="expression:3" type="jetbrains.mps.baseLanguage.structure.DotExpression:3" id="7530832320797871585">
                   <node role="operand:3" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference:3" id="7530832320797871586">
