@@ -67,19 +67,15 @@
               </node>
             </node>
           </node>
-          <node role="statements:1" type="ds.twowheel.structure.BlockStatement:1" id="1447542311759633040">
-            <property name="name:1" value="newBlock" />
-            <node role="statements:1" type="ds.twowheel.structure.DriveOnStatement:1" id="1447542311759633038">
-              <node role="time:1" type="med.core.structure.IntConstantExpression:9" id="1447542311759633039">
-                <property name="value:9" value="2000" />
-              </node>
+          <node role="statements:1" type="ds.twowheel.structure.DriveOnStatement:1" id="3773580006442111293">
+            <node role="time:1" type="med.core.structure.IntConstantExpression:9" id="3773580006442111294">
+              <property name="value:9" value="2000" />
             </node>
-            <node role="statements:1" type="ds.twowheel.structure.TurnLeftStatement:1" id="1447542311759633036">
-              <node role="time:1" type="med.core.structure.IntConstantExpression:9" id="1447542311759633037">
-                <property name="value:9" value="200" />
-              </node>
+          </node>
+          <node role="statements:1" type="ds.twowheel.structure.TurnLeftStatement:1" id="3773580006442111295">
+            <node role="time:1" type="med.core.structure.IntConstantExpression:9" id="3773580006442111296">
+              <property name="value:9" value="200" />
             </node>
-            <node role="bumpReaction:1" type="ds.twowheel.structure.StopStatement:1" id="1447542311759633042" />
           </node>
           <node role="statements:1" type="ds.twowheel.structure.BlockStatement:1" id="6177678091395694225">
             <property name="name:1" value="driveMore" />
@@ -176,10 +172,10 @@
       <property name="name:4" value="reactOnBump" />
       <property name="selected:4" value="false" />
     </node>
-    <node role="backup:4" type="med.features.structure.VariantDisplayMode:4" id="8949829907856211046">
+    <node role="mode:4" type="med.features.structure.VariantDisplayMode:4" id="2988397862489040751">
       <property name="removeNonSelectedStuffInEditor:4" value="true" />
     </node>
-    <node role="mode:4" type="med.features.structure.ShowClauseDisplayMode:4" id="8949829907856211047">
+    <node role="backup:4" type="med.features.structure.ShowClauseDisplayMode:4" id="2988397862489040752">
       <property name="showFeatureClause:4" value="true" />
       <property name="highlightFeatureDependentNodes:4" value="true" />
     </node>

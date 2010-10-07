@@ -31,7 +31,7 @@
     <node role="modules:9" type="med.core.structure.ImplementationModule:9" id="5196379128660651513">
       <property name="name:9" value="main" />
       <property name="text:9" value="This module represents the code for the line follower lego robot. It has a couple of tasks, procedures and variables." />
-      <property name="safe:9" value="true" />
+      <property name="safe:9" value="false" />
       <node role="contents:9" type="med.core.structure.SimpleIntConstant:9" id="5196379128666214925">
         <property name="name:9" value="WHITE" />
         <property name="value:9" value="500" />
@@ -312,19 +312,6 @@
               <link role="procedure:9" targetNodeId="2v.5196379128660651519" resolveInfo="ecrobot_set_light_sensor_inactive" />
               <node role="actuals:9" type="med.core.structure.EnumLiteralRef:9" id="1265321504638678765">
                 <link role="literal:9" targetNodeId="2v.5196379128661020615" resolveInfo="NXT_PORT_S1" />
-              </node>
-            </node>
-            <node role="featureDependencyAnnotation$attribute:9" type="med.features.structure.FeatureClause:4" id="4337244299121482231">
-              <property name="isNew:4" value="true" />
-              <node role="expression:4" type="med.features.structure.AndFE:4" id="4337244299121482234">
-                <node role="right:4" type="med.features.structure.NotFE:4" id="4337244299121482237">
-                  <node role="expr:4" type="med.features.structure.AtomicFE:4" id="4337244299121482239">
-                    <link role="feature:4" targetNodeId="5196379128662641907" resolveInfo="debugOutput" />
-                  </node>
-                </node>
-                <node role="left:4" type="med.features.structure.AtomicFE:4" id="4337244299121482233">
-                  <link role="feature:4" targetNodeId="7680622939174614997" resolveInfo="bumper" />
-                </node>
               </node>
             </node>
           </node>
@@ -1040,13 +1027,12 @@
       <property name="name:4" value="debugOutput" />
       <property name="selected:4" value="false" />
     </node>
-    <node role="mode:4" type="med.features.structure.ShowClauseDisplayMode:4" id="1447542311759632988">
+    <node role="mode:4" type="med.features.structure.ShowClauseDisplayMode:4" id="3773580006442111290">
       <property name="removeNonSelectedStuffInEditor:4" value="false" />
-      <property name="showFeatureClause:4" value="true" />
-      <property name="highlightFeatureDependentNodes:4" value="true" />
     </node>
-    <node role="backup:4" type="med.features.structure.VariantDisplayMode:4" id="1447542311759632989">
+    <node role="backup:4" type="med.features.structure.VariantDisplayMode:4" id="3773580006442111291">
       <property name="removeNonSelectedStuffInEditor:4" value="true" />
+      <property name="highlightFeatureDependentNodes:4" value="true" />
       <property name="showFeatureClause:4" value="true" />
     </node>
   </node>
