@@ -1,5 +1,5 @@
 #summary How to install the development environment
 
-We are currently using the MPS 1.1, released December 1, 2009. 
+We are currently using the MPS 1.5.1
 
 You can get it from here: http://www.jetbrains.com/mps/download/index.html
