@@ -1,0 +1,1 @@
+My hello world projects to test C and don't require the Osek stuff use this C compiler on Windows: http://www.q-software-solutions.de/products/lcc-win32/
